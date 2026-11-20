@@ -70,6 +70,8 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
 .card p,.card li{font-size:13px;line-height:1.6;color:#c9c9e4}
 .card ul{padding-left:18px;margin:6px 0}
 .legend{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--dim);margin-top:8px}
+.ganz{position:fixed;inset:0;z-index:50;display:none;cursor:pointer;background:radial-gradient(ellipse at center,#c4241c 0%,#a81d17 55%,#8a1712 100%)}
+.ganz span{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#ffb3a855;font-size:12px}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
 </style>
 </head>
@@ -80,6 +82,7 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
 </header>
 <div class="warn">🎧 <b>Stereo headphones required</b> for binaural mode (monaural and isochronic modes work on speakers). Keep the volume low; output is capped by a built-in limiter. Don't use while driving or operating machinery. If you have epilepsy, a seizure disorder or a heart condition, or are pregnant, talk to a doctor first. Stop if you feel discomfort. This is not a medical treatment.</div>
 <div class="err" id="audioErr"></div>
+<div class="ganz" id="ganz" title="Click or press Esc to exit"><span>Ganzfeld light: steady, never flickers. Eyes closed, face the screen. Click or press Esc to exit.</span></div>
 
 <div class="layout">
   <aside class="panel" id="sidebar"></aside>
@@ -113,6 +116,7 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
       <label class="chk"><input type="checkbox" id="voiceOn" checked> Spoken cues</label>
       <select id="voiceSel" title="Narrator voice"></select>
       <label class="chk"><input type="checkbox" id="breathT"> Breath pacer</label>
+      <button class="btn ghost" id="ganzBtn" style="display:none">🔴 Ganzfeld light</button>
     </div>
     <div class="chips" id="chips"></div>
 
@@ -121,6 +125,7 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
       <label class="sl">Tone level <output id="toneO"></output><input type="range" id="tone" min="0" max="1" step="0.01" value="0.6"></label>
       <label class="sl">Background noise <output id="noiseO"></output><input type="range" id="noise" min="0" max="1" step="0.01" value="0.35"></label>
       <label class="sl">Voice level <output id="voiceVolO"></output><input type="range" id="voiceVol" min="0" max="1" step="0.01" value="0.8"></label>
+      <label class="sl" id="texWrap">Texture (drum, bowls, chimes, rain…) <output id="texO"></output><input type="range" id="tex" min="0" max="1" step="0.01" value="0.7"></label>
       <label class="sl">Noise type
         <select id="noiseType">
           <option value="none">None</option><option value="pink">Pink</option><option value="brown">Brown</option>
@@ -145,6 +150,7 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
             <span class="ev ev-Speculative">Speculative</span> (a fringe claim, included for completeness).</li>
           <li><b>Gateway Process.</b> A 1983 U.S. Army analysis (McDonnell), declassified by the CIA in 2003, was a theoretical review, not a controlled trial. Monroe's real frequency mixes are proprietary, so these presets are <i>interpretations</i>.</li>
           <li><b>Evidence.</b> A 2019 meta-analysis (Garcia-Argibay et al.) found small-to-moderate effects on anxiety, memory, attention and pain. Several EEG studies (e.g. Orozco Perez et al., 2020) found little sign that brainwaves actually lock onto the beat.</li>
+          <li><b>Altered States group.</b> These sessions are ranked by how much research exists: hypnosis (49 meta-analyses), Ganzfeld (decades of EEG/fMRI), rhythmic drumming trance (fMRI), targeted lucidity reactivation, slow-wave sleep pulses, Kirtan Kriya (RCT), singing bowls, mantra rhythm (<i>BMJ</i>), nature soundscapes and Om chanting (fMRI). Flicker-light, infrasound and hyperventilation methods are deliberately left out because they can cause harm.</li>
           <li><b>Bottom line.</b> Treat this as a good tool for relaxation and meditation, not as a guaranteed way to change your state of consciousness, and not as medicine.</li>
         </ul>
       </div>
@@ -164,7 +170,7 @@ const totalOf=p=>p.stages.reduce((a,s)=>a+(s.min>0?s.min*60:Infinity),0);
 const VOICE_LABEL={af_heart:"Heart · US female (warm)",af_bella:"Bella · US female",bf_emma:"Emma · UK female",bm_george:"George · UK male",am_michael:"Michael · US male",am_fenrir:"Fenrir · US male (deep)"};
 
 let PRESETS=[],selected=null,current=null,running=false,paused=false,S=null,scope=null,phase=0,lastT=performance.now(),chipSig="";
-const openGroups=new Set(["Gateway Experience","Research-based"]);
+const openGroups=new Set(["Gateway Experience","Research-based","Altered States"]);
 let evFilter="";
 
 window.__init=init=>{
@@ -243,6 +249,7 @@ function select(p,isCustom){
   $("stName").textContent=p.name;$("stBand").textContent=isFinite(totalOf(p))?fmt(totalOf(p))+" session":"open-ended";
   $("cue").textContent=p.stages[0].cue||"";$("clock").firstChild.textContent="00:00";$("remain").innerHTML="&nbsp;";$("playhead").style.left="0";
   buildTimeline(p);renderChips(p.stages[0].beats,p.stages[0].carriers||p.carriers);
+  $("ganzBtn").style.display=p.visual==="ganzfeld"?"":"none";
 }
 function buildTimeline(p){
   const tl=$("timeline");tl.querySelectorAll(".seg").forEach(s=>s.remove());
@@ -279,16 +286,19 @@ function update(){
   const sig=S.beats.map(b=>b.toFixed(2)).join()+S.carriers.map(c=>c.toFixed(1)).join()+$("mode").value;
   if(sig!==chipSig){chipSig=sig;renderChips(S.beats,S.carriers)}
 }
-function sendLevels(){send({cmd:"levels",vol:+$("vol").value,tone:+$("tone").value,noise:+$("noise").value,voiceVol:+$("voiceVol").value})}
+function sendLevels(){send({cmd:"levels",vol:+$("vol").value,tone:+$("tone").value,noise:+$("noise").value,voiceVol:+$("voiceVol").value,tex:+$("tex").value})}
 function sendVoice(){send({cmd:"voice",name:$("voiceOn").checked&&!$("voiceSel").disabled?$("voiceSel").value:"off"})}
 
 $("play").onclick=()=>{if(!running){if(selected)start(selected)}else{paused=!paused;send({cmd:paused?"pause":"resume"});updateButtons()}};
 $("stop").onclick=stop;$("prev").onclick=()=>send({cmd:"jump",dir:-1});$("next").onclick=()=>send({cmd:"jump",dir:1});
 $("timeline").onclick=ev=>{if(!running||!current||current.live)return;const r=$("timeline").getBoundingClientRect(),tot=totalOf(current);if(isFinite(tot))send({cmd:"seek",t:(ev.clientX-r.left)/r.width*tot})};
-["vol","tone","noise","voiceVol"].forEach(id=>{const o=()=>$(id+"O").textContent=Math.round($(id).value*100)+"%";o();$(id).addEventListener("input",()=>{o();sendLevels()})});
+["vol","tone","noise","voiceVol","tex"].forEach(id=>{const o=()=>$(id+"O").textContent=Math.round($(id).value*100)+"%";o();$(id).addEventListener("input",()=>{o();sendLevels()})});
 $("noiseType").onchange=()=>send({cmd:"noise",type:$("noiseType").value});
 $("mode").onchange=()=>{send({cmd:"mode",mode:$("mode").value});chipSig=""};
 $("voiceOn").onchange=sendVoice;$("voiceSel").onchange=()=>{sendVoice();if(running)send({cmd:"speak"})};
+const ganz=on=>{$("ganz").style.display=on?"block":"none"};
+$("ganzBtn").onclick=()=>ganz(true);$("ganz").onclick=()=>ganz(false);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")ganz(false)});
 document.addEventListener("keydown",e=>{if(e.code==="Space"&&e.target.tagName!=="INPUT"&&e.target.tagName!=="SELECT"){e.preventDefault();$("play").click()}});
 
 /* ---------------- Render loop (visuals only) ---------------- */

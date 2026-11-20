@@ -1,6 +1,6 @@
 # ◉ Focus — Binaural Beats Generator
 
-A native Windows app written in **Rust** that generates binaural, monaural and isochronic beats in real time. It includes guided sessions modelled on the Monroe Institute's *Gateway Experience* Focus levels, and a library of **122 sessions** drawn from published research and popular frequency traditions.
+A native Windows app written in **Rust** that generates binaural, monaural and isochronic beats in real time. It includes guided sessions modelled on the Monroe Institute's *Gateway Experience* Focus levels, and a library of **132 sessions** drawn from published research and popular frequency traditions.
 
 ## Features
 - **Real-time Rust audio engine** (cpal/WASAPI). Tones are phase-continuous and glide smoothly between stages, with up to 8 layered tone pairs per session.
@@ -8,6 +8,7 @@ A native Windows app written in **Rust** that generates binaural, monaural and i
 - **Natural neural narration:** spoken cues recorded with the open-source [Kokoro-82M](https://github.com/hexgrad/kokoro) model, in four voices. They're embedded in the exe, so no internet is needed.
 - **Noise beds:** pink, brown, white, and ocean surf.
 - **Breath pacer** (6 breaths/min), stage timeline with seek, and a stereo Lissajous visualiser.
+- **Sound textures:** frame drum, singing bowls with theta-rate beating, Kirtan/lucid-dream/breath chimes, 0.8 Hz sleep pulses and rain, plus a steady (never-flickering) Ganzfeld red-light screen.
 - **Custom generator:** carrier 40–1000 Hz, beat 0.1–250 Hz, optional delta anchor layer, timer.
 
 ### Session library
@@ -16,6 +17,7 @@ A native Windows app written in **Rust** that generates binaural, monaural and i
 | Gateway Experience | 5 | Focus 3, 10, 12, 15, 21 |
 | Lifeline (Focus 22–27) | 4 | Interpretations, labelled speculative |
 | Research-based | 17 | Each cites its study (Lane 1998, Jirakittayakorn 2017/2018, Lutz 2004, Voss 2014, Lacaux 2021, Martorell 2019 …) |
+| **Altered States** | 10 | Ranked by research volume: self-hypnosis, Ganzfeld (red light), drumming trance, lucid-dream TLR, slow-wave sleep pulses, Kirtan Kriya, singing bowls, mantra rhythm, rain soundscape, Om |
 | Purpose & Tradition | 15 | OBE, remote viewing, shamanic, Om, sleep, study, energy … |
 | Brainwave Library | 42 | Every common frequency from 0.5 Hz epsilon to 200 Hz "lambda" |
 | Schumann Resonances | 6 | Modes 1–5 and a layered stack |
@@ -28,6 +30,7 @@ Every preset is tagged **Research**, **Gateway**, **Traditional** or **Speculati
 
 ## Safety & privacy
 - **No network access.** The UI runs under a strict Content-Security-Policy (`default-src 'none'`), and the app makes no web requests and collects no telemetry.
+- **Harmful methods excluded:** flicker light (seizure risk), infrasound and hyperventilation techniques are deliberately not included.
 - **No admin rights** needed. Settings live in `%LOCALAPPDATA%\FocusBinaural`.
 - **Hard output limiter:** output can never exceed about −1.4 dBFS, whatever the slider settings.
 - **Custom input is clamped:** carriers 20–1500 Hz, beats ≤ 250 Hz, layers ≤ 8.

@@ -1,0 +1,232 @@
+//! Non-tonal "texture" layers used by the altered-state sessions:
+//!   drum        – frame-drum hits at the beat rate (rhythmic trance; Hove et al. 2016)
+//!   bowls       – struck singing bowls whose paired partials beat at the stage beat (Ahn et al. 2023)
+//!   kirtan      – 4-note cycle, one note per second (Sa-Ta-Na-Ma; Innes et al. 2017)
+//!   tlr         – 3-note lucidity cue every `interval` s (Carr et al. 2023)
+//!   breathbell  – soft bell every `interval` s marking a slow breath (Bernardi et al. 2001)
+//!   pulses      – 50 ms pink-noise bursts at the beat rate (≈0.8 Hz; Ngo et al. 2013)
+//!   rain        – synthesised rain bed with droplets (natural soundscape; Gould van Praag 2017)
+use crate::plan::Texture;
+use std::f64::consts::TAU;
+
+#[derive(Clone, Copy, PartialEq)]
+enum Kind { Drum, Bowls, Kirtan, Tlr, BreathBell, Pulses, Rain }
+
+/// Exponentially decaying sinusoid.
+struct Partial { f: f64, ph: f64, amp: f32, decay: f32, attack: f32, env: f32, pl: f32, pr: f32 }
+
+struct Hit { t: f64, amp: f32, pan: f32 }
+
+pub struct TexSynth {
+    kind: Kind,
+    level: f32,
+    root: f64,
+    interval: f64,
+    sr: f64,
+    clock: f64,       // seconds since last event
+    step: usize,      // event counter
+    partials: Vec<Partial>,
+    hits: Vec<Hit>,
+    queue: Vec<(f64, f64)>, // (delay s, freq) pending motif notes
+    rng: u64,
+    pink: [f32; 7],
+    lp: [f32; 2],
+    burst: f64,       // remaining burst time (pulses)
+    next_jitter: f64,
+}
+
+impl TexSynth {
+    pub fn new(t: &Texture, sr: f64) -> Option<Self> {
+        let kind = match t.kind.as_str() {
+            "drum" => Kind::Drum, "bowls" => Kind::Bowls, "kirtan" => Kind::Kirtan, "tlr" => Kind::Tlr,
+            "breathbell" => Kind::BreathBell, "pulses" => Kind::Pulses, "rain" => Kind::Rain, _ => return None,
+        };
+        let root = if t.root > 0.0 { t.root } else {
+            match kind { Kind::Bowls => 220.0, Kind::Kirtan => 392.0, Kind::Tlr => 660.0, Kind::BreathBell => 528.0, _ => 0.0 }
+        };
+        let interval = if t.interval > 0.0 { t.interval } else {
+            match kind { Kind::Bowls => 9.0, Kind::Tlr => 180.0, Kind::BreathBell => 10.0, _ => 1.0 }
+        };
+        Some(TexSynth {
+            kind, level: t.level as f32, root, interval, sr,
+            clock: 1e9, step: 0, partials: Vec::new(), hits: Vec::new(), queue: Vec::new(),
+            rng: 0x2545F4914F6CDD1D, pink: [0.0; 7], lp: [0.0; 2], burst: 0.0, next_jitter: 0.0,
+        })
+    }
+
+    fn rand(&mut self) -> f32 {
+        let mut x = self.rng;
+        x ^= x << 13; x ^= x >> 7; x ^= x << 17;
+        self.rng = x;
+        ((x >> 40) as f32 / (1u64 << 24) as f32) * 2.0 - 1.0
+    }
+    fn pink(&mut self) -> f32 {
+        let w = self.rand();
+        let b = &mut self.pink;
+        b[0] = 0.99886 * b[0] + w * 0.0555179; b[1] = 0.99332 * b[1] + w * 0.0750759;
+        b[2] = 0.96900 * b[2] + w * 0.1538520; b[3] = 0.86650 * b[3] + w * 0.3104856;
+        b[4] = 0.55000 * b[4] + w * 0.5329522; b[5] = -0.7616 * b[5] - w * 0.0168980;
+        let v = (b[0] + b[1] + b[2] + b[3] + b[4] + b[5] + b[6] + w * 0.5362) * 0.11;
+        b[6] = w * 0.115926;
+        v
+    }
+    fn decay_for(&self, secs: f64) -> f32 { (-1.0 / (secs * self.sr)).exp() as f32 }
+
+    fn add(&mut self, f: f64, amp: f32, secs: f64, pan: f32) {
+        let decay = self.decay_for(secs);
+        let attack = 1.0 / (0.006 * self.sr as f32);
+        self.partials.push(Partial { f, ph: 0.0, amp, decay, attack, env: 0.0, pl: (1.0 - pan).min(1.0), pr: (1.0 + pan).min(1.0) });
+    }
+    fn bell(&mut self, f: f64, amp: f32, secs: f64) {
+        self.add(f, amp, secs, 0.0);
+        self.add(f * 2.76, amp * 0.22, secs * 0.35, 0.0);
+        self.add(f * 5.40, amp * 0.06, secs * 0.15, 0.0);
+    }
+    fn strike_bowl(&mut self, f0: f64, beat: f64, pan: f32) {
+        // Singing-bowl mode ratios with a detuned twin per mode -> acoustic beating at `beat` Hz.
+        const MODES: [(f64, f32, f64); 4] = [(1.0, 1.0, 22.0), (2.71, 0.45, 13.0), (5.33, 0.2, 7.0), (8.69, 0.08, 4.0)];
+        let b = beat.clamp(0.2, 12.0);
+        for (r, a, d) in MODES {
+            self.add(f0 * r - b / 2.0, a * 0.5, d, pan);
+            self.add(f0 * r + b / 2.0, a * 0.5, d, pan);
+        }
+        self.partials.retain(|p| p.amp > 1e-4); // cap growth
+        if self.partials.len() > 96 { let n = self.partials.len() - 96; self.partials.drain(0..n); }
+    }
+
+    /// One stereo sample. `beat` = current layer-0 beat (Hz), `gain` = texture gain (0..1).
+    pub fn sample(&mut self, beat: f64, gain: f32) -> (f32, f32) {
+        let dt = 1.0 / self.sr;
+        self.clock += dt;
+        let (mut l, mut r) = (0.0f32, 0.0f32);
+        let active = gain > 1e-4;
+
+        // ---------- event scheduling ----------
+        match self.kind {
+            Kind::Drum => {
+                let period = 1.0 / beat.clamp(0.5, 12.0);
+                if active && self.clock >= period + self.next_jitter {
+                    self.clock = 0.0;
+                    self.step += 1;
+                    let accent = if self.step % 4 == 1 { 1.0 } else { 0.8 };
+                    let amp = accent * (0.9 + 0.1 * self.rand());
+                    let pan = 0.15 * self.rand();
+                    self.hits.push(Hit { t: 0.0, amp, pan });
+                    self.next_jitter = period * 0.015 * self.rand() as f64; // human feel
+                    if self.hits.len() > 8 { self.hits.remove(0); }
+                }
+            }
+            Kind::Bowls => {
+                if active && self.clock >= self.interval {
+                    self.clock = 0.0;
+                    const ROOTS: [f64; 4] = [1.0, 1.5, 0.75, 1.335];
+                    let f0 = self.root * ROOTS[self.step % 4];
+                    let pan = [0.0f32, -0.35, 0.35, 0.0][self.step % 4];
+                    self.step += 1;
+                    self.strike_bowl(f0, beat, pan);
+                }
+            }
+            Kind::Kirtan => {
+                if active && self.clock >= 1.0 {
+                    self.clock = 0.0;
+                    const NOTES: [f64; 4] = [1.5, 4.0 / 3.0, 1.25, 1.0]; // Sa Ta Na Ma
+                    let f = self.root * NOTES[self.step % 4];
+                    self.step += 1;
+                    self.bell(f, 0.55, 0.9);
+                }
+            }
+            Kind::Tlr => {
+                if active && self.clock >= self.interval {
+                    self.clock = 0.0;
+                    let f = self.root;
+                    self.queue.push((0.0, f));
+                    self.queue.push((0.28, f * 1.25));
+                    self.queue.push((0.56, f * 1.5));
+                }
+            }
+            Kind::BreathBell => {
+                if active && self.clock >= self.interval {
+                    self.clock = 0.0;
+                    let f = self.root;
+                    self.bell(f, 0.45, 3.5);
+                }
+            }
+            Kind::Pulses => {
+                let period = 1.0 / beat.clamp(0.3, 4.0);
+                if active && self.clock >= period {
+                    self.clock = 0.0;
+                    self.burst = 0.05;
+                }
+            }
+            Kind::Rain => {}
+        }
+        // motif queue (tlr)
+        if !self.queue.is_empty() {
+            let mut fire = Vec::new();
+            for q in self.queue.iter_mut() { q.0 -= dt; if q.0 <= 0.0 { fire.push(q.1); } }
+            self.queue.retain(|q| q.0 > 0.0);
+            for f in fire { self.bell(f, 0.5, 1.2); }
+        }
+
+        // ---------- synthesis ----------
+        match self.kind {
+            Kind::Drum => {
+                let sr = self.sr;
+                let mut out = (0.0f32, 0.0f32);
+                let mut hits = std::mem::take(&mut self.hits);
+                for h in hits.iter_mut() {
+                    let t = h.t;
+                    // pitch-swept membrane + short skin noise
+                    let f = 58.0 + 75.0 * (-t / 0.035).exp();
+                    let body = ((TAU * f * t) + 0.0).sin() as f32 * (-t / 0.22).exp() as f32;
+                    let skin = self.rand() * (-t / 0.012).exp() as f32 * 0.35;
+                    let v = (body + skin) * h.amp;
+                    out.0 += v * (1.0 - h.pan);
+                    out.1 += v * (1.0 + h.pan);
+                    h.t += 1.0 / sr;
+                }
+                hits.retain(|h| h.t < 1.2);
+                self.hits = hits;
+                l += out.0 * 0.55;
+                r += out.1 * 0.55;
+            }
+            Kind::Pulses => {
+                if self.burst > 0.0 {
+                    let edge = (self.burst.min(0.05 - self.burst) / 0.005).clamp(0.0, 1.0) as f32;
+                    let v = self.pink() * edge * 1.4;
+                    l += v; r += v;
+                    self.burst -= dt;
+                }
+            }
+            Kind::Rain => {
+                // bed: two decorrelated low-passed noises
+                for ch in 0..2 {
+                    let w = self.rand();
+                    self.lp[ch] += 0.18 * (w - self.lp[ch]);
+                    let v = self.lp[ch] * 0.22;
+                    if ch == 0 { l += v } else { r += v }
+                }
+                // droplets: Poisson ~30/s, tiny decaying chirps
+                if (self.rand() * 0.5 + 0.5) < (30.0 * dt) as f32 {
+                    let f = 1800.0 + 2600.0 * (self.rand() * 0.5 + 0.5) as f64;
+                    let pan = self.rand() * 0.8;
+                    let amp = 0.08 + 0.12 * (self.rand() * 0.5 + 0.5);
+                    self.add(f, amp, 0.012, pan);
+                    if self.partials.len() > 64 { self.partials.remove(0); }
+                }
+            }
+            _ => {}
+        }
+        // decaying partials (bowls, bells, droplets)
+        for p in self.partials.iter_mut() {
+            p.ph = (p.ph + TAU * p.f * dt) % TAU;
+            if p.env < 1.0 { p.env = (p.env + p.attack).min(1.0); }
+            let v = p.ph.sin() as f32 * p.amp * p.env;
+            l += v * p.pl;
+            r += v * p.pr;
+            p.amp *= p.decay;
+        }
+        if self.partials.len() > 8 { self.partials.retain(|p| p.amp > 1e-4); }
+        (l * gain * self.level, r * gain * self.level)
+    }
+}

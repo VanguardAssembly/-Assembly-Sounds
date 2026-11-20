@@ -20,7 +20,25 @@ pub struct Stage {
     pub cue_id: String,
     #[serde(default)]
     pub breath: bool,
+    /// Texture gain for this stage (0 = off, default 1).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub tex: Option<f64>,
 }
+
+/// Non-tonal sound layer synthesised by the engine.
+#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct Texture {
+    /// "drum" | "bowls" | "kirtan" | "tlr" | "breathbell" | "pulses" | "rain"
+    pub kind: String,
+    #[serde(default = "d_one")]
+    pub level: f64,
+    #[serde(default)]
+    pub root: f64,
+    /// Seconds between events (bowls / tlr / breathbell).
+    #[serde(default)]
+    pub interval: f64,
+}
+fn d_one() -> f64 { 1.0 }
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct Preset {
@@ -43,6 +61,11 @@ pub struct Preset {
     pub stages: Vec<Stage>,
     #[serde(default)]
     pub live: bool,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub texture: Option<Texture>,
+    /// "" | "ganzfeld"
+    #[serde(default, skip_serializing_if = "String::is_empty")]
+    pub visual: String,
 }
 fn d_noise() -> String { "pink".into() }
 fn d_mode() -> String { "binaural".into() }
@@ -65,6 +88,7 @@ pub struct Timeline {
     pub starts: Vec<f64>,
     pub total: f64, // f64::INFINITY when open-ended
     pub live: bool,
+    pub texture: Option<Texture>,
 }
 
 impl Preset {
@@ -86,6 +110,12 @@ impl Preset {
                 for c in cs.iter_mut() { *c = if c.is_finite() { c.clamp(20.0, 1500.0) } else { 200.0 }; }
             }
             s.ramp = s.ramp.map(|r| if r.is_finite() { r.clamp(0.0, 3600.0) } else { 60.0 });
+            s.tex = s.tex.map(|x| if x.is_finite() { x.clamp(0.0, 1.0) } else { 1.0 });
+        }
+        if let Some(tx) = self.texture.as_mut() {
+            tx.level = if tx.level.is_finite() { tx.level.clamp(0.0, 1.0) } else { 1.0 };
+            tx.root = if tx.root.is_finite() { tx.root.clamp(0.0, 2000.0) } else { 0.0 };
+            tx.interval = if tx.interval.is_finite() { tx.interval.clamp(0.0, 600.0) } else { 0.0 };
         }
         Some(self)
     }
@@ -106,9 +136,12 @@ impl Timeline {
             starts,
             total: t,
             live: p.live,
+            texture: p.texture.clone(),
         }
     }
     pub fn layers(&self) -> usize { self.base_carriers.len() }
+    /// Texture gain of the stage at elapsed `e` (default 1).
+    pub fn tex_at(&self, e: f64) -> f64 { self.stages[self.stage_at(e)].tex.unwrap_or(1.0) }
     fn dur(&self, k: usize) -> f64 {
         let m = self.stages[k].min;
         if m <= 0.0 { f64::INFINITY } else { m * 60.0 }

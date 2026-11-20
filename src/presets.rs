@@ -3,7 +3,7 @@
 //!   Research    – based on a published study (cited in `about`)
 //!   Traditional – popular / historical association, not scientifically established
 //!   Speculative – fringe claim; included for completeness, labelled as such
-use crate::plan::{cue_id, Preset, Stage};
+use crate::plan::{cue_id, Preset, Stage, Texture};
 
 fn st(name: &str, min: f64, beats: &[f64], cue: &str) -> Stage {
     Stage {
@@ -15,19 +15,26 @@ fn st(name: &str, min: f64, beats: &[f64], cue: &str) -> Stage {
         cue: cue.into(),
         cue_id: String::new(),
         breath: false,
+        tex: None,
     }
 }
 trait StageExt {
     fn breath(self) -> Self;
     fn car(self, c: &[f64]) -> Self;
     fn ramp(self, s: f64) -> Self;
+    fn tex(self, g: f64) -> Self;
 }
 impl StageExt for Stage {
     fn breath(mut self) -> Self { self.breath = true; self }
     fn car(mut self, c: &[f64]) -> Self { self.carriers = Some(c.to_vec()); self }
     fn ramp(mut self, s: f64) -> Self { self.ramp = Some(s); self }
+    fn tex(mut self, g: f64) -> Self { self.tex = Some(g); self }
 }
 fn with_min(mut s: Stage, min: f64) -> Stage { s.min = min; s }
+fn tx(kind: &str, level: f64, root: f64, interval: f64) -> Option<Texture> {
+    Some(Texture { kind: kind.into(), level, root, interval })
+}
+fn with_tex(mut p: Preset, t: Option<Texture>) -> Preset { p.texture = t; p }
 
 #[allow(clippy::too_many_arguments)]
 fn p(group: &str, id: &str, name: &str, short: &str, carriers: &[f64], gains: &[f64], noise: &str,
@@ -36,6 +43,7 @@ fn p(group: &str, id: &str, name: &str, short: &str, carriers: &[f64], gains: &[
         id: id.into(), group: group.into(), name: name.into(), short: short.into(),
         carriers: carriers.to_vec(), gains: gains.to_vec(), noise: noise.into(), mode: mode.into(),
         evidence: evidence.into(), about: about.into(), stages, live: false,
+        texture: None, visual: String::new(),
     }
 }
 
@@ -238,6 +246,64 @@ pub fn all() -> Vec<Preset> {
     v.push(p(g, "grounding", "Grounding — Schumann", "7.83 Hz · 20 min", &[194.18], &[1.0], "surf", "binaural", "Speculative",
       "<p>7.83 Hz on Cousto's \"Earth day\" tone of 194.18 Hz. The Schumann resonance is a real atmospheric phenomenon, but there is no evidence that matching it affects the body.</p>",
       vec![st("Ground", 20.0, &[7.83], "Feel the weight of your body supported by the earth beneath you.")]));
+
+
+    // ================= Altered States (research-ranked) =================
+    let g = "Altered States";
+    v.push(p(g, "hypno", "Self-Hypnosis — Deep Trance", "Most-researched ASC · 19 min", &[200.0], &[0.6], "surf", "binaural", "Research",
+      "<p><b>Hypnosis has more research behind it than any other altered state here.</b> An umbrella review covered 49 meta-analyses and 261 studies (Rosendahl et al., 2024). A meta-analysis of 85 trials found it relieves pain, and it can be delivered as recorded audio (Thompson et al., 2019). The APA defines it as \"a state of consciousness involving focused attention and reduced peripheral awareness\".</p><p>This is a classic induction: eye fixation, progressive relaxation, a staircase deepener, a safe place, a calm-anchor suggestion and a count-up emergence. Self-hypnosis works best with practice: three or more sessions. You stay in control and can open your eyes at any time. <b>Skip this if you have a psychotic or dissociative disorder.</b></p>",
+      vec![st("Welcome", 1.0, &[10.0], "This is a session of self hypnosis for deep relaxation. You remain in control throughout, and you can open your eyes and return at any time, simply by choosing to."),
+           st("Eye fixation", 2.0, &[9.0], "Choose a spot slightly above eye level and rest your gaze on it. As you watch it, your eyelids begin to feel heavier. When they want to close, let them close."),
+           st("Relaxation", 3.0, &[7.0], "Let a wave of relaxation begin at the top of your head. Let it flow down through your face, your jaw, your neck and shoulders, down your arms to your fingertips, through your chest and back, and down through your legs to the soles of your feet."),
+           st("Staircase", 3.0, &[6.0], "Imagine a staircase with ten steps. With each step down, you go twice as deep into calm. Ten. Nine. Eight. Seven. Six. Five. Four. Three. Two. One. Deeply relaxed."),
+           st("Safe place", 3.0, &[5.0], "At the bottom of the stairs is a place of complete peace, real or imagined. Notice what you see, the sounds around you, the temperature of the air. You are safe here."),
+           st("Suggestion", 3.0, &[5.0], "In this calm state, your mind is open to helpful ideas. Each day you feel calmer, clearer, and more at ease. Stress passes through you, and leaves you steady."),
+           st("Anchor", 2.0, &[6.0], "Gently press your thumb and forefinger together. From now on, this simple touch can bring back this feeling of calm whenever you need it."),
+           st("Emergence", 2.0, &[14.0], "In a moment, count with me from one to five. One, energy returning. Two, aware of your body. Three, breathing deeper. Four, ready to open your eyes. Five, eyes open, wide awake and refreshed.").ramp(60.0)]));
+    v.push(with_tex(p(g, "ganzfeld", "Ganzfeld — Red Light Imagery", "Sensory homogenisation · 30 min", &[200.0], &[0.0], "pink", "binaural", "Research",
+      "<p>The <b>Ganzfeld</b> (\"whole field\") gives the senses a perfectly even input: steady noise in the ears and a uniform soft light on closed eyes. After a few minutes the brain starts generating its own imagery, from colours and shapes to vivid dream-like scenes. It is among the most-studied altered states, with decades of EEG work (Pütz et al., 2006; Wackermann et al., 2008) and fMRI showing the thalamus progressively decoupling from the cortex.</p><p>A recent multimodal-Ganzfeld study found that <b>red light</b> produced the most complex imagery, statistically equivalent on that measure to a moderate dose of psilocybin (Fort et al.).</p><p><b>How to use it:</b> dim the room, press <b>🔴 Ganzfeld light</b> to fill the screen with steady red (it never flickers), sit facing it at arm's length with your eyes closed, and just observe. Keep the noise at a comfortable, steady level.</p>",
+      vec![st("Settle", 3.0, &[0.0], "Dim the room and turn on the Ganzfeld light. Sit facing the screen, close your eyes, and let your gaze rest in the soft red glow."),
+           st("Ganzfeld", 25.0, &[0.0], "Simply observe. Let colours, shapes and images arise on their own, without trying to hold on to them."),
+           st("Return", 2.0, &[0.0], "Slowly open your eyes. Take a moment to recall what you saw.")]), None));
+    v.last_mut().unwrap().visual = "ganzfeld".into();
+    v.push(with_tex(p(g, "drumtrance", "Rhythmic Drumming Trance", "Hove 2016 · 20 min", &[100.0], &[0.25], "none", "binaural", "Research",
+      "<p>Steady drumming at about four beats per second is the backbone of trance rituals worldwide. In an fMRI study of experienced practitioners (Hove et al., 2016, <i>Cerebral Cortex</i>), drum-induced trance coupled the default-mode hub (posterior cingulate) with control regions and <b>decoupled the auditory pathway</b>: the brain tuned out the drum and turned inward. This session plays a synthesised frame drum with a slight human swing over a quiet theta layer, then the traditional faster \"call-back\" rhythm at the end.</p>",
+      vec![st("Settle", 2.0, &[4.0], "Close your eyes. Let the steady drum carry your attention."),
+           st("Trance", 15.0, &[4.2], "Let the drum fade into the background. Follow whatever images, memories or sensations arise, as if on a journey."),
+           st("Call-back", 3.0, &[7.0], "The drum quickens. Gently return the way you came, and bring back what you found.").ramp(20.0)]), tx("drum", 1.0, 0.0, 0.0)));
+    v.push(with_tex(p(g, "tlr", "Lucid Dreaming — Targeted Lucidity Reactivation", "Carr 2023 · 95 min", &[150.0], &[0.3], "brown", "binaural", "Research",
+      "<p><b>Targeted Lucidity Reactivation (TLR)</b> pairs a sound cue with a lucid mindset before sleep, then replays the cue quietly while you sleep. In the lab, 50% of participants had a lucid dream in a single nap (Carr et al., 2023). An at-home version still beat controls on the second night (Northwestern, 2024).</p><p><b>For best results:</b> sleep for 5–6 hours, get up for about 20 minutes, then start this session as you go back to bed. That puts the cue window in the REM-rich early morning. Keep the volume very low so the cues don't wake you.</p>",
+      vec![st("Training 1", 3.0, &[10.0], "Each time you hear this chime, pause and ask yourself: am I dreaming? Look at your hands, notice your breathing, and look around with curiosity.").tex(1.0),
+           st("Training 2", 3.0, &[9.0], "Again, when you hear the chime, become aware. Notice that you are aware. Imagine noticing the chime inside a dream, and realising: this is a dream.").tex(1.0),
+           st("Training 3", 3.0, &[8.0], "One more time. Chime, awareness, and the thought: I am dreaming. Now lie back and let yourself drift off to sleep, keeping that intention lightly in mind.").tex(1.0),
+           st("Fall asleep", 26.0, &[4.0], "Sleep.").tex(0.0).ramp(300.0),
+           st("Cue window", 60.0, &[4.0], "").tex(0.35)]), tx("tlr", 0.8, 0.0, 30.0)));
+    v.push(with_tex(p(g, "swspulses", "Slow-Wave Sleep Pulses — 0.8 Hz", "Ngo 2013 · 75 min", &[150.0], &[0.0], "brown", "binaural", "Research",
+      "<p>Ngo et al. (2013, <i>Journal of Sleep Research</i>) found that soft sound pulses at 0.8 Hz <b>increased and entrained the brain's slow oscillations</b> once stable deep sleep was established. The same group's closed-loop version, which times each pulse to the brain wave, also improved memory (<i>Neuron</i>, 2013). The study found that pulses <i>before</i> sleep delayed sleep onset, so this session waits 25 minutes before starting them.</p><p>This is an <b>open-loop approximation</b>: without an EEG headset, the pulses can't be timed to your brain waves. Keep the volume just barely audible.</p>",
+      vec![st("Fall asleep", 25.0, &[0.8], "Get comfortable and let yourself fall asleep. The soft pulses will begin later, once you are asleep.").tex(0.0),
+           st("Slow-wave pulses", 50.0, &[0.8], "").tex(0.5)]), tx("pulses", 0.6, 0.0, 0.0)));
+    v.push(with_tex(p(g, "kirtan", "Kirtan Kriya (Sa-Ta-Na-Ma)", "Innes 2017 RCT · 13 min", &[200.0], &[0.2], "none", "binaural", "Research",
+      "<p>A 12-minute chanting meditation from Kundalini yoga. In a randomised trial of adults with memory complaints, 12 minutes a day for 3 months significantly improved memory and cognitive performance, and the gains held at 6 months (Innes et al., 2017, <i>Journal of Alzheimer's Disease</i>). A bell plays one note per second to pace each syllable.</p><p><b>Technique:</b> on each syllable, touch your thumb to a fingertip: <b>Sa</b> index, <b>Ta</b> middle, <b>Na</b> ring, <b>Ma</b> little finger. Chant aloud, then whisper, then silently, then whisper, then aloud.</p>",
+      vec![st("Aloud", 2.0, &[10.0], "Chant aloud with the bell, one syllable per note. Saa. Taa. Naa. Maa. Touch your thumb to each fingertip in turn: index, middle, ring, little finger."),
+           st("Whisper", 2.0, &[8.0], "Now whisper the sounds, keeping the finger movements going."),
+           st("Silent", 4.0, &[6.0], "Now chant silently, in your mind only, still moving your fingers with the bell."),
+           st("Whisper", 2.0, &[8.0], "Return to a whisper."),
+           st("Aloud", 2.0, &[10.0], "Chant aloud once more."),
+           st("Rest", 1.0, &[10.0], "Stop. Breathe in deeply, stretch your arms up, and breathe out slowly. Rest in the silence.").tex(0.0)]), tx("kirtan", 0.8, 392.0, 0.0)));
+    v.push(with_tex(p(g, "bowls", "Singing Bowl Sound Bath", "Theta-beating bowls · 25 min", &[200.0], &[0.0], "none", "binaural", "Research",
+      "<p>Real singing bowls produce slow acoustic beats between nearly matched vibration modes. An EEG study found brain activity synchronising at these theta-range beat frequencies (Ahn et al., 2023). An observational study of 62 adults found a sharp drop in tension, anger and fatigue after a bowl meditation (Goldsby et al., 2017), and a 2025 systematic review covered 9 randomised trials. These bowls are synthesised so their modes beat at 6 Hz, gliding down to 4.5 Hz.</p>",
+      vec![st("Arrive", 3.0, &[7.0], "Lie down and let the sound of the bowls wash over you."),
+           st("Bath", 19.0, &[6.0], "Let the shimmer of each bowl ripple through your body.").ramp(120.0),
+           st("Deep", 3.0, &[4.5], "Rest in the stillness between the sounds.")]), tx("bowls", 0.9, 220.0, 9.0)));
+    v.push(with_tex(p(g, "mantra6", "Mantra / Rosary Rhythm — 6 Breaths per Minute", "Bernardi 2001 BMJ · 15 min", &[200.0], &[0.25], "none", "binaural", "Research",
+      "<p>Bernardi et al. (2001, <i>BMJ</i>) found that reciting either the rosary (Ave Maria) or a yoga mantra slowed breathing to about <b>six breaths a minute</b>. That synchronised heart-rate, blood-pressure and breathing rhythms and raised baroreflex sensitivity. A soft bell marks each 10-second breath cycle.</p>",
+      vec![st("Rhythm", 15.0, &[10.0], "Choose a short phrase: a prayer, a mantra, or a single word like peace. Breathe in as the bell sounds, then silently recite your phrase slowly through the whole breath out.").breath()]), tx("breathbell", 0.7, 528.0, 10.0)));
+    v.push(with_tex(p(g, "rain", "Natural Soundscape — Rain", "Gould van Praag 2017 · 30 min", &[200.0], &[0.15], "none", "binaural", "Research",
+      "<p>In an fMRI study, natural soundscapes shifted default-mode connectivity toward an outward, less ruminative focus and increased parasympathetic heart activity compared with artificial sounds (Gould van Praag et al., 2017, <i>Scientific Reports</i>). This session plays synthesised rain over a barely-audible alpha beat.</p>",
+      vec![st("Rain", 30.0, &[10.0], "Listen to the rain. Let your thoughts drift like the sound of falling water.")]), tx("rain", 1.0, 0.0, 0.0)));
+    v.push(with_tex(p(g, "omdrone", "Om Chanting — 136.1 Hz", "Kalyani 2011 fMRI · 15 min", &[136.1], &[0.9], "none", "monaural", "Research",
+      "<p>In an fMRI study, audible Om chanting (compared with a \"ssss\" control) <b>deactivated limbic regions</b> including the amygdala, hippocampus and anterior cingulate. The authors compare this to vagus-nerve stimulation (Kalyani et al., 2011, <i>International Journal of Yoga</i>). A slow bell paces each long chant, and the tone sits at 136.1 Hz, the traditional Om pitch.</p>",
+      vec![st("Om", 15.0, &[7.83], "Breathe in as the bell sounds. On the long breath out, chant Om aloud, feeling the vibration in your chest and head.").breath()]), tx("breathbell", 0.5, 272.2, 10.0)));
 
     // ================= Brainwave frequency library =================
     let g = "Brainwave Library";

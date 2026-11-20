@@ -6,6 +6,7 @@
 mod engine;
 mod plan;
 mod presets;
+mod texture;
 mod voice;
 
 use engine::{Mode, Noise, Shared};
@@ -220,6 +221,7 @@ fn handle(v: &Value, app: &mut App, shared: &Arc<Mutex<Shared>>, wv: &wry::WebVi
             sh.tone = f(v, "tone", 0.6) as f32;
             sh.noise = f(v, "noise", 0.35) as f32;
             sh.voice_vol = f(v, "voiceVol", 0.8) as f32;
+            sh.tex = f(v, "tex", 0.7) as f32;
         }
         "noise" => sh.noise_type = Noise::parse(s(v, "type")),
         "mode" => sh.mode = Mode::parse(s(v, "mode")),
