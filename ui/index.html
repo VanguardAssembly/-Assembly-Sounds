@@ -21,6 +21,12 @@ header .sub{color:var(--dim);font-size:13px}
 #sidebar::-webkit-scrollbar{width:8px}#sidebar::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
 .search{width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:inherit;font-size:13px;margin-bottom:4px}
 .count{font-size:11px;color:var(--dim);margin:0 4px 6px}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px}
+.fbtn{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:4px 10px;font:inherit;font-size:12px;cursor:pointer}
+.fbtn:hover{color:var(--text)}
+.fbtn.on{color:#fff;background:#8b7bff33;border-color:var(--accent)}
+.fbtn.f-Research.on{background:#3fd6a033;border-color:#3fd6a0}.fbtn.f-Gateway.on{background:#8b7bff33;border-color:#8b7bff}
+.fbtn.f-Traditional.on{background:#ffc34d33;border-color:#ffc34d}.fbtn.f-Speculative.on{background:#ff6b8b33;border-color:#ff6b8b}
 .group-title{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--dim);margin:12px 4px 8px;cursor:pointer;user-select:none;display:flex;justify-content:space-between}
 .group-title:hover{color:var(--text)}
 .preset{display:block;width:100%;text-align:left;background:var(--panel2);border:1px solid transparent;color:var(--text);padding:9px 12px;border-radius:10px;margin-bottom:6px;cursor:pointer;font:inherit}
@@ -159,6 +165,7 @@ const VOICE_LABEL={af_heart:"Heart · US female (warm)",af_bella:"Bella · US fe
 
 let PRESETS=[],selected=null,current=null,running=false,paused=false,S=null,scope=null,phase=0,lastT=performance.now(),chipSig="";
 const openGroups=new Set(["Gateway Experience","Research-based"]);
+let evFilter="";
 
 window.__init=init=>{
   PRESETS=init.presets;
@@ -174,13 +181,18 @@ window.__ended=()=>{running=false;paused=false;S=null;scope=null;$("breath").sty
 function renderSidebar(){
   const q=($("q")&&$("q").value||"").toLowerCase();
   const sb=$("sidebar");
-  let html=`<input class="search" id="q" placeholder="Search ${PRESETS.length} sessions… (e.g. sleep, 528, theta)" value="${esc(q)}"><div class="count" id="cnt"></div>`;
+  let html=`<input class="search" id="q" placeholder="Search ${PRESETS.length} sessions… (e.g. sleep, 528, theta)" value="${esc(q)}">`;
+  // evidence filters (click again to clear)
+  const FILTERS=[["","All"],["Research","🔬 Peer-reviewed"],["Gateway","◉ Gateway"],["Traditional","📜 Traditional"],["Speculative","✨ Speculative"]];
+  html+=`<div class="filters">`+FILTERS.map(([k,l])=>{const n=k?PRESETS.filter(p=>p.evidence===k).length:PRESETS.length;
+    return `<button class="fbtn f-${k||"all"}${evFilter===k?" on":""}" data-f="${k}" title="${k?"Show only "+l.replace(/^\S+ /,"")+" sessions":"Show every session"}">${l} ${n}</button>`}).join("")+`</div><div class="count" id="cnt"></div>`;
   let g="",shown=0;
-  const list=PRESETS.map((p,i)=>[p,i]).filter(([p])=>!q||(p.name+" "+p.short+" "+p.group+" "+p.evidence).toLowerCase().includes(q));
+  const list=PRESETS.map((p,i)=>[p,i]).filter(([p])=>(!evFilter||p.evidence===evFilter)&&(!q||(p.name+" "+p.short+" "+p.group+" "+p.evidence).toLowerCase().includes(q)));
+  const expandAll=q||evFilter;
   for(const [p,i] of list){
     if(p.group!==g){g=p.group;const n=list.filter(([x])=>x.group===g).length;
-      html+=`<div class="group-title" data-g="${esc(g)}"><span>${esc(g)}</span><span>${n} ${q||openGroups.has(g)?"▾":"▸"}</span></div>`}
-    if(!q&&!openGroups.has(g))continue;shown++;
+      html+=`<div class="group-title" data-g="${esc(g)}"><span>${esc(g)}</span><span>${n} ${expandAll||openGroups.has(g)?"▾":"▸"}</span></div>`}
+    if(!expandAll&&!openGroups.has(g))continue;shown++;
     html+=`<button class="preset${selected===p?" active":""}" data-i="${i}"><b>${esc(p.name)}<span class="ev ev-${esc(p.evidence)}">${esc(p.evidence)}</span></b><span>${esc(p.short)}</span></button>`;
   }
   html+=`<div class="group-title">Custom generator</div>
@@ -195,7 +207,9 @@ function renderSidebar(){
    <button class="btn" style="width:100%;margin-top:10px" id="cPlay">▶ Play custom</button>
   </div>`;
   sb.innerHTML=html;
-  $("cnt").textContent=q?`${list.length} match${list.length===1?"":"es"}`:`${PRESETS.length} sessions · click a group to expand`;
+  const fl=FILTERS.find(f=>f[0]===evFilter)[1].replace(/^\S+ /,"");
+  $("cnt").textContent=(q||evFilter)?`${list.length} ${evFilter?fl+" ":""}session${list.length===1?"":"s"}${q?` matching "${q}"`:""}`:`${PRESETS.length} sessions · click a group to expand`;
+  sb.querySelectorAll(".fbtn").forEach(b=>b.onclick=()=>{evFilter=evFilter===b.dataset.f?"":b.dataset.f;renderSidebar()});
   const qi=$("q");qi.oninput=()=>{const pos=qi.selectionStart;renderSidebar();const n=$("q");n.focus();n.setSelectionRange(pos,pos)};
   sb.querySelectorAll(".group-title[data-g]").forEach(t=>t.onclick=()=>{const g=t.dataset.g;openGroups.has(g)?openGroups.delete(g):openGroups.add(g);renderSidebar()});
   sb.querySelectorAll(".preset").forEach(b=>b.onclick=()=>{if(running)stop();select(PRESETS[+b.dataset.i])});
