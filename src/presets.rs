@@ -43,7 +43,7 @@ fn p(group: &str, id: &str, name: &str, short: &str, carriers: &[f64], gains: &[
         id: id.into(), group: group.into(), name: name.into(), short: short.into(),
         carriers: carriers.to_vec(), gains: gains.to_vec(), noise: noise.into(), mode: mode.into(),
         evidence: evidence.into(), about: about.into(), stages, live: false,
-        texture: None, visual: String::new(), tags: Vec::new(),
+        texture: None, visual: String::new(), tags: Vec::new(), info: None,
     }
 }
 
@@ -423,6 +423,7 @@ pub fn all() -> Vec<Preset> {
     v.push(p(g, "t256", "Verdi C = 256 Hz (scientific pitch)", "Alpha 10 Hz · 20 min", &[256.0], &[1.0], "pink", "binaural", "Traditional",
       "<p>\"Scientific pitch\" sets middle C to 256 Hz (a power of two). It's often associated with Verdi.</p>", vec![st("256", 20.0, &[10.0], C_REST)]));
 
+    crate::info::fill(&mut v);
     auto_tags(&mut v);
 
     // assign cue ids

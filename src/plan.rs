@@ -69,6 +69,19 @@ pub struct Preset {
     /// Search keywords (generated in presets::auto_tags).
     #[serde(default)]
     pub tags: Vec<String>,
+    /// Long-form explanation (filled in by info::fill).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub info: Option<Info>,
+}
+
+/// In-depth background shown in the session's info card.
+#[derive(Serialize, Deserialize, Clone, Debug, Default)]
+pub struct Info {
+    pub what: String,
+    pub origin: String,
+    pub era: String,
+    pub claims: String,
+    pub research: String,
 }
 fn d_noise() -> String { "pink".into() }
 fn d_mode() -> String { "binaural".into() }

@@ -4,6 +4,7 @@
 //! The window is a system WebView2 rendering the bundled UI; it has no network access
 //! (strict Content-Security-Policy) and talks to Rust only through a JSON IPC channel.
 mod engine;
+mod info;
 mod plan;
 mod presets;
 mod texture;

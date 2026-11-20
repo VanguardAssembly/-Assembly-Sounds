@@ -74,6 +74,12 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
 .ganz{position:fixed;inset:0;z-index:50;display:none;cursor:pointer;background:radial-gradient(ellipse at center,#c4241c 0%,#a81d17 55%,#8a1712 100%)}
 .ganz span{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#ffb3a855;font-size:12px}
 .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.deep{margin-top:12px;border-top:1px solid var(--line);padding-top:8px}
+.deep>summary{cursor:pointer;font-weight:600;color:var(--accent);list-style:none;user-select:none}
+.deep>summary::-webkit-details-marker{display:none}
+.deep>summary::before{content:"▸ "}.deep[open]>summary::before{content:"▾ "}
+.deep h4{margin:12px 0 4px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.deep p{margin:4px 0 8px;line-height:1.55}
 .tag{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:2px 8px;font:inherit;font-size:11px;cursor:pointer}
 .tag:hover{color:var(--text);border-color:var(--accent)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
@@ -255,12 +261,17 @@ function renderList(){
   $("plist").querySelectorAll(".preset").forEach(b=>b.onclick=()=>{if(running)stop();select(PRESETS[+b.dataset.i])});
 }
 
+let deepOpen=true;
+function deepInfo(p){const f=p.info;if(!f)return"";
+  const sec=(h,x)=>x?`<h4>${h}</h4>${x}`:"";
+  return `<details class="deep"${deepOpen?" open":""} ontoggle="deepOpen=this.open"><summary>📖 Full explanation</summary>`+
+    sec("What it is",f.what)+sec("Where it comes from",f.origin)+sec("When it began",f.era)+sec("What's claimed",f.claims)+sec("What the research found",f.research)+`</details>`;}
 function select(p,isCustom){
   selected=p;
   if(!isCustom){$("noiseType").value=p.noise;$("mode").value=p.mode}
   document.querySelectorAll(".preset").forEach(b=>b.classList.toggle("active",PRESETS[+b.dataset.i]===p));
   // `about` text comes from the app's own built-in library (trusted, contains simple markup)
-  $("about").innerHTML=p.about.startsWith("<h3")?p.about:`<h3>${esc(p.name)} <span class="ev ev-${esc(p.evidence)}">${esc(p.evidence)}</span></h3>${p.about}<p style="color:var(--dim)">Carriers: ${p.carriers.join(" / ")} Hz · ${p.stages.length} stage${p.stages.length>1?"s":""} · ${fmt(totalOf(p))} · default beat type: ${esc(p.mode)}</p>`+((p.tags&&p.tags.length)?`<div class="tags">${p.tags.map(x=>`<button class="tag" data-t="${esc(x)}">#${esc(x)}</button>`).join("")}</div>`:"");
+  $("about").innerHTML=p.about.startsWith("<h3")?p.about:`<h3>${esc(p.name)} <span class="ev ev-${esc(p.evidence)}">${esc(p.evidence)}</span></h3>${p.about}<p style="color:var(--dim)">Carriers: ${p.carriers.join(" / ")} Hz · ${p.stages.length} stage${p.stages.length>1?"s":""} · ${fmt(totalOf(p))} · default beat type: ${esc(p.mode)}</p>`+((p.tags&&p.tags.length)?`<div class="tags">${p.tags.map(x=>`<button class="tag" data-t="${esc(x)}">#${esc(x)}</button>`).join("")}</div>`:"")+deepInfo(p);
   $("about").querySelectorAll(".tag").forEach(b=>b.onclick=()=>setSearch(b.dataset.t));
   $("stName").textContent=p.name;$("stBand").textContent=isFinite(totalOf(p))?fmt(totalOf(p))+" session":"open-ended";
   $("cue").textContent=p.stages[0].cue||"";$("clock").firstChild.textContent="00:00";$("remain").innerHTML="&nbsp;";$("playhead").style.left="0";
