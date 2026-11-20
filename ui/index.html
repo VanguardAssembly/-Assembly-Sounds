@@ -26,6 +26,7 @@ header .sub{color:var(--dim);font-size:13px}
 .fbtn:hover{color:var(--text)}
 .fbtn.on{color:#fff;background:#8b7bff33;border-color:var(--accent)}
 .fbtn.f-Research.on{background:#3fd6a033;border-color:#3fd6a0}.fbtn.f-Gateway.on{background:#8b7bff33;border-color:#8b7bff}
+.fbtn.f-alt{border-color:#4fd1c566}.fbtn.f-alt.on{background:#4fd1c533;border-color:#4fd1c5}
 .fbtn.f-Traditional.on{background:#ffc34d33;border-color:#ffc34d}.fbtn.f-Speculative.on{background:#ff6b8b33;border-color:#ff6b8b}
 .group-title{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--dim);margin:12px 4px 8px;cursor:pointer;user-select:none;display:flex;justify-content:space-between}
 .group-title:hover{color:var(--text)}
@@ -189,11 +190,12 @@ function renderSidebar(){
   const sb=$("sidebar");
   let html=`<input class="search" id="q" placeholder="Search ${PRESETS.length} sessions… (e.g. sleep, 528, theta)" value="${esc(q)}">`;
   // evidence filters (click again to clear)
-  const FILTERS=[["","All"],["Research","🔬 Peer-reviewed"],["Gateway","◉ Gateway"],["Traditional","📜 Traditional"],["Speculative","✨ Speculative"]];
-  html+=`<div class="filters">`+FILTERS.map(([k,l])=>{const n=k?PRESETS.filter(p=>p.evidence===k).length:PRESETS.length;
-    return `<button class="fbtn f-${k||"all"}${evFilter===k?" on":""}" data-f="${k}" title="${k?"Show only "+l.replace(/^\S+ /,"")+" sessions":"Show every session"}">${l} ${n}</button>`}).join("")+`</div><div class="count" id="cnt"></div>`;
+  const FILTERS=[["","All"],["Research","🔬 Peer-reviewed"],["Gateway","◉ Gateway"],["Traditional","📜 Traditional"],["Speculative","✨ Speculative"],["@Altered States","🌀 Altered States"]];
+  const match=(p,k)=>!k||(k[0]==="@"?p.group===k.slice(1):p.evidence===k);
+  html+=`<div class="filters">`+FILTERS.map(([k,l])=>{const n=PRESETS.filter(p=>match(p,k)).length;
+    return `<button class="fbtn f-${k[0]==="@"?"alt":(k||"all")}${evFilter===k?" on":""}" data-f="${k}" title="${k?"Show only "+l.replace(/^\S+ /,"")+" sessions":"Show every session"}">${l} ${n}</button>`}).join("")+`</div><div class="count" id="cnt"></div>`;
   let g="",shown=0;
-  const list=PRESETS.map((p,i)=>[p,i]).filter(([p])=>(!evFilter||p.evidence===evFilter)&&(!q||(p.name+" "+p.short+" "+p.group+" "+p.evidence).toLowerCase().includes(q)));
+  const list=PRESETS.map((p,i)=>[p,i]).filter(([p])=>match(p,evFilter)&&(!q||(p.name+" "+p.short+" "+p.group+" "+p.evidence).toLowerCase().includes(q)));
   const expandAll=q||evFilter;
   for(const [p,i] of list){
     if(p.group!==g){g=p.group;const n=list.filter(([x])=>x.group===g).length;
