@@ -1,0 +1,7 @@
+/target
+/dist
+tools/presets.json
+tools/ui_test.html
+*.wav
+/.claude
+/fbt
