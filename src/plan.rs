@@ -66,6 +66,9 @@ pub struct Preset {
     /// "" | "ganzfeld"
     #[serde(default, skip_serializing_if = "String::is_empty")]
     pub visual: String,
+    /// Search keywords (generated in presets::auto_tags).
+    #[serde(default)]
+    pub tags: Vec<String>,
 }
 fn d_noise() -> String { "pink".into() }
 fn d_mode() -> String { "binaural".into() }

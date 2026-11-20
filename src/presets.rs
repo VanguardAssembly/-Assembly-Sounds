@@ -43,7 +43,7 @@ fn p(group: &str, id: &str, name: &str, short: &str, carriers: &[f64], gains: &[
         id: id.into(), group: group.into(), name: name.into(), short: short.into(),
         carriers: carriers.to_vec(), gains: gains.to_vec(), noise: noise.into(), mode: mode.into(),
         evidence: evidence.into(), about: about.into(), stages, live: false,
-        texture: None, visual: String::new(),
+        texture: None, visual: String::new(), tags: Vec::new(),
     }
 }
 
@@ -423,6 +423,8 @@ pub fn all() -> Vec<Preset> {
     v.push(p(g, "t256", "Verdi C = 256 Hz (scientific pitch)", "Alpha 10 Hz · 20 min", &[256.0], &[1.0], "pink", "binaural", "Traditional",
       "<p>\"Scientific pitch\" sets middle C to 256 Hz (a power of two). It's often associated with Verdi.</p>", vec![st("256", 20.0, &[10.0], C_REST)]));
 
+    auto_tags(&mut v);
+
     // assign cue ids
     for pr in v.iter_mut() {
         for s in pr.stages.iter_mut() {
@@ -434,4 +436,86 @@ pub fn all() -> Vec<Preset> {
 
 fn crate_band(hz: f64) -> &'static str {
     if hz < 0.75 { "Epsilon" } else if hz < 4.0 { "Delta" } else if hz < 8.0 { "Theta" } else if hz < 13.0 { "Alpha" } else if hz < 30.0 { "Beta" } else if hz < 90.0 { "Gamma" } else if hz < 150.0 { "Hypergamma" } else { "Lambda" }
+}
+
+/// Give every session searchable tags: group synonyms, evidence, bands, beat type,
+/// sound texture, carrier tones and topic keywords found in its text.
+fn auto_tags(v: &mut [Preset]) {
+    const GROUP: &[(&str, &[&str])] = &[
+        ("Gateway Experience", &["gateway", "gateway experience", "gateway process", "monroe", "hemi-sync", "hemisync", "focus", "focus level", "cia", "wave i", "obe", "out of body"]),
+        ("Lifeline (Focus 22–27)", &["lifeline", "monroe", "gateway", "focus", "focus level", "afterlife", "hemi-sync", "spiritual"]),
+        ("Research-based", &["research", "science", "scientific", "study", "evidence"]),
+        ("Altered States", &["altered states", "altered state", "asc", "consciousness", "trance", "research"]),
+        ("Purpose & Tradition", &["purpose", "tradition", "intention"]),
+        ("Brainwave Library", &["brainwave", "brain wave", "frequency", "library", "single frequency"]),
+        ("Schumann Resonances", &["schumann", "earth", "resonance", "grounding", "7.83"]),
+        ("Solfeggio Frequencies", &["solfeggio", "healing tones", "sacred", "frequency"]),
+        ("Chakra Series", &["chakra", "chakras", "kundalini", "energy centres", "yoga", "spiritual"]),
+        ("Cosmic Octave (Planets)", &["planet", "planets", "cosmic", "cosmic octave", "cousto", "astrology", "astronomy"]),
+        ("Tunings", &["tuning", "pitch", "432", "440", "music"]),
+    ];
+    // (needle in lowercase text, tags to add)
+    const TOPICS: &[(&str, &[&str])] = &[
+        ("sleep", &["sleep"]), ("insomnia", &["sleep", "insomnia"]), ("nap", &["nap", "sleep"]),
+        ("dream", &["dream", "dreams"]), ("lucid", &["lucid", "lucid dreaming"]),
+        ("meditat", &["meditation"]), ("zen", &["zen", "meditation"]), ("mindful", &["mindfulness"]),
+        ("focus", &["focus", "concentration"]), ("study", &["study", "learning"]), ("vigilance", &["focus", "alertness"]),
+        ("attention", &["attention", "focus"]), ("adhd", &["adhd"]), ("memory", &["memory"]),
+        ("anxiety", &["anxiety", "calm"]), ("stress", &["stress", "calm"]), ("relax", &["relaxation", "calm"]), ("calm", &["calm"]),
+        ("creativ", &["creativity"]), ("insight", &["insight", "creativity"]), ("problem", &["problem solving"]),
+        ("energ", &["energy"]), ("morning", &["morning", "energy"]), ("pain", &["pain"]), ("headache", &["headache", "pain"]),
+        ("heal", &["healing"]), ("restor", &["restoration"]),
+        ("astral", &["astral projection", "obe", "out of body"]), ("out-of-body", &["obe", "out of body", "astral projection"]),
+        ("remote viewing", &["remote viewing", "stargate", "psi"]), ("stargate", &["stargate", "cia"]),
+        ("shaman", &["shamanic", "shaman", "journey"]), ("journey", &["journey"]), ("trance", &["trance"]),
+        ("hypno", &["hypnosis", "hypnotic", "trance"]), ("hypnagog", &["hypnagogic", "twilight"]),
+        ("chant", &["chant", "chanting"]), ("mantra", &["mantra"]), ("rosary", &["prayer", "rosary"]), ("prayer", &["prayer"]),
+        (" om", &["om", "aum"]), ("kirtan", &["kirtan", "kundalini"]), ("yoga", &["yoga"]), ("nidra", &["yoga nidra", "nsdr"]),
+        ("breath", &["breathing", "breath"]), ("hrv", &["hrv", "heart rate variability"]), ("heart", &["heart"]),
+        ("visualis", &["visualization", "visualisation"]), ("imagery", &["imagery"]), ("psilocybin", &["psychedelic"]),
+        ("third eye", &["third eye", "pineal"]), ("pineal", &["pineal", "third eye", "dmt"]),
+        ("compassion", &["compassion", "loving-kindness"]), ("gratitude", &["gratitude"]), ("bliss", &["bliss", "euphoria"]),
+        ("ganzfeld", &["ganzfeld", "red light", "sensory"]), ("bowl", &["singing bowl", "tibetan", "sound bath"]),
+        ("rain", &["rain", "nature"]), ("nature", &["nature"]), ("drum", &["drum", "drumming", "rhythm"]),
+        ("gamma", &["gamma"]), ("40 hz", &["40 hz", "gamma"]), ("alzheimer", &["alzheimer", "genus", "memory"]),
+        ("intuition", &["intuition"]), ("intention", &["intention"]), ("manifest", &["manifestation"]),
+        ("grounding", &["grounding"]), ("432", &["432"]), ("528", &["528", "love frequency"]),
+    ];
+    let band = |hz: f64| -> &'static str {
+        if hz <= 0.0 { "" } else if hz < 0.75 { "epsilon" } else if hz < 4.0 { "delta" } else if hz < 8.0 { "theta" } else if hz < 13.0 { "alpha" }
+        else if hz < 30.0 { "beta" } else if hz < 90.0 { "gamma" } else if hz < 150.0 { "hypergamma" } else { "lambda" }
+    };
+    for p in v.iter_mut() {
+        let mut tags: Vec<String> = Vec::new();
+        let mut add = |s: &str| { let s = s.to_lowercase(); if !s.is_empty() && !tags.contains(&s) { tags.push(s); } };
+        for (g, ts) in GROUP { if p.group == *g { for t in *ts { add(t); } } }
+        add(&p.evidence);
+        if p.evidence == "Research" { add("peer-reviewed"); add("peer reviewed"); add("science"); }
+        if p.evidence == "Gateway" { add("gateway"); add("monroe"); }
+        add(&p.mode);
+        if p.mode == "binaural" { add("headphones"); add("binaural beats"); }
+        if p.mode == "isochronic" { add("speakers"); add("pulses"); }
+        let gains_on = p.gains.iter().any(|g| *g > 0.0);
+        for s in &p.stages { for b in &s.beats { if gains_on || p.texture.is_some() { add(band(*b)); } } }
+        for c in &p.carriers { if *c > 0.0 { add(&format!("{}", (*c * 100.0).round() / 100.0)); } }
+        if let Some(tx) = &p.texture {
+            let k: &[&str] = match tx.kind.as_str() {
+                "drum" => &["drum", "drumming", "shamanic", "rhythm", "trance"],
+                "bowls" => &["singing bowl", "tibetan", "sound bath", "bowls"],
+                "kirtan" => &["kirtan", "chant", "mantra", "bell"],
+                "tlr" => &["lucid", "lucid dreaming", "dream", "sleep", "cue"],
+                "breathbell" => &["breathing", "bell", "breath"],
+                "pulses" => &["sleep", "deep sleep", "slow wave", "pink noise"],
+                "rain" => &["rain", "nature", "soundscape"],
+                _ => &[],
+            };
+            for t in k { add(t); }
+        }
+        if p.visual == "ganzfeld" { add("ganzfeld"); add("red light"); add("visual"); }
+        if p.stages.iter().any(|s| s.breath) { add("breathing"); add("breath pacer"); }
+        let text = format!(" {} {} {} {}", p.name, p.short, p.about,
+            p.stages.iter().map(|s| format!("{} {}", s.name, s.cue)).collect::<Vec<_>>().join(" ")).to_lowercase();
+        for (needle, ts) in TOPICS { if text.contains(needle) { for t in *ts { add(t); } } }
+        p.tags = tags;
+    }
 }
