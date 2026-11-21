@@ -37,6 +37,8 @@ struct Core {
     shared: Arc<Mutex<Shared>>,
     voices: Vec<String>,
     audio_error: Option<String>,
+    /// <app data dir>/settings.json, known once Tauri has started.
+    settings_path: std::sync::OnceLock<std::path::PathBuf>,
 }
 
 #[tauri::command]
@@ -82,6 +84,7 @@ pub fn run() {
         shared,
         voices,
         audio_error,
+        settings_path: std::sync::OnceLock::new(),
     });
 
     let ticker = core.clone();
@@ -89,6 +92,9 @@ pub fn run() {
         .manage(core)
         .invoke_handler(tauri::generate_handler![msg])
         .setup(move |a| {
+            if let Ok(dir) = a.path().app_data_dir() {
+                let _ = ticker.settings_path.set(dir.join("settings.json"));
+            }
             let h = a.handle().clone();
             std::thread::spawn(move || loop {
                 std::thread::sleep(Duration::from_millis(33));
@@ -113,7 +119,8 @@ fn handle(v: &Value, app: &mut App, core: &Core, eval: &dyn Fn(&str)) {
     let mut sh = core.shared.lock().unwrap();
     match s(v, "cmd") {
         "ready" => {
-            let init = json!({ "presets": app.presets, "voices": core.voices, "voice": app.voice, "audioError": core.audio_error });
+            let settings = core.settings_path.get().map(|p| load_settings(p)).unwrap_or_else(|| json!({}));
+            let init = json!({ "presets": app.presets, "voices": core.voices, "voice": app.voice, "audioError": core.audio_error, "settings": settings });
             drop(sh);
             eval(&format!("window.__init({})", init));
         }
@@ -186,6 +193,11 @@ fn handle(v: &Value, app: &mut App, core: &Core, eval: &dyn Fn(&str)) {
             }
         }
         "speak" => app.last_stage = usize::MAX,
+        "save" => {
+            if let (Some(path), Some(st)) = (core.settings_path.get(), v.get("settings")) {
+                save_settings(path, st);
+            }
+        }
         _ => {}
     }
 }
@@ -231,4 +243,22 @@ fn tick(app: &mut App, shared: &Arc<Mutex<Shared>>, eval: &dyn Fn(&str)) {
     }
     let state = json!({ "paused": paused, "elapsed": elapsed, "stage": k, "beats": beats, "carriers": cars });
     eval(&format!("window.__state({},[{}])", state, scope));
+}
+
+/// Reads the saved UI settings; anything missing or malformed just means defaults.
+fn load_settings(path: &std::path::Path) -> Value {
+    std::fs::read_to_string(path).ok()
+        .and_then(|s| serde_json::from_str::<Value>(&s).ok())
+        .filter(|v| v.is_object())
+        .unwrap_or_else(|| json!({}))
+}
+
+/// Saves the UI settings (a small JSON object; anything else or anything oversized is ignored).
+fn save_settings(path: &std::path::Path, st: &Value) {
+    if !st.is_object() { return; }
+    let Ok(text) = serde_json::to_string_pretty(st) else { return };
+    if text.len() > 64 * 1024 { return; }
+    if let Some(dir) = path.parent() { let _ = std::fs::create_dir_all(dir); }
+    let tmp = path.with_extension("json.tmp");
+    if std::fs::write(&tmp, text).is_ok() { let _ = std::fs::rename(&tmp, path); }
 }

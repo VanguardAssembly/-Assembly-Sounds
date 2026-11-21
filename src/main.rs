@@ -34,6 +34,8 @@ struct App {
     cache: voice::Cache,
     /// FOCUS_SELFTEST=<report path>: drive the real UI at zero volume, write a report, exit.
     selftest: Option<(String, Option<Instant>)>,
+    /// User settings (voice, levels, last session…) saved by the UI.
+    settings_path: std::path::PathBuf,
     quit: bool,
 }
 
@@ -84,7 +86,7 @@ fn main() {
     let event_loop = EventLoopBuilder::<UserEvent>::with_user_event().build();
     let proxy = event_loop.create_proxy();
     let window = WindowBuilder::new()
-        .with_title("Focus — Binaural Beats Generator")
+        .with_title("Assembly Sounds — Binaural Beats Generator")
         .with_inner_size(LogicalSize::new(1320.0, 900.0))
         .with_min_inner_size(LogicalSize::new(900.0, 600.0))
         .build(&event_loop)
@@ -94,6 +96,7 @@ fn main() {
     let data_dir = std::env::var_os("LOCALAPPDATA")
         .map(|p| std::path::PathBuf::from(p).join("FocusBinaural"))
         .unwrap_or_else(std::env::temp_dir);
+    let settings_path = data_dir.join("settings.json");
     let mut ctx = WebContext::new(Some(data_dir));
     let webview = WebViewBuilder::new_with_web_context(&mut ctx)
         .with_html(include_str!("../ui/index.html"))
@@ -112,6 +115,7 @@ fn main() {
         voice: voices.iter().find(|v| *v == "af_heart").or(voices.first()).cloned().unwrap_or_default(),
         cache: voice::Cache::default(),
         selftest: std::env::var("FOCUS_SELFTEST").ok().map(|p| (p, None)),
+        settings_path,
         quit: false,
     };
     let mut next_tick = Instant::now();
@@ -157,7 +161,9 @@ fn handle(v: &Value, app: &mut App, shared: &Arc<Mutex<Shared>>, wv: &wry::WebVi
     let mut sh = shared.lock().unwrap();
     match s(v, "cmd") {
         "ready" => {
-            let init = json!({ "presets": app.presets, "voices": voices, "voice": app.voice, "audioError": audio_error });
+            // The self-test always starts from defaults so it is repeatable.
+            let settings = if app.selftest.is_some() { json!({}) } else { load_settings(&app.settings_path) };
+            let init = json!({ "presets": app.presets, "voices": voices, "voice": app.voice, "audioError": audio_error, "settings": settings });
             drop(sh);
             let _ = wv.evaluate_script(&format!("window.__init({})", init));
             if let Some(st) = app.selftest.as_mut() {
@@ -234,6 +240,11 @@ fn handle(v: &Value, app: &mut App, shared: &Arc<Mutex<Shared>>, wv: &wry::WebVi
                 if name == "off" { sh.voice_cancel = true; }
             }
         }
+        "save" => {
+            if app.selftest.is_none() {
+                if let Some(st) = v.get("settings") { save_settings(&app.settings_path, st); }
+            }
+        }
         "speak" => {
             // replay current stage cue
             app.last_stage = usize::MAX;
@@ -308,4 +319,22 @@ fn dump_cues(path: &str) {
     }
     let list: Vec<Value> = seen.into_iter().map(|(id, text)| json!({"id": id, "text": text})).collect();
     let _ = std::fs::write(path, serde_json::to_string_pretty(&list).unwrap());
+}
+
+/// Reads the saved UI settings; anything missing or malformed just means defaults.
+fn load_settings(path: &std::path::Path) -> Value {
+    std::fs::read_to_string(path).ok()
+        .and_then(|s| serde_json::from_str::<Value>(&s).ok())
+        .filter(|v| v.is_object())
+        .unwrap_or_else(|| json!({}))
+}
+
+/// Saves the UI settings (a small JSON object; anything else or anything oversized is ignored).
+fn save_settings(path: &std::path::Path, st: &Value) {
+    if !st.is_object() { return; }
+    let Ok(text) = serde_json::to_string_pretty(st) else { return };
+    if text.len() > 64 * 1024 { return; }
+    if let Some(dir) = path.parent() { let _ = std::fs::create_dir_all(dir); }
+    let tmp = path.with_extension("json.tmp");
+    if std::fs::write(&tmp, text).is_ok() { let _ = std::fs::rename(&tmp, path); }
 }

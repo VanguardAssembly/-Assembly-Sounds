@@ -1,4 +1,8 @@
-# ◉ Focus — Binaural Beats Generator
+# Assembly Sounds — Binaural Beats Generator
+
+![Assembly Sounds](branding/logo_wide.png)
+
+*(formerly "Focus")* · by Vanguard Assembly
 
 A native Windows app written in **Rust** that generates binaural, monaural and isochronic beats in real time. It includes guided sessions modelled on the Monroe Institute's *Gateway Experience* Focus levels, and a library of **132 sessions** drawn from published research and popular frequency traditions.
 
@@ -27,6 +31,11 @@ A native Windows app written in **Rust** that generates binaural, monaural and i
 | Tunings | 3 | 432 / 440 / 256 Hz |
 
 Every preset is tagged **Research**, **Gateway**, **Traditional** or **Speculative**, so you always know how much evidence is behind it.
+
+### Also
+- **Android app** (Android 8.0+): the same engine and sessions with a phone layout (Sessions / Player / Info tabs) and a lock-screen media player. Built by `.github/workflows/android.yml`.
+- **Remembers your settings:** narrator voice, volumes, noise, beat type, breath pacer, custom generator values and the last session you played are saved in `settings.json` in the app's data folder.
+- **VHS-style intro** on launch (tap or press Esc to skip; no flashing).
 
 ## Safety & privacy
 - **No network access.** The UI runs under a strict Content-Security-Policy (`default-src 'none'`), and the app makes no web requests and collects no telemetry.

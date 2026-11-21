@@ -1,14 +1,14 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "Focus Binaural",
-  "version": "1.2.0",
+  "productName": "Assembly Sounds",
+  "version": "1.3.0",
   "identifier": "com.vanguardassembly.focusbinaural",
   "build": {
     "frontendDist": "dist"
   },
   "app": {
     "windows": [
-      { "label": "main", "title": "Focus — Binaural Beats Generator", "width": 1200, "height": 820 }
+      { "label": "main", "title": "Assembly Sounds", "width": 1200, "height": 820 }
     ],
     "security": { "csp": null }
   },

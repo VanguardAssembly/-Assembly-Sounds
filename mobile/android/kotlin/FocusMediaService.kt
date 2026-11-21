@@ -97,7 +97,7 @@ class FocusMediaService : Service() {
         val meta = MediaMetadataCompat.Builder()
             .putString(MediaMetadataCompat.METADATA_KEY_TITLE, title)
             .putString(MediaMetadataCompat.METADATA_KEY_ARTIST, sub)
-            .putString(MediaMetadataCompat.METADATA_KEY_ALBUM, "Focus Binaural")
+            .putString(MediaMetadataCompat.METADATA_KEY_ALBUM, "Assembly Sounds")
             .putLong(MediaMetadataCompat.METADATA_KEY_DURATION, if (durMs > 0) durMs else -1L)
         art?.let { meta.putBitmap(MediaMetadataCompat.METADATA_KEY_ART, it) }
         session.setMetadata(meta.build())
