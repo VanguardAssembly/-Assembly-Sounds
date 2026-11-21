@@ -1,0 +1,63 @@
+name: Android APK
+
+on:
+  push:
+    branches: [main]
+    paths: ["mobile/**", "src/**", "ui/**", "voice/**", ".github/workflows/android.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: mobile
+          cache-all-crates: true
+
+      - name: Install Tauri CLI
+        run: cargo install tauri-cli --version "^2" --locked
+
+      - name: Generate Android project and icons
+        working-directory: mobile
+        run: |
+          export NDK_HOME="$ANDROID_NDK_LATEST_HOME"
+          cargo tauri android init --ci
+          cargo tauri icon icon.png
+
+      - name: Build release APK (arm64 + armv7)
+        working-directory: mobile
+        run: |
+          export NDK_HOME="$ANDROID_NDK_LATEST_HOME"
+          cargo tauri android build --apk --target aarch64 armv7 --ci
+
+      - name: Sign APK with a test key
+        run: |
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          APK=$(find mobile/gen/android -name "*release*unsigned.apk" | head -1)
+          echo "Unsigned APK: $APK"
+          keytool -genkeypair -keystore test.jks -storepass android -keypass android -alias focus \
+            -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Focus Binaural Test Build"
+          "$BT/zipalign" -f -p 4 "$APK" aligned.apk
+          "$BT/apksigner" sign --ks test.jks --ks-pass pass:android --out FocusBinaural-test.apk aligned.apk
+          "$BT/apksigner" verify FocusBinaural-test.apk
+          ls -la FocusBinaural-test.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FocusBinaural-android
+          path: FocusBinaural-test.apk

@@ -1,0 +1,31 @@
+[package]
+name = "focus_mobile"
+version = "1.2.0"
+edition = "2024"
+description = "Android build of Focus — Binaural Beats Generator (Tauri shell around the same Rust engine)"
+license = "MIT"
+
+# Stand-alone workspace so the desktop crate in the parent folder is unaffected.
+[workspace]
+
+[lib]
+name = "focus_mobile_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+cpal = "0.18.2"
+include_dir = "0.7.4"
+lewton = "0.10.2"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

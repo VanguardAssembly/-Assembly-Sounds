@@ -5,3 +5,9 @@ tools/ui_test.html
 *.wav
 /.claude
 /fbt
+
+# Android build outputs (generated in CI)
+/mobile/target
+/mobile/dist
+/mobile/gen
+/mobile/icons
