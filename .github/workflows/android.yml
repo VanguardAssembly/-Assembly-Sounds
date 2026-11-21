@@ -43,6 +43,8 @@ jobs:
         working-directory: mobile
         run: |
           export NDK_HOME="$ANDROID_NDK_LATEST_HOME"
+          # The CLI checks frontendDist exists up front; build.rs then rewrites it for mobile.
+          mkdir -p dist && cp ../ui/index.html dist/index.html
           cargo tauri android build --apk --target aarch64 armv7 --ci
 
       - name: Sign APK with a test key
