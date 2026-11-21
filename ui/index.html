@@ -82,6 +82,26 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
 .deep p{margin:4px 0 8px;line-height:1.55}
 .tag{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:2px 8px;font:inherit;font-size:11px;cursor:pointer}
 .tag:hover{color:var(--text);border-color:var(--accent)}
+.mtabs{display:none}
+@media(max-width:900px){
+  header{padding:10px 14px}h1{font-size:17px}header .sub{display:none}
+  .warn,.err{margin:8px 10px 0;font-size:12px}
+  .layout{padding:10px 10px 84px;gap:10px}
+  #sidebar{position:static;max-height:none;overflow:visible}
+  .layout>*{min-width:0}select{max-width:100%}
+  .stage{height:min(62vw,300px)}
+  .stagename,.clock{font-size:18px}.cue{font-size:14px}
+  .controls{gap:8px}.controls .btn{padding:12px 14px;flex:1 1 auto}
+  .sliders{grid-template-columns:1fr 1fr;gap:10px 14px}
+  .cards{margin-top:0}
+  body[data-tab=sessions] main{display:none}
+  body[data-tab=player] #sidebar,body[data-tab=player] .cards,body[data-tab=player] .warn{display:none}
+  body[data-tab=info] #sidebar,body[data-tab=info] .warn,body[data-tab=info] main>:not(.cards){display:none}
+  .mtabs{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;background:#0b0b18f2;border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+  .mtabs button{flex:1;background:none;border:0;color:var(--dim);font:inherit;font-size:12px;padding:6px 0;border-radius:10px;display:flex;flex-direction:column;align-items:center;gap:2px}
+  .mtabs button b{font-size:19px;font-weight:400}
+  .mtabs button.on{color:#fff;background:#8b7bff26}
+}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
 </style>
 </head>
@@ -167,6 +187,11 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
     </div>
   </main>
 </div>
+<nav class="mtabs" id="mtabs">
+  <button data-tab="sessions"><b>☰</b>Sessions</button>
+  <button data-tab="player"><b>▶</b>Player</button>
+  <button data-tab="info"><b>📖</b>Info</button>
+</nav>
 
 <script>
 "use strict";
@@ -358,6 +383,14 @@ function frame(now){
 }
 requestAnimationFrame(frame);
 send({cmd:"ready"});
+
+// ---- phone layout: one section at a time (no effect on wide screens) ----
+const isPhone=()=>matchMedia("(max-width:900px)").matches;
+function setTab(tab){document.body.dataset.tab=tab;document.querySelectorAll("#mtabs button").forEach(b=>b.classList.toggle("on",b.dataset.tab===tab));window.scrollTo(0,0)}
+document.querySelectorAll("#mtabs button").forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+$("sidebar").addEventListener("click",e=>{if(isPhone()&&e.target.closest(".preset,#cPlay"))setTimeout(()=>setTab("player"),0)});
+$("about").addEventListener("click",e=>{if(isPhone()&&e.target.closest(".tag"))setTab("sessions")});
+setTab("sessions");
 </script>
 </body>
 </html>
