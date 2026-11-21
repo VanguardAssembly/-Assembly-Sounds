@@ -391,6 +391,28 @@ document.querySelectorAll("#mtabs button").forEach(b=>b.onclick=()=>setTab(b.dat
 $("sidebar").addEventListener("click",e=>{if(isPhone()&&e.target.closest(".preset,#cPlay"))setTimeout(()=>setTab("player"),0)});
 $("about").addEventListener("click",e=>{if(isPhone()&&e.target.closest(".tag"))setTab("sessions")});
 setTab("sessions");
+
+// ---- Android lock-screen / notification player (window.FocusMedia exists only in the Android app) ----
+let mediaSig="";
+function mediaSync(){
+  const M=window.FocusMedia;if(!M)return;
+  if(!running||!current){if(mediaSig!=="off"){mediaSig="off";try{M.stop()}catch(e){}}return}
+  const p=current,s=(S&&p.stages[S.stage])||p.stages[0],tot=totalOf(p);
+  const sub=(s?s.name:"")+(S?" · "+band(S.beats[0])[1]:"");
+  const sig=[p.name,sub,paused].join("|");
+  if(sig===mediaSig)return;mediaSig=sig;
+  try{M.update(p.name,sub,!paused,Math.round((S?S.elapsed:0)*1000),isFinite(tot)?Math.round(tot*1000):-1)}catch(e){}
+}
+{const u=update,b=updateButtons;update=function(){u();mediaSync()};updateButtons=function(){b();mediaSync()}}
+$("timeline").addEventListener("click",()=>{mediaSig=""});
+window.__media=(a,arg)=>{
+  if(a==="play"){if(!running){if(selected)start(selected)}else if(paused)$("play").click()}
+  else if(a==="pause"){if(running&&!paused)$("play").click()}
+  else if(a==="stop")stop();
+  else if(a==="next"&&running)$("next").click();
+  else if(a==="prev"&&running)$("prev").click();
+  else if(a==="seek"&&running&&current&&!current.live&&isFinite(totalOf(current))){send({cmd:"seek",t:arg/1000});mediaSig=""}
+};
 </script>
 </body>
 </html>
