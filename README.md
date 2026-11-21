@@ -4,7 +4,7 @@
 
 *(formerly "Focus")* · by Vanguard Assembly
 
-A native Windows app written in **Rust** that generates binaural, monaural and isochronic beats in real time. It includes guided sessions modelled on the Monroe Institute's *Gateway Experience* Focus levels, and a library of **132 sessions** drawn from published research and popular frequency traditions.
+A native Windows app written in **Rust** that generates binaural, monaural and isochronic beats in real time. It includes guided sessions inspired by the Monroe Institute's *Gateway Experience* Focus levels, and a library of **132 sessions** drawn from published research and popular frequency traditions.
 
 ## Features
 - **Real-time Rust audio engine** (cpal/WASAPI). Tones are phase-continuous and glide smoothly between stages, with up to 8 layered tone pairs per session.
@@ -18,8 +18,8 @@ A native Windows app written in **Rust** that generates binaural, monaural and i
 ### Session library
 | Group | Count | Notes |
 |---|---|---|
-| Gateway Experience | 5 | Focus 3, 10, 12, 15, 21 |
-| Lifeline (Focus 22–27) | 4 | Interpretations, labelled speculative |
+| Inspired by the Gateway Experience | 5 | Focus 3, 10, 12, 15, 21 |
+| Inspired by Lifeline (Focus 22–27) | 4 | Interpretations, labelled speculative |
 | Research-based | 17 | Each cites its study (Lane 1998, Jirakittayakorn 2017/2018, Lutz 2004, Voss 2014, Lacaux 2021, Martorell 2019 …) |
 | **Altered States** | 10 | Ranked by research volume: self-hypnosis, Ganzfeld (red light), drumming trance, lucid-dream TLR, slow-wave sleep pulses, Kirtan Kriya, singing bowls, mantra rhythm, rain soundscape, Om |
 | Purpose & Tradition | 15 | OBE, remote viewing, shamanic, Om, sleep, study, energy … |
@@ -30,7 +30,7 @@ A native Windows app written in **Rust** that generates binaural, monaural and i
 | Cosmic Octave | 12 | Hans Cousto planetary tones |
 | Tunings | 3 | 432 / 440 / 256 Hz |
 
-Every preset is tagged **Research**, **Gateway**, **Traditional** or **Speculative**, so you always know how much evidence is behind it.
+Every preset is tagged **Research**, **Gateway-inspired**, **Traditional** or **Speculative**, so you always know how much evidence is behind it.
 
 ### Also
 - **Android app** (Android 8.0+): the same engine and sessions with a phone layout (Sessions / Player / Info tabs) and a lock-screen media player. Built by `.github/workflows/android.yml`.

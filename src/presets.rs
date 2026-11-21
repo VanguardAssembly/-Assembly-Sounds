@@ -86,7 +86,7 @@ pub fn all() -> Vec<Preset> {
     let mut v: Vec<Preset> = Vec::new();
 
     // ================= Gateway Experience =================
-    let g = "Gateway Experience";
+    let g = "Inspired by the Gateway Experience";
     v.push(p(g, "f3", "Focus 3 — Introduction", "Wave I primer · 12 min", &GW_C, &GW_G, "surf", "binaural", "Gateway",
       "<p>A short introduction to layered tones: you feel the tones \"sync up\" while staying fully awake. In the Gateway model, Focus 3 is the first step: the two halves of the brain working in step with each other.</p>",
       vec![st("Arrival", 2.0, &[10.0, 10.0, 14.0], "Lie back or sit comfortably. Let your eyes close and simply listen to the tones."),
@@ -106,7 +106,7 @@ pub fn all() -> Vec<Preset> {
       "<p>The furthest point in the Gateway sequence, described as a bridge to \"other energy systems\". Very deep delta (0.5 Hz) is paired with a <b>40 Hz gamma</b> layer. The gamma layer is based on findings of high-amplitude gamma in long-term meditators (Lutz et al., 2004, <i>PNAS</i>).</p>", s));
 
     // ================= Lifeline (Focus 22–27) =================
-    let g = "Lifeline (Focus 22–27)";
+    let g = "Inspired by Lifeline (Focus 22–27)";
     let lifeline = |id: &str, name: &str, short: &str, beats: [f64; 3], cue: &str, about: &str| {
         let mut s = gateway_prep();
         s.push(with_min(f10(), 3.0)); s.push(with_min(f12(), 3.0)); s.push(with_min(f15(), 3.0));
@@ -443,8 +443,8 @@ fn crate_band(hz: f64) -> &'static str {
 /// sound texture, carrier tones and topic keywords found in its text.
 fn auto_tags(v: &mut [Preset]) {
     const GROUP: &[(&str, &[&str])] = &[
-        ("Gateway Experience", &["gateway", "gateway experience", "gateway process", "monroe", "hemi-sync", "hemisync", "focus", "focus level", "cia", "wave i", "obe", "out of body"]),
-        ("Lifeline (Focus 22–27)", &["lifeline", "monroe", "gateway", "focus", "focus level", "afterlife", "hemi-sync", "spiritual"]),
+        ("Inspired by the Gateway Experience", &["inspired by", "gateway", "gateway experience", "gateway process", "monroe", "hemi-sync", "hemisync", "focus", "focus level", "cia", "wave i", "obe", "out of body"]),
+        ("Inspired by Lifeline (Focus 22–27)", &["inspired by", "lifeline", "monroe", "gateway", "focus", "focus level", "afterlife", "hemi-sync", "spiritual"]),
         ("Research-based", &["research", "science", "scientific", "study", "evidence"]),
         ("Altered States", &["altered states", "altered state", "asc", "consciousness", "trance", "research"]),
         ("Purpose & Tradition", &["purpose", "tradition", "intention"]),
