@@ -9,10 +9,24 @@ use std::f64::consts::TAU;
 use std::sync::{Arc, Mutex};
 
 #[derive(Clone, Copy, PartialEq, Debug)]
-pub enum Mode { Binaural, Monaural, Isochronic }
+pub enum Mode {
+    Binaural, Monaural, Isochronic,
+    /// Smooth sine amplitude modulation of one tone (gentler than isochronic on/off pulses).
+    Am,
+    /// Binaural tone pair that is also pulsed isochronically at the same rate.
+    Hybrid,
+    /// Tone alternates left / right at the beat rate (EMDR-style bilateral stimulation).
+    Bilateral,
+    /// Tone glides smoothly around the head at the beat rate ("8D" / spatial panning).
+    Spatial,
+}
 impl Mode {
     pub fn parse(s: &str) -> Mode {
-        match s { "monaural" => Mode::Monaural, "isochronic" => Mode::Isochronic, _ => Mode::Binaural }
+        match s {
+            "monaural" => Mode::Monaural, "isochronic" => Mode::Isochronic, "am" => Mode::Am,
+            "hybrid" => Mode::Hybrid, "bilateral" => Mode::Bilateral, "spatial" => Mode::Spatial,
+            _ => Mode::Binaural,
+        }
     }
 }
 #[derive(Clone, Copy, PartialEq, Debug)]
@@ -271,6 +285,36 @@ impl Synth {
                             let m = ph.c.sin() as f32 * env * g;
                             l += m;
                             r += m;
+                        }
+                        Mode::Am => {
+                            ph.c = (ph.c + TAU * c * dt) % TAU;
+                            ph.lfo = (ph.lfo + TAU * b * dt) % TAU;
+                            let env = 0.5 - 0.5 * ph.lfo.cos() as f32;
+                            let m = ph.c.sin() as f32 * env * g;
+                            l += m;
+                            r += m;
+                        }
+                        Mode::Hybrid => {
+                            ph.l = (ph.l + TAU * (c - b / 2.0) * dt) % TAU;
+                            ph.r = (ph.r + TAU * (c + b / 2.0) * dt) % TAU;
+                            ph.lfo = (ph.lfo + TAU * b * dt) % TAU;
+                            let env = 0.5 + 0.5 * (4.0f32 * ph.lfo.sin() as f32).tanh() / tanh4;
+                            l += ph.l.sin() as f32 * env * g;
+                            r += ph.r.sin() as f32 * env * g;
+                        }
+                        Mode::Bilateral | Mode::Spatial => {
+                            ph.c = (ph.c + TAU * c * dt) % TAU;
+                            // pan position -1 (left) .. +1 (right); bilateral holds each side, spatial glides
+                            ph.lfo = (ph.lfo + TAU * b.min(12.0) * dt) % TAU;
+                            let pos = if self.mode == Mode::Bilateral {
+                                (3.0f32 * ph.lfo.sin() as f32).tanh() / 3f32.tanh()
+                            } else {
+                                ph.lfo.sin() as f32
+                            };
+                            let th = (pos + 1.0) * std::f32::consts::FRAC_PI_4; // equal-power pan
+                            let m = ph.c.sin() as f32 * g;
+                            l += m * th.cos();
+                            r += m * th.sin();
                         }
                     }
                 }

@@ -32,6 +32,9 @@ const BREATH_RES: &str = "<p>Slow breathing at about <b>6 breaths per minute</b>
 // ---------------------------------------------------------------- main lookup
 fn info_for(p: &Preset) -> Info {
     let id = p.id.as_str();
+    if let Some(x) = extra(id) {
+        return x;
+    }
     if let Some(x) = specific(id) {
         return x;
     }
@@ -481,4 +484,90 @@ fn planet(hz: f64, name: &str) -> Info {
       "<p>The idea goes back to about 500 BCE (Pythagoras) and 1619 (Kepler). Cousto's calculations are from 1978, and they spread through sound healing from the 1980s.</p>",
       "<p>Claims: each planetary tone carries that planet's astrological qualities and helps you \"tune in\" to cosmic rhythms. 136.1 Hz is said to be deeply relaxing and heart-centred.</p>",
       "<p>The <b>maths is real</b>: the frequencies are correct octave transpositions of real periods. But there is <b>no evidence</b> that these tones have planet-specific effects, and astrological meanings are not science. Choosing octaves (rather than other intervals) is an arbitrary convention. Labelled <b>traditional</b>; enjoy it as a pleasant tonal meditation.</p>")
+}
+
+// ------------------------------------------------- Sound Systems Library & Astral Projection
+const OBE_CLAIMS: &str = "<p>Practitioners claim that consciousness can leave the physical body, travel, and visit \"astral planes\" or other people. Some say the experience proves life after death. None of this has been shown in controlled tests.</p>";
+const OBE_RESEARCH: &str = "<p>Roughly 10% of people report at least one out-of-body experience. The brain basis is well studied: <b>Blanke et al. (2002, <i>Nature</i>)</b> triggered OBE-like feelings by stimulating the right temporo-parietal junction; <b>Ehrsson (2007, <i>Science</i>)</b> produced them with a camera-and-headset illusion. Induced OBEs mostly happen at the edge of REM sleep, overlapping with <b>lucid dreams and sleep paralysis</b>, which explains the vibrations, buzzing and \"pulled out\" feelings. No study has shown that people bring back verifiable information. Sleep paralysis is harmless, but if it frightens you, stop the practice.</p>";
+const OBE_ERA: &str = "<p>Soul-travel beliefs are ancient. \"Astral projection\" is a 19th-century Theosophical term; modern techniques date from 1929 (Muldoon) to the 2010s (Raduga).</p>";
+
+fn extra(id: &str) -> Option<Info> {
+    let sys = |what: &str, origin: &str, era: &str, claims: &str, research: &str| Some(i(what, origin, era, claims, research));
+    let obe = |what: &str, origin: &str| Some(i(format!("{}{}", what, BB_WHAT), origin, OBE_ERA, OBE_CLAIMS, OBE_RESEARCH));
+    match id {
+        "sys_binaural" => sys(BB_WHAT,
+            "<p>Discovered by Prussian physicist <b>Heinrich Wilhelm Dove</b> in 1839. Biophysicist <b>Gerald Oster</b> revived it in \"Auditory Beats in the Brain\" (<i>Scientific American</i>, 1973), and Robert Monroe built Hemi-Sync on it in the 1970s.</p>",
+            "<p>1839 discovery; mainstream wellness use since the 1970s; app boom since the 2010s.</p>",
+            "<p>Claimed to steer brainwaves to any state: sleep, focus, meditation, even out-of-body experiences.</p>",
+            "<p>Real but modest. A meta-analysis (Garcia-Argibay et al., 2019) found small-to-moderate effects on anxiety, attention and memory. EEG evidence that the whole brain \"follows\" the beat is mixed (Ingendoh et al., 2023 systematic review).</p>"),
+        "sys_monaural" => sys("<p><b>Monaural beats</b> mix two close tones into one signal, so the beat is a real rise and fall in loudness that each ear hears directly. They work on speakers.</p>",
+            "<p>Beats between two tones were described by Joseph Sauveur around 1700 and are how musicians tune instruments. Their use for brain entrainment grew alongside binaural beats from the 1970s.</p>",
+            "<p>Known for centuries; used for entrainment since the late 20th century.</p>",
+            "<p>Claimed to entrain the brain more strongly than binaural beats.</p>",
+            "<p>EEG studies do find a stronger auditory steady-state response to monaural than binaural beats (Schwarz &amp; Taylor, 2005), but a stronger response in the hearing cortex doesn't by itself mean a different mood or state. Behavioural studies are few.</p>"),
+        "sys_isochronic" => sys("<p><b>Isochronic tones</b> are a single tone turned on and off at an even rate (iso = equal, chronos = time). Soft edges avoid clicks. They need no headphones.</p>",
+            "<p>The term is credited to <b>Arturo Manns</b> (1980s). It builds on Neher's 1960s work on rhythmic sound and the 1981 discovery of the 40 Hz auditory steady-state response (Galambos et al.).</p>",
+            "<p>1980s onward; very common in YouTube and app tracks since the 2010s.</p>",
+            "<p>Claimed to be the \"strongest\" entrainment method.</p>",
+            "<p>Clear, repeatable brain responses at the pulse rate, strongest near 40 Hz. The 40 Hz \"GENUS\" studies in mice (Martorell et al., 2019, <i>Cell</i>) and early human trials use this kind of sound. Evidence for mood or focus effects in people is still limited.</p>"),
+        "sys_am" => sys("<p><b>Amplitude-modulated (AM) tones</b> rise and fall smoothly in loudness like a sine wave, instead of switching on and off. It's the gentlest pulsed method and works on speakers.</p>",
+            "<p>AM is basic signal processing (AM radio, 1900s). Hearing scientists have used AM tones to measure brain responses since the 1980s. Companies such as Brain.fm later built \"functional music\" around it.</p>",
+            "<p>Lab tool since the 1980s; consumer \"focus music\" since the late 2010s.</p>",
+            "<p>Claimed to boost focus, relaxation or sleep depending on the modulation rate.</p>",
+            "<p><b>Woods et al. (2024, <i>Communications Biology</i>)</b> found that beta-rate amplitude-modulated music improved sustained attention and changed brain connectivity, with larger benefits for people with more ADHD symptoms. That study was funded by a music company and needs independent replication.</p>"),
+        "sys_hybrid" => sys("<p><b>Hybrid beats</b> combine a binaural pair (different tone in each ear) with isochronic pulsing at the same rate.</p>",
+            "<p>A commercial innovation from the 2000s–2010s download and YouTube era of brainwave tracks.</p>",
+            "<p>About 2005 to the present.</p>",
+            "<p>Claimed to combine the best of both methods for stronger entrainment.</p>",
+            "<p>No study has compared hybrid beats with either method alone. Expect roughly what each method gives: a clear pulse plus a binaural wobble.</p>"),
+        "sys_bilateral" => sys("<p><b>Bilateral stimulation</b> alternates a sound (or touch, or eye movement) between the left and right side, usually about once a second.</p>",
+            "<p>Psychologist <b>Francine Shapiro</b> developed EMDR (Eye Movement Desensitization and Reprocessing) in 1987 after noticing that eye movements eased distressing thoughts. Therapists later used alternating tones and taps as alternatives.</p>",
+            "<p>1987 onward; recommended for PTSD by the WHO (2013).</p>",
+            "<p>Claimed to calm the nervous system and help process memories; some apps sell it for anxiety relief.</p>",
+            "<p>EMDR as a full therapy is effective for PTSD. Whether the left–right part itself matters is debated; reviews suggest it adds a modest benefit by taxing working memory, which makes memories less vivid (Lee &amp; Cuijpers, 2013). Bilateral audio on its own is <b>not therapy</b>; if you are working with trauma, use a qualified therapist.</p>"),
+        "sys_spatial" => sys("<p><b>Spatial (\"8D\") audio</b> moves a sound around your head by changing its balance between the ears. Here it glides smoothly side to side.</p>",
+            "<p>Stereo panning dates to the 1930s (Alan Blumlein). Rotating \"8D audio\" remixes went viral on YouTube and WhatsApp in 2018.</p>",
+            "<p>2018 internet trend; built on 1930s stereo technology.</p>",
+            "<p>Claimed to feel immersive, hypnotic or even mind-altering.</p>",
+            "<p>No clinical research on 8D audio as entrainment. Moving sound does capture attention strongly, which can make relaxation more absorbing. Keep the volume low; some people find it dizzying.</p>"),
+        "sys_layered" => Some(gw("<p><b>Layered beats</b> stack several binaural pairs on different carriers so the brain hears a chord of rates at once.</p>", "")),
+        "sys_descend" => Some(bb("<p><b>Descending layered carriers</b>: binaural beats that step down from alpha through theta to delta, the format used by programs such as Holosync.</p>",
+            "<p>Bill Harris's <b>Centerpointe Research Institute</b> launched Holosync in 1989, building on Monroe's layered-tone idea and selling a graded series of \"levels\".</p>",
+            "<p>1989 to the present.</p>",
+            "<p>Claimed to give \"deep meditation at the touch of a button\" and to raise your threshold for stress over months.</p>",
+            "<p>No independent peer-reviewed trials of Holosync exist.</p>")),
+        "sys_noise" => sys("<p><b>Coloured noise</b> is random sound shaped by frequency: white (flat), pink (softer highs, like rain) and brown (deep rumble, like surf). No beats.</p>",
+            "<p>The colour names come from light: white light has every colour equally. Pink noise (\"1/f noise\") was described in electronics in the 1920s–1930s (Johnson, Schottky).</p>",
+            "<p>Sound-masking machines since the 1960s; \"brown noise\" went viral on TikTok in 2022.</p>",
+            "<p>Claimed to help sleep, focus and ADHD.</p>",
+            "<p>Steady noise masks disruptive sounds. Reviews find low-quality, mixed evidence for sleep (Riedy et al., 2021). Some studies find white noise helps attention in people with ADHD symptoms (Söderlund et al., 2007). Timed pink-noise pulses during deep sleep are a separate, better-supported method (see Slow-Wave Sleep Pulses).</p>"),
+        "sys_drum" => sys("<p><b>Rhythmic auditory driving</b>: a steady drum, rattle or chant, typically 4–7 beats per second, used to induce trance.</p>",
+            "<p>Found in shamanic and ritual practice on every inhabited continent. Andrew Neher (1962) proposed that drumming drives brain rhythms; Michael Harner's <i>The Way of the Shaman</i> (1980) popularised 4–4.5 beats per second in the West.</p>",
+            "<p>Prehistoric origins; studied scientifically since the 1960s.</p>",
+            "<p>Claimed to open a doorway to the spirit world or the \"lower world\" of shamanic journeying.</p>",
+            "<p>Hove et al. (2016, <i>Cerebral Cortex</i>) found that drum trance changed brain network connectivity in experienced practitioners. Neher's original EEG claims were poorly controlled. The experience is real; spirit-world claims cannot be tested.</p>"),
+
+        "ap_monroe" => obe("<p>Monroe's <b>vibrational state and roll-out</b> method over Gateway-style layered tones.</p>",
+            "<p>Radio executive <b>Robert Monroe</b> began having spontaneous OBEs in 1958 and described this method in <i>Journeys Out of the Body</i> (1971), which made the term \"out-of-body experience\" popular. He later founded the Monroe Institute.</p>"),
+        "ap_rope" => obe("<p>The <b>rope technique</b>: climb an imagined rope hand over hand to create a pulling sensation, here on hybrid beats.</p>",
+            "<p>Australian author <b>Robert Bruce</b> described it in <i>Astral Dynamics</i> (1999). It is one of the most-shared beginner techniques online.</p>"),
+        "ap_muldoon" => obe("<p>The <b>target technique</b>: memorise a place in detail and rehearse being there with every sense.</p>",
+            "<p><b>Sylvan Muldoon</b> and psychical researcher <b>Hereward Carrington</b> wrote <i>The Projection of the Astral Body</i> (1929), the first practical manual in English. Muldoon reported spontaneous projections from age 12.</p>"),
+        "ap_phase" => obe("<p>The <b>phase</b> method: lie still immediately after waking and try to \"separate\" before you fully wake up.</p>",
+            "<p>Russian author <b>Michael Raduga</b> coined \"the phase\" (2008) to cover OBEs, lucid dreams and sleep paralysis as one state, and founded the Out-of-Body Experience Research Center.</p>"),
+        "ap_wbtb" => obe("<p><b>Wake-back-to-bed</b> with an intention and soft chime cues, aimed at REM-sleep projections.</p>",
+            "<p>WBTB comes from lucid-dream research by <b>Stephen LaBerge</b> at Stanford (1980s). It is among the most effective induction methods in controlled studies (Stumbrys et al., 2012; Aspy et al., 2017).</p>"),
+        "ap_theta_gamma" => obe("<p>A <b>theta–gamma stack</b>: 6.3 Hz \"astral\" theta plus a quiet 40 Hz gamma beat.</p>",
+            "<p>A recipe from YouTube and forum culture of the 2010s. The 6.3 Hz figure has no traceable scientific source. The gamma layer is inspired by findings that lucid dreaming involves more 40 Hz activity (Voss et al., 2009).</p>"),
+        "ap_float" => obe("<p>A <b>floating</b> visualisation over slow spatial (8D) panning of the tone.</p>",
+            "<p>The floating and lifting imagery is shared by Muldoon, Monroe and Bruce. Slow spatial movement of sound adds a sense of drift; the combination is original to this app.</p>"),
+        "ap_bilateral" => obe("<p><b>Bilateral calming</b> first, then body-asleep imagery.</p>",
+            "<p>Uses EMDR-style alternating tones (Shapiro, 1987) for relaxation, then the \"mind awake, body asleep\" approach from Monroe's work. The combination is original to this app.</p>"),
+        "ap_ground" => sys("<p>A short <b>grounding</b> session that brings you back from deep, dreamy states to full alertness.</p>",
+            "<p>\"Grounding\" after inner journeys appears in shamanic, yogic and Western esoteric traditions; Monroe's tapes end with a counted return for the same reason.</p>",
+            "<p>Traditional; modern form from 20th-century guided meditation.</p>",
+            "<p>Claimed to \"anchor\" energy back into the body after astral work.</p>",
+            "<p>Physiologically, a short period of rising alertness helps clear sleep inertia (grogginess), which can last up to 30 minutes after deep relaxation or naps (Tassi &amp; Muzet, 2000). Don't drive straight after deep sessions.</p>"),
+        _ => None,
+    }
 }

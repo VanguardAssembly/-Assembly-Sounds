@@ -305,6 +305,101 @@ pub fn all() -> Vec<Preset> {
       "<p>In an fMRI study, audible Om chanting (compared with a \"ssss\" control) <b>deactivated limbic regions</b> including the amygdala, hippocampus and anterior cingulate. The authors compare this to vagus-nerve stimulation (Kalyani et al., 2011, <i>International Journal of Yoga</i>). A slow bell paces each long chant, and the tone sits at 136.1 Hz, the traditional Om pitch.</p>",
       vec![st("Om", 15.0, &[7.83], "Breathe in as the bell sounds. On the long breath out, chant Om aloud, feeling the vibration in your chest and head.").breath()]), tx("breathbell", 0.5, 272.2, 10.0)));
 
+    // ================= Sound Systems Library =================
+    // One clear example of every known way of delivering a beat or rhythm to the brain.
+    let g = "Sound Systems Library";
+    const C_BODY: &str = "Let a wave of relaxation begin at the top of your head. Let it flow down through your face, your jaw, your neck and shoulders, down your arms to your fingertips, through your chest and back, and down through your legs to the soles of your feet.";
+    const C_PULSE: &str = "Notice the gentle pulse within the sound. Let your attention rest on it, relaxed and awake.";
+    const C_EXHALE: &str = "Breathe out longer than you breathe in. Let tension leave with each breath out.";
+    const C_HEAVY: &str = "Close your eyes. Let your body grow heavy.";
+    let demo = |id: &str, name: &str, short: &str, car: &[f64], gains: &[f64], noise: &str, mode: &str, ev: &str, hz: &[f64], hold: &[f64], about: &str| {
+        p(g, id, name, short, car, gains, noise, mode, ev, about,
+          vec![st("Tune in", 2.0, hz, C_SETTLE), st("Listen", 3.0, hz, C_PULSE),
+               st("Settle", 8.0, hold, C_REST).ramp(90.0), st("Return", 2.0, &vec![10.0; hz.len()], C_RETURN_SHORT)])
+    };
+    v.push(demo("sys_binaural", "Binaural Beats — 6 Hz", "Two tones, one per ear · 15 min", &[200.0], &[1.0], "pink", "binaural", "Research", &[10.0], &[6.0],
+      "<p><b>Binaural beats</b>: a slightly different pure tone in each ear (here 197 Hz left, 203 Hz right). The brainstem combines them and you hear a slow 6 Hz \"wobble\" that isn't in the air at all. <b>Needs stereo headphones.</b> Discovered by Heinrich Wilhelm Dove in 1839 and popularised by Gerald Oster (<i>Scientific American</i>, 1973).</p>"));
+    v.push(demo("sys_monaural", "Monaural Beats — 6 Hz", "Tones mixed before the ear · 15 min", &[200.0], &[1.0], "pink", "monaural", "Research", &[10.0], &[6.0],
+      "<p><b>Monaural beats</b>: the same two tones as binaural beats, but mixed together <i>before</i> they reach your ears, so the beat is a real, physical rise and fall in loudness. They work on speakers, and EEG studies find they drive a stronger brain response than binaural beats (Schwarz &amp; Taylor, 2005).</p>"));
+    v.push(demo("sys_isochronic", "Isochronic Tones — 6 Hz", "Single tone switched on/off · 15 min", &[200.0], &[1.0], "none", "isochronic", "Research", &[10.0], &[6.0],
+      "<p><b>Isochronic tones</b>: one tone switched cleanly on and off at the target rate, with soft edges so there are no clicks. They work on speakers and produce the clearest \"auditory steady-state response\" in EEG. The term was popularised by Arturo Manns in the 1980s.</p>"));
+    v.push(demo("sys_am", "Amplitude-Modulated Tones — 6 Hz", "Smooth swell and fade · 15 min", &[200.0], &[1.0], "pink", "am", "Research", &[10.0], &[6.0],
+      "<p><b>Amplitude modulation (AM)</b>: a tone that swells and fades smoothly, like a slow tremolo, instead of switching hard on and off. This is the technique behind \"functional music\" research; Woods et al. (2024, <i>Communications Biology</i>) found that beta-rate amplitude-modulated music improved sustained attention, especially in people with ADHD symptoms. Gentler than isochronic pulses and works on speakers.</p>"));
+    v.push(demo("sys_hybrid", "Hybrid Binaural + Isochronic — 6 Hz", "Both at once · 15 min", &[200.0], &[1.0], "pink", "hybrid", "Traditional", &[10.0], &[6.0],
+      "<p><b>Hybrid beats</b>: a binaural pair (a different tone in each ear) that is <i>also</i> pulsed isochronically at the same rate. Popular in commercial apps on the theory that it combines both paths into the brain. There is no study showing it beats either method alone. Best on headphones.</p>"));
+    v.push(demo("sys_bilateral", "Bilateral Alternating Tones — 1 Hz", "Left ↔ right, EMDR-style · 15 min", &[220.0], &[0.8], "pink", "bilateral", "Research", &[1.0], &[0.8],
+      "<p><b>Bilateral stimulation</b>: a tone that alternates between the left and right ear, about once a second. It's the audio form of the left–right stimulation used in <b>EMDR therapy</b> (Francine Shapiro, 1987), which the WHO recommends for PTSD. Studies suggest alternating stimulation can lower vividness and emotional charge of upsetting memories. This session is for relaxation only; it is <b>not EMDR therapy</b>, which needs a trained therapist. Needs headphones.</p>"));
+    v.push(demo("sys_spatial", "Spatial / 8D Rotation — 0.1 Hz", "Sound circles your head · 15 min", &[180.0], &[0.8], "surf", "spatial", "Traditional", &[0.15], &[0.1],
+      "<p><b>Spatial (\"8D\") audio</b>: the tone glides slowly from one side of your head to the other and back, about once every ten seconds. \"8D audio\" became an internet trend in 2018; the gentle motion holds attention and many people find it absorbing and calming. There's no clinical research on it as entrainment. Needs headphones.</p>"));
+    v.push(demo("sys_layered", "Layered Beats (Hemi-Sync-inspired)", "Three beat layers at once · 15 min", &GW_C, &GW_G, "surf", "binaural", "Gateway", &[10.0, 10.0, 14.0], &[4.0, 7.0, 12.0],
+      "<p><b>Layered (multi-frequency) beats</b>: several binaural pairs at once, each on its own carrier, so the brain gets a \"chord\" of rates rather than one. This is the idea behind the Monroe Institute's Hemi-Sync (patented 1975) and the Gateway tapes. Here: 4, 7 and 12 Hz on 100, 200 and 300 Hz carriers.</p>"));
+    v.push(p(g, "sys_descend", "Descending Carriers (Holosync-inspired)", "Deepening layers · 30 min", &[100.0, 150.0], &[1.0, 0.5], "surf", "binaural", "Traditional",
+      "<p><b>Descending layered tones</b>: commercial programs such as Centerpointe's Holosync (1989) use layered binaural beats that sink in stages from alpha toward delta, often under rain or bell sounds, and sell \"levels\" that get deeper over months. This is an original interpretation of that idea, not their audio. Claims of rewiring the brain are marketing; there is no independent research on these programs.</p>",
+      vec![st("Alpha", 5.0, &[10.0, 12.0], C_SETTLE), st("Alpha–theta", 7.0, &[7.0, 10.0], C_EXHALE).ramp(120.0),
+           st("Theta", 8.0, &[5.0, 7.0], C_REST).ramp(120.0), st("Delta", 8.0, &[2.5, 4.0], "Nothing to do. Just rest.").ramp(120.0),
+           st("Return", 2.0, &[10.0, 12.0], C_RETURN_SHORT)]));
+    v.push(p(g, "sys_noise", "Coloured Noise Only (Pink)", "No beats · 20 min", &[200.0], &[0.0], "pink", "binaural", "Research",
+      "<p><b>Coloured noise</b>: no tones or beats at all, just a steady pink-noise bed. White noise has equal energy at every frequency; pink falls 3 dB per octave (softer, like rain); brown falls further (deep, like surf). Steady noise masks distractions, and a 2021 review found it can modestly help some people fall asleep, though the evidence is mixed (Riedy et al., <i>Sleep Medicine Reviews</i>). Useful as a control: compare how you feel with and without beats.</p>",
+      vec![st("Noise", 20.0, &[0.0], "Rest in the stillness between the sounds.")]));
+    v.push(with_tex(p(g, "sys_drum", "Rhythmic Auditory Driving — Frame Drum", "Drum at 4–7 beats/s · 15 min", &[100.0], &[0.0], "none", "binaural", "Research",
+      "<p><b>Rhythmic auditory driving</b>: the oldest sound system of all. A steady drum, rattle or chant at roughly 4–7 beats per second has been used for trance across cultures for thousands of years. Andrew Neher (1962) first proposed that drumming drives brain rhythms; Hove et al. (2016, <i>Cerebral Cortex</i>) showed in fMRI how drum trance turns attention inward. No beat tones here: only the synthesised drum.</p>",
+      vec![st("Settle", 2.0, &[4.2], "Close your eyes. Let the steady drum carry your attention."),
+           st("Drive", 11.0, &[4.5], "Follow whatever images or ideas arise."),
+           st("Call-back", 2.0, &[7.0], "The drum calls you back. Return the way you came.").ramp(20.0)]), tx("drum", 1.0, 0.0, 0.0)));
+
+    // ================= Astral Projection & OBE =================
+    // Classic out-of-body techniques from the literature. All are spiritual / experiential
+    // practices: labelled Speculative, with the real neuroscience in each explanation.
+    let g = "Astral Projection & OBE";
+    const C_BODY_ASLEEP: &str = "Let your body fall asleep while your mind stays awake.";
+    const C_ROPE: &str = "Imagine a rope hanging above you. Reach up with imagined hands and climb, hand over hand.";
+    const C_EDGE: &str = "Hover at the edge of sleep, where images begin to form.";
+    const C_SCAN: &str = "Move your attention slowly through your body: right hand, arm, shoulder, left hand, arm, shoulder, down through your torso, legs and feet.";
+    const C_COUNT: &str = "In a moment, count with me from one to five. One, energy returning. Two, aware of your body. Three, breathing deeper. Four, ready to open your eyes. Five, eyes open, wide awake and refreshed.";
+    const C_GROUND: &str = "Feel your connection to the ground beneath you, stable and safe.";
+    let mut s = gateway_prep(); s.push(with_min(f10(), 8.0));
+    s.push(st("Vibrations", 8.0, &[1.5, 4.0, 10.0], "Notice any tingling, buzzing or waves of sensation. Let them grow without fear. They are a normal part of deep relaxation."));
+    s.push(st("Roll out", 8.0, &[1.5, 4.0, 10.0], "Without moving your physical body, imagine gently rolling sideways, as if turning over in bed, and floating up and away."));
+    s.push(ret(3.0));
+    v.push(p(g, "ap_monroe", "Monroe Vibrational State & Roll-out", "Journeys Out of the Body · 37 min", &GW_C, &GW_G, "pink", "binaural", "Speculative",
+      "<p>Robert Monroe's method from <i>Journeys Out of the Body</i> (1971): deep relaxation into \"mind awake, body asleep\", then the <b>vibrational state</b>, then imagining <b>rolling out</b> of the body like turning over in bed. The tingling and buzzing are well-known sensations of the edge of sleep and sleep paralysis. Uses the Gateway-style layered tones.</p>", s));
+    v.push(p(g, "ap_rope", "Rope Technique (Robert Bruce)", "Astral Dynamics · 30 min", &[100.0, 200.0], &[1.0, 0.6], "pink", "hybrid", "Speculative",
+      "<p>Robert Bruce's <b>rope technique</b> (<i>Astral Dynamics</i>, 1999): relax deeply, then imagine an invisible rope above you and climb it with imagined hands, pulling yourself up until you feel dizzy or a strong tug. Here on hybrid beats (binaural + isochronic) at 1.5 and 6.3 Hz.</p>",
+      vec![st("Relax", 4.0, &[10.0, 10.0], C_SETTLE), st("Body scan", 5.0, &[4.0, 8.0], C_SCAN).ramp(90.0),
+           st("Body asleep", 7.0, &[1.5, 6.3], C_BODY_ASLEEP).ramp(90.0),
+           st("Rope", 12.0, &[1.5, 6.3], C_ROPE), st("Return", 2.0, &[10.0, 12.0], C_RETURN_SHORT)]));
+    v.push(p(g, "ap_muldoon", "Target Technique (Muldoon & Carrington)", "1929 classic · 28 min", &[150.0], &[1.0], "brown", "binaural", "Speculative",
+      "<p>From <i>The Projection of the Astral Body</i> (Muldoon &amp; Carrington, 1929): memorise a familiar room or object in detail, relax fully, then rehearse being there in the imagination with all your senses. Muldoon also suggested going to bed slightly thirsty so the dream body \"goes for water\". Uses a slow glide from alpha to deep theta.</p>",
+      vec![st("Settle", 4.0, &[10.0], C_SETTLE), st("Relax", 6.0, &[7.0], C_BODY).ramp(120.0),
+           st("Target", 15.0, &[5.0], "Picture yourself standing in a familiar room. Notice the light, the textures, the sounds and the smell of the place, in rich detail.").ramp(120.0),
+           st("Return", 3.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "ap_phase", "Phase Technique (after waking)", "Raduga · WBTB · 20 min", &[150.0], &[0.8], "brown", "am", "Speculative",
+      "<p>Michael Raduga's <b>phase</b> method: wake after about 6 hours of sleep, lie still with your eyes closed, and in the first minutes try to separate: rolling out, floating up, or imagining movement. Raduga's group report that many beginners succeed within a few attempts, and lab work shows these experiences are vivid lucid dreams or sleep-paralysis states (Raduga et al., 2020–2021). Uses gentle AM theta at very low volume.</p>",
+      vec![st("Stay still", 3.0, &[6.0], "Get comfortable in bed. Nothing more to do today."),
+           st("Edge", 12.0, &[5.0], C_EDGE).ramp(60.0),
+           st("Separate", 5.0, &[4.5], "Without moving your physical body, imagine gently rolling sideways, as if turning over in bed, and floating up and away.")]));
+    v.push(with_tex(p(g, "ap_wbtb", "Wake-Back-to-Bed OBE Prompt", "Lucid-dream cues · 60 min", &[150.0], &[0.3], "brown", "binaural", "Speculative",
+      "<p>Combines the best-supported lucid-dream technique, <b>wake-back-to-bed (WBTB)</b> with a memory intention (Stumbrys et al., 2012 review; Aspy et al., 2017), with out-of-body imagery. Most induced \"astral projections\" happen in REM sleep near waking, so the same timing helps. Sleep 5–6 hours, get up for 20 minutes, then start this as you go back to bed. A soft chime plays while you set the intention, and again very quietly from 15 minutes in, when you are likely to be dreaming. Very low volume.</p>",
+      vec![st("Intention", 3.0, &[6.0], "Repeat silently: next time I am dreaming, I will remember that I am dreaming.").tex(1.0),
+           st("Drift", 12.0, &[4.0], "Let yourself drift toward sleep, holding the intention lightly.").tex(0.0),
+           st("Cue window", 45.0, &[3.0], "").tex(0.3).ramp(300.0)]), tx("tlr", 0.8, 0.0, 30.0)));
+    v.push(p(g, "ap_theta_gamma", "Theta–Gamma Astral Stack", "6.3 + 40 Hz · 30 min", &[150.0, 300.0], &[1.0, 0.35], "pink", "binaural", "Speculative",
+      "<p>A popular online \"astral\" recipe: the 6.3 Hz \"OBE\" theta beat layered with a quiet 40 Hz gamma beat for lucidity. The 6.3 Hz claim has no scientific basis; gamma activity (around 40 Hz) does rise during lucid dreaming (Voss et al., 2009). Treat it as an experiment.</p>",
+      vec![st("Relax", 5.0, &[10.0, 40.0], C_SETTLE), st("Descend", 5.0, &[7.0, 40.0], C_EXHALE).ramp(120.0),
+           st("Stack", 17.0, &[6.3, 40.0], C_BODY_ASLEEP).ramp(120.0), st("Return", 3.0, &[10.0, 14.0], C_COUNT)]));
+    v.push(p(g, "ap_float", "Floating — Slow Spatial Drift", "8D rotation · 25 min", &[150.0, 200.0], &[0.8, 0.4], "surf", "spatial", "Speculative",
+      "<p>The tone slowly circles from ear to ear (about once every 12 seconds) while you imagine floating. Slow, smooth spatial motion is commonly felt as drifting or weightlessness, which many OBE teachers describe as the moment before separation. Needs headphones; keep the volume low.</p>",
+      vec![st("Settle", 4.0, &[0.1, 0.1], C_HEAVY), st("Relax", 6.0, &[0.09, 0.09], C_BODY),
+           st("Float", 13.0, &[0.08, 0.08], "Feel open space above the top of your head."), st("Return", 2.0, &[0.1, 0.1], C_RETURN_SHORT)]));
+    v.push(p(g, "ap_bilateral", "Bilateral Release → Body Asleep", "Calm first · 25 min", &[220.0], &[0.7], "pink", "bilateral", "Speculative",
+      "<p>Fear is the most common thing that stops an out-of-body attempt (often at the first buzzing or sleep-paralysis sensation). This session starts with slow left–right alternating tones to settle the nervous system, then hands over to body-asleep imagery. Not therapy.</p>",
+      vec![st("Settle", 4.0, &[1.0], C_SETTLE), st("Release", 8.0, &[0.8], C_EXHALE),
+           st("Body asleep", 11.0, &[0.6], C_BODY_ASLEEP), st("Return", 2.0, &[1.0], C_RETURN_SHORT)]));
+    v.push(p(g, "ap_ground", "After-Practice Grounding", "Integration · 10 min", &[194.18], &[0.8], "surf", "binaural", "Traditional",
+      "<p>A short alpha-to-beta return for after any deep or out-of-body practice: feel your weight, the ground, and come back fully alert. Many traditions stress \"grounding\" after inner journeys; physiologically it simply brings you out of drowsy, dreamy states before you stand up or drive.</p>",
+      vec![st("Ground", 4.0, &[10.0], C_GROUND), st("Weight", 3.0, &[12.0], "Feel the weight of your body supported by the earth beneath you."),
+           st("Awake", 3.0, &[16.0], C_COUNT)]));
+
     // ================= Brainwave frequency library =================
     let g = "Brainwave Library";
     let lib: &[(f64, &str, &str)] = &[
@@ -454,6 +549,8 @@ fn auto_tags(v: &mut [Preset]) {
         ("Chakra Series", &["chakra", "chakras", "kundalini", "energy centres", "yoga", "spiritual"]),
         ("Cosmic Octave (Planets)", &["planet", "planets", "cosmic", "cosmic octave", "cousto", "astrology", "astronomy"]),
         ("Tunings", &["tuning", "pitch", "432", "440", "music"]),
+        ("Sound Systems Library", &["sound systems", "library", "methods", "binaural", "monaural", "isochronic", "am", "amplitude modulation", "hybrid", "bilateral", "emdr", "8d", "spatial", "hemi-sync", "holosync", "noise", "drum"]),
+        ("Astral Projection & OBE", &["astral", "astral projection", "obe", "out of body", "out-of-body", "projection", "monroe", "rope", "phase", "wbtb", "lucid", "vibrations"]),
     ];
     // (needle in lowercase text, tags to add)
     const TOPICS: &[(&str, &[&str])] = &[
@@ -496,6 +593,13 @@ fn auto_tags(v: &mut [Preset]) {
         add(&p.mode);
         if p.mode == "binaural" { add("headphones"); add("binaural beats"); }
         if p.mode == "isochronic" { add("speakers"); add("pulses"); }
+        match p.mode.as_str() {
+            "am" => { add("speakers"); add("amplitude modulation"); add("modulated"); }
+            "hybrid" => { add("headphones"); add("binaural beats"); add("isochronic"); add("pulses"); }
+            "bilateral" => { add("headphones"); add("emdr"); add("alternating"); add("left right"); }
+            "spatial" => { add("headphones"); add("8d"); add("8d audio"); add("panning"); }
+            _ => {}
+        }
         let gains_on = p.gains.iter().any(|g| *g > 0.0);
         for s in &p.stages { for b in &s.beats { if gains_on || p.texture.is_some() { add(band(*b)); } } }
         for c in &p.carriers { if *c > 0.0 { add(&format!("{}", (*c * 100.0).round() / 100.0)); } }

@@ -4,9 +4,13 @@
 
 *(formerly "Focus")* · by Vanguard Assembly
 
-A native Windows app written in **Rust** that generates binaural, monaural and isochronic beats in real time. It includes guided sessions inspired by the Monroe Institute's *Gateway Experience* Focus levels, and a library of **132 sessions** drawn from published research and popular frequency traditions.
+A native Windows app written in **Rust** that generates binaural, monaural, isochronic, AM, hybrid, bilateral and spatial (8D) beats in real time. It includes guided sessions inspired by the Monroe Institute's *Gateway Experience* Focus levels, and a library of **152 sessions** drawn from published research and popular frequency traditions.
 
 ## Features
+
+- **Sound Systems Library**: one session for every known way of delivering a rhythm to the brain: binaural, monaural, isochronic, smooth AM tones, hybrid binaural + isochronic, bilateral left↔right (EMDR-style), spatial/8D rotation, layered (Hemi-Sync-inspired) beats, descending carriers (Holosync-inspired), coloured noise and drumming. Any session can be played through any beat type.
+- **Astral Projection & OBE**: Monroe's vibrational state and roll-out, Robert Bruce's rope technique, Muldoon's target technique, Raduga's phase technique, wake-back-to-bed, theta–gamma stack, spatial floating, bilateral calming and after-practice grounding — each labelled Speculative with the real neuroscience explained.
+- **Windows XP / 2006 Y2K look**: Luna title bars, task-pane session list, glossy buttons, chrome visualiser bezel (the visualiser itself is unchanged).
 - **Real-time Rust audio engine** (cpal/WASAPI). Tones are phase-continuous and glide smoothly between stages, with up to 8 layered tone pairs per session.
 - **Three beat types:** binaural (headphones), monaural, and isochronic (works on speakers and above 40 Hz).
 - **Natural neural narration:** spoken cues recorded with the open-source [Kokoro-82M](https://github.com/hexgrad/kokoro) model, in four voices. They're embedded in the exe, so no internet is needed.

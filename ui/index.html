@@ -120,6 +120,183 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
   .mtabs button.on{color:#fff;background:#8b7bff26}
 }
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+
+/* =====================================================================
+   Windows XP "Luna" + 2006 Y2K skin. Appearance only: no layout logic,
+   controls or audio behaviour change. The visualiser stage keeps its own
+   dark look (like a media-player visualisation window).
+   ===================================================================== */
+:root{--bg:#3a6ea5;--panel:#ece9d8;--panel2:#ffffff;--line:#7f9db9;--text:#000;--dim:#4b4b4b;--accent:#316ac5;--accent2:#3c9a3c;
+  --xp-title:linear-gradient(180deg,#0997ff 0%,#0053ee 8%,#0050ee 40%,#0066ff 88%,#005bff 95%,#003dd7 100%);
+  --xp-btn:linear-gradient(180deg,#ffffff 0%,#ecebe6 86%,#d6d0c5 100%)}
+body{font-family:Tahoma,"Segoe UI",Verdana,sans-serif;color:#000;
+  background:
+    radial-gradient(ellipse 75% 32% at 28% 100%,#7cc242 0%,#5aa52c 55%,#4b9123 99%,transparent 100%),
+    radial-gradient(ellipse 80% 26% at 88% 104%,#6fb83a 0%,#4f9a26 60%,#3e851c 99%,transparent 100%),
+    radial-gradient(ellipse 60% 18% at 12% 30%,#ffffff55 0%,transparent 70%),
+    radial-gradient(ellipse 50% 14% at 70% 22%,#ffffff44 0%,transparent 70%),
+    linear-gradient(180deg,#245edb 0%,#4a8ae6 30%,#8fc0f2 62%,#cfe6fb 100%) fixed}
+header{background:var(--xp-title);border-bottom:1px solid #002d9c;box-shadow:inset 0 1px 0 #3d95ff,0 2px 6px #0004}
+header .sub{color:#e4edff;text-shadow:0 1px 1px #0035a0}
+.hname{color:#fff;text-shadow:1px 1px 1px #0b2f8a;font-family:"Trebuchet MS",Tahoma,sans-serif;font-weight:700}
+/* XP balloon-tooltip notices */
+.warn{background:#ffffe1;border:1px solid #000;color:#000;border-radius:8px;box-shadow:2px 3px 6px #0005}
+.err{background:#ffffe1;border:1px solid #b00000;color:#7a0000;border-radius:8px;box-shadow:2px 3px 6px #0005}
+/* windows: beige body, blue Luna frame */
+.panel{background:#ece9d8;border:1px solid #0831d9;border-radius:8px 8px 3px 3px;box-shadow:inset 0 0 0 2px #2a63e0,2px 4px 10px #0005}
+main{background:#ece9d8;border:1px solid #0831d9;border-radius:8px 8px 3px 3px;padding:0 12px 12px;box-shadow:inset 0 0 0 2px #2a63e0,2px 4px 10px #0005;align-self:start}
+main::before,#sidebar::before{content:"Now Playing";display:block;margin:0 -12px 12px;padding:6px 12px 6px 30px;border-radius:7px 7px 0 0;
+  background:var(--xp-title);color:#fff;font:700 13px "Trebuchet MS",Tahoma,sans-serif;text-shadow:1px 1px 1px #0b2f8a;position:relative;
+  background-image:radial-gradient(circle at 15px 50%,#fff 0 3px,#7fc94f 4px 6px,transparent 7px),var(--xp-title)}
+#sidebar::before{content:"Sessions";position:sticky;top:0;z-index:2;margin:0 -14px 10px}
+#sidebar{padding-top:0;background:linear-gradient(180deg,#7ba2e7 0%,#6f8de0 50%,#6375d6 100%)}
+#sidebar::-webkit-scrollbar-thumb{background:linear-gradient(90deg,#c8d6fb,#b5c7f7);border:1px solid #8aa2e0}
+#sidebar::-webkit-scrollbar{background:#eef3fd}
+#sidebar .count,#sidebar .sl,#sidebar .sl output{color:#fff;text-shadow:0 1px 1px #1d3e9a}
+/* explorer task-pane style session list */
+.group-title{background:linear-gradient(90deg,#ffffff 0%,#c6d3f7 100%);color:#215dc6;font:700 12px Tahoma,sans-serif;text-transform:none;letter-spacing:0;
+  padding:6px 10px;margin:12px 0 0;border-radius:6px 6px 0 0;border:1px solid #fff}
+.group-title:hover{color:#428eff}
+#plist{counter-reset:none}
+.preset{background:#d6dff7;border:1px solid #ffffff;border-top:0;border-radius:0;margin:0;color:#000;padding:8px 12px}
+.preset:last-child{border-radius:0 0 6px 6px}
+.preset b{color:#215dc6}.preset span{color:#3a3a3a}
+.preset:hover{border-color:#ffffff;background:#e4ebfb}.preset:hover b{text-decoration:underline}
+.preset.active{background:#316ac5;box-shadow:none;border-color:#fff}.preset.active b,.preset.active span{color:#fff}
+.preset .ev,.preset.active .ev{background:#fff}
+.preset .ev-Gateway,.preset.active .ev-Gateway{color:#3e2bb8}.preset .ev-Research,.preset.active .ev-Research{color:#0c7a4c}
+.preset .ev-Traditional,.preset.active .ev-Traditional{color:#8a5a00}.preset .ev-Speculative,.preset.active .ev-Speculative{color:#b0173f}
+.ev{background:#fff;font-family:Tahoma,sans-serif}
+.ev-Gateway{color:#3e2bb8;border-color:#7a6cf0}.ev-Research{color:#0c7a4c;border-color:#2fb17a}
+.ev-Traditional{color:#8a5a00;border-color:#e0a630}.ev-Speculative{color:#b0173f;border-color:#e8577a}
+/* XP text boxes & selects */
+.search,select,input[type=number]{background:#fff;color:#000;border:1px solid #7f9db9;border-radius:2px;font-family:Tahoma,sans-serif}
+.search:focus,select:focus,input[type=number]:focus{outline:1px solid #316ac5}
+input[type=range]{accent-color:#2b9b2b}
+/* XP silver buttons */
+.fbtn,.tag,button.btn.ghost{background:var(--xp-btn);color:#000;border:1px solid #003c74;border-radius:3px;font-family:Tahoma,sans-serif;
+  box-shadow:inset 0 -1px 0 #d6d0c5}
+.fbtn:hover,.tag:hover,button.btn.ghost:hover:not(:disabled){color:#000;box-shadow:inset -1px 1px #fff0cf,inset 1px 2px #fdd889,inset -2px 2px #fbc761,inset 2px -2px #e5a01a}
+.fbtn.on{color:#000;background:linear-gradient(180deg,#e5e4de,#e3e2da);box-shadow:inset 1px 1px 2px #9a9a8e;border-color:#003c74;font-weight:700}
+button.btn.ghost:disabled{color:#aca899;background:#f4f3ee;border-color:#c9c7ba;box-shadow:none;opacity:1}
+/* glossy green Y2K "Start"-style primary button */
+button.btn:not(.ghost){color:#fff;border:1px solid #1f6b1f;border-radius:12px;font-family:"Trebuchet MS",Tahoma,sans-serif;font-style:italic;letter-spacing:.3px;
+  text-shadow:1px 1px 1px #0d4a0d;background:linear-gradient(180deg,#7fd36f 0%,#4cae3f 45%,#3a9a2e 50%,#47ad3a 100%);
+  box-shadow:inset 0 1px 0 #c9f5b8,inset 0 -2px 3px #2a7a22,1px 2px 4px #0004}
+button.btn:not(.ghost):hover{filter:brightness(1.08)}
+button.btn:not(.ghost):active{box-shadow:inset 0 2px 4px #1f5f1a}
+.chk{color:#000}
+label.sl{color:#333}label.sl output{color:#000}
+/* chips, timeline, legend */
+.chip{background:#fff;border:1px solid #7f9db9;border-radius:3px;color:#000;box-shadow:inset 1px 1px 0 #f0f0f0}
+.timeline{background:#fff;border:1px solid #7f9db9;border-radius:3px}
+.legend{color:#333}
+/* media-player visualisation window (the ball stays exactly as before) */
+.stage{border:2px solid #1a1a1a;border-radius:8px;box-shadow:inset 0 0 0 1px #6b6b6b,0 0 0 1px #c9c7ba,1px 3px 8px #0006}
+.stage .overlay{color:#fff}.stage .bandtag,.stage .clock small{color:#c5d3ff}
+/* cards: the h3 becomes the window title bar */
+.card{padding-top:0}
+.card h3{margin:0 -14px 10px;padding:6px 12px;border-radius:7px 7px 0 0;background:var(--xp-title);color:#fff;
+  font:700 13px "Trebuchet MS",Tahoma,sans-serif;text-shadow:1px 1px 1px #0b2f8a}
+.card h3 .ev{text-shadow:none}
+.card p,.card li{color:#1a1a1a}
+.card ul{color:#1a1a1a}
+.deep{border-top:1px solid #c9c7ba}.deep>summary{color:#215dc6}.deep h4{color:#555}
+.tags .tag{font-size:11px}
+/* phone: tab bar becomes the XP taskbar */
+@media(max-width:900px){
+  main{padding:0 10px 10px}
+  body[data-tab=info] main{background:none;border:0;box-shadow:none;padding:0}
+  body[data-tab=info] main::before{display:none}
+  .mtabs{background:linear-gradient(180deg,#3168d5 0%,#4993e6 6%,#2157d7 12%,#2663e0 85%,#1941a5 100%);border-top:1px solid #0c2f8f}
+  .mtabs button{color:#fff;text-shadow:1px 1px 1px #0b2f8a;font-family:Tahoma,sans-serif}
+  .mtabs button.on{background:linear-gradient(180deg,#1e52b7,#1a49a8);box-shadow:inset 1px 1px 3px #0b2a6e;color:#fff}
+}
+/* =====================================================================
+   "Super cool" Y2K layer: glassy title bars, chrome header shine, drifting
+   Bliss clouds, Winamp-style chrome bezel, XP trackbars, status bars.
+   Still appearance only. Motion is slow (never flashing) and switches off
+   with the system "reduce motion" setting.
+   ===================================================================== */
+::selection{background:#316ac5;color:#fff}
+body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1}
+/* soft clouds */
+body::before{background:
+  radial-gradient(ellipse 18% 6% at 18% 18%,#ffffffb0 0%,#ffffff40 60%,transparent 100%),
+  radial-gradient(ellipse 12% 4% at 24% 15%,#ffffff90 0%,transparent 100%),
+  radial-gradient(ellipse 22% 7% at 68% 30%,#ffffff90 0%,#ffffff30 60%,transparent 100%),
+  radial-gradient(ellipse 14% 5% at 76% 27%,#ffffffa0 0%,transparent 100%),
+  radial-gradient(ellipse 16% 5% at 44% 42%,#ffffff60 0%,transparent 100%);
+  background-size:200% 100%;background-repeat:repeat-x}
+/* Y2K sun glow, lens flare and sparkles */
+body::after{background:
+  radial-gradient(circle at 90% 6%,#fffbe6 0 2%,#fff6c080 4%,#ffe9801f 12%,transparent 24%),
+  radial-gradient(circle at 78% 16%,#ffffff40 0 .8%,transparent 1.4%),
+  radial-gradient(circle at 70% 24%,#bfe3ff40 0 1.6%,transparent 2.4%),
+  radial-gradient(circle at 61% 33%,#ffffff2a 0 3%,transparent 3.8%),
+  radial-gradient(circle at 8% 9%,#fff 0 1px,transparent 2px),radial-gradient(circle at 33% 6%,#fff 0 1px,transparent 2px),
+  radial-gradient(circle at 52% 12%,#ffffffcc 0 1px,transparent 2px),radial-gradient(circle at 15% 26%,#ffffffaa 0 1px,transparent 2px)}
+@media (prefers-reduced-motion:no-preference){
+  body::before{animation:xpClouds 240s linear infinite}
+  header::after{animation:xpShine 9s ease-in-out infinite}
+}
+@keyframes xpClouds{from{background-position:0 0}to{background-position:-200% 0}}
+@keyframes xpShine{0%,70%{transform:translateX(-120%) skewX(-20deg)}100%{transform:translateX(320%) skewX(-20deg)}}
+/* chrome header with a slow glass shine */
+header{position:relative;overflow:hidden;background:
+  linear-gradient(180deg,#ffffff55 0%,#ffffff12 48%,transparent 52%),var(--xp-title)}
+header::after{content:"";position:absolute;top:0;bottom:0;left:0;width:30%;pointer-events:none;
+  background:linear-gradient(90deg,transparent,#ffffff40 50%,transparent);transform:translateX(-120%) skewX(-20deg)}
+.hlogo{filter:drop-shadow(0 0 6px #7fd8ff) drop-shadow(0 2px 2px #002a8a)}
+/* glassy title bars */
+main::before{background-image:radial-gradient(circle at 15px 50%,#fff 0 3px,#7fc94f 4px 6px,transparent 7px),
+  linear-gradient(180deg,#ffffff4a 0%,#ffffff14 46%,transparent 50%),var(--xp-title)}
+#sidebar::before{background-image:radial-gradient(circle at 15px 50%,#fff 0 3px,#ffb03a 4px 6px,transparent 7px),
+  linear-gradient(180deg,#ffffff4a 0%,#ffffff14 46%,transparent 50%),var(--xp-title)}
+.card h3{background:linear-gradient(180deg,#ffffff4a 0%,#ffffff14 46%,transparent 50%),var(--xp-title)}
+/* window bodies: soft light-to-beige, gentle glow when hovered */
+.panel,main{background:linear-gradient(180deg,#fbfaf5 0%,#ece9d8 160px,#e6e2cf 100%);transition:box-shadow .25s}
+.panel:hover,main:hover{box-shadow:inset 0 0 0 2px #2a63e0,0 0 0 1px #9fd0ff,2px 6px 18px #0b3fa055}
+/* XP window status bar with a resize grip */
+main::after{content:"";display:block;height:20px;margin:12px -12px -12px;border-top:1px solid #c9c7ba;border-radius:0 0 3px 3px;
+  background:radial-gradient(circle,#9b9786 1px,transparent 1.5px) right 4px bottom 3px/4px 4px no-repeat,
+    radial-gradient(circle,#9b9786 1px,transparent 1.5px) right 8px bottom 3px/4px 4px no-repeat,
+    radial-gradient(circle,#9b9786 1px,transparent 1.5px) right 4px bottom 7px/4px 4px no-repeat,
+    linear-gradient(180deg,#f3f1e8,#e0dccb)}
+/* Winamp / WMP-style chrome bezel around the visualiser (inside untouched) */
+.stage{border:2px solid #20242c;box-shadow:inset 0 0 0 1px #6b6b6b,0 0 0 2px #f4f6fa,0 0 0 4px #aab3c3,0 0 0 6px #dfe4ec,0 0 0 7px #6d7790,
+  0 0 18px 6px #4aa8ff40,2px 6px 14px 6px #0005;margin:8px 8px 14px}
+/* glossy jelly buttons */
+button.btn:not(.ghost){background:linear-gradient(180deg,#ffffff80 0%,#ffffff26 46%,transparent 50%),
+  linear-gradient(180deg,#7fd36f 0%,#4cae3f 45%,#3a9a2e 50%,#47ad3a 100%);border-radius:14px}
+button.btn:not(.ghost):hover{box-shadow:inset 0 1px 0 #c9f5b8,inset 0 -2px 3px #2a7a22,0 0 10px #7dff6a99,1px 2px 4px #0004;filter:none}
+.fbtn,.tag,button.btn.ghost{background:linear-gradient(180deg,#ffffff 0%,#f6f6f2 45%,#ecebe6 50%,#d6d0c5 100%)}
+.fbtn.on{background:linear-gradient(180deg,#fff7d6,#ffe39a);border-color:#b47b00;box-shadow:inset 0 0 0 1px #fff3c4,0 0 6px #ffc94d99}
+/* explorer group headers: glossy, with a round XP chevron */
+.group-title{background:linear-gradient(180deg,#ffffff60 0%,transparent 55%),linear-gradient(90deg,#ffffff 0%,#c6d3f7 100%)}
+.preset{transition:background .15s}
+.preset.active{background:linear-gradient(180deg,#5a8fe6 0%,#316ac5 50%,#2a5db8 100%);box-shadow:inset 0 1px 0 #8db4f2}
+/* XP trackbars (sliders) */
+input[type=range]{-webkit-appearance:none;appearance:none;height:22px;background:transparent}
+input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:2px;border:1px solid #8b8b8b;
+  background:linear-gradient(180deg,#9da4ab,#f2f2ee);box-shadow:inset 1px 1px 0 #6f6f6f}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:12px;height:20px;margin-top:-9px;border-radius:3px 3px 7px 7px;
+  border:1px solid #1f6b1f;background:linear-gradient(180deg,#ffffff 0%,#eef0e6 55%,#cfd6c4 100%);box-shadow:inset 0 3px 0 #a4e897,inset 0 -3px 0 #3cb43c;cursor:pointer}
+input[type=range]:focus{outline:none}
+input[type=range]:focus::-webkit-slider-thumb{box-shadow:inset 0 3px 0 #a4e897,inset 0 -3px 0 #3cb43c,0 0 0 2px #fdd889}
+/* XP scrollbars for the whole page */
+::-webkit-scrollbar{width:16px;height:16px;background:#f4f4f0}
+::-webkit-scrollbar-thumb{border-radius:3px;border:1px solid #9aafe5;background:linear-gradient(90deg,#c8d6fb,#b9cbf9 50%,#a9bef6)}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(90deg,#dbe5fd,#c8d6fb)}
+/* chips & timeline with a little glass */
+.chip{background:linear-gradient(180deg,#ffffff,#f1f5fd)}
+.timeline{box-shadow:inset 1px 1px 2px #0002}
+@media(max-width:900px){
+  .stage{margin:6px 6px 12px}
+  /* active tab = the green "start" button */
+  .mtabs button.on{background:linear-gradient(180deg,#ffffff55 0%,#ffffff10 46%,transparent 50%),linear-gradient(180deg,#58c04a,#379a2c);
+    box-shadow:inset 0 1px 0 #b7f0a8,inset 0 -2px 3px #1f6b1f,0 0 8px #7dff6a80;border-radius:10px;font-style:italic;font-weight:700}
+}
 </style>
 </head>
 <body>
@@ -181,7 +358,7 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
         </select></label>
       <label class="sl">Beat type
         <select id="mode">
-          <option value="binaural">Binaural (headphones)</option><option value="monaural">Monaural</option><option value="isochronic">Isochronic pulses</option>
+          <option value="binaural">Binaural (headphones)</option><option value="monaural">Monaural</option><option value="isochronic">Isochronic pulses</option><option value="am">AM tones (smooth swell)</option><option value="hybrid">Hybrid binaural + isochronic</option><option value="bilateral">Bilateral L↔R (EMDR-style)</option><option value="spatial">Spatial / 8D rotation</option>
         </select></label>
     </div>
 
@@ -198,6 +375,7 @@ select{background:var(--panel2);color:var(--text);border:1px solid var(--line);b
             <span class="ev ev-Speculative">Speculative</span> (a fringe claim, included for completeness).</li>
           <li><b>Gateway Process.</b> A 1983 U.S. Army analysis (McDonnell), declassified by the CIA in 2003, was a theoretical review, not a controlled trial. Monroe's real frequency mixes are proprietary, so these presets are <i>interpretations</i>.</li>
           <li><b>Evidence.</b> A 2019 meta-analysis (Garcia-Argibay et al.) found small-to-moderate effects on anxiety, memory, attention and pain. Several EEG studies (e.g. Orozco Perez et al., 2020) found little sign that brainwaves actually lock onto the beat.</li>
+          <li><b>Sound Systems Library.</b> One example of every known way of delivering a rhythm to the brain: binaural, monaural, isochronic, smooth AM tones, hybrid binaural + isochronic, bilateral left↔right (EMDR-style), spatial/8D rotation, layered Hemi-Sync-style beats, descending carriers, coloured noise and drumming. Pick any session, then change <i>Beat type</i> to hear the same session through a different system.</li>
           <li><b>Altered States group.</b> These sessions are ranked by how much research exists: hypnosis (49 meta-analyses), Ganzfeld (decades of EEG/fMRI), rhythmic drumming trance (fMRI), targeted lucidity reactivation, slow-wave sleep pulses, Kirtan Kriya (RCT), singing bowls, mantra rhythm (<i>BMJ</i>), nature soundscapes and Om chanting (fMRI). Flicker-light, infrasound and hyperventilation methods are deliberately left out because they can cause harm.</li>
           <li><b>Bottom line.</b> Treat this as a good tool for relaxation and meditation, not as a guaranteed way to change your state of consciousness, and not as medicine.</li>
         </ul>
@@ -244,7 +422,7 @@ window.__ended=()=>{running=false;paused=false;S=null;scope=null;$("breath").sty
   $("stName").textContent="Session ended";$("cue").textContent="Take a moment before getting up. Notice how you feel.";updateButtons()};
 
 // evidence / group filters (click again to clear)
-const FILTERS=[["","All"],["Research","🔬 Peer-reviewed"],["Gateway","◉ Gateway-inspired"],["Traditional","📜 Traditional"],["Speculative","✨ Speculative"],["@Altered States","🌀 Altered States"]];
+const FILTERS=[["","All"],["Research","🔬 Peer-reviewed"],["Gateway","◉ Gateway-inspired"],["Traditional","📜 Traditional"],["Speculative","✨ Speculative"],["@Altered States","🌀 Altered States"],["@Sound Systems Library","🎛 Sound Systems"],["@Astral Projection & OBE","🌌 Astral / OBE"]];
 const fmatch=(p,k)=>!k||(k[0]==="@"?p.group===k.slice(1):p.evidence===k);
 const hay=p=>(p._hay||(p._hay=[p.name,p.short,p.group,p.evidence,p.mode,(p.tags||[]).join(" "),p.stages.map(s=>s.name).join(" ")].join(" ").toLowerCase()));
 // every word typed must appear in the session's name, group, tags or stage names
@@ -337,7 +515,7 @@ function buildTimeline(p){
 function renderChips(beats,cars){
   const m=$("mode").value;
   $("chips").innerHTML=beats.map((b,i)=>{const c=cars[i],bd=band(b);
-    const det=m==="isochronic"?`tone ${c.toFixed(2)} Hz · pulsed ${b.toFixed(2)}/s`:m==="monaural"?`${(c-b/2).toFixed(2)} + ${(c+b/2).toFixed(2)} Hz mixed`:`L ${(c-b/2).toFixed(2)} · R ${(c+b/2).toFixed(2)} Hz`;
+    const det=m==="am"?`tone ${c.toFixed(2)} Hz · swells ${b.toFixed(2)}/s`:m==="hybrid"?`L ${(c-b/2).toFixed(2)} · R ${(c+b/2).toFixed(2)} Hz · pulsed`:m==="bilateral"?`tone ${c.toFixed(2)} Hz · L↔R ${Math.min(b,12).toFixed(2)}/s`:m==="spatial"?`tone ${c.toFixed(2)} Hz · orbits ${Math.min(b,12).toFixed(2)}/s`:m==="isochronic"?`tone ${c.toFixed(2)} Hz · pulsed ${b.toFixed(2)}/s`:m==="monaural"?`${(c-b/2).toFixed(2)} + ${(c+b/2).toFixed(2)} Hz mixed`:`L ${(c-b/2).toFixed(2)} · R ${(c+b/2).toFixed(2)} Hz`;
     return `<div class="chip" style="border-color:${bd[2]}66"><span style="color:${bd[2]}">${bd[1]}</span> · <b>${b.toFixed(2)} Hz</b><br><span style="color:var(--dim)">${det}</span></div>`}).join("");
 }
 function start(p){
