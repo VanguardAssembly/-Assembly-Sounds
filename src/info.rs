@@ -3,6 +3,9 @@
 //! Text is trusted HTML authored here (never user input).
 use crate::plan::{Info, Preset};
 
+#[path = "info_more.rs"]
+mod info_more;
+
 fn i(what: impl Into<String>, origin: impl Into<String>, era: impl Into<String>, claims: impl Into<String>, research: impl Into<String>) -> Info {
     Info { what: what.into(), origin: origin.into(), era: era.into(), claims: claims.into(), research: research.into() }
 }
@@ -32,6 +35,9 @@ const BREATH_RES: &str = "<p>Slow breathing at about <b>6 breaths per minute</b>
 // ---------------------------------------------------------------- main lookup
 fn info_for(p: &Preset) -> Info {
     let id = p.id.as_str();
+    if let Some(x) = info_more::get(id) {
+        return x;
+    }
     if let Some(x) = ib_info(id) {
         return x;
     }

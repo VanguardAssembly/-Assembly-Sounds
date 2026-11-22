@@ -5,6 +5,9 @@
 //!   Speculative – fringe claim; included for completeness, labelled as such
 use crate::plan::{cue_id, Preset, Stage, Texture};
 
+#[path = "library.rs"]
+mod library;
+
 fn st(name: &str, min: f64, beats: &[f64], cue: &str) -> Stage {
     Stage {
         name: name.into(),
@@ -669,6 +672,7 @@ pub fn all() -> Vec<Preset> {
 
     // ================= The world's contemplative traditions (v1.7) =================
     traditions(&mut v);
+    library::more(&mut v);
 
     // ================= Light Journeys (flicker) =================
     // Opt-in stroboscopic closed-eye imagery. The light only runs after the user accepts the
@@ -1019,6 +1023,7 @@ pub fn all() -> Vec<Preset> {
 
     // Keep each session's original opening line for tagging, so the tailored openings
     // only ever add search tags and never take one away.
+    library::music(&mut v);
     let first: Vec<String> = v.iter().map(|p| p.stages.first().map(|s| s.cue.clone()).unwrap_or_default()).collect();
     crate::settle::apply(&mut v);
     crate::info::fill(&mut v);
@@ -1655,9 +1660,10 @@ fn traditions(v: &mut Vec<Preset>) {
 
 /// Tradition keys for the Tradition filter: a family key, then its branch (if any).
 /// Curated by hand: text matching would, for example, file singing bowls under Tibetan Buddhism.
-/// Families: abrahamic (christian, jewish, islamic), hindu (vedanta, tantra, mantra, yoga),
-/// buddhist (tibetan, theravada, zen, eastasian), taoist, shamanic,
-/// western (hermetic, classical, celtic, norse), secular.
+/// Families: abrahamic (christian [mystic, catholic, orthodox, protestant, rosicrucian, masonic],
+/// jewish [kabbalah, hasidic, mussar], islamic [sufi], bahai), hindu (vedanta, tantra, kundalini, mantra, yoga),
+/// buddhist (tibetan, theravada, zen, eastasian), jain, sikh, taoist, zoroastrian, shinto, shamanic,
+/// western (hermetic, rosicrucian, masonic, classical, celtic, norse, fourthway), secular.
 fn trad_of(id: &str, group: &str) -> Vec<String> {
     let k: &[&str] = match group {
         "Christian Mysticism" => &["abrahamic", "christian"],
@@ -1695,7 +1701,32 @@ fn trad_of(id: &str, group: &str) -> Vec<String> {
             _ => &[],
         },
     };
-    k.iter().map(|s| s.to_string()).collect()
+    let mut out: Vec<String> = k.iter().map(|s| s.to_string()).collect();
+    // Schools within a family (1.8), only ever added after the family keys above:
+    // Christian mysticism, Catholic, Orthodox, Protestant; Kabbalah, Hasidic; Sufi; Kundalini.
+    let school: &[&str] = match group {
+        "Christian Mysticism" => &["mystic"],
+        "Sufi Mysticism" => &["sufi"],
+        _ => &[],
+    };
+    let more: &[&str] = match id {
+        "cm_lectio" | "cm_ignatian" | "cm_castle" | "cm_cloud" | "cm_rosary" | "cm_maranatha" => &["catholic"],
+        "my_centering" => &["catholic", "mystic"],
+        "cm_vigil" | "cm_visio" => &["catholic", "orthodox"],
+        "my_jesus" => &["orthodox", "mystic"],
+        "cm_taize" => &["protestant", "catholic"],
+        "cm_quaker" | "cm_bestill" | "my_vocal" => &["protestant"],
+        "jk_abulafia" | "jk_tree" | "jk_merkavah" => &["kabbalah"],
+        "jk_ayin" => &["hasidic", "kabbalah"],
+        "jk_niggun" | "my_hitbodedut" => &["hasidic"],
+        "my_dhikr" => &["sufi"],
+        "kirtan" | "hy_bija" => &["kundalini"],
+        _ => &[],
+    };
+    for s in school.iter().chain(more.iter()) {
+        if !out.iter().any(|x| x == s) { out.push(s.to_string()); }
+    }
+    out
 }
 
 fn crate_band(hz: f64) -> &'static str {
@@ -1734,6 +1765,12 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
         ("Western Esoteric & Classical", &["western esoteric", "esoteric", "esotericism", "western", "occult", "mystery tradition", "ritual", "spiritual"]),
         ("Trance & Hypnosis Techniques", &["trance", "hypnosis", "hypnotic", "self-hypnosis", "induction", "relaxation", "altered states"]),
         ("Astral Projection & OBE", &["astral", "astral projection", "obe", "out of body", "out-of-body", "projection", "monroe", "rope", "phase", "wbtb", "lucid", "vibrations", "astral travel", "soul travel"]),
+        ("Kundalini Yoga (gentle)", &["kundalini", "kundalini yoga", "yoga", "yogic", "mantra", "chanting", "chakra", "chakras", "energy", "gentle", "meditation", "spiritual"]),
+        ("Rosicrucian & Alchemical", &["rosicrucian", "rosicrucianism", "rose cross", "rosy cross", "alchemy", "alchemical", "esoteric", "western esoteric", "hermetic", "mystical", "spiritual"]),
+        ("Masonic Contemplation", &["masonic", "freemasonry", "freemason", "mason", "masons", "symbolism", "esoteric", "western esoteric", "contemplation", "spiritual"]),
+        ("Jain Meditation", &["jain", "jainism", "jaina", "ahimsa", "equanimity", "meditation", "spiritual"]),
+        ("Sikh Simran", &["sikh", "sikhism", "simran", "naam", "naam simran", "gurbani", "kirtan", "meditation", "spiritual"]),
+        ("Zoroastrian, Bahá'í & Shinto", &["world religions", "faith", "prayer", "spiritual"]),
     ];
     // (needle in lowercase text, tags to add)
     const TOPICS: &[(&str, &[&str])] = &[
@@ -1829,6 +1866,52 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
             };
             for t in k { add(t); }
         }
+        if let Some(m) = &p.music {
+            add("music"); add("meditation music");
+            for (n, part) in m.name.split('|').enumerate() {
+                let spec = part.split('*').next().unwrap_or("").trim();
+                let (k, var) = if n == 0 { (m.kind.as_str(), spec) } else { spec.split_once(':').map(|(a, b)| (a.trim(), b.trim())).unwrap_or((spec, "")) };
+                let ts: &[&str] = match k {
+                    "tanpura" => &["tanpura", "drone", "indian music"],
+                    "drone" => &["drone"],
+                    "choir" => &["choir", "voices"],
+                    "om" | "gyuto" => &["chant", "chanting", "voices"],
+                    "flute" => &["flute"],
+                    "guqin" => &["guqin", "zither", "chinese music"],
+                    "harp" => &["harp"],
+                    "daf" => &["daf", "frame drum", "drum"],
+                    "damaru" => &["damaru", "hand drum", "drum"],
+                    "rin" => &["bell"],
+                    "gongbath" => &["gong", "gong bath", "sound bath"],
+                    "stream" => &["stream", "water", "nature"],
+                    "wind" => &["wind", "nature"],
+                    "fire" => &["fire", "crackling fire"],
+                    "chant" => &["chant", "chanting", "voices", "group chant"],
+                    _ => &[],
+                };
+                for t in ts { add(t); }
+                let vs: &[&str] = match (k, var) {
+                    ("drone", "organ") => &["organ"],
+                    ("drone", "bowl") => &["singing bowl"],
+                    ("drone", "harmonium") => &["harmonium"],
+                    ("choir", "organum") => &["organum", "plainchant"],
+                    ("choir", "hum") => &["humming"],
+                    ("choir", "ah") => &["choir"],
+                    ("choir", _) => &["ison", "byzantine chant"],
+                    ("om", _) => &["om", "aum"],
+                    ("gyuto", _) => &["overtone chanting", "tibetan chant", "throat singing"],
+                    ("flute", "shakuhachi") => &["shakuhachi", "japanese"],
+                    ("flute", "xiao") => &["xiao", "chinese music"],
+                    ("flute", v) if v.starts_with("bansuri") => &["bansuri", "raga"],
+                    ("flute", _) => &["ney", "reed flute"],
+                    ("rin", "church") => &["church bell"],
+                    ("rin", "bell") => &["bell"],
+                    ("rin", _) => &["rin", "singing bowl"],
+                    _ => &[],
+                };
+                for t in vs { add(t); }
+            }
+        }
         if p.visual == "ganzfeld" { add("ganzfeld"); add("red light"); add("visual"); }
         if p.visual.contains("flicker") { add("flicker"); add("light journey"); add("visual"); add("hallucination"); add("strobe"); }
         if p.visual == "tattva" { add("tattva"); add("symbol"); add("afterimage"); add("visual"); }
@@ -1853,7 +1936,7 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
                 "tibetan" => &["tibetan", "tibetan buddhism", "vajrayana"],
                 "theravada" => &["theravada", "pali"],
                 "zen" => &["zen", "chan"],
-                "eastasian" => &["mahayana", "japanese buddhism"],
+                "eastasian" => &["mahayana", "japanese buddhism", "pure land", "chinese buddhism", "east asian buddhism"],
                 "taoist" => &["taoist", "taoism", "daoist", "daoism"],
                 "shamanic" => &["shamanic", "shaman", "shamanism"],
                 "western" => &["western esoteric", "esoteric", "esotericism"],
@@ -1862,6 +1945,23 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
                 "celtic" => &["celtic", "gaelic"],
                 "norse" => &["norse", "heathen"],
                 "secular" => &["secular", "non-religious"],
+                "mystic" => &["christian mysticism", "mystic", "mystical", "contemplative"],
+                "catholic" => &["catholic", "catholicism", "roman catholic"],
+                "orthodox" => &["orthodox", "eastern orthodox", "byzantine"],
+                "protestant" => &["protestant", "protestantism"],
+                "rosicrucian" => &["rosicrucian", "rosicrucianism", "rose cross"],
+                "masonic" => &["masonic", "freemasonry", "mason"],
+                "kabbalah" => &["kabbalah", "kabbala", "jewish mysticism"],
+                "hasidic" => &["hasidic", "hasidism", "chassidic"],
+                "mussar" => &["mussar", "jewish ethics"],
+                "sufi" => &["sufi", "sufism", "dhikr"],
+                "bahai" => &["bahai", "bahá'í", "baha'i"],
+                "kundalini" => &["kundalini", "kundalini yoga"],
+                "jain" => &["jain", "jainism"],
+                "sikh" => &["sikh", "sikhism"],
+                "zoroastrian" => &["zoroastrian", "zoroastrianism", "parsi"],
+                "shinto" => &["shinto", "japanese"],
+                "fourthway" => &["fourth way", "gurdjieff", "the work"],
                 _ => &[],
             };
             for t in ts { add(t); }
