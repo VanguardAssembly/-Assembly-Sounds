@@ -5,6 +5,8 @@ use crate::plan::{Info, Preset};
 
 #[path = "info_more.rs"]
 mod info_more;
+#[path = "guide.rs"]
+mod guide;
 
 fn i(what: impl Into<String>, origin: impl Into<String>, era: impl Into<String>, claims: impl Into<String>, research: impl Into<String>) -> Info {
     Info { what: what.into(), origin: origin.into(), era: era.into(), claims: claims.into(), research: research.into() }
@@ -13,6 +15,7 @@ fn i(what: impl Into<String>, origin: impl Into<String>, era: impl Into<String>,
 pub fn fill(v: &mut [Preset]) {
     for p in v.iter_mut() {
         p.info = Some(info_for(p));
+        p.guide = Some(guide::make(p));
     }
 }
 

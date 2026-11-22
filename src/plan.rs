@@ -85,6 +85,9 @@ pub struct Preset {
     /// Long-form explanation (filled in by info::fill).
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub info: Option<Info>,
+    /// Step-by-step practice guide for beginners (filled in by info::fill, see guide.rs).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub guide: Option<Guide>,
 }
 
 /// In-depth background shown in the session's info card.
@@ -95,6 +98,19 @@ pub struct Info {
     pub era: String,
     pub claims: String,
     pub research: String,
+}
+/// “How to practise”: preparation, technique, each stage, what you may notice, difficulties,
+/// safety, closing and what you will hear. Trusted HTML written in guide.rs.
+#[derive(Serialize, Deserialize, Clone, Debug, Default)]
+pub struct Guide {
+    pub prep: String,
+    pub technique: String,
+    pub steps: String,
+    pub notice: String,
+    pub trouble: String,
+    pub safety: String,
+    pub after: String,
+    pub sound: String,
 }
 fn d_noise() -> String { "pink".into() }
 fn d_mode() -> String { "binaural".into() }

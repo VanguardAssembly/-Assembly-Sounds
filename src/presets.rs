@@ -53,7 +53,7 @@ fn p(group: &str, id: &str, name: &str, short: &str, carriers: &[f64], gains: &[
         id: id.into(), group: group.into(), name: name.into(), short: short.into(),
         carriers: carriers.to_vec(), gains: gains.to_vec(), noise: noise.into(), mode: mode.into(),
         evidence: evidence.into(), about: about.into(), stages, live: false,
-        texture: None, music: None, visual: String::new(), tags: Vec::new(), trad: Vec::new(), info: None,
+        texture: None, music: None, visual: String::new(), tags: Vec::new(), trad: Vec::new(), info: None, guide: None,
     }
 }
 
@@ -1026,10 +1026,14 @@ pub fn all() -> Vec<Preset> {
     library::music(&mut v);
     let first: Vec<String> = v.iter().map(|p| p.stages.first().map(|s| s.cue.clone()).unwrap_or_default()).collect();
     crate::settle::apply(&mut v);
-    crate::info::fill(&mut v);
     for p in v.iter_mut() {
         if p.trad.is_empty() { p.trad = trad_of(&p.id, &p.group); }
+        // third-level schools (1.8): only ever added after the family and branch keys
+        for s in schools_of(&p.id) {
+            if !p.trad.iter().any(|x| x == s) { p.trad.push(s.to_string()); }
+        }
     }
+    crate::info::fill(&mut v);
     auto_tags(&mut v, &first);
 
     // assign cue ids
@@ -1729,6 +1733,47 @@ fn trad_of(id: &str, group: &str) -> Vec<String> {
     out
 }
 
+/// Schools inside a Buddhist or Hindu branch, for the third level of the tradition
+/// browser (the same depth Christianity has with Catholic, Orthodox and so on).
+/// Tibetan: vajrayana (deity & mantra), dzogchen (Dzogchen & Mahāmudrā), sixyogas
+/// (dream, sleep, bardo, phowa, inner fire), lojong (compassion), bon.
+/// Theravada: samatha (calm), vipassana (insight), brahmavihara (loving-kindness).
+/// Zen: rinzai (kōan), soto (just sitting), chan (Chinese Chan & Korean Seon).
+/// East Asian: pureland, nichiren, shingon.
+/// Yoga: pranayama (breath), raja (Patañjali), hatha (Haṭha & Nāda), nidra (Yoga Nidrā).
+/// Mantra: vedic (Om & Gāyatrī), shaiva, vaishnava. Tantra: kashmir, srividya.
+fn schools_of(id: &str) -> &'static [&'static str] {
+    match id {
+        "tb_mani" | "tb_tara" | "tb_medicine" | "tb_vajrasattva" | "tb_manjushri" | "tb_guruyoga" | "tb_vajra"
+        | "my_tibetan" | "tb_gyuto" | "tb_chod" => &["vajrayana"],
+        "tb_sky" | "tb_phat" | "tb_tilopa" | "my_nondual" => &["dzogchen"],
+        "tb_whitea" => &["dzogchen", "bon"],
+        "ap_dreamyoga" | "tb_sleepyoga" | "ap_phowa" | "tb_bardo" | "br_tummo" | "br_vase" => &["sixyogas"],
+        "tb_tonglen" | "monks" => &["lojong"],
+        "my_jhana" | "bu_kasina" | "bu_buddho" | "bu_buddhanussati" | "bu_maranasati" => &["samatha"],
+        "bu_anapana" => &["samatha", "vipassana"],
+        "my_vipassana" | "bu_noting" | "bu_walking" => &["vipassana"],
+        "bu_metta" | "bu_brahma" => &["brahmavihara"],
+        "bu_mu" | "bu_softbutter" | "bu_susokukan" => &["rinzai"],
+        "bu_shikantaza" => &["soto"],
+        "bu_huatou" | "bu_silentillum" | "bu_whatisthis" => &["chan"],
+        "bu_nembutsu" | "bu_amituofo" | "bu_guanyin" => &["pureland"],
+        "bu_daimoku" => &["nichiren"],
+        "bu_ajikan" => &["shingon"],
+        "br_kapal" | "br_bhastrika" | "br_fire" | "br_sky" | "br_nadi" | "br_ratio" | "br_slowbh" => &["pranayama"],
+        "br_bhramari" => &["pranayama", "hatha"],
+        "hy_samyama" | "hy_pratyahara" | "hy_antarmouna" => &["raja"],
+        "hy_trataka" | "my_nada" => &["hatha"],
+        "nsdr" => &["nidra"],
+        "om" | "omdrone" | "hy_gayatri" | "hy_japa" | "hy_mandukya" => &["vedic"],
+        "hy_shiva" => &["shaiva"],
+        "hy_vbt" => &["kashmir", "shaiva"],
+        "hy_mahamantra" => &["vaishnava"],
+        "hy_sriyantra" => &["srividya"],
+        _ => &[],
+    }
+}
+
 fn crate_band(hz: f64) -> &'static str {
     if hz < 0.75 { "Epsilon" } else if hz < 4.0 { "Delta" } else if hz < 8.0 { "Theta" } else if hz < 13.0 { "Alpha" } else if hz < 30.0 { "Beta" } else if hz < 90.0 { "Gamma" } else if hz < 150.0 { "Hypergamma" } else { "Lambda" }
 }
@@ -1962,6 +2007,29 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
                 "zoroastrian" => &["zoroastrian", "zoroastrianism", "parsi"],
                 "shinto" => &["shinto", "japanese"],
                 "fourthway" => &["fourth way", "gurdjieff", "the work"],
+                "vajrayana" => &["vajrayana", "deity yoga", "tantric buddhism"],
+                "dzogchen" => &["dzogchen", "mahamudra", "great perfection", "rigpa"],
+                "sixyogas" => &["six yogas", "naropa", "dream yoga", "bardo"],
+                "lojong" => &["lojong", "mind training", "compassion"],
+                "bon" => &["bon", "bön", "yungdrung"],
+                "samatha" => &["samatha", "shamatha", "calm abiding", "concentration"],
+                "vipassana" => &["vipassana", "insight meditation"],
+                "brahmavihara" => &["brahmavihara", "loving-kindness", "metta"],
+                "rinzai" => &["rinzai", "koan", "kōan"],
+                "soto" => &["soto", "sōtō", "shikantaza"],
+                "chan" => &["chan buddhism", "seon", "korean buddhism", "huatou"],
+                "pureland" => &["pure land", "amida", "amitabha", "nembutsu"],
+                "nichiren" => &["nichiren", "lotus sutra"],
+                "shingon" => &["shingon", "esoteric buddhism"],
+                "pranayama" => &["pranayama", "breath control", "yogic breathing"],
+                "raja" => &["raja yoga", "patanjali", "yoga sutras", "ashtanga"],
+                "hatha" => &["hatha yoga", "nada yoga"],
+                "nidra" => &["yoga nidra", "yogic sleep"],
+                "vedic" => &["vedic", "veda", "upanishad"],
+                "shaiva" => &["shaiva", "shaivism", "shiva"],
+                "vaishnava" => &["vaishnava", "krishna", "bhakti"],
+                "kashmir" => &["kashmir shaivism", "trika"],
+                "srividya" => &["sri vidya", "shri vidya", "shakta", "shaktism"],
                 _ => &[],
             };
             for t in ts { add(t); }
