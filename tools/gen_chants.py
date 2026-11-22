@@ -744,6 +744,9 @@ CHANTS = {
     "aum_a": dict(pool="in", tonic=136.1, beat=0.5, reps=4, men=5, women=3, vib=0, scoop=0, glide=0.1, rt60=3.0, hum=2.0, score="ɑː:0:6 uːm:0:4:h _:_:2"),
     "aum_u": dict(pool="in", tonic=136.1, beat=0.5, reps=4, men=5, women=3, vib=0, scoop=0, glide=0.1, rt60=3.0, hum=2.0, score="ɑː:0:2 uː:0:6 uːm:0:2:h _:_:2"),
     "aum_m": dict(pool="in", tonic=136.1, beat=0.5, reps=4, men=5, women=3, vib=0, scoop=0, glide=0.1, rt60=3.0, hum=3.0, score="ɑː:0:2 uː:0:2 uːm:0:6:h _:_:2"),
+    "aum10": dict(  # one slow A-U-M every ten seconds, for the Om sessions' ten-second breath
+        pool="in", tonic=136.1, beat=0.5, reps=3, men=5, women=3, vib=0, scoop=0, glide=0.1, rt60=3.0, hum=2.5,
+        score="ɑː:0:4 uː:0:4 uːm:0:8:h _:_:4"),
 
     # ---------------------------------------------------------- Kundalini (gentle) and Sikh
     "adi": dict(  # Ong Namo Guru Dev Namo (the Adi mantra that opens a Kundalini class)
@@ -758,6 +761,9 @@ CHANTS = {
     "satanama_w": dict(  # the whispered round
         pool="in", tonic=196.0, beat=1.0, reps=6, men=3, women=3, vib=0, scoop=0, rt60=1.6, wet=0.2, gain=-5,
         score="sɑː:7:1:w tɑː:5:1:w nɑː:4:1:w mɑː:0:1:w"),
+    "ramadasa": dict(  # Ra Ma Da Sa, Sa Say So Hung (the healing mantra), one round per breath (original tune)
+        pool="in", tonic=146.83, beat=0.5, reps=4, men=4, women=4, vib=8, rt60=2.4,
+        score="ɾɑː:0:1 mɑː:2:1 dɑː:4:1 sɑː:5:3 | sɑː:5:1 seː:4:1 soː:2:1 hʊŋ:0:3:h _:_:2"),
     "waheguru": dict(  # Waheguru simran, sung over a harmonium
         pool="in", tonic=138.59, beat=0.4, reps=2, men=4, women=4, vib=12, rt60=1.8,
         score="vɑː:4:1 heː:4:1 ɡʊ:2:1 ɾuː:0:1 | vɑː:4:1 heː:4:1 ɡʊ:2:1 ɾuː:0:1 | vɑː:7:1 heː:7:1 ɡʊ:4:1 ɾuː:2:1 | vɑː:7:1 heː:7:1 ɡʊ:4:1 ɾuː:2:1"
@@ -782,6 +788,10 @@ CHANTS = {
         pool="ar", tonic=110.0, beat=0.3, reps=3, men=7, women=0, vib=0, scoop=10, glide=0.04, spread=0.02, rt60=1.3, wet=0.24, breath=0.12,
         score="lɑː:0:2:> ʔi:0:1 lɑː:1:1 hɑ:0:1 ʔil:0:1 lɑl:1:1 lɑːh:0:1 | lɑː:0:2:> ʔi:0:1 lɑː:1:1 hɑ:0:1 ʔil:0:1 lɑl:1:1 lɑːh:0:1"
               " | lɑː:4:2:> ʔi:4:1 lɑː:5:1 hɑ:4:1 ʔil:1:1 lɑl:1:1 lɑːh:0:1 | lɑː:4:2:> ʔi:4:1 lɑː:5:1 hɑ:4:1 ʔil:1:1 lɑl:1:1 lɑːh:0:1"),
+    "lailaha_slow": dict(  # the same dhikr slowed to one phrase every five seconds, for the breath-paced session
+        pool="ar", tonic=110.0, beat=0.3125, reps=3, men=6, women=0, vib=0, scoop=10, glide=0.05, spread=0.02, rt60=1.8, wet=0.28, breath=0.1,
+        score="lɑː:0:3:> ʔi:0:2 lɑː:1:2 hɑ:0:2 ʔil:0:2 lɑl:1:2 lɑːh:0:3"
+              " | lɑː:4:3:> ʔi:4:2 lɑː:5:2 hɑ:4:2 ʔil:1:2 lɑl:1:2 lɑːh:0:3"),
     "hu": dict(  # Allāh Hū, the last breath of the name, deep and breathy
         pool="ar", tonic=98.0, beat=0.4, reps=6, men=6, women=2, vib=0, scoop=10, rt60=2.4, breath=0.1, formant=0.96,
         score="ʔɑl:0:1 lɑːh:2:2 huː:0:5:b _:_:4"),
@@ -818,6 +828,10 @@ CHANTS = {
     "aleph": dict(  # Abulafia-style: the letter aleph with the five vowels, one per long breath
         pool="en", tonic=110.0, beat=0.5, reps=2, men=3, women=1, vib=0, scoop=0, rt60=1.8, wet=0.25,
         score="ʔoː:0:4 _:_:2 ʔɑː:0:4 _:_:2 ʔiː:0:4 _:_:2 ʔeː:0:4 _:_:2 ʔuː:0:4 _:_:2"),
+    "kadosh": dict(  # Kadosh, kadosh, kadosh Adonai Tzeva'ot, melo khol ha'aretz kevodo (Isaiah 6:3, the Kedushah; original tune)
+        pool="en", tonic=110.0, beat=0.45, reps=2, men=5, women=4, vib=12, glide=0.1, scoop=20, rt60=2.6,
+        score="kɑ:0:1 doːʃ:3:2 | kɑ:5:1 doːʃ:7:2 | kɑ:8:1 doːʃ:7:3 _:_:1 | ʔɑ:5:1 doː:7:1 nɑi:5:2 ʦə:3:1 vɑː:2:1 ʔoːt:0:2 _:_:1"
+              " | mə:3:1 loː:5:1 χɔl:7:1 hɑː:5:1 ʔɑː:3:1 ɾɛts:2:2 _:_:1 | kə:3:1 voː:2:1 doː:0:4 _:_:2"),
 
     # ---------------------------------------------------------- Christian
     "kyrie": dict(  # Kyrie eleison in plainchant style, Dorian (original melody)
@@ -838,14 +852,14 @@ CHANTS = {
         parts=[("f", 2, 0, 12), ("f", 2, 1, 12), ("m", 2, 0, 0), ("m", 2, 2, 0)],
         score="u:4;0;-12:1 bi:5;2;-7:1 kɑ:7;4;-12:1 ɾi:5;2;-7:1 tɑs:4;0;-12:1 et:2;-1;-5:1 ɑ:4;0;-12:1 moɾ:2;-1;-5:2"
               " | u:4;0;-12:1 bi:5;2;-7:1 kɑ:7;4;-8:1 ɾi:9;5;-3:1 tɑs:7;4;-5:1 de:5;2;-7:1 us:4;0;-8:1 i:2;-1;-5:1 bi:2;-1;-5:1 est:0;-5;-12:4 _:_:2"),
-    "jesus": dict(  # the Jesus Prayer in Greek, Byzantine style over the ison
-        pool="la", tonic=146.83, beat=0.5, reps=2, men=6, women=0, vib=10, glide=0.09, rt60=3.5, wet=0.38,
-        score="ki:0:1 ɾi:2:1 e:0:1 | i:3:1 i:5:1 su:3:2 | χɾi:2:1 ste:0:2 _:_:1 | ʝi:3:1 e:5:2 tu:3:1 θe:2:1 u:0:2 _:_:1"
-              " | e:0:1 le:2:1 i:3:1 son:2:2 me:0:4 _:_:3"),
-    "jesus_w": dict(  # the same prayer whispered
-        pool="la", tonic=146.83, beat=0.5, reps=2, men=3, women=0, rt60=2.0, wet=0.22, gain=-5,
-        score="ki:0:1:w ɾi:2:1:w e:0:1:w i:3:1:w i:5:1:w su:3:2:w χɾi:2:1:w ste:0:2:w _:_:1 ʝi:3:1:w e:5:2:w tu:3:1:w θe:2:1:w u:0:2:w _:_:1"
-              " e:0:1:w le:2:1:w i:3:1:w son:2:2:w me:0:4:w _:_:3"),
+    "jesus": dict(  # the Jesus Prayer in Greek, Byzantine style over the ison: one prayer every ten seconds
+        pool="la", tonic=146.83, beat=0.5, reps=3, men=6, women=0, vib=10, glide=0.09, rt60=3.5, wet=0.38,
+        score="ki:0:1 ɾi:2:1 e:0:1 i:3:1 i:5:1 su:3:1 χɾi:2:1 ste:0:2 _:_:1"
+              " | ʝi:3:0.5 e:5:1 tu:3:0.5 θe:2:0.5 u:0:1 e:0:0.5 le:2:0.5 i:3:0.5 son:2:1 me:0:2.5 _:_:1.5"),
+    "jesus_w": dict(  # the same prayer whispered, on the same ten-second breath
+        pool="la", tonic=146.83, beat=0.5, reps=3, men=3, women=0, rt60=2.0, wet=0.22, gain=-5,
+        score="ki:0:1:w ɾi:2:1:w e:0:1:w i:3:1:w i:5:1:w su:3:1:w χɾi:2:1:w ste:0:2:w _:_:1"
+              " | ʝi:3:0.5:w e:5:1:w tu:3:0.5:w θe:2:0.5:w u:0:1:w e:0:0.5:w le:2:0.5:w i:3:0.5:w son:2:1:w me:0:2.5:w _:_:1.5"),
     "vacate": dict(  # Vacate et videte quoniam ego sum Deus (Ps 45:11 Vulgate, "Be still") on a psalm tone
         pool="la", tonic=130.81, beat=0.45, reps=3, men=5, women=0, vib=0, scoop=0, glide=0.06, rt60=4.0, wet=0.4,
         score="vɑ:0:1 kɑ:2:1 te:5:1 et:5:1 vi:5:1 de:7:1 te:5:2 _:_:1 | kwo:5:1 ni:5:1 ɑm:5:1 e:5:1 ɡo:5:1 sum:4:1 de:2:1 us:0:3 _:_:2"),
