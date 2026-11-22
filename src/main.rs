@@ -7,6 +7,7 @@ mod engine;
 mod info;
 mod plan;
 mod presets;
+mod settle;
 mod texture;
 mod voice;
 

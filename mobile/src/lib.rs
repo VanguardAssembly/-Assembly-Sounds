@@ -12,6 +12,8 @@ mod info;
 mod plan;
 #[path = "../../src/presets.rs"]
 mod presets;
+#[path = "../../src/settle.rs"]
+mod settle;
 #[path = "../../src/texture.rs"]
 mod texture;
 mod voice;

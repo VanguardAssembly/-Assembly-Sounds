@@ -322,6 +322,11 @@ input[type=range]:focus::-webkit-slider-thumb{box-shadow:inset 0 3px 0 #a4e897,i
   background:radial-gradient(circle at 35% 30%,#d8f0ff,#4a9cf0 45%,#1b4fb8 80%);box-shadow:0 0 40px #4aa8ff88,inset 0 -10px 30px #0b2f8a}
 .brt{font:700 22px "Trebuchet MS",Tahoma,sans-serif;text-shadow:0 2px 6px #000}.brs{font-size:14px;max-width:480px;color:#b9cdf5}
 .brbtns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.xwide{grid-column:1/-1}.xgrid select:disabled,.xgrid input:disabled{opacity:.55}
+.tatov{position:fixed;inset:0;z-index:78;display:none;align-items:center;justify-content:center;background:#e8e5db;cursor:pointer;transition:background 3s}
+.tatov svg{width:min(66vmin,520px);height:min(66vmin,520px)}
+.tatov span{position:absolute;left:0;right:0;bottom:22px;text-align:center;color:#555;font:14px Tahoma,sans-serif;padding:0 16px}
+.tatov.dark{background:#0a0a10}.tatov.dark span{color:#8a8a99}
 @media(max-width:600px){.xgrid{grid-template-columns:1fr}.brt{font-size:19px}}
 </style>
 </head>
@@ -337,6 +342,7 @@ input[type=range]:focus::-webkit-slider-thumb{box-shadow:inset 0 3px 0 #a4e897,i
 <div class="flkov" id="flkOv" title="Tap or press any key to stop"><span id="flkMsg"></span></div>
 <div class="brov" id="brOv"><div class="brc" id="brC"></div><div class="brt" id="brT"></div><div class="brs" id="brS"></div>
   <div class="brbtns"><button class="btn" id="brNow" style="display:none">I need to breathe</button><button class="btn ghost" id="brStop">■ Stop breathwork</button></div></div>
+<div class="tatov" id="tatOv" title="Tap or press Esc to close"><svg id="tatSvg" viewBox="-100 -100 200 200" aria-hidden="true"></svg><span id="tatMsg"></span></div>
 <div class="ganz" id="ganz" title="Click or press Esc to exit"><span>Ganzfeld light: steady, never flickers. Eyes closed, face the screen. Click or press Esc to exit.</span></div>
 
 <div class="layout">
@@ -372,6 +378,7 @@ input[type=range]:focus::-webkit-slider-thumb{box-shadow:inset 0 3px 0 #a4e897,i
       <select id="voiceSel" title="Narrator voice"></select>
       <label class="chk"><input type="checkbox" id="breathT"> Breath pacer</label>
       <button class="btn ghost" id="ganzBtn" style="display:none">🔴 Ganzfeld light</button>
+      <button class="btn ghost" id="tatBtn" style="display:none">🔺 Tattva card</button>
       <span class="xrow" title="Experimental, opt-in. Each needs its warning accepted first.">
         <button class="btn ghost xbtn" id="flkBtn">⚡ Light journey</button>
         <button class="btn ghost xbtn" id="infBtn">🌫 Infrasound</button>
@@ -457,7 +464,7 @@ window.__ended=()=>{running=false;paused=false;S=null;scope=null;$("breath").sty
   $("stName").textContent="Session ended";$("cue").textContent="Take a moment before getting up. Notice how you feel.";updateButtons()};
 
 // evidence / group filters (click again to clear)
-const FILTERS=[["","All"],["Research","🔬 Peer-reviewed"],["Gateway","◉ Gateway-inspired"],["Traditional","📜 Traditional"],["Speculative","✨ Speculative"],["@Altered States","🌀 Altered States"],["@Sound Systems Library","🎛 Sound Systems"],["@Astral Projection & OBE","🌌 Astral / OBE"],["@Light Journeys (Flicker)","⚡ Light Journeys"],["@Infrasound (opt-in)","🌫 Infrasound"],["@Breathwork (opt-in)","🌬 Breathwork"]];
+const FILTERS=[["","All"],["Research","🔬 Peer-reviewed"],["Gateway","◉ Gateway-inspired"],["Traditional","📜 Traditional"],["Speculative","✨ Speculative"],["@Altered States","🌀 Altered States"],["@Sound Systems Library","🎛 Sound Systems"],["@Astral Projection & OBE","🌌 Astral / OBE"],["@Spiritual & Mystical Experiences","🕊 Mystical"],["@Light Journeys (Flicker)","⚡ Light Journeys"],["@Infrasound (opt-in)","🌫 Infrasound"],["@Breathwork (opt-in)","🌬 Breathwork"],["@Breathing Techniques","🍃 Breathing"]];
 const fmatch=(p,k)=>!k||(k[0]==="@"?p.group===k.slice(1):p.evidence===k);
 const hay=p=>(p._hay||(p._hay=[p.name,p.short,p.group,p.evidence,p.mode,(p.tags||[]).join(" "),p.stages.map(s=>s.name).join(" ")].join(" ").toLowerCase()));
 // every word typed must appear in the session's name, group, tags or stage names
@@ -684,11 +691,11 @@ document.addEventListener("click",e=>{if(e.target.closest("#sidebar,#mtabs"))sav
 (()=>{
 const CONSENT_V=1;
 const consent={};
-const XP={flk:{col:"white",sync:true,hz:10,bri:80,src:"screen",min:15},inf:{hz:18.98,lvl:30},br:{tech:"power",rounds:3,breaths:30,pace:"normal",min:10}};
+const XP={flk:{col:"white",sync:true,hz:10,bri:80,src:"screen",min:15,proto:"custom"},inf:{hz:18.98,lvl:30},br:{tech:"sigh",rounds:3,breaths:30,pace:"normal",min:10,lvl:{}},tat:{el:"tejas",sub:"",sec:20}};
 {const c0=collectSettings;collectSettings=function(){const o=c0();o.consent=consent;o.xp=XP;return o}}
 {const a0=applySettings;applySettings=function(st){a0(st);
   if(st&&st.consent&&typeof st.consent==="object")for(const k of ["flicker","infra","breath"]){const c=st.consent[k];if(c&&c.v===CONSENT_V)consent[k]=c}
-  if(st&&st.xp&&typeof st.xp==="object")for(const k of ["flk","inf","br"]){const src=st.xp[k];if(src&&typeof src==="object")for(const kk in XP[k]){const v=src[kk];if(typeof v===typeof XP[k][kk])XP[k][kk]=v}}
+  if(st&&st.xp&&typeof st.xp==="object")for(const k of ["flk","inf","br","tat"]){const src=st.xp[k];if(src&&typeof src==="object")for(const kk in XP[k]){const v=src[kk];if(typeof v===typeof XP[k][kk])XP[k][kk]=v}}
 }}
 const COMMON=[
   "I am 18 or older.",
@@ -737,73 +744,188 @@ const clamp=(x,a,b,d)=>{x=+x;return isFinite(x)?Math.min(b,Math.max(a,x)):d};
 
 // ---------- Light journeys ----------
 const hasTorch=()=>{try{return !!(window.FocusLight&&window.FocusLight.available())}catch(e){return false}};
-const F={on:false,raf:0,ph:0,last:0,t0:0,cd:0,torch:false,rate:0};
+const F={pick:"custom",auto:"",on:false,raf:0,ph:0,last:0,t0:0,cd:0,torch:false,rate:0,proto:"custom",duty:.5,open:false,c0:0,per:0,lit0:0,fade:8000,tm:"",msg:"",maxMs:0,lastOn:0,wasOn:false};
 const ov=$("flkOv");
+// Research and practitioner presets. Each one fixes the colour, the share of every cycle the light is on
+// (duty) and whether the eyes are open; the rate follows the session's stages, so a session built for a
+// protocol replays its timeline. In light sessions, stage names steer the light: "(dark)" = off,
+// "Steady" = constant light, "arrhythmic" = irregular timing (never faster than 12 Hz). The last stage is dark.
+const FLK={
+ classic:{n:"Classic flicker",col:"white",duty:.5,d:"White light on closed eyes, lit for half of each cycle, at the session's rates: the standard set-up of flicker research since the 1950s."},
+ bartossek:{n:"Bartossek et al. 2021",col:"white",duty:.5,d:"White light on closed eyes, lit for half of each cycle, for 20 minutes at 10 Hz, at 3 Hz, or as steady light (Frontiers in Human Neuroscience)."},
+ amaya:{n:"Amaya et al. 2023",col:"white",duty:.3,d:"White light on closed eyes, lit for 30% of each cycle, in 2-minute blocks at 10, 8 and 3 Hz, rhythmic and arrhythmic, with dark pauses to rate the visuals (PLOS ONE)."},
+ ganzclosed:{n:"Ganzflicker, eyes closed",col:"red",duty:.5,d:"Red and black alternating at the session's rate, on closed eyes."},
+ ganzflicker:{n:"Ganzflicker, eyes open (original)",col:"red",duty:.5,open:true,d:"The original Ganzflicker: the whole screen alternating red and black at about 10 Hz for 10 minutes, watched with the eyes open and the gaze relaxed. Screen only, brightness capped at 60%."},
+ scan:{n:"Frequency scan 3–12 Hz",col:"white",duty:.5,d:"White light on closed eyes, one minute at each rate from 3 to 12 Hz, to find where your visuals are strongest."},
+ lucia:{n:"Hypnagogic light (Lucia-style)",col:"warm",duty:.5,d:"Warm light on closed eyes, alternating flicker with periods of steady glow, in the style of the Lucia N°03 lamp."},
+ dreamachine:{n:"Dreamachine (Gysin)",col:"warm",duty:.5,d:"Warm light on closed eyes, like a lamp seen through the slots of Brion Gysin's turning Dreamachine, drifting between 8 and 12 Hz."},
+ ave:{n:"Audio-visual entrainment",col:"white",duty:.5,d:"White light flashing at the same rate as the sound pulses, as in AVE \"mind machines\"."},
+ phone:{n:"Phone flashlight journey",col:"white",duty:.5,torch:true,d:"The phone's flashlight (or the screen) on closed eyes, in the style of apps such as Lumenate."}
+};
+const flkProtoOf=v=>{const m=/^flicker:(\w+)/.exec(v||"");if(m&&FLK[m[1]])return m[1];return v==="flicker"?"classic":v==="ganzflicker"?"ganzclosed":""};
+const gs=()=>(running&&current)?current:selected;
 function flkPanel(){
-  const P=XP.flk,T=hasTorch();
-  modal("⚡ Light journey",`<p class="xsmall"><b>Screen:</b> dim the room, sit 30–50 cm from the screen, close your eyes and face it.${T?" <b>Flashlight:</b> hold the phone 10–20 cm from your closed eyes with the light facing you.":""}</p>
+  const P=XP.flk,T=hasTorch(),g=gs(),auto=flkProtoOf(g&&g.visual);F.auto=auto;
+  modal("⚡ Light journey",`<p class="xsmall" id="fHow"></p>
   <div class="xgrid">
-   <label class="sl">Colour<select id="fCol"><option value="white">White (strongest)</option><option value="red">Red &amp; black (Ganzflicker)</option><option value="amber">Amber</option><option value="blue">Blue</option><option value="rainbow">Rainbow drift</option></select></label>
+   <label class="sl xwide">Protocol<select id="fPro">${Object.entries(FLK).map(([k,x])=>`<option value="${k}">${esc(x.n)}${k===auto?" · this session":""}</option>`).join("")}<option value="custom">My own settings</option></select></label>
+   <p class="xsmall xwide" id="fProD" style="margin:0"></p>
+   <label class="sl">Colour<select id="fCol"><option value="white">White (strongest)</option><option value="red">Red &amp; black (Ganzflicker)</option><option value="warm">Warm white</option><option value="amber">Amber</option><option value="blue">Blue</option><option value="rainbow">Rainbow drift</option></select></label>
    ${T?`<label class="sl">Light source<select id="fSrc"><option value="screen">Screen</option><option value="torch">Phone flashlight</option></select></label>`:""}
-   <label class="sl">Auto-stop after<select id="fMin"><option value="5">5 min</option><option value="10">10 min</option><option value="15">15 min</option><option value="20">20 min</option><option value="30">30 min</option></select></label>
+   <label class="sl">Auto-stop after<select id="fMin"><option value="0">When the session ends</option><option value="5">5 min</option><option value="10">10 min</option><option value="15">15 min</option><option value="20">20 min</option><option value="30">30 min</option></select></label>
    <label class="chk"><input type="checkbox" id="fSync"> Follow the session's beat</label>
    <label class="sl">Fixed rate <output id="fHzO"></output><input type="range" id="fHz" min="3" max="12" step="0.5"></label>
    <label class="sl">Brightness <output id="fBriO"></output><input type="range" id="fBri" min="20" max="100" step="5"></label>
   </div>
-  <p class="xsmall">Strongest visuals are usually around <b>10 Hz</b>; the Sweet-Spot Sweep session helps you find your own peak. Rates are always kept between 3 and 12 Hz. <b>Tap anywhere or press any key to stop instantly.</b> · <a href="#" id="fRev">Review warnings</a></p>`,
-  [["Close","ghost",closeModal],["▶ Start light journey","",()=>{readF();closeModal();flkCountdown()}]]);
-  $("fCol").value=P.col;if($("fSrc"))$("fSrc").value=P.src;$("fMin").value=String(P.min);if(!$("fMin").value)$("fMin").value="15";
-  $("fSync").checked=P.sync;$("fHz").value=clamp(P.hz,3,12,10);$("fBri").value=clamp(P.bri,20,100,80);
+  <p class="xsmall">Strongest visuals are usually around <b>10 Hz</b>; the Sweet-Spot Sweep and Frequency Scan sessions help you find your own peak. Rates are always kept between 3 and 12 Hz. <b>Tap anywhere or press any key to stop instantly.</b> · <a href="#" id="fRev">Review warnings</a></p>`,
+  [["Close","ghost",closeModal],["▶ Start light journey","",()=>{readF();closeModal();flkBegin()}]]);
+  if($("fSrc"))$("fSrc").value=P.src;
+  $("fHz").value=clamp(P.hz,3,12,10);$("fBri").value=clamp(P.bri,20,100,80);
   const upd=()=>{$("fHzO").textContent=(+$("fHz").value).toFixed(1)+" Hz";$("fBriO").textContent=$("fBri").value+"%"};upd();
   $("fHz").oninput=upd;$("fBri").oninput=upd;
+  const pick=()=>{const k=$("fPro").value,x=FLK[k];
+    $("fProD").textContent=x?x.d:"Your own colour, rate and timer, lit for half of each cycle.";
+    $("fHow").innerHTML=x&&x.open?"<b>Eyes open:</b> dim the room, sit about an arm's length from the screen and look softly at its centre.":
+      `<b>Screen:</b> dim the room, sit 30–50 cm from the screen, close your eyes and face it.${T?" <b>Flashlight:</b> hold the phone 10–20 cm from your closed eyes with the light facing you.":""}`;
+    for(const id of ["fCol","fSync","fHz","fMin"])$(id).disabled=!!x;
+    if(x){$("fCol").value=x.col;$("fSync").checked=true;$("fMin").value="0"}
+    else{$("fCol").value=P.col;if(!$("fCol").value)$("fCol").value="white";$("fSync").checked=P.sync;$("fMin").value=String(P.min);if(!$("fMin").value)$("fMin").value="15"}
+    if($("fSrc")){$("fSrc").disabled=!!(x&&x.open);if(x&&x.open)$("fSrc").value="screen";else if(x&&x.torch)$("fSrc").value="torch";else $("fSrc").value=P.src==="torch"?"torch":"screen"}
+  };
+  $("fPro").value=auto||(FLK[P.proto]?P.proto:"custom");$("fPro").onchange=pick;pick();
   $("fRev").onclick=e=>{e.preventDefault();askConsent("flicker",flkPanel)};
 }
-function readF(){const P=XP.flk;P.col=$("fCol").value;P.src=$("fSrc")?$("fSrc").value:"screen";P.min=clamp($("fMin").value,1,30,15);P.sync=$("fSync").checked;P.hz=clamp($("fHz").value,3,12,10);P.bri=clamp($("fBri").value,20,100,80);saveSettings()}
-function curRate(){const P=XP.flk;let r=P.hz;if(P.sync&&running&&S&&S.beats&&S.beats[0]>0)r=S.beats[0];return clamp(r,3,12,10)}
-const darkNow=()=>paused||(running&&current&&S&&/flicker/.test(current.visual||"")&&S.stage===current.stages.length-1);
+// a light session's own protocol is used for that session only; the choice is remembered for other sessions
+function readF(){const P=XP.flk,k=$("fPro").value;F.pick=FLK[k]?k:"custom";if(!F.auto)P.proto=F.pick;
+  if(!FLK[k]){P.col=$("fCol").value;P.min=clamp($("fMin").value,0,30,15);P.sync=$("fSync").checked;P.hz=clamp($("fHz").value,3,12,10)}
+  P.src=$("fSrc")?$("fSrc").value:"screen";P.bri=clamp($("fBri").value,20,100,80);saveSettings()}
+function curRate(){const P=XP.flk;let r=P.hz;if((P.sync||F.proto!=="custom")&&running&&S&&S.beats&&S.beats[0]>0)r=S.beats[0];return clamp(r,3,12,10)}
+// what the light does right now: "dark", "steady", "arrhythmic" or "flicker"
+function lightMode(){
+  if(paused)return "dark";
+  if(!(running&&current&&S))return "flicker";
+  if(!/flicker/.test(current.visual||""))return "flicker";
+  if(S.stage===current.stages.length-1)return "dark";
+  const n=((current.stages[S.stage]||{}).name||"").toLowerCase();
+  return n.includes("(dark)")?"dark":n.includes("steady")?"steady":n.includes("arrhythmic")?"arrhythmic":"flicker";
+}
+const darkNow=()=>lightMode()==="dark";
 function flkMsg(t){$("flkMsg").textContent=t}
+// eyes-open Ganzflicker asks again every time, because it is more intense than flicker on closed eyes
+function flkBegin(){
+  const x=FLK[F.pick];
+  if(x&&x.open){modal("👁 Eyes-open Ganzflicker",`<p>This protocol is watched with your <b>eyes open</b>, which is more intense than flicker on closed eyes. Red flashing light is the kind most likely to trigger a seizure in people who are sensitive to it.</p>
+    <p>Dim the room, sit about an arm's length from the screen and let your gaze rest softly on its centre. <b>Look away, close your eyes or tap the screen at once</b> if you feel any discomfort, dizziness or strange sensations. Brightness is capped at 60%. Never use it where anyone else, especially a child, can see the screen.</p>`,
+    [["Cancel","ghost",closeModal],["Start with eyes open","",()=>{closeModal();flkCountdown()}]]);return}
+  flkCountdown();
+}
 function flkCountdown(){
   if(F.on)return;
+  const x=FLK[F.pick];
+  F.proto=x?F.pick:"custom";F.duty=x?x.duty:.5;F.open=!!(x&&x.open);
   if(!running&&selected)start(selected);
-  F.on=true;ov.style.display="block";ov.style.background="#000";
-  let n=5;flkMsg(`Close your eyes and face the light. Starting in ${n}…`);
+  F.on=true;ov.style.display="block";ov.style.background="#000";F.msg="";
+  const how=F.open?"Eyes open: look softly at the centre of the screen.":"Close your eyes and face the light.";
+  let n=5;flkMsg(`${how} Starting in ${n}…`);
   F.cd=setInterval(()=>{if(!F.on){clearInterval(F.cd);return}n--;
-    if(n>0)flkMsg(`Close your eyes and face the light. Starting in ${n}…`);
+    if(n>0)flkMsg(`${how} Starting in ${n}…`);
     else{clearInterval(F.cd);flkMsg("Tap anywhere or press any key to stop");flkGo()}},1000);
 }
 function flkGo(){
-  const P=XP.flk;F.t0=performance.now();F.last=F.t0;F.ph=0;F.torch=P.src==="torch"&&hasTorch();
-  if(F.torch){F.rate=curRate();try{window.FocusLight.start(F.rate,P.min)}catch(e){F.torch=false}}
+  const P=XP.flk;F.t0=performance.now();F.last=F.t0;F.ph=0;F.per=0;F.lit0=0;F.fade=8000;F.tm="";F.lastOn=0;F.wasOn=false;
+  F.maxMs=(F.proto==="custom"&&P.min>0?P.min:30)*60000;
+  F.torch=!F.open&&P.src==="torch"&&hasTorch();
   F.raf=requestAnimationFrame(flkFrame);
 }
 function hsl(h){const f=n=>{const k=(n+h/30)%12;return 255*(0.5-0.5*Math.max(-1,Math.min(k-3,9-k,1)))};return [f(0),f(8),f(4)]}
+// the phone flashlight runs its own timer on Android; this keeps it in step with the stage
+function torchFrame(mode,r,el){
+  const L=window.FocusLight,steadyOk=typeof L.setSteady==="function",shapeOk=typeof L.setShape==="function";
+  const want=(mode==="steady"&&!steadyOk)?"dark":mode;
+  try{
+    if(want==="dark"){if(F.tm!=="dark"){L.stop();F.tm="dark"}return}
+    if(F.tm!==want){if(shapeOk)L.setShape(F.duty,want==="arrhythmic"?0.4:0);if(steadyOk)L.setSteady(want==="steady")}
+    if(F.tm===""||F.tm==="dark"){F.rate=r;L.start(r,Math.max(0.2,(F.maxMs-el)/60000))}
+    else if(Math.abs(r-F.rate)>0.05){F.rate=r;L.setRate(r)}
+    F.tm=want;
+  }catch(e){F.torch=false;try{L.stop()}catch(_){}}
+}
 function flkFrame(ts){
   if(!F.on)return;
   const P=XP.flk,el=ts-F.t0;
-  if(el>P.min*60000){flkStop();return}
-  const r=curRate(),dark=darkNow();
-  if(F.torch){
-    if(dark){if(F.rate!==-1){try{window.FocusLight.stop()}catch(e){}F.rate=-1}}
-    else if(F.rate===-1){F.rate=r;try{window.FocusLight.start(r,Math.max(0.2,(P.min*60000-el)/60000))}catch(e){}}
-    else if(Math.abs(r-F.rate)>0.05){F.rate=r;try{window.FocusLight.setRate(r)}catch(e){}}
-    ov.style.background="#000";
-  }else{
-    const dt=Math.min(0.1,Math.max(0,(ts-F.last)/1000));F.ph=(F.ph+r*dt)%1;
-    const b=clamp(P.bri,20,100,80)/100*(0.2+0.8*Math.min(1,el/8000));
+  if(el>F.maxMs){flkStop();return}
+  const r=curRate(),mode=lightMode();
+  if(mode==="dark"){if(F.lit0)F.fade=4000;F.lit0=0}else if(!F.lit0)F.lit0=ts;
+  const st=(running&&current&&S&&current.stages[S.stage])||null;
+  const m=mode!=="dark"?"Tap anywhere or press any key to stop":paused?"Paused · light off · tap or press any key to stop":
+    `Light off${st?" · "+st.name.replace(/\s*\(dark\)/i,""):""} · tap or press any key to stop`;
+  if(m!==F.msg){F.msg=m;flkMsg(m)}
+  if(F.torch){torchFrame(mode,r,el);ov.style.background="#000"}
+  else{
+    let on=false;
+    if(mode==="steady"){on=true;F.per=0}
+    else if(mode!=="dark"){
+      // event timing: each cycle gets its own length (irregular in arrhythmic stages, never above 12 Hz)
+      // and two flashes are never shown closer together than 1/12 s, whatever the screen's refresh rate
+      if((!F.per||ts>=F.c0+F.per)&&!(F.lastOn&&ts-F.lastOn<1000/12)){
+        let c0=F.per?F.c0+F.per:ts,per=1000/r;
+        if(mode==="arrhythmic")per=Math.min(1000/3,Math.max(1000/12,per*(0.6+Math.random()*0.8)));
+        if(mode==="arrhythmic"||ts-c0>F.duty*per*0.5)c0=ts;
+        F.c0=c0;F.per=per;
+      }
+      on=F.per>0&&ts-F.c0<F.duty*F.per;
+    }else F.per=0;
+    if(on&&!F.wasOn)F.lastOn=ts;F.wasOn=on;
+    let br=clamp(P.bri,20,100,80);if(F.open)br=Math.min(br,60);
+    const b=br/100*(0.2+0.8*Math.min(1,F.lit0?(ts-F.lit0)/F.fade:0));
+    const col=F.proto!=="custom"?FLK[F.proto].col:P.col;
     let c=[255,255,255];
-    if(P.col==="red")c=[255,24,12];else if(P.col==="amber")c=[255,150,30];else if(P.col==="blue")c=[50,100,255];
-    else if(P.col==="rainbow")c=hsl((el/60000*360)%360);
-    ov.style.background=(!dark&&F.ph<0.5)?`rgb(${c.map(x=>Math.round(x*b)).join(",")})`:"#000";
+    if(col==="red")c=[255,24,12];else if(col==="amber")c=[255,150,30];else if(col==="blue")c=[50,100,255];
+    else if(col==="warm")c=[255,196,120];else if(col==="rainbow")c=hsl((el/60000*360)%360);
+    ov.style.background=on?`rgb(${c.map(x=>Math.round(x*b)).join(",")})`:"#000";
   }
   F.last=ts;F.raf=requestAnimationFrame(flkFrame);
 }
 function flkStop(){
   if(!F.on)return;F.on=false;clearInterval(F.cd);cancelAnimationFrame(F.raf);
   try{window.FocusLight&&window.FocusLight.stop()}catch(e){}
-  F.torch=false;ov.style.display="none";
+  F.torch=false;F.msg="";ov.style.display="none";
 }
 ov.addEventListener("pointerdown",flkStop);
 document.addEventListener("keydown",e=>{if(F.on){e.preventDefault();e.stopPropagation();flkStop()}},true);
+
+// ---------- Tattva cards (static symbols for the afterimage practice; no flashing) ----------
+const TAT={
+ tejas:{n:"Tejas · fire · red triangle",svg:`<polygon points="0,-80 82,62 -82,62" fill="#e0201b"/>`,dot:[0,15]},
+ prithivi:{n:"Prithivi · earth · yellow square",svg:`<rect x="-70" y="-70" width="140" height="140" fill="#f4cf00"/>`,dot:[0,0]},
+ vayu:{n:"Vayu · air · blue circle",svg:`<circle r="76" fill="#1f5fd6"/>`,dot:[0,0]},
+ apas:{n:"Apas · water · silver crescent",svg:`<defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9dee5"/><stop offset="1" stop-color="#7f8a97"/></linearGradient></defs><path d="M -84 -40 A 84 84 0 0 0 84 -40 A 84 52 0 0 1 -84 -40 Z" fill="url(#tg)"/>`,dot:[0,28],k:.17},
+ akasha:{n:"Akasha · spirit · indigo egg",svg:`<ellipse rx="54" ry="78" fill="#2b1d6b"/>`,dot:[0,0]}
+};
+const TT={iv:0,to:0};
+function tatPanel(){
+  const P=XP.tat,o=(k,x)=>`<option value="${k}">${esc(x.n)}</option>`;
+  modal("🔺 Tattva card",`<p class="xsmall">Choose an element. Look steadily at the dot in the middle of the symbol without moving your eyes. When the symbol disappears, keep looking at the plain screen to see its afterimage glow in the opposite colour, then close your eyes and hold the image. Tap the screen or press Esc to close it at any time.</p>
+  <div class="xgrid"><label class="sl">Element<select id="tEl">${Object.entries(TAT).map(([k,x])=>o(k,x)).join("")}</select></label>
+  <label class="sl">Inner symbol (Golden Dawn sub-element)<select id="tSub"><option value="">None</option>${Object.entries(TAT).map(([k,x])=>o(k,x)).join("")}</select></label>
+  <label class="sl">Gaze time<select id="tSec"><option value="15">15 seconds</option><option value="20">20 seconds</option><option value="30">30 seconds</option><option value="45">45 seconds</option><option value="60">60 seconds</option></select></label></div>`,
+  [["Close","ghost",closeModal],["▶ Show the card","",()=>{P.el=TAT[$("tEl").value]?$("tEl").value:"tejas";P.sub=TAT[$("tSub").value]?$("tSub").value:"";P.sec=clamp($("tSec").value,15,60,20);saveSettings();closeModal();tatShow()}]]);
+  $("tEl").value=TAT[P.el]?P.el:"tejas";$("tSub").value=TAT[P.sub]?P.sub:"";$("tSec").value=String(P.sec);if(!$("tSec").value)$("tSec").value="20";
+}
+function tatShow(){
+  const o=$("tatOv"),P=XP.tat,e=TAT[P.el]||TAT.tejas,s=P.sub!==P.el?TAT[P.sub]:null,[dx,dy]=e.dot;
+  clearInterval(TT.iv);clearTimeout(TT.to);
+  $("tatSvg").innerHTML=e.svg+(s?`<g transform="translate(${dx},${dy}) scale(${e.k||.3})">${s.svg.replace(/id="tg"/,'id="tg2"').replace(/url\(#tg\)/,"url(#tg2)")}</g>`:"")+
+    `<circle cx="${dx}" cy="${dy}" r="2.6" fill="${P.el==="akasha"?"#fff":"#000"}"/>`;
+  o.classList.remove("dark");o.style.display="flex";
+  let n=clamp(P.sec,15,60,20);const msg=()=>{$("tatMsg").textContent=`Look steadily at the dot · ${n}`};msg();
+  TT.iv=setInterval(()=>{if(--n>0){msg();return}clearInterval(TT.iv);$("tatSvg").innerHTML="";
+    $("tatMsg").textContent="Keep looking at the plain screen and watch the afterimage appear. Then close your eyes and hold it.";
+    TT.to=setTimeout(()=>{o.classList.add("dark");$("tatMsg").textContent="Eyes closed: see the symbol grow into a doorway. Tap or press Esc to close."},12000)},1000);
+}
+function tatClose(){clearInterval(TT.iv);clearTimeout(TT.to);$("tatOv").style.display="none"}
+$("tatOv").addEventListener("pointerdown",tatClose);
+$("tatBtn").onclick=tatPanel;
 
 // ---------- Infrasound ----------
 const I={on:false};
@@ -825,30 +947,238 @@ function infPanel(){
 function readI(){XP.inf.hz=clamp($("iHz").value,5,19,18.98);XP.inf.lvl=clamp($("iLv").value,5,100,30);saveSettings()}
 
 // ---------- Breathwork ----------
-const B={on:false,timers:[],rec:false,recover:null};
+const B={on:false,timers:[],rec:false,recover:null,tok:0,sess:null,breathAt:0,restAt:0,end:0};
 function later(fn,ms){const id=setTimeout(()=>{if(B.on)fn()},ms);B.timers.push(id);return id}
 function say(t,s){$("brT").textContent=t;$("brS").textContent=s||""}
 function circle(scale,secs){const c=$("brC");c.style.transition=`transform ${secs}s ease-in-out`;c.style.transform=`scale(${scale})`}
+// ---- research and practitioner protocols ----
+// Each protocol is a short script of breaths and holds. Inside one of its own sessions the guide waits
+// for the spoken opening, fits the session's breathing stage, then moves the sound on to the rest stage.
+// Gentle protocols start straight away; the others ask for the breathwork warning first.
+const STOPPED=new Error("stopped");
+function sleep(ms){const tok=B.tok;return new Promise((res,rej)=>{B.timers.push(setTimeout(()=>{if(B.on&&tok===B.tok)res();else rej(STOPPED)},Math.max(0,ms)))})}
+// guide time left, in ms: the session's breathing stage when the guide runs inside its own session
+function left(){if(B.sess){if(!(running&&current===B.sess))return 0;return (B.restAt-(S?S.elapsed:0))*1000}return B.end-Date.now()}
+const mmss=s=>Math.floor(s/60)+":"+String(Math.floor(s%60)).padStart(2,"0");
+// one breath phase with a seconds countdown; scale = circle size to grow or shrink to
+async function phase(secs,t,s,scale){
+  if(scale!=null)circle(scale,secs);
+  if(secs<3){say(t,s);await sleep(secs*1000);return}
+  const end=Date.now()+secs*1000;
+  for(;;){const r=end-Date.now();if(r<=60)break;say(`${t} · ${Math.ceil(r/1000)}`,s);await sleep(Math.min(1000,r%1000||1000))}
+}
+const inh=(secs,t,s)=>phase(secs,t,s,1),exh=(secs,t,s)=>phase(secs,t,s,.55);
+// a hold that the "I need to breathe" button (or btn) ends early; resolves with the seconds held
+function holdUntil(maxS,t,s,scale,down,btn){
+  const tok=B.tok;
+  return new Promise(res=>{
+    const t0=Date.now(),nb=$("brNow");let done=false;
+    nb.textContent=btn||"I need to breathe";nb.style.display="";if(scale!=null)circle(scale,.8);
+    const fin=()=>{if(done)return;done=true;nb.style.display="none";nb.textContent="I need to breathe";B.recover=null;if(B.on&&tok===B.tok)res((Date.now()-t0)/1000)};
+    B.recover=fin;
+    const tick=()=>{if(done)return;if(!B.on||tok!==B.tok){done=true;return}
+      const e=(Date.now()-t0)/1000;if(e>=maxS){fin();return}
+      say(`${t} · ${down?Math.ceil(maxS-e):mmss(e)}`,s);B.timers.push(setTimeout(tick,200))};
+    tick();
+  });
+}
+// short holds just count down; holds of 8 s or more can be ended early
+const hold=(secs,t,s,scale)=>secs>=8?holdUntil(secs,t,s,scale,true):phase(secs,t,s,scale);
+async function natural(secs,t,s){
+  const end=Date.now()+secs*1000;let up=true;
+  while(Date.now()<end-300){const r=Math.ceil((end-Date.now())/1000);say(t||"Breathe naturally",(s?s+" · ":"")+r+" s");
+    circle(up?.8:.62,2);up=!up;await sleep(Math.min(2000,end-Date.now()))}
+}
+// quick breaths: a = first circle size, held for share f of each breath, then b; "#" in t = breath number
+async function rapid(n,per,t,s,a,b,f){
+  for(let i=1;i<=n;i++){say(t.replace("#",i),s);circle(a,per*f*.9);await sleep(per*f*1000);circle(b,per*(1-f)*.9);await sleep(per*(1-f)*1000)}
+}
+async function rapidFor(ms,per,t,s,a,b,f){
+  const end=Date.now()+ms;
+  while(Date.now()<end){say(`${t} · ${mmss(Math.ceil((end-Date.now())/1000))}`,s);circle(a,per*f*.9);await sleep(per*f*1000);circle(b,per*(1-f)*.9);await sleep(per*(1-f)*1000)}
+}
+async function co2Test(){
+  const s="CO₂ tolerance test";
+  for(let i=1;i<=4;i++){await inh(2.5,`Normal breath ${i} of 4 · in`,s);await exh(2.5,`Normal breath ${i} of 4 · out`,s)}
+  await inh(5,"Now take the biggest breath in you can",s);
+  circle(.55,60);
+  const t=await holdUntil(180,"Breathe out as slowly as you can","Tap “My lungs are empty” the moment you can't breathe out any more.",null,false,"My lungs are empty");
+  const n=t<=12?3:t<25?4:t<35?5:t<50?6:t<70?8:10;
+  say(`Your slow breath out: ${Math.round(t)} seconds`,`Your box is ${n} seconds a side. Take a few easy breaths first.`);circle(.7,2);
+  await sleep(4000);await natural(8);
+  return n;
+}
+const BRP={
+ // gentle: slow breathing, short holds, no warning needed
+ sigh:{n:"Cyclic sighing (Balban 2023)",len:1,min:5,d:"A breath in through the nose, a second short sip of air at the top, then a long, slow breath out through the mouth. Five minutes a day in the Stanford study.",
+  run:async()=>{let i=0;while(i===0||left()>10000){i++;const s=`Cyclic sighing · breath ${i}`;await inh(2.5,"Breathe in through the nose",s);say("Sip in a little more",s);circle(1.1,1);await sleep(1000);await exh(6.5,"Long, slow breath out through the mouth",s)}}},
+ box:{n:"Box breathing + CO₂ tolerance test (Balban 2023)",len:1,min:6,lv:[["auto","CO₂ test first, then set my box"],["3","3 seconds a side"],["4","4 seconds a side"],["5","5 seconds a side"],["6","6 seconds a side"],["8","8 seconds a side"],["10","10 seconds a side"]],
+  d:"Breathe in, hold, breathe out and hold with empty lungs, all for the same count. As in the Stanford study, a CO₂ tolerance test (the biggest breath in you can take, then the slowest breath out you can manage) sets the count.",
+  run:async lv=>{let n=+lv;if(!(n>0))n=await co2Test();let i=0;
+   while(i===0||left()>n*4000){i++;const s=`Box breathing · ${n} seconds a side · ${i}`;await inh(n,"Breathe in",s);await hold(n,"Hold",s,1);await exh(n,"Breathe out",s);await hold(n,"Hold, lungs empty",s,.55)}}},
+ "478":{n:"4-7-8 relaxing breath (Weil)",lv:[["4","4 breaths (Weil's starting dose)"],["8","8 breaths (after a month of practice)"]],
+  d:"Breathe out fully with a soft whoosh, then in quietly through the nose for 4, hold for 7, and out through the mouth for 8. Weil advises four breaths at a time for the first month.",
+  run:async lv=>{const n=lv==="8"?8:4;await exh(4,"Breathe out completely through your mouth","With a soft whoosh");
+   for(let i=1;i<=n;i++){const s=`4-7-8 · breath ${i} of ${n}`;await inh(4,"In quietly through the nose",s);await hold(7,"Hold",s,1);await exh(8,"Out through the mouth, whoosh",s)}}},
+ coherent:{n:"Coherent breathing, 5 a minute (Elliott)",len:1,min:10,lv:[["6","6 s in, 6 s out · 5 a minute"],["5.5","5.5 s in, 5.5 s out · 5.5 a minute"],["5","5 s in, 5 s out · 6 a minute"]],
+  d:"Smooth, silent breathing near your resonance frequency. Most people's resonance lies between 4.5 and 7 breaths a minute; try the presets to find the easiest.",
+  run:async lv=>{const n=+lv||6;let i=0;while(i===0||left()>n*2000){i++;const s=`Coherent breathing · ${+(30/n).toFixed(1)} breaths a minute`;await inh(n,"Breathe in",s);await exh(n,"Breathe out",s)}}},
+ bhramari:{n:"Bhramari, humming bee breath",len:1,min:6,d:"Breathe in through the nose, then breathe out slowly while humming like a bee. You can gently close your ears with your thumbs.",
+  run:async()=>{let i=0;while(i===0||left()>12000){i++;const s=`Humming bee breath · ${i}`;await inh(4,"Breathe in through the nose",s);await exh(8,"Hum softly as you breathe out… mmm",s)}}},
+ nadi:{n:"Nadi shodhana, alternate-nostril breathing",len:1,min:10,d:"The thumb closes the right nostril, the ring finger the left. In through the left, out through the right; in through the right, out through the left: that is one round.",
+  run:async()=>{let i=0;while(i===0||left()>20000){i++;const s=`Alternate-nostril breathing · round ${i}`;
+   await inh(4,"Close the right nostril · in through the left",s);await exh(6,"Close the left · out through the right",s);
+   await inh(4,"In through the right",s);await exh(6,"Close the right · out through the left",s)}}},
+ vase:{n:"Gentle vase breathing (tummo, gentle form)",len:1,min:10,d:"A soft breath into the lower belly, a short, light hold with no strain, and a slow breath out, while you imagine warmth filling your whole body.",
+  run:async()=>{let i=0;while(i===0||left()>24000){i++;const s=`Gentle vase breathing · ${i}`;
+   await inh(4,"Breathe softly into the lower belly",s);await hold(6,"Hold lightly, no strain",s,.95);await exh(6,"Breathe out slowly",s);await natural(8,"Breathe naturally","Imagine warmth spreading through your whole body")}}},
+ ratio:{n:"Classical ratio breathing 1:4:2",len:1,min:8,lv:[["4","4 in · 16 hold · 8 out"],["3","3 in · 12 hold · 6 out (shorter)"],["2","2 in · 8 hold · 4 out (shortest)"]],
+  d:"Breathe in for one count, hold for four, breathe out for two, as taught in hatha yoga. Holds should feel comfortable, never strained.",
+  run:async lv=>{const u=+lv||4;let i=0;while(i===0||left()>u*7000){i++;const s=`1 : 4 : 2 · round ${i}`;
+   await inh(u,"Breathe in",s);await hold(u*4,"Hold softly, without straining",s,1);await exh(u*2,"Breathe out slowly",s)}}},
+ slowbh:{n:"Slow-pace bhastrika, 6 a minute (Pramanik 2009)",len:1,min:5,d:"Deep, full breaths through both nostrils: 4 seconds in, 6 seconds out, six breaths a minute.",
+  run:async()=>{let i=0;while(i===0||left()>10000){i++;const s=`Slow-pace bhastrika · breath ${i}`;await inh(4,"Deep, full breath in through the nose",s);await exh(6,"Deep breath out through the nose",s)}}},
+ // breathwork: fast breathing or long holds; the warning must be accepted before these start
+ power:{n:"Power breathing rounds (Wim Hof-style)",risky:1,legacy:1,d:"Rounds of deep, fast breaths, then a hold with empty lungs until you need to breathe, then one recovery breath held for 15 seconds."},
+ connected:{n:"Conscious connected breathing",risky:1,legacy:1,d:"Continuous, slightly fast and deep breathing with no pause between in and out."},
+ kox:{n:"Kox 2014 study protocol (Wim Hof Method)",risky:1,len:1,min:17,lv:[["30","30 breaths a round (study)"],["20","20 breaths a round (gentler)"]],
+  d:"About 30 deep breaths, then breathe out and hold with empty lungs for as long as feels right, then a deep breath in held for 10 seconds; as many rounds as fit. Holds end automatically at 2½ minutes.",
+  run:async lv=>{const n=+lv||30;let r=0;
+   while(r===0||left()>n*3200+75000){r++;
+    await rapid(n,3.2,`Round ${r} · breath # / ${n}`,"Breathe in deeply through the belly and chest… and let it go.",1,.55,.5);
+    await holdUntil(Math.min(150,Math.max(45,left()/1000-20)),"Breathe out and hold, lungs empty","Hold as long as feels right. Tap “I need to breathe” when you feel the urge.",.5,false);
+    await inh(2,"Breathe in deeply","Recovery breath");
+    await holdUntil(10,"Hold","Recovery breath",1,true);
+    await exh(3,"Let go","Breathe out, and breathe normally");
+    await natural(9)}}},
+ cyclic:{n:"Cyclic hyperventilation (Balban 2023)",risky:1,d:"30 deep breaths in through the nose with passive breaths out through the mouth, then breathe out fully and hold for 15 seconds; three rounds, about five minutes.",
+  run:async()=>{for(let r=1;r<=3;r++){if(r>1&&left()<100000)break;
+   await rapid(30,3,`Round ${r} of 3 · breath # / 30`,"Deep breath in through the nose… passive breath out through the mouth",1,.55,2/3);
+   await holdUntil(15,"Breathe out fully and hold","Lungs empty",.5,true);
+   await inh(3,"Breathe in","")}}},
+ tummo:{n:"Forceful vase breathing, tummo (Kozhevnikov 2013)",risky:1,len:1,min:10,
+  d:"A deep breath in, then hold while drawing the belly and pelvic floor in, picturing a flame below the navel blazing up; holds end at 45 seconds at most. Then a slow breath out and a few natural breaths.",
+  run:async()=>{let i=0;while(i===0||left()>65000){i++;
+   await inh(3,"Breathe in deeply",`Inner fire · ${i}`);
+   await holdUntil(45,"Hold · draw the belly and pelvic floor in","Picture the flame below your navel blazing up. Don't strain; tap “I need to breathe” when you're ready.",.92,false);
+   await exh(5,"Breathe out slowly","Let the warmth spread through your body");
+   await natural(12,"Breathe naturally","The flame keeps glowing")}}},
+ kapal:{n:"Kapalabhati, skull-shining breath (Telles 2011)",risky:1,lv:[["study","Study: 3 × 5 minutes, 1 a second"],["mid","Intermediate: 3 × 2 minutes"],["begin","Beginner: 3 × 1 minute"]],
+  d:"Short, sharp breaths out through the nose, pulling the belly in, about one a second; each breath in happens by itself. Three rounds with a minute of natural breathing between. The study's volunteers had at least six months of yoga practice, so start with the beginner preset if you are new to it.",
+  run:async lv=>{const m=lv==="begin"?1:lv==="mid"?2:5;
+   for(let r=1;r<=3;r++){if(r>1&&left()<m*60000)break;
+    await rapidFor(m*60000,1,`Kapalabhati · round ${r} of 3`,"Sharp push out from the belly… let the breath in happen by itself",.62,.8,.25);
+    if(r<3)await natural(60,"Rest · breathe naturally","Next round soon")}}},
+ bhastrika:{n:"Bhastrika, bellows breath",risky:1,lv:[["20","3 rounds of 20"],["10","3 rounds of 10 (beginner)"],["30","3 rounds of 30"]],
+  d:"Forceful breaths in and out through the nose, about one a second, driven by the belly; after each round, a deep breath held comfortably, then calm, natural breathing.",
+  run:async lv=>{const n=+lv||20;for(let r=1;r<=3;r++){if(r>1&&left()<60000)break;
+   await rapid(n,1,`Bellows breath · round ${r} of 3 · # / ${n}`,"Forceful breath in… forceful breath out, through the nose",1,.55,.5);
+   await inh(3,"Breathe in deeply","");await hold(8,"Hold comfortably","",1);await exh(5,"Breathe out slowly","");
+   if(r<3)await natural(45,"Breathe naturally","Rest before the next round")}}},
+ fire:{n:"Breath of fire (Kundalini yoga)",risky:1,lv:[["60","3 × 1 minute"],["30","3 × 30 seconds (beginner)"],["90","3 × 1½ minutes"]],
+  d:"Quick, light, equal breaths in and out through the nose, two to three a second, pumped from the navel. Keep it light, and stop if you feel dizzy.",
+  run:async lv=>{const sec=+lv||60;for(let r=1;r<=3;r++){if(r>1&&left()<sec*1000)break;
+   await rapidFor(sec*1000,.45,`Breath of fire · round ${r} of 3`,"Quick, light, even breaths through the nose",.84,.7,.5);
+   await inh(3,"Breathe in deeply","");await hold(5,"Hold","",1);await exh(5,"Breathe out slowly","");
+   if(r<3)await natural(30,"Breathe naturally","Rest before the next round")}}},
+ sky:{n:"Sudarshan Kriya-inspired cycles",risky:1,done:"Lie down and rest. Let your breathing be completely natural.",
+  d:"Slow ocean breaths, three rounds of bellows breath, three long Oms, then cycles of slow, medium and fast rhythmic breathing (about 20, 45 and 70 a minute), then lying down to rest. An original approximation; the real SKY is taught in person.",
+  run:async()=>{
+   for(let i=1;i<=8;i++){const s=`Ocean breath · ${i} of 8`;await inh(6,"Slow breath in, with a soft ocean sound in the throat",s);await hold(2,"Pause",s,1);await exh(6,"Slow breath out, ocean sound",s);await hold(2,"Pause",s,.55)}
+   for(let r=1;r<=3;r++){await rapid(20,2,`Bellows breath · round ${r} of 3 · # / 20`,"Forceful breath in and out through the nose",1,.55,.5);await natural(r<3?20:12)}
+   for(let i=1;i<=3;i++){await inh(4,"Breathe in deeply",`Om · ${i} of 3`);await exh(12,"Chant a long Ommm…",`Om · ${i} of 3`)}
+   for(let c=1;c<=3;c++){if(c>1&&left()<160000)break;
+    await rapid(20,3,`Cycle ${c} · slow · # / 20`,"Rhythmic breathing, in and out evenly",1,.6,.5);
+    await rapid(40,60/45,`Cycle ${c} · medium · # / 40`,"A little faster, smooth and even",.95,.65,.5);
+    await rapid(40,60/70,`Cycle ${c} · fast · # / 40`,"Fast and light, in and out",.9,.7,.5);
+    await natural(10)}}},
+ rebirth:{n:"Rebirthing, relaxed connected breathing (Orr)",risky:1,len:1,min:16,
+  d:"Fuller than normal, but relaxed: draw each breath in, then simply let it go, with no pause in between.",
+  run:async()=>{while(left()>5000){const s="Connected breathing · no pause · slow down if tingling gets strong";await inh(2.5,"Draw the breath in",s);await exh(2.5,"…and simply let it go",s)}}}
+};
+const GENTLE=Object.keys(BRP).filter(k=>!BRP[k].risky),HARD=Object.keys(BRP).filter(k=>BRP[k].risky);
+const lvlMap=()=>{const L=XP.br.lvl;return (L&&typeof L==="object"&&!Array.isArray(L))?L:(XP.br.lvl={})};
+const breathSess=p=>!!(p&&/^breath:/.test(p.visual||"")&&p.stages.length>=3);
+const fitsSession=()=>breathSess(gs());
 function brPanel(){
-  const P=XP.br;
-  modal("🌬 Breathwork",`<p class="xsmall">Sit or lie down somewhere safe. <b>Never in or near water, never while driving or standing.</b> Tingling and light-headedness are normal; if they get strong, slow down or stop.</p>
-  <div class="xgrid"><label class="sl">Technique<select id="bTech"><option value="power">Power breathing rounds (Wim Hof-style)</option><option value="connected">Conscious connected breathing</option></select></label>
-  <label class="sl">Pace<select id="bPace"><option value="slow">Slow</option><option value="normal">Normal</option><option value="fast">Fast</option></select></label>
-  <label class="sl">Rounds (power)<select id="bRounds"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
-  <label class="sl">Breaths per round (power)<select id="bBreaths"><option>20</option><option>30</option><option>40</option></select></label>
-  <label class="sl">Length (connected)<select id="bMin"><option value="5">5 min</option><option value="10">10 min</option><option value="15">15 min</option></select></label></div>
-  <p class="xsmall">Breath holds are never forced: tap <b>I need to breathe</b> whenever you feel the urge. · <a href="#" id="bRev">Review warnings</a></p>`,
-  [["Close","ghost",closeModal],["▶ Start breathwork","",()=>{readB();closeModal();brStart()}]]);
-  $("bTech").value=P.tech==="connected"?"connected":"power";$("bPace").value=["slow","normal","fast"].includes(P.pace)?P.pace:"normal";
+  const P=XP.br,g=gs(),m=/^breath:(\w+)/.exec((g&&g.visual)||""),auto=m&&BRP[m[1]]?m[1]:"";
+  const opt=k=>`<option value="${k}">${esc(BRP[k].n)}${k===auto?" · this session":""}</option>`;
+  modal("🌬 Breathing guide",`<p class="xsmall" id="bHow"></p>
+  <div class="xgrid">
+   <label class="sl xwide">Technique<select id="bTech"><optgroup label="Gentle (no warning needed)">${GENTLE.map(opt).join("")}</optgroup><optgroup label="Breathwork (fast breathing or long holds: warning first)">${HARD.map(opt).join("")}</optgroup></select></label>
+   <p class="xsmall xwide" id="bDesc" style="margin:0"></p>
+   <label class="sl" id="bLvW">Preset<select id="bLv"></select></label>
+   <label class="sl" id="bLenW">Length<select id="bLen"></select></label>
+   <label class="sl" id="bPaceW">Pace<select id="bPace"><option value="slow">Slow</option><option value="normal">Normal</option><option value="fast">Fast</option></select></label>
+   <label class="sl" id="bRoundsW">Rounds (power)<select id="bRounds"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+   <label class="sl" id="bBreathsW">Breaths per round (power)<select id="bBreaths"><option>20</option><option>30</option><option>40</option></select></label>
+   <label class="sl" id="bMinW">Length (connected)<select id="bMin"><option value="5">5 min</option><option value="10">10 min</option><option value="15">15 min</option></select></label></div>
+  <p class="xsmall" id="bWarn"></p>
+  <p class="xsmall">Holds are never forced: tap <b>I need to breathe</b> whenever you feel the urge. · <a href="#" id="bRev">Review warnings</a></p>`,
+  [["Close","ghost",closeModal],["▶ Start","",()=>{readB();if(BRP[XP.br.tech].risky&&!consent.breath)askConsent("breath",brStart);else{closeModal();brStart()}}]]);
+  $("bPace").value=["slow","normal","fast"].includes(P.pace)?P.pace:"normal";
   $("bRounds").value=String(clamp(P.rounds,1,4,3));$("bBreaths").value=String([20,30,40].includes(P.breaths)?P.breaths:30);$("bMin").value=String([5,10,15].includes(P.min)?P.min:10);
+  const show=(id,on)=>{$(id).style.display=on?"":"none"};
+  const pick=()=>{const k=$("bTech").value,x=BRP[k],L=lvlMap(),lv=x.lv||[],ins=fitsSession();
+    $("bDesc").textContent=x.d;
+    $("bHow").innerHTML=x.risky?"Sit or lie down somewhere safe. <b>Never in or near water, never while driving or standing.</b> Tingling and light-headedness are normal; if they get strong, slow down or stop.":
+      "Sit comfortably, somewhere you can relax. If you feel light-headed at any point, simply breathe normally.";
+    show("bLvW",lv.length);$("bLv").innerHTML=lv.map(([v,l])=>`<option value="${v}">${esc(l)}</option>`).join("");
+    if(lv.length)$("bLv").value=lv.some(o=>o[0]===L[k])?L[k]:lv[0][0];
+    show("bPaceW",k==="power"||k==="connected");show("bRoundsW",k==="power");show("bBreathsW",k==="power");show("bMinW",k==="connected");
+    show("bLenW",!!x.len);
+    $("bLen").innerHTML=ins?`<option value="0">Fits this session</option>`:[0,3,5,10,15,20].map(v=>`<option value="${v}">${v?v+" min":"Standard · "+x.min+" min"}</option>`).join("");
+    $("bLen").disabled=ins;$("bLen").value=ins?"0":String([0,3,5,10,15,20].includes(L[k+":len"])?L[k+":len"]:0);
+    $("bWarn").innerHTML=x.risky?"⚠️ <b>Fast breathing or long breath holds.</b> "+(consent.breath?"You have accepted the breathwork warning.":"You'll be asked to read and accept the breathwork warning before it starts."):"";
+  };
+  $("bTech").value=auto||(BRP[P.tech]?P.tech:"sigh");$("bTech").onchange=pick;pick();
   $("bRev").onclick=e=>{e.preventDefault();askConsent("breath",brPanel)};
 }
-function readB(){const P=XP.br;P.tech=$("bTech").value;P.pace=$("bPace").value;P.rounds=clamp($("bRounds").value,1,4,3);P.breaths=clamp($("bBreaths").value,20,40,30);P.min=clamp($("bMin").value,5,15,10);saveSettings()}
+function readB(){const P=XP.br,k=$("bTech").value,L=lvlMap();P.tech=BRP[k]?k:"sigh";P.pace=$("bPace").value;P.rounds=clamp($("bRounds").value,1,4,3);P.breaths=clamp($("bBreaths").value,20,40,30);P.min=clamp($("bMin").value,5,15,10);
+  if($("bLv").options.length)L[P.tech]=$("bLv").value;
+  if(BRP[P.tech].len&&!fitsSession())L[P.tech+":len"]=clamp($("bLen").value,0,20,0);
+  saveSettings()}
 function brStart(){
   if(B.on)return;
   if(!running&&selected)start(selected);
-  B.on=true;$("brOv").style.display="flex";$("brNow").style.display="none";
-  if(XP.br.tech==="connected")runConnected();else runPower(1);
+  B.on=true;B.tok++;$("brOv").style.display="flex";$("brNow").style.display="none";
+  const p=running?current:null;B.sess=breathSess(p)?p:null;
+  if(B.sess){const st=B.sess.stages;B.breathAt=st[0].min*60;B.restAt=st.slice(0,-1).reduce((a,s)=>a+s.min*60,0)}
+  runProto(BRP[XP.br.tech]?XP.br.tech:"power");
+}
+// inside a breathing session, wait for the spoken opening (or "Begin now") before the guide starts
+function settleWait(){
+  if(!B.sess)return Promise.resolve();
+  const tok=B.tok;
+  return new Promise(res=>{
+    const nb=$("brNow");let done=false;
+    const fin=()=>{if(done)return;done=true;nb.style.display="none";nb.textContent="I need to breathe";B.recover=null;if(B.on&&tok===B.tok)res()};
+    const tick=()=>{if(done)return;if(!B.on||tok!==B.tok){done=true;return}
+      if(!running||current!==B.sess||(S&&S.stage>0)){fin();return}
+      nb.textContent="Begin now";nb.style.display="";
+      say(`Get comfortable · ${Math.max(1,Math.ceil(B.breathAt-(S?S.elapsed:0)))}`,"Listen to the opening; the guide begins after it. Tap “Begin now” to start straight away.");circle(.7,2);
+      B.timers.push(setTimeout(tick,250))};
+    B.recover=()=>{if(running&&current===B.sess&&(!S||S.stage===0))send({cmd:"seek",t:B.breathAt});fin()};
+    tick();
+  });
+}
+async function runProto(k){
+  const x=BRP[k],L=lvlMap(),lv=x.lv?(x.lv.some(o=>o[0]===L[k])?L[k]:x.lv[0][0]):"";
+  B.end=Date.now()+((L[k+":len"]>0?L[k+":len"]:x.min)||10)*60000;
+  try{
+    await settleWait();
+    if(k==="power"){runPower(1);return}
+    if(k==="connected"){runConnected();return}
+    await x.run(lv);
+    brDone(x.done);
+  }catch(e){if(e!==STOPPED)console.error(e)}
+}
+// finished: in its own session, move the sound on to the rest stage
+function brDone(msg){
+  say("Done",msg||"Let your breathing return to its natural rhythm. Stay sitting or lying down for a minute before you get up.");circle(.7,3);
+  $("brNow").style.display="none";B.recover=null;
+  if(B.sess&&running&&current===B.sess&&S&&S.elapsed<B.restAt-1)send({cmd:"seek",t:B.restAt});
+  later(brStop,30000);
 }
 function runPower(round){
   const P=XP.br,per={slow:4,normal:3.2,fast:2.6}[P.pace]||3.2,n=clamp(P.breaths,20,40,30),rounds=clamp(P.rounds,1,4,3);
@@ -858,7 +1188,7 @@ function runPower(round){
     const t=()=>{
       if(k<=0){say("Let go","Breathe out and breathe normally.");circle(0.7,3);B.rec=false;
         if(round<rounds)later(()=>runPower(round+1),6000);
-        else later(()=>{say("Done","Breathe normally and rest. Stay sitting or lying down for a minute before you get up.");circle(0.7,2);later(brStop,30000)},6000);
+        else later(()=>brDone("Breathe normally and rest. Stay sitting or lying down for a minute before you get up."),6000);
         return}
       say(`Recovery breath · hold ${k}`,"Breathe in fully and hold.");k--;later(t,1000)};
     say("Breathe in fully","Recovery breath");later(t,2000);
@@ -878,26 +1208,27 @@ function runPower(round){
 function runConnected(){
   const P=XP.br,per={slow:5,normal:4,fast:3.3}[P.pace]||4,end=Date.now()+clamp(P.min,5,15,10)*60000;
   const cyc=()=>{
-    if(Date.now()>=end){say("Done","Let your breathing return to normal. Rest for a few minutes before getting up.");circle(0.7,3);later(brStop,30000);return}
+    if(Date.now()>=end){brDone("Let your breathing return to normal. Rest for a few minutes before getting up.");return}
     const left=Math.ceil((end-Date.now())/60000),sub=`Connected breathing, no pause · about ${left} min left · slow down if tingling gets strong`;
     say("Breathe in…",sub);circle(1,per/2);later(()=>{say("…and let go",sub);circle(0.55,per/2)},per*500);later(cyc,per*1000)};
   cyc();
 }
-function brStop(){B.on=false;B.timers.forEach(clearTimeout);B.timers=[];B.rec=false;B.recover=null;$("brOv").style.display="none";$("brNow").style.display="none"}
+function brStop(){B.on=false;B.tok++;B.timers.forEach(clearTimeout);B.timers=[];B.rec=false;B.recover=null;B.sess=null;$("brOv").style.display="none";$("brNow").style.display="none";$("brNow").textContent="I need to breathe"}
 $("brNow").onclick=()=>{B.recover&&B.recover()};
 $("brStop").onclick=brStop;
 
 // ---------- wiring ----------
-$("flkBtn").onclick=()=>gate("flicker",()=>{if(vis()==="ganzflicker")XP.flk.col="red";flkPanel()});
+$("flkBtn").onclick=()=>gate("flicker",flkPanel);
 $("infBtn").onclick=()=>gate("infra",()=>{const m=/^infra:([\d.]+)/.exec(vis());if(m&&!I.on)XP.inf.hz=+m[1];infPanel()});
-$("brBtn").onclick=()=>gate("breath",()=>{const m=/^breath:(\w+)/.exec(vis());if(m)XP.br.tech=m[1];brPanel()});
-window.__xpHot=p=>{const v=(p&&p.visual)||"";$("flkBtn").classList.toggle("hot",/flicker/.test(v));$("infBtn").classList.toggle("hot",/^infra/.test(v));$("brBtn").classList.toggle("hot",/^breath/.test(v))};
+// gentle techniques need no warning; breathwork protocols ask for it when you press Start
+$("brBtn").onclick=()=>brPanel();
+window.__xpHot=p=>{const v=(p&&p.visual)||"";$("flkBtn").classList.toggle("hot",/flicker/.test(v));$("infBtn").classList.toggle("hot",/^infra/.test(v));$("brBtn").classList.toggle("hot",/^breath/.test(v));$("tatBtn").style.display=v==="tattva"?"":"none"};
 {const s1=stop;stop=function(){flkStop();infOff();brStop();return s1.apply(this,arguments)}}
 $("stop").onclick=()=>stop();
 {const e1=window.__ended;window.__ended=function(){flkStop();infOff();brStop();return e1.apply(this,arguments)}}
 document.addEventListener("visibilitychange",()=>{if(document.hidden){flkStop();brStop()}});
 window.addEventListener("pagehide",()=>{flkStop();infOff();brStop()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();if(B.on)brStop()}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();tatClose();if(B.on)brStop()}});
 })();
 
 // ---- VHS power-on intro: tap / Esc / Enter to skip; never flashes repeatedly ----

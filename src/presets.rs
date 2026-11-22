@@ -395,10 +395,270 @@ pub fn all() -> Vec<Preset> {
       "<p>Fear is the most common thing that stops an out-of-body attempt (often at the first buzzing or sleep-paralysis sensation). This session starts with slow left–right alternating tones to settle the nervous system, then hands over to body-asleep imagery. Not therapy.</p>",
       vec![st("Settle", 4.0, &[1.0], C_SETTLE), st("Release", 8.0, &[0.8], C_EXHALE),
            st("Body asleep", 11.0, &[0.6], C_BODY_ASLEEP), st("Return", 2.0, &[1.0], C_RETURN_SHORT)]));
+
+    // ---- more researched and traditional methods (v1.6)
+    v.push(p(g, "ap_hypnotic", "Hypnotic Out-of-Body Suggestion (Facco 2019)", "Hypnosis-induced OBE · 24 min", &[200.0], &[0.6], "surf", "binaural", "Research",
+      "<p>In a lab study of a highly hypnotisable person, hypnotic suggestions to leave the body produced vivid out-of-body experiences with measurable EEG changes, which differed from simply imagining the same scene (<b>Facco et al., 2019, <i>International Journal of Clinical and Experimental Hypnosis</i></b>). This session uses the same building blocks: a hypnotic induction, a deepener, suggestions to rise out of the body and look back from above, then a careful return. How vivid it gets depends a lot on how hypnotisable you are. You stay in control and can open your eyes at any time. <b>Skip this if you have a psychotic or dissociative disorder.</b></p>",
+      vec![st("Welcome", 1.0, &[10.0], "Welcome to the hypnotic out of body session. You remain in control throughout, and you can return at any time simply by opening your eyes. Lie back somewhere you will not be disturbed, and rest your gaze on a spot on the ceiling."),
+           st("Eyelids", 2.0, &[9.0], "Keep watching that spot. Your eyelids grow heavier with each breath, heavier and heavier. When they want to close, let them close, and let a wave of comfort spread through you."),
+           st("Relaxation", 3.0, &[7.0], C_BODY),
+           st("Deepener", 3.0, &[5.0], "Now count down slowly with me, and with each number drift twice as deep. Ten, nine, eight, seven, six, five, four, three, two, one. Deeply, comfortably relaxed."),
+           st("Lightness", 3.0, &[4.5], "Notice a pleasant lightness spreading through you. Your body rests heavy and safe, while your awareness feels lighter and lighter, as light as a feather."),
+           st("Rising", 4.0, &[4.5], "Now, with the next breath out, let your awareness gently float up, out of your body, rising slowly toward the ceiling. Easily and safely, you are floating above your body."),
+           st("Looking down", 4.0, &[5.0], "From up here, look down. See your body resting peacefully below you. Notice the room from this new viewpoint: the light, the shapes, the colours. Everything is calm."),
+           st("Return to the body", 2.0, &[6.0], "Now drift slowly back down, and settle gently into your body, fitting it perfectly, like a hand into a glove. Feel its weight, and your breathing.").ramp(30.0),
+           st("Emergence", 2.0, &[14.0], C_COUNT).ramp(60.0)]));
+    v.push(p(g, "ap_imagined", "Imagined Out-of-Body Viewpoint (Facco 2019)", "Imagination, no hypnosis · 15 min", &[200.0], &[0.7], "pink", "binaural", "Research",
+      "<p>The comparison condition in <b>Facco et al. (2019)</b>: simply <i>imagining</i> seeing your body from a point above it, without hypnosis. In that study the imagined version felt less real and showed different brain activity from the hypnotic one, but it is the easiest way to practise shifting your viewpoint, and many OBE teachers start here.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the imagined viewpoint exercise. Lie on your back with your eyes closed. This is pure imagination, with no hypnosis: you will picture your body from the outside, as if from a camera above you."),
+           st("Your body", 3.0, &[8.0], "Picture your own body lying here, as if seen from the foot of the bed. Notice your clothes, your hands, the shape of your face, the way you are lying."),
+           st("Rise", 3.0, &[7.0], "Let the imagined viewpoint rise slowly upward, until it is near the ceiling, looking straight down at your body below."),
+           st("Look around", 4.0, &[6.0], "From the ceiling, look around the room. Notice the furniture, the door, the window, the light. Then look down at your body again, resting peacefully."),
+           st("Back", 3.0, &[10.0], "Let the viewpoint float down and slip back behind your own eyes. Feel your body from the inside again. Breathe a little deeper, move your fingers, and open your eyes when you are ready.").ramp(60.0)]));
+    v.push(p(g, "ap_kinesthetic", "Kinesthetic Floating (Smith & Messier 2014)", "Feel, don't picture · 22 min", &[200.0], &[0.7], "pink", "binaural", "Research",
+      "<p><b>Smith &amp; Messier (2014, <i>Frontiers in Human Neuroscience</i>)</b> scanned a woman who could leave her body at will. She described feeling herself float above her body, spinning, rolling and moving horizontally, while staying aware of her motionless physical body. Her brain showed strong activity in areas for <b>kinesthetic imagery</b>, the felt sense of movement, rather than visual imagery. She had discovered it as a child, at naptime. This session trains that felt sense of movement over a theta beat.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to kinesthetic floating. Lie flat on your back, arms by your sides, eyes closed. In this session you will not picture anything. Instead, you will feel movement, as if from the inside."),
+           st("Stillness", 3.0, &[8.0], "Feel your body lying completely still: the weight of your head, your back against the surface, your heels. Know that your body will stay right here, safe and motionless."),
+           st("Lift", 4.0, &[6.5], "Now feel a sense of lifting, as if a second, weightless body is rising a hand's width above the first. Don't picture it; feel it, the way you feel your hand without looking."),
+           st("Rotate", 4.0, &[6.0], "Feel that weightless body slowly rotating, turning along its length like a log in water, around and around, while your physical body stays still."),
+           st("Roll and drift", 5.0, &[5.5], "Now let it roll, swing, or drift sideways through the air above you. Notice that you can feel both at once: the floating body moving, and the physical body still."),
+           st("Settle back", 2.0, &[8.0], "Let the floating body sink gently back down and merge with your physical body. Feel your whole weight again.").ramp(60.0),
+           st("Return", 2.0, &[12.0], C_RETURN_SHORT).ramp(30.0)]));
+    {
+        const WIGGLE: &str = "Phantom wiggling. Imagine moving your hand back and forth, without any real movement.";
+        const IMAGES: &str = "Observing images. Look into the darkness in front of your closed eyes, and watch for any picture.";
+        const ROTATE: &str = "Rotation. Imagine your body turning around its long axis, like a log in water.";
+        const LISTEN: &str = "Listening in. Listen for any noise inside your head, and try to make it louder.";
+        let mut s = vec![st("Stay still", 1.0, &[6.0], "This is phase technique cycling, for the first moments after waking. Don't move, and keep your eyes closed. When you hear each technique, try it for a few seconds, then switch when the next one comes."),
+                         st("Separate", 0.5, &[5.5], "Try to separate straight away: roll out sideways, or float up, without moving your physical body.")];
+        for _ in 0..4 {
+            s.push(st("Phantom wiggling", 0.25, &[5.0], WIGGLE));
+            s.push(st("Observe images", 0.25, &[5.0], IMAGES));
+            s.push(st("Rotation", 0.25, &[5.0], ROTATE));
+            s.push(st("Listening in", 0.25, &[5.0], LISTEN));
+        }
+        s.push(st("Separate again", 0.5, &[5.0], "Whichever technique felt strongest, keep it going, then try to separate again: roll out, or float up."));
+        s.push(st("Drift and retry", 12.0, &[4.5], "If nothing worked, that's normal. Let yourself drift back to sleep, holding the intention to try again the moment you next wake.").ramp(60.0));
+        v.push(p(g, "ap_cycling", "Phase Technique Cycling (Raduga)", "Indirect method · after waking · 18 min", &[150.0], &[0.6], "brown", "am", "Research",
+          "<p>Michael Raduga's <b>indirect method</b>: in the first moments after waking, before moving or opening your eyes, try to separate straight away (roll out or float up). If that does not work within a few seconds, <b>cycle</b> through short techniques: phantom wiggling, watching images, rotation and listening in, a few seconds each, until one of them starts to work; then use it and try to separate again. In studies run by Raduga's centre, volunteers following such instructions at home reported phase experiences within a few attempts (Raduga et al., <i>International Journal of Dream Research</i>); independent replication is limited. Best used after about 6 hours of sleep, at very low volume.</p>", s));
+    }
+    v.push(p(g, "ap_lab", "Lab OBE Induction — Relaxation, Ganzfeld & Imagery", "1970s laboratory recipe · 28 min", &[200.0], &[0.0], "pink", "binaural", "Research",
+      "<p>In the 1970s, parapsychologist <b>John Palmer</b> and colleagues tried to induce out-of-body experiences in the laboratory by combining <b>progressive muscle relaxation</b>, a <b>Ganzfeld</b> (even light and steady noise) and suggestions or imagery of leaving the body. A minority of volunteers reported OBE-like experiences (reviewed by Blanke &amp; Thut, 2007). This session recreates that recipe: press <b>🔴 Ganzfeld light</b> for the even red field, keep the noise steady, and follow the relaxation and imagery.</p>",
+      vec![st("Settle", 3.0, &[0.0], "Welcome to the laboratory out of body induction. Dim the room, turn on the Ganzfeld light, and lie or sit back facing the soft red glow. Close your eyes. The steady noise is part of the method."),
+           st("Progressive relaxation", 7.0, &[0.0], "Tense the muscles of your feet for a moment, then let them go. Now your calves, then your thighs, your belly, your hands, your arms and shoulders, and finally your face. With each release, sink deeper."),
+           st("Ganzfeld", 8.0, &[0.0], "Now simply rest in the even glow and the steady sound. Let your senses go quiet. Notice any images or sensations, without holding on to them."),
+           st("Leaving the body", 8.0, &[0.0], "Imagine that you are slowly rising out of your body, light and free, and drifting up toward the ceiling. Look around the room from above, and notice everything you can."),
+           st("Return", 2.0, &[0.0], "Drift back down into your body. Feel its weight and warmth. Slowly open your eyes, turn off the light, and take a moment to recall what you experienced.")]));
+    v.last_mut().unwrap().visual = "ganzfeld".into();
+    v.push(p(g, "ap_swing", "Swing Technique — Rocking Sound", "Balance imagery · spatial audio · 22 min", &[180.0], &[0.7], "surf", "spatial", "Speculative",
+      "<p>A popular projection technique: imagine swinging on a swing, higher and higher, until at the top of an arc you keep going, out of your body. The sense of balance (the <b>vestibular system</b>) is central to out-of-body experiences in neuroscience (Blanke et al., 2004, <i>Brain</i>), and swinging imagery targets exactly that. Here the tone sways from ear to ear like a swing, once every four seconds. Needs headphones; keep the volume low.</p>",
+      vec![st("Settle", 3.0, &[0.25], "Welcome to the swing technique. Wear headphones, lie back, and close your eyes. The tone will sway gently from ear to ear, like a swing moving back and forth. Let your body grow heavy."),
+           st("Body asleep", 4.0, &[0.25], C_BODY_ASLEEP),
+           st("Swinging", 7.0, &[0.25], "Imagine you are sitting on a swing. Feel it carry you forward and back, in time with the sound. With each arc, swing a little higher, and feel the drop in your stomach at each end."),
+           st("Release", 6.0, &[0.25], "At the top of the next arc, let go, and keep rising, floating up and out, as if the swing has launched you gently into the air."),
+           st("Return", 2.0, &[0.2], C_RETURN_SHORT)]));
+    v.push(p(g, "ap_christos", "Christos Technique (Glaskin 1974)", "Stretch, expand, fly · 30 min", &[200.0], &[0.7], "pink", "binaural", "Traditional",
+      "<p>Australian writer <b>G. M. Glaskin</b> described the <b>Christos technique</b> in <i>Windows of the Mind</i> (1974). Traditionally two helpers rub the feet and the centre of the forehead while the traveller imagines stretching beyond the body, first through the feet, then through the head, then expanding like a balloon, before visiting their own front door, rising above the house and flying to a landscape. Glaskin and later writers presented it as a route to out-of-body and past-life experiences; those claims are untested, but it works as a strong guided-imagery journey. If you have a partner, they can gently rub your feet and forehead during the first stage.</p>",
+      vec![st("Settle", 3.0, &[10.0], "Welcome to the Christos technique. Lie on your back with your eyes closed. If you have a partner, ask them to rub the soles of your feet and the centre of your forehead, firmly and gently. If not, simply rest, and imagine it."),
+           st("Through the feet", 3.0, &[8.0], "Imagine that your legs are stretching out through the soles of your feet, a few centimetres longer than they really are. Feel it. Then let them return to normal."),
+           st("Through the head", 3.0, &[7.5], "Now imagine stretching out through the top of your head, a few centimetres taller. Feel it, then return. Now alternate: longer through the feet, then taller through the head."),
+           st("Expand", 4.0, &[7.0], "Now let your whole body expand in every direction, like a balloon slowly filling with air, until you fill the whole room."),
+           st("Front door", 4.0, &[6.3], "Imagine that you are standing outside your own front door. Notice the door, the ground under your feet, the light, the weather. Look down at your feet."),
+           st("Above the house", 4.0, &[6.0], "Now rise up, above the roof of your house. Look down at the roof, the street and the gardens around it. Rise higher, until you see the whole neighbourhood."),
+           st("Fly and land", 7.0, &[5.5], "Fly wherever you wish. When you are ready, come down and land somewhere new. Look at your feet. What are you wearing? Look around, and explore."),
+           st("Return", 2.0, &[10.0], "Now fly back the way you came, above your house, through the front door, and into your body. Feel your weight again. Move your fingers and toes, and open your eyes when you are ready.").ramp(60.0)]));
+    v.push(p(g, "ap_rising", "Rising on the Planes (Golden Dawn)", "Western esoteric ascent · 25 min", &[200.0], &[0.7], "pink", "binaural", "Traditional",
+      "<p><b>Rising on the planes</b> is an exercise of the Hermetic Order of the <b>Golden Dawn</b> (founded in London in 1888) and later Western esoteric schools. After relaxation, you imagine rising straight upward, through layers of light and colour, toward a brilliant light above; it was taught alongside <i>astral travel</i>, which explores imagined scenes. This is an original, non-ceremonial version.</p>",
+      vec![st("Settle", 3.0, &[10.0], "Welcome to rising on the planes. Sit upright or lie flat, and close your eyes. Breathe slowly and deeply. Imagine a column of soft light running straight up through your body, from below your feet to far above your head."),
+           st("Grounding", 3.0, &[8.0], "Feel the earth beneath you, solid and dark, like rich soil. This is your starting point, and you can always return here."),
+           st("First veil", 4.0, &[7.0], "Now begin to rise, slowly, up the column of light. Pass through a veil of deep violet, cool and silvery, like moonlight on water."),
+           st("Golden light", 5.0, &[6.0], "Keep rising, through layers of colour, until you come into a warm golden light, like a sun at the centre of everything. Rest here, and feel it in your chest."),
+           st("Brilliance", 5.0, &[5.0], "Rise further still, toward a brilliant white light above. Go only as far as feels right. Notice what you sense here, without trying to hold on to it."),
+           st("Descend", 3.0, &[8.0], "Now descend, slowly, the way you came: through the gold, through the violet, down into the dark, solid earth. Feel your body again.").ramp(60.0),
+           st("Return", 2.0, &[12.0], C_RETURN_SHORT).ramp(30.0)]));
+    v.push(p(g, "ap_tattva", "Tattva Vision — Symbol Doorway (Golden Dawn)", "Afterimage gateway · 20 min", &[200.0], &[0.6], "pink", "binaural", "Traditional",
+      "<p><b>Tattva vision</b> is a Golden Dawn practice that borrows the five Hindu <i>tattvas</i>, simple coloured symbols of the elements: a red triangle (fire), a yellow square (earth), a blue circle (air), a silver crescent (water) and an indigo egg (spirit). You gaze at the symbol for about 20 seconds, look at a plain surface to see its glowing afterimage in the opposite colour, then close your eyes and imagine it growing into a doorway you pass through. Press <b>🔺 Tattva card</b> to show a symbol full-screen; it is completely still and never flashes.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to tattva vision. Sit upright in a softly lit room. Press Tattva card, choose an element, and follow the gaze timer: look at the dot in the centre of the symbol, steadily, for about twenty seconds."),
+           st("Afterimage", 3.0, &[9.0], "When the symbol disappears, keep looking at the plain screen, and watch the afterimage glow in the opposite colour. Then close your eyes, and hold that image in your mind."),
+           st("Doorway", 4.0, &[7.0], "With your eyes closed, see the symbol grow larger and larger, until it is a doorway in front of you, the size of a real door. When you are ready, step through it."),
+           st("The other side", 8.0, &[6.0], "Notice the landscape on the other side: the light, the colours, the ground, the air. Explore gently, and let the scene unfold by itself. If you meet anyone, you may ask what this element has to teach."),
+           st("Return", 3.0, &[10.0], "Turn back to the doorway, and step through it again. See it shrink back to a small symbol, and fade. Feel your body, take a deep breath, and open your eyes.").ramp(60.0)]));
+    v.last_mut().unwrap().visual = "tattva".into();
+    v.push(p(g, "ap_phowa", "Phowa — Transference of Consciousness (Tibetan)", "Crown-ascent visualisation · 20 min", &[136.1], &[0.7], "pink", "binaural", "Traditional",
+      "<p><b>Phowa</b> (\"transference\") is one of the Six Yogas of Naropa in Tibetan Buddhism, practised to prepare for death and as a regular meditation. The practitioner visualises the body's central channel, their awareness as a small sphere of light at the heart, and an awakened presence, often the Buddha Amitabha, above the crown; with each out-breath, often with the syllable \"hik\", the sphere rises toward it. Traditionally it is received from a qualified teacher; this is a gentle introductory version for meditation only.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to phowa. Sit upright, with your spine straight and relaxed, and close your eyes. Breathe naturally. Bring to mind a feeling of compassion for yourself and for all beings."),
+           st("Central channel", 4.0, &[7.0], "Imagine a clear channel of light running through the centre of your body, from below your navel up to the crown of your head, open at the top like a skylight."),
+           st("Light above", 3.0, &[6.0], "Above your head, imagine a presence of pure light and kindness: a buddha, a saint, or simply radiant light. Feel welcomed by it."),
+           st("Rising sphere", 6.0, &[5.5], "At your heart, see a small, bright sphere of light, your own awareness. With each breath out, let it rise gently up the channel toward the light above, and settle back to the heart as you breathe in."),
+           st("Rest in light", 3.0, &[6.0], "Now let it rest in the light above, and dissolve, open and spacious. Rest in that openness for a while."),
+           st("Return", 2.0, &[10.0], "Let the light come down and dissolve into you, filling your body with warmth. Seal the channel at the crown, feel your body, and open your eyes slowly.").ramp(60.0)]));
+    v.push(p(g, "ap_dreamyoga", "Dream Yoga — Recognising the Dream (Tibetan)", "Bedtime practice · 30 min", &[150.0], &[0.5], "brown", "binaural", "Traditional",
+      "<p><b>Dream yoga</b>, another of the Six Yogas of Naropa, trains you to recognise dreams as dreams and to stay aware into sleep. In the form taught in the West by Tenzin Wangyal Rinpoche (<i>The Tibetan Yogas of Dream and Sleep</i>, 1998), you lie on your side in the \"lion posture\", review the day as if it had been a dream, and rest your attention on a soft red light at the throat as you fall asleep. Play it in bed at very low volume.</p>",
+      vec![st("Settle", 3.0, &[8.0], "Welcome to dream yoga. Lie down in bed, on your side, with one hand under your cheek, in the posture of a sleeping lion. Keep the volume very low, and let your eyes close."),
+           st("Day as a dream", 4.0, &[7.0], "Look back over your day, and see it as if it had been a dream: the places, the people, the feelings, all appearing and passing, vivid but insubstantial."),
+           st("Throat light", 5.0, &[6.0], "Bring your attention to your throat. Imagine a soft, glowing red light there, warm and clear, like a small flame. Rest your awareness in it, gently."),
+           st("Intention", 3.0, &[5.0], "Make a heartfelt intention: tonight, I will recognise my dreams as dreams. Repeat it silently a few times, then let the words go."),
+           st("Into sleep", 15.0, &[4.0], "").ramp(300.0)]));
+    v.push(with_tex(p(g, "ap_upper", "Shamanic Upper-World Journey", "Drum journey upward · 20 min", &[100.0], &[0.25], "none", "binaural", "Traditional",
+      "<p>In <b>core shamanism</b> (Michael Harner, <i>The Way of the Shaman</i>, 1980) journeys go to three worlds. The <b>upper world</b> is reached by climbing: a tree, a ladder, smoke or a mountain top, up through a thin membrane into the sky, often to meet a teacher. The drum beats at about four to four and a half times a second, with the faster call-back at the end; the fMRI study of drum trance by Hove et al. (2016) used this kind of rhythm.</p>",
+      vec![st("Intention", 2.0, &[4.2], "Welcome to the upper world journey. Lie down and cover your eyes. Choose a way up that you know, perhaps a tall tree, a ladder, or rising smoke. Set your intention: to meet a teacher who can help you."),
+           st("Ascent", 5.0, &[4.5], "Begin to climb. Go higher and higher, past the treetops and the clouds, until you feel a thin, soft membrane above you. Push gently through it."),
+           st("Upper world", 10.0, &[4.5], "You are in the upper world. Notice the light, the colours, the ground beneath you. Ask to meet your teacher, and see who comes. Ask your question, and listen."),
+           st("Call-back", 3.0, &[7.0], "The drum quickens. Thank your teacher, and come back the way you came, down through the membrane, down the tree, back into your body.").ramp(20.0)]), tx("drum", 1.0, 0.0, 0.0)));
+    v.push(with_tex(p(g, "ap_middle", "Shamanic Middle-World Journey", "Drum journey across the land · 20 min", &[100.0], &[0.25], "none", "binaural", "Traditional",
+      "<p>The <b>middle world</b> of core shamanism is this world, the land, sea and sky around us, visited in the imagination rather than in the body, which is why many practitioners compare it to out-of-body travel. Journeyers move across familiar or distant landscapes, often to find a place of power or to see how things are elsewhere. The drum plays at about four beats a second.</p>",
+      vec![st("Intention", 2.0, &[4.0], "Welcome to the middle world journey. Lie down and cover your eyes. Picture a place in nature that you know well, real and alive. Set your intention to travel out from there, across the land."),
+           st("Setting out", 5.0, &[4.3], "Stand in that place, and feel the ground, the air and the sounds around you. Then begin to travel, walking, flying or gliding, across the landscape."),
+           st("Journey", 10.0, &[4.5], "Go wherever you are drawn: over hills, rivers or cities. Notice what you see from above and up close. If you find a place that feels powerful, rest there for a while."),
+           st("Call-back", 3.0, &[7.0], "The drum calls you home. Travel back the way you came, to your starting place, and return into your body, bringing back what you found.").ramp(20.0)]), tx("drum", 1.0, 0.0, 0.0)));
+    {
+        const SIGHT: &str = "Now slow down. Sight: gently watch the darkness behind your eyelids, with no effort.";
+        const SOUND: &str = "Sound: listen to the quiet sounds around you, and any sounds inside your head.";
+        const BODY: &str = "Body: feel your weight, the bed, and any tingling or heaviness.";
+        let mut s = vec![st("Settle", 1.0, &[6.0], "Welcome to the senses technique. You have just woken after about five hours of sleep and been up for a few minutes. Lie down comfortably, close your eyes, and keep the volume very low."),
+                         st("Quick cycles", 2.0, &[6.0], "Cycle quickly through your senses, two or three seconds each. Sight: the darkness behind your eyelids. Sound: whatever you can hear. Body: the feel of the bed. Then begin again, sight, sound, body, around and around.")];
+        for _ in 0..3 {
+            s.push(st("Slow: sight", 0.5, &[5.5], SIGHT));
+            s.push(st("Slow: sound", 0.5, &[5.5], SOUND));
+            s.push(st("Slow: body", 0.5, &[5.5], BODY));
+        }
+        s.push(st("Fall asleep", 22.5, &[4.0], "Now let go of the technique completely, and drift off to sleep as quickly as you can. If you notice you are dreaming, stay calm, and remember: this is a dream.").ramp(120.0));
+        v.push(p(g, "ap_ssild", "Senses-Initiated Lucid Dream (SSILD) — Aspy 2020", "Lucid-dream route · 30 min", &[150.0], &[0.4], "brown", "binaural", "Research",
+          "<p>In the <b>International Lucid Dream Induction Study</b> (Aspy, Madden &amp; Delfabbro, 2020, <i>Frontiers in Psychology</i>), the <b>senses-initiated</b> technique (SSILD) worked about as well as MILD, the classic intention technique, and success was more likely when people fell asleep soon afterwards. After about 5 hours of sleep you get up briefly, then lie down and cycle your attention through sight, hearing and body sensations: several quick cycles, then a few slow ones, then let yourself fall asleep. Lucid dreams are the most common doorway to induced out-of-body experiences.</p>", s));
+    }
+
     v.push(p(g, "ap_ground", "After-Practice Grounding", "Integration · 10 min", &[194.18], &[0.8], "surf", "binaural", "Traditional",
       "<p>A short alpha-to-beta return for after any deep or out-of-body practice: feel your weight, the ground, and come back fully alert. Many traditions stress \"grounding\" after inner journeys; physiologically it simply brings you out of drowsy, dreamy states before you stand up or drive.</p>",
       vec![st("Ground", 4.0, &[10.0], C_GROUND), st("Weight", 3.0, &[12.0], "Feel the weight of your body supported by the earth beneath you."),
            st("Awake", 3.0, &[16.0], C_COUNT)]));
+
+    // ================= Spiritual & Mystical Experiences =================
+    // Contemplative practices from the world's traditions, and the ones brain-imaging studies
+    // have looked at. Spiritual claims are reported as claims; research is cited where it exists.
+    let g = "Spiritual & Mystical Experiences";
+    v.push(p(g, "my_centering", "Centering Prayer (Keating)", "Newberg 2003 · 22 min", &[200.0], &[0.5], "pink", "binaural", "Research",
+      "<p><b>Centering prayer</b> was developed in the 1970s by Trappist monks <b>Thomas Keating</b>, William Meninger and Basil Pennington, drawing on the medieval <i>Cloud of Unknowing</i>. You choose a sacred word as a symbol of your consent to God's presence and, whenever you notice you are engaged with a thought, return to it ever so gently. In a brain-imaging study of Franciscan nuns in this kind of prayer, <b>Newberg et al. (2003, <i>Perceptual and Motor Skills</i>)</b> found changes in frontal and parietal blood flow resembling those seen in Buddhist meditators. Keating recommends 20 minutes, twice a day.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to centering prayer. Sit comfortably, with your back upright and your eyes closed. Choose a sacred word, such as God, Jesus, Abba, peace or love, as a symbol of your intention to rest in God's presence."),
+           st("Sacred word", 2.0, &[8.0], "Silently introduce your sacred word, gently, like a feather on cotton. You do not need to repeat it; let it simply be there."),
+           st("Resting", 16.0, &[6.5], "When you notice you are engaged with any thought, feeling or image, return ever so gently to the sacred word. Then rest again in silence."),
+           st("Closing", 2.0, &[8.0], "Let the sacred word go. Remain in silence with your eyes closed for a couple of minutes, perhaps praying a familiar prayer slowly, before returning to your day.")]));
+    v.push(p(g, "my_tibetan", "Tibetan Visualisation Meditation (Newberg 2001)", "Image, absorption, oneness · 25 min", &[200.0], &[0.6], "pink", "binaural", "Research",
+      "<p>In a SPECT brain-imaging study of experienced Tibetan Buddhist meditators, <b>Newberg et al. (2001, <i>Psychiatry Research: Neuroimaging</i>)</b> found more activity in the prefrontal cortex and less in the superior parietal lobe, an area that helps map the body in space. The meditators described absorption and a loss of the usual sense of self. Their practice centred on visualising an image in detail and becoming absorbed in it; this session follows that structure.</p>",
+      vec![st("Settle", 3.0, &[10.0], "Welcome to Tibetan visualisation meditation. Sit upright and still, and close your eyes. Choose one image to work with: a buddha, a deity, a mandala, or simply a sphere of clear light."),
+           st("Build the image", 6.0, &[8.0], "Build your image slowly and in detail: its shape, its colours, the light coming from it, every fine feature. If it fades, rebuild it patiently."),
+           st("Hold", 7.0, &[6.5], "Now hold the whole image steady and vivid, in front of you or above your head. Rest your full attention on it."),
+           st("Absorption", 7.0, &[6.0], "Let the boundary between you and the image soften. Let it come closer and dissolve into light, and let that light dissolve into you, until there is no observer and nothing observed."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT).ramp(60.0)]));
+    v.push(p(g, "my_vocal", "Free Vocalisation — Singing in Tongues (Newberg 2006)", "Glossolalia-style vocal flow · 20 min", &[110.0, 220.0], &[0.6, 0.4], "none", "binaural", "Research",
+      "<p>In <b>Newberg et al. (2006, <i>Psychiatry Research: Neuroimaging</i>)</b>, Pentecostal Christians who regularly speak in tongues (<i>glossolalia</i>) were scanned while singing and while speaking in tongues. During glossolalia, activity in the frontal lobes fell, matching their sense of not being in deliberate control. If speaking in tongues is part of your faith, this gives you a space to practise; if not, treat it as free vocal improvisation: sounds with no meaning, letting go of words. A soft drone gives you a note to sing around.</p>",
+      vec![st("Settle", 2.0, &[10.0, 10.0], "Welcome to free vocalisation. Sit or stand somewhere you can make sound freely, without being overheard if that helps. Close your eyes, relax your jaw, and take a few deep breaths."),
+           st("Hum", 3.0, &[8.0, 8.0], "Begin to hum along with the drone, softly. Let the hum move up and down as it likes."),
+           st("Sing", 4.0, &[7.0, 7.0], "Open the hum into vowels: ah, oh, ee. Sing freely around the drone, with no tune you have to follow."),
+           st("Let go of words", 8.0, &[6.0, 6.0], "Now let the sounds become syllables, flowing on their own, without meaning or plan. Don't judge them; let your voice lead, and simply follow it."),
+           st("Silence", 3.0, &[8.0, 8.0], "Let your voice fall quiet. Sit in the silence, and notice how you feel.")]));
+    v.push(p(g, "my_jhana", "Jhana Absorption (Hagerty 2013)", "Ecstatic concentration · 30 min", &[200.0], &[0.6], "pink", "binaural", "Research",
+      "<p>The <b>jhānas</b> are states of deep absorption described in early Buddhist texts: rapture (<i>pīti</i>), happiness (<i>sukha</i>), contentment, and finally equanimity. <b>Hagerty et al. (2013, <i>Neural Plasticity</i>)</b> scanned a meditator with over 17,000 hours of practice entering the jhānas at will: activity rose in the brain's reward system, including the nucleus accumbens, and fell in areas for outside sensory processing. This session follows the approach of Western jhāna teachers such as Leigh Brasington: concentration on the breath, then a pleasant feeling, then the four jhānas in turn.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to jhana practice. Sit upright, relaxed and still, and close your eyes. This practice builds concentration, then lets joy arise from it. Begin by feeling the breath at the tip of your nose."),
+           st("Access concentration", 10.0, &[8.0], "Keep your attention on the touch of the breath at your nostrils, breath after breath. When the mind wanders, come back. Let concentration deepen until the breath is easy to follow."),
+           st("Pleasant feeling", 4.0, &[7.0], "Now shift your attention to a pleasant sensation somewhere in the body: perhaps in your hands, your chest, or a gentle smile. Rest on it, and let it grow by itself."),
+           st("First jhana", 4.0, &[6.5], "If an energetic joy, rapture, begins to rise and spread, let it fill you. Don't grab it; just stay with it."),
+           st("Second jhana", 3.0, &[6.0], "Let the excitement of rapture fade into the background, and rest in a quieter, warm happiness."),
+           st("Third jhana", 3.0, &[5.5], "Let the happiness settle further, into deep, calm contentment, peaceful and still."),
+           st("Fourth jhana", 3.0, &[5.0], "Rest now in equanimity: neither pleasant nor unpleasant, completely still, clear and balanced."),
+           st("Return", 1.0, &[10.0], C_RETURN_SHORT).ramp(30.0)]));
+    v.push(p(g, "my_nondual", "Nondual Awareness (Josipovic 2012)", "Open presence · 22 min", &[200.0], &[0.5], "pink", "binaural", "Research",
+      "<p>In <b>nondual awareness</b>, taught in Tibetan Dzogchen and Mahamudra and in Advaita, attention rests in awareness itself, without dividing experience into a self inside and a world outside. <b>Josipovic et al. (2012, <i>Frontiers in Human Neuroscience</i>)</b> found that in experienced practitioners this state reduced the usual competition (anti-correlation) between the brain's inward-focused and outward-focused networks. The session gradually opens attention from objects to awareness itself.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to nondual awareness. Sit comfortably, eyes softly open or closed. There is nothing to achieve here. Simply notice that you are already aware: of sounds, of sensations, of this voice."),
+           st("Open attention", 5.0, &[9.0], "Let your attention widen to include everything at once: all the sounds, the whole body, the space of the room. Hold nothing in particular."),
+           st("Awareness itself", 7.0, &[8.0], "Now notice the awareness in which all of this appears. Rest as that, the knowing itself, rather than any thing that is known."),
+           st("Not two", 6.0, &[7.83], "Notice that there is no line where awareness ends and its contents begin. Sounds, thoughts and sensations are like waves in the same water. Rest, without effort."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "my_inquiry", "Self-Inquiry — Who Am I? (Ramana Maharshi)", "Advaita practice · 24 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Self-inquiry</b> (<i>ātma vichāra</i>) is the method taught by the Indian sage <b>Ramana Maharshi</b> (1879–1950), set out in <i>Nān Yār?</i> (\"Who am I?\"). Whenever a thought arises, you ask: to whom does this arise? The answer, \"to me\", turns attention back to the sense of \"I\" itself, until the thinking mind falls quiet in its source. It is one of the core practices of Advaita Vedanta.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to self inquiry. Sit quietly, with your eyes closed. Let the body settle, and the breath find its own rhythm. Notice the simple feeling of being here: I am."),
+           st("The I-feeling", 5.0, &[8.0], "Turn your attention toward that feeling of I. Not your name or your story, just the bare sense of being yourself. Where is it? What is it like?"),
+           st("To whom?", 8.0, &[7.0], "Whenever a thought arises, ask: to whom does this thought arise? To me. Then ask: who am I? Don't answer with words. Turn back to the feeling of I itself."),
+           st("Abiding", 7.0, &[6.0], "Now let even the question rest. Stay as the quiet sense of being, before any thought. If thoughts return, ask again, and come back."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "my_mantra", "Effortless Mantra Meditation (TM-inspired)", "20 min, twice a day", &[200.0], &[0.5], "pink", "binaural", "Research",
+      "<p><b>Transcendental Meditation</b> (TM), brought to the West by Maharishi Mahesh Yogi from the late 1950s, uses a mantra thought effortlessly, without concentration, for 20 minutes twice a day. It has a large research literature; an American Heart Association scientific statement (Brook et al., 2013, <i>Hypertension</i>) concluded it may be considered to help lower blood pressure. TM itself is taught one-to-one by certified teachers with a personal mantra; this is <b>not TM</b>, but a general effortless-mantra session using a soft sound of your choice.</p>",
+      vec![st("Settle", 1.0, &[10.0], "Welcome to effortless mantra meditation. Sit comfortably, close your eyes, and rest for a moment. Choose a soft, pleasant sound with no meaning for you, such as ah hum."),
+           st("Begin", 2.0, &[8.0], "Begin to think the sound quietly, without moving your lips. Don't force it or concentrate on it. Let it come and go, as faint as it likes."),
+           st("Effortless", 15.0, &[6.0], "When you notice you have drifted into thoughts, gently come back to the sound. There is no right or wrong; even the drifting is part of it."),
+           st("Come out slowly", 2.0, &[8.0], "Let the sound go. Sit with your eyes closed for two more minutes, without the mantra, before slowly opening your eyes.").ramp(60.0)]));
+    v.push(p(g, "my_float", "Floatation-REST at Home — Dark, Still, Weightless", "Feinstein 2018-inspired · 45 min", &[100.0], &[0.3], "brown", "binaural", "Research",
+      "<p><b>Floatation-REST</b> (Reduced Environmental Stimulation Therapy) means lying in a dark, silent tank of skin-temperature salt water. In <b>Feinstein et al. (2018, <i>PLOS ONE</i>)</b>, a single one-hour float sharply reduced anxiety and muscle tension and improved mood in 50 people with anxiety and stress-related disorders. John C. Lilly, who built the first isolation tank in 1954, described out-of-body and mystical states in it. This is a <b>dry, at-home</b> imitation: lie in a dark, quiet room. <b>Never use it in a bath or any water.</b></p>",
+      vec![st("Settle", 3.0, &[10.0], "Welcome to the dry float. Make the room as dark and quiet as you can, and lie on your back on a soft surface, never in water. Let your arms rest loosely, palms up. Keep the volume low."),
+           st("Weightless", 10.0, &[6.0], "Imagine you are floating on warm, still water at exactly the temperature of your skin. Feel the water hold you completely. You don't need to hold yourself up at all.").ramp(120.0),
+           st("Dark and still", 27.0, &[4.5], "Let even the water disappear. There is only darkness, stillness and breath. Rest here. Nothing to do, nowhere to be.").ramp(300.0),
+           st("Surfacing", 5.0, &[10.0], "Slowly, the sense of your body returns: its weight, the surface under you, the air on your skin. Take your time. Breathe deeper, stretch, and open your eyes when you are ready.").ramp(120.0)]));
+    v.push(p(g, "my_arc", "Mystical Experience Arc — Sober (Griffiths 2006-inspired)", "Preparation, peak, integration · 40 min", &[136.1, 272.2], &[0.8, 0.3], "surf", "binaural", "Speculative",
+      "<p>Johns Hopkins researchers (<b>Griffiths et al., 2006, <i>Psychopharmacology</i></b>) found that a carefully prepared session with psilocybin produced mystical-type experiences that many volunteers ranked among the most meaningful of their lives. These experiences are measured on dimensions first described by the philosopher W. T. Stace: <b>unity</b>, a sense of the <b>sacred</b> and of <b>truth</b>, deep <b>peace and joy</b>, going <b>beyond time and space</b>, and being <b>hard to put into words</b>. This session uses only the non-drug parts of that setting: preparation, intention, eyeshades, music-like tones, the guidance to trust, let go and be open, and time to integrate. It involves <b>no drugs</b>, and whether it can bring about such states has not been tested.</p>",
+      vec![st("Preparation", 3.0, &[10.0, 10.0], "Welcome to the mystical experience arc. This session uses no substances, only stillness and sound. Lie down comfortably, and cover your eyes with a soft mask or cloth. Make sure you will not be disturbed for forty minutes."),
+           st("Intention", 3.0, &[8.0, 10.0], "Set an intention: a question, or simply an openness to whatever comes. Then let it go. If anything difficult arises in this session, remember three words: trust, let go, be open."),
+           st("Letting go", 8.0, &[6.0, 8.0], "Let yourself sink into the sound. Release any effort to control what happens. Like a leaf on a river, let yourself be carried."),
+           st("Unity", 6.0, &[4.5, 7.83], "Notice the edges of your body softening, and the sense of being separate fading. Imagine everything as one whole, including you."),
+           st("Sacred", 5.0, &[4.5, 7.83], "Let a sense of reverence arise: for life, for this moment, for existence itself. Whatever is sacred to you, let it be near."),
+           st("Timeless", 5.0, &[4.0, 7.83], "Let go of time. There is no before and after here, only this vast, open now."),
+           st("Return", 5.0, &[8.0, 10.0], "Slowly, let the familiar world return: your body, your breath, the room. Bring back whatever was meaningful.").ramp(120.0),
+           st("Integration", 5.0, &[10.0, 12.0], "Lie still for a few moments with your eyes closed. What would you like to remember from this? When you are ready, sit up slowly, and write it down.")]));
+    v.push(with_tex(p(g, "my_dhikr", "Sufi Dhikr — Remembrance of God", "Breath and phrase · 20 min", &[200.0], &[0.3], "none", "binaural", "Traditional",
+      "<p><b>Dhikr</b> (\"remembrance\") is the central Sufi practice: rhythmic repetition of a sacred phrase, most often <i>Lā ilāha illā-llāh</i> (\"there is no god but God\") or the name <i>Allāh</i>, aloud or silently, in time with the breath and often with a gentle movement of the head toward the heart. Practised in groups it can build to ecstatic states. A soft bell marks a slow rhythm, one phrase every five seconds. Use a sacred phrase from your own tradition if you prefer.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to dhikr, the remembrance of God. Sit cross legged or on a chair, with your back upright and your eyes closed. Place your attention at your heart. When the bell begins, let each ring mark one repetition of your phrase.").tex(0.0),
+           st("Aloud", 5.0, &[8.0], "Recite the phrase aloud with each bell: la ilaha illallah, there is no god but God. On the first half, turn your head gently to the right; on the second, bring it down toward your heart."),
+           st("Softly", 5.0, &[7.0], "Let the recitation become softer, a murmur, still one phrase with each bell, the movement smaller."),
+           st("In the heart", 6.0, &[6.0], "Now let the phrase continue silently, in the heart alone, with each bell and each breath."),
+           st("Silence", 2.0, &[7.0], "Let the phrase fall away. Sit in the silence it leaves, with your attention resting at your heart.").tex(0.0)]), tx("breathbell", 0.6, 432.0, 5.0)));
+    v.push(with_tex(p(g, "my_jesus", "The Jesus Prayer (Hesychasm)", "Prayer of the heart · 20 min", &[200.0], &[0.3], "none", "binaural", "Traditional",
+      "<p>The <b>Jesus Prayer</b>, \"Lord Jesus Christ, Son of God, have mercy on me\", is the heart of <b>hesychasm</b> (\"stillness\"), the contemplative tradition of Eastern Orthodox Christianity, gathered in the <i>Philokalia</i> (1782) and made famous by <i>The Way of a Pilgrim</i>. It is joined to the breath and repeated until it becomes the \"prayer of the heart\". Slow rhythmic prayer like this tends to bring breathing down to about six breaths a minute (Bernardi et al., 2001, <i>BMJ</i>, studied the rosary and yoga mantras). A soft bell marks each ten-second breath.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the Jesus Prayer. Sit still, with your head slightly bowed and your eyes closed. Bring your attention down from your head into your heart. The bell will mark each slow breath.").tex(0.0),
+           st("Aloud", 3.0, &[8.0], "Pray aloud, slowly, with each breath. Breathing in: Lord Jesus Christ, Son of God. Breathing out: have mercy on me.").breath(),
+           st("Whisper", 3.0, &[7.0], "Now whisper the prayer, keeping the same slow rhythm with the breath and the bell.").breath(),
+           st("Silent", 8.0, &[6.0], "Now pray silently, in the heart, with each breath in and each breath out. When your mind wanders, gently return to the words.").breath(),
+           st("Heart", 4.0, &[6.0], "Let the words become fewer, until only the sense of prayer remains, resting in the heart, in stillness.").tex(0.0)]), tx("breathbell", 0.6, 528.0, 10.0)));
+    v.push(with_tex(p(g, "my_nada", "Nada Yoga — Following the Inner Sound", "Outer sound to inner sound · 25 min", &[200.0], &[0.0], "none", "binaural", "Traditional",
+      "<p><b>Nāda yoga</b>, the yoga of sound, is described in the <i>Hatha Yoga Pradipika</i> (15th century) and the <i>Nāda Bindu Upanishad</i>. The practitioner listens to outer sounds, then ever subtler ones, until attention turns to the inner sound (<i>anāhata nāda</i>, the \"unstruck sound\"), said to progress from ocean-like roars to bells, flutes and humming bees. Here the singing bowls slowly fade into silence, leaving you listening inward. <b>If you have tinnitus and focusing on it upsets you, skip this session.</b></p>",
+      vec![st("Settle", 3.0, &[7.0], "Welcome to nada yoga. Sit comfortably, close your eyes, and let the sound of the bowls fill the space around you. Listen to each tone from the moment it is struck until it fades.").tex(1.0),
+           st("Subtle sound", 6.0, &[6.0], "Now listen for the subtlest part of each sound: the shimmer at its edge, the long, quiet tail as it dies away.").tex(0.6),
+           st("Fading", 6.0, &[6.0], "As the bowls grow quieter, follow the sound into silence, and keep listening.").tex(0.25),
+           st("Inner sound", 8.0, &[5.0], "Now turn your listening inward. In the silence you may notice a faint inner sound: a hum, a hiss, a ringing, or a soft roar. Rest your attention on it gently, and let it draw you inward.").tex(0.0),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT).tex(0.4)]), tx("bowls", 0.8, 220.0, 9.0)));
+    v.push(p(g, "my_vipassana", "Vipassana Body Sweep (Goenka-style)", "Insight through sensation · 30 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Vipassana</b> (\"insight\") as taught by <b>S. N. Goenka</b> (1924–2013) in the tradition of Sayagyi U Ba Khin: first <i>anapana</i>, awareness of the breath at the nostrils, then sweeping attention through the body part by part, observing every sensation with equanimity and seeing that each one arises and passes away. Goenka's ten-day silent courses are held worldwide. Studies of Vipassana and related mindfulness practice report lower stress and better emotional regulation, though most are small.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to vipassana. Sit with your back straight and your eyes closed, and resolve to stay still for this sitting. Bring your attention to the area below your nostrils, above your upper lip."),
+           st("Anapana", 6.0, &[8.0], "Observe the natural breath as it enters and leaves, just as it is. Feel its touch at the nostrils. Don't control it; simply observe."),
+           st("Top to toe", 9.0, &[7.0], "Now move your attention part by part, from the top of your head down to your toes, observing whatever sensation you find: warmth, tingling, pressure, or nothing at all. Observe without craving or aversion."),
+           st("Toe to top", 7.0, &[6.5], "Now move back up, from the toes to the top of the head, part by part, with the same calm, balanced attention. Every sensation arises, and passes away."),
+           st("Free flow", 4.0, &[6.5], "If the sensations feel subtle and flowing, let your attention sweep through the whole body in one smooth movement, up and down."),
+           st("Metta", 2.0, &[10.0], "Finish with loving kindness. Let goodwill flow from you to all beings: may all beings be happy, may all beings be peaceful.")]));
+    v.push(p(g, "my_psychomanteum", "Psychomanteum — Mirror Reunion (Moody)", "Grief and presence · 40 min", &[136.1], &[0.4], "pink", "binaural", "Speculative",
+      "<p>Psychiatrist <b>Raymond Moody</b> revived the ancient Greek \"oracles of the dead\" as the <b>psychomanteum</b> (<i>Reunions</i>, 1993): a dim room where you gaze into a mirror angled so that it shows no reflection, only depth, after spending time remembering someone who has died. Many people report sensing or seeing the person. In a study with bereaved volunteers, <b>Hastings et al. (2002, <i>Omega</i>)</b> reported reduced grief afterwards. Gazing into a mirror in low light also produces strange visual effects on its own (Caputo, 2010, <i>Perception</i>). This can bring up strong feelings: have someone you trust nearby, and stop whenever you need to.</p>",
+      vec![st("Prepare", 3.0, &[10.0], "Welcome to the psychomanteum. Dim the room to a single soft light behind you, and place a mirror so that you see only darkness in it, not your own face. Have photographs or keepsakes of the person you are remembering with you."),
+           st("Remembering", 10.0, &[8.0], "Look at the photographs and keepsakes, one by one. Remember the times you shared: their voice, their laugh, the things they said. Let any feelings come, and let them be."),
+           st("Gazing", 20.0, &[7.0], "Now set the keepsakes aside, and gaze softly into the depth of the mirror. Don't strain or expect anything. Just keep gazing, relaxed and open, with the person in your heart."),
+           st("Farewell", 5.0, &[8.0], "Whatever you experienced, or did not, take a moment to say what you would like to say to them, aloud or silently. Thank them."),
+           st("Return", 2.0, &[10.0], "Look away from the mirror, and turn up the lights. Feel your feet on the floor. Take a few deep breaths, and be gentle with yourself for the rest of the day.")]));
+    v.push(p(g, "my_orbit", "Microcosmic Orbit (Taoist Inner Alchemy)", "Circulating energy · 22 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>microcosmic orbit</b> (<i>xiao zhoutian</i>, \"small heavenly circuit\") comes from Taoist inner alchemy (<i>neidan</i>). Attention, joined with the breath, circulates the body's energy (<i>qi</i>) up the back along the Governor channel and down the front along the Conception channel, with the tongue touching the roof of the mouth to connect them. It was popularised in the West by Mantak Chia (<i>Awaken Healing Energy Through the Tao</i>, 1983). Practitioners describe warmth and tingling and, at advanced stages, out-of-body and light experiences; these are traditional claims.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the microcosmic orbit. Sit upright on the front of a chair, with your feet flat and your hands resting in your lap. Close your eyes, and touch the tip of your tongue lightly to the roof of your mouth."),
+           st("Lower dantian", 3.0, &[8.0], "Bring your attention to a point about three finger widths below your navel, deep inside the belly. Feel warmth gathering there, like a small sun."),
+           st("Up the back", 4.0, &[7.0], "Now let the warmth flow down to the base of your body, then slowly up along your spine, between your shoulder blades, up the back of your neck to the crown of your head."),
+           st("Down the front", 4.0, &[7.0], "From the crown, let it flow down over your forehead, between your eyebrows, through the tongue, down the throat and the centre of your chest, back to the point below your navel."),
+           st("Orbit with breath", 7.0, &[6.0], "Now join it to the breath. Breathing in, the energy rises up the spine. Breathing out, it flows down the front. Circle after circle, smooth and unhurried."),
+           st("Gather", 2.0, &[8.0], "Let the circling slow and stop. Gather all the warmth back into the point below your navel, and rest your hands there for a moment.")]));
+    v.push(p(g, "my_hitbodedut", "Hitbodedut — Secluded Personal Prayer (Breslov)", "Speak from the heart · 20 min", &[200.0], &[0.4], "surf", "binaural", "Traditional",
+      "<p><b>Hitbodedut</b> (\"self-seclusion\") was taught by <b>Rebbe Nachman of Breslov</b> (1772–1810): every day, go somewhere alone, ideally outdoors in nature or at night, and speak to God in your own language, as to a close friend, pouring out everything in your heart. If no words come, he advised simply repeating a single phrase such as \"Master of the World\". It is a central practice of Breslov Hasidism. This session gives the practice a quiet background and a gentle structure.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to hitbodedut. Find a place where you can be alone, outdoors if possible, or simply a quiet room. Sit, or walk slowly. You will speak in your own words, as to a close and loving friend."),
+           st("Begin", 3.0, &[8.0], "Begin to speak, aloud or in a whisper, in your own language. Say what is on your mind today, however small. If no words come, repeat: Master of the World."),
+           st("Pour out your heart", 12.0, &[7.0], "Keep speaking from the heart: your thanks, your worries, your hopes, your regrets. There is no wrong thing to say. Let it all come out."),
+           st("Listening silence", 3.0, &[7.83], "Now fall silent. Listen inwardly. Rest in the closeness that the words have opened.")]));
+    v.push(p(g, "my_guide", "Meeting an Inner Guide", "Guided imagery · 20 min", &[200.0], &[0.6], "pink", "binaural", "Traditional",
+      "<p>Meeting a wise inner figure is one of the most widespread spiritual visualisations, from shamanic \"power animals\" and spirit guides to Carl Jung's active imagination. In psychology it is used as the <b>inner advisor</b> technique of guided imagery, taught by Martin Rossman and David Bresler's Academy for Guided Imagery (founded 1989), as a way of listening to your own intuition. Whether a guide is part of your own mind or something more is a question each tradition answers differently.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to meeting an inner guide. Sit or lie comfortably, and close your eyes. Bring to mind a question you would like help with, something that matters to you. Hold it gently."),
+           st("Path", 4.0, &[8.0], "Imagine yourself on a path in a beautiful, peaceful place. Notice the ground under your feet, the sounds, the smells. Follow the path, slowly."),
+           st("Meeting", 6.0, &[6.5], "Ahead of you, someone is waiting: a wise and kind presence. It may be a person, an animal, or a light. Let it appear in its own way, and greet it."),
+           st("Asking", 5.0, &[6.0], "Ask your question, and listen. The answer may come as words, an image, a feeling, or a gift. Accept whatever comes, with thanks."),
+           st("Return", 3.0, &[10.0], "Thank your guide, and know you can return. Walk back along the path, feel your body again, and open your eyes when you are ready.").ramp(60.0)]));
 
     // ================= Light Journeys (flicker) =================
     // Opt-in stroboscopic closed-eye imagery. The light only runs after the user accepts the
@@ -432,11 +692,104 @@ pub fn all() -> Vec<Preset> {
       vec![st("Settle", 1.0, &[10.0], C_SETTLE), st("Wander 1", 3.5, &[9.0], C_OBSERVE).ramp(60.0), st("Wander 2", 3.5, &[11.0], C_AGAIN).ramp(60.0),
            st("Wander 3", 3.5, &[8.5], C_FOLLOW).ramp(60.0), st("Wander 4", 3.5, &[12.0], C_AGAIN).ramp(60.0), st("Wander 5", 3.0, &[10.0], C_OBSERVE).ramp(60.0),
            st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.last_mut().unwrap().visual = "flicker:dreamachine".into();
     let mut gf = lj("lj_ganzflicker", "Ganzflicker — Red & Black", "10 Hz red flicker · 10 min", "Research",
       "<p><b>Ganzflicker</b> alternates full red and black at about 10 Hz. A 2024 study (Shenyan et al., <i>Scientific Reports</i>) found it produced visual hallucinations more often and faster than the steady Ganzfeld, mostly simple shapes and colours. It has also been used to study people with aphantasia (no mind's eye), many of whom still saw patterns (Königsmark et al., 2021).</p>",
       vec![st("Settle", 1.0, &[10.0], C_SETTLE), st("Ganzflicker", 7.0, &[10.0], C_OBSERVE), st("Return", 2.0, &[10.0], C_RETURN_SHORT)]);
     gf.visual = "ganzflicker".into();
     v.push(gf);
+
+    // ---- research and practitioner protocols (v1.6). Each has a matching preset in the light
+    // panel, picked automatically from `visual` = "flicker:<protocol>". Stage names steer the light:
+    // "(dark)" = light off, "Steady" = constant light, "arrhythmic" = jittered flash timing.
+    let ljp = |id: &str, name: &str, short: &str, ev: &str, proto: &str, about: &str, stages: Vec<Stage>| {
+        let mut x = p(g, id, name, short, &[200.0], &[0.7], "pink", "binaural", ev, about, stages);
+        x.visual = format!("flicker:{}", proto);
+        x
+    };
+    const C_DARK_PAUSE: &str = "Pause. The light is off. Keep your eyes closed, and rate how strong the visuals were, from zero to ten.";
+    v.push(ljp("lj_bart10", "Bartossek 2021 — 10 Hz, 20 Minutes", "Study protocol · 23 min", "Research", "bartossek",
+      "<p>The 10 Hz condition of <b>Bartossek et al. (2021, <i>PLOS ONE</i>)</b>: twenty minutes of white light flashing ten times a second on closed eyes, lit for half of every cycle, from a Lucia N°03 lamp in a dark room. Of the three conditions (10 Hz, 3 Hz and steady light), 10 Hz tended to give the strongest altered-state and visual experiences, though the differences were modest. Volunteers were screened for photosensitivity with an EEG test first, and one stopped after migraine-like symptoms. The light panel loads the matching preset: white, 50% on-time, eyes closed; the light stays dark for the first minute. The study used earplugs; turn the tone and noise down for a silent version.</p>",
+      vec![st("Settle (dark)", 1.0, &[10.0], "Welcome to the Bartossek ten hertz protocol. Lie back or sit facing the light in a dark room, and close your eyes. Press Light journey and start it now: the light stays off during this first minute, then flickers for twenty minutes."),
+           st("10 Hz flicker", 20.0, &[10.0], "The flicker begins. Keep your eyes closed, relax, and simply observe whatever colours, patterns or images appear.").ramp(0.0),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(ljp("lj_bart3", "Bartossek 2021 — 3 Hz, 20 Minutes", "Slow-flicker condition · 23 min", "Research", "bartossek",
+      "<p>The 3 Hz condition of <b>Bartossek et al. (2021, <i>PLOS ONE</i>)</b>: the same twenty minutes of white light at 50% on-time, but only three flashes a second. Slow flicker gives fewer and simpler geometric patterns than 10 Hz, and in that study it lowered positive mood slightly; it is included so you can compare. The beat plays at 3 Hz (delta).</p>",
+      vec![st("Settle (dark)", 1.0, &[3.0], "Welcome to the Bartossek three hertz protocol, the slow flicker condition. Close your eyes in a dark room, facing the light. Start the light journey now: it stays dark for one minute, then flashes three times a second for twenty minutes."),
+           st("3 Hz flicker", 20.0, &[3.0], "Slow flicker begins. Keep your eyes closed and observe. Notice how slow flashes look different from fast ones.").ramp(0.0),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    {
+        let mut x = ljp("lj_steady", "Bartossek 2021 — Constant-Light Control", "No flicker · 23 min", "Research", "bartossek",
+          "<p>The control condition of <b>Bartossek et al. (2021)</b>: the same light on closed eyes for twenty minutes, but <b>steady</b>, never flashing, so you can tell how much of what you see comes from the flicker itself. There are no beats here, only soft pink noise, which makes it close to a Ganzfeld. Steady light still produced some imagery in that study, but less than flicker.</p>",
+          vec![st("Settle (dark)", 1.0, &[0.0], "Welcome to the constant light control. Sit or lie facing the light with your eyes closed, in a dark room. Start the light journey now. After one dark minute the light comes on and stays steady for twenty minutes, with no flicker at all."),
+               st("Steady light", 20.0, &[0.0], "The steady light is on. Keep your eyes closed, and simply observe what you see, with no flicker at all."),
+               st("Return", 2.0, &[0.0], C_RETURN_SHORT)]);
+        x.gains = vec![0.0];
+        v.push(x);
+    }
+    v.push(ljp("lj_amaya", "Amaya 2023 — Frequency & Rhythm Series", "2-minute blocks · 19 min", "Research", "amaya",
+      "<p>Based on <b>Amaya et al. (2023, <i>PLOS ONE</i>)</b>, who flashed white light on closed eyes for two-minute periods at 3, 8, 10 and 18 Hz, each either <b>rhythmic</b> or <b>arrhythmic</b>, with the light on for 30% of each cycle. Rhythmic 10 Hz gave the strongest simple hallucinations and visual movement; rhythmic beat arrhythmic at every rate. Here: one practice minute, then 10, 8 and 3 Hz, each rhythmic then arrhythmic (flash gaps drawn at random around the average, as in the study), with 30-second dark pauses to rate what you saw. The 18 Hz blocks and the study's paired-flash pattern are left out because they go above this app's 12 Hz safety limit.</p>",
+      vec![st("Settle (dark)", 1.0, &[10.0], "Welcome to the Amaya frequency and rhythm series. Close your eyes and face the light, and start the light journey now. You will get two minute blocks at ten, eight and three hertz, each rhythmic then irregular, with short dark pauses between them."),
+           st("Practice 10 Hz", 1.0, &[10.0], "A one minute practice block at ten hertz, so you know what to expect. Just observe.").ramp(0.0),
+           st("10 Hz rhythmic", 2.0, &[10.0], "Ten hertz, rhythmic. Watch the patterns.").ramp(0.0),
+           st("Pause (dark)", 0.5, &[10.0], C_DARK_PAUSE).ramp(0.0),
+           st("10 Hz arrhythmic", 2.0, &[10.0], "Ten hertz, irregular. The same average speed, but uneven. Notice the difference.").ramp(0.0),
+           st("Pause (dark)", 0.5, &[8.0], C_DARK_PAUSE).ramp(0.0),
+           st("8 Hz rhythmic", 2.0, &[8.0], "Eight hertz, rhythmic.").ramp(0.0),
+           st("Pause (dark)", 0.5, &[8.0], C_DARK_PAUSE).ramp(0.0),
+           st("8 Hz arrhythmic", 2.0, &[8.0], "Eight hertz, irregular.").ramp(0.0),
+           st("Pause (dark)", 0.5, &[3.0], C_DARK_PAUSE).ramp(0.0),
+           st("3 Hz rhythmic", 2.0, &[3.0], "Three hertz, rhythmic. Slow, distinct flashes.").ramp(0.0),
+           st("Pause (dark)", 0.5, &[3.0], C_DARK_PAUSE).ramp(0.0),
+           st("3 Hz arrhythmic", 2.0, &[3.0], "Three hertz, irregular.").ramp(0.0),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(ljp("lj_ganzopen", "Ganzflicker — Original Eyes-Open Protocol", "Red/black, eyes open · 13 min", "Research", "ganzflicker",
+      "<p>The original <b>Ganzflicker</b>, created by Reshanne Reeder, is watched with <b>eyes open</b>: the whole screen alternates red and black about ten times a second for ten minutes, in a dim room. In a large online study, most people with normal mental imagery saw illusory patterns, and many saw complex scenes, objects or faces, while people with aphantasia mostly saw simple patterns (Königsmark, Bergmann &amp; Reeder, 2021, <i>Cortex</i>); it produced hallucinations more often and faster than a steady Ganzfeld (Shenyan et al., 2024, <i>Scientific Reports</i>). Eyes-open flicker is stronger than flicker through closed eyelids, so the light panel asks you to confirm once more before it starts, and it always uses the screen, never the phone flashlight.</p>",
+      vec![st("Settle (dark)", 1.0, &[10.0], "Welcome to the original Ganzflicker. Unlike the other light journeys, this one is done with your eyes open. Dim the room, sit at arm's length from the screen, and start the light journey. It stays dark for one minute."),
+           st("Ganzflicker (eyes open)", 10.0, &[10.0], "The flicker begins. With your eyes open, rest your gaze softly on the centre of the screen. Let your eyes relax, and watch what appears.").ramp(0.0),
+           st("Return", 2.0, &[10.0], "The flicker has stopped. Close your eyes, rest, and take a moment to recall what you saw.")]));
+    {
+        let names = ["Three hertz: slow, distinct flashes.", "Four hertz.", "Five hertz.", "Six hertz, theta.", "Seven hertz.", "Eight hertz, the start of alpha.",
+                     "Nine hertz.", "Ten hertz, the alpha peak. For most people, the strongest patterns.", "Eleven hertz.", "Twelve hertz: the fastest rate here."];
+        let mut s = vec![st("Settle (dark)", 1.0, &[3.0], "Welcome to the frequency scan. Close your eyes, face the light, and start the light journey now. The flicker begins at three hertz and steps up by one hertz each minute, to twelve. Notice how the patterns change with the speed.")];
+        for (i, cue) in names.iter().enumerate() {
+            let hz = 3.0 + i as f64;
+            s.push(st(&format!("{} Hz", hz), 1.0, &[hz], cue).ramp(0.0));
+        }
+        s.push(st("Return", 2.0, &[10.0], C_RETURN_SHORT));
+        v.push(ljp("lj_scan", "Frequency Scan 3 → 12 Hz (Allefeld 2011-style)", "1 minute per rate · 13 min", "Research", "scan",
+          "<p>Flicker imagery changes with the rate. <b>Allefeld et al. (2011, <i>Consciousness and Cognition</i>)</b> showed volunteers flicker at many different frequencies through a Ganzfeld and found that colours and geometric forms depended on frequency, peaking around 10 Hz; earlier work by Grey Walter (1949) and John Smythies (1959) catalogued the patterns at each rate. This scan steps from 3 to 12 Hz, one minute per rate, so you can map your own response.</p>", s));
+    }
+    v.push(ljp("lj_lucia", "Hypnagogic Light — Flicker with Steady Glow (Lucia-style)", "Flicker and glow · 21 min", "Traditional", "lucia",
+      "<p>The <b>Lucia N°03</b> \"hypnagogic light\" lamp, developed in Austria by Engelbert Winkler and Dirk Proeckl, mixes flickering light with phases of steady light to guide people toward the dreamy hypnagogic state; it was the lamp used by Bartossek et al. (2021). This original programme alternates warm-white flicker at 9, 8 and 7 Hz with two-minute periods of steady glow. It is not Lucia's own programme.</p>",
+      vec![st("Settle (dark)", 1.0, &[9.0], "Welcome to the hypnagogic light journey. Lie back with your eyes closed and your face toward the light, in a dark room. Start the light journey now. Flicker alternates with a soft steady glow, guiding you toward the dreamy edge of sleep."),
+           st("Flicker 9 Hz", 4.0, &[9.0], "The flicker begins at nine hertz. Let the colours wash over you.").ramp(0.0),
+           st("Steady glow 1", 2.0, &[9.0], "A soft, steady glow now. Let the images linger and drift."),
+           st("Flicker 8 Hz", 4.0, &[8.0], "Flicker again, a little slower, at eight hertz.").ramp(10.0),
+           st("Steady glow 2", 2.0, &[8.0], "Steady glow again. Notice what remains when the flashing stops."),
+           st("Flicker 7 Hz", 4.0, &[7.0], "Slower still, seven hertz. Let yourself drift toward dreaming.").ramp(10.0),
+           st("Steady glow 3", 2.0, &[7.0], "Rest in the glow, half awake, half dreaming."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    {
+        let mut x = ljp("lj_ave", "Audio-Visual Entrainment — Alpha Relaxation (AVE)", "Light and sound pulse together · 19 min", "Research", "ave",
+          "<p><b>Audio-visual entrainment</b> (AVE) devices, sold since the 1980s, pair light flashes in goggles with sound pulses at the same rate. Reviews report benefits for relaxation, mood and some clinical problems such as headaches (Huang &amp; Charyton, 2008, <i>Alternative Therapies in Health and Medicine</i>), though most studies are small and many were run by device makers. Here the session plays <b>isochronic</b> sound pulses at the same rate as the light, gliding from 10 Hz down to 7.5 Hz.</p>",
+          vec![st("Settle (dark)", 1.0, &[10.0], "Welcome to audio visual entrainment. Close your eyes and face the light, and start the light journey. The sound pulses and the light flashes run at the same rate, starting at ten hertz and slowing gently toward deep relaxation."),
+               st("Alpha 10 Hz", 5.0, &[10.0], "Sound and light now pulse together at ten hertz. Let them carry you.").ramp(0.0),
+               st("Glide down", 5.0, &[8.0], "The rhythm slows gently toward eight hertz. Let your body grow heavier as it slows.").ramp(240.0),
+               st("Deep alpha", 6.0, &[7.5], "Seven and a half hertz, at the edge of theta. Deeply relaxed, calm and still.").ramp(120.0),
+               st("Return", 2.0, &[10.0], C_RETURN_SHORT)]);
+        x.mode = "isochronic".into();
+        v.push(x);
+    }
+    v.push(ljp("lj_phone", "Phone-Light Journey (Lumenate-style)", "Flashlight or screen · 19 min", "Traditional", "phone",
+      "<p>Inspired by phone apps such as <b>Lumenate</b>, which flash the phone's flashlight on closed eyes in time with music; Lumenate's own lamp was used in the Amaya et al. (2023) study. On Android this preset uses the <b>phone flashlight</b>: hold the phone 10 to 20 cm from your closed eyes, light facing you. On a computer it uses the screen. This is an original programme, not Lumenate's: a gentle arc from 11 Hz down to 6 Hz and back up to 10 Hz.</p>",
+      vec![st("Settle (dark)", 1.0, &[11.0], "Welcome to the phone light journey. On a phone, choose the flashlight in the light panel, and hold it ten to twenty centimetres from your closed eyes. On a computer, face the screen. Start the light journey when you are ready."),
+           st("Open", 3.0, &[11.0], "The light begins. Breathe slowly, and let the colours open up.").ramp(0.0),
+           st("Deepen", 4.0, &[9.0], "The rhythm slows. Let the patterns grow and change.").ramp(60.0),
+           st("Drift", 4.0, &[7.0], "Slower still. Let shapes turn into scenes, and follow them.").ramp(90.0),
+           st("Theta float", 3.0, &[6.0], "Six hertz. Float in whatever appears.").ramp(60.0),
+           st("Rise", 2.0, &[10.0], "The rhythm lifts again, bright and clear.").ramp(60.0),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
 
     // ================= Infrasound (opt-in) =================
     // The infrasound layer itself only plays after the user accepts its warning and turns it on.
@@ -469,6 +822,72 @@ pub fn all() -> Vec<Preset> {
       vec![st("Settle", 2.0, &[10.0], C_SETTLE), st("Breathing", 15.0, &[6.0], "").ramp(120.0), st("Integration", 3.0, &[8.0], C_REST)]);
     br.visual = "breath:connected".into();
     v.push(br);
+
+    // ---- research and practitioner protocols (v1.6). `visual` = "breath:<protocol>" selects the
+    // matching preset in the breathing guide; the guide itself drives the breathing, so the middle
+    // stage is silent. Higher-risk protocols stay behind the breathwork warning.
+    const C_BR_REST: &str = "Rest now. Let your breathing return to its own natural rhythm, and notice how you feel. Stay sitting or lying down for a minute before you get up.";
+    let brp = |g: &str, id: &str, name: &str, short: &str, ev: &str, proto: &str, about: &str, first: &str, mid: f64, rest: f64| {
+        let mut x = p(g, id, name, short, &[200.0], &[0.45], "surf", "binaural", ev, about,
+          vec![st("Settle", 1.0, &[10.0], first), st("Breathing", mid, &[7.0], "").ramp(60.0), st("Rest", rest, &[8.0], C_BR_REST)]);
+        x.visual = format!("breath:{}", proto);
+        x
+    };
+    v.push(brp(g, "br_kox", "Kox 2014 Study Protocol (Wim Hof Method)", "Hold-until-urge rounds · 20 min", "Research", "kox",
+      "<p>The breathing exercise from <b>Kox et al. (2014, <i>PNAS</i>)</b>: about 30 deep breaths, then breathe out and hold with empty lungs for as long as feels right (trained volunteers typically held about 2–3 minutes), then breathe in deeply and hold for 10 seconds; repeat for several rounds. After ten days of training, volunteers had much higher adrenaline, an inflammatory response about half as large, and fewer flu-like symptoms after an injected bacterial toxin. Their blood oxygen also dipped to about 50% for a few seconds during holds, which is why this stays opt-in. The guide ends any hold at 2½ minutes. <b>Never in or near water, never standing or driving.</b></p>",
+      "Welcome to the Kox study protocol. Sit or lie down somewhere safe, never in or near water, and never while standing or driving. Press Breathwork and start the guide when you are ready. Rest your hands, and let your breathing settle.", 17.0, 2.0));
+    v.push(brp(g, "br_cyclic", "Cyclic Hyperventilation (Balban 2023)", "Stanford 5-minute protocol · 8 min", "Research", "cyclic",
+      "<p>One of three breathing practices in a month-long randomised study at Stanford (<b>Balban et al., 2023, <i>Cell Reports Medicine</i></b>): each round is 30 breaths (a deep breath in through the nose, a passive breath out through the mouth), then breathe out fully and hold with empty lungs for 15 seconds; three rounds, five minutes a day. Breathwork as a whole lifted mood more than mindfulness meditation did; cyclic sighing (in Breathing Techniques) stood out most, and also slowed breathing at rest.</p>",
+      "Welcome to cyclic hyperventilation, the Stanford five minute protocol. Sit or lie somewhere safe, away from water. Press Breathwork to start the guide: thirty deep breaths, then a fifteen second hold with empty lungs, three times.", 5.5, 1.5));
+    v.push(brp(g, "br_tummo", "Tummo Inner-Fire Vase Breathing (forceful)", "Kozhevnikov 2013 · 13 min", "Research", "tummo",
+      "<p><b>G-tummo</b> (\"inner fire\") is a Tibetan Buddhist practice. In <b>Kozhevnikov et al. (2013, <i>PLOS ONE</i>)</b>, experienced practitioners using <b>forceful vase breathing</b>, a breath held after breathing in while contracting the belly and pelvic floor, together with visualising a flame rising from below the navel, raised their body temperature as high as 38.3 °C. Western volunteers using the breathing alone warmed slightly; their holds lasted about 20 to 40 seconds. The guide holds for as long as is comfortable, up to 45 seconds. Strong breath holds with straining raise blood pressure: <b>not for people with heart conditions, high blood pressure, glaucoma or hernia, or in pregnancy.</b></p>",
+      "Welcome to inner fire breathing. Sit upright, cross legged or on a chair, somewhere safe and away from water. Press Breathwork to start the guide. Imagine a small flame, glowing just below your navel.", 10.0, 2.0));
+    v.push(brp(g, "br_kapal", "Kapalabhati — Skull-Shining Breath (Telles 2011)", "1 breath a second · 3 × 5 min", "Research", "kapal",
+      "<p><b>Kapalabhati</b> is a yogic cleansing breath: short, forceful breaths out through the nose, pulling the belly in, with each breath in happening by itself. In <b>Telles et al. (2011, <i>BioPsychoSocial Medicine</i>)</b>, 38 men practised it at about one breath a second for three 5-minute rounds with a minute's rest between; heart-rate variability showed less vagal (calming) activity during and after it, the opposite of slow breathing. It is energising rather than calming. <b>Beginners should start with the 1-minute-rounds preset.</b> Not in pregnancy, or with hernia, high blood pressure, heart disease or epilepsy.</p>",
+      "Welcome to kapalabhati, the skull shining breath. Sit upright with your hands on your knees. Press Breathwork to start the guide. Each breath out is a short, sharp push from the belly; each breath in happens by itself.", 17.0, 2.0));
+    v.push(brp(g, "br_bhastrika", "Bhastrika — Bellows Breath", "3 rounds of 20 · 8 min", "Traditional", "bhastrika",
+      "<p><b>Bhastrika</b> (\"bellows\") is a classical pranayama from the <i>Hatha Yoga Pradipika</i>: forceful breaths both in and out through the nose, about one a second, driven by the belly, in rounds followed by calm, natural breathing. It is strongly energising, and it is a form of hyperventilation. For a gentle, research-tested version, see Slow-Pace Bhastrika in Breathing Techniques.</p>",
+      "Welcome to bhastrika, the bellows breath. Sit upright, with your spine tall and your shoulders relaxed. Press Breathwork to start the guide. Breathe in and out forcefully through the nose, like a bellows, driven by the belly.", 5.0, 2.0));
+    v.push(brp(g, "br_fire", "Breath of Fire (Kundalini Yoga)", "Rapid, even breathing · 8 min", "Traditional", "fire",
+      "<p><b>Breath of fire</b> is a signature breath of Kundalini yoga as taught by Yogi Bhajan from 1969: rapid, rhythmic, equal breaths in and out through the nose, two to three a second, pumped by the navel, usually for one to three minutes. It is energising and can cause light-headedness. Keep it light and even, never straining, and stop if you feel dizzy.</p>",
+      "Welcome to breath of fire. Sit upright, with your spine straight. Press Breathwork to start the guide. The breath is quick, light and even, in and out through the nose, pumped from the navel.", 5.0, 2.0));
+    v.push(brp(g, "br_sky", "Sudarshan Kriya-inspired Cyclic Breathing", "Slow, medium and fast cycles · 20 min", "Research", "sky",
+      "<p><b>Sudarshan Kriya Yoga (SKY)</b>, taught by the Art of Living Foundation since the 1980s, combines <i>ujjayi</i> (slow ocean breath), <i>bhastrika</i> (bellows breath), chanting Om, and the kriya itself: cycles of slow, medium and fast rhythmic breathing. Reviews of trials report benefits for stress, anxiety and depression (Brown &amp; Gerbarg, 2005; Zope &amp; Zope, 2013, <i>International Journal of Yoga</i>). The real SKY is taught in person by trained teachers; this is an original approximation of its structure, with the kriya cycles at about 20, 45 and 70 breaths a minute, followed by rest.</p>",
+      "Welcome to the cyclic breathing journey, inspired by Sudarshan Kriya. Sit upright, cross legged or on a chair, somewhere safe. Press Breathwork to start the guide; it leads you through each part, then asks you to lie down and rest.", 15.0, 4.0));
+    v.push(brp(g, "br_rebirth", "Rebirthing — Relaxed Connected Breathing (Orr)", "Gentle circular breath · 20 min", "Speculative", "rebirth",
+      "<p><b>Rebirthing</b> was developed by <b>Leonard Orr</b> in the 1970s: continuous, connected breathing with no pause between in and out, the breath in drawn actively and the breath out simply released, usually for an hour with a trained \"rebirther\". Practitioners report releasing old emotions and memories, which they connect with birth; those ideas are untested. This guide is gentler than Holotropic-style breathing: fuller than normal, but relaxed.</p>",
+      "Welcome to rebirthing breath. Lie down on a soft surface, somewhere safe, and loosen tight clothing. Press Breathwork to start the guide. Draw each breath in, and simply let it go, with no pause in between.", 16.0, 3.0));
+
+    // ================= Breathing Techniques (no warning needed) =================
+    // Slow and gentle methods; no hyperventilation and no long holds.
+    let g = "Breathing Techniques";
+    v.push(brp(g, "br_sigh", "Cyclic Sighing (Balban 2023)", "5 minutes a day · 7 min", "Research", "sigh",
+      "<p>The standout of the Stanford breathing study (<b>Balban et al., 2023, <i>Cell Reports Medicine</i></b>): a slow breath in through the nose, a second short sip of air to fill the lungs completely, then a long, slow breath out through the mouth, repeated for five minutes. Done daily for a month, it lifted mood more than mindfulness meditation and slowed breathing even at rest. The double breath in is the same pattern as the body's natural \"physiological sigh\".</p>",
+      "Welcome to cyclic sighing. Sit comfortably. Press Breathwork to start the guide. Breathe in through your nose, take one more short sip of air at the top, then let it all out slowly through your mouth.", 5.0, 1.0));
+    v.push(brp(g, "br_box", "Box Breathing + CO₂ Tolerance Test (Balban 2023)", "Test, then 5 min · 8 min", "Research", "box",
+      "<p><b>Box breathing</b>, equal counts in, hold, out, hold, was one of the three Stanford breathing practices (<b>Balban et al., 2023</b>). The count was set by a <b>CO₂ tolerance test</b>: four normal breaths, then the biggest breath in you can take, then breathe out as slowly as possible. The seconds it takes to empty your lungs set the box: up to 20 seconds, 3–4 seconds per side; 25–45 seconds, 5–6; 50 seconds or more, 8–10. The guide runs the test and sets your count, or you can choose one. It was popularised by former Navy SEAL Mark Divine.</p>",
+      "Welcome to box breathing. Sit upright and relaxed. Press Breathwork to start the guide. It begins with a short test of how slowly you can breathe out, then sets the size of your box.", 6.0, 1.0));
+    v.push(brp(g, "br_478", "4-7-8 Relaxing Breath (Weil)", "In 4, hold 7, out 8 · 6 min", "Traditional", "478",
+      "<p>Dr <b>Andrew Weil</b>'s <b>4-7-8 breath</b>, adapted from pranayama: breathe in quietly through the nose for 4 counts, hold for 7, then breathe out through the mouth with a soft whoosh for 8. Weil recommends four cycles at a time, twice a day, building up to eight after a month. Slow breathing with long breaths out lowers heart rate in many studies; 4-7-8 itself has little direct research.</p>",
+      "Welcome to the four seven eight breath. Sit with your back straight, and rest the tip of your tongue just behind your upper front teeth. Press Breathwork to start the guide: in for four, hold for seven, out for eight.", 3.0, 2.0));
+    v.push(brp(g, "br_coherent", "Coherent Breathing — 5 Breaths a Minute", "6 s in, 6 s out · 12 min", "Research", "coherent",
+      "<p><b>Coherent breathing</b> (Stephen Elliott, 2005) is resonance breathing at about five breaths a minute: 6 seconds in, 6 seconds out, smooth and silent. Breathing near your resonance frequency (about 4.5 to 7 breaths a minute) maximises heart-rate variability and is among the best-supported self-calming methods (Lehrer &amp; Gevirtz, 2014; Zaccaro et al., 2018). Psychiatrists Richard Brown and Patricia Gerbarg teach it in their Breath-Body-Mind programme.</p>",
+      "Welcome to coherent breathing. Sit or lie comfortably, and let your belly soften. Press Breathwork to start the guide: six seconds in, six seconds out, smooth and silent, five breaths a minute.", 10.0, 1.0));
+    v.push(brp(g, "br_bhramari", "Bhramari — Humming Bee Breath", "Hummed breaths out · 8 min", "Research", "bhramari",
+      "<p><b>Bhramari</b> pranayama: breathe in through the nose, then breathe out slowly while humming like a bee, sometimes with the ears gently closed by the thumbs. Humming raises nitric oxide in the nose about fifteen-fold compared with a quiet breath out (<b>Weitzberg &amp; Lundberg, 2002, <i>American Journal of Respiratory and Critical Care Medicine</i></b>), and the long, vibrating breath out is deeply calming.</p>",
+      "Welcome to the humming bee breath. Sit comfortably with your eyes closed. Press Breathwork to start the guide. On each long breath out, hum softly, and feel the vibration in your face and head.", 6.0, 1.0));
+    v.push(brp(g, "br_nadi", "Nadi Shodhana — Alternate-Nostril Breathing", "Left, right, balance · 12 min", "Traditional", "nadi",
+      "<p><b>Nadi shodhana</b> (\"channel cleaning\") is a classical pranayama: close the right nostril with the thumb and breathe in through the left; close the left with the ring finger and breathe out through the right; then in through the right and out through the left. Yoga texts say it balances the body's energy channels. Small studies report slower heart rate and lower blood pressure, and that breathing through one nostril can shift the balance of the nervous system (Telles et al., 1994, <i>Indian Journal of Physiology and Pharmacology</i>).</p>",
+      "Welcome to alternate nostril breathing. Sit upright. Rest your left hand in your lap, and bring your right hand to your face: the thumb will close the right nostril, the ring finger the left. Press Breathwork to start the guide.", 10.0, 1.0));
+    v.push(brp(g, "br_vase", "Gentle Vase Breathing (Tummo, gentle form)", "No strain · 12 min", "Traditional", "vase",
+      "<p>The gentle form of tummo breathing (<b>Kozhevnikov et al., 2013</b>): soft, unstrained breaths with a short, light hold, while imagining your whole body filled with warmth and bliss. In that study the gentle form did not raise body temperature by itself; practitioners use it to maintain the heat after the forceful form. Here it is a calm, safe introduction to the practice.</p>",
+      "Welcome to gentle vase breathing. Sit upright and relaxed. Press Breathwork to start the guide. Breathe softly into the lower belly, and imagine warmth spreading through your whole body.", 10.0, 1.0));
+    v.push(brp(g, "br_ratio", "Classical Ratio Breathing 1:4:2 (Kumbhaka)", "In 4, hold 16, out 8 · 10 min", "Traditional", "ratio",
+      "<p>Hatha yoga texts such as the <i>Hatha Yoga Pradipika</i> teach breath retention (<i>kumbhaka</i>) in the classical ratio 1:4:2: breathe in for one count, hold for four, breathe out for two. Here that is 4 seconds in, 16 held, 8 out. B. K. S. Iyengar's <i>Light on Pranayama</i> (1981) stresses building up gradually and never straining; if 16 seconds is a struggle, choose the shorter preset.</p>",
+      "Welcome to classical ratio breathing. Sit upright, with your hands resting on your knees. Press Breathwork to start the guide. The holds should feel comfortable; if they don't, choose the shorter preset.", 8.0, 1.0));
+    v.push(brp(g, "br_slowbh", "Slow-Pace Bhastrika — 6 a Minute (Pramanik 2009)", "Deep, slow bellows · 8 min", "Research", "slowbh",
+      "<p>In <b>Pramanik et al. (2009, <i>Journal of Alternative and Complementary Medicine</i>)</b>, five minutes of slow-pace bhastrika, deep breaths in for 4 seconds and out for 6 seconds through both nostrils, lowered blood pressure and heart rate in healthy volunteers, probably through the calming (parasympathetic) nervous system. It keeps the full, deep breaths of bhastrika at a slow, safe pace.</p>",
+      "Welcome to slow pace bhastrika. Sit upright with your shoulders relaxed. Press Breathwork to start the guide: a deep, full breath in for four seconds, and a deep breath out for six, through both nostrils.", 5.0, 2.0));
 
     // ================= Brainwave frequency library =================
     let g = "Brainwave Library";
@@ -588,8 +1007,12 @@ pub fn all() -> Vec<Preset> {
     v.push(p(g, "t256", "Verdi C = 256 Hz (scientific pitch)", "Alpha 10 Hz · 20 min", &[256.0], &[1.0], "pink", "binaural", "Traditional",
       "<p>\"Scientific pitch\" sets middle C to 256 Hz (a power of two). It's often associated with Verdi.</p>", vec![st("256", 20.0, &[10.0], C_REST)]));
 
+    // Keep each session's original opening line for tagging, so the tailored openings
+    // only ever add search tags and never take one away.
+    let first: Vec<String> = v.iter().map(|p| p.stages.first().map(|s| s.cue.clone()).unwrap_or_default()).collect();
+    crate::settle::apply(&mut v);
     crate::info::fill(&mut v);
-    auto_tags(&mut v);
+    auto_tags(&mut v, &first);
 
     // assign cue ids
     for pr in v.iter_mut() {
@@ -606,7 +1029,7 @@ fn crate_band(hz: f64) -> &'static str {
 
 /// Give every session searchable tags: group synonyms, evidence, bands, beat type,
 /// sound texture, carrier tones and topic keywords found in its text.
-fn auto_tags(v: &mut [Preset]) {
+fn auto_tags(v: &mut [Preset], also: &[String]) {
     const GROUP: &[(&str, &[&str])] = &[
         ("Inspired by the Gateway Experience", &["inspired by", "gateway", "gateway experience", "gateway process", "monroe", "hemi-sync", "hemisync", "focus", "focus level", "cia", "wave i", "obe", "out of body"]),
         ("Inspired by Lifeline (Focus 22–27)", &["inspired by", "lifeline", "monroe", "gateway", "focus", "focus level", "afterlife", "hemi-sync", "spiritual"]),
@@ -620,10 +1043,12 @@ fn auto_tags(v: &mut [Preset]) {
         ("Cosmic Octave (Planets)", &["planet", "planets", "cosmic", "cosmic octave", "cousto", "astrology", "astronomy"]),
         ("Tunings", &["tuning", "pitch", "432", "440", "music"]),
         ("Sound Systems Library", &["sound systems", "library", "methods", "binaural", "monaural", "isochronic", "am", "amplitude modulation", "hybrid", "bilateral", "emdr", "8d", "spatial", "hemi-sync", "holosync", "noise", "drum"]),
-        ("Light Journeys (Flicker)", &["light", "light journey", "flicker", "strobe", "visual", "visuals", "hallucination", "hallucinations", "closed-eye visuals", "dreamachine", "ganzflicker", "patterns", "geometry"]),
+        ("Light Journeys (Flicker)", &["light", "light journey", "flicker", "strobe", "visual", "visuals", "hallucination", "hallucinations", "closed-eye visuals", "dreamachine", "ganzflicker", "patterns", "geometry", "protocol", "lucia", "lumenate", "mind machine", "audio-visual entrainment"]),
         ("Infrasound (opt-in)", &["infrasound", "low frequency", "rumble", "ghost", "haunted", "18.98", "17 hz", "7 hz", "vibration"]),
-        ("Breathwork (opt-in)", &["breathwork", "breathing", "hyperventilation", "wim hof", "holotropic", "rebirthing", "power breathing", "connected breathing"]),
-        ("Astral Projection & OBE", &["astral", "astral projection", "obe", "out of body", "out-of-body", "projection", "monroe", "rope", "phase", "wbtb", "lucid", "vibrations"]),
+        ("Breathwork (opt-in)", &["breathwork", "breathing", "hyperventilation", "wim hof", "holotropic", "rebirthing", "power breathing", "connected breathing", "pranayama", "breath hold"]),
+        ("Breathing Techniques", &["breathing", "breath", "breathwork", "pranayama", "slow breathing", "calm", "relaxation", "breathing guide"]),
+        ("Spiritual & Mystical Experiences", &["spiritual", "mystical", "mystic", "mysticism", "religious", "prayer", "contemplation", "contemplative", "meditation", "transcendence", "enlightenment", "awakening", "sacred"]),
+        ("Astral Projection & OBE", &["astral", "astral projection", "obe", "out of body", "out-of-body", "projection", "monroe", "rope", "phase", "wbtb", "lucid", "vibrations", "astral travel", "soul travel"]),
     ];
     // (needle in lowercase text, tags to add)
     const TOPICS: &[(&str, &[&str])] = &[
@@ -651,12 +1076,21 @@ fn auto_tags(v: &mut [Preset]) {
         ("gamma", &["gamma"]), ("40 hz", &["40 hz", "gamma"]), ("alzheimer", &["alzheimer", "genus", "memory"]),
         ("intuition", &["intuition"]), ("intention", &["intention"]), ("manifest", &["manifestation"]),
         ("grounding", &["grounding"]), ("432", &["432"]), ("528", &["528", "love frequency"]),
+        ("sufi", &["sufi", "dhikr", "islam"]), ("buddhis", &["buddhist", "buddhism"]), ("tibet", &["tibetan"]), ("christian", &["christian"]),
+        ("jesus", &["christian", "prayer"]), (" god", &["god"]), ("tummo", &["tummo", "inner fire"]), ("golden dawn", &["golden dawn", "hermetic", "western esoteric"]),
+        ("tattva", &["tattva", "symbol"]), ("vipassana", &["vipassana", "insight meditation"]), ("jhāna", &["jhana", "absorption"]), ("jhana", &["jhana", "absorption"]),
+        ("nondual", &["nondual", "non-dual"]), ("advaita", &["advaita"]), ("mirror", &["mirror"]), ("grief", &["grief", "bereavement"]),
+        ("floatation", &["float", "floatation", "isolation tank"]), ("mystical", &["mystical"]), ("taoist", &["taoist", "qi"]), ("hasid", &["jewish", "hasidic"]),
+        ("pranayama", &["pranayama", "yoga breathing"]), ("hyperventilat", &["hyperventilation"]), ("box breathing", &["box breathing"]),
+        ("sighing", &["sighing", "physiological sigh"]), ("humming", &["humming"]), ("nostril", &["alternate nostril"]), ("flashlight", &["flashlight", "torch"]),
+        ("eyes open", &["eyes open"]), ("hypnotis", &["hypnosis", "hypnotic"]), ("shamanism", &["shamanic", "shaman"]), ("kriya", &["kriya"]),
+        ("wim hof", &["wim hof"]), ("arrhythmic", &["arrhythmic"]), ("afterimage", &["afterimage"]), ("lucid dream", &["lucid", "lucid dreaming"]),
     ];
     let band = |hz: f64| -> &'static str {
         if hz <= 0.0 { "" } else if hz < 0.75 { "epsilon" } else if hz < 4.0 { "delta" } else if hz < 8.0 { "theta" } else if hz < 13.0 { "alpha" }
         else if hz < 30.0 { "beta" } else if hz < 90.0 { "gamma" } else if hz < 150.0 { "hypergamma" } else { "lambda" }
     };
-    for p in v.iter_mut() {
+    for (i, p) in v.iter_mut().enumerate() {
         let mut tags: Vec<String> = Vec::new();
         let mut add = |s: &str| { let s = s.to_lowercase(); if !s.is_empty() && !tags.contains(&s) { tags.push(s); } };
         for (g, ts) in GROUP { if p.group == *g { for t in *ts { add(t); } } }
@@ -691,9 +1125,12 @@ fn auto_tags(v: &mut [Preset]) {
         }
         if p.visual == "ganzfeld" { add("ganzfeld"); add("red light"); add("visual"); }
         if p.visual.contains("flicker") { add("flicker"); add("light journey"); add("visual"); add("hallucination"); add("strobe"); }
+        if p.visual == "tattva" { add("tattva"); add("symbol"); add("afterimage"); add("visual"); }
+        if p.visual.starts_with("breath:") { add("breathing guide"); add("breathing"); }
         if p.stages.iter().any(|s| s.breath) { add("breathing"); add("breath pacer"); }
-        let text = format!(" {} {} {} {}", p.name, p.short, p.about,
-            p.stages.iter().map(|s| format!("{} {}", s.name, s.cue)).collect::<Vec<_>>().join(" ")).to_lowercase();
+        let text = format!(" {} {} {} {} {}", p.name, p.short, p.about,
+            p.stages.iter().map(|s| format!("{} {}", s.name, s.cue)).collect::<Vec<_>>().join(" "),
+            also.get(i).map(|s| s.as_str()).unwrap_or("")).to_lowercase();
         for (needle, ts) in TOPICS { if text.contains(needle) { for t in *ts { add(t); } } }
         p.tags = tags;
     }

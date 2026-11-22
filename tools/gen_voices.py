@@ -5,7 +5,10 @@ or touches the network.
 
 Usage:
   focus_binaural.exe --dump-cues tools/cues.json
-  python tools/gen_voices.py <kokoro-v1.0.onnx> <voices-v1.0.bin>
+  python tools/gen_voices.py <kokoro-v1.0.onnx> <voices-v1.0.bin> [voice ...]
+
+Only clips that don't exist yet are rendered. Name one or more voices to render just those
+(the voices.yml workflow renders each voice in its own job).
 """
 import json, os, subprocess, sys, tempfile
 import numpy as np
@@ -25,7 +28,10 @@ cues = json.load(open(os.path.join(root, "tools", "cues.json"), encoding="utf-8"
 k = Kokoro(sys.argv[1], sys.argv[2])
 tmp = tempfile.mkdtemp()
 
+only = [v for v in sys.argv[3:] if v in VOICES]
 for voice, lang in VOICES.items():
+    if only and voice not in only:
+        continue
     outdir = os.path.join(root, "voice", voice)
     os.makedirs(outdir, exist_ok=True)
     for n, c in enumerate(cues, 1):
