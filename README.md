@@ -4,13 +4,16 @@
 
 *(formerly "Focus")* · by Vanguard Assembly
 
-A native Windows app written in **Rust** that generates binaural, monaural, isochronic, AM, hybrid, bilateral and spatial (8D) beats in real time. It includes guided sessions inspired by the Monroe Institute's *Gateway Experience* Focus levels, and a library of **221 sessions** drawn from published research, contemplative traditions and popular frequency traditions. Every session opens with its own spoken "settle in" cue written for that practice.
+A native Windows app written in **Rust** that generates binaural, monaural, isochronic, AM, hybrid, bilateral and spatial (8D) beats in real time. It includes guided sessions inspired by the Monroe Institute's *Gateway Experience* Focus levels, and a library of **293 sessions** drawn from published research, the world's contemplative and ritual traditions, and popular frequency traditions. Every session opens with its own spoken "settle in" cue written for that practice.
 
 ## Features
 
 - **Sound Systems Library**: one session for every known way of delivering a rhythm to the brain: binaural, monaural, isochronic, smooth AM tones, hybrid binaural + isochronic, bilateral left↔right (EMDR-style), spatial/8D rotation, layered (Hemi-Sync-inspired) beats, descending carriers (Holosync-inspired), coloured noise and drumming. Any session can be played through any beat type.
 - **Astral Projection & OBE** (23 sessions): Monroe's vibrational state and roll-out, Robert Bruce's rope technique, Muldoon's target technique, Raduga's phase technique and technique cycling, wake-back-to-bed, theta–gamma stack, spatial floating, bilateral calming, the researched induction methods (hypnotic suggestion and imagined viewpoint after Facco 2019, kinesthetic floating after Smith & Messier 2014, a 1970s laboratory-style Ganzfeld induction, SSILD), the swing and Christos techniques, Golden Dawn rising on the planes and tattva vision (with on-screen tattva cards), Tibetan phowa and dream yoga, shamanic upper- and middle-world journeys, and after-practice grounding — each labelled by evidence with the real neuroscience explained.
 - **Spiritual & Mystical Experiences** (17 sessions): centering prayer, Tibetan image visualisation, free vocalisation, jhāna absorption, nondual awareness, self-inquiry, effortless mantra, a dry floatation-REST, a sober mystical-experience arc, Sufi dhikr, the Jesus Prayer, nāda yoga, vipassana body sweeping, the psychomanteum, the Taoist microcosmic orbit, hitbodedut and an inner-guide journey, each with its history and what research has (and hasn't) found.
+- **World contemplative traditions** (72 sessions in 10 groups): Christian mysticism (lectio divina, the Cloud of Unknowing, Teresa's Interior Castle, Ignatian contemplation, Taizé, Quaker silence, the rosary, the night vigil), Tibetan Buddhism and Bön (shamatha, tonglen, mantra, Dzogchen, Mahamudra, Chöd, the bardo, sleep yoga, sky gazing), Buddhist meditation (mettā, ānāpānasati, Mahasi noting, the koan Mu, shikantaza, nembutsu, daimoku, kasina, ajikan), Hindu and yogic meditation (trāṭaka, so'ham, the Vijñāna Bhairava, chakra seed sounds, japa, the Gāyatrī, kīrtan, antar mouna, the Māṇḍūkya AUM), Sufi mysticism (a seated sema, murāqaba, the laṭāʾif, Inayat Khan's breaths, the Beautiful Names), Jewish mysticism and Kabbalah (the Shema, Abulafia, the Tree of Life, ayin, merkavah, niggun), Taoist inner cultivation (zuowang, the fasting of the heart-mind, standing qigong, the six healing sounds), shamanic and ancestral rituals (lower-world journey, Goodman's ritual postures, trance dance), Western esoteric and classical practice (dream incubation, Plotinus, Hermetic contemplation, the Middle Pillar, the pentagram ritual, the bardic darkness, galdr) and trance and hypnosis techniques (autogenic training, Betty Erickson's 3-2-1, Braid's eye fixation, fractionation). Each explains its origin and era, what the tradition claims and what research has found.
+- **Tradition filter:** pick a family (Abrahamic, Hindu & yogic, Buddhist, Taoist, Shamanic, Western esoteric, Modern & secular) to see every session from it, old and new, then narrow to a branch such as Christian, Jewish & Kabbalah, Islamic & Sufi, Tibetan, Zen, Vedanta or Hermetic.
+- **Gazing aid:** still on-screen images for kasina, trāṭaka and eye-fixation practice: nine kasina discs, a moon disc, a candle flame, a bindu and a bright point. They never flicker or move.
 - **Opt-in experimental features**: ⚡ **Light journeys** (flicker-light closed-eye visuals at ~10 Hz, screen or Android flashlight, synced to the beat; includes a Sweet-Spot Sweep, Ganzflicker and Dreamachine-inspired sessions), 🌫 **Infrasound** layer (18.98 Hz "ghost frequency", 17 Hz, 7 Hz…), and 🌬 **Breathwork** (Wim Hof-style power breathing rounds and conscious connected breathing with an on-screen guide). Each requires accepting a full warning first.
 - **Research and practitioner presets for light and breath**: every light session has a matching protocol in the Light journey panel, picked automatically: Bartossek 2021 (10 Hz, 3 Hz and steady-light conditions), Amaya 2023 (30% duty, rhythmic and arrhythmic blocks), the original eyes-open Ganzflicker (asks again every time, brightness capped), a 3–12 Hz frequency scan, Lucia-style flicker with steady glow, a Dreamachine, audio-visual entrainment and a phone-flashlight journey. Every breathing session has its own guide: the Kox 2014 study protocol, Stanford's cyclic hyperventilation and cyclic sighing (Balban 2023), box breathing with a CO₂ tolerance test, 4-7-8, coherent breathing, bhramari, nadi shodhana, gentle and forceful tummo, kapalabhati (Telles 2011), bhastrika (fast and Pramanik's slow pace), breath of fire, a Sudarshan Kriya-inspired sequence, rebirthing and classical 1:4:2 ratio breathing. Gentle techniques need no warning; fast breathing and long holds still do.
 - **Windows XP / 2006 Y2K look**: Luna title bars, task-pane session list, glossy buttons, chrome visualiser bezel (the visualiser itself is unchanged).
@@ -19,7 +22,7 @@ A native Windows app written in **Rust** that generates binaural, monaural, isoc
 - **Natural neural narration:** spoken cues recorded with the open-source [Kokoro-82M](https://github.com/hexgrad/kokoro) model, in four voices. They're embedded in the exe, so no internet is needed.
 - **Noise beds:** pink, brown, white, and ocean surf.
 - **Breath pacer** (6 breaths/min), stage timeline with seek, and a stereo Lissajous visualiser.
-- **Sound textures:** frame drum, singing bowls with theta-rate beating, Kirtan/lucid-dream/breath chimes, 0.8 Hz sleep pulses and rain, plus a steady (never-flickering) Ganzfeld red-light screen.
+- **Sound textures:** frame drum, singing bowls with theta-rate beating, Kirtan/lucid-dream/breath chimes, 0.8 Hz sleep pulses and rain, a wooden fish for chanting, a gourd rattle, a long gong, a soft heartbeat and kīrtan hand cymbals, plus a steady (never-flickering) Ganzfeld red-light screen.
 - **Custom generator:** carrier 40–1000 Hz, beat 0.1–250 Hz, optional delta anchor layer, timer.
 
 ### Session library
@@ -33,6 +36,16 @@ A native Windows app written in **Rust** that generates binaural, monaural, isoc
 | Sound Systems Library | 11 | Every beat delivery method, side by side |
 | Astral Projection & OBE | 23 | Researched inductions plus traditional and modern techniques |
 | Spiritual & Mystical Experiences | 17 | Contemplative practices from Christian, Buddhist, Hindu, Sufi, Jewish and Taoist traditions |
+| Christian Mysticism | 11 | Lectio divina to the night vigil |
+| Tibetan Buddhism & Bön | 13 | Shamatha, tonglen, mantra, Dzogchen, the bardo, sleep yoga |
+| Buddhist Meditation | 10 | Theravada, Zen, Pure Land, Nichiren and Shingon |
+| Hindu & Yogic Meditation | 9 | Trāṭaka, tantra, mantra and Vedanta |
+| Sufi Mysticism | 5 | Sema (seated), murāqaba, laṭāʾif, breaths, divine names |
+| Jewish Mysticism & Kabbalah | 6 | Shema, Abulafia, sefirot, ayin, merkavah, niggun |
+| Taoist Inner Cultivation | 4 | Zhuangzi and qigong |
+| Shamanic & Ancestral Rituals | 3 | Drum, rattle and dance |
+| Western Esoteric & Classical | 7 | Greek, Hermetic, Golden Dawn, Celtic and Norse |
+| Trance & Hypnosis Techniques | 4 | Classic inductions and deepeners |
 | Light Journeys (Flicker, opt-in) | 15 | Study protocols and practitioner styles |
 | Infrasound (opt-in) | 4 | 18.98, 17, 7 and 7.83 Hz |
 | Breathwork (opt-in) | 10 | Hyperventilation and breath-hold protocols |
@@ -54,6 +67,7 @@ Every preset is tagged **Research**, **Gateway-inspired**, **Traditional** or **
 ## Safety & privacy
 - **No network access.** The UI runs under a strict Content-Security-Policy (`default-src 'none'`), and the app makes no web requests and collects no telemetry.
 - **Higher-risk methods are opt-in only:** flicker light (⚡ Light journey), infrasound (🌫) and hyperventilation breathwork (🌬) never run by default. Each has its own warning screen; every box must be ticked (health questions, safe setting, 18+, at-your-own-risk acknowledgement) before it can be used. Flicker is capped at 3–12 Hz (below the 15–25 Hz seizure-risk peak), including irregular "arrhythmic" timing, and two flashes are never closer than 1/12 s on any screen; it ramps in, goes dark between study blocks and at the end, auto-stops, and stops instantly on any tap or key or when the app is left. Infrasound is quiet (capped well below the tones) with slow fades. Breath holds are never forced.
+- **The traditions library is gentle by design:** no fast breathing, no breath holds and no flicker; whirling is done seated, trance dance asks for a clear space and no spinning, and standing qigong keeps a chair nearby. Practices that depend on fasting, long isolation, exhaustion or substances are left out.
 - **No admin rights** needed. Settings live in `%LOCALAPPDATA%\FocusBinaural`.
 - **Hard output limiter:** output can never exceed about −1.4 dBFS, whatever the slider settings.
 - **Custom input is clamped:** carriers 20–1500 Hz, beats ≤ 250 Hz, layers ≤ 8.

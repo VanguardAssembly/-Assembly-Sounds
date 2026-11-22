@@ -69,6 +69,9 @@ pub struct Preset {
     /// Search keywords (generated in presets::auto_tags).
     #[serde(default)]
     pub tags: Vec<String>,
+    /// Spiritual traditions the session belongs to (keys for the Tradition filter).
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub trad: Vec<String>,
     /// Long-form explanation (filled in by info::fill).
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub info: Option<Info>,

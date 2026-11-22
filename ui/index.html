@@ -28,6 +28,10 @@ header .sub{color:var(--dim);font-size:13px}
 .fbtn.f-Research.on{background:#3fd6a033;border-color:#3fd6a0}.fbtn.f-Gateway.on{background:#8b7bff33;border-color:#8b7bff}
 .fbtn.f-alt{border-color:#4fd1c566}.fbtn.f-alt.on{background:#4fd1c533;border-color:#4fd1c5}
 .fbtn.f-Traditional.on{background:#ffc34d33;border-color:#ffc34d}.fbtn.f-Speculative.on{background:#ff6b8b33;border-color:#ff6b8b}
+.tradrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;flex-basis:100%}
+.tradrow.subs{padding-left:8px;border-left:2px solid #c9a2ff88}
+.tradlab{font-size:11px;color:var(--dim);margin-right:2px}
+.fbtn.f-trad{border-color:#c9a2ff66}.fbtn.f-trad.on{background:#c9a2ff33;border-color:#c9a2ff}.fbtn.sub{font-size:11px;padding:3px 9px}
 .group-title{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--dim);margin:12px 4px 8px;cursor:pointer;user-select:none;display:flex;justify-content:space-between}
 .group-title:hover{color:var(--text)}
 .preset{display:block;width:100%;text-align:left;background:var(--panel2);border:1px solid transparent;color:var(--text);padding:9px 12px;border-radius:10px;margin-bottom:6px;cursor:pointer;font:inherit}
@@ -343,6 +347,7 @@ input[type=range]:focus::-webkit-slider-thumb{box-shadow:inset 0 3px 0 #a4e897,i
 <div class="brov" id="brOv"><div class="brc" id="brC"></div><div class="brt" id="brT"></div><div class="brs" id="brS"></div>
   <div class="brbtns"><button class="btn" id="brNow" style="display:none">I need to breathe</button><button class="btn ghost" id="brStop">■ Stop breathwork</button></div></div>
 <div class="tatov" id="tatOv" title="Tap or press Esc to close"><svg id="tatSvg" viewBox="-100 -100 200 200" aria-hidden="true"></svg><span id="tatMsg"></span></div>
+<div class="tatov" id="gzOv" title="Tap or press Esc to close"><svg id="gzSvg" viewBox="-100 -100 200 200" aria-hidden="true"></svg><span id="gzMsg"></span></div>
 <div class="ganz" id="ganz" title="Click or press Esc to exit"><span>Ganzfeld light: steady, never flickers. Eyes closed, face the screen. Click or press Esc to exit.</span></div>
 
 <div class="layout">
@@ -379,6 +384,7 @@ input[type=range]:focus::-webkit-slider-thumb{box-shadow:inset 0 3px 0 #a4e897,i
       <label class="chk"><input type="checkbox" id="breathT"> Breath pacer</label>
       <button class="btn ghost" id="ganzBtn" style="display:none">🔴 Ganzfeld light</button>
       <button class="btn ghost" id="tatBtn" style="display:none">🔺 Tattva card</button>
+      <button class="btn ghost" id="gazeBtn" style="display:none">🕯 Gazing aid</button>
       <span class="xrow" title="Experimental, opt-in. Each needs its warning accepted first.">
         <button class="btn ghost xbtn" id="flkBtn">⚡ Light journey</button>
         <button class="btn ghost xbtn" id="infBtn">🌫 Infrasound</button>
@@ -455,7 +461,7 @@ window.__init=init=>{
   const st=(init.settings&&typeof init.settings==="object")?init.settings:{};
   if(Array.isArray(st.groups)){const RN={"Gateway Experience":"Inspired by the Gateway Experience","Lifeline (Focus 22–27)":"Inspired by Lifeline (Focus 22–27)"};openGroups.clear();st.groups.forEach(g=>openGroups.add(RN[g]||String(g)))}
   if(typeof st.deepOpen==="boolean")deepOpen=st.deepOpen;
-  if(typeof st.filter==="string"&&FILTERS.some(f=>f[0]===st.filter))evFilter=st.filter;
+  if(typeof st.filter==="string"&&validFilter(st.filter))evFilter=st.filter;
   renderSidebar();select(PRESETS.find(p=>p.id===st.last)||PRESETS.find(p=>p.id==="f10")||PRESETS[0]);
   applySettings(st);sendLevels();sendVoice();settingsReady=true;
 };
@@ -465,7 +471,17 @@ window.__ended=()=>{running=false;paused=false;S=null;scope=null;$("breath").sty
 
 // evidence / group filters (click again to clear)
 const FILTERS=[["","All"],["Research","🔬 Peer-reviewed"],["Gateway","◉ Gateway-inspired"],["Traditional","📜 Traditional"],["Speculative","✨ Speculative"],["@Altered States","🌀 Altered States"],["@Sound Systems Library","🎛 Sound Systems"],["@Astral Projection & OBE","🌌 Astral / OBE"],["@Spiritual & Mystical Experiences","🕊 Mystical"],["@Light Journeys (Flicker)","⚡ Light Journeys"],["@Infrasound (opt-in)","🌫 Infrasound"],["@Breathwork (opt-in)","🌬 Breathwork"],["@Breathing Techniques","🍃 Breathing"]];
-const fmatch=(p,k)=>!k||(k[0]==="@"?p.group===k.slice(1):p.evidence===k);
+// tradition families and their branches ("#key" filters, matched against each session's trad list)
+const TRADS=[["abrahamic","📖","Abrahamic",[["christian","✝","Christian"],["jewish","✡","Jewish & Kabbalah"],["islamic","☪","Islamic & Sufi"]]],
+ ["hindu","🕉","Hindu & yogic",[["vedanta","","Vedanta"],["tantra","","Tantra & Shaivism"],["mantra","","Mantra & devotion"],["yoga","","Yoga"]]],
+ ["buddhist","☸","Buddhist",[["tibetan","","Tibetan"],["theravada","","Theravada"],["zen","","Zen"],["eastasian","","Pure Land, Nichiren & Shingon"]]],
+ ["taoist","☯","Taoist",[]],["shamanic","🥁","Shamanic",[]],
+ ["western","🔮","Western esoteric",[["hermetic","","Hermetic & Golden Dawn"],["classical","","Greek & Neoplatonic"],["celtic","","Celtic"],["norse","","Norse"]]],
+ ["secular","🧠","Modern & secular",[]]];
+const TRADKEYS=new Map();TRADS.forEach(([k,i,l,subs])=>{TRADKEYS.set(k,{label:l,fam:k});subs.forEach(([s,si,sl])=>TRADKEYS.set(s,{label:sl,fam:k}))});
+const fmatch=(p,k)=>!k||(k[0]==="@"?p.group===k.slice(1):k[0]==="#"?(p.trad||[]).includes(k.slice(1)):p.evidence===k);
+const validFilter=k=>FILTERS.some(f=>f[0]===k)||(k[0]==="#"&&TRADKEYS.has(k.slice(1)));
+const flabel=k=>k[0]==="#"?(TRADKEYS.get(k.slice(1))||{label:""}).label:(FILTERS.find(f=>f[0]===k)||["",""])[1].replace(/^\S+ /,"");
 const hay=p=>(p._hay||(p._hay=[p.name,p.short,p.group,p.evidence,p.mode,(p.tags||[]).join(" "),p.stages.map(s=>s.name).join(" ")].join(" ").toLowerCase()));
 // every word typed must appear in the session's name, group, tags or stage names
 const smatch=(p,q)=>!q||q.split(/\s+/).filter(Boolean).every(w=>hay(p).includes(w));
@@ -509,11 +525,21 @@ function renderSidebar(){
   };
 }
 let customBeat=7.83;
+// Tradition row: one chip per family; picking a family (or one of its branches) shows its branches
+function tradChips(){
+  const af=evFilter[0]==="#"?(TRADKEYS.get(evFilter.slice(1))||{}).fam:"",fam=TRADS.find(t=>t[0]===af);
+  const chip=(k,icon,l,sub)=>{const f="#"+k,n=PRESETS.filter(p=>fmatch(p,f)).length;if(!n)return "";
+    const on=evFilter===f||(!sub&&af===k);
+    return `<button class="fbtn f-trad${sub?" sub":""}${on?" on":""}" data-f="${f}" title="Show only ${esc(l)} sessions">${icon?icon+" ":""}${esc(l)} ${n}</button>`};
+  return `<div class="tradrow" role="group" aria-label="Tradition"><span class="tradlab">Tradition</span>${TRADS.map(([k,i,l])=>chip(k,i,l)).join("")}</div>`+
+    (fam&&fam[3].length?`<div class="tradrow subs" role="group" aria-label="${esc(fam[2])} branches">${fam[3].map(([k,i,l])=>chip(k,i,l,1)).join("")}</div>`:"");
+}
 function renderList(){
   const q=$("q").value.trim().toLowerCase();
   $("filt").innerHTML=FILTERS.map(([k,l])=>{const n=PRESETS.filter(p=>fmatch(p,k)).length;
-    return `<button class="fbtn f-${k[0]==="@"?"alt":(k||"all")}${evFilter===k?" on":""}" data-f="${k}" title="${k?"Show only "+l.replace(/^\S+ /,"")+" sessions":"Show every session"}">${l} ${n}</button>`}).join("");
-  $("filt").querySelectorAll(".fbtn").forEach(b=>b.onclick=()=>{evFilter=evFilter===b.dataset.f?"":b.dataset.f;renderList()});
+    return `<button class="fbtn f-${k[0]==="@"?"alt":(k||"all")}${evFilter===k?" on":""}" data-f="${k}" title="${k?"Show only "+l.replace(/^\S+ /,"")+" sessions":"Show every session"}">${l} ${n}</button>`}).join("")+tradChips();
+  $("filt").querySelectorAll(".fbtn").forEach(b=>b.onclick=()=>{const f=b.dataset.f;
+    evFilter=evFilter===f?(b.classList.contains("sub")?"#"+TRADKEYS.get(f.slice(1)).fam:""):f;renderList()});
   const list=PRESETS.map((p,i)=>[p,i]).filter(([p])=>fmatch(p,evFilter)&&smatch(p,q));
   const expandAll=q||evFilter;let g="",html="";
   for(const [p,i] of list){
@@ -524,7 +550,7 @@ function renderList(){
   }
   if(!list.length)html=`<div class="count" style="padding:8px 4px">No sessions match. Try another word, or press Esc to clear.</div>`;
   $("plist").innerHTML=html;
-  const fl=FILTERS.find(f=>f[0]===evFilter)[1].replace(/^\S+ /,"");
+  const fl=flabel(evFilter);
   $("cnt").textContent=(q||evFilter)?`${list.length} ${evFilter?fl+" ":""}session${list.length===1?"":"s"}${q?` matching "${q}"`:""}`:`${PRESETS.length} sessions · click a group to expand`;
   $("plist").querySelectorAll(".group-title[data-g]").forEach(t=>t.onclick=()=>{const g=t.dataset.g;openGroups.has(g)?openGroups.delete(g):openGroups.add(g);renderList()});
   $("plist").querySelectorAll(".preset").forEach(b=>b.onclick=()=>{if(running)stop();select(PRESETS[+b.dataset.i])});
@@ -691,11 +717,11 @@ document.addEventListener("click",e=>{if(e.target.closest("#sidebar,#mtabs"))sav
 (()=>{
 const CONSENT_V=1;
 const consent={};
-const XP={flk:{col:"white",sync:true,hz:10,bri:80,src:"screen",min:15,proto:"custom"},inf:{hz:18.98,lvl:30},br:{tech:"sigh",rounds:3,breaths:30,pace:"normal",min:10,lvl:{}},tat:{el:"tejas",sub:"",sec:20}};
+const XP={flk:{col:"white",sync:true,hz:10,bri:80,src:"screen",min:15,proto:"custom"},inf:{hz:18.98,lvl:30},br:{tech:"sigh",rounds:3,breaths:30,pace:"normal",min:10,lvl:{}},tat:{el:"tejas",sub:"",sec:20},gz:{kind:"",size:"m",min:3}};
 {const c0=collectSettings;collectSettings=function(){const o=c0();o.consent=consent;o.xp=XP;return o}}
 {const a0=applySettings;applySettings=function(st){a0(st);
   if(st&&st.consent&&typeof st.consent==="object")for(const k of ["flicker","infra","breath"]){const c=st.consent[k];if(c&&c.v===CONSENT_V)consent[k]=c}
-  if(st&&st.xp&&typeof st.xp==="object")for(const k of ["flk","inf","br","tat"]){const src=st.xp[k];if(src&&typeof src==="object")for(const kk in XP[k]){const v=src[kk];if(typeof v===typeof XP[k][kk])XP[k][kk]=v}}
+  if(st&&st.xp&&typeof st.xp==="object")for(const k of ["flk","inf","br","tat","gz"]){const src=st.xp[k];if(src&&typeof src==="object")for(const kk in XP[k]){const v=src[kk];if(typeof v===typeof XP[k][kk])XP[k][kk]=v}}
 }}
 const COMMON=[
   "I am 18 or older.",
@@ -926,6 +952,50 @@ function tatShow(){
 function tatClose(){clearInterval(TT.iv);clearTimeout(TT.to);$("tatOv").style.display="none"}
 $("tatOv").addEventListener("pointerdown",tatClose);
 $("tatBtn").onclick=tatPanel;
+
+// ---------- Gazing aids (kasina discs, candle flame, moon, bindu, bright point): still images, never flicker ----------
+const KDISC=(fill,edge)=>`<circle r="70" fill="${fill}"${edge?` stroke="${edge}" stroke-width="1.5"`:""}/>`;
+const GZ={
+ earth:{n:"Earth kasina · dawn-coloured clay",svg:KDISC("#b77a4e"),tip:"Rest your gaze on the disc"},
+ water:{n:"Water kasina",svg:`<defs><radialGradient id="gzw" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#8fc4e4"/><stop offset="1" stop-color="#2f6f9c"/></radialGradient></defs><circle r="70" fill="url(#gzw)"/>`,tip:"Rest your gaze on the water"},
+ fire:{n:"Fire kasina",svg:`<defs><radialGradient id="gzr"><stop offset="0" stop-color="#ffe08a"/><stop offset=".55" stop-color="#ff8a2a"/><stop offset="1" stop-color="#d9431a"/></radialGradient></defs><circle r="70" fill="url(#gzr)"/>`,tip:"Rest your gaze on the fire",dark:1},
+ blue:{n:"Blue kasina",svg:KDISC("#2346b8"),tip:"Rest your gaze on the blue disc"},
+ yellow:{n:"Yellow kasina",svg:KDISC("#f0c400"),tip:"Rest your gaze on the yellow disc"},
+ red:{n:"Red kasina",svg:KDISC("#c3202a"),tip:"Rest your gaze on the red disc"},
+ white:{n:"White kasina",svg:KDISC("#fbfaf6","#cfcabd"),tip:"Rest your gaze on the white disc"},
+ light:{n:"Light kasina · soft glow",svg:`<defs><radialGradient id="gzl"><stop offset="0" stop-color="#fffdf2"/><stop offset=".55" stop-color="#ffefb8"/><stop offset="1" stop-color="#ffe7a0" stop-opacity="0"/></radialGradient></defs><circle r="86" fill="url(#gzl)"/>`,tip:"Rest your gaze in the light",dark:1},
+ space:{n:"Space kasina · an opening",svg:`<circle r="74" fill="#45423c"/><circle r="66" fill="#c3d8ea"/>`,tip:"Rest your gaze in the space"},
+ moon:{n:"Moon disc (ajikan)",svg:`<defs><radialGradient id="gzm"><stop offset=".86" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs><circle r="86" fill="url(#gzm)"/><circle r="70" fill="#f7f6f0"/>`,tip:"Rest your gaze on the moon",dark:1},
+ flame:{n:"Candle flame (trāṭaka)",svg:`<defs><radialGradient id="gzh"><stop offset="0" stop-color="#ffcf6b" stop-opacity=".32"/><stop offset="1" stop-color="#ffcf6b" stop-opacity="0"/></radialGradient><radialGradient id="gzf" cx=".5" cy=".72" r=".62"><stop offset="0" stop-color="#fffdf0"/><stop offset=".32" stop-color="#ffe27a"/><stop offset=".72" stop-color="#ff9f33"/><stop offset="1" stop-color="#ff7a1a"/></radialGradient></defs><circle cy="-36" r="64" fill="url(#gzh)"/><path d="M0,-82 C13,-56 22,-38 22,-22 C22,-6 12,4 0,4 C-12,4 -22,-6 -22,-22 C-22,-38 -13,-56 0,-82 Z" fill="url(#gzf)"/><ellipse cy="-2" rx="7" ry="5" fill="#3b67d4" opacity=".5"/><rect x="-1.2" y="0" width="2.4" height="12" fill="#2a1d12"/><rect x="-17" y="12" width="34" height="86" rx="3" fill="#efe6d2"/>`,tip:"Gaze at the brightest point of the flame",dark:1},
+ bindu:{n:"Bindu · black dot on white",svg:`<rect x="-92" y="-92" width="184" height="184" fill="#ffffff"/><circle r="5" fill="#111"/>`,tip:"Gaze at the dot"},
+ point:{n:"Bright point (Braid)",svg:`<defs><radialGradient id="gzp"><stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset=".25" stop-color="#e8f1ff" stop-opacity=".35"/><stop offset="1" stop-color="#e8f1ff" stop-opacity="0"/></radialGradient></defs><circle r="26" fill="url(#gzp)"/><circle r="3.4" fill="#ffffff"/>`,tip:"Fix your eyes on the bright point",dark:1}
+};
+const KASINAS=["earth","water","fire","blue","yellow","red","white","light","space"];
+const GT={iv:0};
+// the image a session asks for: kasina (any disc, earth by default), kasina:moon, trataka / trataka:flame, trataka:point
+function gzFor(v){if(v==="kasina")return KASINAS.includes(XP.gz.kind)?XP.gz.kind:"earth";const k=v.split(":")[1];return GZ[k]?k:"flame"}
+function gzPanel(){
+  const P=XP.gz,v=(selected&&selected.visual)||"",o=(k)=>`<option value="${k}">${esc(GZ[k].n)}</option>`;
+  modal("🕯 Gazing aid",`<p class="xsmall">A still image to rest your eyes on, for kasina, trāṭaka and eye-fixation practice. It never flickers or moves. Sit about an arm's length from the screen, keep the brightness comfortable, blink whenever you need to and never strain your eyes. When the time is up the screen goes dark so you can look for the image with your eyes closed. Tap the screen or press Esc to close it at any time.</p>
+  <div class="xgrid"><label class="sl xwide">Image<select id="gKind"><optgroup label="Kasina discs">${KASINAS.map(o).join("")}</optgroup><optgroup label="Other">${["moon","flame","bindu","point"].map(o).join("")}</optgroup></select></label>
+  <label class="sl">Size<select id="gSize"><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></label>
+  <label class="sl">Gaze time<select id="gMin"><option value="1">1 minute</option><option value="2">2 minutes</option><option value="3">3 minutes</option><option value="5">5 minutes</option><option value="8">8 minutes</option><option value="10">10 minutes</option><option value="15">15 minutes</option></select></label></div>`,
+  [["Close","ghost",closeModal],["▶ Show the image","",()=>{P.kind=GZ[$("gKind").value]?$("gKind").value:"earth";P.size=["s","m","l"].includes($("gSize").value)?$("gSize").value:"m";P.min=clamp($("gMin").value,1,15,3);saveSettings();closeModal();gzShow()}]]);
+  $("gKind").value=gzFor(v);$("gSize").value=["s","m","l"].includes(P.size)?P.size:"m";$("gMin").value=String(P.min);if(!$("gMin").value)$("gMin").value="3";
+}
+function gzShow(){
+  const o=$("gzOv"),P=XP.gz,g=GZ[P.kind]||GZ.earth,sc={s:.55,m:.8,l:1.05}[P.size]||.8;
+  clearInterval(GT.iv);
+  $("gzSvg").innerHTML=`<g transform="scale(${sc})">${g.svg}</g>`;
+  o.classList.toggle("dark",!!g.dark);o.style.display="flex";
+  let n=Math.round(clamp(P.min,1,15,3)*60);
+  const msg=()=>{$("gzMsg").textContent=`${g.tip} · ${Math.floor(n/60)}:${String(n%60).padStart(2,"0")} · tap or Esc to close`};msg();
+  GT.iv=setInterval(()=>{if(--n>0){msg();return}clearInterval(GT.iv);$("gzSvg").innerHTML="";o.classList.add("dark");
+    $("gzMsg").textContent="Close your eyes and look for the image within. When it fades, you can open the gazing aid again. Tap or press Esc to close."},1000);
+}
+function gzClose(){clearInterval(GT.iv);$("gzOv").style.display="none"}
+$("gzOv").addEventListener("pointerdown",gzClose);
+$("gazeBtn").onclick=gzPanel;
 
 // ---------- Infrasound ----------
 const I={on:false};
@@ -1222,13 +1292,15 @@ $("flkBtn").onclick=()=>gate("flicker",flkPanel);
 $("infBtn").onclick=()=>gate("infra",()=>{const m=/^infra:([\d.]+)/.exec(vis());if(m&&!I.on)XP.inf.hz=+m[1];infPanel()});
 // gentle techniques need no warning; breathwork protocols ask for it when you press Start
 $("brBtn").onclick=()=>brPanel();
-window.__xpHot=p=>{const v=(p&&p.visual)||"";$("flkBtn").classList.toggle("hot",/flicker/.test(v));$("infBtn").classList.toggle("hot",/^infra/.test(v));$("brBtn").classList.toggle("hot",/^breath/.test(v));$("tatBtn").style.display=v==="tattva"?"":"none"};
+window.__xpHot=p=>{const v=(p&&p.visual)||"";$("flkBtn").classList.toggle("hot",/flicker/.test(v));$("infBtn").classList.toggle("hot",/^infra/.test(v));$("brBtn").classList.toggle("hot",/^breath/.test(v));$("tatBtn").style.display=v==="tattva"?"":"none";
+  const gz=/^(kasina|trataka)/.test(v);$("gazeBtn").style.display=gz?"":"none";
+  if(gz)$("gazeBtn").textContent=(v==="kasina"?"🟠":v==="kasina:moon"?"🌕":v==="trataka:point"?"🔆":"🕯")+" Gazing aid"};
 {const s1=stop;stop=function(){flkStop();infOff();brStop();return s1.apply(this,arguments)}}
 $("stop").onclick=()=>stop();
 {const e1=window.__ended;window.__ended=function(){flkStop();infOff();brStop();return e1.apply(this,arguments)}}
 document.addEventListener("visibilitychange",()=>{if(document.hidden){flkStop();brStop()}});
 window.addEventListener("pagehide",()=>{flkStop();infOff();brStop()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();tatClose();if(B.on)brStop()}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();tatClose();gzClose();if(B.on)brStop()}});
 })();
 
 // ---- VHS power-on intro: tap / Esc / Enter to skip; never flashes repeatedly ----

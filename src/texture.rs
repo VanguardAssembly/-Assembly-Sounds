@@ -6,11 +6,16 @@
 //!   breathbell  – soft bell every `interval` s marking a slow breath (Bernardi et al. 2001)
 //!   pulses      – 50 ms pink-noise bursts at the beat rate (≈0.8 Hz; Ngo et al. 2013)
 //!   rain        – synthesised rain bed with droplets (natural soundscape; Gould van Praag 2017)
+//!   mokugyo     – wooden-fish knock every `interval` s (Buddhist chanting: nembutsu, daimoku)
+//!   rattle      – gourd-rattle shake every `interval` s (≈210 a minute, as in Goodman's posture trance)
+//!   gong        – large gong struck every `interval` s, with a long shimmering decay
+//!   heartbeat   – soft lub-dub every `interval` s (≈60 a minute)
+//!   kartal      – hand-cymbal pattern ching-ching-chik (kirtan), one stroke every `interval` s
 use crate::plan::Texture;
 use std::f64::consts::TAU;
 
 #[derive(Clone, Copy, PartialEq)]
-enum Kind { Drum, Bowls, Kirtan, Tlr, BreathBell, Pulses, Rain }
+enum Kind { Drum, Bowls, Kirtan, Tlr, BreathBell, Pulses, Rain, Mokugyo, Rattle, Gong, Heartbeat, Kartal }
 
 /// Exponentially decaying sinusoid.
 struct Partial { f: f64, ph: f64, amp: f32, decay: f32, attack: f32, env: f32, pl: f32, pr: f32 }
@@ -39,13 +44,21 @@ impl TexSynth {
     pub fn new(t: &Texture, sr: f64) -> Option<Self> {
         let kind = match t.kind.as_str() {
             "drum" => Kind::Drum, "bowls" => Kind::Bowls, "kirtan" => Kind::Kirtan, "tlr" => Kind::Tlr,
-            "breathbell" => Kind::BreathBell, "pulses" => Kind::Pulses, "rain" => Kind::Rain, _ => return None,
+            "breathbell" => Kind::BreathBell, "pulses" => Kind::Pulses, "rain" => Kind::Rain,
+            "mokugyo" => Kind::Mokugyo, "rattle" => Kind::Rattle, "gong" => Kind::Gong,
+            "heartbeat" => Kind::Heartbeat, "kartal" => Kind::Kartal, _ => return None,
         };
         let root = if t.root > 0.0 { t.root } else {
-            match kind { Kind::Bowls => 220.0, Kind::Kirtan => 392.0, Kind::Tlr => 660.0, Kind::BreathBell => 528.0, _ => 0.0 }
+            match kind {
+                Kind::Bowls => 220.0, Kind::Kirtan => 392.0, Kind::Tlr => 660.0, Kind::BreathBell => 528.0,
+                Kind::Mokugyo => 460.0, Kind::Gong => 98.0, Kind::Heartbeat => 52.0, Kind::Kartal => 2350.0, _ => 0.0,
+            }
         };
         let interval = if t.interval > 0.0 { t.interval } else {
-            match kind { Kind::Bowls => 9.0, Kind::Tlr => 180.0, Kind::BreathBell => 10.0, _ => 1.0 }
+            match kind {
+                Kind::Bowls => 9.0, Kind::Tlr => 180.0, Kind::BreathBell => 10.0, Kind::Mokugyo => 0.75,
+                Kind::Rattle => 60.0 / 210.0, Kind::Gong => 30.0, Kind::Heartbeat => 1.0, Kind::Kartal => 0.42, _ => 1.0,
+            }
         };
         Some(TexSynth {
             kind, level: t.level as f32, root, interval, sr,
@@ -92,6 +105,18 @@ impl TexSynth {
         }
         self.partials.retain(|p| p.amp > 1e-4); // cap growth
         if self.partials.len() > 96 { let n = self.partials.len() - 96; self.partials.drain(0..n); }
+    }
+
+    /// A queued note: a soft heart sound for the heartbeat, a bell for everything else.
+    fn fire(&mut self, f: f64) {
+        if self.kind == Kind::Heartbeat {
+            self.add(f, 0.9, 0.11, 0.0);
+            self.add(f * 2.0, 0.25, 0.05, 0.0);
+            self.add(f * 3.0, 0.08, 0.03, 0.0);
+            self.burst = 0.006;
+        } else {
+            self.bell(f, 0.5, 1.2);
+        }
     }
 
     /// One stereo sample. `beat` = current layer-0 beat (Hz), `gain` = texture gain (0..1).
@@ -159,13 +184,71 @@ impl TexSynth {
                 }
             }
             Kind::Rain => {}
+            Kind::Mokugyo => {
+                if active && self.clock >= self.interval {
+                    self.clock = 0.0;
+                    self.step += 1;
+                    let a = (if self.step % 4 == 1 { 1.0 } else { 0.78 }) * (0.92 + 0.08 * self.rand());
+                    let f = self.root * (1.0 + 0.004 * self.rand() as f64);
+                    self.add(f, 0.62 * a, 0.075, 0.0);
+                    self.add(f * 2.71, 0.2 * a, 0.03, 0.0);
+                    self.add(f * 0.5, 0.18 * a, 0.05, 0.0);
+                    self.burst = 0.004;
+                }
+            }
+            Kind::Rattle => {
+                if active && self.clock >= self.interval + self.next_jitter {
+                    self.clock = 0.0;
+                    self.burst = 0.055;
+                    self.next_jitter = self.interval * 0.03 * self.rand() as f64; // human feel
+                }
+            }
+            Kind::Gong => {
+                if active && self.clock >= self.interval {
+                    self.clock = 0.0;
+                    let f0 = self.root;
+                    // inharmonic gong modes, each with a slightly detuned twin for the shimmer
+                    const P: [(f64, f32, f64); 8] = [(1.0, 1.0, 16.0), (1.48, 0.55, 12.0), (2.01, 0.45, 10.0), (2.47, 0.3, 8.0),
+                                                     (2.96, 0.26, 6.5), (3.62, 0.18, 5.0), (4.41, 0.12, 4.0), (5.33, 0.08, 3.0)];
+                    for (r, a, d) in P {
+                        self.add(f0 * r - 0.35, a * 0.25, d, -0.2);
+                        self.add(f0 * r + 0.35, a * 0.25, d, 0.2);
+                    }
+                    if self.partials.len() > 96 { let n = self.partials.len() - 96; self.partials.drain(0..n); }
+                }
+            }
+            Kind::Heartbeat => {
+                if active && self.clock >= self.interval {
+                    self.clock = 0.0;
+                    let f = self.root;
+                    self.queue.push((0.0, f));
+                    self.queue.push((0.3, f * 1.2));
+                }
+            }
+            Kind::Kartal => {
+                if active && self.clock >= self.interval {
+                    self.clock = 0.0;
+                    let s = self.step % 4; // ching, ching, chik, rest
+                    self.step += 1;
+                    if s < 3 {
+                        let (secs, amp) = if s == 2 { (0.07, 0.2) } else { (0.6, 0.14) };
+                        let f0 = self.root;
+                        for (r, a) in [(1.0, 1.0f32), (1.45, 0.7), (2.07, 0.45), (2.65, 0.3)] {
+                            self.add(f0 * r - 3.0, amp * a, secs, -0.1);
+                            self.add(f0 * r + 3.0, amp * a, secs, 0.1);
+                        }
+                        self.burst = 0.003;
+                    }
+                }
+            }
         }
-        // motif queue (tlr)
+        // queued notes (tlr motif, heartbeat)
         if !self.queue.is_empty() {
-            let mut fire = Vec::new();
-            for q in self.queue.iter_mut() { q.0 -= dt; if q.0 <= 0.0 { fire.push(q.1); } }
-            self.queue.retain(|q| q.0 > 0.0);
-            for f in fire { self.bell(f, 0.5, 1.2); }
+            let mut k = 0;
+            while k < self.queue.len() {
+                self.queue[k].0 -= dt;
+                if self.queue[k].0 <= 0.0 { let f = self.queue.swap_remove(k).1; self.fire(f); } else { k += 1; }
+            }
         }
 
         // ---------- synthesis ----------
@@ -213,6 +296,27 @@ impl TexSynth {
                     let amp = 0.08 + 0.12 * (self.rand() * 0.5 + 0.5);
                     self.add(f, amp, 0.012, pan);
                     if self.partials.len() > 64 { self.partials.remove(0); }
+                }
+            }
+            Kind::Rattle => {
+                if self.burst > 0.0 {
+                    // seeds on gourd: bright, slightly grainy noise with a fast attack and quick decay
+                    let x = (self.burst / 0.055) as f32;
+                    let env = x * x * (1.0 - (-((0.055 - self.burst) / 0.002) as f32).exp());
+                    let (wl, wr) = (self.rand(), self.rand());
+                    self.lp[0] += 0.35 * (wl - self.lp[0]);
+                    self.lp[1] += 0.35 * (wr - self.lp[1]);
+                    l += (wl - self.lp[0]) * env * 0.5;
+                    r += (wr - self.lp[1]) * env * 0.5;
+                    self.burst -= dt;
+                }
+            }
+            Kind::Mokugyo | Kind::Kartal | Kind::Heartbeat => {
+                if self.burst > 0.0 {
+                    let v = self.rand() * 0.12; // contact click
+                    l += v;
+                    r += v;
+                    self.burst -= dt;
                 }
             }
             _ => {}

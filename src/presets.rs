@@ -43,7 +43,7 @@ fn p(group: &str, id: &str, name: &str, short: &str, carriers: &[f64], gains: &[
         id: id.into(), group: group.into(), name: name.into(), short: short.into(),
         carriers: carriers.to_vec(), gains: gains.to_vec(), noise: noise.into(), mode: mode.into(),
         evidence: evidence.into(), about: about.into(), stages, live: false,
-        texture: None, visual: String::new(), tags: Vec::new(), info: None,
+        texture: None, visual: String::new(), tags: Vec::new(), trad: Vec::new(), info: None,
     }
 }
 
@@ -660,6 +660,9 @@ pub fn all() -> Vec<Preset> {
            st("Asking", 5.0, &[6.0], "Ask your question, and listen. The answer may come as words, an image, a feeling, or a gift. Accept whatever comes, with thanks."),
            st("Return", 3.0, &[10.0], "Thank your guide, and know you can return. Walk back along the path, feel your body again, and open your eyes when you are ready.").ramp(60.0)]));
 
+    // ================= The world's contemplative traditions (v1.7) =================
+    traditions(&mut v);
+
     // ================= Light Journeys (flicker) =================
     // Opt-in stroboscopic closed-eye imagery. The light only runs after the user accepts the
     // full warning screen and presses Start; rate is locked to the beat and clamped to 3–12 Hz.
@@ -1012,6 +1015,9 @@ pub fn all() -> Vec<Preset> {
     let first: Vec<String> = v.iter().map(|p| p.stages.first().map(|s| s.cue.clone()).unwrap_or_default()).collect();
     crate::settle::apply(&mut v);
     crate::info::fill(&mut v);
+    for p in v.iter_mut() {
+        if p.trad.is_empty() { p.trad = trad_of(&p.id, &p.group); }
+    }
     auto_tags(&mut v, &first);
 
     // assign cue ids
@@ -1021,6 +1027,668 @@ pub fn all() -> Vec<Preset> {
         }
     }
     v
+}
+
+/// The world's contemplative and ritual traditions, one group per tradition.
+/// Spiritual claims are reported as claims; studies are cited where they exist. Nothing here
+/// needs a warning: no fast breathing, no breath holds, no flicker, and the gazing aids are still images.
+fn traditions(v: &mut Vec<Preset>) {
+    const C_DEDICATE: &str = "Dedicate whatever good came from this practice to the happiness of all beings.";
+
+    // ================= Christian mysticism =================
+    let g = "Christian Mysticism";
+    v.push(p(g, "cm_lectio", "Lectio Divina — The Ladder of Monks (Guigo II)", "Read, reflect, pray, rest · 26 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Lectio divina</b> (\"divine reading\") is the slow, prayerful reading of scripture kept in Benedictine monasteries since the 6th-century Rule of St Benedict. Around 1150 the Carthusian prior <b>Guigo II</b> described it as a ladder with four rungs in <i>The Ladder of Monks</i>: <b>lectio</b> (reading), <b>meditatio</b> (reflecting), <b>oratio</b> (responding in prayer) and <b>contemplatio</b> (resting wordlessly in God). Choose a short passage before you start; a psalm or a Gospel scene works well.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to lectio divina, the ladder of monks. Sit quietly with a short passage of scripture in front of you, just a few verses. Take a slow breath, and ask to be open to what you read."),
+           st("Lectio", 5.0, &[10.0], "Lectio, reading. Read the passage slowly, perhaps aloud, two or three times. Notice the word or phrase that catches your heart, and stop there."),
+           st("Meditatio", 6.0, &[8.0], "Meditatio. Put the text down and close your eyes. Repeat your word or phrase gently, again and again, and let it speak to your life."),
+           st("Oratio", 5.0, &[7.0], "Oratio, prayer. Let the word become a prayer. Speak to God honestly, in your own words, about whatever it stirred in you."),
+           st("Contemplatio", 7.0, &[6.0], "Contemplatio. Now let even the words fall away. Rest in silence, in the presence beyond words, simply receiving."),
+           st("Return", 1.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "cm_maranatha", "Christian Meditation — Maranatha (John Main)", "Four-syllable prayer word · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The Benedictine monk <b>John Main</b> (1926–1982) learned mantra meditation from an Indian teacher in Malaya, then found the same practice in the <i>Conferences</i> of <b>John Cassian</b>, who around 420 recorded how the Desert Fathers repeated one short prayer to keep the mind on God. From 1975 Main taught it to lay groups in London and Montreal, and the World Community for Christian Meditation continues it today. You say one word, <b>maranatha</b> (Aramaic for \"Come, Lord\"), silently in four equal syllables, for 20 to 30 minutes each morning and evening.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to Christian meditation as John Main taught it. Sit still and upright, with your eyes lightly closed. Relax, but stay alert. Your word is maranatha, an ancient Aramaic prayer meaning come, Lord."),
+           st("The word", 8.0, &[8.0], "Silently, interiorly, begin to say the word in four equal syllables: ma, ra, na, tha. Listen to it as you say it, gently and faithfully."),
+           st("Faithful return", 12.0, &[6.5], "When thoughts or images come, don't fight them, and don't follow them. Simply return to the word, ma ra na tha, from the beginning of the meditation to the end."),
+           st("Silence", 3.0, &[8.0], "Let the word go now. Sit for a moment in the silence it has led you into, then slowly open your eyes.")]));
+    v.push(p(g, "cm_ignatian", "Ignatian Contemplation — Praying with the Imagination", "Spiritual Exercises · 25 min", &[200.0], &[0.55], "pink", "binaural", "Traditional",
+      "<p>In the <b>Spiritual Exercises</b> (approved in 1548), <b>St Ignatius of Loyola</b>, founder of the Jesuits, teaches a way of praying a Gospel story by entering it with the imagination. You begin with a <i>preparatory prayer</i>, ask for the grace you want, build the scene (<i>composition of place</i>), take part in it with all five senses (<i>application of the senses</i>), and end with a <i>colloquy</i>, a heart-to-heart conversation \"as one friend speaks to another\". Jesuits still give the Exercises as 30-day retreats.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to Ignatian contemplation, prayer with the imagination. Choose a Gospel scene you know well, such as the calming of the storm, or a healing by the lake. Sit comfortably and close your eyes."),
+           st("Grace", 2.0, &[9.0], "Become aware that God is looking at you with love. Ask for the grace you desire from this prayer: perhaps to know Christ more closely, and to love him more."),
+           st("Composition of place", 4.0, &[8.0], "Compose the place. See the scene in your imagination: the landscape, the light, the time of day, the people. Take your time to build it."),
+           st("The senses", 9.0, &[6.5], "Now step into the scene. What do you see? What do you hear: voices, wind, water? What can you smell and touch? Let the story unfold, and take part in it."),
+           st("Colloquy", 5.0, &[7.0], "The scene comes to rest. Speak with Jesus, as one friend speaks to another. Say what is in your heart, and listen."),
+           st("Close", 3.0, &[9.0], "Finish with the Our Father, slowly. Notice what moved you, and take it with you as you open your eyes.")]));
+    v.push(p(g, "cm_castle", "The Interior Castle — Prayer of Quiet (Teresa of Ávila)", "Walking inward · 28 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>In <b>The Interior Castle</b> (1577) the Carmelite reformer <b>St Teresa of Ávila</b> pictures the soul as a castle made of a single diamond, with many rooms in seven \"dwelling places\" and God shining at its centre; prayer is the gate. In <i>The Way of Perfection</i> she teaches the <b>prayer of recollection</b>, gathering the senses inward, which can open into the <b>prayer of quiet</b>, where the will rests in God even while the mind wanders. This session walks inward through the castle. The deeper states she describes she regarded as gifts, not techniques.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the interior castle of Saint Teresa of Avila. Sit quietly and close your eyes. Teresa pictured the soul as a castle made of a single diamond, with God shining at its centre. Today you will walk inward."),
+           st("Recollection", 4.0, &[9.0], "Gather yourself in. Draw your senses inward, the way a tortoise draws into its shell. The one you seek is not far away, but within."),
+           st("Outer rooms", 5.0, &[8.0], "You are at the gate. Walk slowly through the outer rooms, where noise and distraction still reach you. Don't be troubled by them. Keep walking toward the light."),
+           st("Inner rooms", 6.0, &[6.5], "The rooms grow quieter and brighter. Prayer becomes simpler here, more a resting than an effort."),
+           st("Prayer of quiet", 8.0, &[5.5], "This is the prayer of quiet. Let your will rest in God, like a child resting in its mother's arms. If the mind wanders, let it; the heart stays still."),
+           st("The centre", 2.0, &[6.0], "At the centre the light is brightest. Rest in it, and in the one who dwells there."),
+           st("Return", 1.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "cm_cloud", "The Cloud of Unknowing — Dart of Longing Love", "Prayer beyond thought · 22 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>The Cloud of Unknowing</b> is a guide to contemplative prayer written by an anonymous English priest in the late 14th century. God, it says, cannot be reached by thinking, only by love. You put a <b>cloud of forgetting</b> beneath you, covering every thought and creature, and beat on the <b>cloud of unknowing</b> above you \"with a sharp dart of longing love\", using a single short word, of one syllable if possible, such as <i>God</i> or <i>love</i>. Centering prayer grew from this book.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the prayer of the cloud of unknowing. Sit still and close your eyes. Choose one short word, of one syllable if you can, such as God, or love."),
+           st("Cloud of forgetting", 4.0, &[8.0], "Put a cloud of forgetting beneath you. Every thought, plan and memory, even holy ones, let them sink below it, out of sight."),
+           st("Cloud of unknowing", 4.0, &[7.0], "Above you is a cloud of unknowing. God cannot be grasped by thought, only by love. Rest in that darkness with a simple longing."),
+           st("Dart of love", 10.0, &[6.0], "Now and then, send your word up into the cloud like a sharp dart of longing love. Then rest. When thoughts come, press them back under the cloud of forgetting with your word."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "cm_taize", "Chant and Silence (Taizé-style)", "Repeated sung prayer · 20 min", &[220.0, 330.0], &[0.55, 0.3], "none", "binaural", "Traditional",
+      "<p>The ecumenical community of <b>Taizé</b> in France, begun by Brother Roger in 1940, is known for prayer made of short chants sung over and over, so that the words sink from the mind into the heart, followed by a long silence; tens of thousands of young people visit every year. The Taizé melodies belong to the community, so this session plays only a soft drone on A and E. Sing any short sacred phrase on it, for example the ancient Latin <i>Ubi caritas et amor, Deus ibi est</i> (\"where charity and love are, God is there\").</p>",
+      vec![st("Settle", 2.0, &[10.0, 10.0], "Welcome to chant and silence, in the style of the Taize community in France. Sit or kneel, with a candle lit if you like. Choose a short phrase to sing, perhaps a line from a psalm."),
+           st("Chant", 8.0, &[8.0, 8.0], "Begin to sing your phrase softly on the note of the drone, and repeat it, again and again. Let the repetition carry you, until the song becomes a prayer of the heart."),
+           st("Softer", 4.0, &[7.0, 7.0], "Sing more quietly now, until the chant is almost a whisper, and then only a hum."),
+           st("Silence", 6.0, &[6.0, 6.0], "Let the singing end. At Taize the chant gives way to a long silence. Rest in it, and let the words keep echoing inside you.")]));
+    v.push(p(g, "cm_quaker", "Quaker Meeting — Expectant Waiting", "Silent worship · 30 min", &[200.0], &[0.4], "brown", "binaural", "Traditional",
+      "<p>In an unprogrammed <b>Quaker meeting for worship</b>, Friends sit together in silence, with no minister or set words, waiting for the <b>inward light</b>, which George Fox, who founded the Religious Society of Friends in 1650s England, called \"that of God in everyone\". Anyone may stand and speak if they feel truly moved. Settling into stillness is called <i>centering down</i>, and a meeting deeply united in its silence is called a <i>gathered meeting</i>.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to Quaker waiting worship. Friends gather in silence, without a leader or set words, waiting on the light within. Close your eyes, or rest them on the floor, and let the busy mind slow down."),
+           st("Centering down", 6.0, &[8.0], "This is centering down. Let your thoughts settle, like mud settling in still water. You are not emptying your mind, only becoming quiet enough to listen."),
+           st("Expectant waiting", 18.0, &[6.5], "Wait in expectant silence, open to that of God within you. If a message rises that feels as if it is not only your own, notice it, and hold it gently."),
+           st("Close", 4.0, &[8.0], "Meetings end when Friends shake hands. Take a moment to feel connected to the people you care about, and carry the stillness back with you.")]));
+    v.push(p(g, "cm_vigil", "Night Vigil — The Watch Between Two Sleeps", "Ekirch 2001 · Wehr 1992 · 30 min", &[150.0], &[0.35], "brown", "binaural", "Research",
+      "<p>Historian <b>A. Roger Ekirch</b> (2001, <i>American Historical Review</i>) found hundreds of pre-industrial references to a \"first sleep\" and a \"second sleep\", with an hour or so awake in between that people used to pray, reflect, talk or make love. When psychiatrist <b>Thomas Wehr</b> (1992, <i>Journal of Sleep Research</i>) gave volunteers 14-hour nights, their sleep split the same way, with a calm, quiet waking spell between the two sleeps. Monks have long risen in the night for the office of <b>Vigils</b> (Rule of St Benedict, chapter 8). Use this session when you wake in the night, with the volume low. If you have insomnia, sleep specialists usually advise getting up after about 20 minutes awake, so follow your clinician's advice.</p>",
+      vec![st("Settle", 2.0, &[6.0], "Welcome to the night vigil. Use this when you wake in the night. Keep the room dark, the volume low, and stay lying down. For centuries people woke between a first and second sleep, and used this quiet time to pray and reflect."),
+           st("The quiet hour", 10.0, &[5.0], "There is nothing wrong with being awake. Let your body stay heavy and warm. If you pray, pray slowly, a psalm or a few familiar words. If not, reflect gently on the day, or on the people you love."),
+           st("Keeping watch", 8.0, &[4.0], "Let the prayer grow simpler: a few words, then one. Rest in the stillness of the night, calm and alert, as monks have kept watch before dawn."),
+           st("Second sleep", 10.0, &[2.0], "Now let go of watching. Let the words dissolve, and let the second sleep come and take you.").ramp(120.0)]));
+    v.push(p(g, "cm_bestill", "Be Still — Psalm 46 Breath Prayer", "Shortening the verse · 15 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>A much-loved contemplative exercise prays <b>Psalm 46:10</b>, \"Be still, and know that I am God\", and then shortens it a phrase at a time: \"Be still, and know that I am\", \"Be still, and know\", \"Be still\", \"Be\", until only stillness is left. It is used in retreat houses, churches and recovery groups. Each line is prayed slowly with the breath for a couple of minutes; the breath pacer can guide you.</p>",
+      vec![st("Settle", 1.5, &[10.0], "Welcome to the be still prayer, from Psalm forty six. Sit comfortably and close your eyes. You will pray one line, then let it shorten, word by word, until only stillness is left."),
+           st("Be still, and know that I am God", 2.5, &[9.0], "Breathe slowly. With each breath, pray silently: be still, and know that I am God.").breath(),
+           st("Be still, and know that I am", 2.5, &[8.0], "Be still, and know that I am.").breath(),
+           st("Be still, and know", 2.5, &[7.0], "Be still, and know.").breath(),
+           st("Be still", 2.5, &[6.5], "Be still.").breath(),
+           st("Be", 3.5, &[6.0], "Be. And then rest, in the silence beyond the words.")]));
+    let mut x = p(g, "cm_visio", "Visio Divina — Praying with an Icon", "Contemplative gazing · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>In Eastern Orthodox Christianity icons are called \"windows into heaven\": they are prayed with, not just looked at, and the Second Council of Nicaea (787) affirmed their veneration. <b>Visio divina</b> (\"divine seeing\") applies the pattern of lectio divina to an image: gaze, notice what draws you, respond in prayer, and rest. Use an icon or sacred image of your own. The <b>🕯 gazing aid</b> can show a steady candle flame like the lamp kept before icons; it never flickers.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to visio divina, praying with an icon. Place an icon or sacred image where you can see it comfortably, with a candle beside it if you like. Sit, and let your breathing slow."),
+           st("Gaze", 6.0, &[8.0], "Let your eyes rest softly on the image. Don't analyse it. Let your gaze wander until something holds it, a face, a hand, a colour, and stay with that."),
+           st("Being seen", 6.0, &[7.0], "In the icon tradition, the image also gazes at you. Let yourself be seen. Notice what rises in you: a feeling, a memory, a longing."),
+           st("Respond", 3.0, &[7.0], "Respond in prayer, with words or without them, to what you have received."),
+           st("Rest", 3.0, &[6.0], "Close your eyes and rest, holding the image gently within.")]);
+    x.visual = "trataka:flame".into();
+    v.push(x);
+    v.push(with_tex(p(g, "cm_rosary", "The Rosary — Five Decades with the Mysteries", "Bead prayer and contemplation · 20 min", &[200.0], &[0.3], "none", "binaural", "Traditional",
+      "<p>The <b>rosary</b> took its familiar form in the 15th century, spread by the Dominican Alan de la Roche. Each of its five <b>decades</b> is an Our Father, ten Hail Marys and a Glory Be, prayed while contemplating a <b>mystery</b> from the lives of Jesus and Mary: the Joyful, Sorrowful and Glorious mysteries, and the Luminous mysteries added by Pope John Paul II in 2002. Bernardi et al. (2001, <i>BMJ</i>) found that reciting the rosary slows breathing to about six breaths a minute; a soft bell here marks that slow, ten-second rhythm.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the rosary, with time to contemplate each mystery. Take your beads if you have them, and choose today's mysteries. Begin with the sign of the cross, the creed and the opening prayers, at your own pace.").tex(0.0),
+           st("First decade", 3.4, &[8.0], "The first decade. Picture the first mystery. Pray the Our Father, then ten Hail Marys, and the Glory Be, keeping the scene before you."),
+           st("Second decade", 3.4, &[7.5], "The second decade. Picture the second mystery, and enter it as you pray."),
+           st("Third decade", 3.4, &[7.0], "The third decade. Let the words become a quiet rhythm beneath the third mystery."),
+           st("Fourth decade", 3.4, &[6.5], "The fourth decade. Rest in the fourth mystery, letting the prayers flow."),
+           st("Fifth decade", 3.4, &[6.5], "The fifth decade. Stay with whatever moves you most in the fifth mystery."),
+           st("Close", 1.0, &[8.0], "Close with the Hail Holy Queen, or a prayer of your own, and the sign of the cross.").tex(0.0)]), tx("breathbell", 0.45, 392.0, 10.0)));
+
+    // ================= Tibetan Buddhism & Bön =================
+    let g = "Tibetan Buddhism & Bön";
+    v.push(p(g, "tb_shamatha", "Shamatha — Calm Abiding (Shamatha Project)", "MacLean 2010 · 30 min", &[200.0], &[0.5], "pink", "binaural", "Research",
+      "<p><b>Shamatha</b> (\"calm abiding\") is the Tibetan training of stable, clear attention, mapped in nine stages by Asanga and Kamalashila. In the <b>Shamatha Project</b>, people spent three months on retreat with the teacher <b>B. Alan Wallace</b>; compared with a waiting-list group they improved in fine visual discrimination and in sustained attention (<b>MacLean et al., 2010, <i>Psychological Science</i></b>), and later analyses reported gains in emotional well-being. This session follows Wallace's sequence: mindfulness of breathing, settling the mind in its natural state, and awareness of awareness.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to shamatha, calm abiding, as taught on the Shamatha Project retreat. Sit or lie comfortably, with your eyes half open, resting in the space in front of you. Breathe naturally. Three qualities matter here: relaxation, stillness and clarity."),
+           st("Breathing", 10.0, &[9.0], "Rest your attention on the sensations of the breath throughout the body. Don't control it at all. Let it flow as if you were deeply asleep, while you stay awake and clear."),
+           st("Settling the mind", 10.0, &[7.0], "Now turn your attention to the space of the mind, and whatever arises there. Watch thoughts and images come and go, without being carried away and without pushing them away."),
+           st("Awareness of awareness", 6.0, &[6.0], "Now let even the thoughts be. Rest your attention on awareness itself, the simple knowing that you are aware, without any object."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "tb_tonglen", "Tonglen — Sending and Taking (Lojong)", "Breathing compassion · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Tonglen</b> (\"giving and taking\") comes from the Tibetan <b>lojong</b> or mind-training teachings, which the Bengali master <b>Atisha</b> (982–1054) brought to Tibet and Geshe Chekawa set down as the <i>Seven Points of Mind Training</i> in the 12th century. Riding the breath, you take in suffering and send out relief, reversing the habit of self-protection. This session follows the four steps taught by Pema Chödrön: a flash of openness, working with texture, a specific person, then all beings. It can stir strong feelings; go gently, and begin with your own pain if that is easier.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to tonglen, the Tibetan practice of sending and taking. Sit upright and close your eyes. You will breathe in suffering and breathe out relief. It opens the heart, and can stir strong feelings, so go gently."),
+           st("Openness", 2.0, &[8.0], "First, rest your mind for a moment in openness and stillness, like a clear sky."),
+           st("Texture", 4.0, &[7.0], "Now breathe in a feeling of heat, darkness and heaviness, through every pore of your body. Breathe out coolness, brightness and lightness, in every direction."),
+           st("One person", 6.0, &[6.0], "Bring to mind someone who is suffering. Breathe in their pain as dark smoke, and let it dissolve in your heart. Breathe out to them whatever would help, as warm, bright light."),
+           st("All beings", 5.0, &[6.0], "Now widen it to everyone who feels as they do, and to all beings everywhere. Breathe in their suffering; breathe out relief and happiness. If it feels too much, return to yourself, then widen again."),
+           st("Return", 1.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "tb_mani", "Chenrezig — Om Mani Padme Hum", "Compassion mantra · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Chenrezig</b> (Sanskrit <i>Avalokiteśvara</i>) is the bodhisattva of compassion and Tibet's protector; the Dalai Lamas are regarded as his emanations. His six-syllable mantra <b>Om mani padme hum</b>, first recorded in the <i>Kāraṇḍavyūha Sūtra</i> (around the 5th century), is carved on stones, spun in prayer wheels and counted on malas across the Himalaya. The practice follows the usual shape of a deity meditation: visualise, recite while light streams out to all beings, dissolve, and dedicate.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the practice of Chenrezig, the bodhisattva of compassion, and his six syllable mantra, om mani padme hum. Sit upright and close your eyes. If you have a mala, hold it in your left hand."),
+           st("Visualise", 4.0, &[8.0], "In the space before you, picture Chenrezig, white as moonlight, seated on a lotus and a moon disc, with four arms and a gentle smile. His eyes look on every being with love."),
+           st("Recite", 10.0, &[6.5], "Recite the mantra softly: om mani padme hum. With each repetition, light flows from his heart into you, and out to all beings in every direction."),
+           st("Dissolve", 3.0, &[6.0], "Now Chenrezig melts into light and dissolves into you. Your mind and his compassion are not two. Rest in that."),
+           st("Dedicate", 1.0, &[8.0], C_DEDICATE)]));
+    v.push(p(g, "tb_tara", "Green Tara — The Swift Protector", "Mantra and visualisation · 18 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Green Tara</b> is the female buddha of enlightened activity, loved in Tibet as a mother who comes swiftly to anyone in fear; the master Atisha was devoted to her. She sits with her right leg extended, ready to rise and help, her right hand in the gesture of giving. Her mantra is <b>Om tare tuttare ture soha</b>, and she is called on for protection from the \"eight fears\" and for removing obstacles.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the practice of Green Tara, the swift protector. Sit comfortably and close your eyes. Bring to mind anything that frightens or burdens you, and offer it to her."),
+           st("Visualise", 4.0, &[8.0], "Picture Tara before you, emerald green and radiant, on a lotus, her right leg extended, ready to rise and help. Her right hand is open in the gesture of giving."),
+           st("Mantra", 8.0, &[6.5], "Recite her mantra: om tare tuttare ture soha. With every repetition, green light streams from her into you, dissolving fear and obstacles."),
+           st("Dissolve", 3.0, &[6.0], "Tara dissolves into green light and melts into your heart. Rest, protected and at ease."),
+           st("Dedicate", 1.0, &[8.0], C_DEDICATE)]));
+    v.push(p(g, "tb_medicine", "Medicine Buddha — Lapis Light", "Healing visualisation · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>Medicine Buddha</b> (<i>Bhaiṣajyaguru</i>, Tibetan <i>Sangye Menla</i>) is deep blue like lapis lazuli and holds a bowl of healing nectar and a medicinal plant. Tibetan doctors traditionally recite his mantra while preparing medicines. In Tibetan pronunciation it runs <b>Tayata om bekandze bekandze maha bekandze radza samudgate soha</b>. This is a spiritual practice, not a substitute for medical care.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the Medicine Buddha practice. Sit or lie comfortably and close your eyes. Hold in mind anyone who needs healing, yourself included."),
+           st("Visualise", 4.0, &[8.0], "Above your head, picture the Medicine Buddha, deep blue like lapis lazuli, radiant and translucent, holding a bowl of healing nectar."),
+           st("Mantra", 9.0, &[6.0], "Recite his mantra slowly: tayata, om bekandze bekandze, maha bekandze, radza samudgate soha. With each repetition, blue light pours down through your body, washing away illness and pain."),
+           st("Healing light", 4.0, &[5.0], "The Medicine Buddha melts into blue light and dissolves into you. Rest in that clear light, and send it to anyone who needs it."),
+           st("Dedicate", 1.0, &[8.0], C_DEDICATE)]));
+    v.push(p(g, "tb_vajra", "Vajra Recitation — Om Ah Hum with the Breath", "Natural breath, three syllables · 15 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>In the <b>vajra recitation</b> (Tibetan <i>dorje depa</i>) of Vajrayana practice, the three seed syllables <b>Om Ah Hum</b>, standing for enlightened body, speech and mind, are joined to the natural breath: Om as it comes in, Ah as it rests, Hum as it goes out. They are usually pictured as white light at the crown, red at the throat and blue at the heart. Breathe naturally; this practice never forces or holds the breath.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the vajra recitation. Sit upright and close your eyes. In this practice the seed syllables om, ah and hum are joined to the breath. Breathe naturally through the nose; never strain or hold the breath."),
+           st("Three syllables", 3.0, &[8.0], "First, meet the syllables. Om, white light at the crown of the head. Ah, red light at the throat. Hum, blue light at the heart."),
+           st("With the breath", 8.0, &[6.5], "Now join them to the breath. As it comes in, om. As it rests, ah. As it goes out, hum. Let the breath carry the sounds, without effort."),
+           st("Rest", 2.0, &[6.0], "Let the syllables fade, and rest in the breath and the open, aware mind.")]));
+    v.push(p(g, "tb_phat", "Three Words That Strike the Vital Point — PHAT!", "Dzogchen (Garab Dorje) · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>Three Words That Strike the Vital Point</b> are said to be the last testament of <b>Garab Dorje</b>, first human teacher of <b>Dzogchen</b> (\"Great Perfection\"), explained in a famous 19th-century commentary by <b>Patrul Rinpoche</b>: recognise your own nature directly, decide on this one thing, and gain confidence in liberation. For the first, you relax completely and then shout a short, forceful <b>PHAT!</b> (said roughly \"pay\"), which cuts through thought and leaves bare, wide-open awareness. Traditionally a qualified teacher points this out, so treat this session as an introduction.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the three words that strike the vital point, a Dzogchen teaching of Garab Dorje. Sit upright, with your eyes open, gazing into the space before you. Traditionally a teacher points this out, so treat this as an introduction."),
+           st("Relax", 3.0, &[8.0], "Relax completely. Let your mind be, without thinking of past or future, without effort, without even trying to meditate."),
+           st("PHAT!", 1.0, &[7.83], "Now, suddenly, shout a short, sharp syllable: phat, said like pay. Let it cut straight through your thoughts."),
+           st("The gap", 6.0, &[7.0], "Rest in the gap that opens: bare, fresh, wide awake, with nothing to grasp. This is the first word. Recognise your own nature directly."),
+           st("One thing", 5.0, &[6.5], "The second word: decide on this one thing. Whether calm or busy, joy or sorrow arises, recognise the same open awareness. If you drift, shout phat again, and rest."),
+           st("Confidence", 3.0, &[6.0], "The third word: confidence in liberation. Thoughts arise and dissolve by themselves, like drawings on water. Nothing needs fixing. Rest.")]));
+    v.push(p(g, "tb_tilopa", "Tilopa's Six Words of Advice (Mahamudra)", "Six instructions, then silence · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Tilopa</b> (988–1069), the Indian mahasiddha at the root of the Kagyu lineage, gave his student Naropa six brief instructions for resting the mind in <b>Mahamudra</b> (\"the great seal\"), famous as Tilopa's six words: <b>don't recall, don't imagine, don't think, don't examine, don't control, rest</b>. Each is given here with a few minutes of silence to try it.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to Tilopa's six words of advice, a Mahamudra teaching from a thousand years ago. Sit comfortably, with your eyes open or closed. Six short instructions will follow, each with time to rest in it."),
+           st("Don't recall", 3.0, &[9.0], "Don't recall. Leave the past alone; let memories go."),
+           st("Don't imagine", 3.0, &[8.0], "Don't imagine. Leave the future alone; no plans, no fantasies."),
+           st("Don't think", 3.0, &[7.0], "Don't think. Leave the present alone; no commentary on what is happening."),
+           st("Don't examine", 3.0, &[6.5], "Don't examine. No analysing, no working anything out."),
+           st("Don't control", 3.0, &[6.0], "Don't control. No steering, no trying to make anything happen."),
+           st("Rest", 3.0, &[6.0], "Rest. Just relax, here and now, and rest.")]));
+    v.push(p(g, "tb_chod", "Feeding Your Demons (after Machig Labdrön's Chöd)", "Five steps · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Chöd</b> (\"cutting through\") was founded by the Tibetan yogini <b>Machig Labdrön</b> (1055–1149): instead of fighting \"demons\", the practitioner offers them their own body, visualised as nectar, and so cuts through clinging to the self. <b>Lama Tsultrim Allione</b> turned its essence into a five-step method anyone can use, in <i>Feeding Your Demons</i> (2008): find the demon in your body, personify it and ask what it needs, become it, feed it until it is satisfied, and meet the ally it becomes. A \"demon\" here is anything that troubles you, such as a fear, a craving or an illness. This is not therapy; work through trauma with a professional.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to feeding your demons, a five step practice drawn from the Tibetan practice of chod. Sit comfortably and close your eyes. A demon here simply means something that troubles you: a fear, a craving, a painful pattern. Choose one that feels manageable today."),
+           st("Find it", 3.0, &[8.0], "Step one. Find the demon in your body. Where do you feel it most? Notice its colour, its texture, its temperature."),
+           st("Personify it", 5.0, &[7.0], "Step two. Let it take shape in front of you as a creature or figure. Look at its size, its colour, its eyes. Ask it: what do you want from me? What do you really need? How will you feel when you get it?"),
+           st("Become it", 4.0, &[6.5], "Step three. Change places. Become the demon, and answer those questions from inside its body. Then come back to yourself, and look at it again."),
+           st("Feed it", 5.0, &[6.0], "Step four. Imagine your body dissolving into a warm nectar of exactly what it needs, love, safety or rest. Feed it generously until it is satisfied. See how it changes. It may become an ally. Ask how it will help you."),
+           st("Rest", 4.0, &[6.0], "Step five. Let the ally, the demon and yourself dissolve into open space. Rest in awareness, with nothing to do."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(with_tex(p(g, "tb_bardo", "Dissolution of the Elements — Rehearsing the Bardo", "Contemplation of the clear light · 30 min", &[150.0], &[0.5], "brown", "binaural", "Traditional",
+      "<p>Tibetan teachings on the <b>bardo</b>, the passage between death and rebirth, include the <i>Bardo Thödol</i> (the \"Tibetan Book of the Dead\", revealed by Karma Lingpa in the 14th century). They describe dying as a <b>dissolution of the elements</b>, each with an inner sign: earth into water (a mirage), water into fire (smoke), fire into wind (sparks like fireflies), wind into consciousness (a butter-lamp flame), then white, red and black appearances, and finally the <b>clear light</b>. Practitioners rehearse this so they can meet death without fear and recognise the clear light. A soft gong marks the stages. If you are grieving or feeling low, choose another session.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the dissolution of the elements, a contemplation from the Tibetan teachings on the bardo. Lie down comfortably and close your eyes. Practitioners rehearse this to meet death without fear. You are safe; this is only a contemplation.").tex(0.0),
+           st("Earth into water", 4.0, &[8.0], "Earth dissolves into water. Imagine your body becoming very heavy, sinking, too heavy to move. The outer world shimmers like a mirage on a hot road."),
+           st("Water into fire", 4.0, &[7.0], "Water dissolves into fire. The body's fluids seem to dry; mouth and eyes are dry. Inwardly, a vision of swirling smoke."),
+           st("Fire into wind", 4.0, &[6.0], "Fire dissolves into wind. Warmth withdraws from the hands and feet toward the heart. Inwardly, sparks, like fireflies in the night."),
+           st("Wind into consciousness", 4.0, &[5.0], "Wind dissolves into consciousness. The breath feels faint and long. Inwardly, the steady glow of a butter lamp."),
+           st("White, red, black", 5.0, &[4.5], "Now three appearances: a white light like moonlight, then a red glow like a sunset sky, then deep darkness, like a moonless night."),
+           st("Clear light", 5.0, &[4.0], "Then the darkness clears, and there is only the clear light: open, empty and luminous, like a dawn sky without a cloud. Rest as it."),
+           st("Return to life", 2.0, &[10.0], "Now let the elements return. Feel the breath, the warmth in your body, the weight of your limbs and the ground beneath you. You are alive, here and now. Slowly open your eyes.").tex(0.0)]),
+      tx("gong", 0.5, 98.0, 120.0)));
+    v.push(p(g, "tb_gyuto", "Deep Chant Drone — Gyuto-style One-Voice Chord", "68 Hz with its 5th harmonic · 20 min", &[68.0, 136.0, 340.0], &[1.0, 0.3, 0.45], "none", "monaural", "Traditional",
+      "<p>Monks of the <b>Gyuto</b> and <b>Gyume</b> Tantric Colleges chant in an extraordinarily deep voice that carries a clear second pitch above it, a \"one-voice chord\". An acoustic analysis (<b>Smith, Stevens &amp; Tomlinson, 1967, <i>Journal of the Acoustical Society of America</i></b>) showed the lamas strongly boosting the <b>fifth harmonic</b>, two octaves and a major third above the fundamental; the scholar Huston Smith had recorded the chant in 1964. This drone imitates that chord with a 68 Hz fundamental and its 2nd and 5th harmonics, pulsing slowly in theta. It uses monaural beats, so speakers work, but the low note needs headphones or good speakers. Chant along gently, and never strain your voice.</p>",
+      vec![st("Settle", 2.0, &[6.0, 6.0, 6.0], "Welcome to the deep chant drone, modelled on the one voice chords of the Gyuto monks, who sing a very low note with a clear overtone high above it. Sit upright, relax your throat and jaw, and let the low sound fill you."),
+           st("Listen", 4.0, &[5.0, 5.0, 5.0], "Listen first. Notice the deep fundamental, and the bright overtone shimmering above it like a second voice."),
+           st("Chant", 10.0, &[4.5, 4.5, 4.5], "Now chant along, as low as is comfortable, on a long om or hum from deep in your belly. Never push your voice; it should feel easy. Feel it vibrate in your chest and skull."),
+           st("Silence", 4.0, &[4.0, 4.0, 4.0], "Let your voice rest. Listen to the drone, and to the silence inside it.")]));
+    v.push(p(g, "tb_sleepyoga", "Sleep Yoga — Falling Asleep in the Clear Light", "Bön and Nyingma · 30 min", &[150.0], &[0.45], "brown", "binaural", "Traditional",
+      "<p>Alongside dream yoga, the Tibetan Bön and Nyingma traditions teach <b>sleep yoga</b>: falling asleep without losing awareness, so that even dreamless sleep becomes recognition of the mind's <b>clear light</b>. Tenzin Wangyal Rinpoche's <i>The Tibetan Yogas of Dream and Sleep</i> (1998) describes resting the mind in a luminous light at the heart as sleep comes. Lie down in bed with the volume low; the beat slows into deep delta.</p>",
+      vec![st("Settle", 2.0, &[6.0], "Welcome to sleep yoga, the Tibetan practice of falling asleep with awareness. Lie down in bed, ready for sleep, on whichever side is comfortable, with the light off and the volume low."),
+           st("Light at the heart", 6.0, &[5.0], "Bring your attention to the centre of your chest. Picture a small sphere of clear, luminous light there, soft and steady, like a pearl lit from within. Rest your awareness in it."),
+           st("Merging", 8.0, &[3.5], "Let the boundary between you and the light soften. You are not looking at the light; you are resting as it, clear and aware."),
+           st("Into sleep", 14.0, &[1.5], "Now let sleep come, without letting go of the light. As the senses fade, stay with it, the way you would stay with a friend while falling asleep.").ramp(180.0)]));
+    v.push(p(g, "tb_sky", "Sky Gazing — Mixing Mind and Space (Dzogchen)", "Eyes open, outdoors · 20 min", &[200.0], &[0.45], "none", "binaural", "Traditional",
+      "<p>In <b>sky gazing</b>, a classic Dzogchen practice, you gaze into a clear sky and let awareness mix with space until there is no sense of inside and outside, which is said to reveal the mind's own open, luminous nature. Teachers advise practising with your back to the sun, in the morning or evening, with relaxed eyes. <b>Never look at the sun.</b> Some advanced Tibetan practices involve the sun, but staring at it can permanently damage your eyes, so they are not included here.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to sky gazing, a Dzogchen practice of mixing mind and space. Sit outside, or at a window with a wide view of open sky. Keep the sun behind you, and never look at the sun. Keep your eyes open and relaxed."),
+           st("Gaze", 6.0, &[9.0], "Let your gaze rest in the open sky without focusing on anything: not clouds, not birds, not the horizon. Just space. Blink whenever you need to."),
+           st("Mixing", 8.0, &[8.0], "With each breath out, let your awareness flow out and mix with the sky. Inside and outside become one open space. Thoughts drift through like clouds, and leave the sky untouched."),
+           st("Rest", 4.0, &[7.83], "Rest as the sky itself: vast, clear and unchanging. Nothing to hold, nothing to push away.")]));
+
+    // ================= Buddhist meditation (Theravada, Zen, Pure Land, Nichiren, Shingon) =================
+    let g = "Buddhist Meditation";
+    v.push(p(g, "bu_metta", "Loving-Kindness (Mettā) Phrases", "Fredrickson 2008 · 20 min", &[200.0], &[0.5], "pink", "binaural", "Research",
+      "<p><b>Mettā</b> (loving-kindness) meditation offers goodwill in widening circles: to yourself, a benefactor, a friend, a neutral person, a difficult person and all beings, an order set out by Buddhaghosa in the 5th-century <i>Path of Purification</i> and taught in the West by Sharon Salzberg. In a seven-week trial, <b>Fredrickson et al. (2008, <i>Journal of Personality and Social Psychology</i>)</b> found it increased daily positive emotions, which in turn built personal resources and life satisfaction, and <b>Hutcherson, Seppala &amp; Gross (2008, <i>Emotion</i>)</b> found that even a few minutes increased feelings of connection to strangers.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to loving kindness, metta. Sit comfortably, close your eyes, and place a hand on your heart if you like. You will offer simple wishes of goodwill, first to yourself, then outward, step by step."),
+           st("Yourself", 3.0, &[8.0], "Begin with yourself. Silently repeat: may I be safe. May I be happy. May I be healthy. May I live with ease. Let the meaning soak in, even if the feeling is faint."),
+           st("A benefactor", 3.0, &[7.5], "Picture someone who has been kind to you. Wish them the same: may you be safe, may you be happy, may you be healthy, may you live with ease."),
+           st("Friend and stranger", 4.0, &[7.0], "Now a dear friend, and then someone neutral, perhaps a person you passed in the street. Offer each the same wishes."),
+           st("A difficult person", 3.0, &[6.5], "If it feels manageable, bring to mind someone you find difficult, and offer the wishes as far as you honestly can. If it's too hard, return to a friend."),
+           st("All beings", 5.0, &[6.0], "Finally, let goodwill spread in every direction, to all beings everywhere, without exception. May all beings be safe, happy, healthy and at ease.")]));
+    v.push(p(g, "bu_brahma", "The Four Immeasurables — Boundless Radiation", "Early sutta method · 24 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>four immeasurables</b> or <i>brahmavihāras</i> (\"divine abodes\") are loving-kindness, compassion, appreciative joy and equanimity. In the early Pali suttas they are not repeated as phrases but <b>radiated</b>: one dwells pervading one direction with a mind full of loving-kindness, then the second, the third and the fourth, above, below, around and everywhere, with a mind abundant, exalted and immeasurable. Many Theravada teachers regard this boundless form as a path into deep absorption.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the four immeasurables: loving kindness, compassion, appreciative joy and equanimity. Sit comfortably and close your eyes. In the early texts they are radiated in every direction, without limit."),
+           st("Loving-kindness", 5.0, &[8.0], "Let a warm feeling of goodwill arise in your heart. Radiate it to the front, as far as you can imagine, then to the right, behind you, and to the left. Then above, below, and everywhere, without limit."),
+           st("Compassion", 5.0, &[7.0], "Now compassion, the heart that is moved by suffering and wishes it to end. Radiate it in the same way: front, right, back, left, above, below, everywhere."),
+           st("Appreciative joy", 5.0, &[6.5], "Now appreciative joy, gladness at the happiness and good fortune of others. Let it shine out in every direction, boundless."),
+           st("Equanimity", 5.0, &[6.0], "Now equanimity, a calm, balanced heart that cares for all equally, without clinging or pushing away. Fill the whole world with it."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "bu_anapana", "Ānāpānasati — The Sixteen Steps of Breathing", "Majjhima Nikāya 118 · 30 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>In the <b>Ānāpānasati Sutta</b> (Majjhima Nikāya 118) the Buddha teaches mindfulness of breathing in <b>sixteen steps</b>, four sets of four: the body (long and short breaths, the whole body, calming the body), feelings (rapture, happiness, mental activity, calming it), the mind (knowing, gladdening, steadying and releasing it) and insight (impermanence, fading, cessation, letting go). The breath is never controlled, only known. Buddhadāsa Bhikkhu and Thich Nhat Hanh made this sequence widely known.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to anapanasati, mindfulness of breathing in sixteen steps. Sit upright and close your eyes. Never control the breath; only know it. The guidance moves through four sets of four steps."),
+           st("Body", 7.0, &[9.0], "The first four steps: the body. Breathing in long, know it is long; breathing short, know it is short. Then breathe sensitive to the whole body. Then breathe, calming the body."),
+           st("Feelings", 7.0, &[7.0], "The second four: feelings. Breathe sensitive to rapture, if it is there, then to happiness. Then sensitive to how feelings move the mind, and breathe, calming them."),
+           st("Mind", 7.0, &[6.5], "The third four: the mind. Breathe sensitive to the mind itself. Then gladdening it. Then steadying it. Then releasing it from whatever binds it."),
+           st("Insight", 6.0, &[6.0], "The last four: insight. Breathe focusing on impermanence, how everything changes. Then on fading away, then on cessation, and finally on letting go."),
+           st("Return", 1.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "bu_noting", "Mahasi Noting — Rising, Falling", "Burmese insight method · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Mahasi Sayadaw</b> (1904–1982), a Burmese monk, developed the <b>noting</b> method of insight (<i>vipassanā</i>) meditation, which spread worldwide through teachers such as Joseph Goldstein and Jack Kornfield. You follow the rising and falling of the abdomen with a light mental note, and note anything else that takes your attention (\"thinking\", \"hearing\", \"itching\") before returning. On intensive retreats the noting becomes fast and precise, revealing how every experience arises and passes away.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to noting practice in the style of Mahasi Sayadaw. Sit upright and close your eyes. Rest a hand on your belly if it helps you feel the breath."),
+           st("Rising, falling", 6.0, &[9.0], "Feel the belly move with the breath. As it rises, make a soft mental note: rising. As it falls: falling. Keep the note light, with most of your attention on the sensation itself."),
+           st("Noting", 10.0, &[7.0], "When something else takes your attention, note it, then return to rising and falling. Thinking, thinking. Hearing, hearing. Itching. Restless. Note it once or twice, and let it go."),
+           st("Moment to moment", 5.0, &[6.0], "Let the noting become quick and precise, moment to moment, catching each sensation as it arises and passes away."),
+           st("Rest", 2.0, &[8.0], "Stop noting now. Sit quietly, simply aware.")]));
+    v.push(p(g, "bu_mu", "Zen Koan — Mu", "The Gateless Gate, case 1 · 30 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The first case of the <b>Gateless Gate</b> (<i>Wumenguan</i>, 1228): a monk asked Master <b>Zhaozhou</b>, \"Does a dog have Buddha-nature?\" Zhaozhou answered, \"<b>Mu</b>\" (\"no\", or \"not\"). In Rinzai Zen this is often the first koan. You don't solve it with thought; you become one with it. Wumen's commentary urges you to rouse \"great doubt\" with your whole body, as if you had swallowed a red-hot iron ball you can neither spit out nor swallow. Koans are traditionally worked on with a teacher in private interview.</p>",
+      vec![st("Settle", 2.0, &[11.0], "Welcome to koan practice with mu. A monk asked Master Zhaozhou: does a dog have Buddha nature? Zhaozhou answered: mu. Sit upright, eyes lowered and half open, and breathe from your belly."),
+           st("Breathe mu", 8.0, &[10.0], "On each long breath out, silently sound mu, from the belly, to the very end of the breath. Don't think about what it means. Just mu."),
+           st("Great doubt", 12.0, &[7.0], "Put your whole self into mu, as if you had swallowed a red hot iron ball you can neither spit out nor swallow. Mu. Let it become a burning question with no words."),
+           st("Only mu", 6.0, &[6.0], "Let there be no one asking. Only mu, breathing, sitting, filling the whole universe."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "bu_shikantaza", "Shikantaza — Just Sitting (Dōgen)", "Sōtō Zen, one period · 40 min", &[200.0], &[0.45], "pink", "binaural", "Traditional",
+      "<p><b>Shikantaza</b> (\"just sitting\") is the heart of Sōtō Zen, taught by <b>Eihei Dōgen</b> (1200–1253), who brought the lineage from China to Japan. His <i>Fukanzazengi</i> (1227) gives the instructions: sit upright, ears in line with the shoulders and nose with the navel, eyes open and lowered, hands in the cosmic mudra, and \"think not-thinking\", which is \"non-thinking\". There is no object and no goal; sitting itself is awakening. Sōtō practitioners face a wall, and a period traditionally lasts one stick of incense, about 40 minutes.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to shikantaza, just sitting, as taught by Dogen. Sit facing a plain wall, eyes open and lowered, back upright, hands resting in the cosmic mudra, thumbs lightly touching. There is nothing to attain."),
+           st("Posture", 4.0, &[10.0], "Settle the posture: ears in line with the shoulders, nose in line with the navel. Let the breath be natural. Sway gently left and right, then come to stillness."),
+           st("Just sitting", 16.0, &[8.0], "Now just sit. Don't hold on to anything, and don't push anything away. Let sounds, thoughts and sensations come and go, while you simply sit."),
+           st("Non-thinking", 16.0, &[6.5], "Think not thinking. How? Non thinking. Not trying to stop thought, not following it. Just this sitting, wholeheartedly."),
+           st("End of the period", 2.0, &[10.0], "The period ends. Bow, stretch gently, and rise slowly.")]));
+    v.push(with_tex(p(g, "bu_nembutsu", "Pure Land Nembutsu — Namu Amida Butsu", "Chanting with the wooden fish · 20 min", &[200.0], &[0.4], "none", "binaural", "Traditional",
+      "<p><b>Pure Land Buddhism</b>, the largest Buddhist tradition in East Asia, centres on <b>Amida</b> (Amitābha), the Buddha of Infinite Light, who vowed to bring everyone who calls his name to his Pure Land. In Japan <b>Hōnen</b> (1133–1212) and <b>Shinran</b> (1173–1263) taught the <b>nembutsu</b>, <i>Namu Amida Butsu</i> (in Chinese, <i>Namo Amituofo</i>), as the whole of practice. The <i>Contemplation Sutra</i> begins its sixteen visualisations with the setting sun in the west. A wooden fish (<i>mokugyo</i>) keeps the chanting rhythm here.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the nembutsu, the heart practice of Pure Land Buddhism, calling on Amida, the Buddha of infinite light. Sit comfortably, with your palms together or resting in your lap.").tex(0.0),
+           st("Setting sun", 4.0, &[8.0], "Picture the sun setting in the west, round and red gold, like a drum hanging in the sky, the first visualisation of the Contemplation Sutra. Hold the image until it is clear.").tex(0.0),
+           st("Chanting", 10.0, &[6.5], "Now chant with the wooden fish, aloud or softly: namu amida butsu. Or in Chinese: namo amituofo. Let voice, ear and heart move together."),
+           st("Entrusting", 4.0, &[6.0], "Let the chanting slow to a whisper, then silence. In Shinran's teaching, the nembutsu is not your own effort but Amida's gift. Rest, entrusting yourself to the infinite light.").tex(0.0)]),
+      tx("mokugyo", 0.6, 460.0, 0.75)));
+    v.push(with_tex(p(g, "bu_daimoku", "Daimoku — Nam-myoho-renge-kyo (Nichiren)", "Rhythmic chanting · 20 min", &[200.0], &[0.4], "none", "binaural", "Traditional",
+      "<p>The Japanese reformer <b>Nichiren</b> (1222–1282) taught that chanting the title of the <i>Lotus Sutra</i>, <b>Nam-myoho-renge-kyo</b> (\"devotion to the mystic law of the Lotus Sutra\"), is the direct way to awaken one's Buddha-nature. Called <i>daimoku</i>, it is the main practice of Nichiren Buddhism, including Nichiren Shū and Soka Gakkai International, and is usually chanted with the eyes open before a scroll called the Gohonzon. A wooden block keeps a brisk rhythm here.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to daimoku, the chant at the heart of Nichiren Buddhism: nam myoho renge kyo. Sit upright, palms together in front of your chest, with your eyes open and resting on a point before you.").tex(0.0),
+           st("Chanting", 14.0, &[8.0], "Begin chanting with the wooden block, in a clear, steady voice: nam myoho renge kyo. Let the rhythm carry you, and let any wish or worry become part of the chant."),
+           st("Deeper", 3.0, &[7.0], "Keep chanting, a little more inwardly now, feeling the vibration in your chest.").tex(0.7),
+           st("Close", 1.0, &[8.0], "To close, chant nam myoho renge kyo three times, slowly, and bow.").tex(0.0)]),
+      tx("mokugyo", 0.55, 520.0, 0.42)));
+    let mut x = p(g, "bu_kasina", "Kasina — Coloured-Disc Concentration (Visuddhimagga)", "Gazing to the inner sign · 30 min", &[200.0], &[0.45], "pink", "binaural", "Traditional",
+      "<p>The <b>kasiṇas</b> are ten meditation objects described in Buddhaghosa's <i>Path of Purification</i> (5th century): earth, water, fire, air, blue, yellow, red, white, light and space. For the earth kasina you make a disc of dawn-coloured clay about a span and four fingers across, set it about two and a half cubits away, and gaze at it, alternating with eyes closed, until its image appears clearly in the mind (the <b>learning sign</b>), and then a purer, brighter version, the <b>counterpart sign</b>, \"like the moon's disc coming out from behind a cloud\", which leads into absorption. The <b>🟠 gazing aid</b> shows a still coloured disc; it never flickers. Keep the screen brightness comfortable and blink normally.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to kasina meditation, from Buddhaghosa's Path of Purification. Open the kasina disc on this screen, or use a disc of colour of your own, about one and a half arm's lengths away at eye level. Sit upright and comfortable."),
+           st("Gaze", 8.0, &[10.0], "Look at the disc with relaxed, steady eyes, blinking when you need to. Don't stare hard. Silently name its colour or element, red, red, or earth, earth, and let everything else fade."),
+           st("Learning sign", 8.0, &[8.0], "Now close your eyes and look for the disc in your mind. When it fades, open your eyes and look at the disc again. Repeat until the image stays clear with your eyes closed."),
+           st("Counterpart sign", 10.0, &[6.5], "With your eyes closed, rest with the inner image. Let it become brighter, smoother and purer than the real disc, like a polished mirror, or the moon coming out from behind a cloud. Don't grab at it."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]);
+    x.visual = "kasina".into();
+    v.push(x);
+    let mut x = p(g, "bu_ajikan", "Ajikan — Moon Disc and the Letter A (Shingon)", "Kūkai's esoteric meditation · 20 min", &[200.0], &[0.45], "pink", "binaural", "Traditional",
+      "<p><b>Ajikan</b> (\"contemplation of the letter A\") is the core meditation of <b>Shingon</b>, the esoteric Buddhism brought to Japan by <b>Kūkai</b> (Kōbō Daishi, 774–835). Before a scroll showing the Sanskrit letter A on a lotus inside a white full-moon disc, the practitioner breathes the sound \"ah\", visualises the moon disc in the heart, expands it to fill the universe and draws it back. In Shingon, A is the unborn source of all sounds and all things. The <b>🌕 gazing aid</b> shows a still moon disc for the gazing stage.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to ajikan, the meditation on the letter A, from Kukai's Shingon Buddhism. Traditionally you sit before a scroll of a white moon disc holding a lotus and the letter A. Open the moon disc on screen if you like, and sit with your eyes half open."),
+           st("Breathing A", 4.0, &[9.0], "Breathe in, and as you breathe out, let a long, soft ahh flow out. In Shingon, A is the unborn source of all sounds and all things. Repeat a few times, then let the sound fall silent."),
+           st("Moon disc", 6.0, &[7.5], "Gaze at the moon disc, cool, round, clear and radiant. Then close your eyes and see it in your chest, at the heart. Bring it back as clearly as you can."),
+           st("Expand and return", 5.0, &[6.5], "Let the moon in your heart grow slowly, filling your body, then the room, then the whole universe, with the letter A shining within it. Then let it shrink back to the size of your heart."),
+           st("Rest", 3.0, &[6.0], "Rest, with the moon and the letter A at your heart, and your mind as clear as the moon.")]);
+    x.visual = "kasina:moon".into();
+    v.push(x);
+
+    // ================= Hindu and yogic meditation =================
+    let g = "Hindu & Yogic Meditation";
+    let mut x = p(g, "hy_trataka", "Trāṭaka — Steady Gazing (Hatha Yoga Pradīpikā)", "Talwadkar 2014 · 15 min", &[200.0], &[0.45], "pink", "binaural", "Research",
+      "<p><b>Trāṭaka</b> is one of the six cleansing practices of hatha yoga. The <i>Hatha Yoga Pradīpikā</i> (15th century) describes it as gazing at a small object with an unwavering gaze until the eyes water, and says it should be kept as carefully as a golden casket. Usually the object is a candle flame, and its afterimage is then held at the brow. In a small randomised trial in older adults, <b>Talwadkar, Jagannathan &amp; Raghuram (2014, <i>International Journal of Yoga</i>)</b> reported better scores on several attention and memory tests after about a month of daily trāṭaka. The <b>🕯 gazing aid</b> shows a still flame that never flickers. Never strain your eyes, and if you use a real candle, never leave it unattended.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to trataka, the yogic practice of steady gazing. Open the flame on this screen, or place a real candle at arm's length and at eye level, in a dim room without draughts. Sit upright and still."),
+           st("Gazing", 4.0, &[10.0], "Gaze at the flame, at its brightest point, steadily and without moving your eyes. Blink as little as is comfortable, but never strain. If your eyes water, that's traditional; close them whenever you need."),
+           st("Inner flame", 3.0, &[7.83], "Now close your eyes, and see the afterimage of the flame at the space between your eyebrows. Hold it steady. When it fades, open your eyes."),
+           st("Second gaze", 3.0, &[8.0], "Gaze at the flame again, steady and still, letting your mind become as still as your eyes."),
+           st("Inner light", 3.0, &[6.5], "Close your eyes once more. Hold the inner light as long as it stays, then rest in the darkness behind it.")]);
+    x.visual = "trataka".into();
+    v.push(x);
+    v.push(p(g, "hy_soham", "So'ham — The Breath's Own Mantra (Ajapa Japa)", "Natural breath mantra · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>Yoga and tantra texts call <b>So'ham</b> (\"I am That\") the <i>ajapa</i>, the \"unrecited\" mantra, because the breath is said to repeat it by itself about 21,600 times a day: <i>so</i> with the in-breath and <i>ham</i> with the out-breath, as most modern teachers give it (some lineages reverse it as <i>hamsa</i>, \"swan\"). You don't say the mantra; you notice it in the breath, then rest in the pause where the breath turns.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to so hum, the breath's own mantra. Yoga texts say the breath repeats it by itself, about twenty one thousand six hundred times a day. Sit comfortably, close your eyes, and let your breathing be natural."),
+           st("Listening", 4.0, &[8.0], "Listen to the breath. As it comes in, hear so, silently. As it flows out, hear hum. You are not saying it; you are noticing that the breath already does."),
+           st("So'ham", 10.0, &[6.5], "So, the in breath. Hum, the out breath. So hum means I am that. Let mantra and breath become one effortless movement."),
+           st("The gaps", 4.0, &[6.0], "Now notice the tiny pause where the in breath turns into the out breath, and the out breath into the in breath. Rest in those gaps, where the mantra falls silent.")]));
+    v.push(with_tex(p(g, "hy_vbt", "Vijñāna Bhairava — Five Doorways (Kashmir Shaivism)", "Five dhāraṇās · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>Vijñāna Bhairava Tantra</b>, a Kashmiri text from around the 8th century, is a dialogue in which Bhairava (Shiva) gives the goddess <b>112 dhāraṇās</b>, short ways into pure awareness through the breath, sound, space, the body, emotion and the edges of sleep. Paul Reps brought them to the West in <i>Zen Flesh, Zen Bones</i> (1957). This session opens five: the turning of the breath, a sound fading into silence (a bell rings for this one), the empty body, the open sky, and the threshold of sleep.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to five doorways from the Vijnana Bhairava Tantra, an ancient text from Kashmir with a hundred and twelve ways into pure awareness. Sit comfortably and close your eyes. We will open five of them, one after another.").tex(0.0),
+           st("The turning breath", 5.0, &[8.0], "First doorway: the turning of the breath. Notice where the in breath ends before the out breath begins, and where the out breath ends before the next one comes. Rest in that turning point.").tex(0.0),
+           st("Fading sound", 5.0, &[7.0], "Second doorway: sound fading into silence. Listen to the bell. Follow its sound as it fades, all the way, until there is only silence. Enter the silence."),
+           st("The empty body", 4.0, &[6.5], "Third doorway: the empty body. Imagine your body completely hollow, a vessel of clear space with nothing solid inside, enclosed by a thin skin, and then not even that.").tex(0.0),
+           st("Open sky", 4.0, &[6.0], "Fourth doorway: the open sky. Imagine a vast, cloudless sky, and let your inner gaze rest in it, without centre and without edge.").tex(0.0),
+           st("Edge of sleep", 3.0, &[5.5], "Fifth doorway, for tonight: the edge of sleep. When the outer world has faded but sleep has not yet come, that moment is a door. For now, rest in the stillness these doorways have opened.").tex(0.0),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT).tex(0.0)]),
+      tx("breathbell", 0.6, 432.0, 20.0)));
+    v.push(p(g, "hy_bija", "Chakra Seed Sounds — LAM VAM RAM YAM HAM OM", "Bīja mantras, base to crown · 22 min", &[256.0], &[0.5], "none", "binaural", "Traditional",
+      "<p>In tantric yoga each <b>chakra</b> has a <b>bīja</b> (\"seed\") syllable: <b>LAM</b> for the root (mūlādhāra), <b>VAM</b> for the sacral centre (svādhiṣṭhāna), <b>RAM</b> for the navel (maṇipūra), <b>YAM</b> for the heart (anāhata), <b>HAM</b> for the throat (viśuddha) and <b>OM</b> for the brow (ājñā), with silence at the crown (sahasrāra). These correspondences come from texts such as Pūrṇānanda's <i>Ṣaṭ-cakra-nirūpaṇa</i> (1577), which Arthur Avalon translated in <i>The Serpent Power</i> (1919). The carrier tone climbs a just-intonation scale from C to B as you rise, a modern musical touch. Chant gently; there is no need to force or \"awaken\" anything.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the chakra seed sounds of tantric yoga. Sit upright with your spine tall and your eyes closed. You will chant one seed sound at each centre, from the base of the spine to the crown, feeling each one vibrate where it belongs."),
+           st("Root · LAM", 3.0, &[8.0], "The root centre, at the base of the spine: lam. Chant it slowly, lammm, and feel the vibration low in the body, steady like the earth."),
+           st("Sacral · VAM", 3.0, &[7.5], "The sacral centre, below the navel: vam. Let the sound flow, like water.").car(&[288.0]),
+           st("Navel · RAM", 3.0, &[7.0], "The navel centre: ram. Feel warmth and strength gather there, like fire.").car(&[320.0]),
+           st("Heart · YAM", 3.0, &[6.5], "The heart centre: yam. Let the sound open the chest, light as air.").car(&[341.33]),
+           st("Throat · HAM", 3.0, &[6.0], "The throat centre: ham. Feel the throat vibrate, clear and spacious as the sky.").car(&[384.0]),
+           st("Brow · OM", 3.0, &[6.0], "The brow centre, between the eyebrows: om. Let it resonate inside your head.").car(&[426.67]),
+           st("Crown · silence", 2.0, &[5.5], "The crown, at the top of the head, has no sound. Sit in silence, and feel the whole column of your body vibrating, from base to crown.").car(&[480.0])]));
+    v.push(p(g, "hy_shiva", "Om Namah Shivaya — Japa with 108 Beads", "Five-syllable mantra · 18 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Om Namaḥ Śivāya</b> (\"I bow to Shiva\") is the <i>Pañcākṣara</i>, the five-syllable mantra of Shaivism, found in the <i>Śrī Rudram</i> of the Yajur Veda. In <b>japa</b> it is repeated on a <b>mala</b> of 108 beads, held in the right hand and moved with the thumb over the middle finger; at the large guru bead you turn the mala around rather than crossing it. Repetition moves from spoken, to whispered, to purely mental japa, which the tradition considers the most powerful.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to japa with the five syllable mantra, om namah shivaya. Sit upright and close your eyes. If you have a mala, hold it in your right hand, starting at the bead next to the large guru bead."),
+           st("First round", 7.0, &[8.0], "Begin your japa: om namah shivaya, one repetition for each bead, moving the beads over your middle finger with your thumb. Say it aloud, whisper it, or say it silently."),
+           st("Second round", 7.0, &[6.5], "At the guru bead, don't cross it. Turn the mala around and continue the other way, more inwardly now, letting the mantra sink from the lips into the mind."),
+           st("Silence", 2.0, &[6.0], "Let the mantra go, and sit in the silence it leaves behind, which the tradition calls Shiva, pure awareness.")]));
+    v.push(p(g, "hy_gayatri", "Gāyatrī Mantra — Sandhyā at Dawn or Dusk", "Rig Veda 3.62.10 · 15 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>Gāyatrī mantra</b> (Rig Veda 3.62.10), attributed to the sage Viśvāmitra, asks <b>Savitṛ</b>, the divine light of the sun, to illumine the mind: <i>Om bhūr bhuvaḥ svaḥ, tat savitur vareṇyaṃ, bhargo devasya dhīmahi, dhiyo yo naḥ pracodayāt</i>. It is recited at the <b>sandhyās</b>, the junctions of the day at dawn, noon and dusk, traditionally 108 times. In some orthodox families it is given only at initiation (<i>upanayana</i>); many modern teachers share it with everyone.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the Gayatri mantra, a verse from the Rig Veda praying to the divine light of the sun. It is chanted at dawn, noon and dusk. Sit facing east in the morning, or west in the evening, and close your eyes."),
+           st("The verse", 3.0, &[9.0], "The mantra is: om bhur bhuva swaha, tat savitur varenyam, bhargo devasya dhimahi, dhiyo yo nah prachodayat. It means, roughly: we meditate on the glorious light of the divine sun; may it inspire our minds."),
+           st("Chanting", 8.0, &[7.0], "Chant it slowly, aloud or silently, again and again, with full attention. Picture the light of the rising or setting sun filling your mind."),
+           st("Light", 2.0, &[6.0], "Let the chanting stop, and rest in the light the mantra asks for.")]));
+    v.push(with_tex(p(g, "hy_mahamantra", "Hare Krishna Mahā-mantra — Japa and Kīrtan", "With hand cymbals · 20 min", &[200.0], &[0.35], "none", "binaural", "Traditional",
+      "<p>The <b>mahā-mantra</b>, <i>Hare Kṛṣṇa Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa Hare Hare, Hare Rāma Hare Rāma, Rāma Rāma Hare Hare</i>, appears in the <i>Kali-santaraṇa Upaniṣad</i>. The Bengali saint <b>Chaitanya Mahāprabhu</b> (1486–1534) spread it through ecstatic group singing (<b>kīrtan</b>), and A. C. Bhaktivedanta Swami Prabhupada brought it to the West in 1965–66, founding ISKCON. Devotees chant it quietly on beads (<i>japa</i>) and sing it together with drums and small hand cymbals (<i>kartals</i>), whose ching-ching-chik pattern plays here.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the maha mantra, the great chant of the Hare Krishna tradition, spread by Chaitanya Mahaprabhu five centuries ago. Sit comfortably. You can chant aloud, and clap or play along with the cymbals.").tex(0.0),
+           st("Japa", 5.0, &[8.0], "Begin softly, as japa: hare krishna, hare krishna, krishna krishna, hare hare, hare rama, hare rama, rama rama, hare hare. Hear each word clearly as you say it.").tex(0.35),
+           st("Kirtan", 9.0, &[7.0], "Now let it become kirtan. Sing it out with the rhythm of the cymbals, and let your voice rise and fall. Let yourself be carried by the sound and the joy of it. Sway if you like."),
+           st("Quiet", 4.0, &[6.0], "Let the chant slow down and grow softer, to a whisper, then silence. Sit in the feeling it leaves.").tex(0.0)]),
+      tx("kartal", 0.5, 2350.0, 0.42)));
+    v.push(p(g, "hy_antarmouna", "Antar Mouna — Inner Silence (Satyananda)", "Bihar School of Yoga · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Antar mouna</b> (\"inner silence\") is a stage-by-stage meditation taught by <b>Swami Satyananda Saraswati</b> of the Bihar School of Yoga, drawing on tantric <i>pratyāhāra</i>, withdrawal of the senses. You become a witness, first of outer sounds, then of spontaneous thoughts; then you create and dismiss thoughts at will, watch and let go of them, and finally rest in the gaps where no thought arises. Satyananda described six stages in <i>Meditations from the Tantras</i> (1974); this session covers the first five.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to antar mouna, inner silence, from the Bihar School of Yoga. Sit comfortably and close your eyes. You will become a witness, first of sounds, then of thoughts, until silence opens by itself."),
+           st("Sounds", 4.0, &[9.0], "Stage one: the senses. Become aware of the sounds around you, far and near. Move from sound to sound, without naming or judging. Just witness."),
+           st("Spontaneous thoughts", 5.0, &[8.0], "Stage two: spontaneous thoughts. Turn your attention inward and watch whatever thoughts arise, without stopping them or following them, like watching a film."),
+           st("Chosen thought", 4.0, &[7.0], "Stage three: create a thought on purpose, any theme you like, and think about it for a while. Then throw it out deliberately, and rest."),
+           st("Watch and let go", 4.0, &[6.5], "Stage four: watch spontaneous thoughts again. As each one arises, look at it, then let it go, one by one, until fewer and fewer come."),
+           st("Thoughtlessness", 4.0, &[6.0], "Stage five: thoughtlessness. Notice the gaps where no thought is present, and rest in that silence. If a thought comes, let it pass, and return to the silence."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "hy_mandukya", "AUM — The Four States (Māṇḍūkya Upaniṣad)", "Waking, dream, sleep, turīya · 24 min", &[150.0, 400.0], &[0.7, 0.25], "pink", "binaural", "Traditional",
+      "<p>The <b>Māṇḍūkya Upaniṣad</b>, only twelve verses long, teaches that the syllable <b>AUM</b> is everything: <b>A</b> is the waking state, <b>U</b> the dreaming state, <b>M</b> deep dreamless sleep, and the <b>silence</b> after it is <b>turīya</b>, \"the fourth\", pure consciousness present in all three. Gauḍapāda's commentary made it a founding text of Advaita Vedanta. The beats follow the states: alpha for waking, theta for dreaming, delta for deep sleep, and delta with a faint 40 Hz gamma layer for turīya, a modern touch suggesting deep stillness with bright awareness.</p>",
+      vec![st("Settle", 2.0, &[10.0, 14.0], "Welcome to the meditation of the Mandukya Upanishad, which teaches that the syllable aum holds the four states of consciousness. Sit upright and close your eyes. You will chant each sound, then rest in the silence after it."),
+           st("A · waking", 5.0, &[10.0, 14.0], "The sound ah, the first part of aum, is the waking state, aware of the outer world. Chant a long ahh, and feel the world around you."),
+           st("U · dreaming", 5.0, &[6.0, 10.0], "The sound oo is the dreaming state, aware of an inner world of images. Chant a long ooo, and let images come and go."),
+           st("M · deep sleep", 5.0, &[2.0, 6.0], "The sound mm is deep, dreamless sleep, where everything rests as one. Hum a long mmm, and feel the stillness gather."),
+           st("Silence · turīya", 6.0, &[2.0, 40.0], "The silence after aum is the fourth, turiya: the pure awareness present in waking, dreaming and sleep alike. Chant aum once, whole, and rest in the silence that follows."),
+           st("Return", 1.0, &[10.0, 14.0], C_RETURN_SHORT)]));
+
+    // ================= Sufi mysticism =================
+    let g = "Sufi Mysticism";
+    v.push(p(g, "su_sema", "Seated Sema — Turning Within (Mevlevi-inspired)", "The sound turns, you stay still · 20 min", &[220.0], &[0.55], "none", "spatial", "Traditional",
+      "<p>The <b>sema</b> of the <b>Mevlevi</b> order, founded in Konya after the death of the poet <b>Jalāl al-Dīn Rūmī</b> (1207–1273), is a ceremony in which dervishes turn to the reed flute (<i>ney</i>) and drums, right palm raised to receive from God and left palm lowered to pass it to the earth, silently remembering God with each turn. UNESCO lists it as intangible cultural heritage. Whirling carries a real risk of falls, so here you stay <b>seated</b> while the tone sweeps slowly from ear to ear on headphones (spatial mode), quickening and then coming to rest.</p>",
+      vec![st("Settle", 2.0, &[0.05], "Welcome to the seated sema, inspired by the turning ceremony of the Mevlevi order of Rumi. The dervishes whirl, but here you turn only in attention, safely seated. Sit upright, cross your arms over your chest, hands on your shoulders, and bow your head slightly."),
+           st("Unfolding", 3.0, &[0.08], "Slowly unfold your arms. Raise your right hand, palm up, to receive from heaven, and lower your left hand, palm down, to give to the earth. Rest your hands wherever is comfortable."),
+           st("Turning", 8.0, &[0.15], "Listen as the sound sweeps around you, and let your attention turn with it, around the still point of your heart. With each turn, silently remember: Allah, or simply, love."),
+           st("Deeper turning", 4.0, &[0.22], "The turning quickens. Let go of the one who turns. There is only the turning, and the stillness at its centre."),
+           st("Stillness", 3.0, &[0.03], "The turning slows to stillness. Fold your arms across your chest again, and sit in silence, as the dervishes do at the end of the sema.")]));
+    v.push(with_tex(p(g, "su_muraqaba", "Murāqaba — Watching over the Heart (Naqshbandi)", "Heart attention · 25 min", &[200.0], &[0.4], "brown", "binaural", "Traditional",
+      "<p><b>Murāqaba</b> (\"watching over\") is the Sufi practice of attentive waiting: sitting with head bowed and eyes closed, the heart turned toward God, watching it closely and waiting for divine grace (<i>fayḍ</i>) to enter. It is central to the <b>Naqshbandi</b> order, named after Bahāʾ al-Dīn Naqshband (1318–1389) and known for silent remembrance of the heart. A soft heartbeat plays at about sixty beats a minute to help you rest your attention in the chest.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to muraqaba, the Sufi practice of watchful waiting, as kept in the Naqshbandi order. Sit with your head slightly bowed and your eyes closed. Muraqaba means to watch over, and here you watch over your heart.").tex(0.0),
+           st("The heart", 5.0, &[8.0], "Bring your attention to your heart, a little to the left in your chest. Feel it beating. Let the breath be quiet. Picture the heart turned toward God, like a flower turned toward the sun."),
+           st("Waiting", 12.0, &[6.0], "Now simply wait, watching the heart with total, patient attention, like a cat watching a mouse hole. Hold the intention that grace will come into it. Don't force anything; keep watching and waiting."),
+           st("Presence", 4.0, &[5.5], "If a sense of presence, warmth or light comes, rest in it quietly. If nothing comes, the watching itself is the practice.").tex(0.5),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT).tex(0.0)]),
+      tx("heartbeat", 0.45, 52.0, 1.0)));
+    v.push(p(g, "su_lataif", "The Laṭāʾif — Five Subtle Centres (Mujaddidi)", "Remembrance in the chest · 25 min", &[200.0], &[0.45], "pink", "binaural", "Traditional",
+      "<p>The <b>laṭāʾif</b> (\"subtle centres\") are organs of spiritual perception taught in the <b>Naqshbandi-Mujaddidi</b> line of Shaykh <b>Aḥmad Sirhindī</b> (1564–1624). The disciple awakens each one by silently remembering the divine name <i>Allāh</i> in it: <b>qalb</b> (heart), <b>rūḥ</b> (spirit), <b>sirr</b> (secret), <b>khafī</b> (hidden) and <b>akhfā</b> (most hidden). The positions most often taught are below and above the left and right breast and the centre of the chest, with lights of yellow, red, white, black and green, but teachers differ, so treat these as a guide.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the lataif, the subtle centres of the Naqshbandi Mujaddidi tradition. Sit with your eyes closed. You will rest your attention on five points in the chest, silently remembering the divine name, Allah, at each one. Teachers differ on the places and colours, so treat these as a guide."),
+           st("Qalb · heart", 4.0, &[8.0], "The heart, qalb, two finger widths below the left breast. Rest your attention there, and let Allah, Allah be remembered in it. Its light is said to be yellow."),
+           st("Rūḥ · spirit", 4.0, &[7.5], "The spirit, ruh, two finger widths below the right breast. Remember Allah there. Its light is said to be red."),
+           st("Sirr · secret", 4.0, &[7.0], "The secret, sirr, two finger widths above the left breast. Remember Allah there. Its light is white."),
+           st("Khafī · hidden", 4.0, &[6.5], "The hidden, khafi, two finger widths above the right breast. Remember Allah there. Its light is black, the luminous darkness of night."),
+           st("Akhfā · most hidden", 4.0, &[6.0], "The most hidden, akhfa, in the centre of the chest. Remember Allah there. Its light is green. Then feel all five centres remembering together."),
+           st("Return", 3.0, &[8.0], "Rest in the whole chest, filled with remembrance. Then slowly return, and open your eyes.")]));
+    v.push(p(g, "su_breaths", "Elemental Purification Breaths (Hazrat Inayat Khan)", "Earth, water, fire, air · 15 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Hazrat Inayat Khan</b> (1882–1927), an Indian musician and Sufi of the Chishti order, brought Sufism to the West in 1910. His <b>purification breaths</b> work with the four elements, five gentle breaths each, changing between nose and mouth: earth (in and out through the nose), water (in through the nose, out through the mouth), fire (in through the mouth, out through the nose) and air (in and out through the mouth). They are still taught in the Inayatiyya and the Sufi Ruhaniat. Breathe slowly; this is not fast breathing.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the elemental purification breaths of Hazrat Inayat Khan. Stand or sit upright, shoulders relaxed. You will take five slow breaths for each of the four elements. Breathe gently, never straining."),
+           st("Earth", 3.0, &[9.0], "Earth. Breathe in through the nose and out through the nose, five times. Breathing in, draw up the strength of the earth. Breathing out, let what is heavy sink into the ground."),
+           st("Water", 3.0, &[8.0], "Water. Breathe in through the nose and out through the mouth, five times. Feel the breath flow down over you like a cool waterfall, washing you clean."),
+           st("Fire", 3.0, &[7.0], "Fire. Breathe in through the mouth and out through the nose, five times. Feel warmth and light gather in the heart, and radiate from it."),
+           st("Air", 3.0, &[6.5], "Air. Breathe in through the mouth and out through the mouth, five times. Feel yourself becoming light and open, as if a breeze blew right through you."),
+           st("Ether", 1.0, &[7.83], "Now breathe naturally. Let the breath become so fine it feels like ether, the space in which everything lives.")]));
+    v.push(p(g, "su_names", "Wazīfa — The Beautiful Names (Asmāʾ al-Ḥusnā)", "Repeating divine names · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>A <b>wazīfa</b> is the regular repetition of one or more of the <b>ninety-nine Beautiful Names</b> of God (<i>al-asmāʾ al-ḥusnā</i>), each a quality the reciter hopes to reflect: <i>al-Laṭīf</i> the Subtle, <i>ar-Raḥmān</i> the Compassionate, <i>an-Nūr</i> the Light, <i>al-Wadūd</i> the Loving. Sufi teachers often give particular names to particular students. The session ends with <i>Hū</i>, the divine pronoun (\"He\"), breathed out softly.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to wazifa, the Sufi practice of repeating the beautiful names of God. Sit comfortably, close your eyes, and place your right hand over your heart if you like. You will repeat four names, one at a time."),
+           st("Yā Laṭīf", 4.0, &[8.0], "Ya Latif, the Subtle, the Gentle. Repeat it softly, again and again: ya latif. Feel a gentle subtlety enter your breath."),
+           st("Yā Raḥmān", 4.0, &[7.0], "Ya Rahman, the Compassionate. Ya rahman. Let mercy flow into you, and from you, like warm rain."),
+           st("Yā Nūr", 4.0, &[6.5], "Ya Nur, the Light. Ya nur. Let light fill your heart and spread through your whole body."),
+           st("Yā Wadūd", 4.0, &[6.0], "Ya Wadud, the Loving. Ya wadud. Rest in love, both given and received."),
+           st("Hū", 2.0, &[6.0], "Let the names dissolve into hu, the divine breath, breathed out softly: huuu. Then rest in silence.")]));
+
+    // ================= Jewish mysticism and Kabbalah =================
+    let g = "Jewish Mysticism & Kabbalah";
+    v.push(p(g, "jk_shema", "Shema — Echad, the Oneness Meditation", "Deuteronomy 6:4 · 15 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>Shema</b>, <i>Shema Yisrael, Adonai Eloheinu, Adonai Echad</i> (\"Hear, O Israel: the Lord is our God, the Lord is One\", Deuteronomy 6:4), is the central declaration of Jewish faith, said morning and evening and again at bedtime. The Talmud (<b>Berakhot 13b</b>) tells how Rabbi Judah the Prince covered his eyes for the first verse, and teaches that one should draw out the last word, <b>echad</b> (\"one\"), long enough to proclaim God sovereign above, below and in the four directions. Kabbalists and Hasidic teachers made this a meditation on divine unity (<i>yiḥud</i>). The second line, <i>Barukh shem kevod malkhuto le'olam va'ed</i>, is traditionally whispered.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the Shema, the central declaration of Jewish faith, said morning, evening and at bedtime. Sit comfortably. For the first line you will cover your eyes with your right hand, as the Talmud describes."),
+           st("Hear", 3.0, &[8.0], "Cover your eyes with your right hand, and say slowly: Shema Yisrael, Adonai Eloheinu, Adonai echad. Hear, O Israel, the Lord is our God, the Lord is One."),
+           st("Echad", 5.0, &[6.0], "Say the last word again, echad, one, and draw it out. As you hold it, feel the One filling the heavens above, the earth below, and the four directions around you. There is nothing else."),
+           st("Barukh shem", 2.0, &[6.5], "Now whisper the response: barukh shem kevod malkhuto le'olam va'ed. Blessed be the name of his glorious kingdom for ever and ever."),
+           st("Love", 2.0, &[7.0], "Then the next verse: you shall love the Lord your God with all your heart, with all your soul, and with all your might. Rest in that love."),
+           st("Rest", 1.0, &[9.0], "Lower your hand, open your eyes, and rest in the oneness for a moment.")]));
+    v.push(p(g, "jk_abulafia", "Abulafia — Chanting the Letters (Ecstatic Kabbalah)", "Ḥokhmat ha-tseruf · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Abraham Abulafia</b> (1240–after 1291), founder of prophetic or ecstatic Kabbalah, taught <i>ḥokhmat ha-tseruf</i>, \"the science of letter combination\": chanting Hebrew letters joined to each vowel, one sound to each out-breath with resting breaths between, each vowel paired with a slow movement of the head, in a quiet room, in clean clothes, often by candlelight. He compared it to music, with the letters as notes. Moshe Idel's <i>The Mystical Experience in Abraham Abulafia</i> (1988) describes the method. Abulafia combined the letters of divine names, which his own tradition guarded closely, so this session uses only <b>alef</b>, the silent first letter, with the vowels <i>o, a, e, i, u</i>.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to letter chanting in the way of Abraham Abulafia, the thirteenth century master of ecstatic Kabbalah. Sit in a quiet room, in clean clothes, as he advised. You will chant only the first Hebrew letter, alef, with its five vowels."),
+           st("Breath and sound", 4.0, &[8.0], "Breathe in slowly. On a long out breath, sound alef with the first vowel: ohh. Then rest for one breath. Continue: ahh, ehh, eee, ooo, one sound for each out breath, with a quiet breath in between."),
+           st("Combining", 8.0, &[6.5], "Keep cycling through the five sounds: oh, ah, eh, ee, oo. Let them become a slow, flowing chant. Abulafia compared this to music: the letters are the notes, and the soul is the instrument."),
+           st("Silence", 4.0, &[6.0], "Let the chant fall silent, and see the letter alef in your mind, shining. Abulafia taught that after the chanting, new thoughts and light may flow into the mind. Watch whatever arises, without grasping."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "jk_tree", "The Tree of Life — Drawing Light through the Sefirot", "Ten sefirot, crown to feet · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>In Kabbalah, God's infinite light (<i>Ein Sof</i>) flows into the world through ten <b>sefirot</b>, arranged as the <b>Tree of Life</b>: <b>Keter</b> (crown), <b>Ḥokhmah</b> (wisdom), <b>Binah</b> (understanding), <b>Ḥesed</b> (loving-kindness), <b>Gevurah</b> (strength), <b>Tiferet</b> (beauty), <b>Netzaḥ</b> (endurance), <b>Hod</b> (splendour), <b>Yesod</b> (foundation) and <b>Malkhut</b> (kingdom, the <i>Shekhinah</i> or divine presence). Because humans are made in the divine image, the sefirot are also mapped onto the body. The map used here follows later Kabbalists' reading of the Zohar's <i>Pataḥ Eliyahu</i> passage; teachers differ, especially on where Malkhut sits (the feet or the mouth).</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the Tree of Life, the ten sefirot of Kabbalah, through which, the Kabbalists teach, divine light flows into the world. Sit upright and close your eyes. You will draw that light down through your body, from the crown to the feet."),
+           st("Keter", 2.0, &[9.0], "Keter, the crown, just above your head: pure will, beyond thought. Picture a brilliant white light resting there, like a crown of light."),
+           st("Ḥokhmah · Binah", 3.0, &[8.0], "Let the light divide in two. Hokhmah, wisdom, on the right side of your head, a flash of insight. Binah, understanding, on the left, where insight takes shape."),
+           st("Ḥesed · Gevurah", 3.0, &[7.5], "The light flows down into your arms. Hesed, loving kindness, in the right arm, giving without limit. Gevurah, strength and restraint, in the left arm, holding firm."),
+           st("Tiferet", 3.0, &[7.0], "They meet in your heart, in Tiferet, beauty and harmony, where kindness and strength are balanced. Breathe there for a while."),
+           st("Netzaḥ · Hod", 3.0, &[6.5], "The light flows into your hips and legs. Netzah, endurance, on the right. Hod, splendour and humility, on the left."),
+           st("Yesod", 2.0, &[6.0], "Yesod, the foundation, in the pelvis, gathers all the streams of light into one."),
+           st("Malkhut", 3.0, &[6.0], "Malkhut, the kingdom, at your feet: the Shekhinah, the divine presence in this world. Feel the light rest in the ground beneath you, and in everything around you."),
+           st("Return to the source", 3.0, &[7.0], "Now let the light rise back up the tree, through the foundation, the heart and the crown, returning to its source."),
+           st("Return", 1.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "jk_ayin", "Ayin — Becoming Nothing (Hasidic Bittul)", "Self-nullification · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>Early Hasidic masters, above all <b>Dov Ber, the Maggid of Mezritch</b> (d. 1772), taught that a person must regard themselves as <b>ayin</b>, \"nothing\", to become a vessel for the divine: <i>bittul ha-yesh</i>, the dissolving of the separate \"something\". In Hebrew, <i>ani</i> (\"I\") and <i>ayin</i> (\"nothing\") are spelled with the same three letters. In Kabbalah, Ayin is also a name for the highest divine level, and Hasidism teaches that God renews creation every moment. Daniel Matt's essay <i>Ayin: The Concept of Nothingness in Jewish Mysticism</i> (1990) traces the idea.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the contemplation of ayin, nothingness, as taught by the Maggid of Mezritch and the early Hasidic masters. Sit comfortably and close your eyes. In Hebrew, ani, I, and ayin, nothing, are spelled with the same three letters."),
+           st("Something", 4.0, &[8.0], "Notice the sense of being someone: your name, your story, your plans. This is yesh, somethingness. Don't fight it. Just see it clearly, as a thin layer over something far vaster."),
+           st("Bittul", 6.0, &[6.5], "Now, little by little, let it go. Think of yourself as nothing, as the Maggid taught, a vessel emptied so the divine can flow through. With each out breath, let the I soften into ayin."),
+           st("Ayin", 6.0, &[5.5], "Rest as nothing. No one to pray, nothing to achieve. Only the divine life flowing through everything, renewing the world in every moment."),
+           st("Return", 2.0, &[9.0], "Gently let the sense of yourself return, lighter than before. Open your eyes when you are ready.")]));
+    v.push(p(g, "jk_merkavah", "Merkavah — Ascent through the Seven Palaces", "Hekhalot visionary ascent · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Merkavah</b> (\"chariot\") mysticism grew from Ezekiel's vision of the divine chariot-throne (Ezekiel 1) and flourished in late antiquity in the <b>Hekhalot</b> (\"palaces\") texts. Its adepts, strangely called \"descenders to the chariot\", recited hymns and names to pass the angelic guards of <b>seven heavenly palaces</b> and behold the throne of glory. Hai Gaon (c. 1000) describes them fasting and sitting with the head between the knees, as Elijah did on Mount Carmel (1 Kings 18:42). Here there is no fasting, the bowed posture lasts only two minutes, and the secret names are replaced by the angels' song from Isaiah 6:3, <i>Kadosh, kadosh, kadosh</i>, which the Hekhalot hymns echo.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the chariot meditation of the merkavah mystics, who ascended through seven heavenly palaces in their visions. Sit and, as they did, lower your head toward your knees, only as far as is comfortable, or simply bow your head."),
+           st("Hymn", 4.0, &[8.0], "Slowly sit up. Softly repeat the angels' song from Isaiah: kadosh, kadosh, kadosh. Holy, holy, holy. The whole earth is full of his glory. Let the rhythm carry you."),
+           st("Seven palaces", 12.0, &[6.5], "Picture yourself at the gate of the first palace. With each repetition of the hymn, pass through another gate, higher and deeper, seven palaces in all, each one brighter than the last."),
+           st("The throne", 5.0, &[6.0], "In the seventh palace, rest before the throne of glory, as Ezekiel saw it, with a radiance like a rainbow in the clouds. Don't try to see more. Simply be present, in awe."),
+           st("Descent", 2.0, &[10.0], "Now come back down through the seven palaces, gate by gate, carrying the stillness with you. Feel your body, and open your eyes.")]));
+    v.push(p(g, "jk_niggun", "Niggun — Wordless Melody (Hasidic)", "Singing over a drone · 15 min", &[196.0, 293.66], &[0.45, 0.3], "none", "binaural", "Traditional",
+      "<p>A <b>niggun</b> is a wordless melody, sung to syllables such as <i>yai-dai-dai</i> or <i>bim-bam</i> and repeated again and again. Since the <b>Baal Shem Tov</b> (c. 1698–1760) it has been at the heart of Hasidic worship, where song is said to reach where words cannot. Some niggunim are joyful dances; others are slow songs of <i>devekut</i>, \"clinging\" to God. A saying attributed to Rabbi Shneur Zalman of Liadi calls melody \"the pen of the soul\". A drone of two notes, G and D, an open fifth, plays here as a ground to sing over.</p>",
+      vec![st("Settle", 2.0, &[10.0, 10.0], "Welcome to the niggun, the wordless melody of Hasidic prayer. Sit comfortably. A drone of two notes plays as a ground to sing over. There are no words, only syllables like yai dai dai, or bim bam."),
+           st("Humming", 3.0, &[8.0, 8.0], "Begin by humming, quietly, any simple tune that comes, over the drone. Let it repeat. A niggun goes round and round, each time a little deeper."),
+           st("Singing", 6.0, &[7.0, 7.0], "Now open the sound into syllables: yai dai dai, yai dai dai. Let the melody rise and fall. Sing with longing, or with joy, whichever is in you today. There is no right way to sound."),
+           st("Devekut", 3.0, &[6.0, 6.0], "Let the melody slow down and grow softer, a niggun of devekut, clinging to God. Hum it, then only hear it in your heart."),
+           st("Silence", 1.0, &[6.0, 6.0], "Let the melody fall silent. Rest in what it opened.")]));
+
+    // ================= Taoist inner cultivation =================
+    let g = "Taoist Inner Cultivation";
+    v.push(p(g, "ta_zuowang", "Zuowang — Sitting and Forgetting (Zhuangzi)", "Zhuangzi ch. 6 · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>In chapter 6 of the <b>Zhuangzi</b> (4th–3rd century BCE), Yan Hui tells Confucius that he can now \"sit and forget\" (<b>zuowang</b>): he lets his body fall away, dismisses perception and knowing, leaves form behind and merges with the great pervading Way. Confucius asks to become his student. Later Daoists made this a method, above all <b>Sima Chengzhen</b> (647–735), to whom the <i>Zuowang lun</i> (\"Discourse on Sitting and Forgetting\") is attributed. This session forgets in the same order: the body, the senses, then knowing.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to zuowang, sitting and forgetting, from the Zhuangzi. Yan Hui told Confucius: I let my body fall away, set aside seeing and knowing, and become one with the great Way. Sit comfortably, close your eyes, and let your breathing be natural."),
+           st("Forget the body", 5.0, &[8.0], "First, forget the body. Feel it, then let it go: the limbs, the weight, the edges. Let it become so relaxed that it seems to fall away."),
+           st("Forget the senses", 5.0, &[7.0], "Next, let the senses rest. Hear without listening, feel without touching. Let sounds and sensations pass through you like wind through an open window."),
+           st("Forget knowing", 6.0, &[6.0], "Now let go of knowing: names, opinions, what you know and who you are. When a thought arises, don't follow it and don't fight it. Forget it, and sit."),
+           st("The great Way", 5.0, &[5.5], "Rest, merged with the great flow of the Tao, which needs nothing from you. Just sitting, just forgetting."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "ta_xinzhai", "Xinzhai — The Fasting of the Heart-Mind", "Zhuangzi ch. 4 · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>In chapter 4 of the <b>Zhuangzi</b>, Confucius teaches Yan Hui the <b>fasting of the heart-mind</b> (<b>xinzhai</b>), a fast from grasping, not from food: unify your attention; listen not with the ears but with the heart-mind; then not with the heart-mind but with <b>qi</b>. The ears stop at hearing and the mind at matching things to its ideas, but qi is empty and waits on all things. The Way gathers only in emptiness, and that emptiness is the fasting of the heart-mind.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to xinzhai, the fasting of the heart mind, from the Zhuangzi. This is a fast, not from food, but from grasping. Sit upright, close your eyes, and gather your attention into one."),
+           st("Ears", 4.0, &[9.0], "First, listen with your ears. Hear the sounds around you, near and far, just as they are."),
+           st("Heart-mind", 5.0, &[7.5], "Now stop listening with your ears, and listen with your heart mind. Feel how the mind meets each sound, naming it, matching it, holding on to it."),
+           st("Qi", 6.0, &[6.0], "Now stop listening with the heart mind, and listen with your qi, the life breath. Qi is empty and waits on all things. Let yourself become that waiting emptiness."),
+           st("Emptiness", 3.0, &[5.5], "The Way gathers only in emptiness, and emptiness is the fasting of the heart mind. Rest there.")]));
+    v.push(p(g, "ta_standing", "Zhan Zhuang — Standing like a Tree", "Qigong standing practice · 20 min", &[200.0], &[0.45], "pink", "binaural", "Traditional",
+      "<p><b>Zhan zhuang</b> (\"standing like a post\") is a foundation of qigong and of the internal martial arts, made widely known by <b>Wang Xiangzhai</b> (1885–1963), founder of Yiquan. You stand still with soft knees, then hold the arms rounded as if hugging a tree, and let the body settle into deep, quiet effort. Warmth and trembling are common. Keep a chair nearby and your eyes half open. Lower your arms whenever they tire, and sit down if you feel dizzy or have pain. If you have heart problems or high blood pressure, keep the arms low and the holds short.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to zhan zhuang, standing like a tree, the still standing practice of qigong. Keep a chair nearby. Stand with your feet shoulder width apart, knees slightly bent, eyes half open, and let your arms hang loosely."),
+           st("Wuji", 4.0, &[9.0], "This is wuji, the empty stance. Let your weight sink into your feet, as if roots were growing from them. Lengthen the back of your neck, and soften your knees. Breathe naturally into the belly."),
+           st("Holding the tree", 6.0, &[8.0], "Now raise your arms in front of your chest, rounded, as if gently hugging a large tree, fingers apart, elbows a little low. Keep your shoulders soft. If your arms tire, lower them for a while, then raise them again."),
+           st("Stillness", 5.0, &[7.5], "Stay still and quiet, arms raised or lowered. You may feel warmth, tingling, or trembling in the legs; this is common. If you feel dizzy or any pain, sit down. Otherwise, let the stillness deepen."),
+           st("Closing", 3.0, &[10.0], "Slowly lower your arms, and rest your hands over your lower belly, the dantian. Feel warmth gather there. Then walk around for a minute before you sit down.")]));
+    v.push(p(g, "ta_sixsounds", "Liu Zi Jue — The Six Healing Sounds", "Six whispered breaths · 18 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>six healing sounds</b> (<i>liù zì jué</i>, \"six-word formula\") are an ancient Chinese breathing practice, first recorded in <b>Tao Hongjing</b>'s <i>Yangxing yanming lu</i> (around 500 CE). Each sound, breathed out slowly, is linked in traditional Chinese medicine to an organ: <b>xū</b> the liver, <b>hē</b> the heart, <b>hū</b> the spleen, <b>sī</b> the lungs, <b>chuī</b> the kidneys and <b>xī</b> the \"triple burner\", which spreads warmth through the body. The Chinese Health Qigong Association published a standard form in 2003. The out-breaths are long and gentle, never forced; these links are traditional, not established by research.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the six healing sounds, liu zi jue, an ancient Chinese breathing practice. Sit or stand comfortably. For each sound, breathe in through the nose, then breathe out slowly while whispering it, about six times. Never force the breath."),
+           st("Xū · liver", 2.5, &[9.0], "The first sound is shoo, for the liver. Whisper a long shooo on each slow out breath, with your eyes wide, as if gazing far away."),
+           st("Hē · heart", 2.5, &[8.5], "The second sound is a soft huhh, for the heart. Let the chest soften as you breathe it out."),
+           st("Hū · spleen", 2.5, &[8.0], "The third sound is a hollow hooo, for the spleen and digestion. Feel it in the belly."),
+           st("Sī · lungs", 2.5, &[7.5], "The fourth sound is a hissing sss, through lightly closed teeth, for the lungs."),
+           st("Chuī · kidneys", 2.5, &[7.0], "The fifth sound is chway, for the kidneys. Feel it low in your back."),
+           st("Xī · triple burner", 2.5, &[6.5], "The sixth sound is shee, for the triple burner, the warmth that flows through the whole body."),
+           st("Rest", 1.0, &[6.5], "Let the sounds go, breathe naturally, and rest, feeling the whole body calm and even.")]));
+
+    // ================= Shamanic and ancestral rituals =================
+    let g = "Shamanic & Ancestral Rituals";
+    v.push(with_tex(p(g, "sr_lower", "Lower-World Journey — Meeting a Power Animal", "Core shamanism · 25 min", &[100.0], &[0.25], "none", "binaural", "Traditional",
+      "<p>In <b>core shamanism</b> (Michael Harner, <i>The Way of the Shaman</i>, 1980) the classic first journey goes to the <b>lower world</b>, entered through an opening in the earth you know from waking life (a cave, a hollow tree, a spring or a burrow) and down a tunnel. There journeyers seek a <b>power animal</b>, a helping spirit; in Harner's teaching, an animal that shows itself to you four times, from different sides, is your helper. The drum beats at about four and a half times a second, then gives the fast call-back that signals the return.</p>",
+      vec![st("Intention", 2.0, &[4.2], "Welcome to the lower world journey of core shamanism. Lie down and cover your eyes with a cloth. Picture an opening into the earth that you know from waking life, a cave, a hollow tree, a spring, or an animal's burrow. Your intention: to meet a power animal.").tex(0.3),
+           st("Descent", 5.0, &[4.5], "Go into the opening, and follow the tunnel down. It may be dark, it may twist or slope. Keep going, with curiosity, until you come out into a landscape."),
+           st("Lower world", 10.0, &[4.5], "You are in the lower world. Notice the ground, the light, the plants and the sounds. Ask for your power animal to show itself. An animal that shows itself to you four times, from different sides, is your helper. Greet it."),
+           st("With the animal", 5.0, &[4.5], "Spend time with your animal. Follow it, listen to it, or ask your question. Accept whatever comes, without judging it."),
+           st("Call-back", 2.0, &[8.0], "The drum is calling you back. Thank your animal, and return quickly the way you came, up the tunnel and out of the opening.").ramp(20.0),
+           st("Return", 1.0, &[10.0], "You are back. Feel your body, take a deep breath, and open your eyes. You might like to write down what you saw.").tex(0.0)]),
+      tx("drum", 1.0, 0.0, 0.0)));
+    v.push(with_tex(p(g, "sr_posture", "Ritual Body Postures — Fifteen Minutes of Rattle", "Goodman's method · 22 min", &[200.0], &[0.35], "none", "binaural", "Speculative",
+      "<p>The anthropologist <b>Felicitas Goodman</b> (1914–2005) noticed the same body postures in ancient art and carvings from many cultures and proposed that each one, held for exactly <b>fifteen minutes</b> to a rattle or drum at about <b>210 beats a minute</b>, opens a particular kind of trance: healing, divination, spirit journeys (<i>Where the Spirits Ride the Wind</i>, 1990). The rattle part is close to well-documented rhythmic trance, but her claim that each posture gives a specific experience has not been tested in controlled research, so this session is tagged Speculative. It uses the posture she called the <b>Bear Spirit</b>, associated with healing. You can do it seated.</p>",
+      vec![st("Settle", 3.0, &[10.0], "Welcome to ritual body postures, as explored by the anthropologist Felicitas Goodman. You will hold one posture for fifteen minutes while a rattle plays. Stand with your feet parallel, a little apart, knees soft, or sit upright on a chair if you prefer.").tex(0.0),
+           st("Posture", 2.0, &[8.0], "Breathe calmly. Now take the bear spirit posture: rest your hands on your belly near the navel, fingertips lightly touching, and tilt your head slightly back, with your eyes closed. If you feel unsteady at any time, sit down.").tex(0.0),
+           st("Trance", 15.0, &[5.5], "The rattle begins. Hold the posture, relaxed and still, and simply notice what comes: sensations, images, a sense of movement or presence. Don't analyse; just observe."),
+           st("Return", 2.0, &[10.0], "The rattle stops. Release the posture, stretch, and open your eyes. Take a moment to recall, or write down, what you experienced.").tex(0.0)]),
+      tx("rattle", 0.5, 0.0, 0.2857)));
+    v.push(with_tex(p(g, "sr_dance", "Trance Dance — Rising and Falling Drum", "Ecstatic movement · 30 min", &[110.0], &[0.2], "none", "binaural", "Traditional",
+      "<p>Dancing to a steady rhythm until the movement seems to take over is one of humanity's oldest ways into trance. Among the <b>Ju/'hoansi San</b> of the Kalahari, healers dance through the night to clapping and song until they enter <i>!kia</i>, a state of \"boiling\" healing energy (Richard Katz, <i>Boiling Energy</i>, 1982), and many modern ecstatic-dance gatherings follow a similar wave that builds to a peak and settles into stillness. Here a frame drum rises from 72 to 156 beats a minute and back down. <b>Clear a space</b>, keep your eyes softly open, <b>never spin</b>, breathe freely, slow down whenever you need to, and drink water afterwards.</p>",
+      vec![st("Warm-up", 5.0, &[1.2], "Welcome to the trance dance. Clear a space around you, take off your shoes if the floor allows, and keep your eyes softly open. Begin by swaying with the slow drum. Let your feet, then your knees and hips, find the beat."),
+           st("Pulse", 5.0, &[1.6], "The drum picks up. Let the movement spread to your arms, shoulders and head. Move however your body wants to, with no steps to remember and no one watching.").ramp(20.0),
+           st("Build", 5.0, &[2.0], "Faster now. Keep breathing freely, and let the drum lead. Shake out your hands and shoulders, stamp your feet, and let the rhythm move you more than you move yourself.").ramp(20.0),
+           st("Peak", 5.0, &[2.6], "This is the peak. Let go into the rhythm, as dancers have for thousands of years, and let the body dance itself. Keep your eyes open enough to stay safe, and never spin. Slow down if you feel dizzy or out of breath.").ramp(20.0),
+           st("Unwind", 5.0, &[1.8], "The drum slows. Let your movements become smooth, flowing and soft, like water. Feel the warmth and the aliveness in your body.").ramp(20.0),
+           st("Stillness", 5.0, &[0.8], "Come to stillness, standing or lying down. Feel your heartbeat and breath settle, and the energy still moving inside you. Rest here, and drink some water when you finish.").ramp(20.0).tex(0.3)]),
+      tx("drum", 1.0, 0.0, 0.0)));
+
+    // ================= Western esoteric and classical =================
+    let g = "Western Esoteric & Classical";
+    {
+        const D_DRIFT: &str = "Remember to think of your theme. Let it be there as you drift.";
+        const D_REPORT: &str = "Without opening your eyes, what were you just thinking about? Say it softly, or note it, and then let yourself drift again.";
+        v.push(p(g, "we_incubation", "Dream Incubation — Temple of Asclepius to the Sleep Lab", "Horowitz 2020, 2023 · 30 min", &[150.0], &[0.35], "brown", "binaural", "Research",
+          "<p>In ancient Greece the sick slept in the temples of <b>Asclepius</b>, such as Epidaurus, hoping the god would appear in a dream to heal or advise them; this is <b>incubation</b>, from the Latin for \"lying down in\". At MIT, <b>Haar Horowitz et al. (2020, <i>Consciousness and Cognition</i>)</b> brought it into the lab as <b>targeted dream incubation</b>: just as people drifted into sleep, a voice reminded them of a theme, then woke them briefly to report their imagery, again and again. Their hypnagogic dreams took up the theme far more often, and in a follow-up (<b>2023, <i>Scientific Reports</i></b>) incubated naps improved performance on creative tasks afterwards. The study used a hand-worn sensor to time the prompts; this session approximates it with timed prompts, so keep the volume low.</p>",
+          vec![st("Settle", 3.0, &[10.0], "Welcome to dream incubation, the ancient practice of the healing temples of Asclepius, studied today at the edge of sleep. Lie down comfortably and choose a theme: a question, an image, or a problem to solve. Keep a notebook or a voice recorder nearby."),
+               st("Theme", 2.0, &[8.0], "Hold your theme in mind. Say it to yourself in a few simple words, and picture it. Then let yourself start to drift toward sleep, keeping it loosely in mind."),
+               st("Drift", 5.0, &[6.0], D_DRIFT),
+               st("Report", 1.0, &[8.0], D_REPORT),
+               st("Drift", 5.0, &[5.5], D_DRIFT),
+               st("Report", 1.0, &[8.0], D_REPORT),
+               st("Drift", 5.0, &[5.0], D_DRIFT),
+               st("Report", 1.0, &[8.0], D_REPORT),
+               st("Drift", 5.0, &[5.0], D_DRIFT),
+               st("Wake", 2.0, &[10.0], "Gently come back now. Write down everything you can remember, even fragments, then read your theme again, and see what the drifting mind has offered.")]));
+    }
+    v.push(p(g, "we_plotinus", "Plotinus — Ascent to the One (Neoplatonism)", "Enneads V.8 and VI.9 · 25 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Plotinus</b> (204/5–270), founder of Neoplatonism, taught that the soul can return to its source, <b>the One</b>, by turning inward, from the body to the soul, from the soul to <b>Intellect</b> (<i>nous</i>), and beyond it to the One itself. His student Porphyry wrote that Plotinus reached this union four times while he knew him. In <i>Ennead</i> V.8.9 Plotinus gives an exercise: picture the whole universe as one transparent sphere, then take away its mass and size. Another treatise ends with the words \"take away everything\" (V.3.17), and the <i>Enneads</i> close with the flight \"of the alone to the alone\" (VI.9.11).</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the contemplation of Plotinus, the third century philosopher who taught that the soul can return to its source, the One. Sit upright and close your eyes. You will turn inward, step by step, from the world, to the soul, to the One."),
+           st("The sphere", 6.0, &[8.0], "Imagine the whole universe as a single transparent sphere: sun, stars, earth, seas and living things, all seen at once, each one visible through all the others, as Plotinus describes."),
+           st("Without mass", 5.0, &[7.0], "Now keep the sphere, but take away its mass, its size and its place. Let it be pure light, held in the mind, no longer made of matter."),
+           st("Intellect", 5.0, &[6.0], "Turn from the image to the light that is seeing it. Plotinus called this nous, intellect, where knower and known are one. Rest as that seeing."),
+           st("Take away everything", 5.0, &[5.5], "Plotinus ends one treatise with three words: take away everything. Let go of the sphere, the light, even the seeing. Rest in the One, the alone with the alone."),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "we_above", "As Above, So Below — Becoming the Cosmos (Hermetic)", "Corpus Hermeticum XI · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>Hermetic</b> writings, attributed to <b>Hermes Trismegistus</b>, shaped Western esotericism from the Renaissance to the Golden Dawn. The <b>Emerald Tablet</b>, first known from Arabic sources of around the 9th century, gives the famous principle usually summarised as <b>\"as above, so below\"</b>: what is below mirrors what is above. In the <b>Corpus Hermeticum</b> (book XI, 2nd–3rd century) Mind tells Hermes that to understand God he must make himself as vast as the cosmos, leap beyond every body and all time, and become eternity. This session moves from the small world of the body to the great world of the sky, then expands to hold both.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to a Hermetic contemplation, from the writings attributed to Hermes Trismegistus. Sit upright and close your eyes. The Emerald Tablet teaches: as above, so below. You will expand your awareness until it holds the whole cosmos."),
+           st("Below", 4.0, &[8.0], "Begin with the body: the breath, the heartbeat, the warmth. A small world, a microcosm, made of the same elements as the stars."),
+           st("Above", 4.0, &[7.0], "Now picture the sky above you, the moon, the planets and the stars. Sense how your heartbeat and the turning of the heavens are one pattern: as above, so below."),
+           st("Becoming the cosmos", 6.0, &[6.0], "The Hermetic books say: make yourself as vast as the cosmos, leap beyond all time, become eternity. Let your awareness expand to contain everything, every place and every time, at once."),
+           st("The one thing", 3.0, &[5.5], "Rest as that vastness, holding above and below together as one thing."),
+           st("Return", 1.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "we_middlepillar", "The Middle Pillar — Five Spheres of Light (Golden Dawn)", "Regardie 1938 · 22 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>Middle Pillar</b> exercise comes from the Hermetic Order of the <b>Golden Dawn</b> (founded 1888) and was published by <b>Israel Regardie</b> in <i>The Middle Pillar</i> (1938). It adapts the central column of the Kabbalistic Tree of Life to the body: five spheres of light, from above the head to the feet, each \"vibrated\" with a Hebrew divine name, the Golden Dawn way of intoning a word so that it resonates through the body. The four-letter name is spelled out letter by letter, as Regardie gives it. The light is then circulated around the body. Many ceremonial magicians practise it daily for energy and balance.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the Middle Pillar, the Golden Dawn exercise published by Israel Regardie in 1938. Stand or sit upright with your eyes closed. You will build five spheres of light down the centre of your body, vibrating a divine name at each one."),
+           st("Crown", 3.0, &[9.0], "Above the crown of your head, picture a sphere of brilliant white light. Breathe in, and on the out breath vibrate the name eh hey yeh, meaning I am, so that you feel it resonate. Repeat it a few times."),
+           st("Throat", 3.0, &[8.0], "Draw a shaft of light down to your throat, where a second sphere of light forms. Vibrate: yod heh vav heh elohim."),
+           st("Heart", 3.0, &[7.5], "Let the shaft descend to your heart, forming a sphere of golden light. Vibrate: yod heh vav heh eloah ve-daath."),
+           st("Groin", 3.0, &[7.0], "Down to the groin, a third sphere below the heart. Vibrate: shaddai el chai, the almighty living one."),
+           st("Feet", 3.0, &[6.5], "Down to your feet, a sphere of light in the ground beneath them. Vibrate: adonai ha-aretz, lord of the earth. Now see the whole pillar of light, from crown to feet."),
+           st("Circulation", 4.0, &[6.0], "Now circulate the light. Breathe out and let it flow down your left side; breathe in and let it rise up your right side. Then down the front and up the back. Finally, let it rise up the centre and shower down around you like a fountain."),
+           st("Return", 1.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(p(g, "we_pentagram", "Lesser Banishing Ritual of the Pentagram (Golden Dawn)", "Centring ritual · 15 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The <b>Lesser Banishing Ritual of the Pentagram</b> is the best-known ritual of Western ceremonial magic, taught by the Hermetic Order of the Golden Dawn and published by Israel Regardie in <i>The Golden Dawn</i> (1937–40). Practitioners use it daily to centre themselves and clear their space. It has three parts: the <b>Kabbalistic Cross</b>; a pentagram traced in each of the four directions with a divine name; and the calling of the four archangels, Raphael, Gabriel, Michael and Uriel. Then the cross is repeated. You stand facing east, with room to move your arms.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the lesser banishing ritual of the pentagram, the best known ritual of Western ceremonial magic. Stand facing east, with room to move your arms. Take a few slow breaths, and picture yourself growing tall, your head among the stars and your feet on the earth."),
+           st("Kabbalistic Cross", 2.0, &[9.0], "The Kabbalistic cross. Touch your forehead and vibrate: ateh, yours is. Touch your chest: malkuth, the kingdom. Your right shoulder: ve-geburah, and the power. Your left shoulder: ve-gedulah, and the glory. Clasp your hands at your heart: le-olam, forever. Amen."),
+           st("Pentagrams", 5.0, &[8.0], "Facing east, trace a large star in the air: from your left hip, up to above your head, down to your right hip, up to your left shoulder, across to your right shoulder, and back to your left hip. Point to its centre and vibrate: yod heh vav heh. Turn to the south and do the same, vibrating: adonai. To the west: eh hey yeh. To the north: agla. Then turn back to the east."),
+           st("Archangels", 3.0, &[7.0], "Stretch your arms out like a cross, and say: before me, Raphael. Behind me, Gabriel. On my right hand, Michael. On my left hand, Uriel. For about me flames the pentagram, and within me shines the six rayed star."),
+           st("Closing cross", 2.0, &[8.0], "Repeat the Kabbalistic cross: ateh, malkuth, ve-geburah, ve-gedulah, le-olam, amen. Stand in the clear, quiet space you have made."),
+           st("Stillness", 1.0, &[10.0], "Rest for a moment, centred and calm, then go on with your day.")]));
+    v.push(p(g, "we_bards", "The Bardic Darkness — Composing in the Dark", "Gaelic poets, Martin 1703 · 30 min", &[200.0], &[0.45], "brown", "binaural", "Traditional",
+      "<p>In <i>A Description of the Western Islands of Scotland</i> (1703), <b>Martin Martin</b> recorded how the Gaelic poets composed: they shut themselves away in darkness for a day, lying on their backs with a stone on the belly and their plaids wrapped about their heads to cover their eyes, and worked their verses in their minds. Accounts of the Irish bardic schools likewise describe students composing in dark, windowless rooms. The darkness turns attention inward toward the half-dreaming state where images and rhythms arise. Use a light weight, such as a folded blanket, not a stone.</p>",
+      vec![st("Settle", 3.0, &[10.0], "Welcome to the bardic darkness. In 1703 Martin Martin wrote that the Gaelic poets composed lying in the dark, with a stone on the belly and a plaid over their eyes. Lie on your back in a dark room, cover your eyes, and rest a light weight, like a folded blanket, on your belly."),
+           st("Subject", 2.0, &[8.0], "Choose your subject: a poem, a song, a story, or a question. Say it once in your mind, then let it go into the darkness."),
+           st("Darkness", 10.0, &[6.0], "Lie still in the darkness. Feel the weight rise and fall with your breath. Let words, images and rhythms come up from the dark, without forcing them. Turn them over, and let them grow."),
+           st("Composing", 12.0, &[5.5], "Begin to shape what comes. Hold the lines in memory, as the bards did, without writing. Repeat them to yourself, change them, and polish them in the dark."),
+           st("Into the light", 3.0, &[10.0], "Slowly uncover your eyes and let the light back in. Write down what you composed while it is still fresh.")]));
+    v.push(p(g, "we_galdr", "Galdr — Chanting the Runes (Norse)", "Modern reconstruction · 15 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Galdr</b> (Old Norse, \"incantation\", from <i>gala</i>, to chant or crow) was a spoken or sung magic mentioned throughout the Eddas and sagas. In the <i>Hávamál</i>, Odin hangs nine nights on the windswept tree to win the runes, then lists eighteen charms he knows. How galdr actually sounded is unknown. Modern practitioners chant the names of the runes, reconstructed from medieval rune poems, with long, resonant vowels, and this session follows that <b>modern reconstruction</b> with four runes of the Elder Futhark: <b>Ansuz</b>, <b>Laguz</b>, <b>Isa</b> and <b>Dagaz</b>.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to galdr, the chanted magic of the Norse sagas. No one knows exactly how it sounded; this is a modern reconstruction, chanting the names of four runes. Stand or sit upright, and breathe deeply into your belly."),
+           st("Ansuz", 3.0, &[8.0], "Ansuz, the rune of the god, of breath and the spoken word. Breathe in, and on the out breath chant: aaan suuuz, letting the sound resonate in your chest. Repeat it again and again."),
+           st("Laguz", 3.0, &[7.0], "Laguz, the rune of water and flow. Chant: laaa guuuz, smooth and flowing, like a river."),
+           st("Isa", 3.0, &[6.0], "Isa, the rune of ice and stillness. Chant: eeee saaa, steady and clear. Let the mind become as still and clear as ice."),
+           st("Dagaz", 3.0, &[7.0], "Dagaz, the rune of day and dawn. Chant: daaa gaaaz, and feel light breaking through, like the sun rising."),
+           st("Silence", 1.0, &[8.0], "Let the chanting stop, and listen to the silence ringing after it.")]));
+
+    // ================= Trance and hypnosis techniques =================
+    let g = "Trance & Hypnosis Techniques";
+    v.push(p(g, "tr_autogenic", "Autogenic Training — The Six Standard Exercises", "Stetter & Kupper 2002 · 25 min", &[200.0], &[0.5], "pink", "binaural", "Research",
+      "<p><b>Autogenic training</b> was developed by the German psychiatrist <b>Johannes Heinrich Schultz</b> from his work with hypnosis and published in 1932. You silently repeat six formulas, each several times: <b>heaviness</b> in the limbs, <b>warmth</b> in the limbs, a <b>calm, regular heartbeat</b>, <b>calm breathing</b> (\"it breathes me\"), <b>warmth in the solar plexus</b> and a <b>cool forehead</b>. A meta-analysis of 60 studies (<b>Stetter &amp; Kupper 2002, <i>Applied Psychophysiology and Biofeedback</i></b>) found medium-to-large benefits for tension headache, mild high blood pressure, anxiety, mild depression and sleep problems. Schultz always ended with a brisk \"taking back\". If you have a heart condition, you can skip the heartbeat formula.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to autogenic training, the self relaxation method of Johannes Schultz. Lie down, or sit with your head slightly forward and your forearms resting on your thighs. You will silently repeat six simple formulas, each several times. Begin with: I am completely calm."),
+           st("Heaviness", 4.0, &[9.0], "First, heaviness. Repeat silently and slowly: my right arm is heavy. Then my left arm, both arms, and both legs. Let the heaviness happen by itself, without trying."),
+           st("Warmth", 4.0, &[8.0], "Second, warmth. Repeat: my right arm is warm. Then the left arm, both arms, and both legs. Picture warm sunlight resting on your limbs."),
+           st("Heartbeat", 3.0, &[7.5], "Third, the heart. Repeat: my heartbeat is calm and regular. If attending to your heart is uncomfortable, skip this one and simply rest."),
+           st("Breathing", 3.0, &[7.0], "Fourth, the breath. Repeat: my breathing is calm, or simply, it breathes me. Let the breath move by itself."),
+           st("Solar plexus", 3.0, &[6.5], "Fifth, the solar plexus. Repeat: my solar plexus is warm, and feel a gentle warmth spread through your upper belly."),
+           st("Cool forehead", 3.0, &[6.0], "Sixth, the forehead. Repeat: my forehead is pleasantly cool. Imagine a light, cool breeze on your forehead."),
+           st("Taking back", 3.0, &[12.0], "Now take it back, as Schultz taught. Clench your fists, bend your arms firmly, breathe in deeply, and open your eyes. Stretch, and be fully alert.").ramp(60.0)]));
+    v.push(p(g, "tr_erickson", "The 3-2-1 Method of Self-Hypnosis (Betty Erickson)", "Sight, sound, feeling · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p><b>Elizabeth \"Betty\" Erickson</b>, wife and collaborator of the psychiatrist <b>Milton H. Erickson</b>, taught a simple self-hypnosis method that many hypnotherapists still use. You first set how long you want to spend in trance and an intention for your unconscious mind. Then, with eyes open, you name three things you see, three you hear and three you feel; then two of each; then one of each. You close your eyes and repeat the count with inner images, sounds and feelings. Narrowing attention this way leads naturally into trance.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to Betty Erickson's three, two, one method of self hypnosis. Sit comfortably with your eyes open. First, decide to spend about fifteen minutes in trance, and set an intention: something you would like your inner mind to work on, put simply and positively."),
+           st("Three", 3.0, &[10.0], "With your eyes open, slowly and silently name three things you can see. Then three things you can hear. Then three things you can feel, like your hands resting or the chair beneath you."),
+           st("Two", 2.0, &[9.0], "Now two things you can see, two you can hear, and two you can feel. They can be the same or new."),
+           st("One", 2.0, &[8.0], "Now one thing you can see, one you can hear, and one you can feel. Then let your eyes close."),
+           st("Inner count", 4.0, &[7.0], "With your eyes closed, do the same inside. Imagine three things you see in your mind, three you hear, and three you feel. Then two of each. Then one of each."),
+           st("Trance", 6.0, &[6.0], "Now let go, and let your inner mind work on your intention in its own way. There is nothing to do. Drift, daydream, or simply rest."),
+           st("Emerge", 1.0, &[12.0], "It's time to come back. Count yourself up from one to five, more alert with each number, and open your eyes, refreshed.").ramp(30.0)]));
+    let mut x = p(g, "tr_braid", "Braid's Eye Fixation — The First Hypnotic Induction", "Braid 1843 · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+      "<p>The Scottish surgeon <b>James Braid</b> (1795–1860) coined the word <b>hypnotism</b> in <i>Neurypnology</i> (1843). His induction: fix the eyes and the whole attention on a small bright object held a little above eye level until the eyelids grow heavy and close by themselves. Braid rejected Mesmer's \"animal magnetism\" and explained hypnosis as attention absorbed in a single idea, which he later called <i>monoideism</i>; modern hypnosis research descends from his view. The <b>🔆 gazing aid</b> shows a still bright point. Never strain your eyes; close them whenever you like.</p>",
+      vec![st("Settle", 2.0, &[10.0], "Welcome to the eye fixation method of James Braid, the surgeon who named hypnotism in 1843. Open the bright point on this screen, or hold a small shiny object, about an arm's length away and a little above eye level. Sit back comfortably."),
+           st("Fixation", 5.0, &[10.0], "Fix your eyes and your whole attention on the point. Keep looking, without straining. Notice how your eyelids begin to feel heavy, and your vision may blur or swim. That's normal."),
+           st("Eyes closing", 3.0, &[8.0], "Let the heaviness grow. When your eyelids want to close, let them close, all by themselves. If they haven't closed yet, gently close them now."),
+           st("Deepening", 7.0, &[6.0], "With your eyes closed, let your attention rest on a single idea: deeper and calmer with each breath. Braid believed this was hypnosis: the whole mind absorbed in one idea."),
+           st("Emerge", 3.0, &[12.0], "Now come back. Take a deep breath, feel your body, and open your eyes, wide awake and alert.").ramp(60.0)]);
+    x.visual = "trataka:point".into();
+    v.push(x);
+    {
+        const FR_SURFACE: &str = "Now come up, just a little. Let your eyes open for a moment and notice how relaxed you are. Then let them close again, and go down twice as deep.";
+        const FR_DOWN: &str = "Sink down again, twice as deep as before. Let every muscle let go, and let the mind drift.";
+        v.push(p(g, "tr_fractionation", "Fractionation — Going Deeper by Rising (Vogt)", "Vogt's deepening method · 20 min", &[200.0], &[0.5], "pink", "binaural", "Traditional",
+          "<p><b>Fractionation</b> is a deepening method developed in the 1890s by the German neurologist <b>Oskar Vogt</b> (1870–1959): the subject is hypnotised, brought partly out, asked about the experience, and hypnotised again. Each re-entry tends to go deeper than the last, and hypnotists still use it to deepen trance quickly. Here you sink down, rise a little and open your eyes briefly, three times, then settle into the deepest round.</p>",
+          vec![st("Settle", 2.0, &[10.0], "Welcome to fractionation, a deepening method first used by the neurologist Oskar Vogt in the eighteen nineties. Sit or lie comfortably and close your eyes. You will sink down, come up a little, and sink again, going deeper each time."),
+               st("Down", 3.0, &[8.0], "Let your body relax from head to toe. Count slowly down from ten to one, sinking a little deeper with each number."),
+               st("Surface", 1.0, &[10.0], FR_SURFACE).ramp(20.0),
+               st("Deeper", 3.0, &[6.5], FR_DOWN).ramp(20.0),
+               st("Surface", 1.0, &[10.0], FR_SURFACE).ramp(20.0),
+               st("Deeper", 3.0, &[5.5], FR_DOWN).ramp(20.0),
+               st("Surface", 1.0, &[10.0], FR_SURFACE).ramp(20.0),
+               st("Deepest", 4.0, &[5.0], "Now sink all the way down, deeper than ever, and rest in deep calm. There is nothing to do and nothing to think about.").ramp(20.0),
+               st("Emerge", 2.0, &[12.0], "Now come all the way back. Count up from one to five, more alert with each number. Five: eyes open, fully awake.").ramp(30.0)]));
+    }
+}
+
+/// Tradition keys for the Tradition filter: a family key, then its branch (if any).
+/// Curated by hand: text matching would, for example, file singing bowls under Tibetan Buddhism.
+/// Families: abrahamic (christian, jewish, islamic), hindu (vedanta, tantra, mantra, yoga),
+/// buddhist (tibetan, theravada, zen, eastasian), taoist, shamanic,
+/// western (hermetic, classical, celtic, norse), secular.
+fn trad_of(id: &str, group: &str) -> Vec<String> {
+    let k: &[&str] = match group {
+        "Christian Mysticism" => &["abrahamic", "christian"],
+        "Jewish Mysticism & Kabbalah" => &["abrahamic", "jewish"],
+        "Sufi Mysticism" => &["abrahamic", "islamic"],
+        "Tibetan Buddhism & Bön" => &["buddhist", "tibetan"],
+        "Taoist Inner Cultivation" => &["taoist"],
+        "Shamanic & Ancestral Rituals" => &["shamanic"],
+        "Trance & Hypnosis Techniques" => &["secular"],
+        _ => match id {
+            "bu_metta" | "bu_brahma" | "bu_anapana" | "bu_noting" | "bu_kasina" | "my_jhana" | "my_vipassana" => &["buddhist", "theravada"],
+            "bu_mu" | "bu_shikantaza" | "zen" => &["buddhist", "zen"],
+            "bu_nembutsu" | "bu_daimoku" | "bu_ajikan" => &["buddhist", "eastasian"],
+            "my_tibetan" | "ap_phowa" | "ap_dreamyoga" | "br_tummo" | "br_vase" | "monks" => &["buddhist", "tibetan"],
+            "my_nondual" => &["buddhist", "tibetan", "hindu", "vedanta"],
+            "hy_mandukya" | "my_inquiry" => &["hindu", "vedanta"],
+            "hy_vbt" => &["hindu", "tantra"],
+            "hy_bija" => &["hindu", "tantra", "mantra"],
+            "hy_shiva" | "hy_gayatri" | "hy_mahamantra" | "om" | "omdrone" | "my_mantra" => &["hindu", "mantra"],
+            "kirtan" => &["hindu", "yoga", "mantra"],
+            "hy_trataka" | "hy_soham" | "hy_antarmouna" | "nsdr" | "my_nada" | "br_kapal" | "br_bhastrika" | "br_fire"
+            | "br_sky" | "br_bhramari" | "br_nadi" | "br_ratio" | "br_slowbh" => &["hindu", "yoga"],
+            "my_centering" | "my_jesus" | "my_vocal" => &["abrahamic", "christian"],
+            "mantra6" => &["abrahamic", "christian", "hindu", "mantra"],
+            "my_hitbodedut" => &["abrahamic", "jewish"],
+            "my_dhikr" => &["abrahamic", "islamic"],
+            "my_orbit" => &["taoist"],
+            "shaman" | "drumtrance" | "ap_upper" | "ap_middle" => &["shamanic"],
+            "ap_rising" | "ap_tattva" | "we_above" | "we_middlepillar" | "we_pentagram" => &["western", "hermetic"],
+            "we_plotinus" | "my_psychomanteum" => &["western", "classical"],
+            "we_incubation" => &["western", "classical", "secular"],
+            "we_bards" => &["western", "celtic"],
+            "we_galdr" => &["western", "norse"],
+            "hypno" | "ganzfeld" | "my_float" | "my_arc" | "edison" | "ap_hypnotic" | "ap_imagined" | "ap_lab" => &["secular"],
+            _ => &[],
+        },
+    };
+    k.iter().map(|s| s.to_string()).collect()
 }
 
 fn crate_band(hz: f64) -> &'static str {
@@ -1048,6 +1716,16 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
         ("Breathwork (opt-in)", &["breathwork", "breathing", "hyperventilation", "wim hof", "holotropic", "rebirthing", "power breathing", "connected breathing", "pranayama", "breath hold"]),
         ("Breathing Techniques", &["breathing", "breath", "breathwork", "pranayama", "slow breathing", "calm", "relaxation", "breathing guide"]),
         ("Spiritual & Mystical Experiences", &["spiritual", "mystical", "mystic", "mysticism", "religious", "prayer", "contemplation", "contemplative", "meditation", "transcendence", "enlightenment", "awakening", "sacred"]),
+        ("Christian Mysticism", &["christian", "christianity", "christian mysticism", "mystical", "mysticism", "mystic", "prayer", "contemplative", "contemplation", "spiritual", "abrahamic", "meditation"]),
+        ("Tibetan Buddhism & Bön", &["tibetan", "tibetan buddhism", "vajrayana", "bon", "bön", "buddhist", "buddhism", "meditation", "spiritual"]),
+        ("Buddhist Meditation", &["buddhist", "buddhism", "dharma", "meditation", "spiritual"]),
+        ("Hindu & Yogic Meditation", &["hindu", "hinduism", "yoga", "yogic", "vedic", "meditation", "spiritual"]),
+        ("Sufi Mysticism", &["sufi", "sufism", "islam", "islamic", "mystical", "mysticism", "mystic", "abrahamic", "spiritual"]),
+        ("Jewish Mysticism & Kabbalah", &["jewish", "judaism", "kabbalah", "kabbala", "cabala", "mystical", "mysticism", "mystic", "abrahamic", "spiritual"]),
+        ("Taoist Inner Cultivation", &["taoist", "taoism", "daoist", "daoism", "tao", "dao", "chinese", "inner cultivation", "meditation", "spiritual"]),
+        ("Shamanic & Ancestral Rituals", &["shamanic", "shaman", "shamanism", "ritual", "rituals", "ancestral", "trance", "altered states"]),
+        ("Western Esoteric & Classical", &["western esoteric", "esoteric", "esotericism", "western", "occult", "mystery tradition", "ritual", "spiritual"]),
+        ("Trance & Hypnosis Techniques", &["trance", "hypnosis", "hypnotic", "self-hypnosis", "induction", "relaxation", "altered states"]),
         ("Astral Projection & OBE", &["astral", "astral projection", "obe", "out of body", "out-of-body", "projection", "monroe", "rope", "phase", "wbtb", "lucid", "vibrations", "astral travel", "soul travel"]),
     ];
     // (needle in lowercase text, tags to add)
@@ -1084,6 +1762,22 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
         ("pranayama", &["pranayama", "yoga breathing"]), ("hyperventilat", &["hyperventilation"]), ("box breathing", &["box breathing"]),
         ("sighing", &["sighing", "physiological sigh"]), ("humming", &["humming"]), ("nostril", &["alternate nostril"]), ("flashlight", &["flashlight", "torch"]),
         ("eyes open", &["eyes open"]), ("hypnotis", &["hypnosis", "hypnotic"]), ("shamanism", &["shamanic", "shaman"]), ("kriya", &["kriya"]),
+        ("kabbal", &["kabbalah"]), ("sefir", &["sefirot", "tree of life"]), ("tree of life", &["tree of life"]), ("merkavah", &["merkavah", "chariot mysticism"]),
+        ("shema", &["shema"]), ("niggun", &["niggun", "singing"]), ("dervish", &["dervish"]), ("rumi", &["rumi"]), ("koan", &["koan"]),
+        ("nembutsu", &["nembutsu", "pure land"]), ("amida", &["pure land"]), ("nichiren", &["nichiren", "lotus sutra"]), ("shingon", &["shingon"]),
+        ("kasina", &["kasina"]), ("kasiṇa", &["kasina"]), ("mettā", &["metta", "loving-kindness"]), ("metta", &["metta", "loving-kindness"]),
+        ("loving-kindness", &["loving-kindness"]), ("loving kindness", &["loving-kindness"]), ("tonglen", &["tonglen", "compassion"]),
+        ("dzogchen", &["dzogchen"]), ("mahamudra", &["mahamudra"]), ("bardo", &["bardo"]), ("chöd", &["chod"]), ("japa", &["japa", "mantra"]),
+        (" mala", &["mala", "prayer beads"]), ("beads", &["prayer beads"]), ("tantra", &["tantra"]), ("upanishad", &["upanishad"]), ("upaniṣad", &["upanishad"]),
+        ("shiva", &["shiva"]), ("krishna", &["krishna", "bhakti"]), ("bhakti", &["bhakti"]), ("gayatri", &["gayatri"]), ("gāyatrī", &["gayatri"]),
+        ("trataka", &["trataka"]), ("trāṭaka", &["trataka"]), ("candle", &["candle"]), ("gazing", &["gazing"]), ("lectio", &["lectio divina"]),
+        ("ignatius", &["ignatian", "jesuit"]), ("teresa", &["teresa of avila", "carmelite"]), ("cloud of unknowing", &["cloud of unknowing"]),
+        ("taizé", &["taize"]), ("quaker", &["quaker"]), ("psalm", &["psalm", "bible"]), (" icon", &["icon"]), ("vigil", &["vigil", "night prayer"]),
+        ("zhuangzi", &["zhuangzi", "chuang tzu"]), ("qigong", &["qigong"]), ("power animal", &["power animal", "spirit animal"]), ("rattle", &["rattle"]),
+        (" dance", &["dance"]), ("dancing", &["dance"]), ("incubat", &["dream incubation"]), ("asclepius", &["asclepius"]),
+        ("plotinus", &["plotinus", "neoplatonism"]), ("hermes", &["hermes trismegistus"]), ("pentagram", &["pentagram", "banishing"]),
+        ("middle pillar", &["middle pillar"]), ("bardic", &["bardic", "poetry"]), ("rune", &["runes"]), ("galdr", &["galdr"]),
+        ("autogenic", &["autogenic training"]), ("erickson", &["ericksonian"]), ("eye fixation", &["eye fixation"]), ("fractionation", &["fractionation"]),
         ("wim hof", &["wim hof"]), ("arrhythmic", &["arrhythmic"]), ("afterimage", &["afterimage"]), ("lucid dream", &["lucid", "lucid dreaming"]),
     ];
     let band = |hz: f64| -> &'static str {
@@ -1119,6 +1813,11 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
                 "breathbell" => &["breathing", "bell", "breath"],
                 "pulses" => &["sleep", "deep sleep", "slow wave", "pink noise"],
                 "rain" => &["rain", "nature", "soundscape"],
+                "mokugyo" => &["wooden fish", "mokugyo", "chanting", "rhythm"],
+                "rattle" => &["rattle", "rhythm", "trance", "shamanic"],
+                "gong" => &["gong", "gong bath", "sound bath"],
+                "heartbeat" => &["heartbeat", "heart", "pulse"],
+                "kartal" => &["cymbals", "kartal", "kirtan", "chanting"],
                 _ => &[],
             };
             for t in k { add(t); }
@@ -1127,6 +1826,39 @@ fn auto_tags(v: &mut [Preset], also: &[String]) {
         if p.visual.contains("flicker") { add("flicker"); add("light journey"); add("visual"); add("hallucination"); add("strobe"); }
         if p.visual == "tattva" { add("tattva"); add("symbol"); add("afterimage"); add("visual"); }
         if p.visual.starts_with("breath:") { add("breathing guide"); add("breathing"); }
+        if p.visual.starts_with("kasina") { add("kasina"); add("gazing"); add("gazing aid"); add("visual"); if p.visual == "kasina:moon" { add("moon"); } }
+        if p.visual.starts_with("trataka") {
+            add("gazing"); add("gazing aid"); add("visual");
+            if p.visual == "trataka:point" { add("eye fixation"); } else { add("candle"); add("flame"); }
+        }
+        for k in &p.trad {
+            let ts: &[&str] = match k.as_str() {
+                "abrahamic" => &["abrahamic"],
+                "christian" => &["christian", "christianity"],
+                "jewish" => &["jewish", "judaism"],
+                "islamic" => &["islam", "islamic", "sufi", "sufism"],
+                "hindu" => &["hindu", "hinduism"],
+                "vedanta" => &["vedanta", "advaita"],
+                "tantra" => &["tantra", "tantric"],
+                "mantra" => &["mantra", "chanting"],
+                "yoga" => &["yoga", "yogic"],
+                "buddhist" => &["buddhist", "buddhism", "dharma"],
+                "tibetan" => &["tibetan", "tibetan buddhism", "vajrayana"],
+                "theravada" => &["theravada", "pali"],
+                "zen" => &["zen", "chan"],
+                "eastasian" => &["mahayana", "japanese buddhism"],
+                "taoist" => &["taoist", "taoism", "daoist", "daoism"],
+                "shamanic" => &["shamanic", "shaman", "shamanism"],
+                "western" => &["western esoteric", "esoteric", "esotericism"],
+                "hermetic" => &["hermetic", "hermeticism"],
+                "classical" => &["classical", "ancient greek"],
+                "celtic" => &["celtic", "gaelic"],
+                "norse" => &["norse", "heathen"],
+                "secular" => &["secular", "non-religious"],
+                _ => &[],
+            };
+            for t in ts { add(t); }
+        }
         if p.stages.iter().any(|s| s.breath) { add("breathing"); add("breath pacer"); }
         let text = format!(" {} {} {} {} {}", p.name, p.short, p.about,
             p.stages.iter().map(|s| format!("{} {}", s.name, s.cue)).collect::<Vec<_>>().join(" "),
