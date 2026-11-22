@@ -1,7 +1,8 @@
 """Adds the lock-screen media player to the Tauri-generated Android project.
 
 Run from mobile/ after `cargo tauri android init` (the generated gen/ folder is not committed):
-  - copies FocusMedia*.kt next to MainActivity.kt (package filled in automatically)
+  - copies the Kotlin files (lock-screen player, flashlight, screen refresh rate) next to
+    MainActivity.kt (package filled in automatically)
   - hooks MainActivity.onWebViewCreate -> FocusMedia.attach
   - adds the media foreground service + permissions to AndroidManifest.xml
   - adds androidx.media / androidx.core to the app's Gradle dependencies

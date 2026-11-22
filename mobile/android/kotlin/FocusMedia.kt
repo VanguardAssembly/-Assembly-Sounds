@@ -26,8 +26,10 @@ object FocusMedia {
         web = WeakReference(wv)
         wv.addJavascriptInterface(Bridge(), "FocusMedia")
         // Opt-in flashlight strobe for Light journeys (see FocusLight.kt).
-        FocusLight.init(activity.applicationContext)
+        FocusLight.init(activity)
         wv.addJavascriptInterface(FocusLight.Bridge(), "FocusLight")
+        // Highest screen refresh rate (see FocusScreen.kt).
+        FocusScreen.attach(activity, wv)
         // An interface added after the page started loading only appears after a reload.
         wv.postDelayed({
             wv.evaluateJavascript("typeof window.FocusMedia") { r ->
@@ -40,6 +42,13 @@ object FocusMedia {
         val wv = web?.get() ?: return
         val safe = action.filter { it.isLetter() }
         wv.post { wv.evaluateJavascript("window.__media&&window.__media('$safe',$arg)", null) }
+    }
+
+    /** The app stopped a light journey itself (screen off, app in the background): tell the page. */
+    fun lightStopped(why: String) {
+        val wv = web?.get() ?: return
+        val safe = why.filter { it.isLetter() }
+        wv.post { wv.evaluateJavascript("window.__lightStopped&&window.__lightStopped('$safe')", null) }
     }
 
     class Bridge {
