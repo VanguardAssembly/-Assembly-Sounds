@@ -3,8 +3,12 @@ name: Chants
 # Renders the group chants in tools/gen_chants.py (mantras, prayers, sacred names) that are new
 # or changed, with the Kokoro-82M speech model (Apache-2.0) and the WORLD vocoder, in parallel
 # shards, then commits chant/*.ogg and chant/index.json.
-# Run it by hand after adding or changing chants:  gh workflow run chants.yml
+# Runs by itself when the generator changes on any branch, or by hand:  gh workflow run chants.yml
 on:
+  push:
+    paths:
+      - tools/gen_chants.py
+      - .github/workflows/chants.yml
   workflow_dispatch:
     inputs:
       only:
