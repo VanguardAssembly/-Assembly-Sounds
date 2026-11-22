@@ -245,6 +245,10 @@ fn handle(v: &Value, app: &mut App, shared: &Arc<Mutex<Shared>>, wv: &wry::WebVi
                 if let Some(st) = v.get("settings") { save_settings(&app.settings_path, st); }
             }
         }
+        "infra" => {
+            let lvl = f(v, "level", 0.0);
+            sh.infra = if lvl > 0.0 { Some((f(v, "hz", 10.0).clamp(5.0, 19.0), lvl.clamp(0.0, 1.0) as f32)) } else { None };
+        }
         "speak" => {
             // replay current stage cue
             app.last_stage = usize::MAX;

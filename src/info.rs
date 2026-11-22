@@ -32,6 +32,12 @@ const BREATH_RES: &str = "<p>Slow breathing at about <b>6 breaths per minute</b>
 // ---------------------------------------------------------------- main lookup
 fn info_for(p: &Preset) -> Info {
     let id = p.id.as_str();
+    if let Some(x) = ib_info(id) {
+        return x;
+    }
+    if let Some(x) = lj_info(id) {
+        return x;
+    }
     if let Some(x) = extra(id) {
         return x;
     }
@@ -568,6 +574,48 @@ fn extra(id: &str) -> Option<Info> {
             "<p>Traditional; modern form from 20th-century guided meditation.</p>",
             "<p>Claimed to \"anchor\" energy back into the body after astral work.</p>",
             "<p>Physiologically, a short period of rising alertness helps clear sleep inertia (grogginess), which can last up to 30 minutes after deep relaxation or naps (Tassi &amp; Muzet, 2000). Don't drive straight after deep sessions.</p>"),
+        _ => None,
+    }
+}
+
+// ------------------------------------------------- Light Journeys (flicker)
+const LJ_WHAT: &str = "<p><b>Flicker-light stimulation</b>: bright light flashing evenly on closed eyes makes the visual cortex fire in rhythm with it. Within seconds most people see vivid colours and moving geometric patterns that aren't there, called <b>stroboscopic</b> or <b>flicker-induced hallucinations</b>. In this app the flash rate follows the session's binaural beat, so eyes and ears get the same rhythm (audio-visual entrainment). It only runs after you accept the warning screen.</p>";
+const LJ_ORIGIN: &str = "<p>Jan Purkinje described patterns from flickering sunlight through spread fingers in <b>1819</b>. Neuroscientist W. Grey Walter studied flicker with EEG in the 1940s–50s (<i>The Living Brain</i>, 1953). Artist <b>Brion Gysin</b> and Ian Sommerville built the <b>Dreamachine</b> in 1959. 1980s–90s \"mind machines\" combined LED goggles with binaural beats; Lumenate brought it to phone flashlights in the 2020s.</p>";
+const LJ_ERA: &str = "<p>Described since 1819; studied with EEG since the 1940s; phone apps since the 2020s.</p>";
+const LJ_CLAIMS: &str = "<p>Claimed to give psychedelic-like experiences without drugs, deepen meditation, and reduce stress. Some users report emotional release or insight.</p>";
+const LJ_RESEARCH: &str = "<p>The visuals are well established. <b>Allefeld et al. (2011, <i>Consciousness and Cognition</i>)</b> found pattern and colour experiences depend on rate, strongest around 10 Hz. <b>Bartossek et al. (2021, <i>PLOS ONE</i>)</b> found 10 Hz flicker produced stronger altered-state ratings than 3 Hz. <b>Amaya et al. (2023)</b>, from the Dreamachine team, found rhythmic flicker beat arrhythmic. Ermentrout &amp; Cowan (1979) explained the geometry as waves across the visual cortex. Claims about lasting psychological benefits are not yet well tested.</p><p><b>Risks:</b> flashing light at 3–30 Hz (peak risk 15–25 Hz) can trigger seizures in people with photosensitive epilepsy, about 1 in 4,000 people, sometimes without any previous history. This app caps the rate at 12 Hz, needs warnings accepted, ramps in, and stops instantly on any tap or key.</p>";
+
+fn lj_info(id: &str) -> Option<Info> {
+    let x = |what: &str| Some(i(format!("{}{}", what, LJ_WHAT), LJ_ORIGIN, LJ_ERA, LJ_CLAIMS, LJ_RESEARCH));
+    match id {
+        "lj_alpha" => x("<p>A <b>10 Hz light journey</b>: the rate most studies find gives the strongest visuals.</p>"),
+        "lj_sweep" => x("<p>A <b>sweet-spot sweep</b> from 8 to 12 Hz to find the rate that works best for you.</p>"),
+        "lj_geometry" => x("<p><b>12 Hz geometry</b>: upper-alpha flicker for crisp patterns such as checkerboards, spirals and honeycombs (Klüver's form constants, 1926).</p>"),
+        "lj_descent" => x("<p>An <b>alpha-to-theta descent</b>: strong patterns first, then slower flicker for softer, dreamlike imagery.</p>"),
+        "lj_dream" => x("<p>A <b>Dreamachine-inspired</b> wandering rhythm between 8 and 12 Hz.</p>"),
+        "lj_ganzflicker" => x("<p><b>Ganzflicker</b>: full red and black at about 10 Hz (Shenyan et al., 2024; Königsmark et al., 2021).</p>"),
+        _ => None,
+    }
+}
+
+// ------------------------------------------------- Infrasound & Breathwork (opt-in)
+fn ib_info(id: &str) -> Option<Info> {
+    const INF_WHAT: &str = "<p><b>Infrasound</b> is sound below about 20 Hz, too low to hear as a pitch. At high levels it can be felt as pressure or vibration. Most headphones and almost all phone speakers reproduce very little of it, so you may notice nothing at all. Don't raise the volume to try to hear it. This layer is capped well below the tones and stops instantly when you turn it off.</p>";
+    const INF_ORIGIN: &str = "<p>Infrasound was studied in the 1960s (Vladimir Gavreau in France; NASA for rocket launches). Vic Tandy's 1998 \"ghost in the machine\" paper and the 2003 \"Soundless Music\" concert brought it into the paranormal debate. Wind turbines raised new questions in the 2000s.</p>";
+    const INF_RESEARCH: &str = "<p>Lab studies of infrasound at levels people meet in everyday life mostly find <b>no</b> reliable effects on mood or the body once people don't know when it's on (e.g. Crichton et al., 2014, <i>Health Psychology</i>, which found expectations caused the symptoms). Very loud infrasound (above about 110 dB, not possible here) can cause pressure, nausea and fatigue. This app's layer is quiet; any effect is likely expectation plus the beat underneath.</p>";
+    const BR_ORIGIN: &str = "<p>Fast, deep breathing appears in yogic <i>kapalabhati</i> and <i>bhastrika</i> and Tibetan tummo. In the West: rebirthing (Leonard Orr, 1970s), <b>Holotropic Breathwork</b> (Stanislav and Christina Grof, 1970s) and the <b>Wim Hof Method</b> (2010s).</p>";
+    const BR_RESEARCH: &str = "<p>Breathing fast blows off carbon dioxide (hypocapnia). That narrows blood vessels in the brain and causes tingling, light-headedness, cramping hands, vivid sensations and emotions. That's why it's used in EEG labs to <b>provoke seizures</b>. Kox et al. (2014, <i>PNAS</i>) showed trained Wim Hof breathers could boost adrenaline and dampen inflammation. Small studies suggest breathwork can lift mood (e.g. Fincham et al., 2023, <i>Scientific Reports</i> meta-analysis on breathwork and stress, small effects). <b>Breath holding after hyperventilation can cause blackout without warning</b>; there have been drownings when people practised in water.</p>";
+    let s = |what: &str, origin: &str, era: &str, claims: &str, research: &str| Some(i(what, origin, era, claims, research));
+    match id {
+        "inf_ghost" | "inf_concert" | "inf_7" | "inf_schumann" => s(INF_WHAT, INF_ORIGIN,
+            "<p>Studied since the 1960s; paranormal link from 1998.</p>",
+            "<p>Claimed to cause unease, awe, chills, \"presences\" and even ghost sightings, or (for 7 Hz) to resonate with organs.</p>", INF_RESEARCH),
+        "br_power" => s("<p><b>Power breathing rounds</b>: about 30 deep, quick breaths, an empty-lung hold until you need to breathe, then a 15-second recovery hold, repeated for 3 rounds.</p>", BR_ORIGIN,
+            "<p>Ancient roots; the Wim Hof Method since the 2010s.</p>",
+            "<p>Claimed to boost energy, immunity, cold tolerance and mood, and to give euphoric or mystical states.</p>", BR_RESEARCH),
+        "br_connected" => s("<p><b>Conscious connected breathing</b>: continuous, fuller-than-normal breaths with no pause between in and out, for 15 minutes.</p>", BR_ORIGIN,
+            "<p>1970s onward.</p>",
+            "<p>Claimed to release stored trauma and emotions, and to give non-ordinary states comparable to psychedelics.</p>", BR_RESEARCH),
         _ => None,
     }
 }

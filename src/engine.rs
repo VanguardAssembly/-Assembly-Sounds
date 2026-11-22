@@ -40,6 +40,8 @@ impl Noise {
 pub const SCOPE_FRAMES: usize = 1024;
 /// Absolute ceiling on output amplitude (≈ -1.4 dBFS) — hearing/equipment safety.
 const CEILING: f32 = 0.85;
+/// Maximum infrasound amplitude (before master volume and the limiter).
+const INFRA_MAX: f32 = 0.3;
 
 /// State shared between the UI thread and the audio callback.
 pub struct Shared {
@@ -59,6 +61,9 @@ pub struct Shared {
     pub live: Option<(f64, f64)>,
     pub voice: Option<(Arc<Vec<f32>>, u32)>,
     pub voice_cancel: bool,
+    /// Opt-in infrasound layer: (frequency Hz, level 0..1). Only set after the user accepts
+    /// the infrasound warning. Clamped to 5–19 Hz and capped well below the tones.
+    pub infra: Option<(f64, f32)>,
     // ---- audio → UI ----
     pub ack_gen: u64,
     pub elapsed: f64,
@@ -71,7 +76,7 @@ impl Default for Shared {
             timeline: None, generation: 0, seek: None, paused: false, stop: false,
             vol: 0.35, tone: 0.6, noise: 0.35, voice_vol: 0.8, tex: 0.7,
             noise_type: Noise::Pink, mode: Mode::Binaural, live: None,
-            voice: None, voice_cancel: false,
+            voice: None, voice_cancel: false, infra: None,
             ack_gen: 0, elapsed: 0.0, running: false, scope: vec![0.0; SCOPE_FRAMES * 2],
         }
     }
@@ -110,6 +115,10 @@ struct Synth {
     s_tex: f32,
     scope: Vec<f32>,
     scope_i: usize,
+    infra_hz: f64,
+    infra_t: f32,
+    s_infra: f32,
+    infra_ph: f64,
 }
 
 impl Synth {
@@ -122,6 +131,7 @@ impl Synth {
             noise_type: Noise::Pink, mode: Mode::Binaural, live: None,
             rng: 0x9E3779B97F4A7C15, pink: [[0.0; 7]; 2], brown: [0.0; 2], lp: [0.0; 2], surf: 0.0,
             voice: None, tex: None, tex_level: 0.7, s_tex: 0.0, scope: vec![0.0; SCOPE_FRAMES * 2], scope_i: 0,
+            infra_hz: 10.0, infra_t: 0.0, s_infra: 0.0, infra_ph: 0.0,
         }
     }
 
@@ -158,6 +168,13 @@ impl Synth {
         self.noise_lvl = s.noise.clamp(0.0, 1.0);
         self.voice_vol = s.voice_vol.clamp(0.0, 1.0);
         self.tex_level = s.tex.clamp(0.0, 1.0);
+        match s.infra {
+            Some((hz, lvl)) if hz.is_finite() && lvl.is_finite() => {
+                self.infra_hz = hz.clamp(5.0, 19.0);
+                self.infra_t = lvl.clamp(0.0, 1.0);
+            }
+            _ => self.infra_t = 0.0,
+        }
         self.noise_type = s.noise_type;
         self.mode = s.mode;
         self.live = s.live;
@@ -357,6 +374,15 @@ impl Synth {
             let bed = self.fade * self.pause_g * self.duck;
             let mut ol = (l * self.s_tone + nl * self.s_noise * 0.6 + xl * 0.5) * bed;
             let mut or = (r * self.s_tone + nr * self.s_noise * 0.6 + xr * 0.5) * bed;
+
+            // opt-in infrasound layer: slow 3 s fades, hard-capped at INFRA_MAX before the limiter
+            self.s_infra += (self.infra_t - self.s_infra) * (1.0 / (3.0 * self.sr as f32));
+            if self.s_infra > 1e-4 && self.running {
+                self.infra_ph = (self.infra_ph + TAU * self.infra_hz * dt) % TAU;
+                let x = self.infra_ph.sin() as f32 * self.s_infra * INFRA_MAX * self.fade * self.pause_g;
+                ol += x;
+                or += x;
+            }
 
             // voice cue (mono, centred) — advances only while playing
             if !self.paused {

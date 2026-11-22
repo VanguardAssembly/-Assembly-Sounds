@@ -25,6 +25,9 @@ object FocusMedia {
         appCtx = activity.applicationContext
         web = WeakReference(wv)
         wv.addJavascriptInterface(Bridge(), "FocusMedia")
+        // Opt-in flashlight strobe for Light journeys (see FocusLight.kt).
+        FocusLight.init(activity.applicationContext)
+        wv.addJavascriptInterface(FocusLight.Bridge(), "FocusLight")
         // An interface added after the page started loading only appears after a reload.
         wv.postDelayed({
             wv.evaluateJavascript("typeof window.FocusMedia") { r ->

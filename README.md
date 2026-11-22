@@ -4,12 +4,13 @@
 
 *(formerly "Focus")* · by Vanguard Assembly
 
-A native Windows app written in **Rust** that generates binaural, monaural, isochronic, AM, hybrid, bilateral and spatial (8D) beats in real time. It includes guided sessions inspired by the Monroe Institute's *Gateway Experience* Focus levels, and a library of **152 sessions** drawn from published research and popular frequency traditions.
+A native Windows app written in **Rust** that generates binaural, monaural, isochronic, AM, hybrid, bilateral and spatial (8D) beats in real time. It includes guided sessions inspired by the Monroe Institute's *Gateway Experience* Focus levels, and a library of **164 sessions** drawn from published research and popular frequency traditions.
 
 ## Features
 
 - **Sound Systems Library**: one session for every known way of delivering a rhythm to the brain: binaural, monaural, isochronic, smooth AM tones, hybrid binaural + isochronic, bilateral left↔right (EMDR-style), spatial/8D rotation, layered (Hemi-Sync-inspired) beats, descending carriers (Holosync-inspired), coloured noise and drumming. Any session can be played through any beat type.
 - **Astral Projection & OBE**: Monroe's vibrational state and roll-out, Robert Bruce's rope technique, Muldoon's target technique, Raduga's phase technique, wake-back-to-bed, theta–gamma stack, spatial floating, bilateral calming and after-practice grounding — each labelled Speculative with the real neuroscience explained.
+- **Opt-in experimental features**: ⚡ **Light journeys** (flicker-light closed-eye visuals at ~10 Hz, screen or Android flashlight, synced to the beat; includes a Sweet-Spot Sweep, Ganzflicker and Dreamachine-inspired sessions), 🌫 **Infrasound** layer (18.98 Hz "ghost frequency", 17 Hz, 7 Hz…), and 🌬 **Breathwork** (Wim Hof-style power breathing rounds and conscious connected breathing with an on-screen guide). Each requires accepting a full warning first.
 - **Windows XP / 2006 Y2K look**: Luna title bars, task-pane session list, glossy buttons, chrome visualiser bezel (the visualiser itself is unchanged).
 - **Real-time Rust audio engine** (cpal/WASAPI). Tones are phase-continuous and glide smoothly between stages, with up to 8 layered tone pairs per session.
 - **Three beat types:** binaural (headphones), monaural, and isochronic (works on speakers and above 40 Hz).
@@ -43,7 +44,7 @@ Every preset is tagged **Research**, **Gateway-inspired**, **Traditional** or **
 
 ## Safety & privacy
 - **No network access.** The UI runs under a strict Content-Security-Policy (`default-src 'none'`), and the app makes no web requests and collects no telemetry.
-- **Harmful methods excluded:** flicker light (seizure risk), infrasound and hyperventilation techniques are deliberately not included.
+- **Higher-risk methods are opt-in only:** flicker light (⚡ Light journey), infrasound (🌫) and hyperventilation breathwork (🌬) never run by default. Each has its own warning screen; every box must be ticked (health questions, safe setting, 18+, at-your-own-risk acknowledgement) before it can be used. Flicker is capped at 3–12 Hz (below the 15–25 Hz seizure-risk peak), ramps in, auto-stops, and stops instantly on any tap or key or when the app is left. Infrasound is quiet (capped well below the tones) with slow fades. Breath holds are never forced.
 - **No admin rights** needed. Settings live in `%LOCALAPPDATA%\FocusBinaural`.
 - **Hard output limiter:** output can never exceed about −1.4 dBFS, whatever the slider settings.
 - **Custom input is clamped:** carriers 20–1500 Hz, beats ≤ 250 Hz, layers ≤ 8.

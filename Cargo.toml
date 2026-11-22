@@ -1,6 +1,6 @@
 [package]
 name = "focus_binaural"
-version = "1.4.0"
+version = "1.5.0"
 edition = "2024"
 description = "Binaural / monaural / isochronic beat generator with Gateway-inspired guided sessions and natural voice cues"
 license = "MIT"

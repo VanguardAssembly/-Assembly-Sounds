@@ -192,6 +192,10 @@ fn handle(v: &Value, app: &mut App, core: &Core, eval: &dyn Fn(&str)) {
                 }
             }
         }
+        "infra" => {
+            let lvl = f(v, "level", 0.0);
+            sh.infra = if lvl > 0.0 { Some((f(v, "hz", 10.0).clamp(5.0, 19.0), lvl.clamp(0.0, 1.0) as f32)) } else { None };
+        }
         "speak" => app.last_stage = usize::MAX,
         "save" => {
             if let (Some(path), Some(st)) = (core.settings_path.get(), v.get("settings")) {

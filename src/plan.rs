@@ -63,7 +63,7 @@ pub struct Preset {
     pub live: bool,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub texture: Option<Texture>,
-    /// "" | "ganzfeld"
+    /// "" | "ganzfeld" | "flicker" | "ganzflicker" (flicker = opt-in Light journey)
     #[serde(default, skip_serializing_if = "String::is_empty")]
     pub visual: String,
     /// Search keywords (generated in presets::auto_tags).

@@ -400,6 +400,76 @@ pub fn all() -> Vec<Preset> {
       vec![st("Ground", 4.0, &[10.0], C_GROUND), st("Weight", 3.0, &[12.0], "Feel the weight of your body supported by the earth beneath you."),
            st("Awake", 3.0, &[16.0], C_COUNT)]));
 
+    // ================= Light Journeys (flicker) =================
+    // Opt-in stroboscopic closed-eye imagery. The light only runs after the user accepts the
+    // full warning screen and presses Start; rate is locked to the beat and clamped to 3–12 Hz.
+    let g = "Light Journeys (Flicker)";
+    const C_OBSERVE: &str = "Simply observe. Let colours, shapes and images arise on their own, without trying to hold on to them.";
+    const C_AGAIN: &str = "Let go again, and see what else appears.";
+    const C_FOLLOW: &str = "Follow whatever images or ideas arise.";
+    let lj = |id: &str, name: &str, short: &str, ev: &str, about: &str, stages: Vec<Stage>| {
+        let mut x = p(g, id, name, short, &[200.0], &[0.7], "pink", "binaural", ev, about, stages);
+        x.visual = "flicker".into();
+        x
+    };
+    v.push(lj("lj_alpha", "Light Journey — Alpha 10 Hz", "Strongest visuals · 15 min", "Research",
+      "<p>The core light journey: light flashes at <b>10 Hz</b> on your closed eyes, locked to a 10 Hz binaural beat. In flicker studies, about 10 Hz (the brain's own alpha rhythm) gives the most vivid geometric patterns and colours (Allefeld et al., 2011; Bartossek et al., 2021). Press <b>⚡ Light journey</b>, read and accept the warnings, close your eyes and face the light.</p>",
+      vec![st("Settle", 1.0, &[10.0], C_SETTLE), st("Journey", 12.0, &[10.0], C_OBSERVE), st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(lj("lj_sweep", "Sweet-Spot Sweep — 8 → 12 Hz", "Find your peak · 14 min", "Research",
+      "<p>Everyone's alpha peak is slightly different, usually 8–12 Hz, and flicker tends to work best near your own peak. This session climbs slowly from 8 to 12 Hz, two minutes per step, then settles on 10 Hz. Notice where the visuals are strongest; then set that rate as your fixed rate in the Light journey panel.</p>",
+      vec![st("8 Hz", 2.0, &[8.0], C_SETTLE), st("9 Hz", 2.0, &[9.0], C_OBSERVE).ramp(20.0), st("10 Hz", 2.0, &[10.0], C_AGAIN).ramp(20.0),
+           st("11 Hz", 2.0, &[11.0], C_AGAIN).ramp(20.0), st("12 Hz", 2.0, &[12.0], C_AGAIN).ramp(20.0),
+           st("Settle at 10 Hz", 2.0, &[10.0], C_FOLLOW).ramp(30.0), st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(lj("lj_geometry", "Kaleidoscope — 12 Hz Geometry", "Sharp patterns · 10 min", "Research",
+      "<p>Upper-alpha flicker (about 11–12 Hz) tends to produce crisp geometric forms: checkerboards, spirals, honeycombs and radiating lines. These are the \"form constants\" that Heinrich Klüver catalogued in 1926; Ermentrout &amp; Cowan (1979) showed they match simple waves of activity across the visual cortex.</p>",
+      vec![st("Settle", 1.0, &[10.0], C_SETTLE), st("Geometry", 7.0, &[12.0], C_OBSERVE).ramp(30.0), st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(lj("lj_descent", "Alpha → Theta Imagery Descent", "Patterns into dreamlike scenes · 20 min", "Traditional",
+      "<p>Starts at 10 Hz for strong patterns, then slows toward 6 Hz theta, where people more often report soft, dreamlike or scene-like imagery instead of sharp geometry. Light and sound stay locked together. Slower flicker gives less intense patterns but a deeper, drowsier state.</p>",
+      vec![st("Settle", 1.0, &[10.0], C_SETTLE), st("Alpha", 5.0, &[10.0], C_OBSERVE), st("Slowing", 5.0, &[8.0], C_AGAIN).ramp(120.0),
+           st("Theta", 7.0, &[6.0], C_FOLLOW).ramp(120.0), st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    v.push(lj("lj_dream", "Dreamachine-inspired Wander — 8–12 Hz", "Drifting rhythm · 20 min", "Traditional",
+      "<p>Inspired by Brion Gysin's 1959 <b>Dreamachine</b>, a spinning slotted cylinder around a bulb that flickered at about 8–13 Hz. Here the rate wanders slowly between 8 and 12 Hz, so the patterns keep changing. The Dreamachine was revived as a large public experience and study in the UK in 2022.</p>",
+      vec![st("Settle", 1.0, &[10.0], C_SETTLE), st("Wander 1", 3.5, &[9.0], C_OBSERVE).ramp(60.0), st("Wander 2", 3.5, &[11.0], C_AGAIN).ramp(60.0),
+           st("Wander 3", 3.5, &[8.5], C_FOLLOW).ramp(60.0), st("Wander 4", 3.5, &[12.0], C_AGAIN).ramp(60.0), st("Wander 5", 3.0, &[10.0], C_OBSERVE).ramp(60.0),
+           st("Return", 2.0, &[10.0], C_RETURN_SHORT)]));
+    let mut gf = lj("lj_ganzflicker", "Ganzflicker — Red & Black", "10 Hz red flicker · 10 min", "Research",
+      "<p><b>Ganzflicker</b> alternates full red and black at about 10 Hz. A 2024 study (Shenyan et al., <i>Scientific Reports</i>) found it produced visual hallucinations more often and faster than the steady Ganzfeld, mostly simple shapes and colours. It has also been used to study people with aphantasia (no mind's eye), many of whom still saw patterns (Königsmark et al., 2021).</p>",
+      vec![st("Settle", 1.0, &[10.0], C_SETTLE), st("Ganzflicker", 7.0, &[10.0], C_OBSERVE), st("Return", 2.0, &[10.0], C_RETURN_SHORT)]);
+    gf.visual = "ganzflicker".into();
+    v.push(gf);
+
+    // ================= Infrasound (opt-in) =================
+    // The infrasound layer itself only plays after the user accepts its warning and turns it on.
+    let g = "Infrasound (opt-in)";
+    let inf = |id: &str, name: &str, short: &str, hz: f64, beat: f64, car: f64, ev: &str, about: &str| {
+        let mut x = p(g, id, name, short, &[car], &[0.7], "brown", "binaural", ev, about,
+          vec![st("Settle", 2.0, &[10.0], C_SETTLE), st("Infrasound", 11.0, &[beat], C_REST).ramp(60.0), st("Return", 2.0, &[10.0], C_RETURN_SHORT)]);
+        x.visual = format!("infra:{}", hz);
+        x
+    };
+    v.push(inf("inf_ghost", "18.98 Hz — Tandy's \"Ghost Frequency\"", "Infrasound + alpha · 15 min", 18.98, 10.0, 200.0, "Speculative",
+      "<p>In 1998 engineer <b>Vic Tandy</b> traced a \"haunted\" feeling in his lab (unease, cold sweat, a grey shape at the edge of vision) to a fan making an <b>18.98 Hz</b> standing wave. He proposed it vibrated the eyeball (Tandy &amp; Lawrence, 1998, <i>Journal of the Society for Psychical Research</i>). Here a quiet 18.98 Hz layer plays under a 10 Hz alpha beat. Press <b>🌫 Infrasound</b> and accept the warning to switch the layer on.</p>"));
+    v.push(inf("inf_concert", "17 Hz — Soundless Music", "2003 concert experiment · 15 min", 17.0, 8.0, 200.0, "Speculative",
+      "<p>At a 2003 London concert, researchers (Richard Wiseman, Sarah Angliss and others) secretly played <b>17 Hz</b> infrasound under some pieces. About 22% more listeners reported unusual feelings (unease, sorrow, chills, nervousness) during those pieces. It was a public experiment, not a peer-reviewed study.</p>"));
+    v.push(inf("inf_7", "7 Hz — Deep Body Rumble", "Felt more than heard · 15 min", 7.0, 7.0, 150.0, "Speculative",
+      "<p>7 Hz is often called the \"body resonance\" frequency, linked to stories about engineer Vladimir Gavreau's 1960s infrasound experiments. The dramatic claims (organ damage, \"brown note\") are myths at any level a speaker can produce. Here it's a gentle rumble you may feel more than hear, under a matching 7 Hz theta beat.</p>"));
+    v.push(inf("inf_schumann", "7.83 Hz — Schumann as Infrasound", "Earth resonance · 15 min", 7.83, 7.83, 194.18, "Speculative",
+      "<p>The Schumann resonance (7.83 Hz) is an electromagnetic resonance of the Earth's atmosphere, not a sound. Here it is played literally as a sound wave, an infrasound layer under a matching binaural beat. Purely experiential.</p>"));
+
+    // ================= Breathwork (opt-in) =================
+    // The breathing guide only starts after the user accepts the breathwork warning.
+    let g = "Breathwork (opt-in)";
+    let mut br = p(g, "br_power", "Power Breathing Rounds (Wim Hof-style)", "3 rounds · about 15 min", &[200.0], &[0.5], "surf", "binaural", "Research",
+      "<p>Rounds of 30 deep, fast breaths, then holding with empty lungs until you need to breathe, then one recovery breath held for 15 seconds. This is the method popularised by <b>Wim Hof</b>. In a well-known study (Kox et al., 2014, <i>PNAS</i>), trained people using it raised adrenaline and dampened their immune reaction to an injected bacterial toxin. Tingling, light-headedness and vivid sensations are common. Press <b>🌬 Breathwork</b> and accept the warning to start the guide. <b>Never in or near water, never driving or standing.</b></p>",
+      vec![st("Settle", 1.0, &[10.0], C_SETTLE), st("Rounds", 13.0, &[7.0], "").ramp(60.0), st("Rest", 2.0, &[8.0], C_REST)]);
+    br.visual = "breath:power".into();
+    v.push(br);
+    let mut br = p(g, "br_connected", "Conscious Connected Breathing (Holotropic-inspired)", "Continuous breathing · 20 min", &[200.0], &[0.5], "surf", "binaural", "Speculative",
+      "<p>Continuous, slightly fast and deep breathing with no pauses between in and out, the core of <b>Holotropic Breathwork</b> (Stanislav &amp; Christina Grof, 1970s) and rebirthing. Practitioners report intense emotions, images and body sensations. This is an original, shorter and gentler guide, not a Grof session; those are done in groups with trained facilitators.</p>",
+      vec![st("Settle", 2.0, &[10.0], C_SETTLE), st("Breathing", 15.0, &[6.0], "").ramp(120.0), st("Integration", 3.0, &[8.0], C_REST)]);
+    br.visual = "breath:connected".into();
+    v.push(br);
+
     // ================= Brainwave frequency library =================
     let g = "Brainwave Library";
     let lib: &[(f64, &str, &str)] = &[
@@ -550,6 +620,9 @@ fn auto_tags(v: &mut [Preset]) {
         ("Cosmic Octave (Planets)", &["planet", "planets", "cosmic", "cosmic octave", "cousto", "astrology", "astronomy"]),
         ("Tunings", &["tuning", "pitch", "432", "440", "music"]),
         ("Sound Systems Library", &["sound systems", "library", "methods", "binaural", "monaural", "isochronic", "am", "amplitude modulation", "hybrid", "bilateral", "emdr", "8d", "spatial", "hemi-sync", "holosync", "noise", "drum"]),
+        ("Light Journeys (Flicker)", &["light", "light journey", "flicker", "strobe", "visual", "visuals", "hallucination", "hallucinations", "closed-eye visuals", "dreamachine", "ganzflicker", "patterns", "geometry"]),
+        ("Infrasound (opt-in)", &["infrasound", "low frequency", "rumble", "ghost", "haunted", "18.98", "17 hz", "7 hz", "vibration"]),
+        ("Breathwork (opt-in)", &["breathwork", "breathing", "hyperventilation", "wim hof", "holotropic", "rebirthing", "power breathing", "connected breathing"]),
         ("Astral Projection & OBE", &["astral", "astral projection", "obe", "out of body", "out-of-body", "projection", "monroe", "rope", "phase", "wbtb", "lucid", "vibrations"]),
     ];
     // (needle in lowercase text, tags to add)
@@ -617,6 +690,7 @@ fn auto_tags(v: &mut [Preset]) {
             for t in k { add(t); }
         }
         if p.visual == "ganzfeld" { add("ganzfeld"); add("red light"); add("visual"); }
+        if p.visual.contains("flicker") { add("flicker"); add("light journey"); add("visual"); add("hallucination"); add("strobe"); }
         if p.stages.iter().any(|s| s.breath) { add("breathing"); add("breath pacer"); }
         let text = format!(" {} {} {} {}", p.name, p.short, p.about,
             p.stages.iter().map(|s| format!("{} {}", s.name, s.cue)).collect::<Vec<_>>().join(" ")).to_lowercase();
