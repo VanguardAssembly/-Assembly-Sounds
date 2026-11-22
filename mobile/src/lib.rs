@@ -8,6 +8,8 @@
 mod engine;
 #[path = "../../src/info.rs"]
 mod info;
+#[path = "../../src/music.rs"]
+mod music;
 #[path = "../../src/plan.rs"]
 mod plan;
 #[path = "../../src/presets.rs"]
@@ -135,6 +137,7 @@ fn handle(v: &Value, app: &mut App, core: &Core, eval: &dyn Fn(&str)) {
             };
             if let Some(p) = preset {
                 let tl = Arc::new(Timeline::from_preset(&p));
+                sh.clips = app.cache.clips_for(&p);
                 sh.mode = Mode::parse(s(v, "mode"));
                 sh.noise_type = Noise::parse(s(v, "noise"));
                 sh.live = if p.live { Some((p.carriers[0], p.stages[0].beats[0])) } else { None };
@@ -181,6 +184,7 @@ fn handle(v: &Value, app: &mut App, core: &Core, eval: &dyn Fn(&str)) {
             sh.noise = f(v, "noise", 0.35) as f32;
             sh.voice_vol = f(v, "voiceVol", 0.8) as f32;
             sh.tex = f(v, "tex", 0.7) as f32;
+            sh.mus = f(v, "mus", 0.7) as f32;
         }
         "noise" => sh.noise_type = Noise::parse(s(v, "type")),
         "mode" => sh.mode = Mode::parse(s(v, "mode")),

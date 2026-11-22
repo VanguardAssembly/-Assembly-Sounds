@@ -16,6 +16,7 @@ fn st(name: &str, min: f64, beats: &[f64], cue: &str) -> Stage {
         cue_id: String::new(),
         breath: false,
         tex: None,
+        mus: None,
     }
 }
 trait StageExt {
@@ -23,16 +24,22 @@ trait StageExt {
     fn car(self, c: &[f64]) -> Self;
     fn ramp(self, s: f64) -> Self;
     fn tex(self, g: f64) -> Self;
+    fn mus(self, g: f64) -> Self;
 }
 impl StageExt for Stage {
     fn breath(mut self) -> Self { self.breath = true; self }
     fn car(mut self, c: &[f64]) -> Self { self.carriers = Some(c.to_vec()); self }
     fn ramp(mut self, s: f64) -> Self { self.ramp = Some(s); self }
     fn tex(mut self, g: f64) -> Self { self.tex = Some(g); self }
+    fn mus(mut self, g: f64) -> Self { self.mus = Some(g); self }
 }
 fn with_min(mut s: Stage, min: f64) -> Stage { s.min = min; s }
 fn tx(kind: &str, level: f64, root: f64, interval: f64) -> Option<Texture> {
-    Some(Texture { kind: kind.into(), level, root, interval })
+    Some(Texture { kind: kind.into(), level, root, interval, name: String::new() })
+}
+/// Accompaniment (music.rs): kind, variant/clips, level, root (Hz, 0 = default), interval (s, 0 = default).
+fn mx(kind: &str, name: &str, level: f64, root: f64, interval: f64) -> Option<Texture> {
+    Some(Texture { kind: kind.into(), level, root, interval, name: name.into() })
 }
 fn with_tex(mut p: Preset, t: Option<Texture>) -> Preset { p.texture = t; p }
 
@@ -43,7 +50,7 @@ fn p(group: &str, id: &str, name: &str, short: &str, carriers: &[f64], gains: &[
         id: id.into(), group: group.into(), name: name.into(), short: short.into(),
         carriers: carriers.to_vec(), gains: gains.to_vec(), noise: noise.into(), mode: mode.into(),
         evidence: evidence.into(), about: about.into(), stages, live: false,
-        texture: None, visual: String::new(), tags: Vec::new(), trad: Vec::new(), info: None,
+        texture: None, music: None, visual: String::new(), tags: Vec::new(), trad: Vec::new(), info: None,
     }
 }
 

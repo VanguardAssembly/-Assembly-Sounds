@@ -56,6 +56,10 @@ pub struct Shared {
     pub noise: f32,
     pub voice_vol: f32,
     pub tex: f32,
+    /// Accompaniment level (music layer: tanpura, chant, flute, bells…).
+    pub mus: f32,
+    /// Decoded chant clips for the session about to start (set before `generation` changes).
+    pub clips: Vec<crate::music::Clip>,
     pub noise_type: Noise,
     pub mode: Mode,
     pub live: Option<(f64, f64)>,
@@ -74,7 +78,7 @@ impl Default for Shared {
     fn default() -> Self {
         Shared {
             timeline: None, generation: 0, seek: None, paused: false, stop: false,
-            vol: 0.35, tone: 0.6, noise: 0.35, voice_vol: 0.8, tex: 0.7,
+            vol: 0.35, tone: 0.6, noise: 0.35, voice_vol: 0.8, tex: 0.7, mus: 0.7, clips: Vec::new(),
             noise_type: Noise::Pink, mode: Mode::Binaural, live: None,
             voice: None, voice_cancel: false, infra: None,
             ack_gen: 0, elapsed: 0.0, running: false, scope: vec![0.0; SCOPE_FRAMES * 2],
@@ -113,6 +117,9 @@ struct Synth {
     tex: Option<TexSynth>,
     tex_level: f32,
     s_tex: f32,
+    mus: Option<TexSynth>,
+    mus_level: f32,
+    s_mus: f32,
     scope: Vec<f32>,
     scope_i: usize,
     infra_hz: f64,
@@ -130,7 +137,7 @@ impl Synth {
             s_vol: 0.35, s_tone: 0.6, s_noise: 0.35, duck: 1.0,
             noise_type: Noise::Pink, mode: Mode::Binaural, live: None,
             rng: 0x9E3779B97F4A7C15, pink: [[0.0; 7]; 2], brown: [0.0; 2], lp: [0.0; 2], surf: 0.0,
-            voice: None, tex: None, tex_level: 0.7, s_tex: 0.0, scope: vec![0.0; SCOPE_FRAMES * 2], scope_i: 0,
+            voice: None, tex: None, tex_level: 0.7, s_tex: 0.0, mus: None, mus_level: 0.7, s_mus: 0.0, scope: vec![0.0; SCOPE_FRAMES * 2], scope_i: 0,
             infra_hz: 10.0, infra_t: 0.0, s_infra: 0.0, infra_ph: 0.0,
         }
     }
@@ -148,8 +155,10 @@ impl Synth {
             self.fade_step = 1.0 / (6.0 * self.sr as f32); // 6 s fade-in
             self.voice = None;
             self.pause_g = 1.0;
-            self.tex = self.tl.as_ref().and_then(|t| t.texture.as_ref()).and_then(|tx| TexSynth::new(tx, self.sr));
+            self.tex = self.tl.as_ref().and_then(|t| t.texture.as_ref()).and_then(|tx| TexSynth::with_clips(tx, self.sr, &s.clips));
             self.s_tex = 0.0;
+            self.mus = self.tl.as_ref().and_then(|t| t.music.as_ref()).and_then(|tx| TexSynth::with_clips(tx, self.sr, &s.clips));
+            self.s_mus = 0.0;
         }
         if let Some(t) = s.seek.take() {
             self.pos = t.max(0.0);
@@ -168,6 +177,7 @@ impl Synth {
         self.noise_lvl = s.noise.clamp(0.0, 1.0);
         self.voice_vol = s.voice_vol.clamp(0.0, 1.0);
         self.tex_level = s.tex.clamp(0.0, 1.0);
+        self.mus_level = s.mus.clamp(0.0, 1.0);
         match s.infra {
             Some((hz, lvl)) if hz.is_finite() && lvl.is_finite() => {
                 self.infra_hz = hz.clamp(5.0, 19.0);
@@ -265,6 +275,12 @@ impl Synth {
         let pause_step = 1.0 / (0.08 * self.sr as f32);
         let tanh4 = 4f32.tanh();
         let tex_target = tl.as_ref().map(|t| t.tex_at(self.pos) as f32).unwrap_or(0.0) * self.tex_level;
+        let mus_target = tl.as_ref().map(|t| t.mus_at(self.pos) as f32).unwrap_or(0.0) * self.mus_level;
+        if let Some(t) = &tl {
+            let (k, n) = (t.stage_at(self.pos), t.stages.len());
+            if let Some(x) = self.tex.as_mut() { x.set_stage(k, n); }
+            if let Some(x) = self.mus.as_mut() { x.set_stage(k, n); }
+        }
 
         for f in 0..frames {
             let t = f as f64 / frames.max(1) as f64;
@@ -353,12 +369,19 @@ impl Synth {
 
             // texture layer (drum / bowls / chimes / pulses / rain)
             let (mut xl, mut xr) = (0.0f32, 0.0f32);
+            let (mut ml, mut mr) = (0.0f32, 0.0f32);
             if self.running {
                 self.s_tex += (tex_target - self.s_tex) * k_smooth * 0.1;
                 let b = b0.first().map(|x| x + (b1[0] - x) * t).unwrap_or(1.0);
                 let g = self.s_tex;
                 if let Some(tx) = self.tex.as_mut() {
                     (xl, xr) = tx.sample(b, g);
+                }
+                // music layer (tanpura, chant, flute, bells…)
+                self.s_mus += (mus_target - self.s_mus) * k_smooth * 0.1;
+                let gm = self.s_mus;
+                if let Some(mx) = self.mus.as_mut() {
+                    (ml, mr) = mx.sample(b, gm);
                 }
             }
 
@@ -372,8 +395,8 @@ impl Synth {
             if self.pause_g < pt { self.pause_g = (self.pause_g + pause_step).min(1.0) } else if self.pause_g > pt { self.pause_g = (self.pause_g - pause_step).max(0.0) }
 
             let bed = self.fade * self.pause_g * self.duck;
-            let mut ol = (l * self.s_tone + nl * self.s_noise * 0.6 + xl * 0.5) * bed;
-            let mut or = (r * self.s_tone + nr * self.s_noise * 0.6 + xr * 0.5) * bed;
+            let mut ol = (l * self.s_tone + nl * self.s_noise * 0.6 + xl * 0.5 + ml * 0.8) * bed;
+            let mut or = (r * self.s_tone + nr * self.s_noise * 0.6 + xr * 0.5 + mr * 0.8) * bed;
 
             // opt-in infrasound layer: slow 3 s fades, hard-capped at INFRA_MAX before the limiter
             self.s_infra += (self.infra_t - self.s_infra) * (1.0 / (3.0 * self.sr as f32));
@@ -418,6 +441,7 @@ impl Synth {
                 self.phases.clear();
                 self.voice = None;
                 self.tex = None;
+                self.mus = None;
             }
         }
     }
@@ -433,8 +457,8 @@ fn limit(x: f32) -> f32 {
 }
 
 /// Offline render (self-test / verification): returns interleaved stereo at `sr`.
-pub fn render_offline(tl: Arc<Timeline>, mode: Mode, noise: Noise, start: f64, secs: f64, sr: u32) -> Vec<f32> {
-    let mut s = Shared { timeline: Some(tl), generation: 1, mode, noise_type: noise, seek: Some(start), ..Default::default() };
+pub fn render_offline(tl: Arc<Timeline>, mode: Mode, noise: Noise, start: f64, secs: f64, sr: u32, clips: Vec<crate::music::Clip>) -> Vec<f32> {
+    let mut s = Shared { timeline: Some(tl), generation: 1, mode, noise_type: noise, seek: Some(start), clips, ..Default::default() };
     let mut synth = Synth::new(sr as f64);
     let mut out = vec![0.0f32; (secs * sr as f64) as usize * 2];
     for chunk in out.chunks_mut(1024) {

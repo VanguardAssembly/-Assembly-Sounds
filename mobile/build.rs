@@ -10,6 +10,7 @@ fn main() {
     println!("cargo:rustc-env=FOCUS_ROOT={}", root.display());
     println!("cargo:rerun-if-changed=../ui/index.html");
     println!("cargo:rerun-if-changed=../voice");
+    println!("cargo:rerun-if-changed=../chant");
 
     let src = std::fs::read_to_string(root.join("ui/index.html")).expect("read ui/index.html");
     let ipc_old = "window.ipc.postMessage(JSON.stringify(o))";

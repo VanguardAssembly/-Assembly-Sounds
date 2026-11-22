@@ -11,11 +11,14 @@
 //!   gong        – large gong struck every `interval` s, with a long shimmering decay
 //!   heartbeat   – soft lub-dub every `interval` s (≈60 a minute)
 //!   kartal      – hand-cymbal pattern ching-ching-chik (kirtan), one stroke every `interval` s
+//! …and every accompaniment kind in music.rs (tanpura, chant, flutes, bells, nature…), which can
+//! be used as a preset's texture or as its music layer.
+use crate::music::{Clip, Inst};
 use crate::plan::Texture;
 use std::f64::consts::TAU;
 
 #[derive(Clone, Copy, PartialEq)]
-enum Kind { Drum, Bowls, Kirtan, Tlr, BreathBell, Pulses, Rain, Mokugyo, Rattle, Gong, Heartbeat, Kartal }
+enum Kind { Drum, Bowls, Kirtan, Tlr, BreathBell, Pulses, Rain, Mokugyo, Rattle, Gong, Heartbeat, Kartal, Inst }
 
 /// Exponentially decaying sinusoid.
 struct Partial { f: f64, ph: f64, amp: f32, decay: f32, attack: f32, env: f32, pl: f32, pr: f32 }
@@ -38,15 +41,24 @@ pub struct TexSynth {
     lp: [f32; 2],
     burst: f64,       // remaining burst time (pulses)
     next_jitter: f64,
+    inst: Option<Inst>,
+    now: u64,         // samples since the start
+    next_k: u64,      // grid index of the next periodic event
 }
 
 impl TexSynth {
-    pub fn new(t: &Texture, sr: f64) -> Option<Self> {
+    #[allow(dead_code)]
+    pub fn new(t: &Texture, sr: f64) -> Option<Self> { Self::with_clips(t, sr, &[]) }
+
+    /// `clips`: decoded chant clips the "chant" kind may need.
+    pub fn with_clips(t: &Texture, sr: f64, clips: &[Clip]) -> Option<Self> {
+        let mut inst = None;
         let kind = match t.kind.as_str() {
             "drum" => Kind::Drum, "bowls" => Kind::Bowls, "kirtan" => Kind::Kirtan, "tlr" => Kind::Tlr,
             "breathbell" => Kind::BreathBell, "pulses" => Kind::Pulses, "rain" => Kind::Rain,
             "mokugyo" => Kind::Mokugyo, "rattle" => Kind::Rattle, "gong" => Kind::Gong,
-            "heartbeat" => Kind::Heartbeat, "kartal" => Kind::Kartal, _ => return None,
+            "heartbeat" => Kind::Heartbeat, "kartal" => Kind::Kartal,
+            other => { inst = Some(Inst::new(other, &t.name, t.root, t.interval, sr, clips)?); Kind::Inst }
         };
         let root = if t.root > 0.0 { t.root } else {
             match kind {
@@ -63,8 +75,14 @@ impl TexSynth {
         Some(TexSynth {
             kind, level: t.level as f32, root, interval, sr,
             clock: 1e9, step: 0, partials: Vec::new(), hits: Vec::new(), queue: Vec::new(),
-            rng: 0x2545F4914F6CDD1D, pink: [0.0; 7], lp: [0.0; 2], burst: 0.0, next_jitter: 0.0,
+            rng: 0x2545F4914F6CDD1D, pink: [0.0; 7], lp: [0.0; 2], burst: 0.0, next_jitter: 0.0, inst,
+            now: 0, next_k: 0,
         })
+    }
+
+    /// Current stage of the session (stage bells and per-stage chants follow it).
+    pub fn set_stage(&mut self, k: usize, n: usize) {
+        if let Some(i) = self.inst.as_mut() { i.set_stage(k, n); }
     }
 
     fn rand(&mut self) -> f32 {
@@ -82,6 +100,16 @@ impl TexSynth {
         let v = (b[0] + b[1] + b[2] + b[3] + b[4] + b[5] + b[6] + w * 0.5362) * 0.11;
         b[6] = w * 0.115926;
         v
+    }
+    /// Periodic events sit on a fixed grid from the start of the session (k × period), so two
+    /// layers with the same period (a wooden fish and a chant) never drift apart. While the layer
+    /// is silent its grid points are skipped, not saved up.
+    fn due(&mut self, active: bool, period: f64) -> bool {
+        let p = (period * self.sr).max(1.0);
+        let now = self.now as f64;
+        if now + 0.5 < self.next_k as f64 * p { return false; }
+        self.next_k = ((now + 0.5) / p).floor() as u64 + 1;
+        active
     }
     fn decay_for(&self, secs: f64) -> f32 { (-1.0 / (secs * self.sr)).exp() as f32 }
 
@@ -121,6 +149,10 @@ impl TexSynth {
 
     /// One stereo sample. `beat` = current layer-0 beat (Hz), `gain` = texture gain (0..1).
     pub fn sample(&mut self, beat: f64, gain: f32) -> (f32, f32) {
+        if let Some(i) = self.inst.as_mut() {
+            let (l, r) = i.sample(gain);
+            return (l * self.level, r * self.level);
+        }
         let dt = 1.0 / self.sr;
         self.clock += dt;
         let (mut l, mut r) = (0.0f32, 0.0f32);
@@ -142,7 +174,7 @@ impl TexSynth {
                 }
             }
             Kind::Bowls => {
-                if active && self.clock >= self.interval {
+                if self.due(active, self.interval) {
                     self.clock = 0.0;
                     const ROOTS: [f64; 4] = [1.0, 1.5, 0.75, 1.335];
                     let f0 = self.root * ROOTS[self.step % 4];
@@ -152,7 +184,7 @@ impl TexSynth {
                 }
             }
             Kind::Kirtan => {
-                if active && self.clock >= 1.0 {
+                if self.due(active, 1.0) {
                     self.clock = 0.0;
                     const NOTES: [f64; 4] = [1.5, 4.0 / 3.0, 1.25, 1.0]; // Sa Ta Na Ma
                     let f = self.root * NOTES[self.step % 4];
@@ -161,7 +193,7 @@ impl TexSynth {
                 }
             }
             Kind::Tlr => {
-                if active && self.clock >= self.interval {
+                if self.due(active, self.interval) {
                     self.clock = 0.0;
                     let f = self.root;
                     self.queue.push((0.0, f));
@@ -170,7 +202,7 @@ impl TexSynth {
                 }
             }
             Kind::BreathBell => {
-                if active && self.clock >= self.interval {
+                if self.due(active, self.interval) {
                     self.clock = 0.0;
                     let f = self.root;
                     self.bell(f, 0.45, 3.5);
@@ -185,7 +217,7 @@ impl TexSynth {
             }
             Kind::Rain => {}
             Kind::Mokugyo => {
-                if active && self.clock >= self.interval {
+                if self.due(active, self.interval) {
                     self.clock = 0.0;
                     self.step += 1;
                     let a = (if self.step % 4 == 1 { 1.0 } else { 0.78 }) * (0.92 + 0.08 * self.rand());
@@ -204,7 +236,7 @@ impl TexSynth {
                 }
             }
             Kind::Gong => {
-                if active && self.clock >= self.interval {
+                if self.due(active, self.interval) {
                     self.clock = 0.0;
                     let f0 = self.root;
                     // inharmonic gong modes, each with a slightly detuned twin for the shimmer
@@ -218,15 +250,16 @@ impl TexSynth {
                 }
             }
             Kind::Heartbeat => {
-                if active && self.clock >= self.interval {
+                if self.due(active, self.interval) {
                     self.clock = 0.0;
                     let f = self.root;
                     self.queue.push((0.0, f));
                     self.queue.push((0.3, f * 1.2));
                 }
             }
+            Kind::Inst => {}
             Kind::Kartal => {
-                if active && self.clock >= self.interval {
+                if self.due(active, self.interval) {
                     self.clock = 0.0;
                     let s = self.step % 4; // ching, ching, chik, rest
                     self.step += 1;
@@ -242,6 +275,7 @@ impl TexSynth {
                 }
             }
         }
+        self.now += 1;
         // queued notes (tlr motif, heartbeat)
         if !self.queue.is_empty() {
             let mut k = 0;

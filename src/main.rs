@@ -5,6 +5,7 @@
 //! (strict Content-Security-Policy) and talks to Rust only through a JSON IPC channel.
 mod engine;
 mod info;
+mod music;
 mod plan;
 mod presets;
 mod settle;
@@ -50,10 +51,34 @@ fn main() {
     if args.len() >= 8 && args[1] == "--render" {
         if let Some(p) = presets::all().into_iter().find(|p| p.id == args[2]) {
             let tl = Arc::new(Timeline::from_preset(&p));
+            let clips = voice::Cache::default().clips_for(&p);
             let pcm = engine::render_offline(tl, Mode::parse(&args[3]), Noise::parse(&args[4]),
-                args[5].parse().unwrap_or(0.0), args[6].parse().unwrap_or(5.0), 48000);
+                args[5].parse().unwrap_or(0.0), args[6].parse().unwrap_or(5.0), 48000, clips);
             write_wav(&args[7], &pcm, 48000);
         }
+        return;
+    }
+    // --render-inst <kind> <name> <root> <interval> <secs> <out.wav> [stages]   (instrument self-test)
+    if args.len() >= 8 && args[1] == "--render-inst" {
+        let t = plan::Texture { kind: args[2].clone(), level: 1.0, root: args[4].parse().unwrap_or(0.0),
+            interval: args[5].parse().unwrap_or(0.0), name: if args[3] == "-" { String::new() } else { args[3].clone() } };
+        let mut cache = voice::Cache::default();
+        let mut clips = Vec::new();
+        for n in music::Inst::clip_names(&t.kind, &t.name) { if let Some((d, sr)) = cache.chant(&n) { clips.push((n, d, sr)); } }
+        let secs: f64 = args[6].parse().unwrap_or(20.0);
+        let stages: usize = args.get(8).and_then(|x| x.parse().ok()).unwrap_or(1).max(1);
+        let sr = 48000u32;
+        let mut pcm = Vec::new();
+        if let Some(mut x) = texture::TexSynth::with_clips(&t, sr as f64, &clips) {
+            let n = (secs * sr as f64) as usize;
+            for i in 0..n {
+                if i % 512 == 0 { x.set_stage(i * stages / n, stages); }
+                let (l, r) = x.sample(1.0, 1.0);
+                pcm.push(l);
+                pcm.push(r);
+            }
+        }
+        write_wav(&args[7], &pcm, sr);
         return;
     }
     // --check-voices <out.txt>: decode every cue in every voice (self-test)
@@ -71,7 +96,16 @@ fn main() {
                 }
             }
         }
-        let _ = std::fs::write(&args[2], format!("decoded={ok} missing={} total_audio_s={secs:.0} {:?}", bad.len(), bad));
+        // every chant clip a session names must be there too
+        let mut chants_missing = Vec::new();
+        for p in presets::all() {
+            for t in [p.texture.as_ref(), p.music.as_ref()].into_iter().flatten() {
+                for n in music::Inst::clip_names(&t.kind, &t.name) {
+                    if cache.chant(&n).is_none() && !chants_missing.contains(&n) { chants_missing.push(n); }
+                }
+            }
+        }
+        let _ = std::fs::write(&args[2], format!("decoded={ok} missing={} total_audio_s={secs:.0} {:?} chants_missing={} {:?}", bad.len(), bad, chants_missing.len(), chants_missing));
         return;
     }
     if args.len() >= 3 && args[1] == "--dump-presets" {
@@ -187,6 +221,7 @@ fn handle(v: &Value, app: &mut App, shared: &Arc<Mutex<Shared>>, wv: &wry::WebVi
             };
             if let Some(p) = preset {
                 let tl = Arc::new(Timeline::from_preset(&p));
+                sh.clips = app.cache.clips_for(&p);
                 sh.mode = Mode::parse(s(v, "mode"));
                 sh.noise_type = Noise::parse(s(v, "noise"));
                 sh.live = if p.live { Some((p.carriers[0], p.stages[0].beats[0])) } else { None };
@@ -230,6 +265,7 @@ fn handle(v: &Value, app: &mut App, shared: &Arc<Mutex<Shared>>, wv: &wry::WebVi
             sh.noise = f(v, "noise", 0.35) as f32;
             sh.voice_vol = f(v, "voiceVol", 0.8) as f32;
             sh.tex = f(v, "tex", 0.7) as f32;
+            sh.mus = f(v, "mus", 0.7) as f32;
         }
         "noise" => sh.noise_type = Noise::parse(s(v, "type")),
         "mode" => sh.mode = Mode::parse(s(v, "mode")),

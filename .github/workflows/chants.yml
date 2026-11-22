@@ -1,0 +1,85 @@
+name: Chants
+
+# Renders the group chants in tools/gen_chants.py (mantras, prayers, sacred names) that are new
+# or changed, with the Kokoro-82M speech model (Apache-2.0) and the WORLD vocoder, in parallel
+# shards, then commits chant/*.ogg and chant/index.json.
+# Run it by hand after adding or changing chants:  gh workflow run chants.yml
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Chant names to render again (space-separated; blank = every missing or changed one)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg, the speech model runtime and the vocoder
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg
+          pip install -q numpy cython
+          pip install -q kokoro-onnx
+          pip install -q pyworld || pip install -q --no-build-isolation pyworld
+
+      - name: Download the Kokoro model
+        run: |
+          curl -fsSL -o kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+          curl -fsSL -o voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+
+      - name: Render this shard
+        run: python tools/gen_chants.py kokoro-v1.0.onnx voices-v1.0.bin --shard ${{ matrix.shard }}/6 --out rendered ${{ inputs.only }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chant-${{ matrix.shard }}
+          path: rendered
+          if-no-files-found: ignore
+          retention-days: 5
+
+  commit:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chant-*
+          path: rendered
+          merge-multiple: true
+
+      - name: Commit the new chants
+        run: |
+          mkdir -p chant rendered
+          cp rendered/*.ogg chant/ 2>/dev/null || true
+          python3 - <<'EOF'
+          import glob, json, os
+          path = "chant/index.json"
+          idx = json.load(open(path)) if os.path.exists(path) else {}
+          for f in glob.glob("rendered/index-*.json"):
+              idx.update(json.load(open(f)))
+          json.dump(idx, open(path, "w"), indent=1, sort_keys=True)
+          print(len(idx), "chants in the index")
+          EOF
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add chant
+          if git diff --cached --quiet; then echo "No new chants."; exit 0; fi
+          git commit -m "Chants: render group chants (Kokoro-82M + WORLD)"
+          git push

@@ -23,6 +23,9 @@ pub struct Stage {
     /// Texture gain for this stage (0 = off, default 1).
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub tex: Option<f64>,
+    /// Music (accompaniment) gain for this stage (0 = off, default 1).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub mus: Option<f64>,
 }
 
 /// Non-tonal sound layer synthesised by the engine.
@@ -37,6 +40,10 @@ pub struct Texture {
     /// Seconds between events (bowls / tlr / breathbell).
     #[serde(default)]
     pub interval: f64,
+    /// Variant or content for the accompaniment kinds (music.rs): a tanpura tuning, a flute's
+    /// style and mode ("ney:hijaz"), a bell type, or the chant clip(s) to play ("mani", "lam@1,vam@2").
+    #[serde(default, skip_serializing_if = "String::is_empty")]
+    pub name: String,
 }
 fn d_one() -> f64 { 1.0 }
 
@@ -63,6 +70,9 @@ pub struct Preset {
     pub live: bool,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub texture: Option<Texture>,
+    /// Accompaniment a practitioner would hear (tanpura, chant, flute, bells…), see music.rs.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub music: Option<Texture>,
     /// "" | "ganzfeld" | "flicker" | "ganzflicker" (flicker = opt-in Light journey)
     #[serde(default, skip_serializing_if = "String::is_empty")]
     pub visual: String,
@@ -108,6 +118,7 @@ pub struct Timeline {
     pub total: f64, // f64::INFINITY when open-ended
     pub live: bool,
     pub texture: Option<Texture>,
+    pub music: Option<Texture>,
 }
 
 impl Preset {
@@ -130,11 +141,13 @@ impl Preset {
             }
             s.ramp = s.ramp.map(|r| if r.is_finite() { r.clamp(0.0, 3600.0) } else { 60.0 });
             s.tex = s.tex.map(|x| if x.is_finite() { x.clamp(0.0, 1.0) } else { 1.0 });
+            s.mus = s.mus.map(|x| if x.is_finite() { x.clamp(0.0, 1.0) } else { 1.0 });
         }
-        if let Some(tx) = self.texture.as_mut() {
+        for tx in [self.texture.as_mut(), self.music.as_mut()].into_iter().flatten() {
             tx.level = if tx.level.is_finite() { tx.level.clamp(0.0, 1.0) } else { 1.0 };
             tx.root = if tx.root.is_finite() { tx.root.clamp(0.0, 2000.0) } else { 0.0 };
             tx.interval = if tx.interval.is_finite() { tx.interval.clamp(0.0, 600.0) } else { 0.0 };
+            tx.name.truncate(200);
         }
         Some(self)
     }
@@ -156,11 +169,14 @@ impl Timeline {
             total: t,
             live: p.live,
             texture: p.texture.clone(),
+            music: p.music.clone(),
         }
     }
     pub fn layers(&self) -> usize { self.base_carriers.len() }
     /// Texture gain of the stage at elapsed `e` (default 1).
     pub fn tex_at(&self, e: f64) -> f64 { self.stages[self.stage_at(e)].tex.unwrap_or(1.0) }
+    /// Music gain of the stage at elapsed `e` (default 1).
+    pub fn mus_at(&self, e: f64) -> f64 { self.stages[self.stage_at(e)].mus.unwrap_or(1.0) }
     fn dur(&self, k: usize) -> f64 {
         let m = self.stages[k].min;
         if m <= 0.0 { f64::INFINITY } else { m * 60.0 }
