@@ -1,6 +1,6 @@
 [package]
 name = "focus_mobile"
-version = "1.8.0"
+version = "1.9.0"
 edition = "2024"
 description = "Android build of Focus — Binaural Beats Generator (Tauri shell around the same Rust engine)"
 license = "MIT"
