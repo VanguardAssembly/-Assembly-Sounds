@@ -1,0 +1,172 @@
+// East Asian Buddhist texts: Pure Land, the Lotus Sutra, Nichiren and Shingon.
+
+@ pure_land_sutras
+title: The Pure Land sutras: the vow of Amitābha and the setting sun
+orig: 無量壽經, Infinite Life Sutra; 阿彌陀經, Amitābha Sutra; 觀無量壽經, Contemplation Sutra (Chinese); Sukhāvatīvyūha (Sanskrit)
+by: anonymous Mahāyāna sūtras; Chinese versions by Saṃghavarman (traditionally 252), Kumārajīva (402) and Kālayaśas (5th century)
+date: the two *Sukhāvatīvyūha* sūtras about the 1st–2nd centuries CE in India; the *Contemplation Sutra* probably 5th century
+fam: eastasian
+kind: sutra
+credit: Assembly Sounds' own rendering from the Chinese.
+more: Luis O. Gómez, trans., *The Land of Bliss: The Paradise of the Buddha of Measureless Light* (1996).
+more: Hisao Inagaki, trans., *The Three Pure Land Sutras* (1995; revised 2003).
+more: Charles B. Jones, *Chinese Pure Land Buddhism: Understanding a Tradition of Practice* (2019).
+about:
+Three sūtras are the foundation of Pure Land Buddhism, the most widely practised form of Buddhism in East Asia. The *Infinite Life Sutra* tells how, ages ago, a monk named Dharmākara made forty-eight vows. He promised to become a buddha only if he could create a land of perfect peace where anyone could be reborn. He fulfilled the vows and became Amitābha, the Buddha of Infinite Light, also called Amitāyus, the Buddha of Infinite Life. In Chinese he is Amituofo and in Japanese Amida. The eighteenth vow, which promises rebirth to everyone who calls on him, became the heart of the tradition.
+
+The short *Amitābha Sutra* describes the Pure Land and urges listeners to hold Amitābha's name in mind. The *Contemplation Sutra* teaches sixteen visualisations, beginning with the setting sun in the west. Calling the name is *nianfo* in Chinese and *nembutsu* in Japanese: *Namo Amituofo*, *Namu Amida Butsu*, "I take refuge in the Buddha of Infinite Light". The Pure Land Nembutsu and Namo Amituofo sessions follow these sūtras.
+
+## The eighteenth vow (Infinite Life Sutra)
+When I become a buddha, if any beings in the ten directions who trust in me with sincere and joyful hearts, and wish to be born in my land, calling on me even ten times, are not born there, may I not attain complete awakening. Excluded are only those who commit the five gravest wrongs or slander the true Dharma.
+
+(The Chinese Pure Land master Shandao and, after him, Shinran read the last line as a warning against those acts, not as a door shut on anyone.)
+
+## The Land of Utmost Bliss (Amitābha Sutra)
+The Buddha said to Śāriputra: "West of here, beyond a hundred thousand million buddha-lands, there is a world called Utmost Bliss. In it lives a buddha called Amitābha, who is teaching the Dharma right now. Why is it called Utmost Bliss? Because the beings there know no suffering, only every kind of joy."
+
+There are ponds of seven jewels, filled with water of eight excellent qualities, their beds covered with golden sand. In the ponds grow lotuses as large as cartwheels: blue ones shining with blue light, yellow ones with yellow light, red ones with red light, white ones with white light, subtle and fragrant. Heavenly music is always playing, and day and night flowers rain down. Birds of many colours sing, and their songs are the teaching. When the breeze stirs the jewelled trees, they make a sound like a hundred thousand instruments playing together. Whoever hears it thinks of the Buddha, the Dharma and the Sangha.
+
+"Why is this buddha called Amitābha? Because his light is without measure, shining without obstacle on all the lands of the ten directions. And his life and the lives of his people last without measure, for countless ages, so he is also called Amitāyus.
+
+"Śāriputra, if a good man or a good woman hears of Amitābha Buddha and holds his name in mind for one day, or two days, or up to seven days, single-mindedly and without confusion, then at the end of their life Amitābha Buddha will appear before them with his holy company. Their mind will not be overturned, and they will be born at once in his Land of Utmost Bliss."
+
+## The first contemplation: the setting sun (Contemplation Sutra)
+The Buddha said to Queen Vaidehī: "You and all beings should fix your minds on one point and think of the west. How do you do this? Everyone who is not blind from birth has seen the sun set. Sit upright, facing west, and look closely at the sun. Hold the mind steady and unmoving, and see the sun about to set, like a drum hanging in the sky. When you have seen it, keep it clear in your mind, with your eyes open or closed. This is the thought of the sun, and it is called the first contemplation."
+
+The fifteen contemplations that follow build up the whole Pure Land: its water and ground, its jewelled trees and ponds, its towers and lotus thrones, then Amitābha himself and the bodhisattvas Avalokiteśvara and Mahāsthāmaprāpta beside him, and finally the ways in which beings are born there.
+
+## Reciting the name (the advice of Master Yinguang, in brief)
+The Chinese Pure Land master Yinguang (1862–1940) taught a simple way to recite *Namo Amituofo* or *Amituofo* without the mind drifting:
+- Let the recitation rise from the mind, come out through the mouth, and go back in through the ears, so that you hear every word clearly.
+- Count each round of ten in small groups, one to three, four to six, seven to ten, without beads, keeping the count in the mind.
+- When the mind wanders, simply return to the next word. Clear, unhurried recitation is better than fast.
+
+@ honen
+title: Hōnen's One-Sheet Document
+orig: 一枚起請文, Ichimai kishōmon (Japanese)
+by: Hōnen (Genkū, 1133–1212)
+date: 1212, two days before his death
+fam: eastasian
+kind: teaching
+credit: Assembly Sounds' own rendering from the Japanese.
+full: yes
+more: Joji Atone & Yoko Hayashi, *The Promise of Amida Buddha: Hōnen's Path to Bliss* (2011).
+more: Senchakushū English Translation Project, *Hōnen's Senchakushū* (1998).
+more: Harper Havelock Coates & Ryugaku Ishizuka, *Hōnen the Buddhist Saint* (1925).
+about:
+Hōnen was a monk of the great Tendai monastery on Mount Hiei, famous for his learning. He was haunted by the thought that ordinary people, who could never master the long, difficult practices of the monks, were shut out of awakening. In 1175, reading a passage by the Chinese master Shandao, he found his answer. Simply calling Amida's name, with trust in his vow, was enough for anyone. He left the mountain and taught the *nembutsu* to everyone: aristocrats and fishermen, warriors and women.
+
+His movement became the Jōdo-shū, the Pure Land school, and his disciple Shinran founded the Jōdo Shinshū, today one of Japan's largest Buddhist schools. Two days before Hōnen died, a disciple asked him to write down the essence of his teaching. He wrote it on a single sheet of paper, and it is recited at Jōdo-shū services to this day. Below is the whole document.
+
+## The One-Sheet Document
+The nembutsu I teach is not the kind of meditation on the Buddha practised by the learned people of China and Japan. Nor is it a nembutsu recited by those who have studied and come to understand its meaning. For birth in the Land of Utmost Bliss there is nothing else than this: say *Namu Amida Butsu*, trusting without doubt that you will surely be born there.
+
+The "three kinds of mind" and the "four ways of practice" that people speak of are all contained in this certainty: that by saying *Namu Amida Butsu* you will surely be born there. If I were to hold any deeper teaching than this, I would lose the compassion of the two honoured ones, Śākyamuni and Amida, and fall outside the Original Vow.
+
+Those who trust in the nembutsu, even if they have thoroughly learned all the teachings the Buddha gave in his lifetime, should think of themselves as simple people who cannot read a single word. Let them be like the unlettered nuns and lay devotees, put on no airs of learning, and simply say the nembutsu with their whole heart.
+
+As proof I set both my handprints to this. The settled mind and the practice of the Pure Land school are completely contained in this single sheet. I, Genkū, have no other teaching than this. I have written down what I hold so that mistaken ideas do not spread after my death.
+
+The twenty-third day of the first month of the second year of Kenryaku (1212). Genkū.
+
+@ lotus25
+title: The Lotus Sutra, Chapter 25: the Universal Gate of Guanyin
+orig: 觀世音菩薩普門品, Guanshiyin pusa pumen pin (Chinese); Saddharmapuṇḍarīka (Sanskrit)
+by: anonymous Mahāyāna sūtra; Chinese version by Kumārajīva
+date: the sūtra 1st–2nd centuries CE; Kumārajīva's Chinese 406 CE
+fam: eastasian
+kind: sutra
+credit: Assembly Sounds' own rendering from Kumārajīva's Chinese.
+more: H. Kern, trans., *The Saddharma-Puṇḍarîka, or the Lotus of the True Law*, Sacred Books of the East 21 (1884), where this is Chapter 24.
+more: Burton Watson, trans., *The Lotus Sutra* (1993).
+more: Chün-fang Yü, *Kuan-yin: The Chinese Transformation of Avalokiteśvara* (2001).
+about:
+The *Lotus Sutra* is one of the most influential scriptures of East Asian Buddhism. It teaches that there is really only one path, and that every being, without exception, will become a buddha. Its twenty-fifth chapter, "The Universal Gate", is so loved that it is often printed and chanted on its own as the *Guanyin Sutra*. It tells how the bodhisattva Avalokiteśvara (Guanshiyin, "the one who perceives the sounds of the world") hears everyone who calls on him with one mind, and comes to help in whatever form will serve them best.
+
+In China, over the following centuries, Guanyin came to be pictured mostly as a woman, the compassionate mother of East Asian Buddhism. In Japan the bodhisattva is Kannon, and in Tibet Chenrezig. The verses at the end of the chapter were added to Kumārajīva's version about two centuries after his time. The Namo Guanshiyin Pusa session calls on the name as this chapter teaches.
+
+## Why he is called Perceiver of the World's Sounds
+Then the bodhisattva Inexhaustible Intent rose from his seat, bared his right shoulder, joined his palms toward the Buddha and said: "World-Honoured One, for what reason is the bodhisattva Guanshiyin called Perceiver of the World's Sounds?"
+
+The Buddha said to Inexhaustible Intent: "Good man, suppose there are countless hundreds of thousands of millions of beings suffering every kind of pain and distress. If they hear of the bodhisattva Perceiver of the World's Sounds and call his name with one mind, he will at once perceive the sound of their voices, and all of them will be set free.
+
+"If someone who holds the name of this bodhisattva falls into a great fire, the fire will not burn them, because of his great power. If someone is swept away by a flood and calls his name, they will at once reach shallow water. If beings full of greed, anger or confusion keep him in mind with reverence, they will be freed from greed, anger and confusion."
+
+## In every form
+"Good man, to those who can be saved by a buddha's form, he appears as a buddha and teaches them. To those who can be saved by the form of a king, a monk, a nun, a householder, a woman, a boy or a girl, he appears in that form and teaches them. This bodhisattva travels through every land in every kind of form, bringing beings to freedom. So you should all make offerings to him with one mind. In the midst of fear and danger he gives fearlessness, and for this he is called the Giver of Fearlessness."
+
+## From the closing verses
+> True seeing, pure seeing,
+> the seeing of great wisdom,
+> the seeing of compassion and of kindness:
+> always long for it, always look up to it.
+
+> Wondrous sound, sound that perceives the world,
+> pure sound, sound like the rising tide,
+> sound beyond all the sounds of the world:
+> therefore always keep it in mind.
+> In thought after thought, have no doubt.
+
+> He has every virtue,
+> and looks on all beings with kind eyes.
+> His ocean of blessings has no shore:
+> so bow to him.
+
+@ nichiren
+title: Nichiren on chanting the title of the Lotus Sutra
+orig: 南無妙法蓮華経, Namu myōhō renge kyō; 一生成仏抄, Isshō jōbutsu shō, "On Attaining Buddhahood in This Lifetime" (Japanese)
+by: Nichiren (1222–1282)
+date: daimoku first proclaimed 1253; *Isshō jōbutsu shō* traditionally dated 1255
+fam: eastasian
+kind: teaching
+credit: Assembly Sounds' own rendering and summary from the Japanese.
+more: Philip B. Yampolsky, ed., *Selected Writings of Nichiren* (1990).
+more: Jacqueline I. Stone, *Original Enlightenment and the Transformation of Medieval Japanese Buddhism* (1999).
+more: Soka Gakkai, *The Writings of Nichiren Daishonin* (1999).
+about:
+Nichiren was the son of a fisherman, born on the coast of Japan's Bōsō peninsula. He became a monk and studied for years at the great temples of Mount Hiei and Nara. He came to believe that the *Lotus Sutra* was the Buddha's final and complete teaching. On the 28th day of the fourth month of 1253, according to tradition, he chanted its title, *Namu Myōhō Renge Kyō*, aloud for the first time, as the single practice for his age.
+
+His life was stormy. He was exiled twice and nearly executed. He insisted that Japan would suffer disaster unless it turned to the Lotus Sutra. His followers today form several schools, among them Nichiren Shū, Nichiren Shōshū and the lay movement Soka Gakkai International, which pronounces the phrase *Nam-myoho-renge-kyo*. Chanting it is called *daimoku*, "the title". It is usually done with the eyes open, before a scroll called the Gohonzon, a mandala with the phrase written down its centre, as Nichiren inscribed it. The Daimoku session keeps a brisk chanting rhythm.
+
+## The words of the title
+- **Namu**: devotion, taking refuge.
+- **Myōhō**: the wonderful law, the truth of life that cannot be fully grasped by thought.
+- **Renge**: the lotus flower, which blooms and seeds at the same time, a sign that the cause (practice) and the effect (awakening) are one. It grows pure out of muddy water.
+- **Kyō**: the sūtra, the teaching, and the sound of the voice that chants it.
+
+## From "On Attaining Buddhahood in This Lifetime" (rendered)
+If you want to be free of the suffering of birth and death that you have endured since time without beginning, and to awaken in this very life, you must wake up to the wonderful truth that has always been within your own life. That truth is Myōhō Renge Kyō. So to chant Myōhō Renge Kyō is to take hold of the wonderful truth within all life.
+
+Do not think that the Buddha is somewhere outside you. If you chant while thinking the truth lies outside your own mind, it is not the wonderful law at all, only a lesser teaching.
+
+A clouded mirror shines like a jewel once it is polished. The mind clouded by confusion is like a clouded mirror, but when it is polished it becomes clear, and reflects the true nature of all things. Rouse deep faith, and polish your mirror day and night. How do you polish it? Only by chanting *Namu Myōhō Renge Kyō*.
+
+@ ajikan
+title: Ajikan: the letter A and the moon disc
+orig: 阿字観, Ajikan; 月輪観, Gachirinkan (Japanese); 大日經, Mahāvairocana Sūtra
+by: the Mahāvairocana Sūtra; Kūkai (Kōbō Daishi, 774–835) and the Shingon tradition
+date: the sūtra 7th century; Chinese version by Śubhākarasiṃha and Yixing 724–725; Shingon from 806
+fam: eastasian
+kind: manual
+credit: Assembly Sounds' own rendering and summary.
+more: Taikō Yamasaki, *Shingon: Japanese Esoteric Buddhism* (1988), with a full description of the practice.
+more: Yoshito S. Hakeda, *Kūkai: Major Works* (1972).
+more: Rolf W. Giebel, trans., *The Vairocanābhisaṃbodhi Sutra* (2005).
+about:
+Kūkai, known after his death as Kōbō Daishi, is one of the most loved figures in Japanese history: monk, poet, engineer, calligrapher and founder of Shingon, "True Word" Buddhism. In 804 he sailed to China and was trained in the esoteric teachings by the master Huiguo. He came home in 806 with the complete lineage, and later built the monastery on Mount Kōya, where tradition says he still sits in eternal meditation.
+
+Shingon teaches that all sounds are the speech of the cosmic Buddha Mahāvairocana. Of all sounds the most basic is *A*, the first letter of the Sanskrit alphabet, present in every other sound. The *Mahāvairocana Sūtra* calls the letter A the gate to the truth that all things are "originally unborn": not made, not destroyed, already complete. In *Ajikan*, "contemplation of the letter A", the meditator sits before a scroll showing a golden Sanskrit A on a lotus inside a white full-moon disc. They breathe the sound *ah*, take the moon disc into the heart, expand it to fill the universe and draw it back. The full moon stands for the mind's own pure, bright nature. The Ajikan session follows these steps.
+
+## The letter A (Mahāvairocana Sūtra, rendered)
+The letter A is the gate of all things, because all things are unborn from the very beginning.
+
+## The moon disc (Treatise on the Awakened Mind, rendered)
+See your own mind clearly: still and pure like the full moon, its light filling all of space, with no divisions at all.
+
+## The practice, in brief
+1. **Preparation**: sit upright before the scroll, at a comfortable distance, hands in the meditation mudrā. Take some calm, slow breaths.
+2. **Breathing A**: with each out-breath, sound a long, soft *ah*, aloud or silently, and feel it fill the body.
+3. **The moon disc**: gaze at the white moon disc with the letter A until you can see it with your eyes closed. Then picture it in your chest, at the heart, about the size of the moon.
+4. **Expanding**: slowly let the moon disc grow, to fill the room, the land, the earth and the whole universe, so that you and everything are inside its pure light.
+5. **Gathering**: slowly draw it back to the heart, to its first size.
+6. **Rest**: let the image go, and rest in the clear, open mind it points to. Then return gently.

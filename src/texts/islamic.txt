@@ -1,0 +1,290 @@
+// Islamic, Sufi and Bahá'í texts.
+
+@ quran_dhikr
+title: The Qur'an on remembrance
+orig: القرآن, al-Qur'ān, "the Recitation" (Arabic)
+by: revealed to the Prophet Muhammad
+date: 610–632 CE
+fam: islamic
+kind: scripture
+credit: Assembly Sounds' own rendering of the meanings from the Arabic. Muslims hold that the Qur'an itself exists only in Arabic, and any translation is an interpretation.
+more: M. A. S. Abdel Haleem, trans., *The Qur'an: A New Translation* (2004).
+more: Seyyed Hossein Nasr, ed., *The Study Quran* (2015).
+about:
+For Muslims the Qur'an is the word of God, revealed to the Prophet Muhammad over twenty-three years in Mecca and Medina. It is recited in Arabic in every prayer, and memorised by millions. It calls itself *dhikr*, a "reminder", and calls again and again for *dhikr Allāh*, the remembrance of God, at all times and in every posture.
+
+Sufi practice grows directly from these verses. They promise that "in the remembrance of God hearts find rest", that God is "nearer than the jugular vein", and that "to God belong the most beautiful names, so call on Him by them". Here they are with the two short chapters, the *Fātiḥa* and *al-Ikhlāṣ*, that are said and sung more than any others.
+
+## The Opening, al-Fātiḥa (chapter 1, complete)
+= Bismi llāhi r-raḥmāni r-raḥīm. Al-ḥamdu li-llāhi rabbi l-ʿālamīn. Ar-raḥmāni r-raḥīm. Māliki yawmi d-dīn. Iyyāka naʿbudu wa-iyyāka nastaʿīn. Ihdinā ṣ-ṣirāṭa l-mustaqīm. Ṣirāṭa lladhīna anʿamta ʿalayhim, ghayri l-maghḍūbi ʿalayhim wa-lā ḍ-ḍāllīn.
+> In the name of God, the Compassionate, the Merciful.
+> Praise belongs to God, Lord of all the worlds,
+> the Compassionate, the Merciful,
+> Master of the Day of Judgement.
+> You alone we worship, and You alone we ask for help.
+> Guide us on the straight path,
+> the path of those You have blessed,
+> not of those who have earned anger, nor of those who go astray.
+
+## Sincerity, al-Ikhlāṣ (chapter 112, complete)
+= Qul huwa llāhu aḥad. Allāhu ṣ-ṣamad. Lam yalid wa-lam yūlad. Wa-lam yakun lahū kufuwan aḥad.
+> Say: He is God, One.
+> God, the Everlasting, on whom all depend.
+> He does not beget, nor was He begotten,
+> and there is none like Him.
+
+## Remember Me (2:152; 2:186)
+So remember Me, and I will remember you. Be grateful to Me, and do not deny Me.
+
+When My servants ask you about Me: I am near. I answer the call of the one who calls, whenever he calls on Me.
+
+## The most beautiful names (7:180; 59:22–24)
+To God belong the most beautiful names, so call on Him by them.
+
+He is God; there is no god but He, the Knower of the unseen and the seen. He is the Compassionate, the Merciful. He is God; there is no god but He: the King, the Holy, the Peace, the Faithful, the Guardian, the Mighty, the Compeller, the Supreme. Glory be to God, far above what they set beside Him. He is God, the Creator, the Maker, the Shaper. His are the most beautiful names. Everything in the heavens and the earth glorifies Him, and He is the Mighty, the Wise.
+
+## In the heart, morning and evening (7:205; 33:41–42; 3:191)
+Remember your Lord within yourself, humbly and in awe, without raising your voice, in the morning and the evening, and do not be one of the heedless.
+
+You who believe, remember God often, with much remembrance, and glorify Him morning and evening.
+
+Those who remember God standing, sitting and lying on their sides, and reflect on the creation of the heavens and the earth.
+
+## Hearts find rest (13:28)
+= Alā bi-dhikri llāhi taṭmaʾinnu l-qulūb.
+Those who believe, and whose hearts find rest in the remembrance of God: truly, in the remembrance of God hearts find rest.
+
+## No god but God (47:19)
+= Fa-ʿlam annahū lā ilāha illā llāh.
+So know that there is no god but God.
+
+## Nearer than the jugular vein (50:16)
+We created the human being, and We know what his soul whispers to him, and We are nearer to him than his jugular vein.
+
+## The Verse of Light (24:35)
+God is the light of the heavens and the earth. His light is like a niche in which there is a lamp. The lamp is in a glass, and the glass is like a shining star. It is lit from a blessed olive tree, neither of the east nor of the west, whose oil almost gives light even though no fire has touched it. Light upon light. God guides to His light whom He wills.
+
+@ hadith_dhikr
+title: The Hadith on remembrance, the Names and iḥsān
+orig: الحديث, al-Ḥadīth, "report" (Arabic)
+by: sayings of the Prophet Muhammad, gathered by al-Bukhārī, Muslim, al-Tirmidhī and others
+date: spoken 610–632 CE; collected in the 9th century
+fam: islamic
+kind: scripture
+credit: Assembly Sounds' own rendering from the Arabic. Hadith numbers follow the standard modern numbering of each collection.
+more: Ṣaḥīḥ al-Bukhārī and Ṣaḥīḥ Muslim, in any complete English edition.
+more: Al-Nawawī, *Forty Hadith* (13th century), and his *Kitāb al-Adhkār* on remembrance.
+about:
+The Hadith are the recorded words and deeds of the Prophet Muhammad, passed down by chains of named witnesses. In the 9th century scholars such as al-Bukhārī and Muslim sifted them into great collections. Next to the Qur'an they are the main guide to Muslim life, and much of daily devotion comes straight from them. That includes the *tasbīḥ* after prayer (33 glorifications, 33 praises, 33 or 34 magnifications), the ninety-nine Names, and the teaching that God remembers whoever remembers Him.
+
+The Sufis take their aim from one hadith above all. In it the angel Gabriel asks the Prophet what *iḥsān*, "excellence" or "beauty of worship", is. The answer, "that you worship God as though you see Him", is the heart of *murāqaba*, watching over the heart.
+
+## Iḥsān (the hadith of Gabriel; Ṣaḥīḥ Muslim 8)
+He said: "Tell me about *iḥsān*." The Prophet said: "It is that you worship God as though you see Him; and if you do not see Him, He sees you."
+
+## I am with him when he remembers Me (a divine saying; al-Bukhārī 7405, Muslim 2675)
+God says: I am as My servant thinks of Me, and I am with him when he remembers Me. If he remembers Me within himself, I remember him within Myself. If he remembers Me in a gathering, I remember him in a gathering better than his. If he comes a hand's span closer to Me, I come an arm's length closer to him. If he comes an arm's length closer, I come a full stretch of the arms closer. And if he comes to Me walking, I come to him running.
+
+## The living and the dead (al-Bukhārī 6407)
+The one who remembers his Lord and the one who does not are like the living and the dead.
+
+## The best remembrance (al-Tirmidhī 3383)
+The best remembrance is *lā ilāha illā llāh*, "there is no god but God", and the best prayer is *al-ḥamdu li-llāh*, "praise be to God".
+
+## When people gather to remember (Ṣaḥīḥ Muslim 2700)
+No people sit together remembering God without the angels surrounding them, mercy covering them, tranquillity coming down upon them, and God mentioning them among those who are with Him.
+
+## The ninety-nine Names (al-Bukhārī 2736)
+God has ninety-nine names, one hundred less one. Whoever counts them, learning them and living by them, will enter Paradise.
+
+## The tasbīḥ after prayer (Ṣaḥīḥ Muslim 597)
+Whoever, after every prayer, glorifies God thirty-three times, praises God thirty-three times and declares God's greatness thirty-three times, making ninety-nine, and completes the hundred by saying "There is no god but God alone, without partner; His is the kingdom and His the praise, and He has power over all things", will be forgiven his sins, even if they are as many as the foam of the sea.
+
+= Subḥāna llāh (33) · Al-ḥamdu li-llāh (33) · Allāhu akbar (33 or 34)
+Glory be to God · Praise be to God · God is greatest
+
+## Better than a servant (al-Bukhārī 3113)
+When his daughter Fāṭima asked for a servant to help with her work, the Prophet told her and ʿAlī: "Shall I tell you of something better than a servant? When you go to bed, say *Allāhu akbar* thirty-four times, *Subḥāna llāh* thirty-three times and *al-ḥamdu li-llāh* thirty-three times. That is better for you than a servant." So this form is still called the *tasbīḥ* of Fāṭima.
+
+@ ibn_ataillah
+title: The Ḥikam and The Key of Success: on dhikr
+orig: الحكم العطائية, al-Ḥikam; مفتاح الفلاح ومصباح الأرواح, Miftāḥ al-Falāḥ wa-Miṣbāḥ al-Arwāḥ (Arabic)
+by: Ibn ʿAṭāʾ Allāh al-Iskandarī
+date: late 13th century (died 1309)
+fam: islamic
+kind: treatise
+credit: Assembly Sounds' own rendering from the Arabic.
+more: Victor Danner, trans., *Ibn ʿAṭā'illāh's Sufi Aphorisms (Kitāb al-Ḥikam)* (1973).
+more: Mary Ann Koury Danner, trans., *The Key to Salvation: A Sufi Manual of Invocation* (1996).
+about:
+Ibn ʿAṭāʾ Allāh (d. 1309) was the third great master of the Shādhilī order, which began in North Africa and Egypt. He taught at al-Azhar in Cairo. His *Ḥikam*, about 260 short aphorisms on the inner life, became one of the most loved Sufi books. It has been commented on for seven centuries and is still taught in mosques from Morocco to Indonesia.
+
+His *Key of Success* is the first full Sufi manual of *dhikr*. It explains why to remember God and how. It describes the right place and posture, sitting facing Mecca, and the right words. It shows how remembrance moves through stages: from the tongue to the heart, and from the heart to the innermost "secret" (*sirr*), until the one who remembers disappears into the One remembered. The dhikr sessions follow these stages.
+
+## Do not give up remembrance (al-Ḥikam)
+Do not stop remembering God just because you do not feel present with Him in it. To forget Him by not remembering at all is worse than forgetting Him while you remember. Perhaps He will lift you from remembrance with forgetfulness to remembrance with wakefulness; from that to remembrance with presence; and from that to remembrance in which everything is absent except the One remembered.
+
+## The mirror of the heart (al-Ḥikam)
+How can the heart be lit while the forms of created things are pictured in its mirror? How can it travel to God while it is chained by its desires?
+
+## The life of actions (al-Ḥikam)
+Actions are lifeless forms. What gives them life is the secret of sincerity hidden within them.
+
+## The stages of remembrance (The Key of Success, summarised)
+1. **Remembrance of the tongue**: saying the words aloud or softly, with attention, as often as you can.
+2. **Remembrance of the heart**: the words go on inwardly, and the heart itself remembers, even when the tongue is still.
+3. **Remembrance of the secret**: the innermost self is wholly taken up with God, and the one who remembers is lost in the One remembered.
+
+## How to sit (The Key of Success, summarised)
+Choose a clean, quiet place and a time free of distraction. Sit facing the *qibla*, the direction of Mecca, with the hands resting on the thighs and the eyes closed. Begin with *lā ilāha illā llāh*, "there is no god but God". On *lā ilāha* let go of everything other than God, and on *illā llāh* turn wholly to Him, bringing the words down into the heart.
+
+@ ghazali
+title: The Revival of the Religious Sciences and Deliverance from Error
+orig: إحياء علوم الدين, Iḥyāʾ ʿUlūm al-Dīn; المنقذ من الضلال, al-Munqidh min al-Ḍalāl; المقصد الأسنى, al-Maqṣad al-Asnā (Arabic)
+by: Abū Ḥāmid al-Ghazālī
+date: c. 1096–1106
+fam: islamic
+kind: book
+credit: Assembly Sounds' own rendering and paraphrase from the Arabic.
+more: Richard J. McCarthy, trans., *Freedom and Fulfillment* (1980), including *Deliverance from Error*.
+more: The Fons Vitae series of translations of the *Iḥyāʾ*, book by book (1989 onward).
+more: David B. Burrell & Nazih Daher, trans., *The Ninety-Nine Beautiful Names of God* (1992).
+about:
+Al-Ghazālī (1058–1111) was the most famous scholar of his age, a professor at the Niẓāmiyya college in Baghdad. In 1095 he fell into a spiritual crisis. His voice failed so that he could not teach, and he left his post and his family and wandered for about ten years as a Sufi, in Damascus, Jerusalem and Mecca. He came to believe that true knowledge of God comes not from argument but from *dhawq*, "tasting": direct experience reached through purifying the heart.
+
+He told the story in *Deliverance from Error*. Then he wrote the forty books of the *Revival of the Religious Sciences*, which joined Sufi inner life to everyday Islamic law and worship. Two of its books shape the sessions. The book on the marvels of the heart describes the Sufi method of *dhikr*. The book on listening defends *samāʿ*, listening to music and poetry, when done for God. His *Noblest Aim* explains each of the ninety-nine Names. It teaches that the servant's share in each Name is to take on its quality as a trait of their own character.
+
+## Tasting, not describing (Deliverance from Error)
+I learned for certain that the Sufis are the ones who travel the road to God. Their way of life is the best, their path the straightest, their character the purest. What is most special to them cannot be learned by study, only by tasting, by inner states and by a change of character. What a difference there is between knowing the definition of health and being healthy, or between knowing the definition of drunkenness and being drunk!
+
+## The method of the Sufis (Revival, the book on the marvels of the heart, paraphrased)
+The disciple sits alone in a quiet corner, with his heart emptied of everything else. He does not let himself be busy even with reading the Qur'an. He says with his tongue, without stopping, "God, God", keeping his heart present with it. In the end he reaches a state where, if he stops moving his tongue, the word seems to flow on it by itself. He keeps at it until the movement of the tongue falls away and the word goes on in the heart alone. He keeps at it until even the letters and form of the word are wiped from the heart and only its meaning remains, present and inseparable. Beyond that, he can only wait for what God opens to him.
+
+## The flint of listening (Revival, the book on listening, paraphrased)
+Hearts and inner secrets are treasure houses of secrets and mines of jewels, and the jewels are hidden in them as fire is hidden in iron and stone. There is no way to bring out what is hidden in them except by the flint of listening. Listening brings out what is in the heart. It puts nothing there that was not there before.
+
+## Taking on the Names (The Noblest Aim, paraphrased)
+The servant's share in each of God's names is to come close to its meaning, and to be adorned with it as a trait of his own. From *the Merciful* he takes mercy towards others; from *the Forgiving* he learns to cover others' faults; from *the Patient*, patience.
+
+@ masnavi
+title: The Song of the Reed (Masnavī I:1–18)
+orig: مثنوی معنوی, Masnavī-yi Maʿnavī, "Rhyming couplets of deep meaning" (Persian)
+by: Jalāl al-Dīn Rūmī
+date: c. 1258–1273
+fam: islamic
+kind: poem
+full: yes
+credit: Assembly Sounds' own rendering of the eighteen opening couplets from the Persian.
+more: Reynold A. Nicholson, ed. and trans., *The Mathnawí of Jalálu'ddín Rúmí* (8 vols., 1925–1940), the standard text and literal translation.
+more: Jawid Mojaddedi, trans., *The Masnavi*, books 1–4 (2004–2017).
+more: Franklin D. Lewis, *Rumi: Past and Present, East and West* (2000).
+about:
+Jalāl al-Dīn Rūmī (1207–1273) was born near Balkh in today's Afghanistan. As a child he fled the Mongols with his family, and he settled in Konya in Anatolia, where he became a respected teacher of religious law. In 1244 he met the wandering dervish Shams of Tabriz, and the meeting turned him into a poet of ecstatic love. His *Masnavī* is a long spiritual poem in six books and some 25,000 couplets, dictated to his disciple Ḥusām al-Dīn. It has been called "the Qur'an in Persian".
+
+It opens with eighteen couplets known as the *Song of the Reed*. The reed flute, the *ney*, was cut from its reed bed and longs to return. Its cry is the cry of every soul separated from its source. After Rūmī's death his son Sulṭān Walad founded the Mevlevi order, the "whirling dervishes". The ney became its sacred instrument, and every Mevlevi *sema* begins with a solo on the reed. The ney and sema sessions open with this poem.
+
+## The Song of the Reed, complete
+1. Listen to this reed, how it complains, telling the story of separations:
+2. "Ever since they cut me from the reed bed, men and women have wept at my cry.
+3. I want a heart torn open by parting, so that I can tell it the pain of longing.
+4. Everyone who is left far from his source longs for the time when he will be joined to it again.
+5. In every gathering I have sung my sorrow; I have kept company with the sad and the happy alike.
+6. Each one became my friend out of his own guesswork; no one sought out the secrets inside me.
+7. My secret is not far from my cry, but eye and ear do not have the light to see it."
+8. Body is not hidden from soul, nor soul from body, yet no one is allowed to see the soul.
+9. The cry of this reed is fire, not wind. Whoever does not have this fire, let him be nothing!
+10. It is the fire of love that has fallen into the reed; it is the ferment of love that has fallen into the wine.
+11. The reed is the companion of everyone torn from a friend; its notes have torn away our veils.
+12. Who ever saw a poison and a cure like the reed? Who ever saw a comforter and a longing lover like the reed?
+13. The reed tells the story of the road full of blood; it tells the tales of Majnūn's mad love.
+14. Only the one who has lost his senses is close to this sense; the tongue has no buyer but the ear.
+15. In our grief the days have grown untimely; our days walk hand in hand with burning pains.
+16. If the days are gone, let them go, it does not matter. But You, stay, O You, whose purity nothing can match!
+17. Everyone but the fish has had his fill of His water; whoever has no daily bread finds the day very long.
+18. No one who is raw can understand the state of the ripe; so my words must be short. Farewell.
+
+@ naqshbandi
+title: The Naqshbandi way: the eleven principles, murāqaba and the laṭāʾif
+orig: کلمات قدسیه, Kalimāt-i Qudsiyya, "the sacred words" (Persian)
+by: ʿAbd al-Khāliq Ghijduvānī and Bahāʾ al-Dīn Naqshband; the laṭāʾif from Shaykh Aḥmad Sirhindī
+date: 12th–17th centuries
+fam: islamic
+kind: teaching
+credit: Summarised in Assembly Sounds' own words from the Persian terms.
+more: Itzchak Weismann, *The Naqshbandiyya: Orthodoxy and Activism in a Worldwide Sufi Tradition* (2007).
+more: Arthur F. Buehler, *Sufi Heirs of the Prophet: The Indian Naqshbandiyya and the Rise of the Mediating Sufi Shaykh* (1998).
+more: Aḥmad Sirhindī, *Maktūbāt* (Letters), in Persian.
+about:
+The Naqshbandi order takes its name from Bahāʾ al-Dīn Naqshband (1318–1389) of Bukhara in Central Asia. It is known for its *silent* remembrance (*dhikr khafī*), done in the heart without moving the tongue. It is also known for its sober spirit: "solitude in the crowd", living fully in the world while the heart stays with God. It traces its chain of teachers back to Abū Bakr, the Prophet's companion, to whom, it is said, the Prophet taught silent remembrance in the cave during the flight to Medina.
+
+Its method rests on eleven short principles. The first eight come from the 12th-century master ʿAbd al-Khāliq Ghijduvānī, and Naqshband added the last three. In India, Shaykh Aḥmad Sirhindī (1564–1624), called the "Renewer of the Second Millennium", developed the teaching of the *laṭāʾif*. These are five subtle centres of spiritual perception in the chest, each awakened by silently remembering the name *Allāh* in it. The murāqaba and laṭāʾif sessions follow this teaching.
+
+## The eleven principles
+1. **Hūsh dar dam**, awareness in the breath: let no breath go by in forgetfulness.
+2. **Naẓar bar qadam**, eyes on the feet: keep the gaze lowered and the attention where you are.
+3. **Safar dar waṭan**, journeying at home: travel inwardly from blameworthy traits to praiseworthy ones.
+4. **Khalwat dar anjuman**, solitude in the crowd: be with people outwardly and with God inwardly.
+5. **Yād kard**, remembering: keep up the dhikr given by your teacher.
+6. **Bāz gasht**, returning: after each round of dhikr, turn back to God with the words "My God, You are my goal, and Your good pleasure is what I seek."
+7. **Nigāh dāsht**, guarding: watch over the heart and keep stray thoughts from entering.
+8. **Yād dāsht**, holding in mind: let the remembrance become a steady awareness of the divine presence.
+9. **Wuqūf-i zamānī**, pausing in time: stop now and then to see whether the last hour was spent in presence or in forgetfulness.
+10. **Wuqūf-i ʿadadī**, pausing in number: keep count of the silent dhikr, in odd numbers.
+11. **Wuqūf-i qalbī**, pausing in the heart: keep the attention on the heart itself as it remembers.
+
+## Murāqaba, watching over the heart
+Sit with the head slightly bowed and the eyes closed. Turn the whole attention to the heart and turn the heart towards God. Wait there, like a cat watching a mouse hole, for the divine grace (*fayḍ*) to come in. Do not strain; simply keep watch.
+
+## The five laṭāʾif (in the Mujaddidi teaching)
+- **Qalb**, the heart: two finger-widths below the left breast. Linked with the prophet Adam.
+- **Rūḥ**, the spirit: two finger-widths below the right breast. Linked with Noah and Abraham.
+- **Sirr**, the secret: two finger-widths above the left breast. Linked with Moses.
+- **Khafī**, the hidden: two finger-widths above the right breast. Linked with Jesus.
+- **Akhfā**, the most hidden: in the centre of the chest. Linked with Muhammad.
+
+Each centre is awakened by holding the name *Allāh* silently in it until it seems to beat with the name. Some lines also give each centre a colour, though the colours differ from line to line.
+
+@ inayat
+title: The purification breaths of Hazrat Inayat Khan
+by: Hazrat Inayat Khan
+date: taught 1910–1927
+fam: islamic
+kind: teaching
+credit: Summarised in Assembly Sounds' own words.
+more: Hazrat Inayat Khan, *The Mysticism of Sound and Music* (collected edition, 1991).
+more: *The Sufi Message of Hazrat Inayat Khan* (14 vols., 1960–1967).
+more: Pir Vilayat Inayat Khan, *Awakening: A Sufi Experience* (1999).
+about:
+Inayat Khan (1882–1927) was born in Baroda, in India, into a family of court musicians. He became a master of the vina and of Indian classical music, and was initiated into the Chishti order of Sufis. In 1910 his teacher sent him to the West "to harmonise East and West with the harmony of your music". He gave concerts and lectures in the United States and Europe and founded the Sufi Order in the West. He settled near Paris, and returned to India shortly before his death in Delhi in 1927.
+
+He taught that "the breath is the bridge between body and soul". His purification breaths work through the four elements, five breaths each. Each changes the path of the breath between nose and mouth and is joined to an image. Earth draws up magnetism from the ground. Water washes down through the body like a stream. Fire rises from the solar plexus to the heart and burns away what is no longer needed. Air sweeps through the whole being. The breaths are gentle and unforced. The elemental breath session follows them.
+
+## The four breaths
+- **Earth**: in through the nose, out through the nose. Feel the breath drawing strength up from the earth through the feet, and on the out-breath letting what is heavy sink away into it.
+- **Water**: in through the nose, out through the mouth. Picture the breath as water flowing down through you from the head, washing body and mind clean.
+- **Fire**: in through the mouth, out through the nose. Feel the breath gathering at the solar plexus and rising to the heart as warmth and light.
+- **Air**: in through the mouth, out through the mouth. Feel the breath passing through every particle of the body, as if you were made of air, light and open.
+
+Do five gentle breaths for each element, in this order. Some teachers add a fifth, the subtle breath of ether, very fine and through the nose.
+
+@ bahai
+title: The Kitáb-i-Aqdas and the repetition of the Greatest Name
+orig: كتاب اقدس, Kitáb-i-Aqdas, "The Most Holy Book" (Arabic)
+by: Bahá'u'lláh
+date: 1873
+fam: bahai
+kind: scripture
+credit: Paraphrased in Assembly Sounds' own words; the authorised Bahá'í translations are not reproduced.
+more: Bahá'u'lláh, *The Kitáb-i-Aqdas: The Most Holy Book* (authorised English translation, 1992).
+more: Bahá'u'lláh, *The Hidden Words* (1858; trans. Shoghi Effendi, 1932).
+more: Moojan Momen, *The Bahá'í Faith: A Beginner's Guide* (2007).
+about:
+The Bahá'í Faith grew out of the Bábí movement in 19th-century Persia. Its founder, Mírzá Ḥusayn-ʿAlí (1817–1892), took the title Bahá'u'lláh, "the Glory of God". He was exiled from Persia to Baghdad, Constantinople, Adrianople and finally the prison city of Akka in Ottoman Palestine. There he wrote the *Kitáb-i-Aqdas*, his book of laws. Bahá'ís believe in one God who has spoken through a series of messengers, among them Abraham, Moses, Buddha, Jesus, Muhammad and Bahá'u'lláh. They teach the oneness of religion and of humanity.
+
+The Aqdas gives a simple daily practice. Wash your hands and face, sit facing God, and repeat *Alláh-u-Abhá*, "God is Most Glorious", ninety-five times. *Abhá* is a form of *Bahá*, "glory", which Bahá'ís call the Greatest Name. Many Bahá'ís count the repetitions on a string of ninety-five beads. The Alláh-u-Abhá session follows this practice.
+
+## The practice (Kitáb-i-Aqdas, paragraph 18, paraphrased)
+Every believer is to wash the hands and then the face each day, sit down, turn to God, and repeat *Alláh-u-Abhá* ninety-five times. This is what God has ordained.
+
+## The spirit of the practice (from the Hidden Words, paraphrased)
+The first piece of advice is to have a heart that is clean, gentle and full of light. Then you will own a kingdom that is old, lasting and without end.

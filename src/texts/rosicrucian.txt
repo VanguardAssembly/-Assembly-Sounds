@@ -1,0 +1,285 @@
+// Rosicrucian, alchemical and Masonic texts.
+
+@ fama
+title: Fama Fraternitatis: the Rosicrucian manifesto
+orig: Fama Fraternitatis, oder Entdeckung der Bruderschafft des löblichen Ordens des Rosenkreutzes (German)
+by: anonymous; usually linked to the Tübingen circle of Johann Valentin Andreae
+date: printed at Kassel, 1614 (circulating in manuscript from about 1610)
+fam: rosicrucian
+kind: book
+credit: Retold, with short passages rendered, by Assembly Sounds from the German.
+more: Thomas Vaughan ("Eugenius Philalethes"), trans., *The Fame and Confession of the Fraternity of R: C:* (1652, public domain).
+more: Frances A. Yates, *The Rosicrucian Enlightenment* (1972).
+more: Christopher McIntosh, *The Rosicrucians* (3rd ed., 1997).
+about:
+In 1614 a short pamphlet appeared in Kassel and caused a sensation across Europe. It announced a secret brotherhood, founded long before by a German knight called Brother C.R.C. (later named Christian Rosenkreutz). The brothers had gathered all the wisdom of East and West and were waiting for the right moment to reform learning, medicine and religion. Hundreds of readers published open letters begging to be admitted. Nobody ever received a reply.
+
+A second manifesto, the *Confessio* (1615), and an alchemical romance, *The Chymical Wedding* (1616), followed. Most historians now see the three as the work of a circle of young Lutheran scholars in Tübingen, partly earnest and partly playful. Whatever their origin, they created the image of the rose cross, and every later Rosicrucian society takes its name from them.
+
+## The story of Brother C.R.C.
+The founder, born to a noble but poor German family, was placed in a monastery as a boy. He set out on pilgrimage to the Holy Land, and at Damascus heard of wise men in Arabia, at a place called Damcar. They welcomed him as one they had long expected, called him by name, and taught him physics and mathematics. He translated their book, the *Book M*, into Latin. He went on to Fez in Morocco to learn about the elements and the hidden harmony of the world. Back in Europe the scholars of Spain laughed at his discoveries, so he returned to Germany. There he built a house, the *House of the Holy Spirit*, and gathered his first three brothers.
+
+## The six agreements of the brotherhood
+1. None of them should practise anything except healing the sick, and that without payment.
+2. None should be made to wear a special habit; each should follow the dress of the country he lived in.
+3. Every year, on the day C., they should meet at the House of the Holy Spirit, or send word of the reason for their absence.
+4. Each brother should look for a worthy person to succeed him after his death.
+5. The letters C.R. should be their seal, mark and sign.
+6. The brotherhood should remain secret for a hundred years.
+
+## The vault
+One hundred and twenty years after the founder's death, the brothers found a hidden door while altering their building. On it were the words *Post CXX annos patebo*: "After one hundred and twenty years I shall open." Inside was a seven-sided vault lit by an inner sun in its ceiling, its walls covered with figures and sentences. In the middle stood a round altar inscribed: "This compendium of the universe I made in my lifetime to be my tomb." Beneath it lay the founder's body, whole and undecayed, holding a little book, the *Book T*. It ended with these words:
+
+= Ex Deo nascimur, in Jesu morimur, per Spiritum Sanctum reviviscimus.
+We are born of God, we die in Jesus, we live again through the Holy Spirit.
+
+@ chymical
+title: The Chymical Wedding of Christian Rosenkreutz
+orig: Chymische Hochzeit Christiani Rosencreütz, Anno 1459 (German)
+by: Johann Valentin Andreae
+date: printed at Strasbourg, 1616 (written c. 1605)
+fam: rosicrucian
+kind: book
+credit: Retold, with the invitation rendered, by Assembly Sounds from the German.
+more: Ezechiel Foxcroft, trans., *The Hermetick Romance: or the Chymical Wedding* (1690, public domain).
+more: Joscelyn Godwin, trans., *The Chemical Wedding of Christian Rosenkreutz* (1991).
+about:
+The third Rosicrucian text is a strange, dreamlike story, told in the first person by Christian Rosenkreutz as an old man. It covers seven days, like the seven days of creation. It is also an alchemical allegory, in which the royal couple die and are reborn as the alchemist's matter is dissolved and remade. Johann Valentin Andreae (1586–1654), a Lutheran pastor, later admitted writing it as a youthful *ludibrium*, a "jest". Generations of readers have still taken it as a map of inner transformation, and the Chymical Wedding session follows its seven days.
+
+## The invitation (Day One)
+On the evening before Easter, Christian was sitting at his table, deep in prayer, when a terrible storm blew up. A beautiful woman appeared in a sky-blue gown covered with golden stars. She carried a golden trumpet and had great wings full of eyes. She left a letter, sealed with a small cross and the words *In hoc signo vinces*, "in this sign you will conquer". Inside, in golden letters, he read:
+
+> Today, today, today
+> is the King's wedding day.
+> If you were born for this,
+> chosen by God for joy,
+> then climb the mountain
+> where three temples stand,
+> and see what happens there.
+> Keep watch!
+> Look at yourself!
+> Unless you bathe with care,
+> the wedding may do you harm.
+> Harm comes to the one who lingers here;
+> beware, whoever is too light.
+
+It was signed *Sponsus et Sponsa*, "Bridegroom and Bride".
+
+## The seven days, in brief
+1. **The invitation.** That night Christian dreams that he is in a dark tower full of prisoners. A rope is let down seven times, and he is pulled up, wounded but free.
+2. **The journey.** He puts on a white linen coat and a blood-red ribbon crossed over his shoulders, with four red roses in his hat. He chooses one of four roads and reaches the castle gates.
+3. **The weighing.** The guests are weighed on golden scales against seven weights. The vain and unworthy are sent away. Christian, who had thought himself least worthy, passes.
+4. **The royal persons.** He sees the kings and queens, watches a play, and then sees them beheaded and laid in coffins.
+5. **The sleeping Venus.** He secretly sees Venus sleeping in a hidden chamber. The bodies are carried by ship to the Tower of Olympus.
+6. **The work.** In the seven-storeyed tower the guests carry out the alchemical work, floor by floor. A bird is born, fed and sacrificed, and from its essence the king and queen are brought back to life.
+7. **The return.** The guests are made Knights of the Golden Stone. Because he looked on Venus, Christian must stay behind as doorkeeper. The story breaks off, unfinished, as he goes home.
+
+@ steiner_occult
+title: An Outline of Esoteric Science: the Rose Cross meditation
+orig: Die Geheimwissenschaft im Umriss (German)
+by: Rudolf Steiner
+date: 1910
+fam: rosicrucian
+kind: book
+credit: Summarised and rendered in Assembly Sounds' own words from the German.
+more: Rudolf Steiner, *An Outline of Esoteric Science*, trans. Catherine E. Creeger (1997).
+more: Rudolf Steiner, *An Outline of Occult Science*, trans. Max Gysi (1914).
+about:
+Rudolf Steiner (1861–1925) was an Austrian philosopher and editor of Goethe's scientific writings. He led the German section of the Theosophical Society and then founded his own movement, Anthroposophy, in 1912–13. He called his path of training "Rosicrucian", a modern Christian way to spiritual knowledge through clear, sober thinking.
+
+In the chapter on knowledge of the higher worlds he gives what he calls an example of a symbolic image for meditation, the rose cross. You build the picture slowly from feelings about plants and human beings, and then hold it in your mind. The point is not to believe anything about it but to let it work on you. Steiner says that held often and with feeling, it awakens new powers of soul. The Rose Cross session leads you through the image step by step.
+
+## Building the image
+Think of a plant: how it is rooted in the earth, how it puts out leaf after leaf, and how it opens into a flower. Then set a human being beside it. A human has qualities the plant lacks, such as feelings, will and thinking. But the plant is free of the passions and desires that a human so often follows. Its green sap is pure and calm.
+
+Now think how the human could become better, purifying the drives and passions until they are as pure as the plant's life, but raised to a higher level by consciousness. The red of human blood shows the drives and passions. The red of the rose shows them purified, as pure as the plant's green sap, yet transformed.
+
+## The symbol
+Picture a black cross. Let it stand for the lower drives and passions that must die away. Where its beams meet, picture seven red roses in a ring. Let them stand for the blood that has been purified, and the passions that have been transformed into higher powers of soul.
+
+Hold the image calmly before the mind. Do not only think it; feel it as you build it. Then, at the end, let even the picture go, and rest in the mood it has left.
+
+@ steiner_kohw
+title: How to Know Higher Worlds: the seed meditation and the evening review
+orig: Wie erlangt man Erkenntnisse der höheren Welten? (German)
+by: Rudolf Steiner
+date: 1904–1905
+fam: rosicrucian
+kind: manual
+credit: Summarised and rendered in Assembly Sounds' own words from the German.
+more: Rudolf Steiner, *How to Know Higher Worlds*, trans. Christopher Bamford (1994).
+more: Rudolf Steiner, *Guidance in Esoteric Training* (lessons and exercises, 1903–1914).
+about:
+This book first appeared as a series of magazine essays. It is Steiner's practical guide to inner training. It asks first for reverence, inner calm and moral seriousness. Then it gives exercises that train the soul to perceive what lies behind the sense world.
+
+One of its most famous exercises is the seed meditation. You look at a small seed and feel the invisible force that will make it grow into a whole plant. Later you look at a full-grown plant and feel the forces by which it will one day wither and die. Steiner says the two feelings, of growing and of withering, if practised patiently, become the first organs of a finer perception.
+
+In his esoteric lessons Steiner also taught a nightly review of the day, done backwards, from evening to morning. You watch yourself as calmly as if you were watching someone else. Max Heindel, who had studied with him, taught the same exercise in the Rosicrucian Fellowship.
+
+## The seed
+Place a small seed in front of you. Look at it closely and think of its shape, colour and every detail. Then reflect: this seed, if planted, will grow into a plant with leaves and flowers. Picture the plant. Then think: what I am now picturing in my imagination, the forces of earth and light will later draw out of this seed. If I had an artificial seed that looked exactly the same, no plant would grow from it. So the seed holds something invisible, which the plant will one day show.
+
+Let a feeling grow from this thought, the feeling of the invisible force at work. Steiner says that with patience this feeling becomes like a little flame of perception around the seed.
+
+## The full-grown plant
+Later, take a plant in full bloom and think: a time will come when this plant withers and dies. Everything I see now will disappear. But it has produced seeds, which will grow into new plants. Feel the passing away, the decaying. This feeling, too, Steiner says, gives rise in time to a new kind of perception.
+
+## The review of the day
+At night, before sleep, go back over the day in reverse order: from now to the evening, the afternoon, the morning, the moment you woke. See each scene as a picture, as if it happened to someone else. Do not dwell on it or brood; look at it calmly, learn from it, and move on.
+
+## The six supporting exercises
+Steiner also gives six simple exercises of character, one a month, then all of them together:
+1. Control of thinking: hold one simple thought, such as a pin, for five minutes.
+2. Control of will: do one small, useless action at a set time every day.
+3. Equanimity: do not let joy or sorrow sweep you away.
+4. Positivity: look for the good in every thing and person.
+5. Open-mindedness: be ready to meet each new experience freshly.
+6. Harmony: bring the first five together into balance.
+
+@ heindel
+title: The Rosicrucian Cosmo-Conception: retrospection and concentration
+by: Max Heindel
+date: 1909
+fam: rosicrucian
+kind: book
+credit: Summarised in Assembly Sounds' own words.
+more: Max Heindel, *The Rosicrucian Cosmo-Conception, or Mystic Christianity* (1909).
+more: The Rosicrucian Fellowship, Mount Ecclesia, Oceanside, California.
+about:
+Max Heindel (born Carl Louis von Grasshoff, 1865–1919) was a Danish-American engineer who turned to esoteric study. After a period in Germany, where he heard Rudolf Steiner lecture, he published *The Rosicrucian Cosmo-Conception* in 1909. In 1909 he founded the Rosicrucian Fellowship, and from 1911 it has had its headquarters at Mount Ecclesia in Oceanside, California. The Fellowship still teaches by correspondence course.
+
+The book sets out two daily exercises for every student. In the evening, *retrospection* goes back over the day in reverse order. You see each scene as an impartial witness, and judge yourself honestly. Heindel taught that this nightly self-review does now the work of the purgatory after death, so it frees you, and that it makes the memory sharper. In the morning, *concentration* holds one high ideal steadily before the mind. It is done soon after waking, before the business of the day fills the mind. The Cosmo-Conception describes a ladder of exercises that begins with concentration and rises through meditation, observation and discrimination to contemplation.
+
+## Evening retrospection
+1. Lie relaxed in bed before sleep.
+2. Go back over the day, scene by scene, in reverse order: last thing first, first thing last.
+3. See each scene as clearly as you can, and look at your own part in it as a fair witness would.
+4. Where you did well, give thanks. Where you did wrong, feel sorry and resolve to do better. If you can put something right tomorrow, plan to do so.
+5. Then let the day go, and fall asleep.
+
+Doing it backwards matters. It follows the order in which the life is reviewed after death, and it unwinds effects to find their causes.
+
+## Morning concentration
+1. On waking, before you speak or plan, sit quietly.
+2. Choose one high ideal or one simple image and hold it steadily before the mind.
+3. When the mind wanders, bring it back, again and again, without strain.
+4. Let the ideal unfold: think about it, then simply look at it, then rest in it.
+
+@ vitriol
+title: V.I.T.R.I.O.L.: "visit the interior of the earth"
+orig: Visita Interiora Terrae Rectificando Invenies Occultum Lapidem (Latin)
+by: the alchemical treatise *Azoth*, attributed to "Basil Valentine"
+date: first printed 1613
+fam: rosicrucian
+kind: teaching
+credit: Assembly Sounds' own rendering from the Latin.
+more: Lawrence M. Principe, *The Secrets of Alchemy* (2013).
+more: Stanislas Klossowski de Rola, *The Golden Game: Alchemical Engravings of the Seventeenth Century* (1988).
+about:
+Vitriol was the old name for the sulphates of iron and copper. When distilled they gave "oil of vitriol", sulphuric acid, the strongest solvent the alchemists knew. The word was also read as an acronym, set around the rim of a famous emblem in the treatise *Azoth*. The book is credited to "Basil Valentine", a monk of Erfurt who may never have existed.
+
+The seven letters spell out a short instruction: *Visit the interior of the earth; by rectifying, you will find the hidden stone.* To the laboratory alchemist this meant going down into matter, purifying it by repeated distillation, and finding the philosophers' stone hidden in it. To the spiritual alchemist and the Rosicrucian, the "earth" is one's own body and depths. The descent is self-knowledge, the purifying is the correcting of faults, and the hidden stone is the true self.
+
+In the French and Scottish Masonic rites the candidate first waits alone in a small dark *chamber of reflection*. A skull, bread, water, salt and sulphur, an hourglass and the word V.I.T.R.I.O.L. on the wall are there to encourage this inner descent. The session is a slow inward journey on the same motto.
+
+## The motto
+- **V**isita: visit
+- **I**nteriora: the interior
+- **T**errae: of the earth;
+- **R**ectificando: by rectifying (correcting, purifying again and again)
+- **I**nvenies: you will find
+- **O**ccultum: the hidden
+- **L**apidem: stone.
+
+## The three readings
+1. **In the laboratory**: dissolve the matter, purify it by repeated distillation, and the stone hidden in it appears.
+2. **In the soul**: go down into yourself, correct what is crooked, and find what is unchanging at your centre.
+3. **In the lodge**: before you can be born into the light, sit alone with death, time and the simple elements, and look honestly within.
+
+@ alchemy_stages
+title: The stages of the Great Work: nigredo, albedo, citrinitas, rubedo
+orig: μελάνωσις, λεύκωσις, ξάνθωσις, ἴωσις (Greek); nigredo, albedo, citrinitas, rubedo (Latin)
+by: the alchemical tradition, from Zosimos of Panopolis to the Rosarium philosophorum
+date: c. 300 CE – 17th century
+fam: rosicrucian
+kind: teaching
+credit: Summarised in Assembly Sounds' own words.
+more: C. G. Jung, *Psychology and Alchemy* (1944) and *Mysterium Coniunctionis* (1955–56).
+more: Lawrence M. Principe, *The Secrets of Alchemy* (2013).
+more: Adam McLean, ed., *The Rosary of the Philosophers* (1980).
+about:
+The earliest alchemists were Greek-speaking writers in Roman Egypt. Zosimos of Panopolis wrote around 300 CE. They described the work of transforming matter as a series of colour changes: blackening (*melanosis*), whitening (*leukosis*), yellowing (*xanthosis*) and reddening or purpling (*iosis*). Latin alchemists of the Middle Ages and Renaissance kept the four as *nigredo*, *albedo*, *citrinitas* and *rubedo*. Later the yellowing was often dropped, leaving three. The "Great Work" (*magnum opus*) ended in the red stone that would perfect metals and heal the body.
+
+The 1550 picture book *Rosarium philosophorum*, "The Rosary of the Philosophers", shows the work as the meeting, death and resurrection of a king and queen. In the 20th century the psychiatrist Carl Jung read such images as pictures of the inner process he called individuation. The nigredo was the meeting with one's own shadow, the albedo a purifying, and the rubedo a new wholeness. The Great Work session moves through the four colours in this inner sense.
+
+## The four stages
+- **Nigredo, the blackening.** The matter is broken down and putrefies: death, decay, the dark night. In the soul, it is facing what is hidden, painful or rejected in oneself. Its emblems are the crow, the skull and the black sun.
+- **Albedo, the whitening.** The matter is washed again and again (*ablutio*) until it turns white: purification, calm, the moon's silver light. Its emblems are the white swan and the dove.
+- **Citrinitas, the yellowing.** The dawn breaks: the first golden light of understanding, the solar consciousness waking after the lunar calm.
+- **Rubedo, the reddening.** The opposites are joined, king and queen, sun and moon, and the red stone is born: the finished work, wholeness, life made new. Its emblems are the phoenix and the red king.
+
+## The rule of the work
+= Solve et coagula.
+Dissolve and bind together: take apart what is fixed, and make firm what has been freed. The alchemists repeated this as the whole method in two words.
+
+@ gd_rosecross
+title: The Rose Cross Ritual of the Golden Dawn
+by: the Hermetic Order of the Golden Dawn; published by Israel Regardie
+date: order founded 1888; ritual published 1937–1940
+fam: rosicrucian
+kind: ritual
+credit: Described in Assembly Sounds' own words.
+more: Israel Regardie, *The Golden Dawn* (1937–40; 6th ed., 1989).
+more: Israel Regardie, *The Middle Pillar* (1938).
+about:
+The Hermetic Order of the Golden Dawn was founded in London in 1888 by three Freemasons and Rosicrucians: William Wynn Westcott, Samuel Liddell MacGregor Mathers and William Robert Woodman. Its members included W. B. Yeats and, for a time, Aleister Crowley. Above its outer grades was an inner order, the *Ordo Rosae Rubeae et Aureae Crucis*, "the Order of the Red Rose and the Golden Cross".
+
+The Rose Cross ritual was taught in that inner order as a ritual of peace and protection, a kind of veil drawn around the person. Its key word is *Yeheshuah* (יהשוה). This is the four-letter divine name YHVH with the Hebrew letter Shin, the letter of spirit and fire, set in the middle. Christian Kabbalists from the Renaissance onward read it as the name of Jesus.
+
+## The shape of the ritual
+1. Light a stick of incense, if you wish, and face the south-east corner of the room.
+2. In each corner in turn (south-east, south-west, north-west, north-east), trace a large cross, and a circle at its centre, as if drawn with the incense or the finger. In the middle of the circle, vibrate the name *Ye-he-shu-ah*.
+3. Join the corners with a line traced at heart height as you walk round.
+4. Crossing the room diagonally, stop at the centre to trace the same cross and circle above you, and on the way back trace it below you, vibrating the name each time.
+5. Return to the centre and make the "analysis of the keyword", I.N.R.I., which ends with the word LVX, "light", and the image of light descending.
+6. Stand quietly, feeling yourself surrounded by six roses of light, joined by bands of light, and at peace.
+
+## The names, as vibrated
+- *Yeheshuah* (יהשוה): YHVH with Shin, read as the name of Jesus.
+- *Yehovashah* (יהושה): the same five letters in another order, sometimes used at the end.
+
+@ webb
+title: The Freemason's Monitor: the working tools and emblems
+orig: The Freemason's Monitor, or Illustrations of Masonry
+by: Thomas Smith Webb, after William Preston
+date: 1797 (Preston's *Illustrations of Masonry*, 1772)
+fam: masonic
+kind: book
+credit: The 18th-century English of Webb's and Preston's monitors, public domain; short summaries by Assembly Sounds.
+more: Thomas Smith Webb, *The Freemason's Monitor, or Illustrations of Masonry* (1797).
+more: William Preston, *Illustrations of Masonry* (1772).
+more: Albert G. Mackey, *An Encyclopædia of Freemasonry* (1874).
+about:
+Modern Freemasonry began in 1717, when four London lodges formed the first Grand Lodge. It teaches its members "a peculiar system of morality, veiled in allegory and illustrated by symbols". The symbols come from the tools and buildings of the medieval stonemasons and from the story of King Solomon's Temple.
+
+The parts of each degree that are not secret were printed in handbooks called *monitors*. William Preston's *Illustrations of Masonry* (1772) shaped the English lectures, and Thomas Smith Webb's *Freemason's Monitor* (1797) shaped the American ones. Lodges still read many of these sentences aloud almost word for word. The Masonic sessions meditate on four of their emblems: the rough and perfect ashlars, the twenty-four-inch gauge, the point within a circle, and the winding stairs. Only the published monitor texts are given here; nothing from the secret parts of the ritual.
+
+## The rough and perfect ashlars
+The Rough Ashlar is a stone, as taken from the quarry, in its rude and natural state. The Perfect Ashlar is a stone made ready by the hands of the workmen, to be adjusted by the working tools of the Fellow Craft. By the Rough Ashlar we are reminded of our rude and imperfect state by nature; by the Perfect Ashlar, of that state of perfection at which we hope to arrive by a virtuous education, our own endeavours, and the blessing of God.
+
+## The common gavel
+The common gavel is an instrument made use of by operative masons to break off the corners of rough stones, the better to fit them for the builder's use; but we, as Free and Accepted Masons, are taught to make use of it for the more noble and glorious purpose of divesting our minds and consciences of all the vices and superfluities of life, thereby fitting our bodies, as living stones, for that spiritual building, that house not made with hands, eternal in the heavens.
+
+## The twenty-four-inch gauge
+The twenty-four-inch gauge is an instrument made use of by operative masons to measure and lay out their work; but we, as Free and Accepted Masons, are taught to make use of it for the more noble and glorious purpose of dividing our time. It being divided into twenty-four equal parts, is emblematical of the twenty-four hours of the day, which we are taught to divide into three equal parts; whereby are found eight hours for the service of God and a distressed worthy brother, eight for our usual vocations, and eight for refreshment and sleep.
+
+## The point within a circle
+In all regular, well-governed lodges, there is represented a certain point within a circle; the point representing an individual brother; the circle representing the boundary line of his duty to God and man, beyond which he is never to suffer his passions, prejudices or interests to betray him on any occasion. This circle is embordered by two perpendicular parallel lines, representing Saint John the Baptist and Saint John the Evangelist, who were perfect parallels in Christianity as well as Masonry; and upon the vertex rests the Book of Holy Scriptures, which point out the whole duty of man. In going round this circle, we necessarily touch upon these two lines, as well as upon the Holy Scriptures; and while a Mason keeps himself thus circumscribed, it is impossible that he should materially err.
+
+## The winding stairs
+In the Fellow Craft degree the candidate climbs, in symbol, a winding staircase to the middle chamber of King Solomon's Temple, where the workmen received their wages (1 Kings 6:8). The lecture divides it into three, five and seven steps:
+- **Three** for the three principal officers of the lodge, and for wisdom, strength and beauty.
+- **Five** for the five orders of architecture (Tuscan, Doric, Ionic, Corinthian and Composite) and the five human senses (hearing, seeing, feeling, smelling and tasting).
+- **Seven** for the seven liberal arts and sciences: grammar, rhetoric, logic, arithmetic, geometry, music and astronomy.
+
+The climb stands for a life of steady learning, by which the mind rises step by step towards the "middle chamber" of understanding.

@@ -88,6 +88,19 @@ pub struct Preset {
     /// Step-by-step practice guide for beginners (filled in by info::fill, see guide.rs).
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub guide: Option<Guide>,
+    /// The source texts the practice comes from: ids into the texts library (texts.rs), each
+    /// with an optional note on how this session uses that text. Filled in by texts::link.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub texts: Vec<TextRef>,
+}
+
+/// One link from a session to a text in the source-text library (see texts.rs).
+#[derive(Serialize, Deserialize, Clone, Debug, Default)]
+pub struct TextRef {
+    pub id: String,
+    /// How this session uses the text (trusted HTML, may be empty).
+    #[serde(default, skip_serializing_if = "String::is_empty")]
+    pub note: String,
 }
 
 /// In-depth background shown in the session's info card.

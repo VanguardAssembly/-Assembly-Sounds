@@ -1,0 +1,386 @@
+// The Pali Canon, the Visuddhimagga and the modern Theravāda teachers.
+
+@ anapanasati
+title: The Discourse on Mindfulness of Breathing (Ānāpānasati Sutta)
+orig: आनापानसति सुत्त, Ānāpānasati Sutta, Majjhima Nikāya 118 (Pali)
+by: the Buddha, as remembered in the Pali Canon
+date: taught 5th century BCE; written down in Sri Lanka in the 1st century BCE
+fam: theravada
+kind: sutra
+credit: Assembly Sounds' own rendering from the Pali.
+more: Bhikkhu Ñāṇamoli & Bhikkhu Bodhi, trans., *The Middle Length Discourses of the Buddha* (1995).
+more: Bhikkhu Sujato, trans., *Middle Discourses*, on SuttaCentral (public-domain translation).
+more: Buddhadāsa Bhikkhu, *Mindfulness with Breathing* (1988).
+about:
+This is the Buddha's fullest teaching on meditation with the breath. He gave it on a full-moon night at the end of the rains retreat, to a great gathering of monks at Sāvatthī. It sets out sixteen steps in four groups of four. The first four calm the body with the breath. The second four work with feelings of joy and ease. The third four know and free the mind. The last four see impermanence, fading, cessation and letting go.
+
+The Buddha says that this one practice, developed fully, completes the four foundations of mindfulness, the seven factors of awakening, and true knowledge and liberation. Every Buddhist school has some form of it. The Ānāpānasati session follows the four groups in order.
+
+## How to sit
+Here a monk goes to the forest, or to the root of a tree, or to an empty hut. He sits down, crosses his legs, holds his body upright and sets up mindfulness in front of him. Mindful, he breathes in; mindful, he breathes out.
+
+## The first four: the body
+1. Breathing in long, he knows, "I breathe in long." Breathing out long, he knows, "I breathe out long."
+2. Breathing in short, he knows, "I breathe in short." Breathing out short, he knows, "I breathe out short."
+3. He trains: "I will breathe in, feeling the whole body. I will breathe out, feeling the whole body."
+4. He trains: "I will breathe in, calming the body. I will breathe out, calming the body."
+
+## The second four: feelings
+5. He trains: "I will breathe in and out, feeling rapture."
+6. He trains: "I will breathe in and out, feeling happiness."
+7. He trains: "I will breathe in and out, feeling the activity of the mind."
+8. He trains: "I will breathe in and out, calming the activity of the mind."
+
+## The third four: the mind
+9. He trains: "I will breathe in and out, knowing the mind."
+10. He trains: "I will breathe in and out, gladdening the mind."
+11. He trains: "I will breathe in and out, steadying the mind."
+12. He trains: "I will breathe in and out, freeing the mind."
+
+## The fourth four: seeing truly
+13. He trains: "I will breathe in and out, seeing impermanence."
+14. He trains: "I will breathe in and out, seeing fading away."
+15. He trains: "I will breathe in and out, seeing cessation."
+16. He trains: "I will breathe in and out, seeing letting go."
+
+## The fruit
+Mindfulness of breathing, developed and made much of, is of great fruit and great benefit. It fulfils the four foundations of mindfulness. These fulfil the seven factors of awakening, and these fulfil true knowledge and liberation.
+
+@ satipatthana
+title: The Discourse on the Foundations of Mindfulness (Satipaṭṭhāna Sutta)
+orig: सतिपट्ठान सुत्त, Satipaṭṭhāna Sutta, Majjhima Nikāya 10 (Pali)
+by: the Buddha, as remembered in the Pali Canon
+date: taught 5th century BCE
+fam: theravada
+kind: sutra
+credit: Assembly Sounds' own rendering from the Pali.
+more: Anālayo, *Satipaṭṭhāna: The Direct Path to Realization* (2003).
+more: Nyanaponika Thera, *The Heart of Buddhist Meditation* (1954).
+more: Bhikkhu Sujato, trans., *Middle Discourses*, on SuttaCentral (public-domain translation).
+about:
+The Buddha's discourse on the four foundations, or establishments, of mindfulness is the root text of insight meditation. You watch four fields of experience, closely and steadily, as they are. The first is the body: breath, posture, movement, its parts and its elements. The second is feelings: pleasant, painful or neither. The third is the mind and its moods. The fourth is *dhammas*, the patterns the Buddha taught, such as the hindrances and the factors of awakening.
+
+In each field the meditator sees things arise and pass away and clings to nothing. The Mahāsi noting method, the Goenka body scan and most modern mindfulness come from this discourse. The noting and walking sessions use its instructions on posture and movement.
+
+## The direct path
+Monks, this is the direct path for the purification of beings, for the overcoming of sorrow and lamentation, for the ending of pain and grief, for finding the true way, for the realisation of Nibbāna: the four foundations of mindfulness.
+
+What are the four? Here a monk lives contemplating the body as a body, ardent, fully aware and mindful, having put away longing and distress for the world. He lives contemplating feelings as feelings, the mind as mind, and *dhammas* as *dhammas*, ardent, fully aware and mindful, having put away longing and distress for the world.
+
+## The postures
+When walking, a monk knows, "I am walking." When standing, he knows, "I am standing." When sitting, he knows, "I am sitting." When lying down, he knows, "I am lying down." However his body is placed, he knows it as it is.
+
+## Full awareness
+Going forward and coming back, he acts with full awareness. Looking ahead and looking aside, bending and stretching, wearing his robes and carrying his bowl, eating, drinking, chewing and tasting, urinating and defecating, walking, standing, sitting, falling asleep, waking, speaking and keeping silent, he acts with full awareness.
+
+## The refrain
+So he lives contemplating the body as a body within himself, or outside, or both. He lives contemplating how things arise in the body, how they pass away, or both. Or else the mindfulness that "there is a body" is simply present, just enough for knowing and for mindfulness. And he lives free, clinging to nothing in the world.
+
+## The promise
+If anyone were to develop these four foundations of mindfulness in this way for seven years, one of two fruits could be expected: final knowledge here and now, or, if any clinging remains, non-return. Let alone seven years: even seven days.
+
+@ metta_sutta
+title: The Discourse on Loving-Kindness (Karaṇīya Mettā Sutta)
+orig: करणीय मेत्त सुत्त, Karaṇīya Mettā Sutta, Sutta Nipāta 1.8 (Pali)
+by: the Buddha, as remembered in the Pali Canon
+date: one of the oldest Buddhist texts, 5th–4th century BCE
+fam: theravada
+kind: sutra
+full: yes
+credit: Assembly Sounds' own rendering of all ten verses from the Pali.
+more: K. R. Norman, trans., *The Group of Discourses (Sutta-nipāta)* (2nd ed., 2001).
+more: Sharon Salzberg, *Lovingkindness: The Revolutionary Art of Happiness* (1995).
+about:
+The ten short verses of the *Mettā Sutta* are among the most loved and most chanted texts of Theravāda Buddhism. Monks recite them every day, and lay people chant them for protection and blessing. According to the old commentary, the Buddha taught them to a group of monks who had gone to meditate in a forest. The tree spirits there resented them and frightened them away. He sent them back with this practice of boundless goodwill, and the spirits became their friends.
+
+The verses first describe the kind of person who can cultivate *mettā*, loving-kindness. Then they extend the wish for happiness to every kind of being, seen and unseen, near and far. The image at their centre is a mother protecting her only child with her life. The mettā sessions open with this text.
+
+## The ten verses
+1. This is what should be done by one skilled in good, who wishes to reach the state of peace. Let them be able and upright, truly upright, easy to speak to, gentle and not proud,
+2. content and easy to support, with few duties and living simply, with calm senses, wise, not bold, and not greedy among families.
+3. Let them not do even the slightest thing that the wise would blame. May all beings be happy and safe. May they be happy at heart.
+4. Whatever living beings there are, weak or strong, without exception, long or large, middle-sized, short, small or great,
+5. seen or unseen, living far or near, born or yet to be born: may all beings be happy at heart.
+6. Let no one deceive another, or look down on anyone anywhere. Let no one, in anger or ill will, wish harm on another.
+7. As a mother would protect her only child with her own life, so let one cultivate a boundless heart towards all beings.
+8. Let one's thoughts of boundless love fill the whole world, above, below and all around, without obstruction, without hatred and without enmity.
+9. Standing, walking, sitting or lying down, as long as one is awake, let one keep this mindfulness. This, they say, is the divine way of living here and now.
+10. Not holding to wrong views, virtuous and full of insight, having let go of desire for sense pleasures, one will never again lie in a womb.
+
+## The mother's love, in Pali (verse 7)
+= Mātā yathā niyaṃ puttam āyusā ekaputtam anurakkhe,
+= evam pi sabbabhūtesu mānasaṃ bhāvaye aparimāṇaṃ.
+
+@ brahmavihara
+title: The Four Divine Abodes (Brahmavihāra)
+orig: ब्रह्मविहार, brahmavihāra; the formula of Majjhima Nikāya 7 and Dīgha Nikāya 13 (Pali)
+by: the Buddha, as remembered in the Pali Canon; the "near and far enemies" from Buddhaghosa's Visuddhimagga
+date: 5th century BCE; Visuddhimagga c. 430 CE
+fam: theravada
+kind: sutra
+credit: Assembly Sounds' own rendering from the Pali.
+more: Nyanaponika Thera, *The Four Sublime States* (1958).
+more: Bhikkhu Ñāṇamoli, trans., *The Path of Purification* (1956), chapter IX.
+about:
+The four *brahmavihāras*, "divine abodes" or "sublime states", are four boundless attitudes of the heart. *Mettā* is loving-kindness, *karuṇā* compassion, *muditā* sympathetic joy and *upekkhā* equanimity. They are called "boundless" (*appamaññā*) because they are spread out to all beings in all directions without limit. The Buddha called them the way to fellowship with Brahmā. That was the same goal the Brahmin priests of his day sought by sacrifice.
+
+The discourses repeat a single formula for all four: the heart filled with each quality spreads out to one direction, then the next, and then everywhere. Later, Buddhaghosa gave each a "near enemy" that looks like it, and a "far enemy" that is its opposite. Patañjali's Yoga Sūtras (1.33) list the same four attitudes. The Brahmavihāra session moves through all four in turn.
+
+## The formula (Majjhima Nikāya 7)
+He lives having filled one direction with a heart full of loving-kindness, and so the second, the third and the fourth. Above, below, across and everywhere, and to all as to himself, he lives having filled the whole world with a heart full of loving-kindness: abundant, exalted, boundless, free from hostility and free from ill will.
+
+He lives having filled one direction with a heart full of compassion ... of sympathetic joy ... of equanimity, and so the whole world, abundant, exalted, boundless, free from hostility and free from ill will.
+
+## The conch-blower (Dīgha Nikāya 13)
+Just as a strong conch-blower can make himself heard in all four directions without difficulty, so, when the release of the heart through loving-kindness is developed, no limited action remains or persists there.
+
+## Near and far enemies (Visuddhimagga IX)
+- **Loving-kindness**: its near enemy is attachment; its far enemy is ill will.
+- **Compassion**: its near enemy is grief; its far enemy is cruelty.
+- **Sympathetic joy**: its near enemy is giddy excitement; its far enemy is resentment and boredom.
+- **Equanimity**: its near enemy is dull indifference; its far enemy is greed and hatred.
+
+@ jhana_formula
+title: The four jhānas and their similes
+orig: झान, jhāna, "absorption"; Sāmaññaphala Sutta, Dīgha Nikāya 2 (Pali)
+by: the Buddha, as remembered in the Pali Canon
+date: 5th century BCE
+fam: theravada
+kind: sutra
+credit: Assembly Sounds' own rendering from the Pali.
+more: Leigh Brasington, *Right Concentration: A Practical Guide to the Jhānas* (2015).
+more: Maurice Walshe, trans., *The Long Discourses of the Buddha* (1987).
+about:
+The *jhānas* are four deepening states of meditative absorption. The Buddha said he first entered one as a boy, sitting under a rose-apple tree while his father ploughed. Remembering it years later, after six years of fruitless austerity, he set out on the middle way to awakening. The discourses describe the four in a fixed formula. In the Discourse on the Fruits of the Contemplative Life, each comes with a vivid simile of how joy and ease fill the body.
+
+Each jhāna is quieter than the last. In the first, thought is still present, along with rapture and happiness born of seclusion. In the second, thought falls away. In the third, rapture fades into a calm happiness. In the fourth, there is pure equanimity and a bright, clear mind. The jhāna session follows the four, and a 2013 EEG study of an adept is described under "Hagerty 2013".
+
+## The first jhāna: the ball of bath powder
+Quite apart from sense pleasures, apart from unwholesome states, he enters and stays in the first jhāna. It has thinking and examining, and the rapture and happiness born of seclusion. He soaks, steeps, fills and pervades this very body with that rapture and happiness, so that no part of his whole body is untouched by it.
+
+It is like a skilled bath attendant who pours bath powder into a metal dish and kneads it, sprinkling it with water again and again, until the ball of powder is moist through and through, inside and out, and yet does not drip.
+
+## The second jhāna: the spring-fed lake
+With the stilling of thinking and examining, he enters and stays in the second jhāna. It has inner confidence and unification of mind, without thinking and examining, with rapture and happiness born of concentration. He soaks this body through with it.
+
+It is like a deep lake fed by a spring. No stream comes in from east, west, north or south, and the sky sends no rain. But the cool water welling up from the spring below soaks and fills the whole lake, so that no part of it is untouched by the cool water.
+
+## The third jhāna: the lotuses
+With the fading of rapture, he stays equanimous, mindful and fully aware, still feeling happiness in the body. He enters and stays in the third jhāna, of which the noble ones say, "Equanimous and mindful, one lives in happiness." He soaks this body through with a happiness free of rapture.
+
+It is like blue, white or red lotuses in a pond, born and growing in the water, never rising above it, nourished from deep within. They are soaked from tip to root by the cool water, so that no part of them is untouched.
+
+## The fourth jhāna: the white cloth
+With the giving up of pleasure and pain, and the earlier passing away of joy and sorrow, he enters and stays in the fourth jhāna. It has neither pain nor pleasure, and mindfulness made pure by equanimity. He sits pervading this body with a pure, bright mind, so that no part of his whole body is untouched by it.
+
+It is like a man sitting wrapped from head to foot in a white cloth, so that no part of his body is not covered by it.
+
+@ visuddhimagga
+title: The Path of Purification (Visuddhimagga)
+orig: विसुद्धिमग्ग, Visuddhimagga (Pali)
+by: Buddhaghosa
+date: c. 430 CE, at the Great Monastery of Anurādhapura, Sri Lanka
+fam: theravada
+kind: manual
+credit: Assembly Sounds' own rendering and summary from the Pali; chapter numbers are the standard ones.
+more: Bhikkhu Ñāṇamoli, trans., *The Path of Purification* (1956).
+more: Pe Maung Tin, trans., *The Path of Purity* (1923–1931).
+about:
+Buddhaghosa was an Indian scholar-monk who came to Sri Lanka in the 5th century and gathered the old Sinhala commentaries into Pali. His *Path of Purification* is the great handbook of Theravāda Buddhism. In 23 chapters it covers the whole path: virtue, concentration and wisdom. Its concentration chapters explain forty meditation subjects, each with exact instructions. Among them are the ten coloured and elemental discs (*kasiṇas*), the recollections of the Buddha and of death, the four divine abodes and mindfulness of breathing.
+
+Several sessions follow its instructions directly. The kasiṇa session follows how to make and gaze at an earth disc until an inner image appears. The breath-counting session follows the rule for counting breaths, not fewer than five and not more than ten. Maraṇasati uses the eight ways to recollect death. The mettā session follows the order in which to send loving-kindness to people.
+
+## The kasiṇa disc (chapter IV)
+Make a disc of clay the colour of the dawn, a span and four fingers across, smooth like the face of a drum. Set it up about two and a half cubits away, and sit on a low seat a span and four fingers high. Look at it with the eyes moderately open, as if looking at your face in a mirror, and say silently, "earth, earth", a hundred times, a thousand times.
+
+When the disc appears as clearly with the eyes closed as with the eyes open, the *learning sign* has arisen. Keep at it, and in time the *counterpart sign* appears. It is a hundred, a thousand times brighter, like a mirror taken from its case, like a polished shell, like the full moon coming out from behind the clouds. With it, concentration reaches absorption.
+
+## The other kasiṇas (chapter V)
+The same is done with water in a bowl, a fire seen through a hole in a screen, the wind moving the tips of grass, discs of blue, yellow, red and white, light falling through a window, and a patch of open space.
+
+## Counting the breaths (chapter VIII)
+The beginner should first attend to the breath by counting. He should not stop short of five, nor go beyond ten, nor break the series. If he stops short of five, his mind becomes restless in the cramped space, like cattle shut in a narrow pen. If he goes beyond ten, his mind fixes on the numbers. If he breaks the series, he wonders whether the meditation has gone wrong. At first count slowly, like a grain measurer: "one", "two"... Later, when the breath is clear, count quickly. When the mind stays with the breath without counting, let the counting go.
+
+## Eight ways to recollect death (chapter VIII)
+1. As a murderer standing ready with a raised sword.
+2. As the ruin of all success: all health ends in sickness, all youth in age, all life in death.
+3. By comparison with the great and famous, who all died.
+4. As the body shared with many: with worms and with the countless causes of disease.
+5. As the frailty of life, which hangs on a breath, on food, on warmth.
+6. As signless: no one knows when, where, how or in what state death will come.
+7. As the shortness of the span of life.
+8. As the briefness of the moment: life lasts only as long as one thought.
+
+## The order of loving-kindness (chapter IX)
+Begin with yourself: "May I be happy and free from suffering." Then think of a person you greatly respect and are grateful to, then a dear friend, then a neutral person, and only then a person who has harmed you. When anger comes up, return to the earlier people until it softens. Finally, break down the barriers between all four, yourself, the dear one, the neutral one and the hostile one, until your goodwill is the same for all.
+
+## The recollection of the Buddha (chapter VII)
+Go to a quiet place and recollect the qualities of the Buddha one by one, with the formula *Iti pi so bhagavā...*, dwelling on the meaning of each word. As you do so, the mind becomes clear and joyful, and concentration grows.
+
+@ maranasati
+title: The discourses on mindfulness of death and the five remembrances
+orig: मरणस्सति सुत्त, Maraṇassati Sutta, Aṅguttara Nikāya 6.19 and 6.20; Upajjhaṭṭhāna Sutta, Aṅguttara Nikāya 5.57 (Pali)
+by: the Buddha, as remembered in the Pali Canon
+date: 5th century BCE
+fam: theravada
+kind: sutra
+credit: Assembly Sounds' own rendering from the Pali.
+more: Bhikkhu Bodhi, trans., *The Numerical Discourses of the Buddha* (2012).
+more: Larry Rosenberg, *Living in the Light of Death* (2000).
+about:
+*Maraṇasati*, mindfulness of death, is not meant to be morbid. It is a practice of waking up: remembering that life is short and uncertain so as to live it well, and to let go of what does not matter.
+
+In one discourse the Buddha asks his monks how they practise it. One says he thinks, "May I live a day and a night, and attend to the Buddha's teaching." Others say a day, half a day, the time of one meal. The last two say: the time it takes to chew and swallow a single mouthful, and the time of one breath in and out. The Buddha praises only these last two, because they bring the practice down to this very moment.
+
+In the next discourse he lists the many ordinary ways death could come tonight. In another he gives the five "remembrances" that everyone should reflect on often, monk or lay. The Maraṇasati session moves through these reflections and the eight ways of the Visuddhimagga.
+
+## One breath (Aṅguttara Nikāya 6.19)
+The monks who practise mindfulness of death thinking, "May I live for a day and a night", or "for a day", or "for as long as one meal", are said to live carelessly. They develop mindfulness of death slowly, for the destruction of the taints.
+
+But the monk who thinks, "May I live for as long as it takes to chew and swallow one mouthful", and the monk who thinks, "May I live for as long as it takes to breathe out after breathing in, or to breathe in after breathing out, and attend to the Buddha's teaching": these are said to live heedfully. They develop mindfulness of death keenly, for the destruction of the taints.
+
+## The many causes (Aṅguttara Nikāya 6.20)
+When day is done and night comes on, a monk reflects: "Many are the causes of my death. A snake might bite me, or a scorpion or centipede sting me, and I might die. I might stumble and fall, my food might disagree with me, my bile or phlegm might be disturbed, sharp winds in my body might be stirred up." Then he asks: "Are there any bad qualities in me not yet given up, which would stand in my way if I died tonight?" If there are, he puts all his effort into giving them up, as urgently as someone whose turban had caught fire would put it out.
+
+## The five remembrances (Aṅguttara Nikāya 5.57)
+1. I am of the nature to grow old; I cannot escape ageing.
+2. I am of the nature to fall ill; I cannot escape illness.
+3. I am of the nature to die; I cannot escape death.
+4. All that is dear to me and all I love will change, and I will be parted from it.
+5. My actions are my only true belongings. I cannot escape their results. My actions are the ground on which I stand.
+
+@ itipiso
+title: The recollection of the Buddha (Iti pi so)
+orig: इति पि सो, Iti pi so, the Buddhānussati formula; Aṅguttara Nikāya 6.10 (Pali)
+by: the Buddha, as remembered in the Pali Canon
+date: 5th century BCE
+fam: theravada
+kind: prayer
+credit: Assembly Sounds' own rendering from the Pali.
+more: Bhikkhu Ñāṇamoli, trans., *The Path of Purification* (1956), chapter VII.
+more: Ṭhānissaro Bhikkhu, *A Chanting Guide* (Dhammayut Order in the United States).
+about:
+*Buddhānussati*, recollection of the Buddha, is the first of the six recollections. The Pali formula *Iti pi so* lists his nine qualities, and it is chanted daily in every Theravāda monastery. It is followed by matching verses on the Dhamma, his teaching, and the Saṅgha, the community of his noble disciples.
+
+In the discourse to his cousin Mahānāma, the Buddha explains what the recollection does. While one remembers these qualities, the mind is not overcome by greed, hatred or delusion. It becomes straight, glad and calm, and it settles into concentration. In the Thai Forest tradition the whole recollection is gathered into one word, *Buddho*, "awake", repeated with the breath. The Buddho and Buddhānussati sessions follow this practice.
+
+## The Buddha
+= Iti pi so bhagavā arahaṃ sammāsambuddho, vijjācaraṇasampanno sugato lokavidū,
+= anuttaro purisadammasārathi satthā devamanussānaṃ buddho bhagavā ti.
+Thus indeed is the Blessed One: worthy, perfectly self-awakened, complete in knowledge and conduct, well-gone, knower of the worlds, unsurpassed guide of those who can be trained, teacher of gods and humans, awakened, blessed.
+
+## The Dhamma
+= Svākkhāto bhagavatā dhammo, sandiṭṭhiko akāliko ehipassiko opanayiko paccattaṃ veditabbo viññūhī ti.
+The Dhamma is well taught by the Blessed One: visible here and now, timeless, inviting all to come and see, leading inward, to be known by the wise each for themselves.
+
+## The Saṅgha
+= Supaṭipanno bhagavato sāvakasaṅgho...
+The community of the Blessed One's disciples has practised well, practised straightly, practised wisely, practised rightly. It is worthy of gifts, of hospitality, of offerings and of respect: the unsurpassed field of merit for the world.
+
+## What the recollection does (Aṅguttara Nikāya 6.10)
+When a noble disciple recollects the Tathāgata, at that time his mind is not overcome by greed, hatred or delusion. His mind is straight, inspired by the Tathāgata. With a straight mind he finds inspiration in the meaning and in the teaching, and gladness connected with the teaching. In one who is glad, rapture arises. With a rapturous mind the body becomes calm. With a calm body he feels happiness, and the mind of one who is happy becomes concentrated.
+
+@ walking_sutta
+title: The Discourse on Walking Meditation (Caṅkama Sutta)
+orig: चङ्कम सुत्त, Caṅkama Sutta, Aṅguttara Nikāya 5.29 (Pali)
+by: the Buddha, as remembered in the Pali Canon
+date: 5th century BCE
+fam: theravada
+kind: sutra
+full: yes
+credit: Assembly Sounds' own rendering from the Pali.
+more: Bhikkhu Bodhi, trans., *The Numerical Discourses of the Buddha* (2012).
+more: Thich Nhat Hanh, *The Long Road Turns to Joy: A Guide to Walking Meditation* (1996).
+about:
+*Caṅkama*, walking up and down a straight path, was part of the daily life of the Buddha and his monks. The discourses often describe him walking in the open air in the evening, and monasteries in Thailand, Burma and Sri Lanka still have marked walking paths beside the meditation halls. In this short discourse he names five benefits of the practice.
+
+In the Mahāsi tradition each step is noted in parts: "lifting, moving, placing". In the Thai Forest tradition one walks a path between two trees, repeating *Buddho*. In Zen, *kinhin* joins slow steps to the breath. The walking session draws on all three.
+
+## The five benefits (complete)
+Monks, there are these five benefits of walking meditation. What five? One who walks up and down:
+1. can endure long journeys;
+2. can endure striving;
+3. has little illness;
+4. digests well what he has eaten, drunk, chewed and tasted;
+5. and the concentration won through walking lasts long.
+
+These, monks, are the five benefits of walking meditation.
+
+@ mahasi
+title: The Mahāsi method of noting
+by: Mahāsi Sayādaw (U Sobhana)
+date: 1940s–1982
+fam: theravada
+kind: manual
+credit: Summarised in Assembly Sounds' own words.
+more: Mahāsi Sayādaw, *Practical Insight Meditation: Basic and Progressive Stages* (1971).
+more: Mahāsi Sayādaw, *Manual of Insight* (trans. 2016).
+more: Joseph Goldstein, *The Experience of Insight* (1976).
+about:
+Mahāsi Sayādaw (1904–1982) was a Burmese monk and scholar. In the 1940s he developed a clear, intensive method of *vipassanā*, insight meditation, based on the Satipaṭṭhāna Sutta. In 1949 he became head of the Sāsana Yeiktha centre in Rangoon. Hundreds of thousands of people trained there and at its branches. Western students carried his method to America and Europe, and it is the root of much of today's "insight meditation", including the Insight Meditation Society founded in 1975.
+
+Its key is *noting*: making a soft mental label for whatever is happening in the present moment. The main object is the rising and falling of the abdomen as you breathe. When anything else draws the attention, such as a thought, a sound, an ache or an itch, you note it ("thinking", "hearing", "aching") until it fades, and then return to "rising, falling". Sitting alternates with slow walking, noted step by step. The noting session follows this method.
+
+## Sitting
+1. Sit with the back straight and the eyes closed.
+2. Put the attention on the abdomen. As it rises, note "rising"; as it falls, note "falling". Do not control the breath.
+3. When the mind wanders, note "wandering" or "thinking", then return to rising and falling.
+4. When a sensation is strong, note it, "pain", "itching", "warm", and watch it closely until it changes.
+5. When a sound draws you, note "hearing", then return.
+
+## Walking
+1. Walk slowly along a short path.
+2. At first note "left, right" with each step.
+3. Then note in three parts: "lifting, moving, placing".
+4. At the end of the path, note "standing", "intending to turn", "turning", and walk back.
+
+## Daily activities
+Note everything: "bending", "stretching", "reaching", "touching", "chewing", "swallowing". The aim is continuous mindfulness from waking to sleep.
+
+@ thai_forest
+title: The Thai Forest tradition: Buddho
+by: Ajahn Mun Bhūridatto, Ajahn Lee Dhammadharo, Ajahn Chah and their disciples
+date: from the early 20th century
+fam: theravada
+kind: teaching
+credit: Summarised in Assembly Sounds' own words.
+more: Ajahn Chah, *Food for the Heart* (collected talks, 2002).
+more: Ajahn Lee Dhammadharo, *Keeping the Breath in Mind* (trans. Ṭhānissaro Bhikkhu).
+more: Kamala Tiyavanich, *Forest Recollections: Wandering Monks in Twentieth-Century Thailand* (1997).
+about:
+In the early 20th century Ajahn Mun Bhūridatto (1870–1949) and his teacher Ajahn Sao left the town monasteries of north-east Thailand. They lived as the monks of the Buddha's time had, wandering in the forests and mountains, keeping strict discipline and meditating day and night. Their students, among them Ajahn Lee, Ajahn Maha Boowa and Ajahn Chah (1918–1992), founded a network of forest monasteries. Through Ajahn Chah's Western disciples it spread to England, Australia, America and beyond.
+
+The tradition's basic meditation word is *Buddho*, "awake", one of the names of the Buddha. You think *Bud-* with the in-breath and *-dho* with the out-breath. The word steadies the mind, and as the mind settles you let it go and stay with the knowing itself. Ajahn Chah's teaching is plain and practical: watch the mind, let go, and do not cling even to peace. The Buddho session uses this practice.
+
+## Buddho with the breath
+1. Sit upright and relaxed, and take a few long breaths.
+2. Breathing in, think *Bud-*. Breathing out, think *-dho*.
+3. Keep the word and the breath together, at the pace of the natural breath.
+4. When the mind wanders, notice, and bring it back to *Buddho*.
+5. When the mind grows still and the word fades by itself, let it go, and rest in awareness: the "one who knows".
+
+## Walking the path
+Mark out a straight path of twenty or thirty paces between two trees. Walk it back and forth at a natural pace, with the eyes lowered, thinking *Buddho* with each step, or simply knowing each step. At each end, stop, stand still for a moment, and turn mindfully.
+
+@ goenka
+title: Vipassana in the tradition of Sayagyi U Ba Khin, as taught by S. N. Goenka
+by: S. N. Goenka, after Sayagyi U Ba Khin and Ledi Sayādaw
+date: courses from 1969
+fam: theravada
+kind: teaching
+credit: Summarised in Assembly Sounds' own words.
+more: William Hart, *The Art of Living: Vipassana Meditation as Taught by S. N. Goenka* (1987).
+more: Vipassana Research Institute, Igatpuri, India; ten-day courses worldwide, offered on donation.
+about:
+Satya Narayan Goenka (1924–2013) was an Indian businessman born in Burma. Suffering from severe migraines, he went on a retreat with Sayagyi U Ba Khin (1899–1971), the Accountant General of Burma and a lay meditation teacher. U Ba Khin's line goes back to the scholar-monk Ledi Sayādaw. In 1969 Goenka began teaching ten-day silent courses in India. They are now held at more than two hundred centres around the world, free of charge, run on donations.
+
+The course has a fixed structure. For three and a half days you practise *ānāpāna*: awareness of the natural breath as it enters and leaves the nostrils, narrowing to the small area above the upper lip. Then comes *vipassanā* proper. You move the attention through the body, part by part, from the top of the head to the feet and back, observing every sensation with equanimity. You understand its *anicca*, its impermanence, and do not react with craving or aversion. Noble silence is kept throughout, and the course ends with *mettā*, loving-kindness. The vipassana session follows this pattern in brief.
+
+## Ānāpāna
+Sit comfortably with the back straight. Feel the breath as it comes in and goes out at the nostrils: natural breath, not controlled. Gradually narrow the attention to the small triangle between the nostrils and the upper lip, and feel any sensation there.
+
+## Vipassanā, the body sweep
+Move the attention from the top of the head, part by part, down through the face, the neck, the shoulders, the arms and hands, the chest and back, the abdomen, the legs and feet; then back up again. In each part, notice whatever sensation is there: warmth, tingling, pressure, pulsing, or none. Do not seek any particular sensation, and do not react to what you find. Every sensation arises and passes away.
+
+## Mettā at the end
+Having finished, share the peace you have found: "May all beings be happy, may all beings be peaceful, may all beings be liberated."

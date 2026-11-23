@@ -1,0 +1,397 @@
+// Taoist texts: Zhuangzi, Laozi, inner alchemy, breathing and qigong.
+
+@ zhuangzi
+title: The Zhuangzi: losing the self, the fasting of the heart-mind, and sitting and forgetting
+orig: 莊子, Zhuangzi (Chinese)
+by: Zhuang Zhou (Zhuangzi) and his school
+date: 4th–3rd centuries BCE
+fam: taoist
+kind: book
+credit: Assembly Sounds' own rendering from the Chinese.
+more: James Legge, trans., *The Texts of Taoism*, Sacred Books of the East 39–40 (1891).
+more: A. C. Graham, trans., *Chuang-tzŭ: The Inner Chapters* (1981).
+more: Brook Ziporyn, trans., *Zhuangzi: The Essential Writings* (2009).
+about:
+The *Zhuangzi* is, with the *Daodejing*, one of the two founding books of Taoism. It is also one of the great works of world literature: funny, strange and profound. It is full of talking trees, giant birds, cooks and cripples, and of Confucius himself, often made to speak for Taoist ideas. The first seven "inner chapters" are thought to come closest to Zhuang Zhou himself, a minor official of the state of Song in the 4th century BCE.
+
+Three passages from them became the roots of Taoist meditation. In chapter 2 a master sits so still that he seems to have "lost himself". In chapter 4 Confucius teaches his favourite student, Yan Hui, the "fasting of the heart-mind" (*xinzhai*), a fast from grasping rather than from food. In chapter 6 Yan Hui astonishes Confucius by "sitting and forgetting" (*zuowang*). The Zuowang and Xinzhai sessions follow these passages step by step.
+
+## Losing the self (chapter 2)
+Master Ziqi of the southern quarter sat slumped against his armrest. He gazed up at the sky and breathed out slowly, far away, as if he had shed his partner, the body. His student Yancheng Ziyou, waiting on him, said: "What has happened? Can a body really be made like a dry tree, and a mind like cold ashes? The one leaning here today is not the one who leaned here before."
+
+Ziqi said: "A good question, Yan. Just now I let go of my self. Do you understand? You may have heard the pipes that people play, but not the pipes of the earth. You may have heard the pipes of the earth, but not the pipes of heaven."
+
+## The butterfly (chapter 2)
+Long ago Zhuang Zhou dreamed that he was a butterfly, fluttering here and there, a butterfly through and through, content and free. He had no idea he was Zhuang Zhou. All at once he woke, and was plainly Zhuang Zhou again. Now he could not tell: was he Zhuang Zhou, who had dreamed of being a butterfly, or a butterfly now dreaming of being Zhuang Zhou? Yet between Zhuang Zhou and a butterfly there must be some boundary. This is what is called the changing of things.
+
+## The fasting of the heart-mind (chapter 4)
+Yan Hui said, "May I ask what the fasting of the heart-mind is?"
+
+Confucius said: "Bring your attention to a single point. Don't listen with the ears; listen with the heart-mind. Then don't listen with the heart-mind; listen with the qi. The ears can do no more than hear, and the heart-mind no more than match things to its ideas. But qi is empty, and waits receptively on everything. The Way gathers only in what is empty. That emptiness is the fasting of the heart-mind."
+
+Yan Hui said: "Before I was taught this, I was full of being Hui. Now that I have been taught it, there has never been any Hui. Is that what you mean by emptiness?"
+
+"That is all there is to it," said Confucius.
+
+Later in the same talk he says: "Look at that empty space: the empty room fills with light, and good fortune comes to rest in the stillness."
+
+## Sitting and forgetting (chapter 6)
+Yan Hui said, "I am making progress."
+
+"What do you mean?" asked Confucius.
+
+"I have forgotten goodness and duty."
+
+"Good, but you are not there yet."
+
+Another day Yan Hui came again and said, "I am making progress."
+
+"What do you mean?"
+
+"I have forgotten ritual and music."
+
+"Good, but you are not there yet."
+
+Another day he came again and said, "I am making progress."
+
+"What do you mean?"
+
+"I sit and forget."
+
+Confucius was startled. "What do you mean, you sit and forget?"
+
+Yan Hui said: "I let my limbs and body fall away and dismiss my hearing and sight. I leave my form behind, let go of knowing, and become one with the great pervading Way. That is what I call sitting and forgetting."
+
+Confucius said: "One with it, you have no more likes and dislikes. Changing with it, you hold to nothing fixed. You really are a worthy man! Please let me become your follower."
+
+## The breath of the true person (chapter 6)
+The true people of old slept without dreams and woke without worries. Their food was plain, and their breathing was deep, deep. The breath of the true person rises from the heels; the breath of ordinary people goes no deeper than the throat.
+
+@ zuowanglun
+title: The Discourse on Sitting and Forgetting
+orig: 坐忘論, Zuowang lun (Chinese)
+by: attributed to Sima Chengzhen (647–735)
+date: early 8th century
+fam: taoist
+kind: treatise
+credit: Summarised and rendered in Assembly Sounds' own words.
+more: Livia Kohn, *Seven Steps to the Tao: Sima Chengzhen's Zuowanglun* (1987).
+more: Livia Kohn, *Sitting in Oblivion: The Heart of Daoist Meditation* (2010).
+about:
+Sima Chengzhen was the twelfth patriarch of the Shangqing (Highest Clarity) school of Taoism. He was a hermit on Mount Tiantai, and so respected that three Tang rulers sought his advice. The *Discourse on Sitting and Forgetting* attributed to him turned Zhuangzi's "sitting and forgetting" into a full path of practice, in seven steps. It borrowed freely from Buddhist calm-and-insight meditation, while keeping the Taoist goal of becoming one with the Way and living long in body and spirit.
+
+Its central practice is "gathering the mind" (*shouxin*): sitting quietly, letting the mind rest in emptiness, and gently bringing it back each time it runs after things. The text insists that this is not dullness. The calm mind must stay clear and aware. The Zuowang session forgets in the order of the *Zhuangzi* passage, and its spirit of patient, gentle return comes from this discourse.
+
+## The seven steps
+1. **Respect and faith**: trust that the Way can be reached, and value it.
+2. **Cutting off involvements**: let go of unnecessary affairs, ambitions and social obligations.
+3. **Gathering the mind**: sit quietly, let the mind rest in emptiness, and return it gently whenever it wanders.
+4. **Simplifying affairs**: take only what life really needs, and let the rest go.
+5. **True observation**: see clearly how things arise and pass, without being caught by them.
+6. **Great stability**: the body like dry wood, the mind like cold ashes, yet wisdom shining by itself.
+7. **Attaining the Way**: body and spirit become one with the Way.
+
+## On gathering the mind (summarised)
+The mind is the master of the body and the leader of all its spirits. When it is still, it gives rise to wisdom; when it is restless, it sinks into confusion. So at the start of learning the Way, sit quietly, gather the mind and draw it back from outer things. Let it dwell in nothing at all and cling to nothing, and it enters emptiness by itself. Then the mind is one with the Way.
+
+Put out only the restless mind, not the mind that shines and knows. Steady only the empty mind, not a mind that settles on some place. Do not simply crush every thought without telling one from another: that cuts off awareness and leads into a blind trance. And if at first the mind will not be gathered, do not give up. Be patient, and in time it settles.
+
+@ daodejing
+title: The Daodejing
+orig: 道德經, Daodejing, "The Classic of the Way and Its Power" (Chinese); also called the *Laozi*
+by: attributed to Laozi
+date: about the 4th century BCE; the oldest manuscripts, from Guodian, about 300 BCE
+fam: taoist
+kind: scripture
+credit: Assembly Sounds' own rendering from the Chinese.
+more: James Legge, trans., *The Texts of Taoism*, Sacred Books of the East 39 (1891).
+more: D. C. Lau, trans., *Tao Te Ching* (1963).
+more: Robert G. Henricks, trans., *Lao-Tzu: Te-Tao Ching*, from the Mawangdui manuscripts (1989).
+about:
+The *Daodejing* is the most translated book in the world after the Bible. In eighty-one short chapters of poetry it describes the *Dao*, the Way: the nameless source of all things, which works by yielding, emptiness and not-forcing (*wuwei*). Tradition says it was written by Laozi, an archivist at the Zhou court who wrote it down at the request of a border guard as he left China forever, riding west on an ox. Historians see it as a collection that grew over time. Bamboo manuscripts found at Guodian in 1993 show that parts of it existed by about 300 BCE.
+
+For later Taoists it was also a meditation manual. Chapter 10's questions, "embrace the One", "make the breath soft like a newborn's", became the basis of the practices of guarding the One and embryonic breathing. Chapter 16's "reach utmost emptiness, hold fast to stillness" is the ground of all Taoist quiet sitting. The Embryonic Breathing and Guarding the One sessions draw on these chapters.
+
+## Chapter 1
+> The Way that can be spoken of is not the constant Way.
+> The name that can be named is not the constant name.
+> Nameless, it is the beginning of heaven and earth;
+> named, it is the mother of the ten thousand things.
+
+## Chapter 6
+> The spirit of the valley never dies.
+> It is called the dark female.
+> The gate of the dark female
+> is called the root of heaven and earth.
+> Fine as silk thread, it seems hardly there;
+> draw on it, and it is never used up.
+
+## Chapter 10
+> Carrying your bright and dark souls, embracing the One,
+> can you keep them from parting?
+> Gathering your breath until it is soft,
+> can you be like a newborn child?
+> Cleansing the dark mirror within,
+> can you leave it without a stain?
+> Loving the people and ruling the land,
+> can you do it without cleverness?
+> As the gates of heaven open and close,
+> can you be like the female?
+> Seeing clearly in all four directions,
+> can you do it without knowing?
+
+## Chapter 16
+> Reach the utmost emptiness;
+> hold steadily to stillness.
+> The ten thousand things rise up together,
+> and I watch them return.
+> All things flourish,
+> and each goes back to its root.
+> Going back to the root is called stillness;
+> stillness is called returning to what one is.
+> Returning to what one is is called the constant;
+> knowing the constant is called clarity.
+
+@ qingjing
+title: The Classic of Purity and Stillness
+orig: 太上老君說常清靜經, Taishang Laojun shuo chang qingjing jing (Chinese)
+by: anonymous; presented as the words of Lord Lao (Laozi deified)
+date: Tang dynasty, probably 8th–9th century
+fam: taoist
+kind: scripture
+credit: Assembly Sounds' own rendering from the Chinese.
+more: Livia Kohn, ed., *The Taoist Experience: An Anthology* (1993).
+more: Louis Komjathy, *Cultivating Perfection: Mysticism and Self-transformation in Early Quanzhen Daoism* (2007).
+more: Louis Komjathy, *Handbooks for Daoist Practice* (2008).
+about:
+The *Classic of Purity and Stillness* is a very short scripture, under four hundred characters. It is spoken by Lord Lao, the deified Laozi. It joins the teaching of the *Daodejing* with Buddhist ideas of emptiness. Its message is simple: the mind's true nature is pure and still. It is muddied only by desire, and if desire is let go, purity and stillness return by themselves, and with them the whole of heaven and earth.
+
+It is one of the core texts of the Quanzhen (Complete Perfection) school, the monastic Taoism of modern China. It is chanted every day in the morning and evening services of Quanzhen temples such as the White Cloud Monastery in Beijing. The Guarding the One session chants its opening lines to the wooden fish and then rests in the stillness they describe.
+
+## The opening
+Lord Lao said: The great Way has no form, yet it gives birth to heaven and earth. The great Way has no feelings, yet it moves the sun and moon. The great Way has no name, yet it nourishes all things. I do not know its name; if I must name it, I call it the Way.
+
+The Way has the pure and the turbid, movement and stillness. Heaven is pure and earth is turbid; heaven moves and earth is still. … Flowing down from the root to the branches, it gives birth to all things. The pure is the source of the turbid, and movement is the foundation of stillness. If people can be constantly pure and still, heaven and earth will all return to them.
+
+## Letting go of desire
+The human spirit loves purity, but the mind disturbs it. The human mind loves stillness, but desires pull at it. If you can always send desires away, the mind becomes still by itself. Make the mind clear, and the spirit becomes pure by itself. Then the six desires do not arise, and the three poisons melt away.
+
+## Seeing emptiness
+Look within at the mind, and the mind has no mind. Look outside at the body, and the body has no body. Look far off at things, and things have no things. When you have understood these three, you see only emptiness.
+
+Contemplate emptiness, and emptiness too is empty. When there is nothing left to empty, there is deep and constant stillness. When stillness has nothing to be still, how could desire arise? When desire does not arise, that is true stillness. Truly constant, you respond to all things; truly constant, you find your true nature. Always responding, always still: this is constant purity and stillness.
+
+@ neijing
+title: The Yellow Emperor's Inner Classic and the Classic of Difficulties
+orig: 黃帝內經素問, Huangdi neijing suwen; 難經, Nanjing (Chinese)
+by: anonymous; presented as dialogues of the Yellow Emperor and his physicians
+date: the *Inner Classic* about the 2nd–1st centuries BCE; the *Classic of Difficulties* about the 1st–2nd centuries CE
+fam: taoist
+kind: treatise
+credit: Assembly Sounds' own rendering from the Chinese.
+more: Paul U. Unschuld & Hermann Tessenow, trans., *Huang Di Nei Jing Su Wen: An Annotated Translation* (2011).
+more: Paul U. Unschuld, trans., *Nan-ching: The Classic of Difficult Issues* (1986).
+more: Ilza Veith, trans., *The Yellow Emperor's Classic of Internal Medicine* (1949).
+about:
+The *Yellow Emperor's Inner Classic* is the foundation of Chinese medicine. It is written as conversations between the legendary Yellow Emperor and his physicians, and it describes the body as a small universe. Qi flows in it along channels, and health depends on harmony with yin and yang and the seasons. Its first chapter looks back to "the people of high antiquity" who lived a hundred years in full vigour. They did so by living simply, keeping calm, and guarding the spirit within. Its lines on the "true people" who "stood alone, guarding the spirit" are the classical root of standing meditation, and its call to be "calm and empty" is the root of quiet sitting for health.
+
+The later *Classic of Difficulties* (*Nanjing*) answers eighty-one difficult questions about the *Inner Classic*. Its twenty-eighth describes the two great vessels that run up the back and down the front of the body: the Governor (*du*) and Conception (*ren*) vessels. Taoist inner alchemy later joined them into the "small heavenly circuit", the microcosmic orbit. The Microcosmic Orbit, Standing and Inner Smile sessions draw on these passages. They are traditional ideas, not findings of modern anatomy.
+
+## The true people (Suwen, chapter 1)
+I have heard that in high antiquity there were true people. They held heaven and earth in their hands and grasped yin and yang. They breathed in the essence of qi, stood alone guarding the spirit, and their muscles and flesh were as one. So their lives lasted as long as heaven and earth, without end.
+
+## Calm and empty (Suwen, chapter 1)
+Be calm and content, empty and free, and the true qi will follow. Keep the essence and the spirit guarded within, and from where could illness come? So the will is at ease and desires are few, the heart is at peace and without fear, and the body works without growing weary.
+
+## The two vessels (Nanjing, difficulty 28)
+The Governor vessel begins at the lowest point of the trunk. It runs up inside the spine to the Wind Palace at the nape of the neck, and enters the brain.
+
+The Conception vessel begins below the Central Pole point. It rises to the edge of the pubic hair, runs up inside the belly past the Origin Pass, and reaches the throat.
+
+@ yangxing
+title: The six healing breaths
+orig: 養性延命錄, Yangxing yanming lu, "Record of Nourishing Nature and Extending Life"; 六字訣, Liu zi jue, "six-word formula" (Chinese)
+by: attributed to Tao Hongjing (456–536); modern standard form by the Chinese Health Qigong Association
+date: about 500 CE; standard form 2003
+fam: taoist
+kind: manual
+credit: Assembly Sounds' own rendering from the Chinese; the modern form summarised.
+more: Livia Kohn, *Chinese Healing Exercises: The Tradition of Daoyin* (2008).
+more: Chinese Health Qigong Association, *Liu Zi Jue: Six Sounds Approach to Breathing Exercises* (2007).
+about:
+Tao Hongjing was a Taoist master, physician and scholar of the 5th and 6th centuries, who edited the scriptures of the Shangqing school and wrote a famous pharmacopoeia. The *Record of Nourishing Nature and Extending Life* is attributed to him. It gathers older advice on long life: diet, sleep, gentle exercise, massage, and breathing. In it is the first record of six special out-breaths, each with its own sound, used to clear the body of different ills.
+
+Later physicians, from the Sui and Tang dynasties on, matched each sound to one of the organs of Chinese medicine. Teachers also added movements. In 2003 the Chinese Health Qigong Association published a standard form, now practised all over China. The Six Healing Sounds session follows its order: *xū* for the liver, *hē* the heart, *hū* the spleen, *sī* the lungs, *chuī* the kidneys and *xī* the "triple burner". These links are traditional, not established by research.
+
+## The six breaths (rendered)
+There is one way of taking breath in, and six ways of letting it out. The one way in is the in-breath. The six ways out are *chui*, *hu*, *xi*, *he*, *xu* and *si*: all of them are out-breaths.
+
+When it is cold you may use *chui*; when it is warm you may use *hu*. To ease illness: *chui* drives out heat, *hu* drives out wind, *xi* relieves vexation, *he* brings the qi down, *xu* disperses what is stuck, and *si* relieves exhaustion.
+
+## How to breathe them
+- Breathe in quietly through the nose.
+- Breathe out slowly through the mouth, shaping the sound, so softly it is almost a whisper.
+- Let each out-breath be long and gentle, never forced, and never empty the lungs completely.
+- Rest for a breath or two between sounds. If you feel dizzy, stop and breathe normally.
+
+@ goldenflower
+title: The Secret of the Golden Flower
+orig: 太乙金華宗旨, Taiyi jinhua zongzhi, "The Teaching of the Golden Flower of the Supreme One" (Chinese)
+by: received through spirit-writing, attributed to the immortal Lü Dongbin
+date: 1668–1692 and later
+fam: taoist
+kind: manual
+credit: Summarised and rendered in Assembly Sounds' own words.
+more: Richard Wilhelm, *The Secret of the Golden Flower*, with a commentary by C. G. Jung (1929; English by Cary F. Baynes, 1931).
+more: Thomas Cleary, trans., *The Secret of the Golden Flower* (1991).
+about:
+In 17th-century China, groups of Taoist devotees met to receive teachings through spirit-writing. A medium's brush, guided by an immortal, wrote out messages in a tray of sand. The *Secret of the Golden Flower* was received in this way over many sessions, and is attributed to Lü Dongbin, one of the Eight Immortals. It became a classic of inner alchemy (*neidan*), the Taoist art of refining body and spirit.
+
+Its central practice is *huiguang*, "turning the light around". Normally the light of awareness flows out through the eyes into the world. Here the gaze is turned inward and allowed to rest at the centre between the eyes, until a light seems to gather and circle. That light is the "golden flower". In 1929 the sinologist Richard Wilhelm published a German translation, with a long commentary by the psychologist Carl Jung, who saw in it the process he called individuation. It made the book famous in the West. The Golden Flower session follows its steps.
+
+## The golden flower is the light
+The golden flower is the light. What colour is the light? We use the image of a golden flower. The light is easy to set moving but hard to hold steady. Circulate it for long enough, and it crystallises by itself into the spirit body.
+
+## Turning the light around (summarised)
+- Sit upright and comfortable, in a quiet place. Lower the eyelids, and look along the line of the nose, not at its tip, but letting it guide the gaze down and in.
+- Let the attention rest at the centre between the two eyes, the "heavenly heart", without pressing on it.
+- Let the breath grow soft and fine, until you cannot hear it. The text teaches that heart and breath rely on each other: as the breath settles, so does the heart.
+- Do not force anything. If thoughts arise, do not chase them and do not fight them. Turn the light back on the place where they arise.
+- Over time the light is said to gather of itself, and to circulate. Practise for short periods at first, and lengthen them slowly.
+
+@ baopuzi
+title: The Master Who Embraces Simplicity: embryonic breathing and guarding the One
+orig: 抱朴子, Baopuzi (Chinese)
+by: Ge Hong (283–343)
+date: completed about 317 CE
+fam: taoist
+kind: book
+credit: Assembly Sounds' own rendering from the Chinese.
+more: James R. Ware, trans., *Alchemy, Medicine and Religion in the China of A.D. 320: The Nei P'ien of Ko Hung* (1966).
+more: Fabrizio Pregadio, *Great Clarity: Daoism and Alchemy in Early Medieval China* (2006).
+about:
+Ge Hong was a scholar and official of the 4th century who spent his life collecting everything he could learn about becoming an immortal. *Baopuzi*, "the master who embraces simplicity", was his own pen name. His book's "inner chapters" describe the methods of the alchemists and hermits of his day: elixirs, diet, gymnastics, sexual practices, talismans, meditation and breathing. It is our most important window on early Chinese Taoist practice.
+
+Two of its methods are behind sessions in this app. *Embryonic breathing* (*taixi*) is breathing so softly and slowly that it seems to stop, like a child in the womb. *Guarding the One* (*shouyi*) means holding the mind on the One, the unity at the source of all things, which Ge Hong also pictured as dwelling in the body's three "cinnabar fields". Ge Hong's beginners' method of embryonic breathing holds the breath for a long count. The Embryonic Breathing session does not: it keeps only the softness. Do not practise long breath-holding.
+
+## Embryonic breathing (chapter 8, rendered)
+Those who attain embryonic breathing can breathe without nose or mouth, like a child in the womb. Then the Way is complete.
+
+When you first learn to circulate the qi, draw the breath in through the nose and hold it, silently counting, then let it out very gently through the mouth. Breathing in and breathing out, never let your own ears hear the sound of it. Always take in more than you let out. Rest a goose feather on the nose and mouth: when you breathe out and the feather does not stir, that is the sign.
+
+## Guarding the One (chapter 18, rendered and summarised)
+I have heard my teacher say: if a person can know the One, everything is accomplished. Guard the One, keep hold of the True, and you will be in touch with the spirits.
+
+The One has its places in the body. It may be in the lower cinnabar field, below the navel. It may be in the middle cinnabar field, the Crimson Palace below the heart. It may be between the eyebrows, in the upper field. Keep it in mind without wavering, and no harm can come near you.
+
+@ taixijing
+title: The Scripture on Embryonic Breathing
+orig: 胎息經, Taixi jing (Chinese)
+by: anonymous; with a commentary by the Master of Illusory Truth (Huanzhen xiansheng)
+date: Tang dynasty, about the 8th century
+fam: taoist
+kind: scripture
+credit: Assembly Sounds' own rendering from the Chinese.
+full: yes
+more: Stephen Eskildsen, *Daoism, Meditation, and the Wonders of Serenity* (2015).
+more: Livia Kohn, ed., *Daoist Body Cultivation* (2006).
+about:
+This tiny scripture, under a hundred characters long, is the classic statement of embryonic breathing. Its idea is that the breath and the spirit (*shen*) move together. When the mind is still, the breath grows still with it. When both are gathered and rest in each other, the practitioner returns to the state of the embryo, nourished without effort, before the first breath. It is chanted and memorised as a summary of the practice. The Embryonic Breathing session follows it: let the mind settle, and the breath grows fine by itself. Below is the whole scripture.
+
+## The Scripture on Embryonic Breathing
+> The embryo forms within the hidden breath;
+> the breath rests within the embryo that has formed.
+> When breath enters the body, there is life;
+> when spirit leaves the form, there is death.
+> Know spirit and breath, and you may live long.
+> Guard emptiness steadily, to nourish spirit and breath.
+> When the spirit moves, the breath moves;
+> when the spirit rests, the breath rests.
+> If you wish to live long, let spirit and breath pour into each other.
+> When the mind stirs no thought, there is no coming and no going,
+> no going out and no coming in: by itself it abides.
+> Practise this diligently: it is the true road.
+
+@ baduanjin
+title: The Eight Pieces of Brocade
+orig: 八段錦, Baduanjin (Chinese)
+by: traditional; first recorded in the Song dynasty; modern standard form by the Chinese Health Qigong Association
+date: first mentioned in the 12th century; standard form 2003
+fam: taoist
+kind: manual
+credit: Summarised in Assembly Sounds' own words; the traditional rhyme rendered from the Chinese.
+more: Chinese Health Qigong Association, *Ba Duan Jin: Eight-Section Exercises* (2007).
+more: Livia Kohn, *Chinese Healing Exercises: The Tradition of Daoyin* (2008).
+about:
+The Eight Pieces of Brocade is one of the oldest and best-loved qigong sets. "Brocade" means something fine and precious, woven of eight parts. The earliest mention comes from the Song dynasty. The writer Hong Mai (1123–1202) tells of an official named Li Siju who practised it at midnight in the 1110s. Over the centuries a sitting form and a standing form developed. The standing form, with its well-known rhyme, is the one seen today in parks all across China at dawn.
+
+The movements stretch, twist and open the body in time with slow breathing. In Chinese medicine each one is linked to an organ or a benefit, as the rhyme says. In 2003 the Chinese Health Qigong Association published a standard version. The Baduanjin session follows it, slowly and within your comfort.
+
+## The traditional rhyme (rendered)
+1. Holding up the heavens with both hands, to regulate the triple burner.
+2. Drawing the bow to left and right, like shooting at an eagle.
+3. Raising one hand, to tune the spleen and stomach.
+4. Looking back, to heal the five weaknesses and seven injuries.
+5. Swaying the head and tail, to cool the fire of the heart.
+6. Reaching down to the feet with both hands, to strengthen the kidneys and waist.
+7. Punching with angry eyes, to build strength.
+8. Rising and dropping on the heels seven times, and a hundred ills are gone.
+
+## Practising safely
+- Move slowly, and breathe with the movement: usually in as you open or rise, out as you close or sink.
+- Work within a comfortable range. Never force a stretch, bend or twist.
+- If you have back, neck, knee or balance problems, keep the movements small, or sit for the arm movements.
+- The rhymes' health benefits are traditional. Studies of baduanjin suggest it can help balance, flexibility and well-being, as gentle exercise does.
+
+@ healing_tao
+title: Mantak Chia's Healing Tao: the Inner Smile and the Microcosmic Orbit
+orig: English; from Chinese inner alchemy (*neidan*)
+by: Mantak Chia (born 1944)
+date: 1983 and 1985
+fam: taoist
+kind: book
+cite: Mantak Chia, *Awaken Healing Energy Through the Tao* (1983); Mantak Chia, *Taoist Ways to Transform Stress into Vitality* (1985).
+credit: Summarised in Assembly Sounds' own words.
+more: Liu Huayang, *Huiming jing*, the "Book of Consciousness and Life" (1794), with its early diagrams of the orbit; English in the revised edition of Wilhelm's *The Secret of the Golden Flower* (1962).
+more: Livia Kohn, *Introducing Daoism* (2008).
+about:
+Mantak Chia was born in Bangkok to Chinese parents. By his own account he learned Taoist meditation and inner alchemy as a boy and young man from several teachers, above all a hermit he calls One Cloud. In the late 1970s he moved to New York and began teaching there, and his books, starting with *Awaken Healing Energy Through the Tao* (1983), made the microcosmic orbit and the Inner Smile known around the world. His system, the Universal Healing Tao, draws on Chinese inner alchemy, qigong and medicine, simplified for modern students.
+
+The *microcosmic orbit*, the "small heavenly circuit", is an old inner-alchemy practice. Attention, joined with the breath, circles the body's qi up the Governor vessel in the back and down the Conception vessel in the front, with the tongue touching the roof of the mouth to join them. The *Inner Smile* sends the warmth of a real smile through the body's organs, thanking each one. The Microcosmic Orbit and Inner Smile sessions follow these practices. The effects described are traditional claims.
+
+## The Inner Smile, in brief
+1. Sit comfortably, and picture something that makes you smile. Feel the smile in your eyes.
+2. Let it flow down the front of the body: the face, neck and heart, then the lungs, liver, kidneys, spleen and the rest.
+3. Swallow, and let it flow down the middle, through the whole digestive tract.
+4. Let it flow down the back, along the spine, vertebra by vertebra.
+5. Gather the warmth at the navel, and rest.
+
+## The orbit, in brief
+- Rest the attention at the navel, warm and relaxed, with the tongue lightly on the roof of the mouth.
+- Let the attention move down to the perineum, then up the back: the base of the spine, the point opposite the navel, on up the spine to the base of the skull, and the crown.
+- Let it come down the front: the point between the eyebrows, through the tongue, the throat, the heart and the solar plexus, back to the navel.
+- Circle it gently, with the breath or without it. Never force anything. If you feel pressure in the head, bring the attention back down to the navel and rest it there.
+
+@ zhanzhuang
+title: Zhan zhuang: standing like a tree
+orig: 站樁, zhan zhuang, "standing like a post"; 意拳, Yiquan, "mind boxing" (Chinese)
+by: Wang Xiangzhai (1885–1963) and the Yiquan tradition
+date: 1920s–1960s
+fam: taoist
+kind: teaching
+credit: Summarised in Assembly Sounds' own words.
+more: Lam Kam Chuen, *The Way of Energy: Mastering the Chinese Art of Internal Strength with Chi Kung Exercise* (1991).
+more: Livia Kohn, *Chinese Healing Exercises: The Tradition of Daoyin* (2008).
+about:
+Standing still is one of the oldest practices of Chinese self-cultivation. The *Inner Classic* says the true people of antiquity "stood alone, guarding the spirit". Standing postures were taught for centuries inside martial-arts families. Wang Xiangzhai, a famous fighter of the early 20th century, put standing at the centre of the style he founded, Yiquan, "mind boxing". He taught that the stillness of standing trains the whole body better than any movement. His motto was to "seek movement within stillness".
+
+In his later years Wang taught standing as a health exercise, including in hospitals, and from there it spread into modern qigong. The basic postures are *wuji*, simply standing, and "holding the tree", with the arms rounded at chest height as if embracing a great trunk. The Standing like a Tree session follows them.
+
+## How to stand
+1. **Wuji**: stand with the feet shoulder-width apart and parallel, knees soft and slightly bent. Let the spine lengthen gently, as if hanging from the crown of the head. Let the shoulders drop and the arms hang. Breathe naturally.
+2. **Holding the tree**: raise the arms in front of the chest, rounded as if hugging a large tree, palms facing you, fingers apart, elbows a little lower than the wrists. Keep the shoulders relaxed.
+3. **Stillness**: stay quietly, eyes half open, looking softly ahead. Let the body settle. Warmth, tingling and trembling are common and natural.
+4. **Closing**: lower the arms slowly, rest the hands on the lower belly, and stand quietly before moving.
+
+## Practising safely
+Start with a few minutes and build up slowly. Lower the arms whenever they tire, and sit down at once if you feel dizzy or have pain. Keep a chair nearby. If you have heart problems or high blood pressure, keep the arms low and the holds short. Never lock the knees.

@@ -1,0 +1,177 @@
+// Sound and frequency lore: planetary tones, Solfeggio, chakra pairings, tuning standards, the Schumann resonance, and sound-delivery methods.
+
+@ cousto
+title: Hans Cousto's Cosmic Octave
+orig: German: *Die kosmische Oktave*
+by: Hans Cousto
+date: the idea 1978; book 1984; English 1988
+fam: sound
+kind: book
+cite: Hans Cousto, *Die kosmische Oktave: Der Weg zum universellen Einklang* (1984); English: *The Cosmic Octave: Origin of Harmony* (1988).
+credit: Summarised in Assembly Sounds' own words.
+more: Joachim-Ernst Berendt, *Nada Brahma: The World Is Sound* (1983; English 1987).
+about:
+Hans Cousto is a Swiss mathematician and musicologist. In 1978 he hit on a simple way to "hear" the rhythms of the solar system. Every regular cycle, such as the Earth turning once on its axis, the Moon going through its phases or a planet orbiting the Sun, has a frequency: once per day, once per month, once per year. These are far too slow to hear. But doubling a frequency raises it by exactly one octave. If you keep doubling, every one of these cycles eventually lands in the range of human hearing, and becomes a musical note that is "the same" as the cycle, octaves higher.
+
+Cousto worked out these tones for the day, the year, the Moon, the Sun and each of the planets. The Earth-year tone, 136.10 Hz, is close to C sharp. He linked it with the sacred syllable *Om*, and it is widely used today to tune gongs, singing bowls, tuning forks and the drones of meditation music. The arithmetic is exact. The meanings and effects given to these tones are traditional and symbolic, not scientific findings. The Planetary Tones, Om and Grounding sessions use his numbers.
+
+## How the tones are found
+- **Earth day**: one rotation takes 86,400 seconds, a frequency of 1/86,400 Hz. Doubled 24 times, that gives **194.18 Hz**, close to G.
+- **Earth year**: one orbit takes about 365.24 days, or 31,556,926 seconds. Doubled 32 times, that gives **136.10 Hz**, close to C sharp: the "Om" tone.
+- **The Moon**: one cycle of phases, from new moon to new moon, takes about 29.53 days. Doubled 29 times, that gives **210.42 Hz**.
+- **The planets**: the same method applied to each orbit gives, for example, Mercury 141.27 Hz, Venus 221.23 Hz, Mars 144.72 Hz, Jupiter 183.58 Hz and Saturn 147.85 Hz.
+
+@ kepler
+title: Kepler's Harmony of the World and the music of the spheres
+orig: Latin: *Harmonices Mundi*
+by: Johannes Kepler (1571–1630)
+date: 1619
+fam: sound
+kind: book
+cite: Johannes Kepler, *Harmonices Mundi Libri V* (1619), Book V.
+credit: Assembly Sounds' own rendering from the Latin; the background summarised.
+more: E. J. Aiton, A. M. Duncan & J. V. Field, trans., *The Harmony of the World by Johannes Kepler* (1997).
+more: Joscelyn Godwin, ed., *Harmony of the Spheres: A Sourcebook of the Pythagorean Tradition in Music* (1993).
+more: Bruce Stephenson, *The Music of the Heavens: Kepler's Harmonic Astronomy* (1994).
+about:
+The idea that the heavens make music is one of the oldest in Western thought. It goes back to Pythagoras, who found that musical harmony rests on simple number ratios: an octave is 2:1, a fifth 3:2, a fourth 4:3. He and his followers taught that the planets, moving in their orbits at different speeds, sound a harmony too, the *music of the spheres*. We cannot hear it only because we have heard it since birth. In the *Republic*, Plato pictured the cosmos as a great spindle, with a siren on each circle singing a single note, all together making one harmony.
+
+Johannes Kepler, one of the founders of modern astronomy, took this idea seriously as science. In *Harmonices Mundi*, "The Harmony of the World" (1619), he compared each planet's fastest and slowest speeds, as seen from the Sun, and found they formed musical intervals. Each planet, he said, sings its own melody as it swings nearer to and farther from the Sun. All of them together make a polyphonic music that no human ear can hear, only the mind. In the same book he published his third law of planetary motion, which links each planet's distance from the Sun to the time it takes to orbit. It is still taught in every physics course. The Planetary Tones sessions continue this old dream in a modern, playful form.
+
+## The song of the Earth (Harmonices Mundi V, rendered)
+The Earth sings MI, FA, MI, so that you may guess even from the syllables that in this home of ours MIsery and FAmine hold sway.
+
+## The heavenly music (Harmonices Mundi V, rendered)
+The movements of the heavens are nothing but a continuous song for several voices, perceived by the intellect, not by the ear. It is a music that, through discordant tensions, through suspensions and cadences, as it were, moves toward set, prescribed endings, each with six terms, like voices.
+
+@ solfeggio
+title: The "Solfeggio frequencies" and the hymn Ut queant laxis
+orig: Latin: *Ut queant laxis*, hymn for St John the Baptist; modern English sources
+by: the hymn attributed to Paul the Deacon (8th century); the solmisation of Guido of Arezzo (about 1025); the modern frequencies from Joseph Puleo and Leonard Horowitz (1990s)
+date: 8th century; about 1025; 1999
+fam: sound
+kind: history
+cite: Leonard G. Horowitz & Joseph S. Puleo, *Healing Codes for the Biological Apocalypse* (1999); K. Akimoto et al., "Effect of 528 Hz music on the endocrine system and autonomic nervous system", *Health* 10 (2018): 1159–1170.
+credit: The hymn is rendered by Assembly Sounds; the rest summarised in our own words.
+more: Claude V. Palisca & Dolores Pesce, "Guido of Arezzo", *Grove Music Online*.
+about:
+The six notes *ut, re, mi, fa, sol, la* come from an 8th-century Latin hymn to St John the Baptist, *Ut queant laxis*. Each line of its melody happens to begin one step higher than the last. Around 1025 the Italian monk Guido of Arezzo noticed this and used the first syllable of each line to teach singers to find their pitches. This is the origin of solfège, or *solfeggio*, the "do re mi" still taught today. Later *ut* became *do*, and a seventh note, *si*, later *ti*, was added. Guido's syllables name steps of a scale, not fixed pitches. In his time there was no way to measure pitch in vibrations per second, and no fixed tuning standard.
+
+The modern "Solfeggio frequencies" are something different. In the 1990s an American named Joseph Puleo said he had found six frequencies, 396, 417, 528, 639, 741 and 852 Hz, hidden in verse numbers in the Bible's Book of Numbers. With the writer Leonard Horowitz he presented them as an ancient sacred scale, with healing powers such as "repairing DNA" with 528 Hz, in a 1999 book. Three more, 174, 285 and 963 Hz, were added later. None of these claims has any historical or scientific support. The tones have no link to Guido or to medieval chant. One small study, by Akimoto and colleagues (2018), reported slightly lower stress hormones in a small group of volunteers after music tuned to 528 Hz. That is far too small to prove anything. The Solfeggio sessions offer the tones as gentle drones for meditation, and say so plainly.
+
+## Ut queant laxis (first verse)
+= Ut queant laxis resonare fibris
+= mira gestorum famuli tuorum,
+= solve polluti labii reatum,
+= Sancte Iohannes.
+> So that your servants, with voices set free,
+> may sing out the wonders of your deeds,
+> wash away the guilt from our stained lips,
+> O holy John.
+
+@ chakra_modern
+title: The modern Western chakra system
+orig: English, from Sanskrit *cakra*, "wheel"
+by: Arthur Avalon (Sir John Woodroffe), C. W. Leadbeater, Christopher Hills and later writers
+date: 1919, 1927, 1977 and after
+fam: sound
+kind: history
+cite: Kurt Leland, *Rainbow Body: A History of the Western Chakra System from Blavatsky to Brennan* (2016).
+credit: Summarised in Assembly Sounds' own words.
+more: Arthur Avalon (John Woodroffe), *The Serpent Power* (1919).
+more: C. W. Leadbeater, *The Chakras* (1927).
+more: Anodea Judith, *Wheels of Life: A User's Guide to the Chakra System* (1987).
+about:
+In the Hindu and Buddhist tantras the *cakras*, "wheels", are centres in the subtle body, where channels of energy meet along the spine. Different texts count different numbers of them. The system most familiar today comes from a single 16th-century Sanskrit text, the *Ṣaṭ-cakra-nirūpaṇa*, "Description of the Six Centres", by Pūrṇānanda. It describes six centres plus the thousand-petalled lotus at the crown. Each has its own number of petals, its own shape, its own seed syllable (*bīja*), such as *laṃ*, *vaṃ*, *raṃ*, *yaṃ*, *haṃ* and *oṃ*, and its own traditional colours. These are not the rainbow colours used today. In 1919 the British judge Sir John Woodroffe, writing as Arthur Avalon, translated it in *The Serpent Power*, which brought the chakras to the West.
+
+The modern picture then grew step by step. The Theosophist C. W. Leadbeater described the chakras as spinning wheels of coloured light (1927). In the 1970s writers such as Christopher Hills gave them the seven colours of the rainbow, from red at the base to violet at the crown, and linked each with emotions and life themes. The pairing of each chakra with a "Solfeggio" frequency is a 21st-century internet idea with no traditional source at all. The Chakra sessions use the common modern pairings, and say so. The *Serpent Power* entry gives the older tantric picture.
+
+## The seven chakras as usually taught today
+1. **Root**, *mūlādhāra*, at the base of the spine: red; seed syllable *laṃ*.
+2. **Sacral**, *svādhiṣṭhāna*, below the navel: orange; *vaṃ*.
+3. **Solar plexus**, *maṇipūra*, at the navel: yellow; *raṃ*.
+4. **Heart**, *anāhata*, at the heart: green; *yaṃ*.
+5. **Throat**, *viśuddha*, at the throat: blue; *haṃ*.
+6. **Third eye**, *ājñā*, between the brows: indigo; *oṃ*.
+7. **Crown**, *sahasrāra*, at the top of the head: violet or white.
+
+@ tuning
+title: Concert pitch, 432 Hz and "Verdi" tuning
+orig: English, Italian and French sources
+by: the history of tuning standards; study by Diletta Calamassi and Gian Paolo Pomponi
+date: 1859–1975; study 2019
+fam: sound
+kind: history
+cite: D. Calamassi & G. P. Pomponi, "Music tuned to 440 Hz versus 432 Hz and the health effects: a double-blind cross-over pilot study", *Explore* 15 (2019): 283–290.
+credit: Summarised in Assembly Sounds' own words.
+more: Bruce Haynes, *A History of Performing Pitch: The Story of "A"* (2002).
+about:
+Musical instruments must agree on a reference pitch, usually the A above middle C, to play together. For most of history there was no single standard: an organ in one town could be tuned a semitone or more away from the next. Over the 19th century orchestras crept sharper and sharper, to sound brighter, which strained singers' voices. In 1859 France fixed its official *diapason normal* at A = 435 Hz. In the 1880s the composer Giuseppe Verdi supported a proposal in Italy to standardise on A = 432 Hz. An international conference in London in 1939 agreed on A = 440 Hz, and it became an international standard, ISO 16, in 1975. It is still the standard today, though many orchestras tune a little higher.
+
+From the 1980s onward, claims spread that A = 432 Hz is "natural", in tune with the universe, or healing, and that 440 was imposed for sinister reasons. None of these claims has evidence behind it. "Scientific pitch", which sets middle C to 256 Hz, a power of two, was proposed by the physicist Joseph Sauveur around 1713. With Pythagorean intervals it gives A = 432 Hz, and it is often called "Verdi tuning". One small study, by Calamassi and Pomponi (2019), found slightly lower heart rates in 33 people listening to music at 432 Hz compared with 440 Hz. It is a pilot, too small to draw conclusions. The A = 432, A = 440 and C = 256 sessions let you compare them for yourself.
+
+@ spec_freqs
+title: Speculative brainwave bands: epsilon, lambda, hypergamma and others
+orig: English
+by: popular and commercial brainwave sources
+date: 2000s onward
+fam: sound
+kind: review
+credit: Summarised in Assembly Sounds' own words.
+more: G. Buzsáki, *Rhythms of the Brain* (2006).
+more: J. C. R. Licklider, J. C. Webster & J. M. Hedlun, "On the frequency limits of binaural beats", *Journal of the Acoustical Society of America* 22 (1950): 468–473.
+about:
+The standard EEG bands are delta, theta, alpha, beta and gamma (see the brainwave bands entry). Their boundaries are conventions, and their links to mental states are broad tendencies. Online and in commercial brainwave products, many more "bands" and "magic" frequencies appear. "Epsilon" is said to be below 0.5 Hz, linked to very deep meditation. "Hypergamma" is around 100 Hz and "lambda" around 200 Hz, both linked to mystical states. There is 6.3 Hz for astral projection and 2.5 Hz for pain relief. None of these meanings comes from research.
+
+Some of the names borrow real science. The brain does show very slow "infraslow" fluctuations, below 0.1 Hz, and very fast bursts called ripples, around 80–200 Hz, in the hippocampus during sleep and memory. But these are not states anyone has shown a sound can produce. In clinical EEG, "lambda waves" actually means something else entirely: small sharp waves at the back of the head that appear when the eyes scan a picture. Binaural beats themselves become hard to hear above about 30–40 Hz, so the very fast "bands" are played in this app as isochronic pulses. The Brainwave Library sessions that use these frequencies are tagged Speculative.
+
+@ schumann
+title: The Schumann resonances
+orig: German and English
+by: Winfried Otto Schumann (1888–1974); first measured by Martin Balser and Charles Wagner
+date: predicted 1952; measured 1960
+fam: sound
+kind: study
+cite: W. O. Schumann, "Über die strahlungslosen Eigenschwingungen einer leitenden Kugel, die von einer Luftschicht und einer Ionosphärenhülle umgeben ist", *Zeitschrift für Naturforschung A* 7 (1952): 149–154; M. Balser & C. A. Wagner, "Observations of Earth–ionosphere cavity resonances", *Nature* 188 (1960): 638–641.
+credit: Summarised in Assembly Sounds' own words.
+more: C. Price, "ELF electromagnetic waves from lightning: the Schumann resonances", *Atmosphere* 7 (2016): 116.
+about:
+The space between the Earth's surface and the ionosphere, the electrically charged layer of the upper atmosphere about 60 to 100 kilometres up, acts like a giant hollow bell for very low-frequency radio waves. Lightning strikes this bell about fifty times a second around the world. That keeps it ringing at a set of natural frequencies, like the notes of a struck glass. The German physicist Winfried Otto Schumann predicted them in 1952, and they were first clearly measured in 1960. The lowest, mode 1, is about 7.83 Hz. The higher modes are about 14.3, 20.8, 27.3 and 33.8 Hz. They shift a little with the time of day, the seasons and the sun's activity.
+
+The Schumann resonances are real, and they are used to monitor global lightning and climate. Because 7.83 Hz lies near the border of the brain's theta and alpha rhythms, it has been claimed since the 1960s that life is "tuned" to them, and that listening to 7.83 Hz is good for us. Note that the resonances are electromagnetic waves, not sound, and nothing in the evidence shows that hearing a 7.83 Hz beat connects us to them. The Schumann sessions offer them as a symbolic link with the earth, tagged Speculative.
+
+@ monaural_iso
+title: Monaural beats, isochronic tones and the auditory steady-state response
+orig: English
+by: Robert Galambos and colleagues; Donald Schwarz and Paul Taylor; the MIT GENUS team
+date: 1981, 2005, 2016–2019
+fam: sound
+kind: study
+cite: R. Galambos, S. Makeig & P. J. Talmachoff, "A 40-Hz auditory potential recorded from the human scalp", *PNAS* 78 (1981): 2643–2647; D. W. F. Schwarz & P. Taylor, "Human auditory steady state responses to binaural and monaural beats", *Clinical Neurophysiology* 116 (2005): 658–668; A. J. Martorell et al., "Multi-sensory gamma stimulation ameliorates Alzheimer's-associated pathology and improves cognition", *Cell* 177 (2019): 256–271.
+credit: Summarised in Assembly Sounds' own words.
+more: H. F. Iaccarino et al., "Gamma frequency entrainment attenuates amyloid load and modifies microglia", *Nature* 540 (2016): 230–235.
+about:
+There are several ways to put a rhythm into sound. A *binaural beat* is made inside the brain: each ear hears a steady tone, slightly different in pitch, and the brain perceives the difference as a beat. It needs headphones. A *monaural beat* uses the same two tones, but mixes them before they reach the ear, so the beat is a real, physical rise and fall in loudness, and it works on speakers. An *isochronic tone* is a single tone switched cleanly on and off at the target rate. *Amplitude modulation* makes a tone swell and fade smoothly.
+
+When the ear hears a sound that pulses regularly, the brain's hearing system follows it. The EEG shows a matching rhythm called the *auditory steady-state response*. In 1981 Robert Galambos and colleagues found that this response is strongest at about 40 pulses a second. In 2005 Schwarz and Taylor compared the methods directly and found that monaural beats drove a clearly stronger response than binaural beats. A response in the hearing system is not the same as changing a person's whole state of mind, but it is real and measurable. From 2016 a team at MIT led by Li-Huei Tsai found that 40 Hz flickering light, and later 40 Hz sound pulses, reduced signs of Alzheimer's disease in mice. They called it GENUS. Human trials are under way, and it is not yet a treatment. The Monaural, Isochronic, AM, Hybrid and 40 Hz sessions use these methods.
+
+## Which method for which listening
+- **Headphones**: binaural beats need them; all the others work with or without.
+- **Speakers**: monaural beats, isochronic tones and amplitude modulation.
+- **Very fast rates**: above about 30–40 Hz binaural beats become hard to perceive, so isochronic pulses are used instead.
+- **Comfort**: isochronic tones can feel sharp; smooth amplitude modulation is gentler.
+
+@ spatial_audio
+title: Spatial audio, "8D" sound and the feeling of motion
+orig: English
+by: research on auditory space and auditory vection
+date: 2009 review; "8D audio" trend 2018
+fam: sound
+kind: review
+cite: A. Väljamäe, "Auditorily-induced illusory self-motion: a review", *Brain Research Reviews* 61 (2009): 240–255.
+credit: Summarised in Assembly Sounds' own words.
+more: Jens Blauert, *Spatial Hearing: The Psychophysics of Human Sound Localization* (revised edition, 1997).
+about:
+We locate sounds with two ears. A sound from the left reaches the left ear a fraction of a millisecond sooner and a little louder than the right. The shape of the head and outer ears colours it in tiny ways that tell us whether it is in front, behind, above or below. Audio engineers can copy these cues to make sound seem to move around the listener's head. Old "binaural" recordings did this with microphones in a dummy head. In 2018 "8D audio" became an internet trend, with songs remixed so that they slowly circle the listener. Many people find it absorbing and calming, though there is no clinical research on it as a form of entrainment.
+
+Moving sound can do something else: it can make a still listener feel that they themselves are moving. Researchers call this *auditory vection*. A 2009 review by Aleksander Väljamäe gathered the evidence that rotating or approaching sounds can produce a sense of self-motion, especially with the eyes closed and with sounds that seem to fill the space around you. It is weaker than the visual version, the feeling you get when the train beside yours pulls away. The Spatial session and the floating out-of-body session use slow circling sound to support the feeling of drifting and floating.

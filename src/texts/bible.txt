@@ -1,0 +1,198 @@
+// Biblical passages behind the Christian, Jewish and Masonic sessions.
+// Quoted from the King James Version (1611), which is in the public domain.
+
+@ new_testament
+title: The New Testament: the passages behind the prayers
+orig: Ἡ Καινὴ Διαθήκη, the New Covenant (Koine Greek)
+by: the four evangelists, Paul and other early Christian writers
+date: c. 50–110 CE
+fam: christian
+kind: scripture
+credit: King James Version (1611), public domain.
+more: Any modern translation. The *New Revised Standard Version Updated Edition* (2021) is widely used by scholars.
+more: David Bentley Hart, *The New Testament: A Translation* (2017), a very literal reading of the Greek.
+about:
+The Christian scriptures were written in Greek between about 50 and 110 CE. They are made up of four gospels, the Acts of the Apostles, the letters of Paul and others, and the Revelation to John.
+
+Nearly every Christian practice in this app grows from a handful of their lines. The Lord's Prayer and the angel's greeting to Mary make up the rosary. The cries of the blind man Bartimaeus and of the tax collector in the Temple became the Jesus Prayer and the Kyrie. Paul's "pray without ceasing" sent the Russian pilgrim on his journey. The song of the old man Simeon is sung every night at Compline. The account of Pentecost and Paul's chapter on tongues lie behind free vocal prayer. The Aramaic cry *Maranatha* is John Main's prayer word.
+
+These passages are given here in the King James Version of 1611.
+
+## Praying in the inner room (Matthew 6:6)
+But thou, when thou prayest, enter into thy closet, and when thou hast shut thy door, pray to thy Father which is in secret; and thy Father which seeth in secret shall reward thee openly.
+
+## The Lord's Prayer (Matthew 6:9–13)
+After this manner therefore pray ye:
+
+> Our Father which art in heaven, Hallowed be thy name.
+> Thy kingdom come. Thy will be done in earth, as it is in heaven.
+> Give us this day our daily bread.
+> And forgive us our debts, as we forgive our debtors.
+> And lead us not into temptation, but deliver us from evil:
+> For thine is the kingdom, and the power, and the glory, for ever. Amen.
+
+## The angel's greeting and Elizabeth's blessing (Luke 1:28, 1:42)
+And the angel came in unto her, and said, Hail, thou that art highly favoured, the Lord is with thee: blessed art thou among women.
+
+And she spake out with a loud voice, and said, Blessed art thou among women, and blessed is the fruit of thy womb.
+
+These two verses are the first half of the Hail Mary, the prayer of the rosary.
+
+## The song of Simeon, Nunc dimittis (Luke 2:29–32)
+> Lord, now lettest thou thy servant depart in peace, according to thy word:
+> For mine eyes have seen thy salvation,
+> Which thou hast prepared before the face of all people;
+> A light to lighten the Gentiles, and the glory of thy people Israel.
+
+## The blind man and the tax collector (Mark 10:47; Luke 18:13)
+And when he heard that it was Jesus of Nazareth, he began to cry out, and say, Jesus, thou son of David, have mercy on me.
+
+And the publican, standing afar off, would not lift up so much as his eyes unto heaven, but smote upon his breast, saying, God be merciful to me a sinner.
+
+The Jesus Prayer, "Lord Jesus Christ, Son of God, have mercy on me", joins these two cries into one sentence.
+
+## The kingdom within (Luke 17:21)
+Neither shall they say, Lo here! or, lo there! for, behold, the kingdom of God is within you.
+
+## Into thy hands (Luke 23:46)
+And when Jesus had cried with a loud voice, he said, Father, into thy hands I commend my spirit: and having said thus, he gave up the ghost.
+
+## Pray without ceasing (1 Thessalonians 5:16–18)
+Rejoice evermore. Pray without ceasing. In every thing give thanks: for this is the will of God in Christ Jesus concerning you.
+
+## Pentecost (Acts 2:1–4)
+And when the day of Pentecost was fully come, they were all with one accord in one place. And suddenly there came a sound from heaven as of a rushing mighty wind, and it filled all the house where they were sitting. And there appeared unto them cloven tongues like as of fire, and it sat upon each of them. And they were all filled with the Holy Ghost, and began to speak with other tongues, as the Spirit gave them utterance.
+
+## Paul on tongues and on the Spirit's sighs (1 Corinthians 14:2, 14:15; Romans 8:26)
+For he that speaketh in an unknown tongue speaketh not unto men, but unto God: for no man understandeth him; howbeit in the spirit he speaketh mysteries.
+
+What is it then? I will pray with the spirit, and I will pray with the understanding also: I will sing with the spirit, and I will sing with the understanding also.
+
+Likewise the Spirit also helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself maketh intercession for us with groanings which cannot be uttered.
+
+## The grain of wheat (John 12:24)
+Verily, verily, I say unto you, Except a corn of wheat fall into the ground and die, it abideth alone: but if it die, it bringeth forth much fruit.
+
+## Maranatha, "Come, Lord" (1 Corinthians 16:22; Revelation 22:20)
+Paul ends his first letter to the Corinthians with the Aramaic word *Maranatha* left untranslated. It was the prayer of the first Aramaic-speaking Christians, and it means "Our Lord, come!" (or, read another way, "Our Lord has come"). The Bible itself ends with the same prayer in Greek:
+
+He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus.
+
+@ psalms
+title: The Psalms: the verses sung in the sessions
+orig: תְּהִלִּים, Tehillim, "Praises" (Hebrew)
+by: traditionally David and the Temple singers
+date: c. 1000–300 BCE
+fam: christian
+kind: scripture
+credit: King James Version (1611), public domain.
+more: Robert Alter, *The Book of Psalms: A Translation with Commentary* (2007).
+more: The Grail Psalms (1963), the version sung in many Catholic monasteries.
+about:
+The Psalms are the hymn book of ancient Israel: 150 songs of praise, lament, trust and thanks. Jews and Christians have prayed them every day for more than two thousand years.
+
+The Rule of Saint Benedict sets the whole book to be sung through every week. Monks still rise for the night office because of Psalm 119: "At midnight I will rise to give thanks unto thee." Compline, the night prayer, uses Psalms 4, 91 and 134. The Taizé chants take short lines from Psalms 103 and 117. The stillness sessions grow from Psalm 46: "Be still, and know that I am God."
+
+Numbers here follow the Hebrew Bible and most English Bibles. The Greek and Latin Bibles used by Benedict and by the Orthodox number most psalms one lower, so that Psalm 91 is their Psalm 90.
+
+## Psalm 46, complete
+> 1 God is our refuge and strength, a very present help in trouble.
+> 2 Therefore will not we fear, though the earth be removed, and though the mountains be carried into the midst of the sea;
+> 3 Though the waters thereof roar and be troubled, though the mountains shake with the swelling thereof. Selah.
+> 4 There is a river, the streams whereof shall make glad the city of God, the holy place of the tabernacles of the most High.
+> 5 God is in the midst of her; she shall not be moved: God shall help her, and that right early.
+> 6 The heathen raged, the kingdoms were moved: he uttered his voice, the earth melted.
+> 7 The LORD of hosts is with us; the God of Jacob is our refuge. Selah.
+> 8 Come, behold the works of the LORD, what desolations he hath made in the earth.
+> 9 He maketh wars to cease unto the end of the earth; he breaketh the bow, and cutteth the spear in sunder; he burneth the chariot in the fire.
+> 10 Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth.
+> 11 The LORD of hosts is with us; the God of Jacob is our refuge. Selah.
+
+## Psalm 131, complete: the weaned child
+> 1 LORD, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me.
+> 2 Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul is even as a weaned child.
+> 3 Let Israel hope in the LORD from henceforth and for ever.
+
+## Psalm 134, complete: the last psalm of Compline
+> 1 Behold, bless ye the LORD, all ye servants of the LORD, which by night stand in the house of the LORD.
+> 2 Lift up your hands in the sanctuary, and bless the LORD.
+> 3 The LORD that made heaven and earth bless thee out of Zion.
+
+## Psalm 117, complete: Laudate Dominum, omnes gentes
+> 1 O praise the LORD, all ye nations: praise him, all ye people.
+> 2 For his merciful kindness is great toward us: and the truth of the LORD endureth for ever. Praise ye the LORD.
+
+## Lines for the night
+> I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety. (4:8)
+> Into thine hand I commit my spirit: thou hast redeemed me, O LORD God of truth. (31:5)
+> When I remember thee upon my bed, and meditate on thee in the night watches. (63:6)
+> He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. I will say of the LORD, He is my refuge and my fortress: my God; in him will I trust. (91:1–2)
+> Thou shalt not be afraid for the terror by night; nor for the arrow that flieth by day. (91:5)
+
+## Lines for the vigil and the hours
+> O Lord, open thou my lips; and my mouth shall shew forth thy praise. (51:15, the first words of the night office)
+> At midnight I will rise to give thanks unto thee because of thy righteous judgments. (119:62)
+> Mine eyes prevent the night watches, that I might meditate in thy word. (119:148)
+> Seven times a day do I praise thee because of thy righteous judgments. (119:164)
+
+## Lines that became chants and prayer words
+> Make haste, O God, to deliver me; make haste to help me, O LORD. (70:1, Cassian's one-verse prayer)
+> Bless the LORD, O my soul: and all that is within me, bless his holy name. (103:1)
+> But his delight is in the law of the LORD; and in his law doth he meditate day and night. (1:2)
+
+@ tanakh
+title: The Hebrew Bible: the passages behind the practices
+orig: תַּנַ״ךְ, Tanakh: Torah, Nevi'im, Ketuvim (Hebrew)
+by: many authors and editors of ancient Israel
+date: c. 1000–200 BCE
+fam: jewish
+kind: scripture
+credit: King James Version (1611), public domain; transliterations by Assembly Sounds.
+more: Robert Alter, *The Hebrew Bible: A Translation with Commentary* (2018).
+more: *JPS Tanakh* (Jewish Publication Society, 1985).
+about:
+The Tanakh is the Jewish Bible. Its name is an acronym of its three parts: the Torah (the five books of Moses), the Nevi'im (the prophets) and the Ketuvim (the writings, including the Psalms).
+
+Jewish meditation grows from a few of its lines. The Shema is said morning and night, and the Talmud teaches it be said slowly and with full attention. The Torah commands the forty-nine days of the Omer count. Ezekiel's vision of the divine chariot is the source of the *merkavah* mystics who "descended" through the heavenly palaces. Isaac "went out to meditate in the field" at evening, which Rebbe Nachman read as the first *hitbodedut*, lone prayer in nature. Elijah heard God not in wind, earthquake or fire, but in "a still small voice".
+
+The same Bible gives the Masonic Fellowcraft degree its "winding stairs", from the account of Solomon's Temple.
+
+## The Shema (Deuteronomy 6:4–9)
+= שְׁמַע יִשְׂרָאֵל יְהוָה אֱלֹהֵינוּ יְהוָה אֶחָד
+= Shema Yisrael, Adonai Eloheinu, Adonai echad.
+
+Hear, O Israel: The LORD our God is one LORD: And thou shalt love the LORD thy God with all thine heart, and with all thy soul, and with all thy might. And these words, which I command thee this day, shall be in thine heart: And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up. And thou shalt bind them for a sign upon thine hand, and they shall be as frontlets between thine eyes. And thou shalt write them upon the posts of thy house, and on thy gates.
+
+After the first line a response from the Temple is said quietly: *Baruch shem kevod malchuto le-olam va-ed*, "Blessed be the name of His glorious kingdom for ever and ever."
+
+## None else (Deuteronomy 4:39)
+Know therefore this day, and consider it in thine heart, that the LORD he is God in heaven above, and upon the earth beneath: there is none else.
+
+## Counting the Omer (Leviticus 23:15–16)
+And ye shall count unto you from the morrow after the sabbath, from the day that ye brought the sheaf of the wave offering; seven sabbaths shall be complete: Even unto the morrow after the seventh sabbath shall ye number fifty days; and ye shall offer a new meat offering unto the LORD.
+
+## Ezekiel's vision of the chariot (Ezekiel 1:1, 1:4, 1:26–28)
+Now it came to pass in the thirtieth year, in the fourth month, in the fifth day of the month, as I was among the captives by the river of Chebar, that the heavens were opened, and I saw visions of God.
+
+And I looked, and, behold, a whirlwind came out of the north, a great cloud, and a fire infolding itself, and a brightness was about it, and out of the midst thereof as the colour of amber, out of the midst of the fire.
+
+And above the firmament that was over their heads was the likeness of a throne, as the appearance of a sapphire stone: and upon the likeness of the throne was the likeness as the appearance of a man above upon it. And I saw as the colour of amber, as the appearance of fire round about within it, from the appearance of his loins even upward, and from the appearance of his loins even downward, I saw as it were the appearance of fire, and it had brightness round about. As the appearance of the bow that is in the cloud in the day of rain, so was the appearance of the brightness round about. This was the appearance of the likeness of the glory of the LORD. And when I saw it, I fell upon my face, and I heard a voice of one that spake.
+
+## Holy, holy, holy (Isaiah 6:3)
+And one cried unto another, and said, Holy, holy, holy, is the LORD of hosts: the whole earth is full of his glory.
+
+This is the song of the angels that the *merkavah* mystics joined, and that synagogues still sing in the *Kedushah*.
+
+## Always before me (Psalm 16:8)
+I have set the LORD always before me: because he is at my right hand, I shall not be moved.
+
+## The still small voice (1 Kings 19:11–12)
+And he said, Go forth, and stand upon the mount before the LORD. And, behold, the LORD passed by, and a great and strong wind rent the mountains, and brake in pieces the rocks before the LORD; but the LORD was not in the wind: and after the wind an earthquake; but the LORD was not in the earthquake: And after the earthquake a fire; but the LORD was not in the fire: and after the fire a still small voice.
+
+## Isaac in the field (Genesis 24:63)
+And Isaac went out to meditate in the field at the eventide: and he lifted up his eyes, and saw, and, behold, the camels were coming.
+
+The Hebrew verb here, *lasuach*, can also mean "to talk" or "to pour out one's heart". The Talmud (Berakhot 26b) reads it as prayer, so it says Isaac founded the afternoon prayer.
+
+## The winding stairs (1 Kings 6:8)
+The door for the middle chamber was in the right side of the house: and they went up with winding stairs into the middle chamber, and out of the middle into the third.

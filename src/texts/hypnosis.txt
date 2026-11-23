@@ -1,0 +1,177 @@
+// Hypnosis, autogenic training and guided imagery.
+
+@ braid
+title: James Braid's Neurypnology and the first hypnotic induction
+orig: English
+by: James Braid (1795–1860)
+date: 1843
+fam: hypnosis
+kind: book
+cite: James Braid, *Neurypnology; or, The Rationale of Nervous Sleep, Considered in Relation with Animal Magnetism* (1843).
+credit: Quoted from Braid's book (1843, public domain).
+more: Donald Robertson, ed., *The Discovery of Hypnosis: The Complete Writings of James Braid, the Father of Hypnotherapy* (2008).
+more: Alan Gauld, *A History of Hypnotism* (1992).
+about:
+James Braid was a Scottish surgeon practising in Manchester. In November 1841 he went to a stage demonstration by the travelling mesmerist Charles Lafontaine, expecting to expose it as a fraud. Instead he saw that the subject really could not open his eyes. Braid set out to find the cause. He concluded that no "magnetic fluid" was involved. The effect came from the subject's own fixed, absorbed attention. He tried it on his wife, his friends and his servant by having them stare at an object, and found he could produce the same state without any passes or magnetism.
+
+In *Neurypnology* (1843) he named the state "neuro-hypnotism", nervous sleep, from the Greek *hypnos*, sleep, and from it comes the word *hypnosis*. He soon realised it was not sleep at all. He later described it as the mind absorbed in a single dominant idea, which he called "monoideism". Modern hypnosis research descends from his view. The Braid's Eye Fixation and Self-Hypnosis sessions begin with his method. Braid's original aimed for strain on the eyes; the sessions use a gentle version. Never strain your eyes, and let them close whenever you like.
+
+## Braid's method (Neurypnology, 1843)
+Take any bright object (I generally use my lancet case) between the thumb and fore and middle fingers of the left hand; hold it from about eight to fifteen inches from the eyes, at such position above the forehead as may be necessary to produce the greatest possible strain upon the eyes and eyelids, and enable the patient to maintain a steady fixed stare at the object.
+
+The patient must be made to understand that he is to keep the eyes steadily fixed on the object, and the mind riveted on the idea of that one object.
+
+@ mesmer_report
+title: The 1784 report on animal magnetism
+orig: French: *Rapport des commissaires chargés par le roi de l'examen du magnétisme animal*
+by: a royal commission including Benjamin Franklin, Antoine Lavoisier, Jean-Sylvain Bailly and Joseph-Ignace Guillotin
+date: 1784
+fam: hypnosis
+kind: report
+cite: "Report of the Commissioners Charged by the King with the Examination of Animal Magnetism" (1784), English translation in *International Journal of Clinical and Experimental Hypnosis* 50 (2002): 332–363.
+credit: Summarised and rendered in Assembly Sounds' own words.
+more: Robert Darnton, *Mesmerism and the End of the Enlightenment in France* (1968).
+more: Henri F. Ellenberger, *The Discovery of the Unconscious* (1970).
+about:
+Franz Anton Mesmer was a Viennese physician who arrived in Paris in 1778 with a sensational theory. He claimed that an invisible fluid, "animal magnetism", flowed through all living things, and that illness came from blockages in it. He treated patients by making passes over their bodies with his hands. He also seated them around a *baquet*, a tub of "magnetised" water with iron rods that they held to their bodies. Many fell into convulsions, the "crisis", and some went away feeling cured. Paris was gripped by the craze.
+
+In 1784 King Louis XVI appointed a commission of the leading scientists of the day to investigate. It included the American ambassador Benjamin Franklin, the chemist Antoine Lavoisier and the astronomer Jean-Sylvain Bailly. Their experiments are among the first blind, controlled tests in the history of medicine. Blindfolded subjects reacted strongly when told they were being magnetised, even when they were not. They felt nothing when magnetised without knowing it. A blindfolded twelve-year-old boy, told that a tree in Franklin's garden at Passy had been "magnetised", fainted at the wrong tree. The commission concluded that the fluid did not exist, and that the effects were real but came from the imagination. In doing so they discovered, without meaning to, the power of suggestion, the foundation of later hypnosis.
+
+## The conclusion (rendered)
+The commissioners have recognised that this animal magnetic fluid cannot be perceived by any of the senses, and that it had no effect, either on themselves or on the patients they examined. They have found that touching, the imagination, and the imitation that makes us repeat what strikes our senses are the true causes of the effects attributed to magnetism.
+
+The imagination without magnetism produces convulsions, and magnetism without the imagination produces nothing.
+
+@ autogenic
+title: J. H. Schultz's Autogenic Training
+orig: German: *Das autogene Training: konzentrative Selbstentspannung*
+by: Johannes Heinrich Schultz (1884–1970)
+date: 1932
+fam: hypnosis
+kind: manual
+cite: J. H. Schultz, *Das autogene Training* (1932); F. Stetter & S. Kupper, "Autogenic training: a meta-analysis of clinical outcome studies", *Applied Psychophysiology and Biofeedback* 27 (2002): 45–98.
+credit: The formulas are given in the original German with Assembly Sounds' own English.
+more: Wolfgang Luthe & J. H. Schultz, *Autogenic Therapy*, 6 volumes (1969).
+more: Kai Kermani, *Autogenic Training: The Effective Holistic Way to Better Health* (1990).
+about:
+Johannes Heinrich Schultz was a German psychiatrist who worked with hypnosis in the early 20th century. He noticed that patients in hypnosis regularly felt two things: heaviness, as the muscles relaxed, and warmth, as the blood vessels widened. He reasoned that people could learn to produce these feelings for themselves, without a hypnotist, by quietly repeating simple phrases. He built this into a method he called *autogenic training*, "self-generated" training, and published it in 1932. The neurologist Oskar Vogt's earlier work on self-hypnosis was one of its roots.
+
+The six standard exercises are learned one at a time, over weeks. Each is practised for a few minutes several times a day, with each formula repeated silently and with relaxed, passive attention: not trying to make anything happen, just letting it. With his student Wolfgang Luthe, Schultz turned it into one of the most widely used relaxation methods in the world, especially in Germany and Japan. A meta-analysis of 60 studies by Stetter and Kupper (2002) found medium-to-large benefits for tension headache, mild high blood pressure, anxiety, mild depression and sleep problems. The Autogenic Training session follows the six exercises.
+
+## The six standard exercises
+= Ich bin ganz ruhig.
+I am completely calm. (The resting formula, said between the others.)
+
+1. **Heaviness**: *Der rechte Arm ist ganz schwer.* My right arm is very heavy. Later both arms, then both legs.
+2. **Warmth**: *Der rechte Arm ist ganz warm.* My right arm is very warm. Later both arms and both legs.
+3. **Heartbeat**: *Herz schlägt ruhig und regelmäßig.* My heart beats calmly and regularly. If you have a heart condition, you can skip this one.
+4. **Breathing**: *Es atmet mich.* It breathes me. The breath is left alone to breathe itself.
+5. **Solar plexus**: *Sonnengeflecht strömend warm.* My solar plexus is flowing with warmth.
+6. **Forehead**: *Stirn angenehm kühl.* My forehead is pleasantly cool.
+
+## Taking back
+= Arme fest! Tief atmen! Augen auf!
+Arms firm! Breathe deeply! Eyes open! Schultz always ended each practice with this brisk "taking back": bending and stretching the arms firmly, taking a deep breath, and opening the eyes. The only exception was practice at bedtime, before going to sleep.
+
+@ vogt
+title: Oskar Vogt and fractionated hypnosis
+orig: German: *fraktionierte Hypnose*
+by: Oskar Vogt (1870–1959)
+date: the 1890s
+fam: hypnosis
+kind: history
+credit: Summarised in Assembly Sounds' own words.
+more: Alan Gauld, *A History of Hypnotism* (1992).
+more: Henri F. Ellenberger, *The Discovery of the Unconscious* (1970).
+about:
+Oskar Vogt was a German neurologist who began his career in hypnosis, studying with the Swiss psychiatrist Auguste Forel in the 1890s. He later became one of the great brain scientists of the 20th century. With his wife, the neurologist Cécile Vogt, he mapped the layers of the cerebral cortex. In 1914 they founded the Kaiser Wilhelm Institute for Brain Research in Berlin.
+
+In his hypnosis work Vogt developed a way of deepening trance quickly that he called *fractionated hypnosis*. The subject was hypnotised, brought partly out of trance and asked to describe what they had experienced, then hypnotised again, and so on several times. He found that each re-entry tended to go deeper than the one before, and that the subject's own descriptions helped guide the next round. Hypnotists still use fractionation today. Vogt also taught patients short periods of self-hypnosis for rest, which J. H. Schultz later built on in autogenic training. The Fractionation session follows his method: down, up a little, and deeper again, three times.
+
+## The method, in brief
+1. **Induction**: enter a relaxed, absorbed state.
+2. **Surfacing**: come partly up, open the eyes briefly, and notice what you felt in trance.
+3. **Re-entry**: close the eyes and go back down, letting what you noticed carry you deeper than before.
+4. **Repeat**: surface and re-enter two or three more times.
+5. **Emergence**: come fully up, counting slowly, refreshed and alert.
+
+@ erickson
+title: Milton Erickson's naturalistic hypnosis and Betty Erickson's self-hypnosis
+orig: English
+by: Milton H. Erickson (1901–1980) and Elizabeth "Betty" Erickson (1917–2008)
+date: 1950s–1980s
+fam: hypnosis
+kind: teaching
+credit: Summarised in Assembly Sounds' own words.
+more: Jay Haley, *Uncommon Therapy: The Psychiatric Techniques of Milton H. Erickson, M.D.* (1973).
+more: Milton H. Erickson & Ernest L. Rossi, *Hypnotherapy: An Exploratory Casebook* (1979).
+more: Sidney Rosen, ed., *My Voice Will Go With You: The Teaching Tales of Milton H. Erickson* (1982).
+about:
+Milton Erickson was an American psychiatrist and the most influential hypnotherapist of the 20th century. At seventeen he was paralysed by polio. Lying in bed, he relearned how to move partly by watching his baby sister learn to walk, and by remembering, in his body, the feel of movement. This gave him a lifelong fascination with how much the unconscious mind knows. In his practice in Phoenix, Arizona, he rejected the old authoritarian style of hypnosis, with its commands of "you are getting sleepy". Instead he used a gentle, *naturalistic* approach: stories, metaphors, permissive suggestions, and the person's own experiences and even resistances, which he "utilised" to lead into trance. He founded the American Society of Clinical Hypnosis in 1957. His methods shaped family therapy, brief therapy and much of modern hypnotherapy.
+
+His wife Elizabeth "Betty" Erickson was his close collaborator, and a teacher of hypnosis in her own right. She developed a simple self-hypnosis method that many hypnotherapists still teach. It narrows attention gradually, from the outer world to the inner, by counting down what you see, hear and feel. The 3-2-1 session follows her method.
+
+## Betty Erickson's method, in brief
+1. **Set it up**: decide how long you want to spend in trance, and say it to yourself. Set a simple intention for your unconscious mind to work on, and then let it go.
+2. **Three**: with the eyes open, notice three things you can see, then three things you can hear, then three things you can feel, one at a time, naming each.
+3. **Two**: two things you see, two you hear, two you feel.
+4. **One**: one thing you see, one you hear, one you feel.
+5. **Inside**: close the eyes, and do the same with inner images, inner sounds and inner feelings: three, two, one.
+6. **Trance**: let yourself drift, trusting the unconscious to do the work.
+7. **Emerging**: when the time you set is up, you come back by yourself, refreshed.
+
+@ jung_active
+title: Jung's active imagination and the inner advisor
+orig: German and English
+by: Carl Gustav Jung (1875–1961); the inner advisor method of Martin L. Rossman and David E. Bresler
+date: "The Transcendent Function" written 1916, published 1957; the Academy for Guided Imagery founded 1989
+fam: hypnosis
+kind: teaching
+credit: Summarised in Assembly Sounds' own words.
+more: C. G. Jung, "The Transcendent Function", in *Collected Works* vol. 8 (1960).
+more: C. G. Jung, *The Red Book: Liber Novus*, edited by Sonu Shamdasani (2009).
+more: Martin L. Rossman, *Guided Imagery for Self-Healing* (2000).
+about:
+After his break with Freud in 1913, the Swiss psychiatrist Carl Jung went through years of inner turmoil. He chose to face it head-on. He deliberately let himself sink into fantasies and visions, met the figures who appeared in them and spoke with them, and wrote and painted what he saw. One figure, a wise old man he called Philemon, became a kind of inner teacher. These years are recorded in his *Red Book*, published only in 2009. From them came the method he called *active imagination*, first described in an essay of 1916, "The Transcendent Function".
+
+In active imagination you let an image, a mood or a dream figure arise. You watch it with full attention as it moves and changes, and then step into the scene as yourself and engage with it: question it, answer it, take it seriously. Afterwards you record the experience and reflect on it. Jung saw it as a way for the conscious mind and the unconscious to meet as equals. He warned that it is not for everyone. For a person whose sense of self is fragile it can be overwhelming. In the 1980s the physicians Martin Rossman and David Bresler turned a simpler version into the "inner advisor" technique of guided imagery. The Meeting an Inner Guide session draws on both.
+
+## Active imagination, in brief
+1. **Let something come**: in a quiet state, wait for an image, a feeling or a figure, perhaps from a dream, to appear. Do not invent it on purpose.
+2. **Watch**: give it your full, open attention, and let it move, change and develop by itself.
+3. **Take part**: enter the scene as yourself. Ask questions, listen to the answers, and respond honestly, as you would to a real person.
+4. **Record**: afterwards, write, draw or paint what happened.
+5. **Reflect**: consider what it means for your life, and what, if anything, it asks of you.
+
+## The inner advisor, in brief
+- Relax, and go in imagination to a peaceful place.
+- Invite a wise, kind figure to appear: a person, an animal, a light. Accept whatever comes, as long as it feels kind.
+- Greet it, and ask its name. Ask what you came to ask, and listen.
+- Thank it, and come back slowly. Write down what it said.
+- If a figure ever feels frightening or unkind, end the exercise and open your eyes.
+
+@ hypnosis_research
+title: What research says about hypnosis
+orig: English
+by: the scientific literature on hypnosis
+date: 1959–2024
+fam: hypnosis
+kind: review
+cite: J. Rosendahl, C. T. Alldredge & A. Haddenhorst, "Meta-analytic evidence on the efficacy of hypnosis for mental and somatic health issues: a 20-year perspective", *Frontiers in Psychology* 14 (2024): 1330238; T. Thompson et al., "The effectiveness of hypnosis for pain relief: a systematic review and meta-analysis of 85 controlled experimental trials", *Neuroscience & Biobehavioral Reviews* 99 (2019): 298–310.
+credit: Summarised in Assembly Sounds' own words.
+more: G. R. Elkins et al., "Advancing research and practice: the revised APA Division 30 definition of hypnosis", *International Journal of Clinical and Experimental Hypnosis* 63 (2015): 1–9.
+more: H. Jiang et al., "Brain activity and functional connectivity associated with hypnosis", *Cerebral Cortex* 27 (2017): 4083–4093.
+more: Steven Jay Lynn & Irving Kirsch, *Essentials of Clinical Hypnosis* (2006).
+about:
+Hypnosis has more scientific research behind it than any other altered state in this app. In 2015 the American Psychological Association's division of hypnosis defined it as "a state of consciousness involving focused attention and reduced peripheral awareness characterized by an enhanced capacity for response to suggestion". People differ in how easily they enter it. Scales such as the Stanford Hypnotic Susceptibility Scale (1959) show that roughly one person in ten is highly hypnotisable, a similar share responds very little, and most are in between. Practice helps.
+
+The evidence for its usefulness is strong in some areas. A 2024 umbrella review by Rosendahl and colleagues gathered 49 meta-analyses covering 261 studies. It found that hypnosis gives meaningful benefits for many mental and physical health problems, including pain and distress around medical procedures. A 2019 meta-analysis of 85 controlled trials by Thompson and colleagues found that it reliably reduces pain. It works for people of medium as well as high hypnotisability, and recorded audio can deliver it. Brain-imaging studies, such as Jiang and colleagues' (2017) at Stanford, show that hypnosis changes activity and connectivity in networks of attention, body awareness and self-reflection. It is a real change of brain state, not mere play-acting.
+
+Hypnosis is safe for most people. It is not mind control: you stay aware, you cannot be made to act against your values, and you can come out of it whenever you choose. People with psychotic or dissociative disorders should use it only with a qualified therapist.
+
+## Key findings, in brief
+- **Pain**: hypnosis reduces both experimental and clinical pain, in dozens of controlled trials.
+- **Medical procedures**: it lowers anxiety and pain during surgery, dental work and childbirth.
+- **Irritable bowel syndrome**: gut-directed hypnotherapy is recommended in several national guidelines.
+- **Anxiety, sleep, habits**: there are benefits, with more mixed evidence.
+- **The brain**: hypnosis quiets a hub of the salience network, which flags what matters, and changes the links between regions that control attention and those involved in self-reflection.

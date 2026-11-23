@@ -1,0 +1,288 @@
+// Upanishads, Gita, Yoga Sutras and the hatha yoga manuals.
+
+@ mandukya
+title: The Māṇḍūkya Upaniṣad
+orig: माण्डूक्योपनिषद्, Māṇḍūkya Upaniṣad (Sanskrit)
+by: unknown sages of the Atharva Veda tradition
+date: probably early centuries CE
+fam: hindu
+kind: scripture
+full: yes
+credit: Assembly Sounds' own rendering of all twelve verses from the Sanskrit.
+more: Swami Nikhilananda, trans., *The Māṇḍūkya Upaniṣad, with Gauḍapāda's Kārikā and Śaṅkara's Commentary* (1936).
+more: Robert Ernest Hume, trans., *The Thirteen Principal Upanishads* (1921, public domain).
+more: Patrick Olivelle, trans., *Upaniṣads* (1996).
+about:
+The shortest of the principal Upanishads, only twelve verses, is said in Hindu tradition to be enough on its own to lead to liberation. Its subject is the sacred syllable AUM (Om) and the four states of the Self.
+
+AUM is read as three sounds and a silence. *A* is the waking state, in which we know the outside world. *U* is dreaming, in which we know an inner world. *M* is deep, dreamless sleep, a mass of undivided awareness. The silence after the sound is *turīya*, "the fourth": pure consciousness. It is not a fourth state alongside the others but the awareness present in all three. Gauḍapāda's verses on this Upanishad, written around the 6th century, are the oldest surviving work of Advaita Vedānta.
+
+The AUM sessions follow the verses: A, U and M chanted in turn, then rest in the silence.
+
+## The twelve verses
+1. Om! This syllable is all this. Here is its explanation. What was, what is and what will be: all of it is Om. And whatever else is beyond the three times, that too is Om.
+2. All this is Brahman. This Self is Brahman. This Self has four quarters.
+3. The first quarter is the Universal One (*Vaiśvānara*). Its field is the waking state. It knows what is outside, it has seven limbs and nineteen mouths, and it enjoys the gross world.
+4. The second quarter is the Shining One (*Taijasa*). Its field is dreaming. It knows what is inside, it has seven limbs and nineteen mouths, and it enjoys the subtle world.
+5. When one is asleep, desires no desire and sees no dream, that is deep sleep. The third quarter is the Knowing One (*Prājña*). Its field is deep sleep. It has become one: a single mass of knowing, made of bliss, enjoying bliss, with thought as its mouth.
+6. This is the lord of all, the knower of all, the inner guide. It is the womb of all, the place where beings arise and dissolve.
+7. Not knowing inward, not knowing outward, not knowing both; not a mass of knowing, neither knowing nor unknowing; unseen, beyond all dealings, ungraspable, without marks, unthinkable, unnameable; its essence is the certainty of the one Self; the world comes to rest in it; peaceful, kind, without a second: this is thought to be the fourth. That is the Self. That is what is to be known.
+8. This Self, as a syllable, is Om. As measures, the quarters are its measures and the measures are the quarters: the sound A, the sound U and the sound M.
+9. The Universal One, whose field is waking, is the sound A, the first measure, because it reaches everything and because it comes first. Whoever knows this reaches all their desires and becomes first.
+10. The Shining One, whose field is dream, is the sound U, the second measure, because it is raised up and because it stands between the two. Whoever knows this raises up the stream of knowledge and becomes balanced, and in his family no one is born who does not know Brahman.
+11. The Knowing One, whose field is deep sleep, is the sound M, the third measure, because it measures and because everything merges in it. Whoever knows this measures all this and becomes the place where all merges.
+12. The fourth has no measure. It is beyond all dealings, the stilling of the world, kind, without a second. So Om is the Self. Whoever knows this enters the Self by the Self.
+
+@ upanishads
+title: The principal Upanishads: passages on the Self and on yoga
+orig: उपनिषद्, Upaniṣad, "sitting near" (Sanskrit)
+by: the sages of the Vedic forest schools, among them Yājñavalkya and Uddālaka Āruṇi
+date: c. 700–100 BCE
+fam: hindu
+kind: scripture
+credit: Assembly Sounds' own renderings from the Sanskrit.
+more: Patrick Olivelle, trans., *Upaniṣads* (1996).
+more: Eknath Easwaran, trans., *The Upanishads* (1987).
+more: Robert Ernest Hume, trans., *The Thirteen Principal Upanishads* (1921, public domain).
+about:
+The Upanishads are the last and most philosophical layer of the Vedas. They are dialogues between teachers and students, kings and sages, husbands and wives, about the one reality, *Brahman*, and the true Self, *ātman*. Their answer, that the two are one, became the foundation of Vedānta.
+
+They also hold the oldest descriptions of meditation in India. The Kaṭha compares the body to a chariot, and calls yoga the "firm holding of the senses". The Śvetāśvatara tells you how to sit, where to sit and how to breathe. The Bṛhadāraṇyaka gives the method of *neti neti*, "not this, not this". In it the Self is found by setting aside everything that can be seen as an object, because the Self is the seer. The sessions on self-inquiry, withdrawal of the senses and *neti neti* follow these passages.
+
+## The three prayers (Bṛhadāraṇyaka 1.3.28)
+= asato mā sad gamaya, tamaso mā jyotir gamaya, mṛtyor mā amṛtaṃ gamaya
+> From the unreal lead me to the real.
+> From darkness lead me to light.
+> From death lead me to the deathless.
+
+## Not this, not this (Bṛhadāraṇyaka 2.3.6; 4.5.15)
+Now the teaching: "Not this, not this." For there is nothing higher than this "not this".
+
+The Self is "not this, not this". It cannot be grasped, for it is never grasped. It cannot be destroyed, for it is never destroyed. It does not cling, for it never clings. It is free; it does not tremble, and it comes to no harm. By what could one know the knower?
+
+## That you are (Chāndogya 6.8.7)
+That finest essence: the whole world has it as its Self. That is the real. That is the Self. *That you are* (*tat tvam asi*), Śvetaketu.
+
+## The chariot (Kaṭha 1.3.3–4)
+Know the Self as the lord of the chariot, and the body as the chariot. Know the intellect as the charioteer, and the mind as the reins. The senses, they say, are the horses, and the objects of the senses the roads they run on.
+
+## Looking within (Kaṭha 2.1.1)
+The Self-existent pierced the openings of the senses outward, so we look outward and not within. But a certain wise one, longing for the deathless, turned his eyes inward and saw the Self.
+
+## The firm holding of the senses (Kaṭha 2.3.10–11)
+When the five senses are still, together with the mind, and the intellect does not stir, that, they say, is the highest state. This they call yoga: the firm holding of the senses.
+
+## The bow and the arrow (Muṇḍaka 2.2.4)
+Om is the bow, the self is the arrow, and Brahman is the target. It is to be struck by one who is undistracted. Become one with it, as the arrow becomes one with its mark.
+
+## How to sit (Śvetāśvatara 2.8–10)
+Holding the body steady, with chest, neck and head upright, drawing the senses and the mind into the heart, the wise one crosses all the fearful rivers in the boat of Brahman.
+
+Calming the breath, with movements quieted, let him breathe out through the nose when the breath has grown gentle. Let the wise one hold the mind as he would a chariot yoked to restless horses.
+
+Let him practise in a level, clean place, free of pebbles, fire and gravel, pleasant to the mind with the sound of water and shelter, not harsh to the eye, a hidden place out of the wind.
+
+## Enjoy by letting go (Īśā 1)
+All this, whatever moves in this moving world, is dwelt in by the Lord. Enjoy it by letting it go. Do not covet anyone's wealth.
+
+@ gita
+title: The Bhagavad Gītā: on meditation
+orig: भगवद्गीता, Bhagavad Gītā, "the Song of the Lord" (Sanskrit)
+by: part of the *Mahābhārata*, traditionally composed by Vyāsa
+date: c. 2nd century BCE – 2nd century CE
+fam: hindu
+kind: scripture
+credit: Assembly Sounds' own renderings from the Sanskrit.
+more: Barbara Stoler Miller, trans., *The Bhagavad-Gita* (1986).
+more: Eknath Easwaran, trans., *The Bhagavad Gita* (1985).
+more: Edwin Arnold, *The Song Celestial* (1885, public domain verse translation).
+about:
+The Gītā is a dialogue of 700 verses set on a battlefield. The warrior Arjuna, faced with fighting his own relatives, lays down his bow in despair. His charioteer, Krishna, who is God in human form, teaches him how to act without attachment, how to know the Self, and how to love God. It is the most widely read Hindu scripture.
+
+Chapter 6, "the yoga of meditation", gives a complete instruction for sitting. You sit alone, on a firm seat neither too high nor too low, with body, head and neck upright and still. The mind is made one-pointed and brought back, gently, every time it wanders, until it is "like a lamp in a windless place". Chapter 10 has Krishna call himself "the one syllable" and the offering of *japa*, quiet repetition of a mantra. The japa, pratyāhāra and Om sessions draw on these verses.
+
+## The tortoise (2.58)
+When, like a tortoise drawing in its limbs on every side, one draws the senses back from the objects of the senses, one's wisdom stands firm.
+
+## How to sit (6.10–15)
+Let the yogi always keep the mind steady, staying alone in a quiet place, with mind and body held in check, wanting nothing and owning nothing.
+
+In a clean place let him set up a firm seat for himself, neither too high nor too low, covered with cloth, deerskin and kuśa grass. Sitting there, making the mind one-pointed, with thoughts and senses quieted, let him practise yoga to purify himself.
+
+Holding the body, head and neck upright and still, steady, gazing at the tip of the nose and not looking around, calm, fearless, keeping his vow, with the mind restrained and thinking of Me, let him sit, devoted, with Me as his goal.
+
+Always joining himself in this way, the yogi with a quiet mind reaches the peace that rests in Me, the supreme stillness.
+
+## A lamp in a windless place (6.19)
+"As a lamp in a windless place does not flicker": this is the likeness of the yogi whose mind is held still, practising the yoga of the Self.
+
+## Bring it back (6.25–26)
+Little by little, let him come to rest, with the intellect held firm. Setting the mind in the Self, let him think of nothing else. Wherever the restless, unsteady mind wanders, let him draw it back from there and bring it under the guidance of the Self.
+
+## The one syllable (8.13)
+Whoever leaves the body saying Om, the one syllable that is Brahman, and remembering Me, goes to the highest goal.
+
+## The offering of japa (10.25)
+Among the great seers I am Bhṛgu. Among words I am the one syllable. Among offerings I am the offering of japa. Among things that do not move, I am the Himalaya.
+
+@ yoga_sutras
+title: The Yoga Sūtras of Patañjali
+orig: योगसूत्र, Yoga Sūtra (Sanskrit)
+by: Patañjali
+date: c. 400 CE
+fam: hindu
+kind: sutra
+credit: Assembly Sounds' own renderings from the Sanskrit.
+more: Edwin F. Bryant, trans., *The Yoga Sūtras of Patañjali* (2009).
+more: Swami Satchidananda, trans., *The Yoga Sutras of Patanjali* (1978).
+more: James Haughton Woods, trans., *The Yoga-System of Patañjali* (1914, public domain).
+about:
+In 195 short threads (*sūtras*), Patañjali gathered the practice of yoga into one system. In this classical sense yoga is not mainly about postures. It is the stilling of the movements of the mind, so that pure awareness, the "seer", can rest in itself.
+
+The path has eight limbs. The first are ethics (*yama*, *niyama*), posture (*āsana*) and breath (*prāṇāyāma*). Then comes *pratyāhāra*, the withdrawal of the senses. The last three are the inner limbs: concentration (*dhāraṇā*), meditation (*dhyāna*) and absorption (*samādhi*). Practised together on one object, these three are called *saṃyama*. Patañjali also names Om as the word for the divine, and says that repeating it while dwelling on its meaning removes the obstacles to meditation. The samyama, pratyāhāra, japa and antar mouna sessions follow these sūtras.
+
+## What yoga is (1.1–3)
+= atha yogānuśāsanam · yogaś citta-vṛtti-nirodhaḥ · tadā draṣṭuḥ svarūpe 'vasthānam
+1. Now, the teaching of yoga.
+2. Yoga is the stilling of the movements of the mind.
+3. Then the seer rests in its own true nature.
+
+## Practice and letting go (1.12, 1.14)
+They are stilled by practice and by letting go. Practice becomes firmly rooted when it is kept up for a long time, without a break, and with devotion.
+
+## Om (1.27–29)
+Its word is Om. Repeat it, and dwell on its meaning. From this comes knowledge of the inner self, and the obstacles disappear.
+
+## Four attitudes that clear the mind (1.33)
+The mind becomes clear by cultivating friendliness towards the happy, compassion towards those who suffer, gladness towards the good, and calm towards the harmful.
+
+## The eight limbs (2.29)
+The limbs of yoga are eight: restraint, observance, posture, breath control, withdrawal of the senses, concentration, meditation and absorption.
+
+## Posture (2.46)
+= sthira-sukham āsanam
+The posture should be steady and comfortable.
+
+## Withdrawal of the senses (2.54–55)
+When the senses are cut off from their objects, they follow, as it were, the nature of the mind. This is withdrawal. From it comes complete mastery of the senses.
+
+## The three inner limbs and saṃyama (3.1–5)
+1. Concentration is binding the mind to one place.
+2. Meditation is the unbroken flow of awareness towards it.
+3. Absorption is when that same meditation shines as the object alone, as if empty of its own form.
+4. The three together on one object are called *saṃyama*.
+5. When saṃyama is mastered, the light of insight dawns.
+
+@ hyp
+title: The Haṭha Yoga Pradīpikā
+orig: हठयोगप्रदीपिका, Haṭhayogapradīpikā, "the little lamp of haṭha yoga" (Sanskrit)
+by: Svātmārāma
+date: 15th century
+fam: hindu
+kind: manual
+credit: Assembly Sounds' own renderings from the Sanskrit. Verse numbers follow the usual four-chapter edition.
+more: Brian Dana Akers, trans., *The Hatha Yoga Pradipika* (2002).
+more: Swami Muktibodhananda, *Hatha Yoga Pradipika* (Bihar School of Yoga, 1985).
+more: Pancham Sinh, trans., *The Hatha Yoga Pradipika* (1914, public domain).
+about:
+This 15th-century manual gathered the techniques of the Nāth yogis into four chapters. They cover postures, cleansing practices and breathing, the *mudrās* and locks that move energy and awaken *kuṇḍalinī*, and finally *nāda*, absorption in the inner sound. Svātmārāma says plainly that haṭha yoga is a ladder to *rāja yoga*, the meditative yoga of Patañjali. It is the main classical source for most of the breathing practices in this app: alternate-nostril breathing, kapālabhāti, bhastrikā, bhrāmarī and trāṭaka. Nāda yoga comes from its fourth chapter.
+
+The text often asks for long breath retention and warns that wrong practice can cause illness. It insists the work be learned from a teacher and done gradually. The sessions in this app keep only the gentle forms, and none asks you to hold the breath beyond comfort.
+
+## A ladder to rāja yoga (1.1)
+Salutation to Ādinātha, the first lord, who taught the knowledge of haṭha yoga. It is a ladder for those who wish to climb to the heights of rāja yoga.
+
+## Breath and mind (2.2)
+When the breath moves, the mind moves. When the breath is still, the mind is still, and the yogi becomes steady.
+
+## Alternate-nostril breathing (2.7–10)
+Seated firmly, the yogi draws the breath in through the left nostril, the moon channel, and lets it out through the right, the sun channel. Then he draws it in through the right and lets it out through the left. Breathing in this way through sun and moon in turn, the channels of the self-controlled are made clean.
+
+## Trāṭaka (2.31–32)
+With a still mind, gaze without blinking at a small mark until tears come. The teachers call this trāṭaka. It clears the eyes, banishes dullness, and should be kept as carefully as a golden casket.
+
+## Kapālabhāti (2.35)
+Breathe out and in very fast, like the bellows of a blacksmith. This is called kapālabhāti, "skull-shining", and it clears away disorders of phlegm.
+
+## Bhastrikā (2.59–67, in brief)
+Like a blacksmith working his bellows, move the breath in and out forcefully through the nose, filling and emptying the belly, until tired; then rest.
+
+## Bhrāmarī (2.68)
+Breathe in quickly, with the sound of a male bee, and breathe out slowly, with the sound of a female bee. Through this practice the best of yogis feel a bliss in the mind.
+
+## The serpent (3.1)
+As the lord of serpents holds up the earth with all its mountains and forests, so *kuṇḍalinī* holds up all the practices of yoga.
+
+## The inner sound (4.29, 4.66–68)
+The mind is the lord of the senses. The breath is the lord of the mind. The lord of the breath is absorption, and absorption rests on *nāda*, the inner sound.
+
+Ādinātha taught countless ways to absorption, but we hold that following the inner sound is the best of them.
+
+Seated, with the gaze turned within, let the yogi listen with a one-pointed mind to the sound heard inside the right ear. Closing ears, eyes, nose and mouth, a clear, pure sound is heard within.
+
+## The sounds, from loud to subtle (4.85–86, 4.89–90)
+At first the sounds are like the ocean, thunder and kettledrums. In the middle stage they are like drums, conches, bells and horns. At the end they are like tinkling bells, the flute, the vīṇā and the humming of bees.
+
+Even when loud sounds like thunder and drums are heard, attend to the subtler ones, the most subtle of all. As a bee drinking nectar does not care for the scent, so the mind absorbed in the sound does not long for anything else.
+
+@ gheranda
+title: The Gheraṇḍa Saṃhitā
+orig: घेरण्डसंहिता, Gheraṇḍa Saṃhitā (Sanskrit)
+by: presented as the teaching of the sage Gheraṇḍa to his student Caṇḍa Kāpāli
+date: c. 1700
+fam: hindu
+kind: manual
+credit: Summarised in Assembly Sounds' own words.
+more: James Mallinson, trans., *The Gheranda Samhita* (2004).
+more: B. K. S. Iyengar, *Light on Prāṇāyāma* (1981).
+more: Srisa Chandra Vasu, trans., *The Gheranda Samhita* (1914, public domain).
+about:
+A later manual of haṭha yoga, set out as a conversation between a teacher and his student. It teaches a "sevenfold yoga": cleansing, posture, *mudrās*, sense withdrawal, breathing, meditation and absorption. Its chapter on breath control describes eight kinds of *kumbhaka*, "breath retention": sahita, sūryabhedana, ujjāyī, śītalī, bhastrikā, bhrāmarī, mūrchā and kevalī.
+
+For the first, *sahita*, it gives the classical ratio. You breathe in for sixteen counts, hold for sixty-four and breathe out for thirty-two, each count timed by a silent syllable. This 1:4:2 ratio is the pattern behind the ratio-breathing session. Modern teachers such as B. K. S. Iyengar teach it only after long preparation, and always within comfort. The bhastrikā session uses the text's bellows breath in rounds, followed by quiet, natural breathing.
+
+## The sevenfold yoga
+1. **Ṣaṭkarma**, the six cleansings, purify the body.
+2. **Āsana**, posture, makes it firm.
+3. **Mudrā**, the seals, make it steady.
+4. **Pratyāhāra**, withdrawal, makes the mind calm.
+5. **Prāṇāyāma**, breath control, brings lightness.
+6. **Dhyāna**, meditation, brings direct perception of the Self.
+7. **Samādhi**, absorption, brings freedom.
+
+## The ratio, gently
+1. Breathe in for one measure.
+2. Rest the breath for up to four measures, only as far as is comfortable.
+3. Breathe out for two measures.
+
+Start with short measures, never strain, and stop at once if you feel dizzy or uneasy. The text itself says that breath control learned in haste does harm.
+
+@ nadabindu
+title: The Nādabindu Upaniṣad
+orig: नादबिन्दूपनिषद्, Nādabindu Upaniṣad, "the drop of sound" (Sanskrit)
+by: one of the Yoga Upanishads attached to the Ṛg Veda
+date: probably 1st millennium CE
+fam: hindu
+kind: scripture
+credit: Assembly Sounds' own renderings and summary from the Sanskrit.
+more: Jean Varenne, trans., *Yoga and the Hindu Tradition* (1976), with the Yoga Upanishads.
+more: T. R. Srinivasa Ayyangar, trans., *The Yoga Upaniṣads* (1938).
+about:
+A short Upanishad on sound as the way to absorption. It begins by picturing Om as a bird. A is its right wing, U its left, M its tail, and the half-measure after the sound its head. Then it turns to *nāda*, the inner sound that the yogi hears with the outer ears closed.
+
+The sounds come in stages, from loud to ever more subtle. At first they are like the sea, thunder or a waterfall, then like drums and bells, and at last like a flute, a vīṇā or bees. The yogi lets go of each coarser sound for a finer one until the mind dissolves in the sound and then beyond it. This is the source, with the Haṭha Yoga Pradīpikā, of the nāda yoga session.
+
+## The bird of Om
+The syllable A is its right wing, U its left wing, M its tail, and the half-measure its head. Whoever rides this bird is carried beyond.
+
+## How to listen
+Sitting steady, let the yogi close the ears and listen to the sound within, in the right ear. As he practises, the inner sound grows until it shuts out every sound from outside.
+
+## The stages of the sound
+In the beginning it is like the roar of the sea, of clouds, of kettledrums and of waterfalls. In the middle it is like drums, bells and horns. At the end it is like tinkling bells, the flute, the vīṇā and the hum of bees. So the sounds become ever finer.
+
+## The bee and the snake
+Even if loud sounds come, keep the attention on the subtler ones. Let go of the coarse and attend to the subtle. As a bee drinking honey does not care for the scent, the mind lost in the sound does not long for objects. As a snake hearing the charmer's music forgets everything else, the mind caught by the sound forgets its restlessness.
+
+## Beyond the sound
+The sound dissolves into the mind, and the mind dissolves with it. What remains is the silent, supreme state, beyond sound.

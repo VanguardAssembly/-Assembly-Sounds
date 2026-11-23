@@ -1,0 +1,330 @@
+// Western Christian contemplative texts.
+
+@ cloud
+title: The Cloud of Unknowing
+orig: The Cloude of Unknowyng (Middle English)
+by: an anonymous English priest, probably a Carthusian monk
+date: late 14th century
+fam: christian
+kind: book
+credit: Assembly Sounds' own modern English rendering of the Middle English text.
+more: Evelyn Underhill, ed., *A Book of Contemplation the which is called The Cloud of Unknowing* (1912, public domain).
+more: James Walsh, ed., *The Cloud of Unknowing* (Classics of Western Spirituality, 1981).
+more: Carmen Acevedo Butcher, trans., *The Cloud of Unknowing* (2009).
+about:
+A short handbook of contemplative prayer, written in the English of Chaucer's time by a priest who never gave his name. He wrote it for a young man of twenty-four who wanted to give his life to prayer.
+
+The book teaches that God cannot be grasped by thinking, only reached by love. Between you and God hangs a "cloud of unknowing" that no idea can pierce. Beneath you lies a "cloud of forgetting", where you put everything else, even good and holy thoughts. Your whole prayer is a naked, longing intent towards God, gathered into a single short word that you hold in your heart.
+
+The book was almost forgotten until the twentieth century. Then the Trappist monk William Meninger found it in his abbey's library in the 1970s, and it became the direct source of Centering Prayer.
+
+## Chapter 3: the work itself
+Lift up your heart to God with a gentle stirring of love, and mean God himself, not any of his gifts. Be unwilling to think of anything but him, so that nothing works in your mind or in your will but God alone.
+
+When you first begin, you find only darkness, a kind of cloud of unknowing. You do not know what it is, except that you feel in your will a naked intent towards God. Whatever you do, this darkness and this cloud is between you and your God. It keeps you from seeing him clearly by the light of understanding, and from feeling him in the sweetness of love.
+
+So settle yourself to rest in this darkness as long as you can, always crying out after him whom you love. For if you are ever to feel him or see him, as far as that is possible in this life, it must always be in this cloud and in this darkness.
+
+## Chapter 5: the cloud of forgetting
+Just as this cloud of unknowing is above you, between you and your God, so you must put a cloud of forgetting beneath you, between you and everything that has ever been made.
+
+## Chapter 6: loved, but not thought
+He may well be loved, but not thought. By love he can be reached and held; by thought, never.
+
+So strike that thick cloud of unknowing with a sharp dart of longing love, and do not leave it, whatever happens.
+
+## Chapter 7: one little word
+If you want to gather all your desire into one simple word that the mind can easily hold, take a little word of one syllable rather than two, for the shorter the better. Such a word is GOD, or LOVE. Choose whichever you like, or another word of one syllable that you like better.
+
+Fasten this word to your heart so that it never leaves, whatever happens. This word will be your shield and your spear, in peace and in war. With this word you will beat upon the cloud above you, and with it you will push every kind of thought down beneath the cloud of forgetting.
+
+If any thought presses in and asks you what you want, answer with this one word and nothing more.
+
+@ guigo
+title: The Ladder of Monks
+orig: Scala claustralium (Latin)
+by: Guigo II, prior of the Grande Chartreuse
+date: late 12th century
+fam: christian
+kind: treatise
+credit: Assembly Sounds' own rendering from the Latin.
+more: Edmund Colledge & James Walsh, trans., *Guigo II: The Ladder of Monks and Twelve Meditations* (1978).
+about:
+Guigo II was the ninth prior of the Grande Chartreuse, the mother house of the Carthusian monks in the French Alps. In a short letter to a fellow monk he set out the four steps of *lectio divina*, "divine reading". Monks had been praying with scripture since the desert fathers, but this was the first time anyone named the steps one by one.
+
+The four steps are reading, meditation, prayer and contemplation. Guigo calls them the rungs of a ladder that reaches from earth to heaven. To show how they work he takes one verse, "Blessed are the pure in heart, for they shall see God" (Matthew 5:8). He reads it, turns it over in his mind, asks for what it promises, and finally rests in the sweetness it points to.
+
+The lectio divina session follows his four rungs exactly.
+
+## The four rungs
+One day, while I was busy working with my hands, I began to think about the spiritual work of us monks. All at once four steps came into my mind: reading, meditation, prayer and contemplation. These make a ladder for monks, by which they are lifted up from earth to heaven. It has few rungs, but its length is beyond measure, for its foot rests on the earth and its top passes through the clouds and searches out the secrets of heaven.
+
+## What each step is
+*Reading* is the careful study of the scriptures with the whole attention of the mind. *Meditation* is the busy work of the mind, seeking with the help of reason the knowledge of a hidden truth. *Prayer* is the heart's devoted turning to God, to drive away evil and to gain what is good. *Contemplation* is when the mind is lifted up to God and held above itself, and tastes the joys of everlasting sweetness.
+
+## How they work together
+Reading seeks the sweetness of the blessed life, meditation finds it, prayer asks for it, contemplation tastes it.
+
+Reading puts food whole into the mouth. Meditation chews it and breaks it up. Prayer draws out its flavour. Contemplation is the sweetness itself, which gladdens and refreshes.
+
+Seek in reading, and you will find in meditation. Knock in prayer, and the door will be opened to you in contemplation.
+
+@ benedict
+title: The Rule of Saint Benedict
+orig: Regula Benedicti (Latin)
+by: Benedict of Nursia
+date: c. 530
+fam: christian
+kind: manual
+credit: Assembly Sounds' own rendering from the Latin.
+more: Timothy Fry, ed., *RB 1980: The Rule of St. Benedict in English* (1981).
+more: Leonard J. Doyle, trans., *St. Benedict's Rule for Monasteries* (1948).
+about:
+Benedict wrote his short rule for the monastery he founded at Monte Cassino in Italy. It became the rule of Western monasticism, and Benedictines, Cistercians and Trappists still live by it today.
+
+It sets the monk's day around the *Opus Dei*, the "work of God". This is the psalms sung at eight hours of prayer. A night office is sung after midnight, and Compline at nightfall, followed by a great silence. Between the hours come manual work and *lectio divina*, slow prayerful reading.
+
+Several sessions follow its timetable. The night vigil rises in the dark as Benedict's monks did. Compline uses his psalms and his silence. Lectio divina is the reading he required every day.
+
+## The first words (Prologue)
+Listen, my son, to the master's teaching, and bend the ear of your heart. Welcome the advice of a loving father and carry it out faithfully.
+
+## Short and pure prayer (chapter 20)
+We must know that God hears us not because of our many words, but because of purity of heart and tears of sorrow. So prayer should be short and pure, unless perhaps it is drawn out by the inspiration of God's grace.
+
+## Mind and voice together (chapter 19)
+Let us stand to sing the psalms in such a way that our mind is in harmony with our voice.
+
+## Rising in the night (chapters 8 and 16)
+In winter, from the first of November until Easter, the brothers should rise at the eighth hour of the night by reasonable reckoning. In this way they sleep a little past midnight and rise with their food digested.
+
+As the prophet says, "Seven times a day have I praised you" (Psalm 119:164). We keep this sacred number of seven if we carry out our service at Lauds, Prime, Terce, Sext, None, Vespers and Compline. Of the night office the same prophet says, "At midnight I rose to give you praise" (Psalm 119:62).
+
+## The psalms of Compline (chapter 18)
+At Compline the same psalms are to be repeated every day: Psalms 4, 91 and 134 (numbered 4, 90 and 133 in the Latin Bible).
+
+## The great silence (chapter 42)
+Monks should strive for silence at all times, but above all during the hours of the night. Before Compline let one of them read aloud from the *Conferences* of Cassian or the *Lives of the Fathers*. When they come out from Compline, no one may speak at all.
+
+## Work and holy reading (chapter 48)
+Idleness is the enemy of the soul. So the brothers should be busy at set times with the work of their hands, and at other set hours with holy reading.
+
+@ cassian
+title: The Conferences
+orig: Collationes Patrum (Latin)
+by: John Cassian
+date: c. 420–429
+fam: christian
+kind: teaching
+credit: Assembly Sounds' own rendering from the Latin.
+more: Boniface Ramsey, trans., *John Cassian: The Conferences* (1997).
+more: Edgar C. S. Gibson, trans., in *Nicene and Post-Nicene Fathers*, series 2, vol. 11 (1894, public domain).
+about:
+As a young monk, John Cassian (c. 360–435) spent years among the desert fathers of Egypt. Later he founded monasteries near Marseille and wrote down, as twenty-four "conferences", the teachings he had heard from the old abbas.
+
+In the ninth and tenth conferences Abba Isaac teaches unceasing prayer. The method is one short verse from the psalms, "O God, come to my assistance; O Lord, make haste to help me" (Psalm 70:1). It is repeated in every circumstance until it fills the mind, even in sleep. This is the oldest Western description of what is now called mantra prayer.
+
+Benedict told his monks to read Cassian every evening. Fifteen centuries later John Main found his own way of meditation in these chapters, and built Christian Meditation on them.
+
+## The one verse (Conference X.10)
+To keep the thought of God always in mind, hold before you this formula of devotion: *O God, come to my assistance; O Lord, make haste to help me.*
+
+This verse rightly fits every state of mind. It calls on God against every danger. It holds a humble confession of need, the watchfulness of one who is anxious, and the trust of one who knows that help is near.
+
+Let this verse be poured out in unceasing prayer, in adversity that you may be delivered, in prosperity that you may be kept safe and not grow proud. Think on it as you work, as you travel, as you eat. Let sleep come upon you while you are turning it over, until you are so shaped by it that you repeat it even in your sleep.
+
+## The poverty of one verse (Conference X.11)
+The mind lets go of all the rich store of thoughts, and holds to the poverty of this one verse. In this way it comes swiftly to that first of the beatitudes: "Blessed are the poor in spirit, for theirs is the kingdom of heaven."
+
+## The prayer of fire (Conference IX.25)
+Beyond all these lies a higher kind of prayer, known and tried by very few. It is a prayer of fire, which no words can describe. It is not made with any sound of the voice, any movement of the tongue, or any spoken word. The mind is lit up by a pouring-in of heavenly light, and in one brief moment it pours out more than it could ever express or remember afterwards.
+
+@ john_main
+title: Word into Silence and the teaching of Christian Meditation
+by: John Main, OSB
+date: 1975–1982
+fam: christian
+kind: teaching
+credit: Summarised in Assembly Sounds' own words; John Main's books are still under copyright and are not quoted.
+more: John Main, *Word into Silence* (1980) and *Moment of Christ* (1984).
+more: Laurence Freeman, *Christian Meditation: Your Daily Practice* (1994).
+more: The World Community for Christian Meditation (WCCM), founded in 1991.
+about:
+John Main (1926–1982) was an Irish-born English lawyer and diplomat. In the 1950s, serving in the British colonial service in Malaya, he learned to meditate on a sacred word from a Hindu teacher. He later became a Benedictine monk, and was told to give the practice up. Then he found the same way of prayer in Cassian's tenth conference, where the desert monks repeat one verse until the mind rests in God. From 1975 he taught it to lay groups at Ealing Abbey in London, and from 1977 in Montreal.
+
+His teaching is deliberately simple. Sit still and upright, close your eyes lightly, and relax, but stay alert. Silently, inwardly, begin to say a single word. He recommended *Maranatha*, the Aramaic prayer "Come, Lord", said as four equal syllables: ma-ra-na-tha.
+
+Listen to the word as you say it, gently and continuously. Do not think about its meaning or try to imagine anything. When thoughts or images come, let them pass and simply return to the word. Meditate for twenty to thirty minutes each morning and evening.
+
+Main called the word a "mantra". For him it was a discipline of poverty, letting go of self in order to be open to the prayer of Christ that already goes on in the heart.
+
+## The practice in brief
+- Sit still with your back upright.
+- Close your eyes lightly and relax, while staying alert.
+- Say the word inwardly: ma-ra-na-tha, four equal syllables, without hurry.
+- Listen to it; give it your whole attention.
+- When you notice you have wandered, come back to the word, simply and without blame.
+- Twenty to thirty minutes, morning and evening, every day.
+
+@ ignatius
+title: The Spiritual Exercises
+orig: Ejercicios espirituales (Spanish)
+by: Ignatius of Loyola
+date: written 1522–1548; approved by the Pope in 1548
+fam: christian
+kind: manual
+credit: Assembly Sounds' own rendering from the Spanish; section numbers are the standard ones.
+more: Louis J. Puhl, SJ, trans., *The Spiritual Exercises of St. Ignatius* (1951).
+more: George E. Ganss, SJ, trans. (1992).
+more: Elder Mullan, SJ, trans. (1914, public domain).
+about:
+Ignatius was a Basque soldier who was badly wounded in 1521. During a long recovery he read the life of Christ and the lives of the saints, and was converted. In a cave at Manresa he began writing down the prayer methods that later became the *Spiritual Exercises*. The book is a guide for someone leading a month-long retreat, and it founded the spirituality of the Jesuits.
+
+Two of its methods are in this app. The *examen* is a short review of the day in five steps, which Ignatius thought the one prayer a busy person should never drop. *Imaginative contemplation* places you inside a gospel scene. First you build the "composition of place", then you "apply the senses", seeing, hearing, smelling, tasting and touching what happens there. You end by speaking with Christ "as one friend speaks to another".
+
+## What the exercises are (§1)
+Just as walking and running are exercises for the body, "spiritual exercises" means every way of preparing the soul to free itself of disordered attachments. Once they are gone, the soul can seek and find God's will for its life.
+
+## Not much knowledge, but tasting (§2)
+It is not knowing a great deal that fills and satisfies the soul, but feeling and tasting things inwardly.
+
+## The examen in five points (§43)
+1. Give thanks to God our Lord for the good things you have received.
+2. Ask for grace to know your faults and to be free of them.
+3. Ask your soul for an account of the day, hour by hour, from the moment you rose until now: first your thoughts, then your words, then your deeds.
+4. Ask God our Lord to forgive your faults.
+5. Resolve, with his grace, to do better. Then say the Our Father.
+
+## The composition of place (§47)
+When the subject of the prayer is something visible, such as Christ our Lord, the composition is to see in imagination the physical place where it happens: the temple, perhaps, or the mountain where Jesus or his mother is.
+
+## The colloquy (§§53–54)
+Imagine Christ our Lord before you on the cross, and speak with him. The colloquy is made by speaking exactly as one friend speaks to another, or a servant to a master: now asking for some grace, now blaming oneself for some wrong, now sharing one's concerns and asking advice.
+
+## The application of the senses (§§121–125)
+After the other contemplations, pass the five senses of the imagination over the scene.
+
+1. See the people with the eyes of the imagination, and think about what you see.
+2. Hear what they say, or might say.
+3. Smell and taste the endless fragrance and sweetness of the divine, of the soul and its virtues.
+4. Touch, as if embracing and kissing the places where these people walk and sit.
+
+After each, reflect on yourself and draw some profit from it.
+
+@ teresa
+title: The Interior Castle
+orig: El castillo interior, or Las moradas (Spanish)
+by: Teresa of Ávila
+date: 1577
+fam: christian
+kind: book
+credit: Assembly Sounds' own rendering from the Spanish.
+more: E. Allison Peers, trans., *Interior Castle* (1946).
+more: Kieran Kavanaugh & Otilio Rodríguez, trans., *The Collected Works of St. Teresa of Avila*, vol. 2 (1980).
+about:
+Teresa of Ávila (1515–1582) was a Carmelite nun who reformed her order and founded seventeen convents across Spain. With her friend John of the Cross she is the great teacher of Spanish mysticism. In 1970 she became the first woman declared a Doctor of the Church.
+
+She wrote *The Interior Castle* in a few months, at the request of her superiors. In it the soul is a castle made of a single diamond or clear crystal. Its many rooms are arranged in seven "dwelling places", and God lives at the centre. Prayer is the door, and the journey inward goes from vocal prayer and self-knowledge to the prayer of recollection and of quiet. It ends in union, the "spiritual marriage" in the seventh dwelling.
+
+The castle session walks you inward through her seven dwelling places.
+
+## The castle of crystal (I.1.1, I.1.3)
+We may think of our soul as a castle made entirely of a diamond, or of very clear crystal, in which there are many rooms, just as in heaven there are many dwelling places.
+
+These rooms are not arranged in a row, one after another. Think of them as above, below and on every side, and in the middle of them all is the chief room, where the most secret things pass between God and the soul.
+
+## The door (I.1.7)
+As far as I can understand, the door by which we enter this castle is prayer and reflection.
+
+## Not to think much, but to love much (IV.1.7)
+The important thing is not to think much but to love much; so do whatever most stirs you to love.
+
+## The two fountains (IV.2.2–4)
+Imagine two fountains filling two basins with water. One basin is filled from far away, through many channels and much human skill. The other is built at the source itself, and fills without any noise. The first is like the consolations we win for ourselves in meditation, with effort and thought. The second is like the water that comes straight from God, and fills the soul with peace and sweetness from its very depths.
+
+## The prayer of recollection (IV.3.1–3)
+The senses and powers of the soul, which had wandered off outside the castle, begin to come back. It is like a shepherd's soft whistle that they hear without hearing, and they gather in. Some have compared it to a hedgehog or a tortoise drawing into itself. But this is not something we can do just by wanting it; it comes when God gives it.
+
+@ lawrence
+title: The Practice of the Presence of God
+orig: L'Exercice de la présence de Dieu; Maximes spirituelles (French)
+by: Brother Lawrence of the Resurrection (Nicolas Herman); gathered by Joseph de Beaufort
+date: 1692–1694
+fam: christian
+kind: teaching
+credit: Assembly Sounds' own rendering from the French.
+more: *The Practice of the Presence of God* (English translation of 1895, public domain).
+more: Salvatore Sciurba, OCD, trans., *Writings and Conversations on the Practice of the Presence of God* (1994).
+about:
+Nicolas Herman (c. 1614–1691) was a soldier who was wounded in the Thirty Years' War. He became a lay brother of the Discalced Carmelites in Paris, and for most of his life he worked in the monastery kitchen and later mended sandals. After his death the priest Joseph de Beaufort gathered his letters and recorded conversations into a small book.
+
+His teaching is a single practice: to keep up a simple, loving conversation with God all through the day, in the middle of ordinary work. He calls it "a simple attention and a loving gaze upon God". He tried set methods of meditation and found they did not help him. Instead, whenever he noticed he had forgotten God, he turned back to him at once, without anxiety, until the turning became a habit.
+
+The session follows his way: short, frequent turnings of the heart, made in the middle of whatever you are doing.
+
+## Work and prayer are one time
+For me the time of work is no different from the time of prayer. In the noise and clatter of my kitchen, while several people are calling for different things at once, I possess God as peacefully as if I were on my knees before the sacrament.
+
+## Little things
+We can do little things for God. I turn the cake frying in the pan for love of him. When that is done, if there is nothing else to call me, I bow down before him and thank him for the grace to do it, and then I get up more content than a king. It is enough for me to pick up a straw from the ground for the love of God.
+
+## The method, such as it is
+Make it a habit to talk with God at every moment, offering him everything you do. Do this simply and freely, without rules or special methods. When you find you have wandered, do not be troubled. Simply turn back to him. Over time, the practice becomes so natural that the turning happens by itself.
+
+## A simple gaze
+I have given up all my devotions and set prayers except those my state requires. I keep myself in his presence by a simple attention and a loving, general gaze upon God, which I may call an actual presence of God; or better, a silent and secret conversation of the soul with God.
+
+@ keating
+title: Open Mind, Open Heart and the method of Centering Prayer
+by: Thomas Keating, OCSO, with William Meninger and Basil Pennington
+date: 1975–1986
+fam: christian
+kind: teaching
+credit: Summarised in Assembly Sounds' own words; Keating's books are still under copyright and are not quoted.
+more: Thomas Keating, *Open Mind, Open Heart: The Contemplative Dimension of the Gospel* (1986).
+more: M. Basil Pennington, *Centering Prayer: Renewing an Ancient Christian Prayer Form* (1980).
+more: Contemplative Outreach, the network founded in 1984 to teach the method.
+about:
+In the 1970s, at St Joseph's Abbey in Spencer, Massachusetts, the Trappist abbot Thomas Keating (1923–2018) noticed many young Americans travelling to Asia to learn meditation. He did not know that Christianity had its own contemplative way. He asked his monks to put the old tradition into a simple modern form.
+
+William Meninger found the method in *The Cloud of Unknowing*: one short word, held as an intention of love, and returned to whenever thoughts carry you away. He began teaching it to priests at retreats. Basil Pennington named it "Centering Prayer", after Thomas Merton's phrase about finding God at the centre of the soul. Keating gave it its theology and its classic four guidelines.
+
+## The four guidelines, in brief
+1. Pick a short sacred word that stands for your intention: to consent to God being present and at work within you.
+2. Sit comfortably, close your eyes and settle for a moment. Then silently bring in the word, as a sign of that consent.
+3. Whenever you notice you are caught up in thoughts, come back to the word, as gently as you can.
+4. When the time is up, stay silent with your eyes closed for two or three minutes before getting up.
+
+## How it is meant
+The word is not a mantra to be repeated constantly. It is a gentle sign of consent, used only when you need to come back. "Thoughts" means any perception at all: feelings, images, memories, plans, even holy reflections. You do not fight them. You let them pass by like boats on a river, and you return to your intention.
+
+Keating recommended two periods of twenty minutes each day.
+
+@ eckhart
+title: Talks of Instruction, On Detachment and the German Sermons
+orig: Die rede der underscheidunge; Von abegescheidenheit; Predigten (Middle High German)
+by: Meister Eckhart, OP
+date: c. 1294–1328
+fam: christian
+kind: teaching
+credit: Assembly Sounds' own rendering from the Middle High German; the sermon numbers are those of the standard critical edition.
+more: Maurice O'C. Walshe, trans., *The Complete Mystical Works of Meister Eckhart* (2009).
+more: Edmund Colledge & Bernard McGinn, trans., *Meister Eckhart: The Essential Sermons, Commentaries, Treatises and Defense* (1981).
+about:
+Eckhart von Hochheim (c. 1260–1328) was a Dominican friar and a master of theology at the University of Paris, which is why he is called "Meister". He preached in German to nuns, lay women and townspeople in the Rhineland, and his sermons are among the boldest Christian mystical writing.
+
+He teaches *Gelassenheit*, letting go, and *Abgeschiedenheit*, detachment. You let go of yourself, of your own will and even of your images of God, so that God can be born in the ground of the soul. There God's ground and the soul's ground are one.
+
+In 1329, after his death, Pope John XXII condemned twenty-eight of his sentences. His sermons were still copied and loved, and in the twentieth century he was taken up again by Christians, philosophers, and Zen and Vedanta teachers alike.
+
+## Let go of yourself (Talks of Instruction, 3)
+Look at yourself, and wherever you find yourself, let go of yourself. That is the very best way.
+
+## The one eye (Sermon 12)
+The eye in which I see God is the same eye in which God sees me. My eye and God's eye are one eye, one seeing, one knowing and one love.
+
+## Detachment (On Detachment)
+True detachment is a spirit that stands unmoved in everything that happens, whether joy or sorrow, honour, shame or disgrace. It stands like a great mountain of lead before a little wind.
+
+## The poor in spirit (Sermon 52)
+A poor person is one who wants nothing, knows nothing and has nothing.

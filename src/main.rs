@@ -9,6 +9,7 @@ mod music;
 mod plan;
 mod presets;
 mod settle;
+mod texts;
 mod texture;
 mod voice;
 
@@ -112,6 +113,11 @@ fn main() {
         let _ = std::fs::write(&args[2], serde_json::to_string(&presets::all()).unwrap());
         return;
     }
+    // --dump-texts <file>: the source-text library as the UI receives it
+    if args.len() >= 3 && args[1] == "--dump-texts" {
+        let _ = std::fs::write(&args[2], serde_json::to_string(texts::library()).unwrap());
+        return;
+    }
 
     let presets = presets::all();
     let shared = Arc::new(Mutex::new(Shared::default()));
@@ -198,7 +204,7 @@ fn handle(v: &Value, app: &mut App, shared: &Arc<Mutex<Shared>>, wv: &wry::WebVi
         "ready" => {
             // The self-test always starts from defaults so it is repeatable.
             let settings = if app.selftest.is_some() { json!({}) } else { load_settings(&app.settings_path) };
-            let init = json!({ "presets": app.presets, "voices": voices, "voice": app.voice, "audioError": audio_error, "settings": settings });
+            let init = json!({ "presets": app.presets, "voices": voices, "voice": app.voice, "audioError": audio_error, "settings": settings, "texts": texts::library() });
             drop(sh);
             let _ = wv.evaluate_script(&format!("window.__init({})", init));
             if let Some(st) = app.selftest.as_mut() {

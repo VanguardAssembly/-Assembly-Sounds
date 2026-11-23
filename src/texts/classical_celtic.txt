@@ -1,0 +1,278 @@
+// Classical Greek and Roman texts, and Celtic and Norse sources.
+
+@ plotinus
+title: Plotinus, the Enneads: the inner statue, the transparent sphere and the flight to the One
+orig: Greek: Πλωτίνου Ἐννεάδες, the *Enneads*
+by: Plotinus (204/5–270); edited by his student Porphyry
+date: written 253–270; published by Porphyry about 301
+fam: classical
+kind: treatise
+credit: Assembly Sounds' own rendering from the Greek.
+more: Stephen MacKenna, trans., *Plotinus: The Enneads* (1917–1930).
+more: Pierre Hadot, *Plotinus, or The Simplicity of Vision* (1963; English 1993).
+more: Lloyd P. Gerson, ed., *Plotinus: The Enneads* (2018).
+about:
+Plotinus was born in Egypt and taught philosophy in Rome. He is the founder of what is now called Neoplatonism, the last great school of ancient Greek philosophy. Through Augustine, Pseudo-Dionysius, the Sufis, the Kabbalists and the Renaissance, it shaped the mystical traditions of Christianity, Islam and Judaism. He taught that all reality flows from a single source, the One. It is beyond all thought and description, and it overflows like light from the sun, first into Intellect (*nous*), then into Soul, and finally into the physical world.
+
+The soul's task is to make the journey back: to turn inward, away from the body, to the soul itself, then to Intellect, and finally beyond it, into union with the One. Plotinus did not only teach this. His student Porphyry says that in the six years he knew him, Plotinus reached that union four times. The Plotinus session follows the ascent, using his own exercise from Ennead V.8.9.
+
+## The inner statue (Ennead I.6.9)
+Go back into yourself and look. If you do not yet see yourself as beautiful, do what a sculptor does with a statue that is to be made beautiful. He cuts away here and smooths there, makes one line lighter and another cleaner, until a lovely face appears in his work. So you too: cut away all that is excessive, straighten all that is crooked, bring light to all that is overcast. Work to make it all one glow of beauty, and never stop carving your own statue until the godlike splendour of virtue shines out from it.
+
+No eye ever saw the sun without becoming sunlike, and no soul can see beauty without becoming beautiful.
+
+## The transparent sphere (Ennead V.8.9)
+Let us take this whole universe in thought, each of its parts remaining what it is, without being mixed up, but all of them gathered together into one as far as possible. When any one part appears, the outer sphere of the stars, say, the image of the sun and all the other stars at once comes with it, and the earth, the sea and all living things are seen within it, as if in a transparent sphere.
+
+Let there be in your soul the shining image of a sphere that holds everything within it. Keep it, and then take away its mass. Take away its places too, and the image of matter in your own mind. Do not try to make another sphere smaller in size than this one. Instead call on the god who made the sphere you hold in your mind, and pray for him to come. And he may come, bringing his own universe with him, and all the gods within it, he who is one and all.
+
+## Take away everything (Ennead V.3.17)
+How then can this happen? Take away everything.
+
+## The flight of the alone to the alone (Ennead VI.9.11)
+This is the life of the gods, and of godlike and blessed people: a letting go of everything here, a life that takes no pleasure in the things of this world, the flight of the alone to the alone.
+
+## Porphyry's witness (Life of Plotinus, 23)
+To Plotinus the goal was very near: to be one with the God who is above all things. Four times while I was with him he reached that goal, not in potential but in an act beyond words. I, Porphyry, say that I too once came near and was united with it, in my sixty-eighth year.
+
+@ marcus
+title: Marcus Aurelius, the Meditations: the view from above and the inner retreat
+orig: Greek: Τὰ εἰς ἑαυτόν, "To Himself"
+by: Marcus Aurelius Antoninus (121–180), Roman emperor
+date: about 170–180 CE
+fam: classical
+kind: book
+credit: Assembly Sounds' own rendering from the Greek.
+more: George Long, trans., *The Thoughts of the Emperor Marcus Aurelius Antoninus* (1862).
+more: Pierre Hadot, *The Inner Citadel: The Meditations of Marcus Aurelius* (French 1992; English 1998).
+more: Gregory Hays, trans., *Meditations* (2002).
+about:
+Marcus Aurelius ruled the Roman Empire from 161 to 180, much of that time at war on the Danube frontier and through a terrible plague. In his tent, at night, he wrote notes to himself in Greek. He never meant them to be read by anyone else. In them he reminds himself, again and again, of the Stoic teachings that kept him steady: what is in our control and what is not, the shortness of life, the kinship of all people, and our place in the great whole of nature. The book, now called the *Meditations*, survived by chance. It has been loved ever since by readers of every kind.
+
+One of Marcus's favourite exercises was to rise above the earth in imagination and look down on human life from a great height. Crowds and armies, weddings and funerals, all seem tiny and passing, part of one vast, ordered whole. The historian of philosophy Pierre Hadot called it "the view from above". It puts troubles in proportion and kindles a sense of belonging to the cosmos. The View from Above session follows it.
+
+## The view from above (7.48)
+Whoever wants to speak about human beings should look at earthly things as if from somewhere high above: herds, armies, farms, weddings and divorces, births and deaths, the noise of the law courts, deserted places, foreign peoples of every kind, festivals, mourning and markets, the whole mixture, and the order that comes out of opposites.
+
+## Looking down (9.30)
+Look down from above on the countless herds of people, their countless rites, their voyages in storm and calm, the differences between those who are coming into life, living together, and leaving it. Think too of the lives lived long ago by others, and the lives that will be lived after you, and the lives being lived now among foreign peoples. How many do not even know your name, how many will soon forget it, and how many who praise you now will soon blame you.
+
+## Lifted up (12.24)
+If you were suddenly lifted up into the air and could look down on human affairs in all their variety, you would think little of them, seeing at a glance how vast is the region of air and sky all around them.
+
+## The inner retreat (4.3)
+People look for places to get away to: houses in the country, by the sea, in the mountains. You too long for such things. But that is very foolish, since you can retreat into yourself whenever you like. Nowhere can a person find a quieter or more untroubled retreat than in their own mind. So give yourself this retreat often, and renew yourself.
+
+## At dawn (2.1)
+Say to yourself at the start of the day: today I will meet people who are meddling, ungrateful, arrogant, deceitful, envious and unfriendly. They are like this because they do not know good from bad. But I have seen the nature of the good, and the nature of the one who does wrong: that he is my kin, sharing in the same mind and the same share of the divine. None of them can harm me, and I cannot be angry with my kin or hate them. We were born to work together, like feet, like hands, like eyelids, like the rows of upper and lower teeth.
+
+@ seneca
+title: Seneca on the evening review and preparing for hardship
+orig: Latin: *De Ira*, "On Anger"; *Epistulae Morales ad Lucilium*, "Moral Letters to Lucilius"
+by: Lucius Annaeus Seneca (about 4 BCE–65 CE)
+date: *On Anger* about 41–49 CE; the *Letters* about 62–65 CE
+fam: classical
+kind: book
+credit: Assembly Sounds' own rendering from the Latin.
+more: Richard M. Gummere, trans., *Seneca: Ad Lucilium Epistulae Morales* (1917–1925).
+more: Robert A. Kaster & Martha C. Nussbaum, trans., *Seneca: Anger, Mercy, Revenge* (2010).
+more: Pierre Hadot, *Philosophy as a Way of Life* (1995).
+about:
+Seneca was a Roman statesman, playwright and Stoic philosopher, the tutor and then adviser of the emperor Nero, who in the end ordered his death. In his essays and in his letters to his younger friend Lucilius he wrote some of the most practical guides to the inner life ever written. Two of his exercises are behind sessions in this app.
+
+The first is the *evening review*. Before sleep, Seneca went back over his whole day, like a judge hearing his own case, kindly but honestly. He learned it from the philosopher Quintus Sextius, and it goes back to the Pythagoreans. The second is the *premeditatio malorum*, the calm rehearsal of possible misfortunes. You picture in advance losses and setbacks that might come, so that if they do, they find you ready, and while they don't, you value what you have. The Evening Review and Premeditatio Malorum sessions follow him. Begin with small setbacks, never with your worst fears.
+
+## The evening review (On Anger 3.36)
+Every day the mind should be called to give an account of itself. Sextius did this. When the day was over and he had gone to his night's rest, he would ask his mind: "What bad habit have you cured today? What fault have you resisted? In what way are you better?" Anger will cease, or grow gentler, if it knows it must come before a judge every day.
+
+What could be better than this habit of going through the whole day? What sleep follows this self-examination! How calm, how deep and free, when the mind has been praised or warned, and has become the watcher and secret judge of its own ways. I use this power, and every day I plead my case before myself. When the lamp has been taken away, and my wife, who knows my habit, has fallen silent, I go over my whole day and measure again everything I did and said. I hide nothing from myself, and I pass over nothing.
+
+## Rehearsing hardship (Letters 91 and 24, rendered and summarised)
+Nothing should be unexpected. We should send our minds ahead to meet every possibility, and think not only of what usually happens but of what can happen. The mind must be prepared in advance for every hardship, even exile, war and shipwreck. (91)
+
+If you want to put away all worry, imagine that whatever you fear may happen will certainly happen. Then, whatever the trouble may be, measure it in your mind and weigh your fear. You will find that what you fear is either small or short. (24)
+
+@ epictetus
+title: Epictetus, the Handbook: what is in our control
+orig: Greek: Ἐγχειρίδιον, *Enchiridion*, "Handbook"
+by: Epictetus (about 50–135 CE); written down by his student Arrian
+date: early 2nd century CE
+fam: classical
+kind: book
+credit: Assembly Sounds' own rendering from the Greek.
+more: Elizabeth Carter, trans., *All the Works of Epictetus* (1758).
+more: Robin Hard, trans., *Epictetus: Discourses, Fragments, Handbook* (2014).
+more: A. A. Long, *Epictetus: A Stoic and Socratic Guide to Life* (2002).
+about:
+Epictetus was born a slave in Phrygia, in what is now Turkey, and was owned by a freedman of Nero's court, who let him study Stoic philosophy. After he was freed he taught in Rome, until the emperor Domitian banished the philosophers. He then opened a school at Nicopolis in Greece. He wrote nothing himself. His student Arrian took down his lectures and boiled his teaching down into a short *Handbook*, which has been carried by soldiers, monks and prisoners ever since.
+
+It opens with the distinction at the heart of Stoic practice: some things are in our control and some are not. Our judgments, choices and desires are ours; our bodies, possessions and reputations are not. Peace comes from caring for the first and holding the second lightly. The same idea is at the heart of modern cognitive therapy, whose founders cited Epictetus. The Premeditatio Malorum session ends with it.
+
+## What is in our control (Handbook 1)
+Some things are in our control and some are not. In our control are our judgments, our impulses, our desires and aversions: in a word, whatever is our own doing. Not in our control are the body, possessions, reputation and office: in a word, whatever is not our own doing.
+
+The things in our control are by nature free, unhindered and unobstructed. The things not in our control are weak, slavish, easily hindered, and belong to others. Remember, then: if you take what is by nature slavish to be free, and what belongs to others to be your own, you will be hindered, you will grieve, you will be troubled. But if you take as yours only what is yours, no one will ever force you or stop you, and you will have no enemies, for nothing can harm you.
+
+## Not things, but our judgments (Handbook 5)
+People are disturbed not by things, but by their judgments about things. Death, for example, is nothing terrible, or it would have seemed so to Socrates too. The terrible thing is the judgment that death is terrible. So when we are hindered, troubled or grieved, let us never blame anyone else, but only ourselves, that is, our own judgments.
+
+## Keep it before your eyes (Handbook 21)
+Keep death and exile and all the things that seem terrible before your eyes every day, and you will never think a mean thought, nor want anything too much.
+
+@ golden_verses
+title: The Golden Verses of Pythagoras
+orig: Greek: Χρυσᾶ Ἔπη, *Chrysa Epē*
+by: anonymous Pythagorean poet
+date: uncertain; many scholars favour the early Hellenistic age, about 300 BCE
+fam: classical
+kind: poem
+credit: Assembly Sounds' own rendering from the Greek.
+more: Johan C. Thom, *The Pythagorean Golden Verses* (1995).
+more: Hierocles of Alexandria, *Commentary on the Golden Verses of Pythagoras* (5th century).
+about:
+Pythagoras of Samos, who lived in the 6th century BCE, founded a community in southern Italy that was both a school of mathematics and a religious brotherhood. Its members lived by strict rules of silence, diet and self-examination, and believed in the rebirth of the soul. The *Golden Verses* are a short poem of about seventy lines summing up the Pythagorean way of life. It was written long after Pythagoras, probably in the Hellenistic age, and was much loved in late antiquity. It was memorised and recited daily.
+
+Its most famous lines give the evening review: before sleep, go over each act of the day three times. Seneca learned the same practice from Sextius, and it passed into Christian monastic life as the examination of conscience. The Evening Review session closes with these lines.
+
+## The evening review (lines 40–44)
+> Do not let sleep come to your soft eyes
+> until you have gone over each deed of the day three times:
+> Where did I go wrong? What did I do? What duty did I leave undone?
+> Begin from the first and go through them all. Then,
+> if you have done wrong, rebuke yourself; if you have done well, rejoice.
+
+@ asclepius
+title: Asclepius and dream healing at Epidaurus
+orig: Greek: the *Iamata*, inscribed cures of Epidaurus; Aelius Aristides, *Hieroi Logoi*, "Sacred Tales"
+by: the priests of the sanctuary of Asclepius at Epidaurus; Aelius Aristides (117–about 181)
+date: the inscriptions 4th century BCE; the *Sacred Tales* about 170 CE
+fam: classical
+kind: history
+credit: Assembly Sounds' own rendering and summary from the Greek.
+more: Emma J. Edelstein & Ludwig Edelstein, *Asclepius: Collection and Interpretation of the Testimonies* (1945).
+more: Lynn R. LiDonnici, *The Epidaurian Miracle Inscriptions* (1995).
+more: C. A. Behr, *Aelius Aristides and the Sacred Tales* (1968).
+about:
+Asclepius was the Greek god of healing. At hundreds of his sanctuaries across the Greek and Roman world, the most famous at Epidaurus, the sick came to sleep in the hope that the god would visit them in a dream. They bathed and purified themselves, made offerings, and then lay down for the night in a special sleeping hall called the *abaton*. There, they believed, the god would come, sometimes with his sacred snakes and dogs, to heal them on the spot or tell them what to do. This was *incubation*, from the Latin for "lying down in". In the morning the cured gave thanks, often leaving a clay or marble model of the healed part of the body.
+
+At Epidaurus the priests inscribed records of the cures on great stone slabs set up in the sanctuary, so that pilgrims could read them before they slept. Centuries later the orator Aelius Aristides wrote his *Sacred Tales*, a diary of the dreams in which Asclepius guided him through decades of illness. Socrates' last words, in Plato's *Phaedo*, were a reminder to offer a rooster to Asclepius. The Dream Incubation session joins this ancient practice to modern sleep research.
+
+## The man who did not believe (Epidaurus, cure 3, rendered)
+A man whose fingers were all paralysed but one came to the god as a suppliant. When he saw the tablets in the sanctuary, he did not believe the cures and mocked what was written. But as he slept he saw a vision. He seemed to be playing dice below the temple, and as he was about to throw, the god appeared, sprang onto his hand and stretched out his fingers. When the god stepped away, the man seemed to bend his hand and stretch out each finger one by one. Then the god asked him whether he still disbelieved the inscriptions. He said no. "Since you doubted what is not beyond belief," said the god, "from now on your name shall be Unbeliever." When day came he went away healed.
+
+## The night in the sanctuary, in brief
+1. **Purification**: bathing, and keeping simple rules of diet and conduct for some days.
+2. **Offering**: a small sacrifice or a gift of cakes, and prayers to the god.
+3. **Sleeping**: lying down in the abaton at nightfall, with the lamps put out, and waiting for the dream.
+4. **The dream**: the god appears, heals, or gives advice. Some dreams were taken to the priests to interpret.
+5. **Thanksgiving**: in the morning, a thank-offering, and often an inscription or a model of the healed part.
+
+@ nekyia
+title: The Nekyia: Odysseus calls the dead, and the oracle of the dead
+orig: Greek: Homer, *Odyssey* book 11; Herodotus, *Histories* 5.92
+by: Homer; Herodotus (about 484–425 BCE)
+date: the *Odyssey* about the 8th–7th centuries BCE; Herodotus about 430 BCE
+fam: classical
+kind: poem
+credit: Assembly Sounds' own rendering from the Greek.
+more: A. T. Murray, trans., *Homer: The Odyssey* (1919).
+more: Daniel Ogden, *Greek and Roman Necromancy* (2001).
+more: Raymond Moody with Paul Perry, *Reunions: Visionary Encounters with Departed Loved Ones* (1993).
+about:
+In the eleventh book of the *Odyssey*, the *Nekyia*, Odysseus sails to the edge of the world, where the river Ocean flows. There he performs a rite to call up the spirits of the dead, to ask the prophet Tiresias how he can get home. He digs a pit, pours offerings around it, and the shades gather. Among them, to his surprise, is his own mother, who had died of grief while he was away. It is one of the most moving scenes in ancient literature.
+
+The Greeks also had real oracles of the dead, the *nekuomanteia*, where people went to consult the departed. The historian Herodotus tells of one on the river Acheron in northwestern Greece. Archaeologists long identified it with a site at Ephyra, though its purpose is debated. In the 1990s the psychiatrist Raymond Moody, inspired by these oracles, built a modern "psychomanteum": a dim room with a mirror, in which people hoping for a sense of contact with someone they had lost sat quietly gazing. The Psychomanteum session follows his method. If grief is raw, go gently, or choose another session.
+
+## The rite (Odyssey 11, rendered and summarised)
+We came to the place that Circe had told of. There I drew my sharp sword from my thigh and dug a pit, a forearm's length each way, and around it I poured offerings for all the dead: first milk and honey, then sweet wine, and third water, and I sprinkled white barley over them. And I prayed earnestly to the strengthless heads of the dead. … Then the spirits of the dead gathered up out of the darkness.
+
+## Odysseus and his mother (Odyssey 11, rendered)
+Then my mother came, and knew me, and spoke to me with winged words. And I longed to take the spirit of my dead mother in my arms. Three times I sprang toward her, eager to hold her, and three times she slipped through my hands like a shadow, or like a dream. The pain grew sharper in my heart.
+
+## The oracle of the dead (Herodotus 5.92, summarised)
+Periander, ruler of Corinth, sent messengers to the oracle of the dead on the river Acheron, in Thesprotia, to ask his late wife Melissa a question. Her spirit appeared to them, but would not answer, saying that she was cold and had no clothes, because the clothes buried with her had not been burned and were of no use to her. Periander made offerings of clothing for her, and when he sent again, she answered.
+
+@ martin1703
+title: Martin Martin on how the Gaelic poets composed in darkness
+orig: English
+by: Martin Martin (died 1718)
+date: 1703
+fam: celtic
+kind: book
+cite: Martin Martin, *A Description of the Western Islands of Scotland* (1703).
+credit: Quoted from Martin's book (1703, public domain), with the spelling modernised.
+more: Derick S. Thomson, ed., *The Companion to Gaelic Scotland* (1983).
+more: Osborn Bergin, *Irish Bardic Poetry* (1970).
+about:
+Martin Martin was a native of the Isle of Skye, a Gaelic speaker who trained as a physician. Around 1695 he toured the Hebrides and later wrote the first full description of the islands' life and customs. He wrote about their farming and fishing, their cures and beliefs, their second sight, and their poets. The professional poets of Gaelic Scotland and Ireland, the bards, were trained for years in bardic schools. There, according to several old accounts, they composed their elaborate verse in the dark.
+
+Martin describes their method: a day shut away in darkness, lying on the back, the eyes covered, with a stone on the belly. An account of the Irish bardic schools published in 1722 says the same: the students lay in windowless huts and worked their poems in the dark, and only then were lights brought in to write them down. In darkness the mind turns inward, toward the half-dreaming state where images and rhythms arise. The Bardic Darkness session follows this method, with a folded blanket in place of the stone.
+
+## Their way of study (Martin, 1703)
+I must not omit to relate their way of study, which is very singular. They shut their doors and windows for a day's time, and lie on their backs, with a stone upon their belly, and plaids about their heads, and their eyes being covered, they pump their brains for rhetorical encomium or panegyric. And indeed they furnish such a style from this dark cell as is understood by very few.
+
+@ havamal
+title: The Hávamál: Odin wins the runes
+orig: Old Norse: *Hávamál*, "Sayings of the High One"
+by: anonymous; preserved in the *Codex Regius*, the manuscript of the Poetic Edda
+date: the manuscript about 1270; the poems older
+fam: celtic
+kind: poem
+credit: Assembly Sounds' own rendering from the Old Norse.
+more: Henry Adams Bellows, trans., *The Poetic Edda* (1923).
+more: Carolyne Larrington, trans., *The Poetic Edda* (1996; revised 2014).
+more: Stephen E. Flowers, *Runes and Magic: Magical Formulaic Elements in the Older Runic Tradition* (1986).
+about:
+The *Hávamál*, "the sayings of the High One", is a long poem of the Poetic Edda, spoken by the god Odin. It begins with plain advice about guests, friendship and moderation, and ends with Odin's account of how he won the runes, the old Germanic letters. He did it by hanging himself on the world tree for nine nights, wounded by a spear, a sacrifice of himself to himself. Then he lists eighteen charms (*ljóð*) he knows: charms to heal, to calm the sea, to blunt weapons and to win love.
+
+*Galdr*, from *gala*, "to chant", was the sung or spoken magic of the Norse world, mentioned throughout the Eddas and sagas. How it actually sounded is not known. The names of the runes survive in medieval rune poems from Iceland, Norway and England. Modern practitioners chant them with long, resonant vowels, a reconstruction rather than a recovered tradition. The Galdr session follows that modern practice with four runes: Ansuz, the god or the mouth; Laguz, water; Isa, ice; and Dagaz, day.
+
+## Odin on the tree (stanzas 138–141 in most editions)
+= Veit ek, at ek hekk vindga meiði á
+= nætr allar níu, geiri undaðr
+= ok gefinn Óðni, sjálfr sjálfum mér
+> I know that I hung on the windswept tree
+> nine long nights,
+> wounded with a spear,
+> given to Odin, myself to myself,
+> on that tree
+> whose roots no one knows.
+
+> They gave me no bread
+> and no drink from the horn.
+> I peered down below,
+> I took up the runes, crying out I took them,
+> and then I fell back from there.
+
+> Nine mighty songs I learned
+> from the famous son of Bolthorn, Bestla's father,
+> and I won a drink
+> of the precious mead
+> poured from Odrerir.
+
+> Then I began to quicken and grow wise,
+> to grow and to thrive.
+> One word led me on from word to word,
+> one deed led me on from deed to deed.
+
+@ awen
+title: Awen, the inspiration of the bards
+orig: Welsh: *awen*, "inspiration, poetic gift"
+by: medieval Welsh poetic tradition; Iolo Morganwg (Edward Williams, 1747–1826); modern Druid orders
+date: the word from at least the 9th century; the modern chant 20th century
+fam: celtic
+kind: history
+credit: Summarised in Assembly Sounds' own words.
+more: Ronald Hutton, *Blood and Mistletoe: The History of the Druids in Britain* (2009).
+more: Patrick K. Ford, ed. and trans., *The Mabinogi and Other Medieval Welsh Tales* (1977), with the tale of Gwion Bach and Taliesin.
+more: Philip Carr-Gomm, *Druid Mysteries: Ancient Wisdom for the 21st Century* (2002).
+about:
+*Awen* is the Welsh word for poetic inspiration, the flowing gift of the bard. In the 9th-century *History of the Britons* an early poet is already called Talhaearn "Father of Awen". In the medieval tale of Taliesin, the witch Ceridwen brews a cauldron of wisdom for a year and a day. The boy Gwion, set to stir it, gets three hot drops on his thumb. He sucks it, and instantly knows everything. After a chase through many shapes he is reborn as Taliesin, the greatest of the bards. The three drops became a symbol of awen itself.
+
+Much of modern Druidry comes from the 18th-century Welsh antiquarian and poet Iolo Morganwg. He gathered genuine Welsh tradition and mixed it with brilliant inventions of his own, including the symbol of three rays of light, /|\, and the Gorsedd of bards, first held in London in 1792. Modern Druid groups, such as the Order of Bards, Ovates and Druids founded by Ross Nichols in 1964, open and close their ceremonies by chanting *awen* together three times. It is sung as one long, drawn-out sound, Aaa-ooo-ennn, to call inspiration and unity. The Awen session follows them.
+
+## Chanting awen
+1. Stand or sit upright, and breathe in deeply.
+2. On one long out-breath, sing *Aaa*, opening into *ooo*, and closing on *ennn*, letting the sound vibrate through the body.
+3. Breathe in, and sing it again, three times in all.
+4. Rest in the silence afterwards, and listen for what comes.

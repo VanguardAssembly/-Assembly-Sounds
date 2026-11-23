@@ -1,0 +1,294 @@
+// Western esoteric texts: Hermetism, the Golden Dawn, Thelema, the Fourth Way, and Descartes on the pineal gland.
+
+@ corpus_hermeticum
+title: The Corpus Hermeticum: the vision of Poimandres and becoming the cosmos
+orig: Greek, Ἑρμοῦ τοῦ Τρισμεγίστου, the writings of Hermes Trismegistus
+by: anonymous Greek authors in Roman Egypt, writing as Hermes Trismegistus
+date: 2nd–3rd centuries CE; Latin translation by Marsilio Ficino, 1463
+fam: western
+kind: treatise
+credit: Assembly Sounds' own rendering from the Greek.
+more: Brian P. Copenhaver, trans., *Hermetica: The Greek Corpus Hermeticum and the Latin Asclepius* (1992).
+more: G. R. S. Mead, *Thrice-Greatest Hermes* (1906).
+more: Garth Fowden, *The Egyptian Hermes* (1986).
+about:
+The *Corpus Hermeticum* is a collection of short Greek dialogues in which Hermes Trismegistus, "thrice-great Hermes", teaches his son Tat and his pupil Asclepius. Hermes here is a blend of the Greek Hermes and the Egyptian Thoth, god of wisdom and writing. The texts were written in Roman Egypt in the 2nd and 3rd centuries, and blend Greek philosophy with Egyptian religion. They teach that the human mind comes from the divine Mind, and that a person can return to God through knowledge (*gnōsis*) and an inner rebirth.
+
+Around 1460 a manuscript of them reached Florence from Macedonia. In 1463 the city's ruler, Cosimo de' Medici, ordered his scholar Marsilio Ficino to translate it at once, setting Plato aside, because Hermes was believed to be an ancient sage from the time of Moses. From then on the Hermetic writings shaped Renaissance magic, alchemy, the Rosicrucians and, much later, the Golden Dawn. In 1614 Isaac Casaubon showed that they were in fact written in the Christian era. The As Above, So Below session follows Book XI's instruction to make oneself as vast as the cosmos.
+
+## The vision of Poimandres (Book I, rendered and summarised)
+Once, when my mind was lifted up in thought about the things that are, and my bodily senses were held back, as in a deep sleep, a vast being of boundless size seemed to call my name and say: "What do you wish to hear and see, and to learn and know by understanding?"
+
+"Who are you?" I asked.
+
+"I am Poimandres," he said, "the Mind of Sovereignty. I know what you want, and I am with you everywhere."
+
+Then everything changed, and I saw a boundless vision: all things had become light, clear and joyful, and I was filled with love at the sight.
+
+Later in the vision Poimandres shows how the soul returns. At death it rises through the seven planetary spheres. At each one it gives back one of the forces that bound it: the power of growing and waning, the scheming of evil, deceitful desire, the pride of rule, reckless daring, greed for wealth, and the lie that lies in wait. Stripped of them, it enters the eighth sphere with its own true power, sings to the Father with those who are there, and rises into God. "This," says Poimandres, "is the good end for those who have gained knowledge: to become God."
+
+## Becoming the cosmos (Book XI.20, rendered)
+If you do not make yourself equal to God, you cannot understand God, for like is understood by like. Make yourself grow to a size beyond all measure. Leap free of every body, rise above all time, and become eternity, and you will understand God.
+
+Think that nothing is impossible for you. Consider yourself immortal, able to understand everything: every art, every science, the nature of every living thing. Go higher than every height and lower than every depth. Gather into yourself all the sensations of everything made: of fire and water, of dry and wet. Be everywhere at once, on land, in the sea, in the heavens. Be not yet born, be in the womb, be young, be old, be dead, be beyond death. And when you have understood all these together, times, places, things, qualities and quantities, then you can understand God.
+
+@ emerald
+title: The Emerald Tablet of Hermes
+orig: Arabic, from the *Kitāb sirr al-khalīqa*, "Book of the Secret of Creation"; Latin *Tabula smaragdina*
+by: attributed to Hermes Trismegistus; first found in a book attributed to Balīnās (Apollonius of Tyana)
+date: Arabic text about the 8th–9th centuries; Latin translation 12th century
+fam: western
+kind: treatise
+credit: Assembly Sounds' own rendering from the medieval Latin.
+full: yes
+more: Julius Ruska, *Tabula Smaragdina: Ein Beitrag zur Geschichte der hermetischen Literatur* (1926).
+more: Lawrence M. Principe, *The Secrets of Alchemy* (2013).
+about:
+The *Emerald Tablet* is the most famous text of alchemy. It is a dozen short sentences, said to have been found engraved on a slab of emerald in the hands of Hermes Trismegistus, buried in a cave beneath a statue. Its oldest known version is in Arabic, in a book on the secrets of creation from about the 8th or 9th century. It was translated into Latin in the 12th century and became the founding charter of European alchemy. Isaac Newton made his own translation of it and wrote a commentary.
+
+Its second sentence, "what is below is like what is above", is usually shortened to "as above, so below". It became the motto of Hermetic thought: the small world of the human being mirrors the great world of the cosmos. Alchemists read the rest as a coded recipe for the Philosopher's Stone, the "one thing", which rises from earth to heaven and comes down again. Mystics read it as a map of the soul. The As Above, So Below, VITRIOL and alchemical stages sessions draw on it. Below is the whole Tablet.
+
+## The Emerald Tablet
+True, without falsehood, certain and most true.
+
+What is below is like what is above, and what is above is like what is below, to work the miracles of the one thing.
+
+And as all things came from the One, through the meditation of the One, so all things were born from this one thing, by adaptation.
+
+Its father is the Sun, its mother the Moon. The Wind carried it in its belly; its nurse is the Earth.
+
+This is the father of every perfection in the whole world. Its power is complete if it is turned into earth.
+
+Separate the earth from the fire, the subtle from the gross, gently and with great skill.
+
+It rises from earth to heaven, and comes down again to earth, and receives the power of the higher and the lower. So you will have the glory of the whole world, and all darkness will flee from you.
+
+This is the strong strength of all strength, for it overcomes every subtle thing and passes through every solid one.
+
+So the world was created. From this come wonderful adaptations, and this is their way.
+
+Therefore I am called Hermes Thrice-Great, having the three parts of the wisdom of the whole world.
+
+What I have said of the work of the Sun is complete.
+
+@ golden_dawn
+title: The Hermetic Order of the Golden Dawn and its teachings
+orig: English
+by: founded by William Wynn Westcott, Samuel Liddell MacGregor Mathers and William Robert Woodman; the rituals published by Israel Regardie
+date: founded 1888; rituals published 1937–1940
+fam: western
+kind: history
+cite: Israel Regardie, *The Golden Dawn* (4 volumes, 1937–1940).
+credit: Summarised in Assembly Sounds' own words.
+more: Ellic Howe, *The Magicians of the Golden Dawn* (1972).
+more: R. A. Gilbert, *The Golden Dawn: Twilight of the Magicians* (1983).
+more: Mary K. Greer, *Women of the Golden Dawn* (1995).
+about:
+The Hermetic Order of the Golden Dawn was founded in London in 1888 by three Freemasons and Rosicrucians: the coroner William Wynn Westcott, the scholar MacGregor Mathers, and William Robert Woodman. It claimed descent from a German Rosicrucian adept, through a mysterious "cipher manuscript". In practice it was a brilliant new synthesis of everything in the Western esoteric tradition: Hermetism, Kabbalah, astrology, alchemy, the tarot, Enochian magic, Egyptian symbolism and borrowed Eastern ideas. Women and men were admitted as equals, which was rare for the time. Its members included the poet W. B. Yeats, the actress Florence Farr, the artist Moina Mathers, the writer Arthur Machen, A. E. Waite and Aleister Crowley.
+
+Members rose through grades named after the spheres of the Kabbalistic Tree of Life. They studied, took part in ceremonies, and trained in practical skills. These included the pentagram ritual; "vibrating" divine names, so that a word is intoned to resonate through the whole body; "rising on the planes"; travelling in vision, called "skrying in the spirit vision"; and using tattva symbols and tarot cards as doorways. The order split in bitter quarrels around 1900. Its teachings lived on through its offshoots and through Israel Regardie, who published its rituals in 1937–1940. Most of modern Western ceremonial magic descends from it. The Middle Pillar, Pentagram, Rising on the Planes, Tattva Vision, Pathworking and Rose Cross sessions all come from this tradition.
+
+## The vibration of divine names, in brief
+1. Stand upright, and breathe in slowly, picturing the name being drawn in with the breath, down through the body.
+2. Hold it for a moment in the heart.
+3. Breathe out, sounding the name slowly and strongly, syllable by syllable, so that it seems to vibrate through the whole body and out to the edges of the universe.
+4. Afterwards, stand for a moment in silence.
+
+@ liber_o
+title: Liber O: the Lesser Banishing Ritual of the Pentagram and rising on the planes
+orig: English: *Liber O vel Manus et Sagittae*, "The Book of the Hands and the Arrows"
+by: Aleister Crowley (1875–1947), from Golden Dawn teaching
+date: 1909, in *The Equinox* I.2
+fam: western
+kind: manual
+credit: The ritual's words are quoted from *Liber O* (1909, public domain), numbered here 1–17; rising on the planes is summarised in Assembly Sounds' own words.
+more: Aleister Crowley, *Magick: Liber ABA, Book Four*, edited by Hymenaeus Beta (1997).
+more: Israel Regardie, *The Golden Dawn* (1937–1940).
+more: Lon Milo DuQuette, *The Magick of Aleister Crowley* (2003).
+about:
+Aleister Crowley is the most notorious figure in modern occultism. He was a poet, mountaineer and provocateur, and he founded the religion of Thelema. He trained in the Golden Dawn and later published many of its methods in his journal *The Equinox*. *Liber O* (1909) is his short manual of basic practice. It gives the Lesser Banishing Ritual of the Pentagram, the best-known ritual of Western ceremonial magic, in the words the Golden Dawn used. It also teaches the assumption of god-forms, the vibration of names, and "rising on the planes".
+
+The pentagram ritual is used daily to centre oneself and clear one's space. It begins and ends with the Kabbalistic Cross, a Hebrew form of the words that close the Lord's Prayer: "for thine is the kingdom, the power and the glory, for ever". In between, a pentagram is drawn in each quarter with a divine name, and the four archangels are called. In "rising on the planes" one imagines the body of light rising straight upward, through layers of light and colour, as far as the will can carry it, and then returning. The Pentagram and Rising on the Planes sessions follow these two practices.
+
+## The Lesser Ritual of the Pentagram (Liber O, 1909)
+1. Touching the forehead, say *Ateh* (Unto Thee),
+2. Touching the breast, say *Malkuth* (The Kingdom),
+3. Touching the right shoulder, say *ve-Geburah* (and the Power),
+4. Touching the left shoulder, say *ve-Gedulah* (and the Glory),
+5. Clasping the hands upon the breast, say *le-Olahm, Amen* (To the Ages, Amen).
+6. Turning to the East, make a pentagram (that of Earth) with the proper weapon (usually the Wand). Say (i.e. vibrate) *IHVH*.
+7. Turning to the South, the same, but say *ADNI*.
+8. Turning to the West, the same, but say *AHIH*.
+9. Turning to the North, the same, but say *AGLA*. (Pronounce: Ieou, Adonai, Eheieh, Agla.)
+10. Extending the arms in the form of a cross, say,
+11. Before me Raphael;
+12. Behind me Gabriel;
+13. On my right hand Michael;
+14. On my left hand Auriel;
+15. For about me flames the Pentagram,
+16. And in the Column stands the six-rayed Star.
+17. Repeat (1) to (5), the Qabalistic Cross.
+
+## Rising on the planes, in brief
+- Relax, and picture a figure of yourself made of light, the body of light, standing before you. Move your awareness into it.
+- Rise straight upward with steady force of will. Do not drift sideways.
+- Pass through layers of cloud, mist and colour. Keep rising until a clear symbol, scene or figure appears.
+- Note what you see. If a figure appears, test it, in the tradition's way, with the divine names.
+- Return by descending the same way, and let the body of light come back into the physical body. Feel your weight and the floor before you open your eyes.
+
+@ middle_pillar
+title: Israel Regardie's The Middle Pillar
+orig: English
+by: Israel Regardie (1907–1985), from Golden Dawn teaching
+date: 1938
+fam: western
+kind: manual
+cite: Israel Regardie, *The Middle Pillar: A Co-relation of the Principles of Analytical Psychology and the Elementary Techniques of Magic* (1938).
+credit: Summarised in Assembly Sounds' own words.
+more: Israel Regardie, *The Middle Pillar: The Balance Between Mind and Magic*, 3rd edition with Chic and Sandra Tabatha Cicero (1998).
+more: Dion Fortune, *The Mystical Qabalah* (1935).
+about:
+Israel Regardie was born in London and grew up in the United States. He was Aleister Crowley's secretary as a young man, joined a Golden Dawn temple, and later became a psychotherapist. He believed that the order's methods were too valuable to stay secret. In 1937–1940 he published its rituals, which saved them from being lost. In *The Middle Pillar* (1938) he set out a simple exercise built from Golden Dawn teaching, and compared it with Jung's psychology. Generations of practitioners have used it daily since.
+
+The Kabbalistic Tree of Life has three pillars, and the middle one is the pillar of balance. In the exercise its spheres are placed in the body as five centres of light, from above the head down to the feet. Each is awakened by "vibrating" a Hebrew divine name. The light is then circulated around and through the body. The Middle Pillar session follows Regardie's order, spelling out the four-letter name letter by letter, as he gives it.
+
+## The five centres
+1. **Above the crown** (Kether, the crown): a sphere of brilliant white light. Name: *Eheieh*, "I am".
+2. **The throat** (Daath, knowledge): a sphere of white light. Name: *Yod Heh Vav Heh Elohim*.
+3. **The heart** (Tiphareth, beauty): a sphere of white light. Name: *Yod Heh Vav Heh Eloah ve-Daath*.
+4. **The groin** (Yesod, foundation): a sphere of white light. Name: *Shaddai El Chai*, "Almighty Living God".
+5. **The feet** (Malkuth, the kingdom): a sphere of white light. (Later teachers give each sphere its own colour.) Name: *Adonai ha-Aretz*, "Lord of the Earth".
+
+## The circulation, in brief
+- Breathing slowly, draw the light down the left side of the body and up the right, several times.
+- Then draw it down the front and up the back.
+- Finally let it rise up through the middle of the body like a fountain, and shower down around you, gathering again at the feet.
+- Rest for a moment in the light, then let it settle, and feel your feet on the floor.
+
+@ tattva_vision
+title: The tattvas and skrying in the spirit vision
+orig: English, from the Sanskrit *tattva*, "element"
+by: Rama Prasad, *Nature's Finer Forces*; the Golden Dawn
+date: 1890; Golden Dawn practice from the 1890s
+fam: western
+kind: manual
+cite: Rama Prasad, *Nature's Finer Forces: The Science of Breath and the Philosophy of the Tattvas* (1890).
+credit: Summarised in Assembly Sounds' own words.
+more: Israel Regardie, *The Golden Dawn* (1937–1940), with the order's papers on clairvoyance.
+more: Francis King, ed., *Astral Projection, Ritual Magic and Alchemy*, the Golden Dawn's "Flying Rolls" (1971).
+about:
+In Indian philosophy the *tattvas* are the elements of nature. In the tantric breath science of the *Śiva Svarodaya* there are five: earth, water, fire, air and space (*ākāśa*). Each is given a shape and a colour. In 1890 the Theosophist Rama Prasad published an English account of this science, *Nature's Finer Forces*. The Golden Dawn quickly took up its symbols as a training tool. Members painted the five tattvas on cards and used them as doorways into vision.
+
+The method uses a simple fact of the eye. If you gaze at a brightly coloured shape for a while and then look at a white surface, you see a glowing afterimage in the opposite colour. The Golden Dawn student would then close their eyes and let that afterimage grow into a doorway, and pass through it in imagination to explore the "plane" of that element. Its members recorded such visions in their teaching papers, the "Flying Rolls". The Tattva Vision session follows this method, and its tattva card is perfectly still and never flashes.
+
+## The five tattvas
+- **Tejas**, fire: a red triangle, pointing up.
+- **Prithivi**, earth: a yellow square.
+- **Vayu**, air: a blue circle.
+- **Apas**, water: a silver crescent, horns up.
+- **Akasha**, spirit or space: an indigo or black egg.
+
+## The method, in brief
+1. Sit comfortably facing the card in good light, and gaze at the symbol steadily for about twenty seconds.
+2. Look at a plain white surface, and watch the glowing afterimage appear.
+3. Close your eyes and hold the afterimage in mind. Let it grow until it becomes a doorway.
+4. Pass through it in imagination, and look around: notice the landscape, the light and any figures.
+5. Return through the same doorway, let it shrink back to a symbol, and open your eyes.
+
+@ pathworking
+title: The Thirty-Two Paths of Wisdom and the 32nd path
+orig: Hebrew, *Lamed-Beth Netivot Chokhmah*; English translation by W. Wynn Westcott
+by: an anonymous Kabbalistic text; Golden Dawn and later Qabalah writers
+date: the Hebrew text medieval; Westcott's translation 1887; Dion Fortune 1935
+fam: western
+kind: manual
+credit: The 32nd path is quoted from W. Wynn Westcott's translation (1887, public domain); the practice summarised in Assembly Sounds' own words.
+more: W. Wynn Westcott, trans., *Sepher Yetzirah: The Book of Formation, and the Thirty-Two Paths of Wisdom* (1887).
+more: Dion Fortune, *The Mystical Qabalah* (1935).
+more: W. E. Butler, *The Magician: His Training and Work* (1959).
+about:
+The *Sefer Yetzirah* says that God created the world through "thirty-two wondrous paths of wisdom": the ten *sefirot* and the twenty-two letters of the Hebrew alphabet. A short medieval text, *The Thirty-Two Paths of Wisdom*, gives each path a name and a mystical description. The Christian and Hermetic Kabbalists drew these as the Tree of Life: ten spheres joined by twenty-two paths, each path linked to a Hebrew letter. The Golden Dawn added a tarot card to each path.
+
+On this map the spiritual journey runs up the Tree, from Malkuth, the kingdom of the physical world at the bottom, toward Kether, the crown at the top. *Pathworking* is the practice of travelling the paths in imagination. It was developed after the Golden Dawn by Dion Fortune's Society of the Inner Light and writers such as W. E. Butler and Gareth Knight. The first path walked is usually the 32nd, from Malkuth to Yesod, the "foundation", the sphere of the moon, dreams and the imagination. Its letter is Tau and its tarot card is the World. The Pathworking session walks it.
+
+## The thirty-second path (Westcott, 1887)
+The Thirty-second Path is the Administrative Intelligence, and it is so called because it directs and associates in all their operations the seven planets, even all of them in their own due courses.
+
+## The journey, in brief
+1. **The temple of Malkuth**: build in imagination a quiet temple with a floor of black and white squares, an altar, and three doors in the far wall. The middle door bears the letter Tau or the World card.
+2. **The door**: go through the middle door.
+3. **The path**: walk a path through the twilight, under a sky turning deep violet, toward a rising silver moon.
+4. **Yesod**: come to the sphere of the moon, a place of shifting violet light and reflections. Notice what you meet, and take nothing by force.
+5. **The return**: come back the same way, through the door and into the temple, and let it fade. Feel your body and open your eyes.
+
+@ liber_resh
+title: Liber Resh vel Helios: the four adorations of the sun
+orig: English
+by: Aleister Crowley (1875–1947)
+date: 1911, in *The Equinox* I.6
+fam: western
+kind: liturgy
+credit: The adorations are quoted from *Liber Resh* (1911, public domain).
+more: Aleister Crowley, *Magick: Liber ABA, Book Four*, edited by Hymenaeus Beta (1997).
+more: Lon Milo DuQuette, *The Magick of Aleister Crowley* (2003).
+about:
+*Liber Resh* is one of the shortest and most widely practised texts of Thelema, the religion Aleister Crowley founded on his *Book of the Law* (1904). *Resh* is the Hebrew letter linked with the sun, and *Helios* is the Greek sun. The text asks the practitioner to greet the sun four times a day: at dawn, noon, sunset and midnight. They face its direction and use the names of four Egyptian gods for the sun at each station. Ra is the rising sun, Ahathoor (Hathor) the sun at noon, Tum (Atum) the setting sun, and Khephra the scarab who rolls the hidden sun through the night. In each greeting Tahuti (Thoth) stands at the prow of the sun's boat and Ra-Hoor (Horus) steers it.
+
+Its purpose is to keep the practitioner mindful all day long that the sun's light never actually stops: it is only hidden from view. The Solar Adorations session gives the outline in its own words, as a meditation on light at each station. Below are the four adorations as Crowley published them.
+
+## At dawn
+Hail unto Thee who art Ra in Thy rising, even unto Thee who art Ra in Thy strength, who travellest over the Heavens in Thy bark at the Uprising of the Sun. Tahuti standeth in His splendour at the prow, and Ra-Hoor abideth at the helm. Hail unto Thee from the Abodes of Night!
+
+## At noon
+Hail unto Thee who art Ahathoor in Thy triumphing, even unto Thee who art Ahathoor in Thy beauty, who travellest over the heavens in Thy bark at the Mid-course of the Sun. Tahuti standeth in His splendour at the prow, and Ra-Hoor abideth at the helm. Hail unto Thee from the Abodes of Morning!
+
+## At sunset
+Hail unto Thee who art Tum in Thy setting, even unto Thee who art Tum in Thy joy, who travellest over the Heavens in Thy bark at the Down-going of the Sun. Tahuti standeth in His splendour at the prow, and Ra-Hoor abideth at the helm. Hail unto Thee from the Abodes of Day!
+
+## At midnight
+Hail unto Thee who art Khephra in Thy hiding, even unto Thee who art Khephra in Thy silence, who travellest over the Heavens in Thy bark at the Midnight Hour of the Sun. Tahuti standeth in His splendour at the prow, and Ra-Hoor abideth at the helm. Hail unto Thee from the Abodes of Evening.
+
+@ fourth_way
+title: Gurdjieff's Fourth Way and self-remembering
+orig: English, French and Russian
+by: G. I. Gurdjieff (about 1866–1949), as recorded by P. D. Ouspensky and others
+date: teaching from 1912; *In Search of the Miraculous* 1949
+fam: western
+kind: teaching
+cite: P. D. Ouspensky, *In Search of the Miraculous: Fragments of an Unknown Teaching* (1949).
+credit: Summarised in Assembly Sounds' own words.
+more: G. I. Gurdjieff, *Life Is Real Only Then, When "I Am"* (1975).
+more: Jeanne de Salzmann, *The Reality of Being: The Fourth Way of Gurdjieff* (2010).
+more: James Moore, *Gurdjieff: The Anatomy of a Myth* (1991).
+about:
+George Ivanovich Gurdjieff was born in Alexandropol, in the Russian Caucasus, to a Greek father and an Armenian mother. By his own account he spent his youth travelling through Central Asia, the Middle East and Tibet in search of hidden knowledge. He began teaching in Moscow and St Petersburg around 1912. After the Russian Revolution he settled in France, at the Château du Prieuré near Fontainebleau. There, and later in Paris, he taught writers, artists and seekers until his death in 1949. His pupil, the Russian philosopher P. D. Ouspensky, set out the teaching in *In Search of the Miraculous*, and called it the "Fourth Way". The fakir works through the body, the monk through the emotions and the yogi through the mind. The Fourth Way works on all three at once, in the middle of ordinary life.
+
+Gurdjieff taught that people live in a kind of waking sleep, acting mechanically, without really being present. Its central remedy is *self-remembering*: being aware of yourself at the same moment that you are aware of what you are doing or seeing. Ouspensky called it "divided attention", an arrow pointing both ways, outward to the world and inward to oneself. Ouspensky describes trying it on a walk through St Petersburg and finding, to his astonishment, that he could hardly keep it up for more than a moment. Gurdjieff also gave exercises of sensing the body and of the inner "I am". He wrote music with the composer Thomas de Hartmann, and often played a small harmonium for his pupils himself. The Self-Remembering session uses these exercises.
+
+## Self-remembering, in brief
+1. **Sensing**: sit quietly and sense the body part by part: the right arm, the right leg, the left leg, the left arm, and so on, feeling each from the inside.
+2. **The whole**: sense the whole body at once, as one presence.
+3. **I am**: with the in-breath, silently "I", and with the out-breath, "am", while keeping the sensation of the whole body.
+4. **Divided attention**: open the eyes and look at something, while remaining aware of yourself looking. Keep both at once, the object and yourself.
+5. **In life**: try to remember yourself at ordinary moments of the day, passing through a door, picking up a cup, hearing your name.
+
+@ descartes
+title: Descartes on the pineal gland as the seat of the soul
+orig: French: *Les Passions de l'âme*
+by: René Descartes (1596–1650)
+date: 1649
+fam: western
+kind: treatise
+credit: Assembly Sounds' own rendering from the French.
+more: Stephen Voss, trans., *The Passions of the Soul* (1989).
+more: Gert-Jan Lokhorst, "Descartes and the Pineal Gland", *Stanford Encyclopedia of Philosophy* (first published 2005).
+about:
+René Descartes, the founder of modern philosophy, held that mind and body are two different substances: one thinks, the other takes up space. That left a famous question: where and how do they meet? In his last book, *The Passions of the Soul* (1649), he answered that the meeting point is the pineal gland. It is a small, pine-cone-shaped gland deep in the centre of the brain. He chose it because, unlike most parts of the brain, it is single rather than paired, and so could join the double images of the two eyes into the one thing we see.
+
+Descartes was wrong about how the gland works. In 1958 scientists found that it makes the hormone melatonin, which helps regulate sleep with the cycle of light and dark. But his words made the pineal famous. In the late 19th century the Theosophists linked it with the yogic "third eye", the *ājñā* centre between the brows, and that idea is still widespread. There is no scientific evidence for it. The Third Eye session is tagged Speculative, and draws on this history.
+
+## Article 31: That there is a small gland in the brain where the soul exercises its functions more particularly than in the other parts
+Although the soul is joined to the whole body, there is one part in which it exercises its functions more particularly than in all the others. This is neither the heart nor the whole of the brain, but only its innermost part: a certain very small gland, set in the middle of its substance. It hangs above the passage through which the spirits of the front cavities of the brain communicate with those at the back. So its slightest movements can greatly change the flow of these spirits, and the slightest changes in the flow of the spirits can greatly change the movements of the gland.
+
+## Article 32: How we know that this gland is the principal seat of the soul
+What convinces me that the soul can have no other place in the whole body than this gland, where it exercises its functions directly, is this. I see that all the other parts of our brain are double, just as we have two eyes, two hands and two ears, and all the organs of our outer senses are double. Yet we have only one single, simple thought of one thing at a time. So there must be some place where the two images that come through the two eyes, or the two impressions that come from one object through the double organs of the other senses, can be joined into one before they reach the soul, so that they do not show it two objects instead of one.

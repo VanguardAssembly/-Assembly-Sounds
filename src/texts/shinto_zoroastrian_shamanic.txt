@@ -1,0 +1,287 @@
+// Shinto, Zoroastrian, shamanic and earth-traditions texts.
+
+@ kojiki
+title: The Kojiki: Izanagi's purification in the river
+orig: 古事記, Kojiki, "Record of Ancient Matters" (Japanese)
+by: compiled by Ō no Yasumaro from the recitations of Hieda no Are
+date: 712 CE
+fam: shinto
+kind: book
+credit: Assembly Sounds' own rendering from the Japanese.
+more: Basil Hall Chamberlain, trans., *Kojiki, or Records of Ancient Matters* (1882).
+more: Donald L. Philippi, trans., *Kojiki* (1968).
+more: Gustav Heldt, trans., *The Kojiki: An Account of Ancient Matters* (2014).
+about:
+The *Kojiki* is the oldest surviving book in Japanese history. It was written down in 712 at the order of the imperial court, from the memory of a court reciter, Hieda no Are. It tells the myths of the age of the gods, the *kami*, and the early history of Japan's rulers. In its first part the primal couple Izanagi and Izanami create the islands of Japan and many kami. When Izanami dies giving birth to the god of fire, Izanagi follows her down to Yomi, the land of the dead. There he sees her corpse decaying, and he flees back to the world of the living.
+
+He is now stained by the pollution of death, so he goes to a river mouth to wash himself clean. This act, *misogi*, purification in water, is the model for all Shinto purification. As he bathes, new kami are born, among them the purification gods themselves. Last of all come the three great kami: Amaterasu the sun, Tsukuyomi the moon and Susanoo the storm. The daily Shinto purification prayer begins by recalling this moment. The Harae session draws on it.
+
+## Izanagi's misogi (rendered)
+Then the great kami Izanagi said: "I have been to a hideous, unclean land, a land of pollution. So I will purify my body."
+
+He came to the plain of Awagihara, by the river mouth of Tachibana in Himuka, in Tsukushi, and there he performed purification. As he threw down his staff, his sash, his robe and his other garments, kami were born from each of them.
+
+Then he said: "The upper stream is too swift, and the lower stream is too slow." So he went down into the middle stream and plunged in and washed. From the washing were born first the kami of misfortune, from the stain itself, and then the kami who set misfortune right.
+
+Then he washed his left eye, and the great kami Amaterasu, the one who shines in heaven, was born. He washed his right eye, and Tsukuyomi, the moon, was born. He washed his nose, and Susanoo, the swift and impetuous male, was born.
+
+@ oharae
+title: The Words of the Great Purification
+orig: 大祓詞, Ōharae no kotoba (Japanese); 祓詞, Harae kotoba, the short purification prayer
+by: the Shinto priestly tradition; recorded in the *Engishiki*
+date: the *Engishiki* compiled 905–927; the prayer is older
+fam: shinto
+kind: liturgy
+credit: Assembly Sounds' own rendering from the Japanese.
+more: Donald L. Philippi, trans., *Norito: A Translation of the Ancient Japanese Ritual Prayers* (1959; reissued 1990).
+more: Felicia G. Bock, trans., *Engi-shiki: Procedures of the Engi Era* (1970–1972).
+more: Helen Hardacre, *Shinto: A History* (2017).
+about:
+In Shinto the heart is pure and bright by nature, the *akaki kokoro*, "bright red heart". Wrongdoing, misfortune and contact with death leave a stain on it, called *tsumi* and *kegare*. These are not sins in the Christian sense. They are more like dust that dims a mirror. *Harae*, purification, clears them away, and it is the foundation of every Shinto rite. Worshippers rinse hands and mouth at the stone basin before approaching a shrine. A priest waves the *ōnusa*, a wand of white paper streamers, over people and offerings.
+
+The *Words of the Great Purification* is the greatest of the ancient Shinto prayers, the *norito*. It was recorded in the *Engishiki*, the court's book of procedures, completed in 927. It is recited at the Great Purification held at shrines all over Japan on the last days of the sixth and twelfth months, to cleanse the whole country of half a year's stains. In it four kami of purification carry every stain away: down the rivers, into the sea and out of existence. The short purification prayer said at shrines every day calls on the same kami. The Harae session uses its closing words, *harae tamae, kiyome tamae*: purify, cleanse.
+
+## The short purification prayer
+= Kakemaku mo kashikoki Izanagi no Ōkami
+= Tsukushi no Himuka no Tachibana no Odo no Awagihara ni
+= misogi harae tamaishi toki ni nari maseru haraedo no ōkamitachi
+= moromoro no magagoto tsumi kegare aramu o ba
+= harae tamae kiyome tamae to mōsu koto o kikoshimese to
+= kashikomi kashikomi mo mōsu
+With awe I speak to the great kami Izanagi, and to the great kami of purification who were born when he purified himself at Awagihara, by the river mouth of Tachibana in Himuka in Tsukushi. If there are any misfortunes, wrongs or impurities, purify them and cleanse them: hear these words, I humbly pray, with awe and reverence.
+
+## How the stains are swept away (from the Great Purification)
+As the winds of heaven blow apart the eightfold clouds; as the morning wind and the evening wind blow away the morning mist and the evening mist; as a great ship moored in a great harbour is untied at prow and stern and pushed out into the great sea; as the thick bushes far away are cut down at the root with a well-tempered sickle: so may every stain be swept away and cleansed, until none is left.
+
+## The four kami of purification (from the Great Purification)
+The stains are carried down the swift rivers that tumble seething from the peaks of the high mountains and the low hills. There Seoritsuhime, the kami who dwells in the rapids, carries them out to the great sea.
+
+When she has carried them out, Hayaakitsuhime, who dwells where the eightfold currents of the many salt ways of the open sea meet, swallows them down with a gulp.
+
+When she has swallowed them, Ibukidonushi, who dwells at the gate where the breath blows, breathes them out and away to the Root Land, the Bottom Land.
+
+When he has blown them away, Hayasasurahime, who dwells in the Root Land, the Bottom Land, wanders off with them and loses them. And when they are lost, from this day on not a single stain will remain.
+
+@ chinkon
+title: Chinkon: calming the soul
+orig: 鎮魂, chinkon, "calming the soul"; 鎮魂帰神, chinkon kishin, "calming the soul and returning to the kami" (Japanese)
+by: the Shinto tradition; the *Sendai kuji hongi*; revived as a practice by Honda Chikaatsu (1822–1889)
+date: the court rite from at least the 8th century; Honda's method 19th century
+fam: shinto
+kind: ritual
+credit: Summarised and rendered in Assembly Sounds' own words.
+more: Helen Hardacre, *Shinto: A History* (2017).
+more: Stuart D. B. Picken, *Essentials of Shinto: An Analytical Guide to Principal Teachings* (1994).
+more: Nancy K. Stalker, *Prophet Motive: Deguchi Onisaburō, Oomoto, and the Rise of New Religions in Imperial Japan* (2008).
+about:
+In ancient Japan a person's soul, the *tama*, was thought able to drift loose from the body, and a loosened soul meant weakness, illness and death. *Chinkon*, "calming the soul", settles it firmly back in its place. At the imperial court the *chinkonsai* was held every year at the winter solstice, the darkest time, when life is weakest, to renew the emperor's spirit. Many shrines still hold it. At Isonokami Jingū, one of the oldest shrines in Japan, the rite is linked to a myth of ten sacred treasures given by the heavenly kami. With them comes a spell of counting from one to ten that could bring even the dead back to life.
+
+In the 19th century the scholar Honda Chikaatsu revived chinkon as a personal practice, joined to *kishin*, "returning to the kami", a state of deep union with the divine. His method was taken up by new Shinto movements such as Ōmoto and spread from there. In its quiet form one kneels in *seiza*, holds the hands together before the lower belly, breathes softly and gathers the spirit at the body's centre. The Chinkon session follows this quiet form. It seeks only stillness, not the trance or possession that some lineages work with.
+
+## The counting of the ten treasures (rendered)
+The *Sendai kuji hongi* tells that the heavenly ancestor gave ten treasures to the kami Nigihayahi: two mirrors, a sword, four jewels and three magic scarves. She said:
+
+"If there is any pain, take these ten treasures and say: *one, two, three, four, five, six, seven, eight, nine, ten*, and shake them, swaying, swaying. Do this, and even the dead will come back to life."
+
+= hito futa mi yo itsu mu nana ya kokono tari
+= furube yura yura to furube
+
+## The quiet practice, in brief
+1. Kneel in seiza, or sit upright on a chair, the spine straight and easy.
+2. Join the hands loosely in front of the lower belly.
+3. Breathe softly through the nose, and let the breath settle low in the body.
+4. Feel the spirit gathering, like water settling, to the centre below the navel.
+5. Rest there in stillness, with reverence, open to the kami.
+
+@ avesta
+title: The Avesta: Ashem Vohu, Ahuna Vairya and the Gāthās
+orig: Avestan: *ašəm vohū*, *ahuna vairiia*, *gāθā*
+by: the Zoroastrian tradition; the Gāthās attributed to Zarathustra
+date: the Gāthās perhaps 1500–1000 BCE (dates debated)
+fam: zoroastrian
+kind: scripture
+credit: Assembly Sounds' own rendering from the Avestan.
+more: L. H. Mills, trans., *The Zend-Avesta, Part III*, Sacred Books of the East 31 (1887).
+more: Mary Boyce, *Zoroastrians: Their Religious Beliefs and Practices* (1979).
+more: Jenny Rose, *Zoroastrianism: An Introduction* (2011).
+about:
+Zoroastrianism grew from the teaching of the prophet Zarathustra (in Greek, Zoroaster), who lived in Central Asia or eastern Iran long before the Persian Empire. He taught that there is one wise Lord, Ahura Mazda. In the world two ways are open: *asha*, truth and right order, and *druj*, the lie. Every person must freely choose between them. It was the leading religion of the great Persian empires, and the state religion of the Sasanians (224–651). Today it is followed by perhaps one to two hundred thousand people, many of them Parsis in India and Iranians, and by communities around the world.
+
+Its scripture, the *Avesta*, is in an ancient Iranian language. Its oldest part, the seventeen hymns called the *Gāthās*, is held to be Zarathustra's own words. Zoroastrians pray five times a day, at the five watches called *gāhs*, facing a source of light, the sun or a fire, as a sign of God's truth. As they pray they untie and retie the *kusti*, the sacred cord around the waist. The two shortest and most sacred prayers are the *Ashem Vohu* and the *Ahuna Vairya*. Their spirit is summed up in three words: *humata, hukhta, hvarshta*, good thoughts, good words, good deeds. The Ashem Vohu session uses them.
+
+## Ashem Vohu (Yasna 27.14)
+= ašəm vohū vahištəm astī
+= uštā astī uštā ahmāi
+= hyat̰ ašāi vahištāi ašəm
+> Truth is the best good.
+> It is happiness. Happiness comes to the one
+> who is truthful for the sake of the best truth.
+
+## Ahuna Vairya (Yasna 27.13)
+= yaθā ahū vairiiō aθā ratuš ašāt̰cīt̰ hacā
+Just as the Lord is the one to be chosen, so the guide is chosen for the sake of truth. The gift of good mind belongs to the deeds of life done for the Wise One, and power belongs to the Lord, whom people have made the shepherd of the poor.
+
+(The *Ahuna Vairya* is so ancient that its exact meaning is debated. This is one common reading.)
+
+## The choice (from the Gāthās, Yasna 30.2)
+Hear with your ears what is best, and look on it with a clear mind. Then let each person choose between the two ways, each for their own self, before the great turning, and wake to this teaching.
+
+## Good thoughts, good words, good deeds
+= humata, hūxta, hvaršta
+The heart of Zoroastrian ethics, said in many prayers: to think well, to speak well and to act well, every day, so that truth grows stronger in the world.
+
+@ harner
+title: Michael Harner's The Way of the Shaman
+orig: English
+by: Michael Harner (1929–2018)
+date: 1980
+fam: shamanic
+kind: book
+cite: Michael Harner, *The Way of the Shaman: A Guide to Power and Healing* (1980).
+credit: Summarised in Assembly Sounds' own words.
+more: Michael Harner, *Cave and Cosmos: Shamanic Encounters with Another Reality* (2013).
+more: Sandra Ingerman, *Shamanic Journeying: A Beginner's Guide* (2004).
+about:
+Michael Harner was an American anthropologist. In the 1950s and 1960s he lived among the Shuar of Ecuador and the Conibo of the Peruvian Amazon, where he was initiated into shamanic practice. Comparing shamanic traditions around the world, he concluded that they share a core of methods that anyone could learn. Chief among these is the journey of the spirit, carried by a steady drumbeat, to meet helping spirits. He called this *core shamanism*. His book *The Way of the Shaman* (1980) and his Foundation for Shamanic Studies taught it to tens of thousands of people.
+
+Core shamanism is a modern teaching drawn from many cultures. It is not itself the tradition of any one people, and many Indigenous communities do not regard it as theirs. Harner's own maps are simple. There are three worlds: a lower world entered through an opening in the earth, a middle world that is our own world seen in spirit, and an upper world reached by climbing into the sky. The journeyer goes to them with a clear intention, meets helpers there, and returns when the drum gives the call-back. The Shamanic Journey, Lower World, Middle World and Upper World sessions follow this method.
+
+## The journey to the lower world, in brief
+1. **Intention**: before you begin, set a clear, simple purpose, such as to meet a helping spirit.
+2. **The entrance**: picture an opening into the earth that you know from waking life, such as a cave, a hollow tree, a spring or an animal's burrow.
+3. **The tunnel**: go down through it, letting the drum carry you, until you come out into a landscape.
+4. **The helper**: look around. In Harner's teaching, an animal that shows itself to you four times, from different sides, is your helper, your power animal. Greet it, and ask what you came to ask.
+5. **The return**: when the call-back comes, thank your helper and return the way you came, back up the tunnel and into the room. Take a moment to feel your body and the floor before you get up.
+
+## The upper and middle worlds
+To reach the upper world, the journeyer climbs: up a tree, a ladder, a column of smoke, a rainbow or a mountain, and passes through a thin layer like a membrane or a cloud into the sky. Teachers in human form are often met there. The middle world is this world, travelled in the imagination: its lands, seas and skies, near or far.
+
+@ eliade
+title: Mircea Eliade's Shamanism: Archaic Techniques of Ecstasy
+orig: French: *Le chamanisme et les techniques archaïques de l'extase*
+by: Mircea Eliade (1907–1986)
+date: 1951; English translation 1964
+fam: shamanic
+kind: book
+cite: Mircea Eliade, *Shamanism: Archaic Techniques of Ecstasy*, trans. Willard R. Trask (1964).
+credit: Summarised in Assembly Sounds' own words.
+more: Piers Vitebsky, *The Shaman* (1995).
+more: Ronald Hutton, *Shamans: Siberian Spirituality and the Western Imagination* (2001).
+about:
+Mircea Eliade was a Romanian historian of religions who taught for many years at the University of Chicago. His *Shamanism* (1951) was the first great survey of shamanic traditions around the world, from Siberia and Central Asia, where the word *shaman* comes from the Evenki language, to the Americas, Australia and Southeast Asia. He defined the shaman as a "master of ecstasy". The shaman's soul leaves the body in trance and travels to the sky or the underworld, to heal, to guide the dead, or to speak with spirits on behalf of the community.
+
+Eliade drew a picture of a cosmos in three levels: sky, earth and underworld, joined by a central axis. This axis is pictured as a world tree, a mountain or a pillar, which the shaman climbs or descends. He also described the drum as the shaman's mount, the horse or reindeer that carries the journey. This picture shaped Western ideas of shamanism, and Harner's core shamanism after it. Later scholars criticised him for blending very different cultures into one pattern, and for working from books rather than from fieldwork. His survey remains the classic starting point. The shamanic journey sessions draw on its map of the worlds.
+
+## The main themes, in brief
+- **The call**: shamans are often chosen by the spirits, through illness, dreams or a crisis, rather than choosing the role.
+- **Initiation**: in visions the novice is often taken apart, even to the bones, and remade with new powers. It is a death and a rebirth.
+- **The world axis**: the tree, pole or mountain at the centre of the world, by which the shaman rises to the sky or sinks to the underworld.
+- **The drum**: made from a tree of the world axis, it is the shaman's steed and the rhythm that carries the journey.
+- **The return**: the shaman always comes back, bringing healing or knowledge for others.
+
+@ goodman
+title: Felicitas Goodman's ritual body postures
+orig: English
+by: Felicitas D. Goodman (1914–2005)
+date: 1990
+fam: shamanic
+kind: book
+cite: Felicitas D. Goodman, *Where the Spirits Ride the Wind: Trance Journeys and Other Ecstatic Experiences* (1990).
+credit: Summarised in Assembly Sounds' own words.
+more: Felicitas D. Goodman, *Ecstasy, Ritual, and Alternate Reality: Religion in a Pluralistic World* (1988).
+more: Belinda Gore, *Ecstatic Body Postures: An Alternate Reality Workbook* (1995).
+about:
+Felicitas Goodman was a Hungarian-born American linguist and anthropologist. She first became known for her studies of speaking in tongues in Pentecostal churches. In the 1970s she noticed that certain body postures appear again and again in ancient art and sacred carvings from many cultures. She wondered whether they were not just poses but instructions: ways of holding the body that guide the experience of trance. She tested them with volunteers. Each person held one posture for fifteen minutes while a rattle or drum beat steadily at about 210 beats a minute. She reported that different postures brought different, consistent experiences: healing, divination, journeys to the lower or upper world, or a sense of rebirth.
+
+She founded the Cuyamungue Institute in New Mexico to continue the work. Her rhythmic method fits well with research on drumming and trance. Her central claim, that each posture produces its own kind of experience, has never been tested in controlled studies, so the Ritual Postures session is tagged Speculative. It uses the posture she called the Bear Spirit, which she linked with healing.
+
+## The method, in brief
+1. **Quiet the mind**: sit quietly for a few minutes and breathe calmly.
+2. **Take the posture** exactly, and hold it without moving for fifteen minutes.
+3. **The rhythm**: a rattle or drum beats steadily, about 210 beats a minute, for the whole fifteen minutes.
+4. **Return**: when the sound stops, release the posture slowly, and write down or remember what you experienced.
+
+## The Bear Spirit posture
+Stand with the feet parallel, about six inches apart, and the knees slightly bent. Rest the hands relaxed on the belly, the fingers slightly curled, so that the knuckles of the two index fingers touch just above the navel. Tilt the head back a little, as if looking at where the wall meets the ceiling, and close the eyes. You can also do it seated.
+
+@ trance_dance
+title: The Kalahari healing dance and modern trance dance
+orig: English
+by: Richard Katz and others
+date: 1982
+fam: shamanic
+kind: book
+cite: Richard Katz, *Boiling Energy: Community Healing among the Kalahari Kung* (1982).
+credit: Summarised in Assembly Sounds' own words.
+more: Lorna Marshall, "The Medicine Dance of the !Kung Bushmen", *Africa* 39 (1969): 347–381.
+more: Bradford Keeney, *Ropes to God: Experiencing the Bushman Spiritual Universe* (2003).
+more: Gabrielle Roth, *Maps to Ecstasy: Teachings of an Urban Shaman* (1989).
+about:
+The Ju/'hoansi San people of the Kalahari desert in Namibia and Botswana have a healing dance that may be among the oldest religious practices on earth. Often, and especially when someone is ill, the community gathers around a fire at night. The women sit in a circle, clapping complex rhythms and singing healing songs. The healers dance around them, often for hours. As they dance, a healing energy called *n/om* heats up in the belly and "boils", rising up the spine. The healers enter *!kia*, an intensely heightened state. In it they lay their hands on everyone present and draw sickness out of them. The whole community takes part, and the dance heals relationships as well as bodies.
+
+The psychologist Richard Katz lived with the Ju/'hoansi in 1968 and later. His *Boiling Energy* (1982) describes the dance, its fears and its joys, in the healers' own words. In the modern West, dance has been taken up again as a path into trance and release. One example is Gabrielle Roth's 5Rhythms, a wave of flowing, staccato, chaos, lyrical and stillness that builds to a peak and settles into rest. The Trance Dance session follows such a wave.
+
+## The healers' words, in brief
+The healers describe *n/om* as a power that is painful and frightening at first. It boils up from the belly, through the spine to the base of the skull. A healer has to learn not to fear it but to welcome it, and to dance until it boils. Then they can see properly, even into people's bodies, and pull out the sickness. They say *n/om* is given to them by the songs, the women's singing and the dance, and that it is meant to be shared.
+
+## Dancing safely
+- Clear a space, and dance on a surface where you cannot slip.
+- Keep your eyes softly open. Never spin round and round.
+- Breathe freely, and slow down or stop whenever you need to.
+- Drink water afterwards, and sit quietly for a few minutes before driving or doing anything demanding.
+
+@ ancestors
+title: Honouring the ancestors around the world
+orig: various
+by: many traditions; Confucius, *Analects* 1.9 and 3.12
+date: from prehistory; the *Analects* 5th–3rd centuries BCE
+fam: shamanic
+kind: ritual
+credit: The *Analects* rendered by Assembly Sounds; the customs summarised in our own words.
+more: Robert J. Smith, *Ancestor Worship in Contemporary Japan* (1974).
+more: Stanley Brandes, *Skulls to the Living, Bread to the Dead: The Day of the Dead in Mexico and Beyond* (2006).
+more: Ronald Hutton, *The Stations of the Sun: A History of the Ritual Year in Britain* (1996).
+about:
+Remembering and honouring the dead is one of the oldest and most widespread of all human practices. Some of the earliest known burials, tens of thousands of years old, already show care and offerings. In China, Korea, Japan and Vietnam families keep ancestral tablets at home altars, offer incense and food, and sweep the graves at festivals such as Qingming. In Japan the dead are welcomed home each summer at Obon, with lanterns and dancing. In Mexico, on the Day of the Dead, families build *ofrendas* with photographs, marigolds, candles and favourite foods. In many West African traditions water or drink is poured on the ground while the ancestors are named. In Celtic lands, Samhain at the start of November was a time when the dead were thought to come close.
+
+The common thread is gratitude, continuity and blessing: knowing that we stand at the end of a long line, and that those who came before still belong to us. The Honouring the Ancestors session is a simple remembrance you can adapt to your own family and tradition.
+
+## From the Analects of Confucius (rendered)
+Master Zeng said: "Take care over the rites for those who have just died, and keep remembering those long gone, and the goodness of the people will grow deep." (1.9)
+
+He sacrificed to the ancestors as if they were present. He sacrificed to the spirits as if the spirits were present. The Master said: "If I do not take part in the sacrifice myself, it is as if I had not sacrificed at all." (3.12)
+
+## Ways of remembering
+- Light a candle or incense before a photograph, a name or a keepsake.
+- Speak the names of those you remember, aloud or silently, as far back as you know them.
+- Offer something simple: water, a flower, a little food, or a few words of thanks.
+- Ask for their blessing, and wish blessing on those who will come after you.
+- If grief is raw, go gently. It is fine to stop, to cry, or to choose another session.
+
+@ fire_rites
+title: Sacred fire: Agni, the Ātash and the fire festivals
+orig: Sanskrit, Avestan, Gaelic and other traditions
+by: the *Rig Veda*; the Zoroastrian tradition; European folk custom described by James George Frazer
+date: the *Rig Veda* about 1500–1000 BCE; *The Golden Bough* 1890–1915
+fam: shamanic
+kind: ritual
+credit: *Rig Veda* 1.1.1 from Ralph T. H. Griffith's translation (1896, public domain); the customs summarised in Assembly Sounds' own words.
+more: Ralph T. H. Griffith, trans., *The Hymns of the Rigveda* (2nd edition, 1896).
+more: James George Frazer, *The Golden Bough: A Study in Magic and Religion* (abridged edition, 1922), chapters 62–63 on the fire festivals.
+more: Mary Boyce, *Zoroastrians: Their Religious Beliefs and Practices* (1979).
+about:
+Fire stands at the centre of ritual in cultures all over the world. In ancient India *Agni*, fire, was the messenger between people and gods. Offerings poured into the flame were carried up to heaven, and the very first hymn of the *Rig Veda*, the oldest Indian scripture, praises him. Hindus still make offerings into fire, the *homa*, saying *svāhā* with each one. For Zoroastrians fire is the living sign of Ahura Mazda's light and truth. In fire temples sacred fires have been kept burning for centuries. Zoroastrians pray before the fire but do not worship it as a god.
+
+In Europe, as James George Frazer recorded in *The Golden Bough*, villagers lit great bonfires at Beltane on May Day, at Midsummer and at the start of winter. People leapt over the flames, and cattle were driven between two fires for protection and good fortune. In Japan, old amulets and written wishes are burned at shrine bonfires. Across many cultures, giving something to the flame means letting it go, purifying it and transforming it. The Fire Ceremony session uses this simple act.
+
+## The first verse of the Rig Veda (1.1.1)
+= agním īḷe puróhitaṃ yajñásya devám ṛtvíjam hótāraṃ ratnadhā́tamam
+> I laud Agni, the chosen Priest, God, minister of sacrifice,
+> The hotar, lavishest of wealth.
+
+## A simple fire ritual
+1. Sit by a real fire, a candle in a safe holder, or simply picture a flame.
+2. Name, aloud or on paper, what you are ready to release.
+3. Offer it to the flame: burn the paper safely, or picture it turning to light.
+4. Name what you wish to welcome in its place.
+5. Close with thanks. Never leave a flame unattended.

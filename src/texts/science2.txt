@@ -1,0 +1,278 @@
+// Research: meditation EEG, neurofeedback, breathing, sleep-onset creativity, dreams and out-of-body states.
+
+@ kasamatsu1966
+title: Zen meditation and the EEG: Kasamatsu and Hirai
+orig: English (published in Japan)
+by: Akira Kasamatsu and Tomio Hirai
+date: 1966
+fam: science
+kind: study
+cite: A. Kasamatsu & T. Hirai, "An electroencephalographic study on the Zen meditation (zazen)", *Folia Psychiatrica et Neurologica Japonica* 20 (1966): 315–336.
+credit: Summarised in Assembly Sounds' own words.
+more: Tomio Hirai, *Psychophysiology of Zen* (1974).
+more: B. K. Anand, G. S. Chhina & B. Singh, "Some aspects of electroencephalographic studies in Yogis", *Electroencephalography and Clinical Neurophysiology* 13 (1961): 452–456.
+about:
+In the early 1960s two Japanese psychiatrists, Akira Kasamatsu and Tomio Hirai, recorded the EEG of 48 Zen priests and disciples from the Sōtō and Rinzai schools while they sat in zazen. Their experience ranged from one year to more than twenty. Zazen is practised with the eyes half open, resting on the floor ahead, and in most people open eyes block the alpha rhythm. Yet soon after the sitting began, alpha waves appeared in spite of the open eyes.
+
+The researchers described the changes in four stages, set out below. The changes went further in those with more years of practice, and they reported that the changes matched a Zen master's own judgement of how far each disciple had progressed. In a second experiment a click sounded at intervals. In ordinary people, each click briefly blocked the alpha rhythm at first, but the response soon faded as the brain grew used to the sound. In the Zen masters, every click blocked the alpha briefly, again and again, as if each sound were met fresh. The authors linked this to a state of relaxed but wakeful awareness, open to each moment. It made a much-quoted contrast with a 1961 Indian study by Anand, Chhina and Singh, in which yogis in deep meditation did not respond to such sounds at all: inward absorption on one side, open awareness on the other. Hirai later set out the work more fully in his book *Psychophysiology of Zen*. The Zen Alpha → Theta session follows the path they described: alpha at 11 Hz, slowing alpha at 9 Hz, theta trains at 6.5 Hz, then a return.
+
+## The four stages, in brief
+1. Alpha waves appear, even though the eyes are open.
+2. The alpha waves grow larger.
+3. The alpha rhythm slows.
+4. Rhythmic trains of theta appear, in some of the most practised.
+
+@ sterman_smr
+title: The sensorimotor rhythm and neurofeedback
+orig: English
+by: M. Barry Sterman and colleagues; Joel Lubar; Martijn Arns and colleagues
+date: 1968 onward
+fam: science
+kind: history
+cite: M. B. Sterman & L. Friar, "Suppression of seizures in an epileptic following sensorimotor EEG feedback training", *Electroencephalography and Clinical Neurophysiology* 33 (1972): 89–95; M. Arns et al., "Efficacy of neurofeedback treatment in ADHD: the effects on inattention, impulsivity and hyperactivity: a meta-analysis", *Clinical EEG and Neuroscience* 40 (2009): 180–189.
+credit: Summarised in Assembly Sounds' own words.
+more: G. Tan et al., "Meta-analysis of EEG biofeedback in treating epilepsy", *Clinical EEG and Neuroscience* 40 (2009): 173–179.
+more: S. Cortese et al., "Neurofeedback for attention-deficit/hyperactivity disorder: meta-analysis of clinical and neuropsychological outcomes from randomized controlled trials", *Journal of the American Academy of Child & Adolescent Psychiatry* 55 (2016): 444–455.
+more: S. Kennel et al., "Pilot feasibility study of binaural auditory beats for reducing symptoms of inattention in children and adolescents with attention-deficit/hyperactivity disorder", *Journal of Pediatric Nursing* 25 (2010): 3–11.
+about:
+In the late 1960s Barry Sterman, a sleep researcher at the University of California, Los Angeles, found a rhythm of about 12–15 Hz over the brain's movement areas in cats. It appeared when a cat was alert but perfectly still. He called it the *sensorimotor rhythm* (SMR), and showed that cats could learn to produce more of it when they were rewarded with food each time it appeared. This was one of the first demonstrations of neurofeedback: learning to change one's own brain rhythm by being rewarded for it.
+
+Then came a lucky accident. The US Air Force asked Sterman to study monomethylhydrazine, a rocket-fuel chemical that causes seizures. The cats that had earlier been trained to produce SMR had seizures much later than the others, or none at all. In 1972 Sterman and Friar reported training a 23-year-old woman whose seizures had resisted medication for seven years, and her seizures fell sharply. Neurofeedback for epilepsy has been studied ever since, and a 2009 meta-analysis by Tan and colleagues found that most patients in these studies, whose epilepsy did not respond to drugs, had fewer seizures.
+
+From 1976 Joel Lubar applied SMR training to hyperactive children, and neurofeedback for ADHD grew into a field of its own. A 2009 meta-analysis by Martijn Arns and colleagues found large effects on inattention and impulsivity, and a medium effect on hyperactivity. But a 2016 meta-analysis by Samuele Cortese and colleagues found that when the people judging the children did not know who had been treated, the benefits were no longer significant, so the debate continues. Binaural beats are not neurofeedback: neurofeedback rewards the brain for producing a rhythm itself, while a beat only plays one to it. A small 2010 pilot study of binaural beats for inattention in children with ADHD, by Kennel and colleagues, found no clear benefit over a control recording. The SMR Calm Focus session and the SMR sessions of the Brainwave Library play beats at 13–14 Hz as a calm-focus sound. They are not a treatment for epilepsy or ADHD.
+
+@ peniston1989
+title: Alpha–theta training: the Peniston protocol
+orig: English
+by: Eugene Peniston and Paul Kulkosky; Elmer and Alyce Green
+date: 1989
+fam: science
+kind: study
+cite: E. G. Peniston & P. J. Kulkosky, "Alpha-theta brainwave training and beta-endorphin levels in alcoholics", *Alcoholism: Clinical and Experimental Research* 13 (1989): 271–279.
+credit: Summarised in Assembly Sounds' own words.
+more: E. G. Peniston & P. J. Kulkosky, "Alpha-theta brainwave neuro-feedback for Vietnam veterans with combat-related post-traumatic stress disorder", *Medical Psychotherapy* 4 (1991): 47–60.
+more: Elmer Green & Alyce Green, *Beyond Biofeedback* (1977).
+about:
+In the 1970s Elmer and Alyce Green, at the Menninger Foundation in Kansas, studied the drowsy, image-rich state at the border of alpha and theta, which they called theta reverie. They taught people to reach it with biofeedback, and reported that vivid imagery and creative insight often came there. In 1989 Eugene Peniston and Paul Kulkosky, working with patients at a US veterans' hospital, tried the idea as a treatment for alcoholism.
+
+The patients first learned to warm their hands with temperature biofeedback, a relaxation exercise. Then they had fifteen 30-minute sessions of alpha–theta neurofeedback with eyes closed, drifting toward the alpha–theta border. They were compared with alcoholic patients given the hospital's standard treatment, and with volunteers who were not alcoholic. The trained patients produced more alpha and theta, and their depression scores fell more. In the standard-treatment group, blood levels of beta-endorphin, a natural opioid that rises with stress, went up; in the trained group they did not. In later reports, with follow-ups of up to about two years, the same team described fewer relapses in the trained patients, and in 1991 they reported similar benefits for Vietnam veterans with combat-related post-traumatic stress.
+
+The "Peniston protocol" is still used in clinics, often in modified forms. But the original studies were small and not blinded, and later studies have been encouraging rather than conclusive. In addiction care it is given alongside full treatment, never instead of it. The Alpha-Theta Training session is a binaural version of the idea: alpha at 10 Hz, a long crossover at 7.5 Hz, then back to alpha. It is not clinical neurofeedback.
+
+@ hrv_resonance
+title: Resonance breathing and heart-rate variability
+orig: English
+by: Evgeny Vaschillo and Paul Lehrer; Richard Gevirtz
+date: 2002 onward
+fam: science
+kind: review
+cite: P. M. Lehrer & R. Gevirtz, "Heart rate variability biofeedback: how and why does it work?", *Frontiers in Psychology* 5 (2014): 756.
+credit: Summarised in Assembly Sounds' own words.
+more: E. Vaschillo, P. Lehrer, N. Rishe & M. Konstantinov, "Heart rate variability biofeedback as a method for assessing baroreflex function: a preliminary study of resonance in the cardiovascular system", *Applied Psychophysiology and Biofeedback* 27 (2002): 1–27.
+more: V. C. Goessl, J. E. Curtiss & S. G. Hofmann, "The effect of heart rate variability biofeedback training on stress and anxiety: a meta-analysis", *Psychological Medicine* 47 (2017): 2578–2586.
+more: P. Lehrer et al., "Heart rate variability biofeedback improves emotional and physical health and performance: a systematic review and meta analysis", *Applied Psychophysiology and Biofeedback* 45 (2020): 109–129.
+more: A. Zaccaro et al., "How breath-control can change your life: a systematic review on psycho-physiological correlates of slow breathing", *Frontiers in Human Neuroscience* 12 (2018): 353.
+about:
+Your heart does not beat like a metronome. It speeds up a little as you breathe in and slows as you breathe out. This natural variation, *heart-rate variability* (HRV), is a sign of a flexible, well-regulated nervous system, and it tends to be lower under long-term stress. At the same time a reflex called the *baroreflex* keeps your blood pressure steady, slowing the heart when pressure rises and speeding it when pressure falls. The reflex works with a delay of a few seconds, so it has a natural rhythm of its own, about one cycle every ten seconds.
+
+When you breathe at that same rate, about six breaths a minute, the swings caused by breathing and the swings of the baroreflex fall into step and strengthen each other, like pushing a swing in time with its motion. The heart-rate swings become much larger. This is *resonance*, and the breathing rate that produces it is your resonance frequency. For most adults it lies between about 4.5 and 7 breaths a minute. Evgeny Vaschillo, working first in Russia and then with Paul Lehrer in the United States, described this resonance, and Lehrer, Vaschillo and Richard Gevirtz developed HRV biofeedback: breathing at your own resonance rate while watching your heart rate rise and fall on a screen.
+
+It is one of the best-supported self-calming methods there is. A 2017 meta-analysis by Goessl and colleagues found that HRV biofeedback led to a large reduction in self-reported stress and anxiety. A 2020 review by Lehrer and colleagues found smaller but real benefits across many outcomes, from low mood to sports performance. Slow breathing on its own also helps: in a 2018 review, Zaccaro and colleagues linked it with higher HRV, more alpha in the EEG, and less anxiety and arousal. The Resonance Breathing session paces six breaths a minute and Coherent Breathing paces five. Stress Release and Anxiety Ease are built on slow breathing, and the Mantra / Rosary Rhythm session reaches about six a minute through chanting (see Bernardi's study).
+
+## How to breathe
+- Breathe gently through the nose: in for about five seconds, out for about five, or a little longer out.
+- Keep the breaths light and smooth, not big. Breathing too much can make you dizzy.
+- If you feel light-headed or short of air, breathe more softly or stop and breathe normally.
+
+@ kjaer2002
+title: Yoga nidra and dopamine: a PET study
+orig: English
+by: Troels Kjaer, Hans Lou and colleagues
+date: 2002
+fam: science
+kind: study
+cite: T. W. Kjaer, C. Bertelsen, P. Piccini, D. Brooks, J. Alving & H. C. Lou, "Increased dopamine tone during meditation-induced change of consciousness", *Cognitive Brain Research* 13 (2002): 255–259.
+credit: Summarised in Assembly Sounds' own words.
+more: H. C. Lou et al., "A 15O-H2O PET study of meditation and the resting state of normal consciousness", *Human Brain Mapping* 7 (1999): 98–105.
+about:
+Yoga nidra, "yogic sleep", is a guided practice of deep relaxation in which the body rests as if asleep while awareness stays awake (see Swami Satyananda's *Yoga Nidra*). A team of Danish and British researchers led by Troels Kjaer and Hans Lou used PET scanning to look at dopamine, a brain chemical involved in motivation and reward, during the practice. They used a tracer, raclopride, which competes with the brain's own dopamine for the same receptors: the more dopamine is released, the less tracer can bind. Each participant, all experienced practitioners, was scanned twice, once while listening attentively to speech with eyes closed, and once during yoga nidra.
+
+During yoga nidra, tracer binding in the ventral striatum, a deep part of the brain at the heart of the reward system, fell by 7.9%. The authors calculated that this meant about a 65% increase in dopamine release. The change went together with more theta in the EEG. All the participants reported less desire for action during the practice, along with vivid sensory imagery. It is a single small study, and it measured dopamine indirectly, but it was one of the first to show a chemical change in the brain during meditation. In the 2020s the neuroscientist Andrew Huberman popularised practices like this under the name NSDR, non-sleep deep rest. The Yoga Nidra / NSDR session follows the classic structure: an intention (sankalpa), a body scan, deep rest, and a return.
+
+@ lacaux2021
+title: The creative sweet spot at sleep onset
+orig: English (published in France)
+by: Célia Lacaux, Delphine Oudiette and colleagues
+date: 2021
+fam: science
+kind: study
+cite: C. Lacaux, T. Andrillon, C. Bastoul, Y. Idir, A. Fonteix-Galet, I. Arnulf & D. Oudiette, "Sleep onset is a creative sweet spot", *Science Advances* 7 (2021): eabj5866.
+credit: Summarised in Assembly Sounds' own words.
+more: Salvador Dalí, *50 Secrets of Magic Craftsmanship* (1948), which describes his "slumber with a key".
+about:
+Thomas Edison is said to have napped in a chair holding steel balls, so that when he dozed off they would crash to the floor and wake him, letting him catch the ideas of the drowsy edge of sleep. The painter Salvador Dalí described a similar trick with a key held over a plate. In 2021 a team at the Paris Brain Institute, led by Delphine Oudiette, tested whether the edge of sleep really helps.
+
+They gave 103 volunteers a number puzzle that could be solved step by step, but much faster with a hidden shortcut that nobody was told about. Those who had not found the shortcut then rested for 20 minutes, holding an object in their right hand, while their EEG was recorded, and afterwards went back to the puzzle. Those who had spent at least 15 seconds in the first, lightest stage of sleep (N1), the hypnagogic "twilight", were nearly three times as likely to find the hidden rule: 83%, against 30% for those who stayed awake. The benefit disappeared in those who slipped into deeper sleep. So the creative "sweet spot" is short and easily overshot. The Hypnagogic Insight (Edison) session follows the recipe: pose the problem, drift in the twilight, then capture what came. Hold a light object in one hand; if it drops, that is your cue to come back.
+
+@ dream_incubation
+title: Dream incubation, from the temple to the sleep lab
+orig: English
+by: Deirdre Barrett; Adam Haar Horowitz, Robert Stickgold and colleagues
+date: 1993, 2020 and 2023
+fam: science
+kind: study
+cite: A. Haar Horowitz et al., "Dormio: a targeted dream incubation device", *Consciousness and Cognition* 83 (2020): 102938; A. Haar Horowitz, K. Esfahany, T. Vega Gálvez, P. Maes & R. Stickgold, "Targeted dream incubation at sleep onset increases post-sleep creative performance", *Scientific Reports* 13 (2023): 7319.
+credit: Summarised in Assembly Sounds' own words.
+more: D. Barrett, "The 'committee of sleep': a study of dream incubation for problem solving", *Dreaming* 3 (1993): 115–122.
+more: Deirdre Barrett, *The Committee of Sleep* (2001).
+about:
+Dream incubation is the deliberate seeding of a dream. In ancient Greece the sick slept in the temples of Asclepius, hoping for a healing dream (see the entry on the Asclepius temples). In 1993 the Harvard psychologist Deirdre Barrett asked students to choose a problem, from homework to personal matters, and to focus on it each night at bedtime for a week. About half dreamed about their problem, and a smaller number dreamed something they felt held a solution.
+
+At the MIT Media Lab, Adam Haar Horowitz and colleagues built Dormio, a sensor worn on the hand that tracks the signs of falling asleep, such as the muscles relaxing. As the wearer entered the hypnagogic twilight, a recorded voice reminded them of a theme, such as a tree, then woke them a few minutes later to report what they had seen, again and again. In their 2020 study the dream imagery took up the theme far more often. In 2023, with the Harvard sleep scientist Robert Stickgold, they reported that people whose naps were incubated with a theme did better afterwards on creative tasks about that theme than people who napped without incubation or stayed awake. The Dream Incubation session and the Hypnagogic Insight session use timed prompts instead of a sensor, so keep the volume low.
+
+@ lucid_research
+title: Lucid dreaming in the laboratory
+orig: English
+by: Keith Hearne; Stephen LaBerge; Ursula Voss; Denholm Aspy; Ken Paller's laboratory and others
+date: 1975 onward
+fam: science
+kind: review
+cite: S. LaBerge, L. E. Nagel, W. C. Dement & V. P. Zarcone, "Lucid dreaming verified by volitional communication during REM sleep", *Perceptual and Motor Skills* 52 (1981): 727–732; T. Stumbrys, D. Erlacher, M. Schädlich & M. Schredl, "Induction of lucid dreams: a systematic review of evidence", *Consciousness and Cognition* 21 (2012): 1456–1475.
+credit: Summarised in Assembly Sounds' own words.
+more: D. J. Aspy, P. H. Delfabbro, M. Proeve & P. Mohr, "Reality testing and the mnemonic induction of lucid dreams: findings from the national Australian lucid dream induction study", *Dreaming* 27 (2017): 206–231.
+more: D. J. Aspy, "Findings from the International Lucid Dream Induction Study", *Frontiers in Psychology* 11 (2020): 1746.
+more: U. Voss et al., "Induction of self awareness in dreams through frontal low current stimulation of gamma activity", *Nature Neuroscience* 17 (2014): 810–812.
+more: K. R. Konkoly et al., "Real-time dialogue between experimenters and dreamers during REM sleep", *Current Biology* 31 (2021): 1417–1427.
+more: M. Carr, K. Konkoly, R. Mallett, C. Edwards, K. Appel & M. Blagrove, "Combining presleep cognitive training and REM-sleep stimulation in a laboratory morning nap for lucid dream induction", *Psychology of Consciousness: Theory, Research, and Practice* 10 (2023): 413–430.
+more: Stephen LaBerge & Howard Rheingold, *Exploring the World of Lucid Dreaming* (1990).
+about:
+A lucid dream is a dream in which you know you are dreaming while the dream goes on. Aristotle mentioned the experience, and in 1913 the Dutch psychiatrist and writer Frederik van Eeden gave it its name. For a long time it was doubted: perhaps people only thought, after waking, that they had known. The proof came from the eyes. In REM sleep the body is paralysed, but the eyes still move. In 1975 Keith Hearne, at the University of Hull in England, asked the experienced lucid dreamer Alan Worsley to signal with a planned pattern of eye movements as soon as he knew he was dreaming. The signals appeared on the recording, in unmistakable REM sleep. At Stanford, Stephen LaBerge and colleagues showed the same independently, and published it in 1981.
+
+Since then lucid dreaming has become a laboratory tool. In 2009 Ursula Voss and colleagues found more gamma activity, around 40 Hz, over the front of the brain during lucid dreams. In 2014 they reported that weak electrical currents at 25 and 40 Hz, applied to the forehead during REM sleep, increased dreamers' self-awareness; this has not yet been firmly confirmed. In 2021 four laboratories, among them Ken Paller's team at Northwestern University, showed two-way communication with dreamers: lucid dreamers heard simple maths questions and answered them with eye movements from inside the dream. A 2012 review by Stumbrys and colleagues found that no induction method was yet reliable, but some were promising, and the field has since tested them in larger studies. The Lucid Dreaming Prompt, Targeted Lucidity Reactivation, Wake-Back-to-Bed, SSILD, Phase Technique and theta–gamma sessions all draw on this research.
+
+## The main techniques
+- **Reality testing**: checking during the day whether you are dreaming. On its own it did little in the one-week studies.
+- **Wake-back-to-bed (WBTB)**: sleep about five hours, wake for a short while, then go back to sleep, into the dream-rich early morning.
+- **MILD**, mnemonic induction of lucid dreams, developed by LaBerge: as you fall back asleep, rehearse a recent dream and resolve to recognise the next one. In Denholm Aspy's Australian study (2017), people who combined reality testing, WBTB and MILD had lucid dreams on about 17% of nights in the second week, up from about 9% in the first, and on almost half of their attempts when they fell asleep within five minutes.
+- **SSILD**, senses-initiated lucid dreaming: cycle attention through sight, hearing and body sensations, then let yourself fall asleep. In Aspy's international study (2020), with 355 participants, it worked about as well as MILD. Success was most likely in people with good dream recall who fell asleep within ten minutes.
+- **Targeted lucidity reactivation (TLR)**: before sleep, learn to link a soft sound with a lucid, questioning frame of mind, then hear the sound again during REM sleep. In a laboratory morning nap, Mitchell Carr, Karen Konkoly, Mark Blagrove and colleagues found that 50% of cued participants had a lucid dream confirmed by eye signals, against 17% without cues. At-home versions have since been tested, with encouraging but mixed results.
+- **Care**: lucid dreaming is generally safe. Waking in the night costs sleep, so do not use WBTB every night. Some people meet sleep paralysis on the way, which is harmless but can be frightening. If you have a psychotic or dissociative condition, talk to a professional first.
+
+@ obe_research
+title: Out-of-body experiences and the brain
+orig: English
+by: Olaf Blanke; Henrik Ehrsson; Andra Smith and Claude Messier; Enrico Facco and colleagues
+date: 2002 onward
+fam: science
+kind: review
+cite: O. Blanke, S. Ortigue, T. Landis & M. Seeck, "Stimulating illusory own-body perceptions", *Nature* 419 (2002): 269–270; H. H. Ehrsson, "The experimental induction of out-of-body experiences", *Science* 317 (2007): 1048.
+credit: Summarised in Assembly Sounds' own words.
+more: O. Blanke, T. Landis, L. Spinelli & M. Seeck, "Out-of-body experience and autoscopy of neurological origin", *Brain* 127 (2004): 243–258.
+more: B. Lenggenhager, T. Tadi, T. Metzinger & O. Blanke, "Video ergo sum: manipulating bodily self-consciousness", *Science* 317 (2007): 1096–1099.
+more: A. M. Smith & C. Messier, "Voluntary out-of-body experience: an fMRI study", *Frontiers in Human Neuroscience* 8 (2014): 70.
+more: E. Facco et al., "The neurophenomenology of out-of-body experiences induced by hypnotic suggestions", *International Journal of Clinical and Experimental Hypnosis* 67 (2019): 39–68.
+more: J. A. Cheyne & T. A. Girard, "The body unbound: vestibular-motor hallucinations and out-of-body experiences", *Cortex* 45 (2009): 201–215.
+more: Susan Blackmore, *Beyond the Body: An Investigation of Out-of-the-Body Experiences* (1982).
+about:
+In an out-of-body experience (OBE) a person feels that their self has left the body, and often seems to see the body from outside, usually from above. Surveys suggest that about one person in ten has at least one in their life. OBEs happen most often at the edges of sleep, in sleep paralysis, in deep relaxation, in near-death crises, and sometimes in migraine or epilepsy.
+
+In 2002 the neurologist Olaf Blanke and colleagues in Geneva were mapping the brain of a woman with epilepsy before surgery. When they stimulated a spot on her right angular gyrus, near where the temporal and parietal lobes meet, she said she saw herself lying in bed, from above. In 2004 Blanke's team linked OBEs in patients to this region, the *temporo-parietal junction*, which combines vision, touch and the sense of balance into a single sense of where "I" am. Balance matters too: floating and flying sensations are common in sleep paralysis, as Allan Cheyne and Todd Girard found, and swinging, rising and rotating imagery is part of many projection techniques. In 2007 Henrik Ehrsson, and separately Bigna Lenggenhager and colleagues in Blanke's group, created out-of-body illusions in healthy volunteers wearing video goggles fed by a camera behind them. When their body was touched while they watched a matching touch through the goggles, many felt located outside their own body.
+
+People who seem to have the experience at will have also been studied. In 2014 Andra Smith and Claude Messier, at the University of Ottawa, scanned a woman who could feel herself float above her body, spinning and rolling, while still aware of her body lying still. Her brain activity was mainly on the left side, in areas for planning movement and near the temporo-parietal junction, and in the cerebellum. The authors described it as an unusual kind of kinesthetic imagery, the felt sense of movement, different from ordinary motor imagery. In 2019 Enrico Facco and colleagues in Padua studied 15 highly hypnotisable volunteers, comparing their experience and EEG at rest with those during hypnotic suggestions to leave the body. The hypnotic experiences came with EEG changes over the right parietal and temporal regions, and the authors proposed hypnotic OBEs as a model for spontaneous ones. Earlier, in the 1970s, the parapsychologist John Palmer and colleagues had tried to produce OBEs in the laboratory with relaxation, a Ganzfeld and imagery of leaving the body; a minority of volunteers reported OBE-like experiences.
+
+What OBEs are is still debated. The brain research shows how the sense of being located in one's body is built, and how it can come loose. It does not show that anything actually leaves the body, and attempts to have people in an OBE read hidden targets have not produced convincing results. Many people find the experience meaningful whatever its explanation. The Astral Projection / OBE session and the Astral Projection & OBE sessions, from Kinesthetic Floating and the hypnotic and imagined viewpoints to the laboratory induction and the swing technique, draw on this research. Skip them if you have a psychotic or dissociative disorder.
+
+@ ganzfeld_research
+title: The Ganzfeld: an even field and the imagery it brings
+orig: German and English
+by: Wolfgang Metzger; Charles Honorton; Jiří Wackermann and Peter Pütz; Timo Torsten Schmidt and colleagues
+date: 1930 onward
+fam: science
+kind: review
+cite: W. Metzger, "Optische Untersuchungen am Ganzfeld", *Psychologische Forschung* 13 (1930): 6–29; J. Wackermann, P. Pütz & C. Allefeld, "Ganzfeld-induced hallucinatory experience, its phenomenology and cerebral electrophysiology", *Cortex* 44 (2008): 1364–1378.
+credit: Summarised in Assembly Sounds' own words.
+more: P. Pütz, M. Braeunig & J. Wackermann, "EEG correlates of multimodal ganzfeld induced hallucinatory imagery", *International Journal of Psychophysiology* 61 (2006): 167–178.
+more: T. T. Schmidt et al., "The multimodal Ganzfeld-induced altered state of consciousness induces decreased thalamo-cortical coupling", *Scientific Reports* 10 (2020).
+more: D. J. Bem & C. Honorton, "Does psi exist? Replicable evidence for an anomalous process of information transfer", *Psychological Bulletin* 115 (1994): 4–18.
+more: J. Milton & R. Wiseman, "Does psi exist? Lack of replication of an anomalous process of information transfer", *Psychological Bulletin* 125 (1999): 387–391.
+about:
+*Ganzfeld* is German for "whole field". In 1930 the Gestalt psychologist Wolfgang Metzger seated volunteers before an evenly lit, featureless wall that filled their whole view. With nothing to fix on, they saw a kind of fog instead of a surface, and after a while their sight could seem to fade away altogether. Later researchers made the method simple: halves of ping-pong balls over the eyes, a soft light, often red, and steady noise in headphones, so that both sight and hearing receive an even, unchanging input. This is the *multimodal Ganzfeld*. Deprived of change, the brain starts filling the field with its own images: first colours, flickers of light and patterns, then sometimes faces, landscapes and dream-like scenes, while the person stays awake.
+
+Jiří Wackermann, Peter Pütz and colleagues recorded the EEG during Ganzfeld sessions. They concluded that the images do not come from drowsiness: the Ganzfeld produces an activated waking state, and changes in the alpha rhythm in the 10 to 20 seconds before each reported image seemed to reflect attention shifting and an image forming. In 2020 Timo Torsten Schmidt and colleagues in Berlin used fMRI and found that during the Ganzfeld the thalamus, the brain's relay station for the senses, became less coupled with the cortex, as if the brain's normal sensory link were loosening. In more recent work at the University of Liège, Fort and colleagues found that red light produced more intense complex imagery than green. Comparing their results with a separate study of psilocybin, they reported that the complex imagery of the red-light Ganzfeld was about as intense as at a moderate dose, although the drug's overall effects were much stronger. That comparison was made across two different studies and is still preliminary.
+
+The Ganzfeld also has a famous place in parapsychology. From the 1970s Charles Honorton and others used it in telepathy experiments, in which a "receiver" in the Ganzfeld described their imagery while a "sender" elsewhere looked at a picture. In 1994 Daryl Bem and Honorton argued in *Psychological Bulletin* that the results showed a real effect; in 1999 Julie Milton and Richard Wiseman, analysing later studies, found none. Mainstream science does not accept that telepathy has been shown, and the argument is mostly about methods. The Ganzfeld — Red Light Imagery and Lab OBE Induction sessions use the even field for its imagery alone. The imagery is harmless and stops when you open your eyes, and the app's red light is steady and never flickers.
+
+@ mental_practice
+title: Mental practice: rehearsing in the mind
+orig: English
+by: J. E. Driskell, C. Copper and A. Moran; Deborah Feltz and Daniel Landers; Alvaro Pascual-Leone and others
+date: 1983 onward
+fam: science
+kind: review
+cite: J. E. Driskell, C. Copper & A. Moran, "Does mental practice enhance performance?", *Journal of Applied Psychology* 79 (1994): 481–492.
+credit: Summarised in Assembly Sounds' own words.
+more: D. L. Feltz & D. M. Landers, "The effects of mental practice on motor skill learning and performance: a meta-analysis", *Journal of Sport Psychology* 5 (1983): 25–57.
+more: A. Pascual-Leone et al., "Modulation of muscle responses evoked by transcranial magnetic stimulation during the acquisition of new fine motor skills", *Journal of Neurophysiology* 74 (1995): 1037–1045.
+more: G. Yue & K. J. Cole, "Strength increases from the motor program: comparison of training with maximal voluntary and imagined muscle contractions", *Journal of Neurophysiology* 67 (1992): 1114–1123.
+more: L. B. Pham & S. E. Taylor, "From thought to action: effects of process- versus outcome-based mental simulations on performance", *Personality and Social Psychology Bulletin* 25 (1999): 250–260.
+more: Gabriele Oettingen, *Rethinking Positive Thinking: Inside the New Science of Motivation* (2014).
+about:
+Mental practice means rehearsing a skill in the imagination, without moving. Athletes, musicians and surgeons use it widely. Does it work? In 1983 Deborah Feltz and Daniel Landers combined dozens of studies and found that mental practice helps, though less than real practice. In 1994 Driskell, Copper and Moran combined 35 studies and found a clear positive effect on performance. It was stronger for tasks with a large thinking component than for purely physical ones, and it faded as time passed after the practice.
+
+The brain takes the rehearsal seriously. In 1995 Alvaro Pascual-Leone and colleagues had volunteers learn a five-finger piano exercise over five days, either at the keyboard or only in their minds. Brain stimulation showed that the area controlling the finger muscles expanded in both groups, and mental practice alone brought performance a good way toward that of physical practice. In 1992 Guang Yue and Kelly Cole found that imagined strong contractions of a finger muscle increased its strength by about 22%, against about 30% for real training.
+
+For goals, the way you imagine matters. In a 1999 study Lien Pham and Shelley Taylor found that students who imagined the steps of studying for an exam did better than those who imagined only the outcome, a good grade. Gabriele Oettingen's research on *mental contrasting* found that dreaming only of the happy result can drain the energy to pursue it; pairing the wish with the obstacles in the way, and a plan for meeting them, works better. The Visualisation / Goals session gives you a relaxed alpha–theta state in which to rehearse: imagine the steps vividly, from the inside, including the obstacles and how you will meet them.
+
+@ headache_relax
+title: Relaxation, biofeedback and tension headache
+orig: English
+by: Thomas Budzynski, Johann Stoyva and colleagues; Yvonne Nestoriuc and colleagues
+date: 1973 and 2008
+fam: science
+kind: study
+cite: T. H. Budzynski, J. M. Stoyva, C. S. Adler & D. J. Mullaney, "EMG biofeedback and tension headache: a controlled outcome study", *Psychosomatic Medicine* 35 (1973): 484–496; Y. Nestoriuc, W. Rief & A. Martin, "Meta-analysis of biofeedback for tension-type headache: efficacy, specificity, and treatment moderators", *Journal of Consulting and Clinical Psychology* 76 (2008): 379–396.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Tension-type headache, a band-like pressure around the head, is the most common kind of headache. It is often linked with stress and with tight muscles in the forehead, jaw, neck and shoulders. In 1973 Thomas Budzynski, Johann Stoyva and colleagues at the University of Colorado gave people with chronic tension headache EMG biofeedback: sensors on the forehead turned the muscle's tension into a tone, so that they could hear it and learn to relax it, and they practised relaxing at home as well. Their headaches fell more than in a group given false feedback or no treatment.
+
+Biofeedback and relaxation training have since become standard non-drug treatments for tension-type headache. In 2008 Yvonne Nestoriuc and colleagues combined the studies of biofeedback and found a medium-to-large benefit, which lasted at follow-up. Binaural beats for headache have not been properly tested, and some people find any steady tone irritating during a headache. The Tension Headache Ease session is a gentle alpha relaxation: soften the forehead, jaw and shoulders, and breathe slowly. Keep the volume low.
+
+## See a doctor straight away for
+- a sudden, very severe headache, the worst you have ever had;
+- a headache with fever, a stiff neck or a rash;
+- a headache after a head injury;
+- a headache with weakness, numbness, confusion, trouble speaking or loss of vision;
+- a new or changed pattern of headaches, especially after the age of 50.
+
+@ metta_research
+title: Loving-kindness meditation in the laboratory
+orig: English
+by: Cendri Hutcherson, Emma Seppala and James Gross; Barbara Fredrickson and colleagues
+date: 2008
+fam: science
+kind: study
+cite: C. A. Hutcherson, E. M. Seppala & J. J. Gross, "Loving-kindness meditation increases social connectedness", *Emotion* 8 (2008): 720–724; B. L. Fredrickson, M. A. Cohn, K. A. Coffey, J. Pek & S. M. Finkel, "Open hearts build lives: positive emotions, induced through loving-kindness meditation, build consequential personal resources", *Journal of Personality and Social Psychology* 95 (2008): 1045–1062.
+credit: Summarised in Assembly Sounds' own words.
+more: S. G. Hofmann, P. Grossman & D. E. Hinton, "Loving-kindness and compassion meditation: potential for psychological interventions", *Clinical Psychology Review* 31 (2011): 1126–1132.
+more: Sharon Salzberg, *Lovingkindness: The Revolutionary Art of Happiness* (1995).
+about:
+Mettā, loving-kindness, is the Buddhist practice of wishing well to yourself and others in widening circles (see the Mettā Sutta and the Path of Purification). Since 2008 it has been studied in psychology laboratories. At Stanford, Cendri Hutcherson, Emma Seppala and James Gross asked volunteers who had never meditated to spend just a few minutes sending loving-kindness toward a photograph of a stranger, while others did a closely matched imagery exercise. Those who practised loving-kindness felt more connected to, and more positive toward, the stranger and other strangers. This showed both in what they reported and in quick, automatic reactions measured by a computer task.
+
+Barbara Fredrickson and colleagues taught working adults loving-kindness meditation in a seven-week workshop, and compared them with a waiting list. Over the weeks the meditators felt more positive emotions day to day. These in turn built personal resources, such as a sense of purpose, mindfulness, good relations with others and fewer symptoms of illness, which predicted greater satisfaction with life and fewer symptoms of depression. The research is promising, but many studies are small and short. The Loving-Kindness (Mettā) Phrases session follows the classic order of persons. If the practice toward yourself, or toward a difficult person, stirs up grief or anger, go gently: return to an easier person, or to the breath.
+
+@ shamatha_project
+title: The Shamatha Project
+orig: English
+by: Clifford Saron, B. Alan Wallace, Katherine MacLean and colleagues
+date: 2007 onward
+fam: science
+kind: study
+cite: K. A. MacLean et al., "Intensive meditation training improves perceptual discrimination and sustained attention", *Psychological Science* 21 (2010): 829–839.
+credit: Summarised in Assembly Sounds' own words.
+more: B. K. Sahdra et al., "Enhanced response inhibition during intensive meditation training predicts improvements in self-reported adaptive socioemotional functioning", *Emotion* 11 (2011): 299–312.
+more: T. L. Jacobs et al., "Intensive meditation training, immune cell telomerase activity, and psychological mediators", *Psychoneuroendocrinology* 36 (2011): 664–681.
+more: B. Alan Wallace, *The Attention Revolution: Unlocking the Power of the Focused Mind* (2006).
+about:
+The Shamatha Project is one of the most thorough studies of intensive meditation ever made. It was led by the neuroscientist Clifford Saron of the University of California, Davis, with the Buddhist teacher and scholar B. Alan Wallace as the meditation teacher. Sixty meditators were randomly assigned either to a three-month retreat or to a waiting list, and the waiting group did the same retreat afterwards. On retreat they practised for about five hours a day, mostly *shamatha*, the training of calm, stable and clear attention, along with practices of loving-kindness and compassion.
+
+In 2010 Katherine MacLean and colleagues reported that the retreat improved fine visual discrimination, telling apart lines of very similar length, and vigilance, the ability to keep attention steady through a long, dull task. Later papers from the project reported better impulse control, linked with gains in emotional well-being (Sahdra and colleagues, 2011), and higher activity of telomerase, an enzyme involved in the health of ageing cells, at the end of the retreat (Jacobs and colleagues, 2011). Follow-ups years later suggested that the attention gains lasted best in people who kept practising. Shamatha is the Tibetan training mapped in nine stages by Asanga and Kamalashila (see the entry on the stages of shamatha). The Shamatha — Calm Abiding session follows Wallace's sequence: mindfulness of breathing, settling the mind in its natural state, and awareness of awareness.

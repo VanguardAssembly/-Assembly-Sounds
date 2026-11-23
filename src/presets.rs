@@ -53,7 +53,7 @@ fn p(group: &str, id: &str, name: &str, short: &str, carriers: &[f64], gains: &[
         id: id.into(), group: group.into(), name: name.into(), short: short.into(),
         carriers: carriers.to_vec(), gains: gains.to_vec(), noise: noise.into(), mode: mode.into(),
         evidence: evidence.into(), about: about.into(), stages, live: false,
-        texture: None, music: None, visual: String::new(), tags: Vec::new(), trad: Vec::new(), info: None, guide: None,
+        texture: None, music: None, visual: String::new(), tags: Vec::new(), trad: Vec::new(), info: None, guide: None, texts: Vec::new(),
     }
 }
 
@@ -154,7 +154,7 @@ pub fn all() -> Vec<Preset> {
       "<p>Based on Lane et al. (1998, <i>Physiology &amp; Behavior</i>). In that study, beta-range beats (16–24 Hz) improved vigilance and lowered negative mood compared with theta/delta beats.</p>",
       vec![st("Warm up", 3.0, &[12.0], "Open the task you are about to work on."), st("Focus", 22.0, &[16.0], C_FOCUS)]));
     v.push(p(g, "gamma", "Gamma — 40 Hz", "Creativity · 20 min", &[300.0], &[1.0], "pink", "binaural", "Research",
-      "<p>Gamma-range binaural beats affected divergent-thinking scores in Reedijk et al. (2015, <i>Frontiers in Human Neuroscience</i>). The effect depended on each person's baseline dopamine level.</p>",
+      "<p>Gamma-range binaural beats affected divergent-thinking scores in Reedijk et al. (2013, <i>Frontiers in Human Neuroscience</i>). The effect depended on each person's baseline dopamine level.</p>",
       vec![st("Settle", 3.0, &[14.0], C_SETTLE), st("Gamma", 17.0, &[40.0], "Bright, integrated awareness.")]));
     v.push(p(g, "genus", "40 Hz Isochronic (GENUS-style)", "Auditory 40 Hz · 30 min", &[440.0], &[1.0], "none", "isochronic", "Research",
       "<p>MIT studies (Martorell et al., 2019, <i>Cell</i>) found that 40 Hz auditory tone pulses improved memory measures in mouse models of Alzheimer's disease. Human trials are ongoing. This plays <b>isochronic</b> pulses, the type of stimulus those studies used, not binaural beats. It is not a treatment.</p>",
@@ -408,7 +408,7 @@ pub fn all() -> Vec<Preset> {
 
     // ---- more researched and traditional methods (v1.6)
     v.push(p(g, "ap_hypnotic", "Hypnotic Out-of-Body Suggestion (Facco 2019)", "Hypnosis-induced OBE · 24 min", &[200.0], &[0.6], "surf", "binaural", "Research",
-      "<p>In a lab study of a highly hypnotisable person, hypnotic suggestions to leave the body produced vivid out-of-body experiences with measurable EEG changes, which differed from simply imagining the same scene (<b>Facco et al., 2019, <i>International Journal of Clinical and Experimental Hypnosis</i></b>). This session uses the same building blocks: a hypnotic induction, a deepener, suggestions to rise out of the body and look back from above, then a careful return. How vivid it gets depends a lot on how hypnotisable you are. You stay in control and can open your eyes at any time. <b>Skip this if you have a psychotic or dissociative disorder.</b></p>",
+      "<p>In a lab study of highly hypnotisable people, hypnotic suggestions to leave the body produced vivid out-of-body experiences with measurable EEG changes, which differed from simply imagining the same scene (<b>Facco et al., 2019, <i>International Journal of Clinical and Experimental Hypnosis</i></b>). This session uses the same building blocks: a hypnotic induction, a deepener, suggestions to rise out of the body and look back from above, then a careful return. How vivid it gets depends a lot on how hypnotisable you are. You stay in control and can open your eyes at any time. <b>Skip this if you have a psychotic or dissociative disorder.</b></p>",
       vec![st("Welcome", 1.0, &[10.0], "Welcome to the hypnotic out of body session. You remain in control throughout, and you can return at any time simply by opening your eyes. Lie back somewhere you will not be disturbed, and rest your gaze on a spot on the ceiling."),
            st("Eyelids", 2.0, &[9.0], "Keep watching that spot. Your eyelids grow heavier with each breath, heavier and heavier. When they want to close, let them close, and let a wave of comfort spread through you."),
            st("Relaxation", 3.0, &[7.0], C_BODY),
@@ -534,7 +534,7 @@ pub fn all() -> Vec<Preset> {
         }
         s.push(st("Fall asleep", 22.5, &[4.0], "Now let go of the technique completely, and drift off to sleep as quickly as you can. If you notice you are dreaming, stay calm, and remember: this is a dream.").ramp(120.0));
         v.push(p(g, "ap_ssild", "Senses-Initiated Lucid Dream (SSILD) — Aspy 2020", "Lucid-dream route · 30 min", &[150.0], &[0.4], "brown", "binaural", "Research",
-          "<p>In the <b>International Lucid Dream Induction Study</b> (Aspy, Madden &amp; Delfabbro, 2020, <i>Frontiers in Psychology</i>), the <b>senses-initiated</b> technique (SSILD) worked about as well as MILD, the classic intention technique, and success was more likely when people fell asleep soon afterwards. After about 5 hours of sleep you get up briefly, then lie down and cycle your attention through sight, hearing and body sensations: several quick cycles, then a few slow ones, then let yourself fall asleep. Lucid dreams are the most common doorway to induced out-of-body experiences.</p>", s));
+          "<p>In the <b>International Lucid Dream Induction Study</b> (Aspy, 2020, <i>Frontiers in Psychology</i>), the <b>senses-initiated</b> technique (SSILD) worked about as well as MILD, the classic intention technique, and success was more likely when people fell asleep soon afterwards. After about 5 hours of sleep you get up briefly, then lie down and cycle your attention through sight, hearing and body sensations: several quick cycles, then a few slow ones, then let yourself fall asleep. Lucid dreams are the most common doorway to induced out-of-body experiences.</p>", s));
     }
 
     v.push(p(g, "ap_ground", "After-Practice Grounding", "Integration · 10 min", &[194.18], &[0.8], "surf", "binaural", "Traditional",
@@ -1034,6 +1034,8 @@ pub fn all() -> Vec<Preset> {
         }
     }
     crate::info::fill(&mut v);
+    // 1.9: link every session to the scripture, treatise, manual or study it comes from
+    crate::texts::link(&mut v);
     auto_tags(&mut v, &first);
 
     // assign cue ids

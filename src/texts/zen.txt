@@ -1,0 +1,340 @@
+// Zen, Chan and Seon texts.
+
+@ heart_sutra
+title: The Heart Sutra
+orig: Prajñāpāramitā Hṛdaya (Sanskrit); 般若波羅蜜多心經, Bore boluomiduo xin jing (Chinese); Maka hannya haramita shingyō (Japanese)
+by: anonymous; the Chinese version chanted today is Xuanzang's
+date: Xuanzang's Chinese text 649 CE
+fam: zen
+kind: sutra
+credit: Assembly Sounds' own rendering from Xuanzang's Chinese and the Sanskrit.
+full: yes
+more: Red Pine, *The Heart Sutra: The Womb of Buddhas* (2004).
+more: Donald S. Lopez Jr., *The Heart Sutra Explained: Indian and Tibetan Commentaries* (1988).
+more: Norman Waddell, trans., *Zen Words for the Heart: Hakuin's Commentary on the Heart Sutra* (1996).
+more: Jan Nattier, "The Heart Sūtra: A Chinese Apocryphal Text?", *Journal of the International Association of Buddhist Studies* 15 (1992).
+about:
+The Heart Sutra is the shortest of the Perfection of Wisdom (*Prajñāpāramitā*) sūtras, and the most chanted text in Mahāyāna Buddhism. In Zen and Chan temples it is recited every day. In Tibet it is chanted before teachings, and in Japan it is often copied out by hand as a devotion. It holds the whole of the long Perfection of Wisdom literature in a single page. In it Avalokiteśvara, the bodhisattva of compassion, explains to Śāriputra that every part of experience is "empty": it has no fixed, separate self.
+
+Emptiness here does not mean nothing. It means that things arise only in dependence on one another, so the same emptiness is what lets form appear at all: "form is emptiness, emptiness is form". The sūtra ends with a mantra that is chanted on its own all over Asia. Scholars still debate where the short text was first written. Some, following Jan Nattier (1992), think it was composed in Chinese and then put into Sanskrit. Below is the whole sūtra in Xuanzang's version.
+
+## The Heart of the Perfection of Wisdom Sutra
+= Kan ji zai bo sa gyō jin han nya ha ra mi ta ji shō ken go on kai kū do is sai ku yaku
+When the bodhisattva Avalokiteśvara was practising deeply the perfection of wisdom, he saw clearly that all five aggregates are empty, and so passed beyond all suffering and distress.
+
+Śāriputra, form is not other than emptiness, and emptiness is not other than form. Form is emptiness, and emptiness is form. It is the same with feeling, perception, mental formations and consciousness.
+
+Śāriputra, all things are marked by emptiness. They are not born and do not die. They are not stained and not pure. They do not increase and do not decrease.
+
+So in emptiness there is no form, no feeling, no perception, no mental formations and no consciousness. There is no eye, ear, nose, tongue, body or mind; no sight, sound, smell, taste, touch or object of mind. There is no realm of the eye, and so on, up to no realm of mind-consciousness. There is no ignorance and no end of ignorance, and so on, up to no old age and death and no end of old age and death. There is no suffering, no cause of suffering, no ending of suffering and no path. There is no wisdom and no attainment, because there is nothing to attain.
+
+Because the bodhisattva relies on the perfection of wisdom, the mind has no obstruction. With no obstruction, there is no fear. Far beyond all upside-down views and dreams, the bodhisattva reaches final nirvana. All the buddhas of past, present and future rely on the perfection of wisdom, and so attain complete, unsurpassed awakening.
+
+Know, then, that the perfection of wisdom is the great mantra of power, the great mantra of light, the unsurpassed mantra, the mantra without equal. It removes all suffering. It is true, not false. So the mantra of the perfection of wisdom is spoken. It says:
+
+## The mantra
+= Gate gate pāragate pārasaṃgate bodhi svāhā
+= Gya tei gya tei ha ra gya tei hara sō gya tei bo ji so wa ka
+Gone, gone, gone beyond, gone completely beyond: awakening, so be it!
+
+@ mumonkan
+title: The Gateless Gate, Case 1: Zhaozhou's Dog
+orig: 無門關, Wumenguan (Chinese); Mumonkan (Japanese)
+by: compiled by Wumen Huikai (Mumon Ekai, 1183–1260); the dialogue is Zhaozhou Congshen's (778–897)
+date: 1228
+fam: zen
+kind: teaching
+credit: Assembly Sounds' own rendering from the Chinese.
+more: Robert Aitken, trans., *The Gateless Barrier: The Wu-men Kuan* (1990).
+more: Kōun Yamada, trans., *The Gateless Gate* (1979; revised 2004).
+more: Zenkei Shibayama, *Zen Comments on the Mumonkan* (1974).
+about:
+The *Gateless Gate* is a collection of forty-eight kōans, short dialogues and stories of the Chinese masters. Each has a comment and a verse by the monk Wumen Huikai, who put it together in 1228. A kōan is not a riddle with a clever answer. It is a live question that the student takes into meditation and lets work on them. In private interviews they then show the teacher what they have understood, not in ideas but in their whole being.
+
+Case 1, Zhaozhou's dog, is the most famous kōan of all. In Rinzai Zen it is often the first one a student is given. Buddhism teaches that all beings have Buddha-nature, the capacity to awaken. So when Zhaozhou answers *Wu*, in Japanese *Mu*, meaning "no" or "not", the student is thrown into "great doubt". Wumen's comment is a fierce, vivid description of how to work with it. The Mu session follows his advice: breathe Mu, let the doubt gather, and become nothing but Mu. Like every kōan, Mu is really meant to be taken up with a teacher.
+
+## The case
+A monk asked Zhaozhou, "Does a dog have Buddha-nature or not?"
+
+Zhaozhou said, "*Wu!*"
+
+## Wumen's comment
+To practise Zen you must pass through the barrier of the ancestors. To reach wondrous awakening you must cut off the road of the mind completely. If you do not pass the barrier and do not cut off the road of the mind, you are like a ghost that clings to grass and trees.
+
+So what is this barrier of the ancestors? It is just this one word, *Wu*. It is the one barrier of our school, so I call it "the gateless barrier of Zen". Whoever passes through it will not only meet Zhaozhou face to face. They will walk hand in hand with all the ancestors, eyebrows tangled with theirs, seeing with the same eye and hearing with the same ear. What joy that would be!
+
+Do you want to pass through? Then with your three hundred and sixty bones and eighty-four thousand pores, with your whole body, rouse a great mass of doubt, and give yourself to this word *Wu*. Carry it day and night. Don't take it as "nothingness", and don't take it as "has" or "has not". It is like swallowing a red-hot iron ball: you try to spit it out, and you can't.
+
+Burn away all the wrong knowing and wrong feeling you had before. In time it ripens, and inside and outside become one by themselves. You are like a mute person who has had a dream: you know it for yourself, but cannot tell it. Then suddenly it bursts open, and heaven is astonished and the earth shakes. It is as if you had seized the great sword of General Guan. Meeting a buddha, you cut the buddha down; meeting an ancestor, you cut the ancestor down. (That is, you cling to nothing at all, not even the holiest image.) On the very edge of life and death you are completely free, and you play in samādhi among all the realms of birth.
+
+And how do you carry it? With all the strength of your life, take up this *Wu*. If you keep at it without a break, it is like a candle on the altar: one touch of flame, and it is lit.
+
+## Wumen's verse
+> The dog, the Buddha-nature:
+> the whole truth, the true command.
+> The moment you touch "has" or "has not",
+> you lose your body, you lose your life.
+
+@ hakuin
+title: Hakuin's Song of Zazen and the soft butter method
+orig: 坐禅和讃, Zazen wasan; 夜船閑話, Yasenkanna, "Idle Talk on a Night Boat" (Japanese)
+by: Hakuin Ekaku (1686–1769)
+date: the *Song* 18th century; *Yasenkanna* 1757
+fam: zen
+kind: teaching
+credit: Assembly Sounds' own rendering from the Japanese; the soft butter method retold in our own words.
+more: Norman Waddell, trans., *Wild Ivy: The Spiritual Autobiography of Zen Master Hakuin* (1999).
+more: Norman Waddell, trans., *Hakuin's Precious Mirror Cave: A Zen Miscellany* (2009).
+about:
+Hakuin Ekaku revived Japanese Rinzai Zen in the 18th century. Nearly every Rinzai teacher today traces their lineage through him. He was a tireless teacher of ordinary people and a painter and calligrapher. His students arranged the kōan curriculum still used in Rinzai monasteries, and he invented a famous kōan of his own: "You know the sound of two hands clapping. What is the sound of one hand?"
+
+His *Song of Zazen* is chanted in Rinzai temples to this day. Its first lines, "All beings are from the very beginning buddhas", sum up his whole teaching. The *Mu* session ends with its spirit.
+
+As a young monk Hakuin practised so hard that he fell seriously ill, with burning in the head, cold legs, ringing ears and fear. In *Idle Talk on a Night Boat* (1757) he tells how a hermit named Hakuyū, who lived in a cave in the hills near Kyoto, taught him to heal himself. One of the hermit's methods was the *soft butter method*, still loved as a Zen relaxation. The Soft Butter session follows it.
+
+## Song of Zazen (complete)
+> All beings are buddhas from the very beginning.
+> It is like water and ice:
+> apart from water there is no ice,
+> and apart from beings there are no buddhas.
+> Not knowing how near it is, they search for it far away. How sad!
+> They are like someone standing in water, crying out with thirst,
+> like the child of a rich family wandering lost among the poor.
+> The cause of our circling through the six realms
+> is that we walk the dark road of our own ignorance.
+> Going from one dark road to another,
+> when will we ever be free of birth and death?
+>
+> The meditation of the Great Vehicle is beyond all praise.
+> Giving, keeping the precepts and the other perfections,
+> calling the Buddha's name, repentance, training,
+> and all the many good deeds: all of them return to it.
+> Whoever sits in zazen even once
+> wipes away countless wrongs.
+> Where then are the dark paths?
+> The Pure Land itself is not far away.
+> Whoever hears this teaching even once,
+> and praises it and gladly embraces it,
+> will be blessed without end.
+>
+> How much more, then, if you turn within
+> and directly realise your own nature:
+> your own nature that is no-nature,
+> far beyond idle words.
+> The gate opens where cause and effect are one;
+> the road runs straight, not two and not three.
+> Taking the form of no-form as your form,
+> going or returning, you are never anywhere but home.
+> Taking the thought of no-thought as your thought,
+> your singing and dancing are the voice of the Dharma.
+> How vast the open sky of samādhi!
+> How bright the full moon of the fourfold wisdom!
+> At this moment, what more is there to seek?
+> Nirvana is right here before you.
+> This very place is the Lotus Land,
+> and this very body is the Buddha.
+
+## The soft butter method (retold)
+Imagine that a lump of soft butter, pure in colour and fragrant, about the size and shape of a duck's egg, has been placed on the top of your head. As it slowly warms, it begins to melt. It seeps down through the head, soaking and soothing it, and flows over the shoulders and arms, down through the chest and into the lungs, the liver, the stomach and the belly, and down along the spine to the hips.
+
+As it flows, every ache and every knot of tension, every illness gathered in the body, dissolves and flows down with it, like water running downhill. It goes on flowing through the legs, warming them, and gathers in the soles of the feet, where it stops.
+
+Then imagine that the melted butter collects around the lower body like a warm, fragrant herbal bath, prepared by a skilled healer, until you are soaking in it up to the navel. Hakuin says that if you practise this diligently, the body is filled with warmth and well-being, and every illness can be healed. Repeat it as often as you like.
+
+@ fukanzazengi
+title: Dōgen's Universal Recommendation for Zazen
+orig: 普勧坐禅儀, Fukanzazengi (Japanese; written in Chinese)
+by: Eihei Dōgen (1200–1253)
+date: first written 1227; revised in the following years
+fam: zen
+kind: manual
+credit: Assembly Sounds' own rendering from the Chinese.
+full: yes
+more: Carl Bielefeldt, *Dōgen's Manuals of Zen Meditation* (1988).
+more: Kazuaki Tanahashi, ed., *Moon in a Dewdrop: Writings of Zen Master Dōgen* (1985).
+more: Shunryu Suzuki, *Zen Mind, Beginner's Mind* (1970).
+about:
+Dōgen was a Japanese monk who went to China in 1223 searching for a true teacher. He found one in the Caodong master Tiantong Rujing, and under him he experienced "body and mind dropping away". In 1227 he came home and wrote this short text. It became the founding document of Sōtō Zen, which is today the largest Zen school in Japan. Its title says what it is: a recommendation of zazen to everyone, monk or lay, clever or slow.
+
+The *Fukanzazengi* is still chanted in Sōtō temples. It gives the posture and the breath, and the famous instruction to "think of not-thinking". The way to do that is "non-thinking": not pushing thoughts away and not following them, but sitting in open, wakeful presence. For Dōgen this sitting is not a method for becoming enlightened. The sitting itself is awakening. The Shikantaza session follows it, and so does the Zen alpha-to-theta session. Below is the whole text, in its revised form.
+
+## Universal Recommendation for Zazen
+The Way is complete and reaches everywhere from the start. How could it depend on practice and realisation? The vehicle of truth is free in itself. Why spend effort on it? The whole of it is far beyond the dust. Who would think it needs to be wiped clean? It is never apart from right here. Why go anywhere to practise it?
+
+And yet, if there is the slightest gap, heaven and earth are split apart. If the least liking or disliking arises, the mind is lost in confusion. You may be proud of your understanding and rich in insight. You may catch a glimpse of wisdom, attain the Way and clarify the mind, with a spirit that pierces the sky. Yet though you wander about the entrance, you still lack the living road that leads out of the body.
+
+Think of the Buddha in the Jeta Grove: though he was wise from birth, the traces of his six years of upright sitting can still be seen. Think of Bodhidharma at Shaolin, who passed on the seal of the mind: his nine years facing a wall are still spoken of. If the sages of old did so, how can people today not do the same?
+
+So give up the practice of chasing words and following phrases. Learn the backward step that turns the light around to shine within. Body and mind will drop away of themselves, and your original face will appear. If you want to attain such a thing, get to work on such a thing at once.
+
+## How to sit
+For zazen a quiet room is best. Eat and drink in moderation. Let go of all your involvements, and set aside all your affairs. Do not think of good or bad, and do not judge right and wrong. Stop the turning of mind, will and consciousness. Stop measuring with thoughts, ideas and views. Have no aim of becoming a buddha. How could that have anything to do with sitting or lying down?
+
+Where you usually sit, spread a thick mat, and put a round cushion on it. Sit in either the full lotus or the half lotus position. In the full lotus, first put your right foot on your left thigh, then your left foot on your right thigh. In the half lotus, simply rest your left foot on your right thigh. Loosen your robes and belt, and arrange them neatly.
+
+Then put your right hand on your left foot, and your left hand on your right palm, with the tips of the thumbs lightly touching. Sit straight and upright, leaning neither left nor right, neither forward nor back. Your ears should be in line with your shoulders, and your nose in line with your navel. Rest your tongue against the roof of your mouth, with lips and teeth closed. Keep your eyes always open. Breathe gently through the nose.
+
+When your posture is settled, take one breath and let it out fully, and sway left and right. Then settle into steady, immovable sitting, and think of not-thinking. How do you think of not-thinking? Non-thinking. This is the essential art of zazen.
+
+## What zazen is
+The zazen I speak of is not learning meditation. It is simply the Dharma gate of peace and joy, the practice and realisation of complete awakening. Here the kōan of reality appears by itself, and no trap or snare can reach it. If you grasp this, you are like a dragon that has found water, like a tiger on its mountain. Know that the true Dharma appears of itself, and dullness and distraction drop away at the start.
+
+When you rise from sitting, move slowly and quietly, calmly and steadily. Do not get up suddenly or roughly.
+
+Look back: going beyond the ordinary and the sacred, and dying while sitting or standing, all depend on this power. And the moments of awakening at a raised finger, a pole, a needle or a mallet, at a whisk, a fist, a staff or a shout, cannot be understood by thinking and discrimination. Nor can they be known through supernatural powers, or through practice and realisation. They are a way of being beyond sound and form, a pattern that comes before knowledge and views.
+
+So it does not matter whether you are clever or slow, quick or dull. To give yourself to this single-mindedly is itself to pursue the Way. Practice and realisation are by nature unstained, and to go forward on this path is the most ordinary thing.
+
+## Do not waste your life
+In this world and in others, in India and in China, all alike hold the seal of the Buddha, and one way of practice prevails everywhere. Just give yourself to sitting, and be absorbed in immovable sitting. Though there are ten thousand distinctions and a thousand differences, just sit, and pursue the Way. Why leave the sitting place of your own home to wander in the dusty lands of other countries? Take one wrong step, and you go right past it.
+
+You have already been given the precious gift of a human body. Do not let the days and months go by in vain. You are guarding the essential working of the Buddha Way. Who would take idle pleasure in a spark struck from a flint? The body is like dew on the grass, and life is like a flash of lightning. In an instant it is empty; in a moment it is gone.
+
+Honoured students of Zen, you have long been like the blind groping at an elephant. Do not be startled now by the real dragon. Devote yourselves to the Way that points directly to the truth. Revere the one who has gone beyond learning and has nothing left to do. Join in the awakening of all buddhas, and become the true heir of the samādhi of all the ancestors. Practise in this way for a long time, and you will become this way. The treasure house will open of itself, and you will use it as you wish.
+
+@ hongzhi
+title: Hongzhi's Silent Illumination
+orig: 默照銘, Mozhao ming, "Inscription on Silent Illumination" (Chinese)
+by: Hongzhi Zhengjue (1091–1157); modern teaching by Master Sheng Yen (1931–2009)
+date: 12th century
+fam: zen
+kind: poem
+credit: Assembly Sounds' own rendering from the Chinese; Sheng Yen's stages summarised in our own words.
+more: Taigen Dan Leighton & Yi Wu, trans., *Cultivating the Empty Field: The Silent Illumination of Zen Master Hongzhi* (1991; revised 2000).
+more: Sheng Yen with Dan Stevenson, *Hoofprint of the Ox* (2001).
+more: Sheng Yen, *The Method of No-Method: The Chan Practice of Silent Illumination* (2008).
+about:
+Hongzhi Zhengjue was abbot of the Tiantong monastery in China, the same monastery where Dōgen later trained. He was the great teacher of the Caodong school's "silent illumination" (*mozhao*). In this kind of meditation you hold no question and no object. You simply sit in still, open, bright awareness. *Silence* is the stillness that does not grasp; *illumination* is the clarity that knows everything that appears. Hongzhi insisted they must go together.
+
+His contemporary Dahui attacked silent illumination as "dead sitting" and championed the kōan instead (see the huatou text). The debate shaped Chinese and Japanese Zen for centuries. In the 20th century the Chan master Sheng Yen revived silent illumination and taught it in stages, which the Silent Illumination session follows.
+
+## From the Inscription on Silent Illumination (selected lines, rendered)
+= 默默忘言　昭昭現前
+> Silent and still, forgetting words,
+> clear and bright, it appears before you.
+> When you see it, it is vast and open;
+> where you live it, it is fully alive.
+> Alive and alone it shines,
+> and in the shining there is wonder:
+> dew and moonlight, stars and the river of the sky,
+> snow on the pines, clouds on the peaks.
+> In darkness it grows brighter;
+> hidden, it shows itself all the more.
+> A crane dreams in the cold mist;
+> the autumn water reaches far away.
+
+> Wonder lives in the silence;
+> effort is forgotten in the illumination.
+> If illumination loses silence,
+> it turns into force and grasping.
+> If silence loses illumination,
+> it sinks into dull, murky stillness.
+> When silence and illumination are whole,
+> the lotus opens and the dreamer wakes.
+
+## Sheng Yen's stages, in brief
+1. **Relax the body**, part by part, until there is no tension anywhere.
+2. **Be aware of the whole body sitting**, all at once, not part by part.
+3. **Let the body's edges open** to include the whole environment: sounds, light and space, with nothing chosen and nothing pushed away.
+4. **Rest in silent, clear awareness**, with no inside and outside. When the mind wanders, simply return to the whole.
+
+@ huatou
+title: Huatou: looking into the question
+orig: 話頭, huatou, "head of the word" (Chinese); 念佛是誰, "Who is reciting the Buddha's name?"
+by: Dahui Zonggao (1089–1163); Xuyun, "Empty Cloud" (traditionally 1840–1959)
+date: 12th century; 20th-century talks
+fam: zen
+kind: teaching
+credit: Summarised and rendered in Assembly Sounds' own words.
+more: Christopher Cleary, trans., *Swampland Flowers: The Letters and Lectures of Zen Master Ta Hui* (1977).
+more: Charles Luk (Lu K'uan Yü), *Ch'an and Zen Teaching, First Series* (1960), with Xuyun's talks at two Chan weeks.
+more: Charles Luk, trans., *Empty Cloud: The Autobiography of the Chinese Zen Master Xu Yun* (revised by Richard Hunn, 1988).
+about:
+Dahui Zonggao was the most influential Chan teacher of the Song dynasty. He wrote many letters to scholar-officials who were busy with families and government work. In them he taught that they did not need hours of silent sitting. They needed to carry a single *huatou*, the "head" of a kōan, such as Zhaozhou's *Wu*, through every moment of the day, until doubt gathered into one burning point and broke open. "Great doubt, great awakening; small doubt, small awakening," the saying goes.
+
+Eight centuries later, Xuyun ("Empty Cloud") revived Chan in China, rebuilding monasteries and teaching thousands of monks. He was said to have lived to about 119. He usually gave the huatou "Who is reciting the Buddha's name?", which joined Chan to Pure Land chanting. The Huatou session uses this question, and the Mu session uses Dahui's *Wu*.
+
+## What a huatou is (Xuyun, rendered)
+*Hua* is a word and *tou* is its head. The huatou is the mind before a word arises. As soon as a thought has arisen, it is already the tail of the word. Before the thought, there is no birth and no death: that is the huatou. Looking into it means turning the light around to shine on the mind itself, turning the hearing back to hear one's own nature.
+
+Ask, "Who is reciting the Buddha's name?" Do not answer with thought. Do not repeat the words like a parrot. Look into the *who*, gently and steadily, and let the feeling of not-knowing grow. That feeling is the doubt.
+
+## Dahui's warnings, in brief
+In his letters Dahui warns students working on *Wu* again and again:
+- Do not take it as "has" or "has not", and do not take it as empty nothingness.
+- Do not try to reason it out, or explain it with doctrine or the scriptures.
+- Do not settle into a pleasant blank state and call it peace.
+- Do not wait for awakening, holding the mind still in expectation.
+- Just keep raising the word, in walking, standing, sitting and lying down. When you can't make any sense of it and the mind has nowhere to go, do not be afraid. That is exactly the right place.
+
+@ chinul
+title: Chinul's Secrets on Cultivating the Mind and the question "What is this?"
+orig: 修心訣, Susim kyŏl (Korean, written in Chinese); 이 뭣고, imwotko, "What is this?"
+by: Pojo Chinul (1158–1210); the modern hwadu as taught by Kusan Sunim (1909–1983)
+date: c. 1200
+fam: zen
+kind: teaching
+credit: Assembly Sounds' own rendering from the Chinese.
+more: Robert E. Buswell Jr., trans., *Tracing Back the Radiance: Chinul's Korean Way of Zen* (1991).
+more: Kusan Sunim, *The Way of Korean Zen* (1985).
+more: Stephen Batchelor, *The Faith to Doubt: Glimpses of Buddhist Uncertainty* (1990), on training with Kusan Sunim.
+about:
+Chinul is the founding figure of Korean Seon Buddhism. He brought together study of the scriptures and meditation, and he founded the community that became Songgwangsa, one of Korea's three "jewel" monasteries. He brought the *hwadu* (in Chinese, *huatou*), the method of looking into a question, from Dahui's writings to Korea. Today it is the central practice of the Jogye Order.
+
+In his *Secrets on Cultivating the Mind*, a student asks how to find his own mind, and Chinul points him to the simple act of hearing. The question the Korean tradition loves most, "What is this?", goes back further, to a meeting in China. The Sixth Ancestor Huineng asked a newly arrived monk, Nanyue Huairang, "What is it that comes like this?" Nanyue could not answer. Eight years later he returned and said, "To call it anything misses the mark." The What Is This? session asks the question in the same spirit.
+
+## Turning back to the hearing (rendered)
+Chinul asked the student, "Do you hear the crow cawing and the magpie chattering?"
+
+"Yes, I hear them."
+
+"Now turn your hearing back, and listen to the nature that hears. Are there still any sounds there?"
+
+"There, there are no sounds and no thoughts at all."
+
+"Wonderful! This is the way Avalokiteśvara entered the truth. But let me ask you again. You say there are no sounds and no thoughts there. Then is it just empty space?"
+
+"No, it is not empty. It is always bright, and never dim."
+
+"Then what is this that is not empty?"
+
+"It has no form at all, and words cannot reach it."
+
+## How to ask "What is this?"
+1. Ask it inwardly, slowly and sincerely: "What is this?" It points to the one who is seeing, hearing and thinking right now.
+2. Don't look for an answer in words or ideas. Stay with the not-knowing.
+3. When the question fades, ask it again, gently, perhaps with the out-breath.
+4. Let the sense of wondering spread through the whole body until there is only the question.
+
+@ zhiyi
+title: Zhiyi on regulating the breath and counting it
+orig: 修習止觀坐禪法要, Xiuxi zhiguan zuochan fayao, the "Shorter Calm and Insight"; 六妙法門, Liu miao famen, "Six Wondrous Gates" (Chinese)
+by: Zhiyi (538–597), founder of the Tiantai school
+date: 6th century
+fam: zen
+kind: manual
+credit: Assembly Sounds' own rendering and summary from the Chinese.
+more: Charles Luk (Lu K'uan Yü), *The Secrets of Chinese Meditation* (1964), with the *Shorter Calm and Insight*.
+more: Bhikshu Dharmamitra, trans., *The Essentials of Buddhist Meditation* (2008).
+more: Neal Donner & Daniel B. Stevenson, *The Great Calming and Contemplation* (1993).
+about:
+Zhiyi was the founder of the Tiantai school, the first great Chinese school of Buddhism. He wrote some of the first systematic meditation manuals in China. His short handbook, the *Essentials of Practising Calm and Insight in Seated Meditation*, became a model for later East Asian meditation guides, Zen manuals included. In it he tells beginners how to "regulate" five things before and during sitting: food, sleep, the body, the breath and the mind.
+
+His *Six Wondrous Gates* starts the path with the simplest practice of all, counting the breath from one to ten. That method came down through Chan into Japanese Zen as *susokukan*, still the first practice most Zen beginners are given. The Susokukan session uses it.
+
+## The four kinds of breath (rendered)
+There are four kinds of breathing: wind, panting, gasping and true breath.
+- **Wind** is breathing you can hear in the nose.
+- **Panting** has no sound, but it catches and is not smooth.
+- **Gasping** has no sound and does not catch, but it is coarse, not fine.
+- **True breath** has no sound, does not catch and is not coarse. It is fine and continuous, so soft it seems at one moment to be there and at the next not, and it carries the body along with ease and joy.
+
+To keep to wind-breathing scatters the mind; panting binds it; gasping tires it; true breath settles it. If the breath is not yet true, settle the mind lower in the body, relax the body, and imagine the breath flowing in and out through every pore without hindrance. Then the breath becomes fine and subtle by itself.
+
+## The six wondrous gates
+1. **Counting**: count the breaths from one to ten, calmly and without strain. If the mind wanders, begin again at one.
+2. **Following**: let the counting go, and simply follow the breath in and out.
+3. **Stilling**: let the mind rest, still, without following.
+4. **Contemplating**: look clearly at the breath, the body and the mind, and see that they are impermanent and without a self.
+5. **Returning**: turn back to look at the mind that is contemplating, and find no fixed thing there.
+6. **Purity**: rest in the mind's own purity, with nothing more to do.

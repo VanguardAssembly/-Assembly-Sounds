@@ -1,0 +1,274 @@
+// Quaker, Eastern Orthodox and liturgical Christian texts.
+
+@ quaker
+title: The Journal of George Fox and Barclay's Apology: the Quaker sources
+by: George Fox; Robert Barclay; the elders at Balby; Isaac Penington
+date: 1647–1694
+fam: christian
+kind: book
+credit: The 17th-century English of the originals, public domain.
+more: George Fox, *Journal* (first published 1694; ed. John L. Nickalls, 1952).
+more: Robert Barclay, *An Apology for the True Christian Divinity* (1678), Proposition XI.
+more: *Quaker Faith & Practice* (Britain Yearly Meeting), the living book of Quaker experience.
+about:
+The Religious Society of Friends began in the English Civil War years with George Fox (1624–1691), a weaver's son. After years of searching among priests and preachers he found that Christ could speak to him directly, within. Friends gather for worship with no minister, sermon or set words. They sit in expectant silence, waiting on the "inward light", until someone feels moved to speak.
+
+Robert Barclay (1648–1690) was a Scottish theologian. He wrote the classic defence of this silent worship and described how it had won him over. In 1656 the elders meeting at Balby in Yorkshire sent out the first written Quaker advices. Their postscript warns that the advices are not rules, and it set the tone for everything after.
+
+## A voice that spoke to my condition (Fox, Journal, 1647)
+And when all my hopes in them and in all men were gone, so that I had nothing outwardly to help me, nor could tell what to do, then, oh then, I heard a voice which said, "There is one, even Christ Jesus, that can speak to thy condition"; and when I heard it my heart did leap for joy.
+
+## That of God in every one (Fox, letter from Launceston prison, 1656)
+Be patterns, be examples in all countries, places, islands, nations, wherever you come; that your carriage and life may preach among all sorts of people, and to them; then you will come to walk cheerfully over the world, answering that of God in every one.
+
+## Not a rule or form (the elders at Balby, 1656)
+Dearly beloved Friends, these things we do not lay upon you as a rule or form to walk by; but that all, with the measure of light which is pure and holy, may be guided: and so in the light walking and abiding, these things may be fulfilled in the Spirit, not from the letter, for the letter killeth, but the Spirit giveth life.
+
+## The silent assemblies (Barclay, Apology, Proposition XI)
+For when I came into the silent assemblies of God's people, I felt a secret power among them, which touched my heart; and as I gave way unto it, I found the evil weakening in me, and the good raised up; and so I became thus knit and united unto them, hungering more and more after the increase of this power and life.
+
+## Sinking down to the seed (Isaac Penington)
+Give over thine own willing, give over thine own running, give over thine own desiring to know or to be anything, and sink down to the seed which God sows in the heart, and let that grow in thee, and be in thee, and breathe in thee, and act in thee.
+
+@ philokalia
+title: The Philokalia: on the prayer of the heart
+orig: Φιλοκαλία τῶν ἱερῶν νηπτικῶν, "Love of the beautiful" (Greek)
+by: compiled by Nikodimos of the Holy Mountain and Makarios of Corinth
+date: written 4th–15th centuries; compiled and printed in Venice, 1782
+fam: christian
+kind: teaching
+credit: Assembly Sounds' own renderings from the Greek.
+more: G. E. H. Palmer, Philip Sherrard & Kallistos Ware, trans., *The Philokalia: The Complete Text* (1979 onward).
+more: E. Kadloubovsky & G. E. H. Palmer, trans., *Writings from the Philokalia on Prayer of the Heart* (1951).
+more: Kallistos Ware, *The Power of the Name: The Jesus Prayer in Orthodox Spirituality* (1974).
+about:
+The Philokalia is a collection of writings on inner prayer by the monks of the Christian East. They range from the 4th to the 15th century. Two monks of Mount Athos gathered them, and they were printed in Venice in 1782. Paisius Velichkovsky's Slavonic version, the *Dobrotolubiye* (1793), carried the tradition to Russia.
+
+Its subject is *hesychia*, stillness, and *nepsis*, watchfulness over the thoughts. Its central practice is the Jesus Prayer, "Lord Jesus Christ, Son of God, have mercy on me". The prayer is repeated with attention, and in time it is joined to the breath and brought down "from the head into the heart".
+
+In the 14th century Gregory Palamas defended the hesychast monks against their critics. He taught that the light some saw in prayer was the same uncreated light that shone from Christ at the Transfiguration. Councils in Constantinople upheld his teaching in 1341 and 1351.
+
+The old texts tell monks to "hold back" the breath. Today's Orthodox teachers advise against forcing the breath at all, and say the prayer matters, not the technique. The Jesus Prayer session keeps the breath natural and slow.
+
+## Give the mind one task (Diadochos of Photiki, 5th century)
+When we have closed every exit of the mind by remembering God, it still demands something to do, to satisfy its need for activity. So give it nothing but the prayer "Lord Jesus". Let it think of this alone, constantly, in its inner room.
+
+## Into the heart with the breath (Nikephoros the Monk, 13th century)
+Sit down and gather your mind. Lead it into the path the breath takes to enter the heart, and press it down with the breath into the heart, and keep it there. When it is settled in the heart, do not let it stay silent and idle. Give it this prayer to repeat without ceasing: "Lord Jesus Christ, Son of God, have mercy on me." This keeps the mind free of distraction and beyond the reach of the enemy, and day by day it draws the mind on in love and longing for God.
+
+## The method of holy prayer and attention (attributed to Symeon the New Theologian)
+Sit alone in a quiet cell, in a corner, and do as I tell you. Shut the door, and lift your mind away from everything empty and passing. Rest your chin on your chest, and turn your bodily gaze, with your whole mind, towards the middle of your body. Let the breath come quietly. Search within, with your mind, for the place of the heart, where all the powers of the soul are found.
+
+At first you will find darkness there, and a stubborn heaviness. But if you keep at it day and night, you will find, as if by a wonder, a joy that does not end. Once the mind finds the place of the heart, it sees what it never knew: the open space within the heart, and itself full of light.
+
+@ pilgrim
+title: The Way of a Pilgrim
+orig: Откровенные рассказы странника духовному своему отцу, "Candid tales of a pilgrim to his spiritual father" (Russian)
+by: anonymous
+date: written in the mid-19th century; first printed in Kazan, 1881
+fam: christian
+kind: book
+credit: Assembly Sounds' own retelling and rendering from the Russian.
+more: R. M. French, trans., *The Way of a Pilgrim and The Pilgrim Continues His Way* (1930).
+more: Olga Savin, trans., *The Way of a Pilgrim* (1991).
+about:
+A homeless Russian peasant, with a withered arm and a knapsack of dry bread, tells how he learned to pray without ceasing. One Sunday in church he heard the words "Pray without ceasing" (1 Thessalonians 5:17). He could not stop wondering how anyone could do it, and walked from preacher to preacher looking for an answer. At last an old monk, a *starets*, taught him the Jesus Prayer and gave him the Philokalia to read.
+
+The book made the Jesus Prayer known first across Russia, and then, through J. D. Salinger's *Franny and Zooey* (1961), to readers around the world. Its method is the one in the Jesus Prayer session. You repeat the prayer, at first counted on a prayer rope, until it begins to say itself and settles into the rhythm of the breath and the heartbeat.
+
+## The opening
+By the grace of God I am a Christian, by my deeds a great sinner, and by calling a homeless wanderer of the lowliest kind, going from place to place. All I own is a bag of dry crusts on my back and the holy Bible inside my shirt.
+
+## The starets' instruction
+The unceasing inner prayer of Jesus is a constant calling on his name, with the lips, the mind and the heart, while holding in mind that he is present, and asking for his mercy. It goes on in every activity, in every place and at every time, even in sleep. Its words are: *Lord Jesus Christ, have mercy on me.*
+
+Take this prayer rope and say the prayer three thousand times a day, sitting or standing, lying down or walking. Say it quietly and without hurry, and keep exactly to the number each day, adding nothing and leaving nothing out.
+
+## The numbers grow
+After some weeks the starets told me to say it six thousand times a day, and then twelve thousand. After that I was to say it as often as I liked. By then the prayer had become so much a part of me that, when I stopped, I felt as if something were missing.
+
+## The prayer enters the heart
+After a while I felt that the prayer had moved, by itself, from my lips into my heart. It seemed that my heart, beating in its ordinary way, was saying the words of the prayer with each beat: one word, *Lord*, on one beat; *Jesus* on the next; *Christ* on the next; and so on.
+
+Then I began to join the prayer to my breathing, as the fathers in the Philokalia teach. Breathing in, with my mind's eye on my heart, I said, *Lord Jesus Christ*. Breathing out, I said, *have mercy on me*.
+
+@ damascene
+title: On the Divine Images
+orig: Λόγοι ἀπολογητικοὶ πρὸς τοὺς διαβάλλοντας τὰς ἁγίας εἰκόνας (Greek)
+by: John of Damascus
+date: c. 726–730
+fam: christian
+kind: treatise
+credit: Assembly Sounds' own rendering from the Greek.
+more: Andrew Louth, trans., *St John of Damascus: Three Treatises on the Divine Images* (2003).
+more: Leonid Ouspensky & Vladimir Lossky, *The Meaning of Icons* (1952).
+about:
+In 726 the Byzantine emperor Leo III began a campaign against religious images, and icons were destroyed across the empire. John of Damascus (c. 675–749) was a monk living near Jerusalem, out of the emperor's reach under Arab rule. He wrote three short defences of icons, and they settled the question for the Christian East.
+
+His argument rests on the Incarnation. The invisible God cannot be painted. But God became visible in Christ, took on matter, and saved us through matter. So matter can rightly carry the holy, and the image of Christ can be honoured. The honour passes through the image to the one it shows. In 787 the Second Council of Nicaea agreed. Icons may be venerated, it said, but worship belongs to God alone.
+
+This is why Orthodox Christians pray *with* icons, not merely in front of them. They gaze at the image as a window. Visio divina, "divine seeing", applies the steps of lectio divina to looking at an image in this way.
+
+## I do not worship matter (Treatise I.16)
+I do not worship matter; I worship the Creator of matter. For my sake he became matter. He was willing to make his home in matter, and through matter he worked my salvation. I will not stop honouring the matter through which my salvation came.
+
+## Why God may now be pictured (Treatise I.16)
+In the past God, who has neither body nor form, could not be pictured at all. But now that God has been seen in the flesh and has lived among people, I make an image of the God who can be seen.
+
+## The honour passes to the original (Basil the Great, On the Holy Spirit 18.45, quoted by John and by the Council)
+The honour given to the image passes over to its original.
+
+## The Council's distinction (Nicaea II, 787)
+Images of Christ, of his mother, of the angels and the saints may be set up and honoured with kisses, with bowing, and with incense and lights. But this is veneration, not the true worship that belongs to God alone. Whoever venerates an image venerates the person it depicts.
+
+@ rosary
+title: The Holy Rosary: prayers and mysteries
+orig: Rosarium (Latin), "rose garden"
+by: Catholic tradition; Dominican preachers; Popes Pius V and John Paul II
+date: developed 12th–16th centuries; form fixed in 1569; Luminous Mysteries added 2002
+fam: christian
+kind: prayer
+credit: The traditional English and Latin wording of the prayers, public domain.
+more: Pope John Paul II, *Rosarium Virginis Mariae* (2002), the apostolic letter that added the Luminous Mysteries.
+more: Anne Winston-Allen, *Stories of the Rose: The Making of the Rosary in the Middle Ages* (1997).
+about:
+The rosary grew out of the medieval custom of saying 150 Hail Marys in place of the 150 psalms that monks sang, counted on a string of beads. In the 15th century the Dominican preacher Alan de la Roche (Alanus de Rupe) spread rosary confraternities and the story that Saint Dominic had received the rosary from Mary. Pope Pius V fixed its form in 1569.
+
+Its form is fifteen "decades", each made of one Our Father, ten Hail Marys and a Glory Be. Each decade is prayed while meditating on one "mystery", a scene from the life of Jesus and Mary. In 2002 John Paul II added five Luminous Mysteries. Usually five decades are said at a time, one full circle of the beads.
+
+The voice keeps a steady rhythm, the beads keep count, and the mind rests on a gospel scene. A study in 2001 found that saying the rosary in Latin slows the breath to about six a minute, the rhythm that best steadies the heart and blood pressure.
+
+## The Hail Mary (Ave Maria)
+= Ave Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus.
+= Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc et in hora mortis nostrae. Amen.
+
+Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.
+
+The first half is the angel's and Elizabeth's words (Luke 1:28, 1:42). The second half became standard in the Roman Breviary of 1568.
+
+## The Our Father and the Glory Be
+Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
+
+Glory be to the Father, and to the Son, and to the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
+
+## The mysteries
+- **Joyful** (Monday and Saturday): the Annunciation; the Visitation; the Nativity; the Presentation in the Temple; the Finding of Jesus in the Temple.
+- **Luminous** (Thursday): the Baptism in the Jordan; the Wedding at Cana; the Proclamation of the Kingdom; the Transfiguration; the Institution of the Eucharist.
+- **Sorrowful** (Tuesday and Friday): the Agony in the Garden; the Scourging at the Pillar; the Crowning with Thorns; the Carrying of the Cross; the Crucifixion.
+- **Glorious** (Wednesday and Sunday): the Resurrection; the Ascension; the Descent of the Holy Spirit; the Assumption of Mary; the Coronation of Mary.
+
+## How a decade goes
+1. Name the mystery and picture the scene.
+2. Say one Our Father.
+3. Say ten Hail Marys, one for each bead, while you dwell on the scene.
+4. Say one Glory Be.
+
+@ compline
+title: Compline: the Night Prayer of the Church
+orig: Completorium (Latin), "completion"
+by: monastic tradition; set out in the Rule of Saint Benedict
+date: 4th–6th centuries onward
+fam: christian
+kind: liturgy
+credit: Assembly Sounds' own renderings of the Latin; the collect from the Book of Common Prayer (1662), public domain.
+more: *The Liturgy of the Hours*, Night Prayer.
+more: The Book of Common Prayer (1662), and the Order for Compline in many Anglican prayer books.
+about:
+Compline is the last of the hours of prayer, said just before sleep. Benedict's Rule fixed it in the 6th century, with the same short psalms every night (4, 91 and 134). After it comes the "great silence", which lasts until morning.
+
+Its mood is trust in the dark. It opens with a blessing for a quiet night and an examination of conscience. Then come a hymn asking for protection, the psalms and the responsory *In manus tuas*, "Into your hands". The song of Simeon follows, the old man who could now "depart in peace". It ends with a hymn to Mary, often the *Salve Regina*, sung with the lights low. Monasteries still sing it every night, and many people who never pray otherwise find it the most beautiful of the hours.
+
+## The opening blessing
+= Noctem quietam et finem perfectum concedat nobis Dominus omnipotens.
+May the Lord almighty grant us a quiet night and a perfect end.
+
+## The hymn (Te lucis ante terminum, 7th century or earlier)
+= Te lucis ante terminum, rerum Creator, poscimus, ut solita clementia sis praesul ad custodiam.
+> To you before the close of day,
+> Creator of all things, we pray:
+> in your accustomed kindness, keep
+> your watch and guard us as we sleep.
+
+## The responsory
+= In manus tuas, Domine, commendo spiritum meum.
+= Redemisti nos, Domine, Deus veritatis.
+> Into your hands, Lord, I commend my spirit.
+> You have redeemed us, Lord, God of truth.
+
+## The antiphon of the Nunc dimittis
+= Salva nos, Domine, vigilantes, custodi nos dormientes, ut vigilemus cum Christo, et requiescamus in pace.
+Save us, Lord, while we are awake, and guard us while we sleep, so that awake we may keep watch with Christ, and asleep we may rest in peace.
+
+The canticle itself is the song of Simeon, "Lord, now lettest thou thy servant depart in peace" (Luke 2:29–32).
+
+## The prayer for the house
+Visit this house, we pray, O Lord, and drive far from it all the snares of the enemy. Let your holy angels live here to keep us in peace, and let your blessing be always upon us.
+
+## An English evening collect (Book of Common Prayer, 1662)
+Lighten our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.
+
+## The Salve Regina (11th century)
+= Salve, Regina, mater misericordiae, vita, dulcedo, et spes nostra, salve.
+Hail, holy Queen, mother of mercy, our life, our sweetness and our hope. To you we cry, exiled children of Eve; to you we send up our sighs, mourning and weeping in this valley of tears. Turn then, our advocate, your eyes of mercy towards us, and after this our exile show us Jesus, the blessed fruit of your womb. O clement, O loving, O sweet Virgin Mary.
+
+@ kyrie
+title: Kyrie eleison: "Lord, have mercy"
+orig: Κύριε ἐλέησον (Greek)
+by: the early Church; first described by the pilgrim Egeria
+date: 4th century onward
+fam: christian
+kind: prayer
+credit: Assembly Sounds' own rendering of Egeria's Latin; scripture from the King James Version (1611).
+more: John Wilkinson, trans., *Egeria's Travels* (3rd ed., 1999).
+more: Robert Taft, SJ, *The Liturgy of the Hours in East and West* (1986).
+about:
+*Kyrie eleison* is Greek for "Lord, have mercy". It is one of the oldest Christian prayers, and the blind men, the mother and the tax collector of the gospels cried it out. In the late 4th century a pilgrim woman named Egeria, probably from Spain or Gaul, visited Jerusalem. She wrote down how the people there sang it, answering each name or intention the deacon read out.
+
+The Greek words passed into the Latin Mass untranslated, and Catholics still sing *Kyrie eleison, Christe eleison, Kyrie eleison*. In the Orthodox liturgy *Kyrie eleison* (in Slavonic, *Gospodi pomiluj*) answers every petition of the litanies, sometimes three, twelve or forty times in a row. Sung slowly over and over, it becomes a prayer of the heart, close to the Jesus Prayer.
+
+## The gospel cries
+> Jesus, thou son of David, have mercy on me. (Mark 10:47, blind Bartimaeus)
+> Have mercy on me, O Lord, thou son of David. (Matthew 15:22, the Canaanite mother)
+> God be merciful to me a sinner. (Luke 18:13, the tax collector)
+
+## Egeria at Jerusalem (Itinerarium Egeriae 24.5)
+One of the deacons reads out the names, one by one, of those to be remembered. As he names each one, a large group of boys stands by and answers every time, *Kyrie eleison*, which we say as *Miserere, Domine*, "Lord, have mercy". Their voices are beyond counting.
+
+## The words in the Mass
+= Kyrie eleison. Christe eleison. Kyrie eleison.
+Lord, have mercy. Christ, have mercy. Lord, have mercy.
+
+@ taize
+title: The prayer of Taizé: chant and silence
+orig: Communauté de Taizé (French)
+by: Brother Roger (Roger Schutz) and the brothers of Taizé; chants largely by Jacques Berthier
+date: community founded 1940; the chants from 1975 onward
+fam: christian
+kind: liturgy
+credit: Summarised in Assembly Sounds' own words; the Taizé chants are under copyright and are not reproduced. The scripture and Teresa of Ávila's verse are rendered by Assembly Sounds.
+more: Brother Roger of Taizé, *The Sources of Taizé* (2000).
+more: Jason Brian Santos, *A Community Called Taizé* (2008).
+about:
+In 1940 a young Swiss Protestant, Roger Schutz (1915–2005), settled in the village of Taizé in Burgundy. It lay close to the line dividing occupied and free France, and he sheltered refugees there. Brothers from Protestant and later Catholic backgrounds joined him. Since the 1960s tens of thousands of young people have come every year to pray with them.
+
+Taizé prayer is simple so that everyone can join in. A short sung phrase, often from scripture and often in Latin so that no language is favoured, is repeated many times. The words sink from the head into the heart. Then comes a long silence, often eight to ten minutes. The composer Jacques Berthier (1923–1994) wrote most of the classic chants from 1975 onward, and Joseph Gelineau and the brothers wrote others.
+
+The melodies belong to the community, so the session plays only a drone, and you can sing a short sacred phrase over it. These are the old texts behind some of the best-loved chants.
+
+## Texts behind the chants
+- *Ubi caritas et amor, Deus ibi est*: "Where charity and love are, God is there", from an ancient Maundy Thursday hymn.
+- *Laudate omnes gentes, laudate Dominum*: "Praise the Lord, all you nations" (Psalm 117).
+- "Bless the Lord, O my soul, and all that is within me, bless his holy name" (Psalm 103:1).
+- *Veni Sancte Spiritus*: "Come, Holy Spirit", from the medieval Pentecost sequence.
+- *Jesus, remember me when you come into your kingdom* (Luke 23:42).
+
+## Nada te turbe (Teresa of Ávila, 16th century)
+= Nada te turbe, nada te espante; todo se pasa, Dios no se muda.
+= La paciencia todo lo alcanza; quien a Dios tiene nada le falta. Sólo Dios basta.
+> Let nothing trouble you,
+> let nothing frighten you;
+> everything passes,
+> God does not change.
+> Patience gains all things;
+> whoever has God lacks nothing.
+> God alone is enough.

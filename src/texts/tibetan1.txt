@@ -1,0 +1,289 @@
+// Tibetan Buddhist texts: calm abiding, mind training and the deity practices.
+
+@ shamatha_stages
+title: The nine stages of calm abiding
+orig: ཞི་གནས, zhi gnas, shamatha; སེམས་གནས་དགུ, sems gnas dgu, "the nine settlings of the mind" (Tibetan); śamatha (Sanskrit)
+by: Asaṅga, Maitreya and Kamalaśīla; set out in Tibet by Tsongkhapa
+date: 4th–8th centuries; Tsongkhapa's *Great Treatise* 1402
+fam: tibetan
+kind: teaching
+credit: Summarised in Assembly Sounds' own words.
+more: B. Alan Wallace, *The Attention Revolution: Unlocking the Power of the Focused Mind* (2006).
+more: Kamalaśīla, *Stages of Meditation* (*Bhāvanākrama*), with commentary by the Dalai Lama (2001).
+more: Tsongkhapa, *The Great Treatise on the Stages of the Path to Enlightenment*, vol. 3 (trans. 2002).
+about:
+*Shamatha*, "calm abiding", is the training of attention to rest on one object, steadily and clearly, for as long as you wish. The Indian masters Asaṅga and Maitreya (4th century) mapped the way there in nine stages, and the Indian master Kamalaśīla taught them in Tibet in the 8th century. In Tibetan monasteries the path is often painted as a monk chasing an elephant and a monkey up a winding road. The elephant is the mind, slowly turning from black to white as it is tamed. The monkey is distraction, which gradually falls behind.
+
+The nine stages move from attention that holds the object for only a moment to attention that holds it effortlessly. On the way, two faults have to be balanced. *Laxity* is dullness, when the mind goes slack. *Excitation* is agitation, when it scatters. Mindfulness keeps hold of the object, and introspection watches for the two faults. In the Shamatha Project, a three-month retreat with the teacher B. Alan Wallace, attention measurably improved. The Shamatha session uses the breath as its object.
+
+## The nine stages
+1. **Placing the mind**: you can hold the object for only a few moments before you are swept away.
+2. **Continuous placement**: now and then you can hold it for a minute or so.
+3. **Repeated placement**: you notice distraction sooner and come back at once, patching the attention.
+4. **Close placement**: you no longer lose the object completely, though laxity and excitation remain.
+5. **Taming**: you take joy in the practice; subtle dullness is the main danger.
+6. **Pacifying**: subtle excitation is calmed; resistance to the practice falls away.
+7. **Fully pacifying**: even subtle faults are rare and quickly corrected.
+8. **Single-pointedness**: a little effort at the start, and attention flows on without a break.
+9. **Balanced placement**: attention rests on its own, effortlessly, for hours.
+
+## The six powers
+The stages are reached by six powers in turn: hearing the instructions, thinking them through, mindfulness, introspection, effort, and complete familiarity.
+
+## The middle way of effort
+Hold the object neither too tightly nor too loosely, like tuning the string of a lute. Too tight, and the mind grows agitated; too loose, and it sinks into dullness.
+
+@ lojong
+title: The Seven Points of Mind Training and the practice of tonglen
+orig: བློ་སྦྱོང་དོན་བདུན་མ, blo sbyong don bdun ma (Tibetan)
+by: Geshe Chekawa Yeshe Dorje, from the teachings of Atiśa
+date: 12th century (Atiśa 982–1054; Chekawa 1101–1175)
+fam: tibetan
+kind: teaching
+credit: Assembly Sounds' own rendering of the slogans from the Tibetan.
+more: Pema Chödrön, *Start Where You Are: A Guide to Compassionate Living* (1994).
+more: Chögyam Trungpa, *Training the Mind and Cultivating Loving-Kindness* (1993).
+more: Thupten Jinpa, trans., *Mind Training: The Great Collection* (2006).
+about:
+In the 11th century the Bengali master Atiśa Dīpaṃkara came to Tibet and taught a set of short, practical instructions for turning every difficulty into a cause of awakening. A century later Geshe Chekawa put them into fifty-nine short slogans, arranged in seven points. Students write them on cards, learn them by heart and recall them in the middle of daily life. Chekawa is said to have been drawn to the teaching by one line he overheard: "Give all profit and gain to others; take all loss and defeat on yourself."
+
+At its centre is *tonglen*, "sending and taking". It is joined to the breath. As you breathe in, you take in the suffering of others, pictured as dark, hot smoke. As you breathe out, you send them your happiness and well-being, pictured as cool, bright light. You begin with yourself, then someone dear, then widen the circle to all beings. The Tonglen session follows this order.
+
+## Some of the slogans
+- First, train in the preliminaries.
+- See all things as a dream.
+- Look into the nature of unborn awareness.
+- Practise sending and taking in turn, and let the two ride on the breath.
+- Three objects, three poisons, three seeds of virtue.
+- In everything you do, train with these words.
+- Begin the taking with yourself.
+- Drive all blame into one: the habit of cherishing yourself.
+- Be grateful to everyone.
+- All teachings come together at one point.
+- Of the two witnesses, trust the main one: your own mind.
+- Always keep a joyful mind.
+- If you can practise even when distracted, you are well trained.
+- Do not expect thanks.
+
+## Tonglen, in brief
+1. Rest the mind for a moment in openness.
+2. Breathe in a feeling of heaviness and heat; breathe out a feeling of coolness and light, through every pore.
+3. Think of one person who is suffering. Breathe in their pain, as dark smoke; breathe out to them relief, kindness and peace, as bright light.
+4. Widen the circle: to everyone suffering in the same way, and then to all beings.
+
+@ shantideva
+title: The Way of the Bodhisattva (Bodhicaryāvatāra)
+orig: बोधिचर्यावतार, Bodhicaryāvatāra (Sanskrit); བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ, byang chub sems dpa'i spyod pa la 'jug pa (Tibetan)
+by: Śāntideva
+date: early 8th century, at Nālandā
+fam: tibetan
+kind: poem
+credit: Assembly Sounds' own rendering from the Sanskrit; verse numbers follow the Sanskrit text.
+more: Kate Crosby & Andrew Skilton, trans., *The Bodhicaryāvatāra* (1995).
+more: Padmakara Translation Group, trans., *The Way of the Bodhisattva* (1997).
+about:
+Śāntideva was a monk at the great Indian monastic university of Nālandā. His fellow monks thought him lazy: he seemed to do nothing but eat, sleep and stroll about. According to the story, they asked him to recite a teaching before the whole assembly, hoping to embarrass him. He recited this poem, and as he reached its ninth chapter he rose into the air and vanished from sight. His voice could still be heard.
+
+The poem is the classic guide to the bodhisattva's way of life: generosity, patience, effort, meditation and wisdom, all for the sake of all beings. Its eighth chapter teaches the "equalising and exchanging of self and others". This is the root of tonglen: you recognise that others want happiness exactly as you do, and then you put them in your own place. The Dalai Lama often quotes its closing prayer. The Tonglen session draws on chapter 8.
+
+## Equality of self and others (8.90)
+First, make an effort to meditate on the equality of self and others. Protect all beings as you protect yourself, for all are equal in wanting happiness and not wanting suffering.
+
+## The supreme secret (8.120)
+Whoever wishes to protect quickly both self and others should practise the supreme secret: the exchange of self and other.
+
+## Where happiness comes from (8.129)
+All the happiness there is in the world comes from wishing others to be happy. All the suffering there is in the world comes from wishing only oneself to be happy.
+
+## May I be a bridge (from chapter 3)
+May I be a protector for those who have none, a guide for travellers on the road, and for those who wish to cross the water may I be a boat, a ship, a bridge.
+
+## The closing prayer (10.55)
+For as long as space endures, and for as long as living beings remain, until then may I too remain, to drive away the sorrows of the world.
+
+@ karandavyuha
+title: Om Maṇi Padme Hūṃ and the Kāraṇḍavyūha Sūtra
+orig: कारण्डव्यूहसूत्र, Kāraṇḍavyūha Sūtra (Sanskrit); ཨོཾ་མ་ཎི་པདྨེ་ཧཱུྃ (Tibetan)
+by: anonymous Mahāyāna sūtra; in Tibet, the *Maṇi Kabum* attributed to King Songtsen Gampo
+date: sūtra c. 4th–5th century; *Maṇi Kabum* revealed 12th–13th centuries
+fam: tibetan
+kind: sutra
+credit: Assembly Sounds' own rendering and summary.
+more: Alexander Studholme, *The Origins of Om Maṇipadme Hūṃ: A Study of the Kāraṇḍavyūha Sūtra* (2002).
+more: Donald S. Lopez Jr., *Prisoners of Shangri-La* (1998), chapter 4, on the mantra in Western eyes.
+about:
+Avalokiteśvara, the bodhisattva who "looks down" in compassion on the world, is called Chenrezig in Tibet and is the country's protector. The Dalai Lamas are regarded as his emanations. His six-syllable mantra, *Om maṇi padme hūṃ*, is first recorded in the *Kāraṇḍavyūha Sūtra*. The sūtra calls it his innermost heart, a "great knowledge" hard to obtain, and says that whoever recites it is freed and frees others.
+
+In Tibet it is everywhere. It is carved on stones, printed on prayer flags, turned in prayer wheels and murmured on the beads of old people walking round temples. The words mean, roughly, "Om, the jewel in the lotus, hūṃ". The jewel is compassion and the lotus is wisdom. Some scholars read *maṇipadme* as a name, "O Jewel-Lotus One", addressed to the deity. Tibetan teachers link each of the six syllables to one of the six realms of rebirth, closing its door. The Chenrezig session is a recitation of the mantra.
+
+## The mantra
+= Oṃ Maṇi Padme Hūṃ
+= Om mani peme hung (Tibetan pronunciation)
+
+## The six syllables and the six realms
+1. **Om** purifies pride and closes the door to rebirth among the gods.
+2. **Ma** purifies jealousy and closes the door to the realm of the warring demigods.
+3. **Ni** purifies desire and closes the door to rebirth as a human.
+4. **Pad** purifies ignorance and closes the door to the animal realm.
+5. **Me** purifies greed and closes the door to the realm of hungry ghosts.
+6. **Hūṃ** purifies hatred and closes the door to the hells.
+
+## The jewel and the lotus (as the Dalai Lama explains it)
+The jewel stands for method: the intention to awaken for the sake of others, compassion and love. The lotus stands for wisdom, which, like a lotus growing out of mud, is untouched by it. *Hūṃ* stands for their inseparable union. So the mantra means that through a practice that joins method and wisdom, one can transform this ordinary body, speech and mind into the pure body, speech and mind of a buddha.
+
+@ tara_praise
+title: Tārā: the Praise in Twenty-One Homages and her mantra
+orig: नमस्तारे, Namas Tāre; Ekaviṃśatistotra (Sanskrit); སྒྲོལ་མ, sgrol ma, Drölma (Tibetan)
+by: Indian tantric tradition
+date: c. 7th–9th centuries; in Tibet from the 11th century, through Atiśa
+fam: tibetan
+kind: prayer
+credit: Assembly Sounds' own rendering from the Sanskrit and Tibetan.
+more: Stephan Beyer, *The Cult of Tārā: Magic and Ritual in Tibet* (1973).
+more: Martin Willson, *In Praise of Tārā: Songs to the Saviouress* (1986).
+about:
+Tārā, "she who carries across", is the female buddha of compassionate action. A Tibetan story says she was born from a tear that Avalokiteśvara shed for the suffering of the world. Another tells of a princess named Wisdom Moon. Told by monks to pray to be reborn a man, she vowed instead to reach awakening in a woman's body and to keep returning as a woman until all beings were free.
+
+Green Tara is the swift protector. She sits with her left leg folded and her right leg stretched out, ready to rise and help at once. Her right hand gives blessings, her left hand holds a blue lotus, and she is called on in every kind of fear. Atiśa, who brought her practice to Tibet, prayed to her daily. Her mantra plays on her name, and the Praise in Twenty-One Homages is chanted in Tibetan monasteries every morning. The Green Tara session recites her mantra.
+
+## The first homage
+Homage, Tārā, swift and heroic, whose eyes flash like lightning, born from the opening petals of the lotus face of the Lord of the Three Worlds.
+
+## Her mantra
+= Oṃ Tāre Tuttāre Ture Svāhā
+= Om tare tuttare ture soha (Tibetan pronunciation)
+- **Tāre**: you who free us from the round of suffering;
+- **Tuttāre**: you who free us from the eight great fears;
+- **Ture**: you who free us from sickness, swiftly;
+- **Svāhā**: may it be so, may it take root.
+
+## The eight great fears
+Tārā is called on to protect from eight dangers, and each stands for an inner one: lions (pride), elephants (delusion), fire (anger), snakes (envy), thieves (wrong views), chains (greed), floods (desire) and demons (doubt).
+
+@ medicine_sutra
+title: The Sūtra of the Medicine Buddha
+orig: भैषज्यगुरुवैडूर्यप्रभराज सूत्र, Bhaiṣajya-guru-vaiḍūrya-prabha-rāja Sūtra, "Master of Healing, Lapis-Light King" (Sanskrit)
+by: anonymous Mahāyāna sūtra
+date: probably early centuries CE; Chinese translation by Xuanzang, 650
+fam: tibetan
+kind: sutra
+credit: Assembly Sounds' own rendering from the Sanskrit and Chinese.
+more: Raoul Birnbaum, *The Healing Buddha* (1979; rev. ed. 1989).
+more: Thrangu Rinpoche, *Medicine Buddha Teachings* (2004).
+about:
+The Medicine Buddha, *Bhaiṣajyaguru*, Sangye Menla in Tibetan, is the buddha of healing. He is deep blue like lapis lazuli, holding a bowl of healing nectar and a branch of the myrobalan plant, the king of medicines. His sūtra tells how, while still a bodhisattva, he made twelve great vows to heal the sicknesses of body and mind of all beings. Through them he created the pure land of Lapis Light in the east.
+
+In Tibet his practice is joined to medicine itself. Traditional doctors recite his mantra while preparing remedies and visualise him in their own heart while treating patients. In China and Japan, as Yakushi Nyorai, he is one of the most widely worshipped buddhas. The Medicine Buddha session pictures his lapis light filling the body while his mantra is chanted.
+
+## The first two vows
+When I reach awakening, may my body shine with a brilliant light that fills countless worlds, adorned with all the marks of a buddha, so that all beings become just like me.
+
+When I reach awakening, may my body be like lapis lazuli, clear and flawless within and without, shining with a light greater than the sun and moon, so that those living in darkness may find their way and do all that is good.
+
+## The healing vow
+When I reach awakening, if there are beings who are ill and helpless, with no doctor, no medicine, no family and no home, poor and full of suffering, may they hear my name, and may all their illnesses be cured, and may they find peace of body and mind.
+
+## The mantra
+= Tadyathā oṃ bhaiṣajye bhaiṣajye mahābhaiṣajye bhaiṣajye rāja samudgate svāhā
+= Tayata om bekandze bekandze maha bekandze radza samudgate soha (Tibetan pronunciation)
+Thus: Om, healing, healing, great healing, king of healing, arisen: svāhā.
+
+@ vajrasattva
+title: The Vajrasattva purification and the Hundred-Syllable Mantra
+orig: वज्रसत्त्व, Vajrasattva (Sanskrit); རྡོ་རྗེ་སེམས་དཔའ, rdo rje sems dpa', Dorje Sempa (Tibetan)
+by: Indian Vajrayāna tradition; one of the Tibetan foundational practices (ngöndro)
+date: from the 8th century in tantric texts
+fam: tibetan
+kind: liturgy
+credit: Assembly Sounds' own rendering from the Sanskrit.
+more: Patrul Rinpoche, *The Words of My Perfect Teacher* (19th century; trans. 1994), part 2, chapter 3.
+more: Lama Zopa Rinpoche, *Teachings from the Vajrasattva Retreat* (2000).
+about:
+Vajrasattva, "diamond being", is the buddha of purification, white and radiant, holding a vajra at his heart and a bell at his hip. His practice is one of the four "foundational practices" (*ngöndro*) that every Tibetan Buddhist student undertakes, traditionally reciting his mantra a hundred thousand times. You picture him seated on a lotus and moon disc above your head. As you recite, white nectar flows down from him into your body, washing out every illness, negative action and broken promise. Dark fluids, smoke and creatures leave through the lower openings and the soles of the feet, and the body becomes clear as crystal.
+
+The practice rests on the "four powers" that make any purification complete: support, regret, resolve and remedy. Patrul Rinpoche says even serious faults can be cleansed by them. The Vajrasattva session uses the short mantra, *Om Benza Satto Hung*.
+
+## The four powers
+1. **Support**: taking refuge and arousing the wish to awaken for the sake of all beings.
+2. **Regret**: honestly feeling sorrow for harm done, as you would regret swallowing poison.
+3. **Resolve**: deciding not to do it again, even at the cost of your life.
+4. **Remedy**: the practice itself, the mantra and the flowing nectar.
+
+## The Hundred-Syllable Mantra
+= Oṃ vajrasattva samayam anupālaya, vajrasattva tvenopatiṣṭha,
+= dṛḍho me bhava, sutoṣyo me bhava, supoṣyo me bhava, anurakto me bhava,
+= sarva siddhiṃ me prayaccha, sarva karmasu ca me cittaṃ śreyaḥ kuru hūṃ,
+= ha ha ha ha hoḥ, bhagavan sarva tathāgata vajra mā me muñca, vajrī bhava, mahāsamaya sattva āḥ.
+Om, Vajrasattva, keep your promise; Vajrasattva, stay close to me. Be steadfast for me, be pleased with me, nourish me, love me. Grant me every accomplishment, and in all my actions make my mind good, hūṃ. Ha ha ha ha hoḥ: Blessed One, diamond of all the buddhas, do not abandon me. Make me one with the diamond, great being of the sacred bond, āḥ.
+
+## The short mantra
+= Oṃ vajrasattva hūṃ
+= Om benza satto hung (Tibetan pronunciation)
+
+@ manjushri
+title: Mañjuśrī and the Arapacana syllables
+orig: मञ्जुश्री, Mañjuśrī, "gentle glory" (Sanskrit); འཇམ་དཔལ་དབྱངས, 'jam dpal dbyangs, Jampelyang (Tibetan)
+by: the Perfection of Wisdom sūtras and Mahāyāna tradition
+date: the Arapacana syllables in the *Perfection of Wisdom in 25,000 Lines*, early centuries CE
+fam: tibetan
+kind: teaching
+credit: Assembly Sounds' own rendering and summary from the Sanskrit.
+more: Edward Conze, trans., *The Large Sutra on Perfect Wisdom* (1975).
+more: Richard Salomon, "New Evidence for a Gāndhārī Origin of the Arapacana Syllabary", *Journal of the American Oriental Society* (1990).
+about:
+Mañjuśrī is the bodhisattva of wisdom, the patron of scholars and debaters. He is pictured as a youth of sixteen, golden or orange. In his right hand he raises a flaming sword that cuts through ignorance. In his left he holds the stem of a lotus, and on it rests a book of the *Perfection of Wisdom*. In Tibet students recite his mantra before study and exams, and pray to him for a sharp, clear mind.
+
+His mantra is made from the first letters of the *Arapacana*, an old alphabet from Gandhāra in the north-west of India. The Perfection of Wisdom sūtras use its 42 letters as "doorways" to emptiness, each one a reminder of a truth about all things. The mantra ends with *dhīḥ*, the seed syllable of wisdom, which is often repeated many times on one breath. The Mañjuśrī session chants it.
+
+## The mantra
+= Oṃ A Ra Pa Ca Na Dhīḥ
+= Om a ra pa tsa na dhi (Tibetan pronunciation)
+
+## The letters as doorways (Perfection of Wisdom in 25,000 Lines)
+- **A** is a door to the insight that all things are unborn from the very beginning.
+- **RA** is a door to the insight that all things are free of stain.
+- **PA** is a door to the insight that all things are ultimate in meaning.
+- **CA** is a door to the insight that in all things there is no passing away and no rebirth.
+- **NA** is a door to the insight that the names of all things have vanished, and their nature is neither gained nor lost.
+- **DHĪḤ** is the seed of Mañjuśrī himself: wisdom, clear and sharp as his sword.
+
+@ padmasambhava
+title: Guru Rinpoche: the Seven-Line Prayer and the Vajra Guru Mantra
+orig: ཚིག་བདུན་གསོལ་འདེབས, tshig bdun gsol 'debs, "the seven-line supplication" (Tibetan)
+by: Tibetan Nyingma tradition
+date: Padmasambhava in Tibet in the late 8th century
+fam: tibetan
+kind: prayer
+credit: Assembly Sounds' own rendering from the Tibetan and Sanskrit.
+more: Tulku Thondup, *Masters of Meditation and Miracles* (1996).
+more: Yeshe Tsogyal, *The Lotus-Born: The Life Story of Padmasambhava* (trans. Erik Pema Kunsang, 1993).
+more: Dilgo Khyentse Rinpoche, *Guru Yoga* (1999).
+about:
+Padmasambhava, "the Lotus-Born", is the Indian tantric master who is said to have brought Vajrayāna Buddhism to Tibet in the late 8th century. At the invitation of King Trisong Detsen, with the abbot Śāntarakṣita, he helped found Samye, the first Buddhist monastery in Tibet. Tibetans call him Guru Rinpoche, "precious teacher", and the Nyingma school honours him as a second Buddha. Legends say he was born from a lotus on a lake in the land of Oḍḍiyāna, subdued the hostile spirits of Tibet, and hid teachings as "treasures" (*terma*) to be revealed in later ages.
+
+In *guru yoga*, the heart of Tibetan practice, you visualise the teacher in the form of Guru Rinpoche, call on him with the Seven-Line Prayer and recite his mantra. You receive his blessing as rays of light from his forehead, throat and heart, and finally you merge your mind with his. The Guru Rinpoche session follows this practice.
+
+## The Seven-Line Prayer
+> Hūṃ. In the north-west of the land of Oḍḍiyāna,
+> on the heart of a lotus flower,
+> you found the wondrous, highest accomplishment.
+> You are known as the Lotus-Born,
+> and a host of ḍākinīs surrounds you.
+> Following you, I will practise:
+> come, I pray, and bless me. Guru Padma Siddhi Hūṃ.
+
+## The Vajra Guru Mantra
+= Oṃ Āḥ Hūṃ Vajra Guru Padma Siddhi Hūṃ
+= Om ah hung benza guru pema siddhi hung (Tibetan pronunciation)
+- **Om Āḥ Hūṃ**: the enlightened body, speech and mind;
+- **Vajra**: indestructible, like a diamond;
+- **Guru**: the teacher, heavy with good qualities;
+- **Padma**: the lotus, Padmasambhava himself;
+- **Siddhi**: accomplishment, ordinary and supreme;
+- **Hūṃ**: may it be granted, here and now.
+
+## The four empowerments in guru yoga
+1. White light from the Om at his forehead enters your forehead: the body is blessed.
+2. Red light from the Āḥ at his throat enters your throat: the speech is blessed.
+3. Blue light from the Hūṃ at his heart enters your heart: the mind is blessed.
+4. Light from all three enters all three at once; then he melts into light and dissolves into you. Rest in that, your mind and his one, open and aware.

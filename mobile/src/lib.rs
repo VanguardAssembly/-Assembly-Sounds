@@ -16,6 +16,8 @@ mod plan;
 mod presets;
 #[path = "../../src/settle.rs"]
 mod settle;
+#[path = "../../src/texts.rs"]
+mod texts;
 #[path = "../../src/texture.rs"]
 mod texture;
 mod voice;
@@ -124,7 +126,7 @@ fn handle(v: &Value, app: &mut App, core: &Core, eval: &dyn Fn(&str)) {
     match s(v, "cmd") {
         "ready" => {
             let settings = core.settings_path.get().map(|p| load_settings(p)).unwrap_or_else(|| json!({}));
-            let init = json!({ "presets": app.presets, "voices": core.voices, "voice": app.voice, "audioError": core.audio_error, "settings": settings });
+            let init = json!({ "presets": app.presets, "voices": core.voices, "voice": app.voice, "audioError": core.audio_error, "settings": settings, "texts": texts::library() });
             drop(sh);
             eval(&format!("window.__init({})", init));
         }

@@ -1,0 +1,239 @@
+// Research: flicker light, the Dreamachine, Ganzflicker, audio-visual entrainment, infrasound, EMDR and breathwork.
+
+@ flicker_research
+title: Flicker light and the patterns it brings
+orig: English and German
+by: Jan Purkinje; W. Grey Walter; Heinrich Klüver; Bard Ermentrout and Jack Cowan; Timo Torsten Schmidt's laboratory and others
+date: 1820s onward
+fam: science
+kind: review
+cite: M. T. Bartossek et al., "Altered states phenomena induced by visual flicker light stimulation", *PLOS ONE* 16 (2021): e0253779; G. B. Ermentrout & J. D. Cowan, "A mathematical theory of visual hallucination patterns", *Biological Cybernetics* 34 (1979): 137–150.
+credit: Summarised in Assembly Sounds' own words.
+more: W. Grey Walter, *The Living Brain* (1953).
+more: Heinrich Klüver, *Mescal and Mechanisms of Hallucinations* (1966).
+more: C. Allefeld, P. Pütz, K. Kastner & J. Wackermann, "Flicker-light induced visual phenomena: frequency dependence and specificity of whole percepts and percept features", *Consciousness and Cognition* 20 (2011): 1344–1362.
+about:
+In the 1820s the Czech physiologist Jan Purkinje described the shifting geometric patterns he saw when he waved his spread fingers in front of his closed eyes while facing the sun. A century later the EEG pioneer W. Grey Walter used a stroboscope to flash light at the eyes at different rates. He found that the brain's rhythms followed the flashes, and that flicker near the alpha rhythm, about ten flashes a second, brought on vivid colours, moving patterns and sometimes strong emotions. He described these experiments in his book *The Living Brain*. Meanwhile the psychologist Heinrich Klüver, studying the visions caused by mescaline, noticed that the same few shapes appear again and again in many altered states: lattices and honeycombs, cobwebs, tunnels and funnels, and spirals. He called them *form constants*. In 1979 the mathematicians Bard Ermentrout and Jack Cowan showed that these shapes are just what simple waves of activity spreading across the visual cortex would look like, once the map from the eye to the cortex is taken into account.
+
+Modern studies measure the experience carefully. Allefeld and colleagues (2011) found that the colours and forms seen depend on the flicker rate, and are strongest around 10 Hz. In 2021 Bartossek and colleagues, in Timo Torsten Schmidt's laboratory in Berlin, gave volunteers twenty minutes of white light flashing on their closed eyes at 10 Hz, at 3 Hz, or steady. The 10 Hz flicker tended to give the strongest altered-state and visual experiences, though the differences were modest, and steady light still produced some imagery. In 2023 Amaya and colleagues found that rhythmic flicker at 10 Hz gave stronger simple hallucinations than irregular flicker at the same average rate. The Light Journeys sessions follow these studies, at no more than 12 flashes a second. Flicker can trigger seizures in people who are photosensitive, so these sessions stay behind a warning you must accept, and the light stops whenever the screen locks (see the entry on photosensitivity).
+
+@ photosensitivity
+title: Photosensitivity: why flicker needs a warning
+orig: English
+by: Robert Fisher, Graham Harding, Arnold Wilkins and colleagues
+date: 2005
+fam: science
+kind: review
+cite: R. S. Fisher, G. Harding, G. Erba, G. L. Barkley & A. Wilkins, "Photic- and pattern-induced seizures: a review for the Epilepsy Foundation of America Working Group", *Epilepsia* 46 (2005): 1426–1441.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Some people's brains react to flashing light, or to bold striped patterns, with a seizure. This is *photosensitive epilepsy*. It affects about three in every hundred people with epilepsy, it is most common between the ages of about seven and twenty, and it can happen to someone who has never had a seizure before. In December 1997 an episode of the *Pokémon* cartoon on Japanese television, with a few seconds of flashing red and blue, sent hundreds of children to hospital, most of whom had no history of epilepsy.
+
+In 2005 an expert group for the Epilepsy Foundation of America, led by the neurologist Robert Fisher with the photosensitivity specialists Graham Harding and Arnold Wilkins, reviewed the evidence. They found that flashes are most likely to provoke seizures at about 15 to 25 a second, but that rates from about 3 a second upward can do so; that saturated red flashes are especially provocative; and that a flash filling much of the visual field is riskier than a small one. Closing the eyes does not give full protection either, because light passes through the eyelids, and in some people the act of closing the eyes is itself a trigger. Broadcasting rules in many countries now limit flashing on television to about three flashes a second for this reason.
+
+This is why the light sessions in this app are built the way they are. They are off unless you choose them and accept a warning. They stay at or below 12 flashes a second, and the light stops whenever the screen locks or the app is hidden. Do not use them if you have ever had a seizure, if you or a parent, brother or sister has epilepsy, if flashing light or patterns trigger migraines or make you feel unwell, if you have a history of psychosis or bipolar disorder, or under the influence of alcohol or drugs. Keep the light where nobody else, especially a child, can see it, and get medical help if you think you have had a seizure.
+
+## Stop at once if you notice
+- twitching of the eyes, face or limbs;
+- a sudden strange feeling, confusion or a gap in awareness;
+- strange smells or tastes, or losing track of time;
+- nausea, dizziness or a headache;
+- any sense that something is wrong.
+
+@ dreamachine
+title: The Dreamachine
+orig: English and French
+by: Brion Gysin (1916–1986) and Ian Sommerville; William S. Burroughs
+date: 1959–1961
+fam: science
+kind: history
+cite: John Geiger, *Chapel of Extreme Experience: A Short History of Stroboscopic Light and the Dream Machine* (2003).
+credit: Summarised in Assembly Sounds' own words.
+more: William S. Burroughs & Brion Gysin, *The Third Mind* (1978).
+more: W. Grey Walter, *The Living Brain* (1953).
+about:
+In December 1958 the painter and writer Brion Gysin was riding a bus in the south of France when the sun flickered through a row of trees. With his eyes closed he was overwhelmed by a storm of colour and pattern, and he wondered whether it could be produced at will. His friend Ian Sommerville, a young mathematics student in Cambridge, had been reading W. Grey Walter's *The Living Brain*, with its account of flicker at alpha rates. In 1960 Sommerville built the first Dreamachine: a paper cylinder cut with slots, turning on a record player around a light bulb, so that light flickered at roughly 8 to 13 times a second onto the closed eyes of someone sitting close to it.
+
+Gysin patented the device in France in 1961 and hoped it would become a household object, a drug-free way to visions. The writer William S. Burroughs, Gysin's close friend and collaborator, championed it, and it became a legend of the Beat generation and the 1960s counterculture, though it was never mass-produced. The visions it brings are the flicker patterns described by Grey Walter and Klüver, along with, for some people, dream-like scenes. In 2022 the Dreamachine was revived in the UK as a large public experience, with music by Jon Hopkins, together with a research project on how differently people perceive. The Dreamachine-inspired Wander session lets the flicker rate drift slowly between 8 and 12 Hz, so that the patterns keep changing. Like all flicker, it can trigger seizures in photosensitive people (see the entry on photosensitivity).
+
+@ ganzflicker
+title: Ganzflicker: red and black, the mind's eye and its absence
+orig: English
+by: Reshanne Reeder and colleagues
+date: 2021 onward
+fam: science
+kind: study
+cite: V. T. Königsmark, J. Bergmann & R. R. Reeder, "Ganzflicker experience: high probability of seeing vivid and complex pseudo-hallucinations with imagery but not aphantasia", *Cortex* 141 (2021): 522–534.
+credit: Summarised in Assembly Sounds' own words.
+more: A. Zeman, M. Dewar & S. Della Sala, "Lives without imagery: congenital aphantasia", *Cortex* 73 (2015): 378–380.
+about:
+Ganzflicker combines the Ganzfeld's even field with flicker. It was created by the cognitive neuroscientist Reshanne Reeder: the whole screen of a computer or phone alternates between red and black about ten times a second, watched with the eyes open in a dim room for about ten minutes. Because it needs nothing but a screen, it has been used in large online studies. Most people soon see illusory patterns and colours, and many see complex scenes, objects or faces.
+
+Reeder and colleagues used it to study *aphantasia*, the condition, named by the neurologist Adam Zeman in 2015, in which a person has no visual imagery in the mind's eye. In their 2021 study, most people with ordinary mental imagery saw vivid and complex pseudo-hallucinations in the Ganzflicker, while people with aphantasia mostly saw only simple patterns, or nothing. This suggests that the same inner machinery that lets us picture things also shapes what we see in an altered state. In 2024 Shenyan and colleagues compared Ganzflicker with a steady Ganzfeld and found that the flicker produced hallucinations more often and more quickly, mostly simple shapes and colours. The Ganzflicker sessions offer both the original eyes-open version and a gentler closed-eyes version. Eyes-open flicker is stronger, so it asks you to confirm once more before it starts (see the entry on photosensitivity).
+
+@ ave
+title: Audio-visual entrainment and the "mind machines"
+orig: English
+by: Tina Huang and Christine Charyton; Michael Hutchison
+date: 1980s onward
+fam: science
+kind: review
+cite: T. L. Huang & C. Charyton, "A comprehensive review of the psychological effects of brainwave entrainment", *Alternative Therapies in Health and Medicine* 14 (2008): 38–50.
+credit: Summarised in Assembly Sounds' own words.
+more: Michael Hutchison, *Megabrain: New Tools and Techniques for Brain Growth and Mind Expansion* (1986).
+about:
+From the 1980s, small "mind machines" went on sale that paired goggles with flashing lights and headphones with pulsing sound at the same rate, an approach called audio-visual entrainment (AVE). The idea comes straight from Grey Walter's finding that the brain's rhythms follow flicker: flash and pulse at 10 Hz, and the brain might be drawn toward relaxed alpha. The journalist Michael Hutchison's book *Megabrain* popularised these devices, and they were used for relaxation, sleep, learning and, in some clinics, for pain, headache and mood problems.
+
+In 2008 Tina Huang and Christine Charyton reviewed the studies of brainwave entrainment, by light, sound or both. They found reports of benefit for thinking and attention problems, stress, pain, headache and migraine, premenstrual symptoms and behaviour problems, and they concluded that entrainment was a promising tool. But most of the studies were small, many were uncontrolled, and many were run by people who made or sold the devices, so the evidence is weak. The Audio-Visual Entrainment session pairs the light with isochronic sound pulses at the same rate, gliding from 10 Hz down to 7.5 Hz. Like all flicker, it can trigger seizures in photosensitive people (see the entry on photosensitivity).
+
+@ infrasound
+title: Infrasound: the ghost in the machine
+orig: English
+by: Vic Tandy and Tony Lawrence; Richard Wiseman, Sarah Angliss and colleagues
+date: 1998 and 2003
+fam: science
+kind: study
+cite: V. Tandy & T. R. Lawrence, "The ghost in the machine", *Journal of the Society for Psychical Research* 62 (1998): 360–364.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Infrasound is sound below about 20 Hz, too low for most people to hear as a tone, although at high levels it can be felt as pressure or vibration. It is made by wind, the sea, storms, earthquakes and volcanoes, and by large machines, fans and engines. Its reputation is far bigger than its proven effects. In the 1960s stories grew up around the French engineer Vladimir Gavreau's experiments with very loud infrasound, and claims of "infrasonic weapons" and a "brown note" that could upset the bowels followed. At the levels any ordinary speaker or headphone can produce, these are myths.
+
+What is real is subtler. In 1998 Vic Tandy, an engineer at Coventry University, described a laboratory said to be haunted. Working alone, he felt a growing unease and a cold sweat, and glimpsed a grey shape at the edge of his vision that vanished when he turned to look. The next day he clamped a fencing foil in a vice and saw it vibrating wildly. He traced the cause to a newly installed fan, which was setting up a standing wave of sound at about 19 Hz in the room. When the fan was fixed, the "ghost" went. Tandy, writing with the psychologist Tony Lawrence, suggested that the infrasound might have made his eyeballs vibrate, smearing his vision, and caused the feelings of dread. In 2003 Richard Wiseman, the composer and engineer Sarah Angliss and colleagues ran a public experiment at a London concert: during some pieces they secretly added infrasound at about 17 Hz, and about a fifth more listeners reported unusual feelings, such as unease, sorrow, chills or nervousness, during those pieces. It was not a peer-reviewed study.
+
+The Infrasound sessions are opt-in. They add a quiet infrasonic layer under a beat, and you must accept a warning to switch it on. Keep the volume low, and stop at once if you feel dizzy, sick, anxious or pressure in your ears. Most headphones and phone speakers can barely reproduce these frequencies, so you may feel them more than hear them, or not at all.
+
+@ emdr
+title: EMDR and left–right stimulation
+orig: English
+by: Francine Shapiro (1948–2019); Marcel van den Hout and Iris Engelhard
+date: 1989 onward
+fam: science
+kind: study
+cite: F. Shapiro, "Efficacy of the eye movement desensitization procedure in the treatment of traumatic memories", *Journal of Traumatic Stress* 2 (1989): 199–223.
+credit: Summarised in Assembly Sounds' own words.
+more: Francine Shapiro, *Eye Movement Desensitization and Reprocessing: Basic Principles, Protocols, and Procedures* (first edition 1995).
+more: M. A. van den Hout & I. M. Engelhard, "How does EMDR work?", *Journal of Experimental Psychopathology* 3 (2012): 724–738.
+about:
+In 1987 the American psychologist Francine Shapiro was walking in a park when she noticed that some disturbing thoughts lost their charge as her eyes moved rapidly from side to side. She developed this into a therapy, eye movement desensitisation and reprocessing (EMDR), and published her first controlled study in 1989. In EMDR a trained therapist asks the person to hold a distressing memory in mind while following the therapist's hand from side to side with their eyes, or while hearing tones or feeling taps that alternate left and right. Over a series of sessions the memory usually becomes less vivid and less upsetting.
+
+EMDR was controversial for years, partly because no one could explain why moving the eyes should matter. It is now one of the best-studied treatments for post-traumatic stress disorder, and in 2013 the World Health Organization recommended it, together with trauma-focused cognitive behavioural therapy, for PTSD. One leading explanation, developed by Marcel van den Hout and Iris Engelhard in the Netherlands, is that working memory has limited room: following the side-to-side movement while holding a memory leaves less capacity for the memory, which is then stored again in a less vivid, less emotional form. Some lab studies suggest that alternating tones have a weaker effect than eye movements.
+
+The Bilateral Alternating Tones session, and the opening of the Bilateral Release session, play a tone that moves from ear to ear about once a second. They are meant for relaxation only. They are not EMDR therapy, which should be done with a trained therapist, especially for trauma. If listening brings up distressing memories, stop and return to the room around you.
+
+@ kox2014
+title: The Wim Hof Method in the laboratory
+orig: English
+by: Matthijs Kox, Peter Pickkers and colleagues
+date: 2014
+fam: science
+kind: study
+cite: M. Kox, L. T. van Eijk, J. Zwaag, J. van den Wildenberg, F. C. G. J. Sweep, J. G. van der Hoeven & P. Pickkers, "Voluntary activation of the sympathetic nervous system and attenuation of the innate immune response in humans", *PNAS* 111 (2014): 7379–7384.
+credit: Summarised in Assembly Sounds' own words.
+about:
+The Dutch adventurer Wim Hof, known as "the Iceman", became famous for feats in extreme cold and for a method combining cold exposure, meditation and a distinctive breathing exercise. At Radboud University Medical Center in Nijmegen, Matthijs Kox, Peter Pickkers and colleagues tested whether it could change the body's immune response. Twelve healthy young men trained with Hof for ten days, while twelve others did not. Then all of them were injected with a bacterial toxin, which normally causes a brief bout of fever, headache and aching, like a short flu.
+
+The trained men practised the breathing during the test: about thirty deep breaths, then breathing out and holding with empty lungs for as long as felt right, then a deep breath in held for about ten seconds, over several rounds. Their adrenaline rose far higher than anything seen in the controls. Their bodies made more of an anti-inflammatory signal and less of the inflammatory ones, their inflammatory response was roughly halved, and they had fewer flu-like symptoms. This was among the first evidence that people can voluntarily influence the autonomic nervous system and the innate immune response, long thought to be beyond conscious control.
+
+The study also showed the risks. During the breath holds, the oxygen level in the trained men's blood fell for a few moments to about half of normal, low enough to cause fainting. Breath-hold exercises like this have been linked to deaths by drowning when practised in or near water. The Power Breathing Rounds and Kox 2014 sessions are opt-in, behind a warning, and the guide ends any hold at two and a half minutes. Never practise in or near water, in the bath, while driving or standing. Do not practise if you are pregnant, or have epilepsy, heart disease or high blood pressure.
+
+@ balban2023
+title: Cyclic sighing and the Stanford breathing study
+orig: English
+by: Melis Yilmaz Balban, David Spiegel, Andrew Huberman and colleagues
+date: 2023
+fam: science
+kind: study
+cite: M. Y. Balban et al., "Brief structured respiration practices enhance mood and reduce physiological arousal", *Cell Reports Medicine* 4 (2023): 100895.
+credit: Summarised in Assembly Sounds' own words.
+about:
+At Stanford University, Melis Yilmaz Balban, the psychiatrist David Spiegel, the neuroscientist Andrew Huberman and colleagues compared four five-minute daily practices over a month, in a randomised study. The volunteers were assigned to mindfulness meditation or to one of three breathing exercises. *Cyclic sighing*: a slow breath in through the nose, a second short sip of air to fill the lungs completely, then a long, slow breath out through the mouth. *Box breathing*: equal counts breathing in, holding, breathing out and holding. *Cyclic hyperventilation*: rounds of thirty deep breaths, each followed by breathing out fully and holding with empty lungs for fifteen seconds.
+
+The breathing exercises raised positive feelings more than mindfulness meditation did. Cyclic sighing, with its long breaths out, stood out most, and it also slowed people's breathing at rest, a sign of lower physiological arousal. Its double breath in follows the body's own *physiological sigh*, which people make spontaneously, especially before sleep and after stress, and which reopens the tiny air sacs of the lungs. The Cyclic Sighing, Box Breathing and Cyclic Hyperventilation sessions follow the study's protocols, and Stress Release uses slow breathing in the same spirit. Cyclic hyperventilation can cause tingling and light-headedness, so it is opt-in, behind a warning; never practise it in or near water, or while driving or standing.
+
+@ tummo_research
+title: Tummo, the inner fire, in the laboratory
+orig: English
+by: Herbert Benson and colleagues; Maria Kozhevnikov and colleagues
+date: 1982 and 2013
+fam: science
+kind: study
+cite: H. Benson, J. W. Lehmann, M. S. Malhotra, R. F. Goldman, J. Hopkins & M. D. Epstein, "Body temperature changes during the practice of g Tum-mo yoga", *Nature* 295 (1982): 234–236; M. Kozhevnikov, J. Elliott, J. Shephard & K. Gramann, "Neurocognitive and somatic components of temperature increases during g-tummo meditation: legend and reality", *PLOS ONE* 8 (2013): e58244.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Tummo, the "inner fire", is the first of the Six Yogas of Nāropa (see that entry). Tibetan accounts tell of yogis meditating through Himalayan winters in thin cotton, and of contests in which practitioners dried wet sheets on their bodies in the cold. In 1982 the Harvard cardiologist Herbert Benson and colleagues measured three Tibetan monks practising tummo in India, and found that they could raise the temperature of their fingers and toes by up to about 8 °C.
+
+In 2013 Maria Kozhevnikov and colleagues measured core body temperature, which is much harder to change, in Tibetan nuns and monks in eastern Tibet. In *forceful vase breathing*, the breath is held after breathing in while the belly and pelvic floor are contracted, and this alone raised body temperature. Combined with the visualisation of a flame rising from below the navel, it raised and sustained the temperature further, up to 38.3 °C, a mild fever range. Gentle breathing, with a soft, unstrained hold, did not raise the temperature by itself; practitioners use it to maintain the heat. Western volunteers who learned the forceful breathing alone warmed slightly. The authors concluded that the legends contain a real core: a breathing technique that produces heat, and a meditative technique that helps keep it. The Tummo Inner-Fire (forceful) session is opt-in, behind a warning, because strong breath holds with straining raise blood pressure; it is not for people with heart conditions, high blood pressure, glaucoma or hernia, or in pregnancy. The Gentle Vase Breathing session is a calm, safe introduction.
+
+@ kapalabhati_research
+title: Kapālabhāti and fast yogic breathing
+orig: English
+by: Shirley Telles and colleagues
+date: 2011
+fam: science
+kind: study
+cite: S. Telles, N. Singh & A. Balkrishna, "Heart rate variability changes during high frequency yoga breathing and breath awareness", *BioPsychoSocial Medicine* 5 (2011): 4.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Kapālabhāti, "skull-shining", is one of the cleansing practices of hatha yoga (see the *Haṭha Yoga Pradīpikā*). It is a series of short, forceful breaths out through the nose, made by pulling the belly in sharply, with each breath in happening by itself. Breath of fire, a signature practice of Kundalini Yoga as taught by Yogi Bhajan, is a related fast breath with equal, rhythmic breaths in and out. Both are said to energise and clear the mind, the opposite of the slow breathing used for calm.
+
+At the Patanjali Research Foundation in Haridwar, India, Shirley Telles and colleagues measured heart-rate variability in men practising high-frequency yoga breathing at about one breath a second, for three five-minute rounds, and compared it with simple awareness of the breath. During and after the fast breathing, the measures showed less activity of the vagus nerve, the body's calming system, which fits its reputation as energising rather than relaxing. Other studies by the same group have suggested short-term improvements in attention after fast breathing. The Kapalabhati and Breath of Fire sessions are opt-in, behind a warning: start with short rounds, keep the breath light and even, never strain, and stop if you feel dizzy. Do not practise in pregnancy, or with hernia, high blood pressure, heart disease or epilepsy.
+
+@ sudarshan
+title: Sudarshan Kriya: rhythmic breathing for stress and mood
+orig: English
+by: Richard Brown and Patricia Gerbarg; Sri Sri Ravi Shankar
+date: 1982 onward
+fam: science
+kind: review
+cite: R. P. Brown & P. L. Gerbarg, "Sudarshan Kriya yogic breathing in the treatment of stress, anxiety, and depression", parts I and II, *Journal of Alternative and Complementary Medicine* 11 (2005): 189–201 and 711–717.
+credit: Summarised in Assembly Sounds' own words.
+more: S. S. Zope & R. A. Zope, "Sudarshan kriya yoga: breathing for health", *International Journal of Yoga* 6 (2013): 4–10.
+more: Richard P. Brown & Patricia L. Gerbarg, *The Healing Power of the Breath* (2012).
+about:
+Sudarshan Kriya Yoga (SKY) is a breathing practice developed in 1982 by the Indian teacher Sri Sri Ravi Shankar and taught by his Art of Living Foundation. A session combines *ujjayi*, a slow "ocean" breath with a slight narrowing of the throat; *bhastrikā*, a bellows breath; chanting Om; and the kriya itself, cycles of rhythmic breathing at slow, medium and fast rates. It is taught in person, in courses, by trained teachers.
+
+The psychiatrists Richard Brown and Patricia Gerbarg reviewed the research in 2005 and proposed a model of how it works: the varied rhythms of breath send signals through the vagus nerve that calm the stress systems and lift mood. Trials, many of them in India, have reported benefits for stress, anxiety and depression, including in people whose depression had not responded to treatment, and a 2014 study by Emma Seppälä and colleagues reported reduced post-traumatic stress symptoms in US military veterans. A 2013 review by Zope and Zope summarised benefits across many measures of health. Many of the studies were small or run by people connected with the Art of Living, so more independent trials are needed. The Sudarshan Kriya-inspired session is an original approximation of the structure, with the cycles at about 20, 45 and 70 breaths a minute, followed by rest. It is opt-in, behind a warning: the fast phase can bring tingling, strong emotion or light-headedness, so slow down whenever you need to.
+
+@ pramanik2009
+title: Slow-pace bhastrikā and blood pressure
+orig: English
+by: Tapas Pramanik and colleagues
+date: 2009
+fam: science
+kind: study
+cite: T. Pramanik, H. O. Sharma, S. Mishra, A. Mishra, R. Prajapati & S. Singh, "Immediate effect of slow pace bhastrika pranayama on blood pressure and heart rate", *Journal of Alternative and Complementary Medicine* 15 (2009): 293–295.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Bhastrikā, "the bellows", is a hatha-yoga breath described in the *Haṭha Yoga Pradīpikā*, usually practised as deep, forceful, fairly fast breathing. In 2009 Tapas Pramanik and colleagues tested a slow version: deep breaths in through both nostrils for about four seconds, and out for about six, so about six breaths a minute. After five minutes of this, healthy volunteers' blood pressure fell, and their heart rate fell slightly.
+
+The authors suggested that the slow, deep rhythm strengthens the calming, parasympathetic side of the nervous system, the same mechanism at work in resonance breathing (see that entry). It was a small study of the immediate effect only. But it shows that the full, deep breaths of bhastrikā can be kept while slowing the pace to one that calms rather than excites. The Slow-Pace Bhastrika session paces this four-in, six-out rhythm.
+
+@ weil_478
+title: The 4-7-8 relaxing breath
+orig: English
+by: Andrew Weil
+date: 1990s
+fam: science
+kind: teaching
+cite: Andrew Weil's teaching on the "relaxing breath", in his books and in *Breathing: The Master Key to Self Healing* (1999).
+credit: Summarised in Assembly Sounds' own words.
+about:
+The American physician Andrew Weil, a pioneer of integrative medicine, has taught the 4-7-8 breath for decades as a simple relaxation exercise, adapted from yogic pranayama. It became famous online as a way to fall asleep.
+
+The method: place the tip of your tongue on the ridge of tissue just behind your upper front teeth, and keep it there. Breathe out completely through your mouth with a soft "whoosh". Close your mouth and breathe in quietly through your nose for a count of four. Hold the breath for a count of seven. Breathe out through your mouth, with the whoosh, for a count of eight. That is one cycle. Weil recommends four cycles at a time, twice a day, building up to eight cycles after a month. The speed of the counts matters less than the ratio, with the breath out twice as long as the breath in.
+
+There is little direct research on 4-7-8 itself. But slow breathing with long breaths out lowers heart rate and increases heart-rate variability in many studies (see the entries on resonance breathing and cyclic sighing). The hold is short and gentle, but if you feel light-headed, shorten it, or skip the hold. The 4-7-8 Relaxing Breath session guides the counts.
+
+@ trataka_research
+title: Trāṭaka, steady gazing, and attention
+orig: English
+by: S. Talwadkar, A. Jagannathan and N. Raghuram
+date: 2014
+fam: science
+kind: study
+cite: S. Talwadkar, A. Jagannathan & N. Raghuram, "Effect of trataka on cognitive functions in the elderly", *International Journal of Yoga* 7 (2014): 96–103.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Trāṭaka is one of the six cleansing practices of hatha yoga. The *Haṭha Yoga Pradīpikā* describes it as gazing at a small object with a steady, unblinking gaze until the eyes water. Usually the object is a candle flame, and when the eyes close, its afterimage is held at the brow. Practitioners say it trains concentration, and it is a preparation for deeper meditation.
+
+In 2014 Talwadkar, Jagannathan and Raghuram, at a yoga university in Bangalore, India, randomly assigned older adults either to daily trāṭaka for about a month or to a control group. Those who practised scored better afterwards on several tests of attention and memory. It was a small trial, so more research is needed. The Trāṭaka session uses the app's gazing aid, a still flame that never flickers. Never strain your eyes; blink when you need to; and if you use a real candle, place it safely and never leave it unattended.

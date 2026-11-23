@@ -1,0 +1,236 @@
+// Research: brainwaves, binaural beats, sleep and naps.
+
+@ eeg_bands
+title: The brain's rhythms: from Hans Berger to the EEG bands
+orig: German and English
+by: Hans Berger (1873–1941); Edgar Adrian and Bryan Matthews; later EEG research
+date: 1929 onward
+fam: science
+kind: history
+cite: H. Berger, "Über das Elektrenkephalogramm des Menschen", *Archiv für Psychiatrie und Nervenkrankheiten* 87 (1929): 527–570; E. D. Adrian & B. H. C. Matthews, "The Berger rhythm: potential changes from the occipital lobes in man", *Brain* 57 (1934): 355–385.
+credit: Summarised in Assembly Sounds' own words.
+more: György Buzsáki, *Rhythms of the Brain* (2006).
+more: Paul L. Nunez & Ramesh Srinivasan, *Electric Fields of the Brain: The Neurophysics of EEG* (2nd edition, 2006).
+about:
+In 1924 the German psychiatrist Hans Berger, working largely in secret in Jena, recorded the first electrical activity of the human brain through the scalp. He published it in 1929, calling it the *Elektrenkephalogramm*, the EEG. The most striking thing he saw was a regular wave of about ten cycles a second. It appeared when a person sat quietly with the eyes closed, and vanished when they opened their eyes or did mental arithmetic. He called it the *alpha* wave, and the faster, smaller activity of the alert mind *beta*. At first few believed him. In 1934 the British physiologists Edgar Adrian and Bryan Matthews confirmed the "Berger rhythm", and the EEG became one of the basic tools of neuroscience.
+
+Researchers later named more rhythms, and today five broad bands are used. These are conventions. The boundaries differ a little between laboratories, and each band is linked to mental states only as a broad tendency. The brain always produces many rhythms at once, in different places. A brainwave session in this app aims at one band, but no sound can switch the whole brain into a single state. The sessions in the Brainwave Library are organised by these bands.
+
+## The five bands
+- **Delta**, about 0.5–4 Hz: deep, dreamless sleep. In waking adults it is mostly a sign of drowsiness or illness.
+- **Theta**, about 4–8 Hz: drowsiness and the edge of sleep, dreaming sleep, deep meditation, and memory work in the hippocampus.
+- **Alpha**, about 8–13 Hz: relaxed wakefulness, especially with the eyes closed. It is strongest at the back of the head.
+- **Beta**, about 13–30 Hz: alert, active thinking and concentration. Its lowest part, about 12–15 Hz over the movement areas, is called the *sensorimotor rhythm* (SMR).
+- **Gamma**, above about 30 Hz: binding of perception and attention, and intense focus.
+
+@ bb_reviews
+title: Do binaural beats work? The reviews
+orig: English
+by: Heinrich Wilhelm Dove; Gerald Oster; Miguel Garcia-Argibay and colleagues; R. M. Ingendoh and colleagues
+date: 1839, 1973, 2019 and 2023
+fam: science
+kind: review
+cite: M. Garcia-Argibay, M. A. Santed & J. M. Reales, "Efficacy of binaural auditory beats in cognition, anxiety, and pain perception: a meta-analysis", *Psychological Research* 83 (2019): 357–372; R. M. Ingendoh, E. S. Posny & A. Heine, "Binaural beats to entrain the brain? A systematic review of the effects of binaural beat stimulation on brain oscillatory activity, and the implications for psychological research and intervention", *PLOS ONE* 18 (2023): e0286023.
+credit: Summarised in Assembly Sounds' own words.
+more: G. Oster, "Auditory beats in the brain", *Scientific American* 229 (1973): 94–102.
+about:
+Binaural beats were discovered in 1839 by the German physicist Heinrich Wilhelm Dove. If one ear hears a steady tone of, say, 200 Hz and the other a tone of 206 Hz, the listener hears neither clearly. Instead they hear a single tone that seems to pulse six times a second, the difference between the two. The beat is not in the sound: it is created by the brain, where the signals from the two ears meet. In 1973 the biophysicist Gerald Oster described them in *Scientific American* and suggested they might be a tool for studying the brain. Since then they have been studied, and sold, as a way to guide the brain toward the rhythm of the beat, an idea called *entrainment*.
+
+Two careful reviews sum up the evidence. In 2019 Garcia-Argibay and colleagues combined 22 studies, with 35 measured effects, in a meta-analysis covering memory, attention, anxiety and pain. Overall, listening to binaural beats had a benefit of medium size. The beats worked better when people listened before a task, or before and during it, than only during it, and longer listening helped. Masking the beats with white or pink noise made little difference. In 2023 Ingendoh and colleagues reviewed studies that actually measured brain activity. Of fourteen, five found the brain following the beat, eight did not, and one was mixed. Methods varied so much that no firm conclusion could be drawn. So binaural beats seem to help some people feel calmer and focus a little better. How they do it, and whether "entrainment" is the reason, is still open. The sessions in this app are built on these modest, honest findings.
+
+## What the evidence suggests, in brief
+- **Anxiety**: tested in several trials, including before surgery, with encouraging results.
+- **Pain**: less perceived pain in a small number of trials.
+- **Attention and memory**: results that differ a lot from study to study.
+- **The brain**: mixed evidence that the brain's rhythms actually lock to the beat.
+- **Practical points**: use headphones, since each ear must hear its own tone; listen for a while before a task, not only during it; background noise is optional; a moderate volume is enough.
+
+@ anxiety_bb
+title: Binaural beats and anxiety
+orig: English
+by: R. Padmanabhan, A. J. Hildreth and D. Laws; Adiel Mallik and Frank Russo
+date: 2005 and 2022
+fam: science
+kind: study
+cite: R. Padmanabhan, A. J. Hildreth & D. Laws, "A prospective, randomised, controlled study examining binaural beat audio and pre-operative anxiety in patients undergoing general anaesthesia for day case surgery", *Anaesthesia* 60 (2005): 874–877.
+credit: Summarised in Assembly Sounds' own words.
+more: A. Mallik & F. A. Russo, "The effects of music & auditory beat stimulation on anxiety: a randomized clinical trial", *PLOS ONE* 17 (2022): e0259312.
+more: M. Garcia-Argibay et al., "Efficacy of binaural auditory beats in cognition, anxiety, and pain perception: a meta-analysis", *Psychological Research* 83 (2019): 357–372.
+about:
+Anxiety is one of the areas where binaural beats have their most encouraging evidence. In 2005 Padmanabhan and colleagues randomly divided 108 patients waiting for day surgery under general anaesthesia into three groups of 36. One group listened through headphones to an audio recording with binaural beats, one to the same soundtrack without the beats, and one had no audio. Anxiety, measured with a standard questionnaire, fell by about 26% in the binaural-beat group, by about 11% with the plain soundtrack, and by about 4% with no audio.
+
+Later work backs this up, with some caution. Anxiety was one of the four areas in the 2019 meta-analysis by Garcia-Argibay and colleagues, which found an overall benefit of medium size. In a 2022 trial by Mallik and Russo, 163 people taking anti-anxiety medication each listened once to calm music, to theta-rate beats, to both together, or to pink noise. For people with moderate anxiety, music combined with beats eased anxious thoughts the most. For people with high anxiety, music alone did better than beats alone. The participants knew what they were hearing, so the results need confirming. The Anxiety Ease session joins beats with slow breathing at about six breaths a minute, which has good evidence of its own (see the heart-rate-variability entry).
+
+## What the 2005 study found, in brief
+- **Who**: 108 adults waiting for day surgery under general anaesthesia.
+- **What**: binaural-beat audio, the same audio without the beats, or no audio, before the operation.
+- **Result**: anxiety fell by about 26%, 11% and 4% respectively. The authors concluded that binaural-beat audio could reduce acute anxiety before surgery.
+
+@ attention_bb
+title: Binaural beats, attention and memory
+orig: English
+by: C. Beauchene, N. Abaid, R. Moran, R. A. Diana and A. Leonessa; Miguel Garcia-Argibay and colleagues
+date: 2016 and 2019
+fam: science
+kind: study
+cite: C. Beauchene, N. Abaid, R. Moran, R. A. Diana & A. Leonessa, "The effect of binaural beats on visuospatial working memory and cortical connectivity", *PLOS ONE* 11 (2016): e0166630.
+credit: Summarised in Assembly Sounds' own words.
+more: M. Garcia-Argibay et al., "Efficacy of binaural auditory beats in cognition, anxiety, and pain perception: a meta-analysis", *Psychological Research* 83 (2019): 357–372.
+about:
+Can beats help you study? The evidence is mixed. In the 2019 meta-analysis by Garcia-Argibay and colleagues, the overall benefit across memory, attention, anxiety and pain was of medium size. But the effect depended on the beat frequency, how long people listened, and whether they listened before or during the task, and results for memory and attention differed a lot between studies.
+
+One often-cited study, by Beauchene and colleagues (2016), compared binaural beats at 5, 10 and 15 Hz with silence, a pure tone and classical music, while volunteers did a task that tested their short-term memory for what they had seen. Only with the 15 Hz beats, in the low-beta range, did accuracy improve during the task; in the other conditions it declined. The EEG also showed changes in how brain regions worked together. Like many studies in this field, it was small and needs repeating. The Study and Memory session uses a short alpha settle followed by low beta at 14 Hz, in line with this research, without promising more than it shows.
+
+@ creativity_bb
+title: Binaural beats, the alpha–theta border and creativity
+orig: English
+by: S. A. Reedijk, A. Bolders and Bernhard Hommel; Tobias Egner and John Gruzelier
+date: 2003 and 2013
+fam: science
+kind: study
+cite: S. A. Reedijk, A. Bolders & B. Hommel, "The impact of binaural beats on creativity", *Frontiers in Human Neuroscience* 7 (2013): 786.
+credit: Summarised in Assembly Sounds' own words.
+more: T. Egner & J. H. Gruzelier, "Ecological validity of neurofeedback: modulation of slow wave EEG enhances musical performance", *NeuroReport* 14 (2003): 1221–1224.
+more: S. A. Reedijk, A. Bolders, L. S. Colzato & B. Hommel, "Eliminating the attentional blink through binaural beats: a case for tailored cognitive enhancement", *Frontiers in Psychiatry* 6 (2015): 82.
+about:
+Creativity is often linked with relaxed, dreamy states, and especially with the border between alpha and theta, the "twilight" just before sleep, when images come freely. In 2013 Reedijk, Bolders and Hommel, at Leiden University, tested whether binaural beats could affect creative thinking. Volunteers listened to alpha-rate or gamma-rate beats, or to a control sound. Then they did a task of divergent thinking, finding many uses for an everyday object, and one of convergent thinking, finding the one word that links three others.
+
+The beats changed divergent thinking but not convergent thinking, and not in the same way for everyone. The researchers estimated each person's level of the brain chemical dopamine from how often they blinked. People with a low blink rate mostly benefited from the alpha beats. People with a high blink rate were unaffected, or even did worse, with both kinds of beat. The authors concluded that binaural beats are not a one-size-fits-all tool. In a 2015 study the same group found a similar pattern for attention: gamma-rate beats removed a brief "blind spot" in attention, but only in people with a low blink rate.
+
+Other research supports the link between slow rhythms and creative performance. In 2003 Egner and Gruzelier trained music students with alpha–theta neurofeedback, in which they learned to raise their own theta over alpha with eyes closed. Their performances, judged by experts, improved more than those of students given other training. The Creative Flow session swings gently between 10 and 7.5 Hz, around this border. The link between the border and "flow" is popular rather than proven. The Gamma session also draws on these studies.
+
+@ pain_bb
+title: Binaural beats and pain
+orig: English
+by: D. D. Zampi; V. Gkolias and colleagues; Miguel Garcia-Argibay and colleagues
+date: 2016, 2019 and 2020
+fam: science
+kind: study
+cite: V. Gkolias et al., "Reduced pain and analgesic use after acoustic binaural beats therapy in chronic pain: a double-blind randomized control cross-over trial", *European Journal of Pain* 24 (2020): 1716–1729; D. D. Zampi, "Efficacy of theta binaural beats for the treatment of chronic pain", *Alternative Therapies in Health and Medicine* 22 (2016): 32–38.
+credit: Summarised in Assembly Sounds' own words.
+more: M. Garcia-Argibay et al., "Efficacy of binaural auditory beats in cognition, anxiety, and pain perception: a meta-analysis", *Psychological Research* 83 (2019): 357–372.
+about:
+Pain is shaped strongly by attention, mood and expectation. Anything that calms the nervous system and draws attention away from the pain can help a little. Binaural beats have been tested as one such aid, and pain was one of the four areas in the 2019 meta-analysis by Garcia-Argibay and colleagues, which found an overall benefit of medium size.
+
+In a small crossover pilot study published in 2016, Zampi had people with chronic pain listen daily to theta binaural beats and, for another period, to a sham recording. Their pain fell more after the beats. In a better-controlled, double-blind crossover trial published in 2020, Gkolias and colleagues gave patients with chronic pain either binaural-beat audio or a sham, then swapped them over, without patients or researchers knowing which was which. Pain and the use of painkillers both fell more with the beats. These are encouraging results, but they need confirming. The Pain Relief Support session combines a theta beat with slow breathing. It is a support for comfort, not a medical treatment. See a doctor about any persistent pain.
+
+@ theta6
+title: A 6 Hz binaural beat and theta activity
+orig: English
+by: Nantawachara Jirakittayakorn and Yodchanan Wongsawat
+date: 2017
+fam: science
+kind: study
+cite: N. Jirakittayakorn & Y. Wongsawat, "Brain responses to a 6-Hz binaural beat: effects on general theta rhythm and frontal midline theta activity", *Frontiers in Neuroscience* 11 (2017): 365.
+credit: Summarised in Assembly Sounds' own words.
+about:
+At Mahidol University in Thailand, Jirakittayakorn and Wongsawat tested what a 6 Hz binaural beat does to the EEG. Twenty-eight volunteers were split into two groups. One group listened for 30 minutes to a 6 Hz beat on a 250 Hz carrier tone, and the other served as a control. The researchers followed how theta activity changed over the half hour.
+
+Within ten minutes, the group hearing the beat showed increased theta activity across the whole cortex. They also showed more *frontal midline theta*, a rhythm over the front of the head that is linked with focused, absorbed attention and with meditation. On a standard mood questionnaire, their feelings of tension fell more than in the control group. The researchers concluded that the beat could help bring about a meditative state. The study was small, and other studies have not always found the brain following the beat (see the binaural-beat reviews). The Theta Meditation session uses the same 6 Hz beat on a 250 Hz carrier, and the Brainwave Library's 6 Hz session uses the same rate.
+
+@ lane1998
+title: Beta beats, vigilance and mood
+orig: English
+by: J. D. Lane, S. J. Kasian, J. E. Owens and G. R. Marsh
+date: 1998
+fam: science
+kind: study
+cite: J. D. Lane, S. J. Kasian, J. E. Owens & G. R. Marsh, "Binaural auditory beats affect vigilance performance and mood", *Physiology & Behavior* 63 (1998): 249–252.
+credit: Summarised in Assembly Sounds' own words.
+about:
+At Duke University Medical Center, Lane and colleagues tested whether binaural beats could affect alertness. Twenty-nine volunteers did a 30-minute vigilance task, watching a screen for rare targets, on three separate days. They listened to pink noise containing beats in the beta range, at 16 and 24 Hz, or in the theta and delta range, at 1.5 and 4 Hz. They were not told whether beats were present, so that expectation would not colour the results.
+
+With the beta beats, people detected more targets correctly and made fewer false alarms than with the slower beats, and their mood was less negative. This was one of the first well-controlled studies to show an effect of binaural beats on performance, and it is still widely cited. It was small, and later attempts to repeat it have not always found the same effect. The Beta Focus and Morning Energiser sessions, and the beta sessions of the Brainwave Library, draw on it.
+
+@ gamma40
+title: 40 Hz stimulation and the brain
+orig: English
+by: Li-Huei Tsai's laboratory at MIT and others
+date: 2016–2024
+fam: science
+kind: study
+cite: H. F. Iaccarino et al., "Gamma frequency entrainment attenuates amyloid load and modifies microglia", *Nature* 540 (2016): 230–235; A. J. Martorell et al., "Multi-sensory gamma stimulation ameliorates Alzheimer's-associated pathology and improves cognition", *Cell* 177 (2019): 256–271; M. H. Murdock et al., "Multisensory gamma stimulation promotes glymphatic clearance of amyloid", *Nature* 627 (2024): 149–156.
+credit: Summarised in Assembly Sounds' own words.
+more: M. Soula et al., "Forty-hertz light stimulation does not entrain native gamma oscillations in Alzheimer's disease model mice", *Nature Neuroscience* 26 (2023): 570–578.
+more: R. Galambos, S. Makeig & P. J. Talmachoff, "A 40-Hz auditory potential recorded from the human scalp", *PNAS* 78 (1981): 2643–2647.
+about:
+Forty cycles a second sits at the heart of the gamma band. It is also the rate at which the hearing system responds most strongly to regular pulses, as Robert Galambos and colleagues showed in 1981. In 2016 a team at MIT led by Li-Huei Tsai reported a startling result. In mice bred to develop an Alzheimer's-like disease, an hour of light flickering at 40 Hz reduced the amyloid protein that builds up in the disease, and activated the brain's immune cells. In 2019 they found that 40 Hz sound pulses had similar effects in the hearing areas and the hippocampus and improved the mice's memory, and that sound and light together reached more of the brain. They called the approach GENUS, gamma entrainment using sensory stimuli. In 2024 they reported that it helps the brain's fluid flush out amyloid.
+
+Other researchers have questioned how it works. In 2023 a team in György Buzsáki's laboratory reported that 40 Hz light did not entrain the brain's own gamma rhythms in mouse models of the disease in the way the theory proposed. Human studies are early. Small trials have reported that daily 40 Hz light and sound is safe and well tolerated, and larger trials have been started. It is not a treatment for Alzheimer's disease. The 40 Hz Isochronic (GENUS-style) session plays 40 Hz pulses of the kind these studies used. The Gamma session and the gamma sessions of the Brainwave Library use gamma-rate binaural beats. They are offered as focusing sounds, nothing more.
+
+@ lutz2004
+title: Gamma waves in long-term meditators
+orig: English
+by: Antoine Lutz, Lawrence Greischar, Nancy Rawlings, Matthieu Ricard and Richard Davidson
+date: 2004
+fam: science
+kind: study
+cite: A. Lutz, L. L. Greischar, N. B. Rawlings, M. Ricard & R. J. Davidson, "Long-term meditators self-induce high-amplitude gamma synchrony during mental practice", *PNAS* 101 (2004): 16369–16373.
+credit: Summarised in Assembly Sounds' own words.
+more: Daniel Goleman & Richard J. Davidson, *Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body* (2017).
+about:
+In 2004 Richard Davidson's laboratory at the University of Wisconsin published one of the most famous studies in meditation research. They recorded the EEG of eight Tibetan Buddhist practitioners, each with between 10,000 and 50,000 hours of meditation behind them. Among them was the French-born monk Matthieu Ricard, who was also an author of the study. They were compared with ten student volunteers who had learned the same practice a week before.
+
+The practice was "objectless" loving-kindness and compassion: a state of unconditional readiness to help all beings, with no particular person in mind. As the practitioners entered it, their EEG showed gamma activity, around 25–42 Hz, of an amplitude and synchrony across the brain rarely recorded in healthy people. Their gamma was higher than the students' even at rest, before the meditation began. The students showed only a slight increase. The study suggested that long-term mental training can change the brain's activity, a key idea in the science of meditation. It was small, and the practitioners differed from the students in age, culture and much else. The Compassion Gamma session draws on it, and so does the 40 Hz layer of Focus 21.
+
+@ slow_wave_sound
+title: Sound pulses and deep sleep
+orig: English
+by: Hong-Viet Ngo, Jan Born and Matthias Mölle; Nantawachara Jirakittayakorn and Yodchanan Wongsawat
+date: 2013 and 2018
+fam: science
+kind: study
+cite: H.-V. V. Ngo, J. C. Claussen, J. Born & M. Mölle, "Induction of slow oscillations by rhythmic acoustic stimulation", *Journal of Sleep Research* 22 (2013): 22–31; H.-V. V. Ngo, T. Martinetz, J. Born & M. Mölle, "Auditory closed-loop stimulation of the sleep slow oscillation enhances memory", *Neuron* 78 (2013): 545–553.
+credit: Summarised in Assembly Sounds' own words.
+more: N. Jirakittayakorn & Y. Wongsawat, "A novel insight of effects of a 3-Hz binaural beat on sleep stages during sleep", *Frontiers in Human Neuroscience* 12 (2018): 387.
+about:
+In deep sleep the brain produces *slow oscillations*: huge, slow waves, less than one a second, in which millions of neurons fall silent and then fire together. They help move the day's memories into long-term storage. Hong-Viet Ngo, Jan Born and Matthias Mölle, sleep researchers in Germany, asked whether soft sounds could strengthen them. In a 2013 study they played soft tones at 0.8 per second, the rhythm of the slow oscillation, from before the volunteers fell asleep through the first ninety minutes of the night. They compared this with randomly timed tones and with no tones. Before sleep, the 0.8 Hz tones delayed falling asleep. But once sleep was established, they increased the brain's slow oscillations and pulled them into step with the sound. The effect needed stable non-REM sleep.
+
+In a second study the same year they used a "closed loop". A computer watched each volunteer's EEG and timed each sound to arrive at the peak of a natural slow wave. This boosted the slow oscillations even more, and the volunteers remembered word pairs they had learned the evening before better. Separately, Jirakittayakorn and Wongsawat (2018) reported that a 3 Hz binaural beat played during sleep lengthened deep sleep in a small group. The Slow-Wave Sleep Pulses session follows the open-loop method. Because the pulses delayed sleep when they started too early, it waits 25 minutes before starting them, and without an EEG headset it cannot time them to your brain waves. The Deep Sleep session uses the 3 Hz beat.
+
+@ deep_sleep_gh
+title: Deep sleep, growth hormone and the brain's night cleaning
+orig: English
+by: Y. Takahashi, D. M. Kipnis and W. H. Daughaday; Eve Van Cauter and colleagues; Lulu Xie, Maiken Nedergaard and colleagues
+date: 1968, 2000 and 2013
+fam: science
+kind: study
+cite: Y. Takahashi, D. M. Kipnis & W. H. Daughaday, "Growth hormone secretion during sleep", *Journal of Clinical Investigation* 47 (1968): 2079–2090; L. Xie et al., "Sleep drives metabolite clearance from the adult brain", *Science* 342 (2013): 373–377.
+credit: Summarised in Assembly Sounds' own words.
+more: E. Van Cauter, R. Leproult & L. Plat, "Age-related changes in slow wave sleep and REM sleep and relationship with growth hormone and cortisol levels in healthy men", *JAMA* 284 (2000): 861–868.
+more: Matthew Walker, *Why We Sleep* (2017).
+about:
+Deep, slow-wave sleep is when the body does much of its physical restoration. In 1968 Takahashi, Kipnis and Daughaday showed that the largest pulse of growth hormone in the whole day comes shortly after falling asleep, during the first period of deep sleep. Growth hormone helps repair tissue and maintain muscle and bone. Later work by Eve Van Cauter and others showed that deep sleep and this nightly hormone pulse both decline with age, and that they decline together.
+
+In 2013 a team led by Maiken Nedergaard at the University of Rochester found something more. During sleep the spaces between brain cells widen, and fluid flows through the brain much faster, washing away waste products, including the amyloid protein linked to Alzheimer's disease. This waste-clearing flow runs through what Nedergaard's team had named, the year before, the *glymphatic system*. Much of this research was done in mice, and the details in humans are still being worked out. But it shows why deep sleep matters so much. Whether binaural beats can deepen it is unproven. The Deep Restoration session is meant to play quietly as you fall asleep.
+
+@ sleep_noise
+title: Noise as a sleep aid
+orig: English
+by: S. M. Riedy, M. G. Smith, S. Rocha and M. Basner; J. A. Spencer and colleagues
+date: 1990 and 2021
+fam: science
+kind: review
+cite: S. M. Riedy, M. G. Smith, S. Rocha & M. Basner, "Noise as a sleep aid: a systematic review", *Sleep Medicine Reviews* 55 (2021): 101385.
+credit: Summarised in Assembly Sounds' own words.
+more: J. A. Spencer, D. J. Moran, A. Lee & D. Talbert, "White noise and sleep induction", *Archives of Disease in Childhood* 65 (1990): 135–137.
+about:
+Many people fall asleep more easily to a steady background sound: a fan, rain, or "colour" noise. *White noise* has equal energy at every frequency, and sounds like a hiss. *Pink noise* has less energy in the high frequencies, and sounds like steady rain. *Brown noise* has even less, and sounds like a deep rumble or distant surf. A steady noise is thought to help mainly by *masking*: it raises the background level, so that sudden sounds, such as traffic, a door or a partner's snoring, stand out less and are less likely to wake you.
+
+The evidence is weaker than the popularity suggests. In 2021 Riedy and colleagues reviewed 38 studies of continuous white or similar broadband noise and sleep. The studies were very varied, and many relied on people's own reports. The reviewers rated the evidence that continuous noise improves sleep as very low in quality, and warned that noise can also disturb sleep and, if loud, harm hearing. An older study in newborn babies, by Spencer and colleagues (1990), found that white noise helped them fall asleep faster. If you use noise, keep it low and steady. The Insomnia Wind-down session uses quiet brown noise to mask household sounds.
+
+@ nap_research
+title: The ideal nap
+orig: English
+by: Amber Brooks and Leon Lack; Mark Rosekind and colleagues at NASA; Sara Mednick and colleagues
+date: 1994, 2003 and 2006
+fam: science
+kind: study
+cite: A. Brooks & L. Lack, "A brief afternoon nap following nocturnal sleep restriction: which nap duration is most recuperative?", *Sleep* 29 (2006): 831–840.
+credit: Summarised in Assembly Sounds' own words.
+more: M. R. Rosekind et al., *Crew Factors in Flight Operations IX: Effects of Planned Cockpit Rest on Crew Performance and Alertness in Long-Haul Operations*, NASA Technical Memorandum 108839 (1994).
+more: S. Mednick, K. Nakayama & R. Stickgold, "Sleep-dependent learning: a nap is as good as a night", *Nature Neuroscience* 6 (2003): 697–698.
+about:
+At Flinders University in Australia, Amber Brooks and Leon Lack studied how long an afternoon nap should be. Their volunteers were short of sleep. On different afternoons they had no nap, or naps of 5, 10, 20 or 30 minutes, and were then tested for alertness, mood and performance over the next few hours. The 5-minute nap did little. The 10-minute nap gave an immediate lift in alertness, mood and performance, and some of the benefits lasted over two and a half hours. The 20-minute nap's benefits appeared only about half an hour after waking. The 30-minute nap first caused a spell of grogginess, called *sleep inertia*, before its benefits arrived, because sleepers had sunk into deeper sleep.
+
+Other research shows what naps can do. In a NASA study of long-haul airline pilots, a planned 40-minute rest period, in which pilots slept for about 26 minutes, improved their alertness and reaction times later in the flight. In 2003 Sara Mednick and colleagues found that a longer nap, with deep and dreaming sleep, could boost learning on a visual task as much as a full night's sleep. The Power Nap session follows Brooks and Lack: it settles you down, holds about ten minutes of theta, then brings you back up.

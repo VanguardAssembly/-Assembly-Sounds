@@ -1,0 +1,233 @@
+// Research: mystical experience, brain imaging of prayer and meditation, flotation, night waking, chant, bowls, humming, nature sounds and drumming.
+
+@ james_varieties
+title: The Varieties of Religious Experience
+orig: English
+by: William James (1842–1910)
+date: 1902
+fam: science
+kind: book
+cite: William James, *The Varieties of Religious Experience: A Study in Human Nature* (1902), Lectures XVI and XVII, "Mysticism".
+credit: James's own words (1902, public domain); the about section in Assembly Sounds' own words.
+more: W. T. Stace, *Mysticism and Philosophy* (1960).
+more: R. W. Hood, "The construction and preliminary validation of a measure of reported mystical experience", *Journal for the Scientific Study of Religion* 14 (1975): 29–41.
+about:
+William James, the American philosopher and one of the founders of modern psychology, gave the Gifford Lectures in Edinburgh in 1901 and 1902 and published them as *The Varieties of Religious Experience*. Instead of asking whether religious doctrines are true, he gathered first-hand accounts of conversion, saintliness and mystical states, from the Christian mystics to Sufis, Buddhists, Vedantists and ordinary people, and asked what these experiences are like and what they do to a life. His test was practical: "by their fruits ye shall know them". The book is still the starting point of the psychology of religion.
+
+In the two lectures on mysticism James gave four marks by which a state can be called mystical. They are the root of the questionnaires researchers still use. The philosopher W. T. Stace built on them, Ralph Hood turned Stace's account into a questionnaire, and the mystical-experience scales used in today's psilocybin and meditation research descend from these. James had also experimented with nitrous oxide, and from that came the passage on the "filmiest of screens" below, one of the most quoted lines on altered states. He concluded, in summary, that mystical states have a right to be authoritative for the people who have them; that they place no duty on anyone else to accept their revelations uncritically; and that they show ordinary rational consciousness to be only one kind of consciousness among others. The Mystical Experience Arc session takes its stages from the dimensions that grew out of this work through Stace: unity, the sacred and timelessness.
+
+## The four marks of mystical states
+1. **Ineffability.** The handiest of the marks by which I classify a state of mind as mystical is negative. The subject of it immediately says that it defies expression, that no adequate report of its contents can be given in words. It follows from this that its quality must be directly experienced; it cannot be imparted or transferred to others. In this peculiarity mystical states are more like states of feeling than like states of intellect. No one can make clear to another who has never had a certain feeling, in what the quality or worth of it consists. One must have musical ears to know the value of a symphony; one must have been in love one's self to understand a lover's state of mind.
+2. **Noetic quality.** Although so similar to states of feeling, mystical states seem to those who experience them to be also states of knowledge. They are states of insight into depths of truth unplumbed by the discursive intellect. They are illuminations, revelations, full of significance and importance, all inarticulate though they remain; and as a rule they carry with them a curious sense of authority for after-time.
+3. **Transiency.** Mystical states cannot be sustained for long. Except in rare instances, half an hour, or at most an hour or two, seems to be the limit beyond which they fade into the light of common day. Often, when faded, their quality can but imperfectly be reproduced in memory; but when they recur it is recognized; and from one recurrence to another it is susceptible of continuous development in what is felt as inner richness and importance.
+4. **Passivity.** Although the oncoming of mystical states may be facilitated by preliminary voluntary operations, as by fixing the attention, or going through certain bodily performances, or in other ways which manuals of mysticism prescribe; yet when the characteristic sort of consciousness once has set in, the mystic feels as if his own will were in abeyance, and indeed sometimes as if he were grasped and held by a superior power.
+
+## The filmiest of screens
+One conclusion was forced upon my mind at that time, and my impression of its truth has ever since remained unshaken. It is that our normal waking consciousness, rational consciousness as we call it, is but one special type of consciousness, whilst all about it, parted from it by the filmiest of screens, there lie potential forms of consciousness entirely different. We may go through life without suspecting their existence; but apply the requisite stimulus, and at a touch they are there in all their completeness, definite types of mentality which probably somewhere have their field of application and adaptation. No account of the universe in its totality can be final which leaves these other forms of consciousness quite disregarded.
+
+@ newberg_spect
+title: Brain scans of meditation and prayer: Newberg's SPECT studies
+orig: English
+by: Andrew Newberg, Eugene d'Aquili and colleagues
+date: 2001 and 2006
+fam: science
+kind: study
+cite: A. Newberg, A. Alavi, M. Baime, M. Pourdehnad, J. Santanna & E. d'Aquili, "The measurement of regional cerebral blood flow during the complex cognitive task of meditation: a preliminary SPECT study", *Psychiatry Research: Neuroimaging* 106 (2001): 113–122; A. B. Newberg, N. A. Wintering, D. Morgan & M. R. Waldman, "The measurement of regional cerebral blood flow during glossolalia: a preliminary SPECT study", *Psychiatry Research: Neuroimaging* 148 (2006): 67–71.
+credit: Summarised in Assembly Sounds' own words.
+more: Andrew Newberg, Eugene d'Aquili & Vince Rause, *Why God Won't Go Away: Brain Science and the Biology of Belief* (2001).
+more: Andrew Newberg & Mark Robert Waldman, *How God Changes Your Brain* (2009).
+about:
+At the University of Pennsylvania, Andrew Newberg and the psychiatrist Eugene d'Aquili set out to scan the brain at the peak of meditation and prayer. They used SPECT, in which a tracer injected into the blood is taken up by brain regions in proportion to their activity and "freezes" a snapshot of it, so that the scan can be taken a little later. In their 2001 study, experienced Tibetan Buddhist meditators practised a visualisation meditation, building an image in detail and becoming absorbed in it. When a meditator felt they had reached the peak, they signalled by tugging a string, and the tracer was injected through a line already in place.
+
+At the peak, activity rose in the prefrontal cortex, which sustains focused attention, and fell in part of the superior parietal lobe, an area that helps the brain map the body in space and tell self from surroundings. The more the prefrontal activity rose, the more the parietal activity fell. The meditators described deep absorption and a loss of the usual sense of self, and Newberg suggested that quieting this "orientation" area might underlie the sense of boundlessness and unity reported by mystics. Newberg's group later found related changes in Franciscan nuns in centring prayer.
+
+In 2006 they turned to the opposite kind of practice. They scanned a small group of Pentecostal Christian women who regularly speak in tongues, once while singing gospel songs and once during glossolalia. While they spoke in tongues, activity in the frontal lobes fell, matching their own sense that they were not deliberately producing the sounds. These were small, preliminary studies, and the interpretations remain debated. The Tibetan Visualisation Meditation and Free Vocalisation sessions follow their structure.
+
+@ hagerty2013
+title: Jhāna in the scanner: a case study of ecstatic meditation
+orig: English
+by: Michael Hagerty, Leigh Brasington and colleagues
+date: 2013
+fam: science
+kind: study
+cite: M. R. Hagerty, J. Isaacs, L. Brasington, L. Shupe, E. E. Fetz & S. C. Cramer, "Case study of ecstatic meditation: fMRI and EEG evidence of self-stimulating a reward system", *Neural Plasticity* 2013 (2013): 653572.
+credit: Summarised in Assembly Sounds' own words.
+more: Leigh Brasington, *Right Concentration: A Practical Guide to the Jhānas* (2015).
+about:
+The jhānas are the states of deep meditative absorption described in the early Buddhist texts (see the jhāna formula in the Theravada texts). They begin with rapture (pīti) and happiness (sukha) born of seclusion, and deepen through contentment to a still equanimity. In 2013 a team of researchers in the United States studied a single meditator with more than 17,000 hours of practice who could enter the jhānas at will, using fMRI and EEG. Among the authors was the American jhāna teacher Leigh Brasington.
+
+As the meditator moved into the jhānas, activity rose in the brain's reward system, including the nucleus accumbens, which is also active with pleasures such as music, food and love, and fell in areas for processing outside sensations. The authors suggested that jhāna is a way of stimulating the brain's reward system from within, without any outside reward. It is a single case, so it shows what is possible rather than what is typical. In the 2020s further studies of jhāna followed, notably from Matthew Sacchet's meditation research group at Massachusetts General Hospital and Harvard. The Jhana Absorption session follows the approach of Western jhāna teachers such as Brasington: concentration on the breath, then a pleasant feeling, then the four jhānas in turn.
+
+@ josipovic2012
+title: Nondual awareness and the brain's two networks
+orig: English
+by: Zoran Josipovic and colleagues
+date: 2012
+fam: science
+kind: study
+cite: Z. Josipovic, I. Dinstein, J. Weber & D. J. Heeger, "Influence of meditation on anti-correlated networks in the brain", *Frontiers in Human Neuroscience* 5 (2012): 183.
+credit: Summarised in Assembly Sounds' own words.
+more: Z. Josipovic, "Neural correlates of nondual awareness in meditation", *Annals of the New York Academy of Sciences* 1307 (2014): 9–18.
+about:
+The brain has two large networks that usually take turns. The *default-mode* network is active when the mind turns inward, to memories, plans and daydreams about oneself. The *task-positive* or extrinsic network is active when attention turns outward, to the world and to tasks. Normally, as one rises the other falls: they are anti-correlated, as if the brain kept a line between "me inside" and "the world outside".
+
+Nondual awareness, taught in Tibetan Dzogchen and Mahāmudrā and in Advaita Vedānta, is a state in which attention rests in awareness itself, without dividing experience into a self inside and a world outside. At New York University, the neuroscientist and meditation teacher Zoran Josipovic and colleagues scanned experienced Tibetan Buddhist practitioners as they moved between nondual awareness, focused attention and rest. In nondual awareness the usual competition between the two networks weakened: they became less anti-correlated, as if the line between inner and outer had softened. It is a small study, but it gave a first brain-level picture of a state that the traditions describe as "not two". The Nondual Awareness session gradually opens attention from objects to awareness itself.
+
+@ griffiths2006
+title: Mystical-type experiences in the laboratory: the Johns Hopkins psilocybin study
+orig: English
+by: Roland Griffiths, William Richards, Una McCann and Robert Jesse; Walter Pahnke
+date: 1962 and 2006
+fam: science
+kind: study
+cite: R. R. Griffiths, W. A. Richards, U. McCann & R. Jesse, "Psilocybin can occasion mystical-type experiences having substantial and sustained personal meaning and spiritual significance", *Psychopharmacology* 187 (2006): 268–283.
+credit: Summarised in Assembly Sounds' own words.
+more: R. R. Griffiths et al., "Mystical-type experiences occasioned by psilocybin mediate the attribution of personal meaning and spiritual significance 14 months later", *Journal of Psychopharmacology* 22 (2008): 621–632.
+more: William A. Richards, *Sacred Knowledge: Psychedelics and Religious Experiences* (2016).
+about:
+Can a profound mystical experience be studied with the methods of a clinical trial? In 1962, in the "Good Friday Experiment", the doctoral student Walter Pahnke gave divinity students psilocybin or a placebo before a Good Friday service in Boston, and most of those given the drug reported mystical experiences. Research of this kind then stopped for decades. In 2006 Roland Griffiths and colleagues at Johns Hopkins University revived it with a careful, double-blind design.
+
+Thirty-six healthy adults with no previous use of psychedelics, who took part regularly in religious or spiritual activities, each had two eight-hour sessions in a calm, living-room-like setting. In one they received a high dose of psilocybin, and in the other an active placebo (methylphenidate), without knowing which was which. They wore eyeshades, listened to music, and were encouraged to trust, let go and be open, with two trained monitors present. After psilocybin many described experiences meeting the classic marks of mysticism: unity, a sense of the sacred and of truth, deep peace and joy, transcendence of time and space, and ineffability. Two months later, about two-thirds rated the experience among the five most meaningful of their lives, and about a third rated it the single most meaningful. Fourteen months later most still did.
+
+The study also showed the risks. Even with careful screening and preparation, about a third had periods of strong fear or anxiety during the session. Psilocybin is illegal in most countries, and it is dangerous for people with a personal or family history of psychosis or bipolar disorder. The Mystical Experience Arc session uses no drugs. It borrows only the non-drug parts of the setting: preparation, intention, eyeshades, music-like tones, the guidance to trust, let go and be open, and time to integrate. Whether these alone can bring about such states has not been tested.
+
+@ float_research
+title: Floatation-REST: the tank and the mind
+orig: English
+by: John C. Lilly; Peter Suedfeld; Justin Feinstein and colleagues
+date: 1954 onward
+fam: science
+kind: study
+cite: J. S. Feinstein et al., "Examining the short-term anxiolytic and antidepressant effect of Floatation-REST", *PLOS ONE* 13 (2018): e0190292.
+credit: Summarised in Assembly Sounds' own words.
+more: John C. Lilly, *The Center of the Cyclone* (1972).
+more: John C. Lilly, *The Deep Self* (1977).
+about:
+In 1954 the neuroscientist John C. Lilly, working at the US National Institute of Mental Health, built the first isolation tank to find out what the brain does when almost all outside stimulation is removed. Floating in darkness and silence, in water at skin temperature, he found that the mind did not simply switch off. Instead it produced dreamlike states, vivid imagery, and experiences he later described as out-of-body and mystical, which he wrote about in *The Center of the Cyclone*. Later tanks used water heavily salted with Epsom salt, so that the body floats effortlessly on its back. In the 1970s the psychologists Peter Suedfeld and Roderick Borrie began calling this approach REST, for Restricted Environmental Stimulation Technique.
+
+At the Laureate Institute for Brain Research in Oklahoma, Justin Feinstein and colleagues have studied floating as a treatment. In their 2018 study, 50 people with anxiety and stress-related disorders, many also with depression, had a single one-hour float. Afterwards their anxiety had fallen sharply, along with muscle tension, pain and stress, and they felt more serene, relaxed and happy. Later studies by the same group reported lower blood pressure after floating, and heightened awareness of inner sensations such as the heartbeat and breath. Floating is generally safe in a proper tank, though some people find the darkness confining at first.
+
+The Floatation-REST at Home session is a dry imitation: lie in a dark, quiet room, as still as possible, and let the sound carry you. Never use it in a bath or any water, where falling asleep could be dangerous.
+
+@ segmented_sleep
+title: The first sleep and the second sleep
+orig: English
+by: A. Roger Ekirch; Thomas Wehr
+date: 1992 and 2001
+fam: science
+kind: history
+cite: A. R. Ekirch, "Sleep we have lost: pre-industrial slumber in the British Isles", *American Historical Review* 106 (2001): 343–386; T. A. Wehr, "In short photoperiods, human sleep is biphasic", *Journal of Sleep Research* 1 (1992): 103–107.
+credit: Summarised in Assembly Sounds' own words.
+more: A. Roger Ekirch, *At Day's Close: Night in Times Past* (2005).
+more: G. Yetish et al., "Natural sleep and its seasonal variations in three pre-industrial societies", *Current Biology* 25 (2015): 2862–2868.
+about:
+The historian A. Roger Ekirch, searching diaries, letters, court records, medical books and literature, found hundreds of references from before the industrial age to a "first sleep" and a "second sleep". People went to bed not long after dark, slept for a few hours, then woke around the middle of the night for an hour or so before sleeping again until morning. The waking hour was ordinary and calm. People used it to pray, to reflect on their dreams, to talk with a bed partner, to make love, to tend the fire or to visit neighbours, and prayer books offered prayers for the hour. Ekirch argued that artificial light and later bedtimes squeezed the two sleeps into one, and that waking in the night, often treated today as insomnia, may sometimes be a return of this older pattern.
+
+At about the same time the psychiatrist Thomas Wehr, at the US National Institute of Mental Health, tested what happens when people are given long nights. Volunteers spent 14 hours each night in darkness for several weeks. Their sleep gradually split into two bouts, with one to three hours of quiet, restful waking in between, a calm state some have compared to meditation. During it, the hormone prolactin stayed high, as it does during sleep.
+
+Not everyone agrees that this was the universal human pattern. A 2015 study of three hunter-gatherer and farming peoples without electricity found that they mostly slept in a single bout. But the night watch has a long religious history: monks have risen for Vigils, the night office, since the early Middle Ages. The Night Vigil session is meant for when you wake in the night. If you have insomnia, follow your clinician's advice; sleep specialists usually suggest getting up after about 20 minutes awake.
+
+@ kirtan_research
+title: Kirtan Kriya and memory
+orig: English
+by: Andrew Newberg; Helen Lavretsky; Kim Innes and colleagues
+date: 2010 onward
+fam: science
+kind: study
+cite: K. E. Innes et al., "Meditation and music improve memory and cognitive function in adults with subjective cognitive decline: a pilot randomized controlled trial", *Journal of Alzheimer's Disease* 56 (2017): 899–916.
+credit: Summarised in Assembly Sounds' own words.
+more: A. B. Newberg et al., "Meditation effects on cognitive function and cerebral blood flow in subjects with memory loss: a preliminary study", *Journal of Alzheimer's Disease* 20 (2010): 517–526.
+more: H. Lavretsky et al., "A pilot study of yogic meditation for family dementia caregivers with depressive symptoms: effects on mental health, cognition, and telomerase activity", *International Journal of Geriatric Psychiatry* 28 (2013): 57–65.
+about:
+Kirtan Kriya is a twelve-minute chanting meditation from Kundalini Yoga as taught by Yogi Bhajan. The sounds Sa, Ta, Na, Ma are chanted aloud, then whispered, then silently, then whispered and aloud again, while the thumb touches each fingertip in turn. It is short, simple and easy to learn, which made it attractive to researchers studying memory in older adults. It has been promoted in particular by the Alzheimer's Research and Prevention Foundation.
+
+In a small preliminary study in 2010, Andrew Newberg and colleagues found that people with memory problems who practised it for 12 minutes a day for eight weeks did better on some memory tests, with increased blood flow in frontal areas of the brain. In 2013 Helen Lavretsky and colleagues at UCLA compared it with listening to relaxing music in family caregivers of people with dementia, who often carry heavy stress. After eight weeks the chanting group had less depression, better cognition, and higher activity of telomerase, an enzyme involved in the health of ageing cells. In 2017 Kim Innes and colleagues randomly assigned 60 adults with memory complaints to Kirtan Kriya or to listening to music, 12 minutes a day for three months. Both groups improved in memory and thinking, and the gains held or grew at six months. The studies are small, and in the largest trial music listening did about as well, but the practice is gentle and safe. The Kirtan Kriya session paces each syllable with a soft bell, one per second.
+
+@ om_research
+title: Chanting Om in the scanner
+orig: English
+by: Bangalore Kalyani and colleagues
+date: 2011
+fam: science
+kind: study
+cite: B. G. Kalyani et al., "Neurohemodynamic correlates of 'OM' chanting: a pilot functional magnetic resonance imaging study", *International Journal of Yoga* 4 (2011): 3–6.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Om (AUM) is the most sacred syllable of Hinduism, honoured in Jain, Buddhist and Sikh practice too, and explained in the Māṇḍūkya Upanishad as the sound of the whole of reality and of the four states of consciousness. When it is chanted aloud, as a long tone with the "mmm" humming on, the voice sets up a strong vibration in the chest, throat and head.
+
+In 2011 a team of researchers in Bangalore, India, used fMRI to scan twelve healthy volunteers while they chanted Om aloud, and while they made a long "ssss" sound as a comparison, which uses the breath in a similar way but without the vibration. During Om, activity fell in several deep, emotion-related parts of the brain, including the amygdala, the hippocampus, the anterior cingulate and the thalamus. The authors noted that the same regions quiet down when the vagus nerve is stimulated electrically, a treatment used for epilepsy and depression, and suggested that the vibration of the chant in the ears may stimulate the vagus nerve, which has a branch there. It was a small pilot study and it needs repeating, but it supports what chanters report: that a long, resonant Om is deeply calming. The Om Meditation and Om Chanting sessions use the 136.1 Hz pitch popular for chanting Om (see Cousto's *Cosmic Octave*).
+
+@ bernardi2001
+title: The rosary, mantras and the rhythm of six breaths a minute
+orig: English
+by: Luciano Bernardi, Peter Sleight and colleagues
+date: 2001
+fam: science
+kind: study
+cite: L. Bernardi, P. Sleight, G. Bandinelli, S. Cencetti, L. Fattorini, J. Wdowczyc-Szulc & A. Lagi, "Effect of rosary prayer and yoga mantras on autonomic cardiovascular rhythms: comparative study", *BMJ* 323 (2001): 1446–1449.
+credit: Summarised in Assembly Sounds' own words.
+about:
+In the Christmas issue of the *BMJ* in 2001, Luciano Bernardi of the University of Pavia, the Oxford cardiologist Peter Sleight and colleagues reported a striking finding. They asked 23 healthy adults to recite the Ave Maria, the Hail Mary, in Latin, as in the rosary, and also a yoga mantra, while their breathing, heart rate and blood pressure were recorded. They compared this with ordinary speaking and with free breathing.
+
+Both the rosary and the mantra slowed breathing to almost exactly six breaths a minute, because one recitation fits comfortably into one breath of about ten seconds. At this rate the natural rhythms of breathing, heart rate and blood pressure fell into step with one another, and the sensitivity of the baroreflex, the body's blood-pressure stabiliser, increased. Free talking had no such effect. The authors noted that this is the same slow rhythm that has the strongest calming effects on the heart and circulation (see the entry on resonance breathing), and suggested that this may be part of why repetitive prayers and mantras feel so steadying, and why such practices may have spread across cultures. The Mantra / Rosary Rhythm and the Rosary sessions mark this ten-second cycle with a soft bell.
+
+@ bowls_research
+title: Singing bowls and sound baths
+orig: English
+by: Tamara Goldsby and colleagues; Jessica Stanhope and Philip Weinstein
+date: 2017 and 2020
+fam: science
+kind: study
+cite: T. L. Goldsby, M. E. Goldsby, M. McWalters & P. J. Mills, "Effects of singing bowl sound meditation on mood, tension, and well-being: an observational study", *Journal of Evidence-Based Complementary & Alternative Medicine* 22 (2017): 401–406.
+credit: Summarised in Assembly Sounds' own words.
+more: J. Stanhope & P. Weinstein, "The human health effects of singing bowls: a systematic review", *Complementary Therapies in Medicine* 51 (2020): 102412.
+about:
+A singing bowl is a metal bowl that rings when struck, or sings with a sustained tone when a wooden stick is rubbed around its rim. Metal bowls and bells have long been used in Himalayan and other Asian ritual, but the sound bath, in which people lie and listen as bowls are played around them, developed mostly in the West from the 1970s onward. Acoustically, a bowl is rich: it vibrates in several modes at once, and because a bowl is never perfectly round, each mode is split into two slightly different frequencies. These beat against each other, producing the slow, wavering pulse of the sound, often at a few beats a second.
+
+In 2017 Tamara Goldsby and colleagues at the University of California, San Diego, measured the mood of 62 adults before and after a singing-bowl meditation. Afterwards they reported much less tension, anger, fatigue and low mood, and greater spiritual well-being; people new to this kind of meditation showed the biggest fall in tension. There was no comparison group, so some of this may come from simply lying down to rest. In 2020 Jessica Stanhope and Philip Weinstein reviewed the research and found the evidence promising but limited, with few good-quality trials. The Singing Bowl Sound Bath session uses synthesised bowls whose modes beat at 6 Hz, gliding down to 4.5 Hz.
+
+@ humming_no
+title: Humming and nitric oxide
+orig: English
+by: Eddie Weitzberg and Jon Lundberg
+date: 2002
+fam: science
+kind: study
+cite: E. Weitzberg & J. O. N. Lundberg, "Humming greatly increases nasal nitric oxide", *American Journal of Respiratory and Critical Care Medicine* 166 (2002): 144–145.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Nitric oxide is a small gas molecule with big jobs in the body: it widens blood vessels and helps defend the airways against germs. Much of the nitric oxide in the nose is made in the sinuses, the air-filled spaces around the nose, which open into it through narrow passages. At the Karolinska Institute in Stockholm, Eddie Weitzberg and Jon Lundberg measured nasal nitric oxide in healthy volunteers breathing out quietly through the nose, and humming. Humming increased the nitric oxide in the out-breath about fifteen-fold.
+
+The explanation is the vibration. Humming makes the air in the nose oscillate, which greatly speeds up the exchange of air between the sinuses and the nose, flushing out the nitric oxide stored there. This may also help to ventilate the sinuses. Whether the extra nitric oxide gives lasting health benefits has not been established. But the study gives a physical basis to an old practice. Bhrāmarī, the humming-bee breath described in the *Haṭha Yoga Pradīpikā*, is a long, slow out-breath with a hum, and the long vibrating exhalation is itself calming. The Bhramari session paces the breath; hum softly and stop if you feel light-headed.
+
+@ nature_sounds
+title: Nature sounds and the restless mind
+orig: English
+by: Cassandra Gould van Praag, Hugo Critchley and colleagues; Rachel Buxton and colleagues
+date: 2017 and 2021
+fam: science
+kind: study
+cite: C. D. Gould van Praag et al., "Mind-wandering and alterations to default mode network connectivity when listening to naturalistic versus artificial sounds", *Scientific Reports* 7 (2017): 45273.
+credit: Summarised in Assembly Sounds' own words.
+more: R. T. Buxton et al., "A synthesis of health benefits of natural sounds and their distribution in national parks", *PNAS* 118 (2021): e2013097118.
+more: Rachel Kaplan & Stephen Kaplan, *The Experience of Nature: A Psychological Perspective* (1989).
+about:
+Why do rain, wind and birdsong feel restful? The psychologists Rachel and Stephen Kaplan proposed that nature holds attention softly, by "fascination", letting the effortful attention we use for work and screens recover. In 2017 Cassandra Gould van Praag, Hugo Critchley and colleagues at Brighton and Sussex Medical School tested this with sound. Volunteers in an fMRI scanner listened to soundscapes recorded in natural and in artificial environments, while their heart rhythms were recorded and they did a simple attention task.
+
+With natural sounds, connectivity in the default-mode network, the brain's inward-turned network, shifted toward an outward-directed pattern of attention. With artificial sounds it shifted toward an inward-directed pattern of the kind linked with worry and rumination. Natural sounds also increased the parasympathetic, rest-and-digest, activity of the heart, especially in people who were most stressed to begin with. In 2021 Rachel Buxton and colleagues combined dozens of studies and found that natural sounds improved health and mood and lowered stress and annoyance; water sounds had the largest effects on health and positive feelings, and birdsong on easing stress and annoyance. The Natural Soundscape — Rain session plays synthesised rain over a barely audible alpha beat.
+
+@ drumming_research
+title: Drumming, trance and the brain
+orig: English
+by: Andrew Neher; Melinda Maxfield; Michael Hove and colleagues
+date: 1962 onward
+fam: science
+kind: study
+cite: A. Neher, "A physiological explanation of unusual behavior in ceremonies involving drums", *Human Biology* 34 (1962): 151–160; M. J. Hove et al., "Brain network reconfiguration and perceptual decoupling during an absorptive state of consciousness", *Cerebral Cortex* 26 (2016): 3116–3124.
+credit: Summarised in Assembly Sounds' own words.
+more: Melinda C. Maxfield, *Effects of Rhythmic Drumming on EEG and Subjective Experience* (doctoral dissertation, Institute of Transpersonal Psychology, 1990).
+more: D. Fancourt et al., "Effects of group drumming interventions on anxiety, depression, social resilience and inflammatory immune response among mental health service users", *PLOS ONE* 11 (2016): e0151136.
+about:
+Across the world, from Siberia to Africa to the Americas, trance has been entered to the sound of a steady drum or rattle, often at about four to seven beats a second. In 1962 the psychologist Andrew Neher proposed a physiological explanation: a regular drum might drive the brain's rhythms, as a flickering light can, toward the drum's own rate. He reported that the EEG of volunteers followed the drumbeat. His methods were later criticised, but the idea of "auditory driving" stuck. In 1990 Melinda Maxfield, in a doctoral study, linked steady drumming at about four to four and a half beats a second, close to the rate used in Michael Harner's core shamanism, with theta-like changes in the EEG and with vivid imagery.
+
+In 2016 Michael Hove and colleagues in Leipzig scanned fifteen experienced practitioners of shamanic journeying with fMRI while they listened to steady drumming, either entering trance or simply listening. In trance, the posterior cingulate cortex, a hub of the brain's inward-turned default-mode network, became more connected with regions that control attention, while the hearing pathway became less connected. The brain was in effect tuning out the drum and turning inward, keeping an internal train of thought going: what practitioners describe as the journey. Drumming together also has social and health benefits: in a 2016 study by Daisy Fancourt and colleagues, ten weeks of group drumming reduced depression and anxiety in mental health service users. The Shamanic Journey, Rhythmic Drumming Trance, Frame Drum and Trance Dance sessions draw on this research. Each ends with the faster "call-back" rhythm, or a settling, to bring you back.

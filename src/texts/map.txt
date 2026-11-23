@@ -1,0 +1,343 @@
+// Which source texts each session comes from (read by src/texts.rs).
+//
+//   session-id other-id prefix*: text_id | text_id = note on how this session uses it
+//
+// Every line that matches a session adds its texts, in file order; a text is listed once.
+// `prefix*` matches every session id that starts with the prefix.
+//
+// The texts live in the other .txt files in this folder. Each entry looks like this:
+//
+//   @ text_id
+//   title: English title
+//   orig: original title, language or script
+//   by: author or attribution
+//   date: when
+//   fam: library group (see FAMS in texts.rs)
+//   kind: scripture | sutra | treatise | manual | poem | prayer | teaching | liturgy | ritual | book | study | review | report | history
+//   cite: full reference (studies and books)
+//   credit: who translated the passages
+//   more: further reading (one per line, repeatable)
+//   full: yes          (only when the passages are the complete text)
+//   about:
+//   What the text is and how the practice comes from it. Blank lines start new paragraphs.
+//   ## Passage heading
+//   The passage in English.  "> " lines are verse, "- " bullets, "1. " numbered,
+//   "= " original-language lines. *italic* and **bold** work everywhere.
+//
+// Translations are our own plain-English renderings unless a public-domain translation is
+// credited. Modern works still under copyright are summarised in our own words, never quoted.
+
+// ---------------------------------------------------------------- Gateway and Lifeline
+f3 f10 f12 f15 f21: monroe = Monroe's Focus levels and the Gateway preparation steps (energy conversion box, resonant tuning, energy balloon, affirmation). | gateway_report = The 1983 U.S. Army assessment explains each of this session's preparation steps and Focus levels. | hemisync
+f21: lutz2004 = The 40 Hz layer of this session is based on this study of long-term meditators.
+f22 f23 f25 f27: monroe = Monroe describes Focus 22–27 in *Ultimate Journey* (1994). | hemisync | gateway_report
+
+// ---------------------------------------------------------------- research-based
+alpha: anxiety_bb | bb_reviews | eeg_bands
+theta: theta6 = The study behind a 6 Hz theta beat. | bb_reviews | eeg_bands
+delta: slow_wave_sound | eeg_bands | bb_reviews
+beta: lane1998 = The study that tested 16 Hz beta beats for vigilance. | bb_reviews | eeg_bands
+gamma: gamma40 | lutz2004 | creativity_bb = The study of alpha and gamma beats and creative thinking that this session's notes cite. | bb_reviews
+genus: gamma40 = GENUS is the MIT team's name for 40 Hz light and sound stimulation. | monaural_iso
+anx: anxiety_bb | bb_reviews | hrv_resonance = The research behind this session's slow breathing at about six breaths a minute.
+zen: kasamatsu1966 = The EEG study this session follows, from alpha into theta. | fukanzazengi = Dōgen's instructions for the sitting itself.
+edison: lacaux2021 | dream_incubation
+alphatheta: peniston1989 | eeg_bands
+hrv: hrv_resonance
+lucid: lucid_research
+nap: nap_research
+nsdr: satyananda = Swami Satyananda's *Yoga Nidra* (1976) is the method's source; NSDR is its modern name. | kjaer2002 | mandukya = The four states of consciousness behind "yogic sleep".
+smr: sterman_smr
+pain: pain_bb | bb_reviews
+monks: lutz2004 = The study of long-term meditators generating gamma during compassion meditation. | lojong | metta_sutta
+
+// ---------------------------------------------------------------- purpose and tradition
+obe: monroe | muldoon | bruce = The rope technique used in this session. | obe_research
+rv: remote_viewing
+shaman: harner = The core-shamanic journey and its 4–7 beats a second drum. | drumming_research | eliade
+pineal: descartes | serpent_power = The ājñā centre between the brows. | theosophy
+om omdrone: mandukya = The Upanishad that explains AUM. | om_research | cousto = Where the 136.1 Hz "Om" pitch comes from.
+heal: deep_sleep_gh | eeg_bands
+vis: mental_practice
+wake: lane1998
+study: attention_bb | bb_reviews
+create: creativity_bb | bb_reviews
+stress: balban2023 | hrv_resonance
+insomnia: sleep_noise | slow_wave_sound
+headache: headache_relax
+euphoria: digital_drugs
+grounding: schumann | earthing | cousto
+
+// ---------------------------------------------------------------- altered states
+hypno: braid = Braid's eye-fixation method opens this session. | hypnosis_research | mesmer_report
+ganzfeld: ganzfeld_research
+drumtrance: drumming_research | harner
+tlr: lucid_research = Targeted lucidity reactivation was developed in sleep labs from 2020.
+swspulses: slow_wave_sound
+kirtan: kirtan_research | kundalini_yoga = Sa Ta Na Ma comes from Kundalini Yoga as taught by Yogi Bhajan.
+bowls: bowls_research
+mantra6: bernardi2001 = The study that found rosary and mantra both settle breathing at about six a minute. | rosary | japa | hrv_resonance
+rain: nature_sounds
+
+// ---------------------------------------------------------------- sound systems
+sys_binaural: bb_reviews
+sys_monaural sys_isochronic sys_am sys_hybrid: monaural_iso | bb_reviews
+sys_bilateral: emdr
+sys_spatial: spatial_audio
+sys_layered: hemisync | monroe
+sys_descend: holosync
+sys_noise: sleep_noise
+sys_drum: drumming_research
+
+// ---------------------------------------------------------------- astral projection and OBE
+ap_monroe: monroe = Monroe's vibrational state and "roll-out", from *Journeys Out of the Body* (1971). | obe_research
+ap_rope: bruce
+ap_muldoon: muldoon
+ap_phase ap_cycling ap_swing: raduga
+ap_wbtb ap_ssild ap_cycling: lucid_research
+ap_theta_gamma: spec_freqs | lucid_research
+ap_float: muldoon | monroe | spatial_audio
+ap_bilateral: emdr | monroe
+ap_hypnotic ap_imagined: obe_research = Facco and colleagues (2019) compared hypnotic and imagined out-of-body experiences.
+ap_kinesthetic: obe_research = Smith and Messier (2014) scanned a woman who could feel herself floating above her body.
+ap_lab: obe_research | ganzfeld_research
+ap_swing: obe_research
+ap_christos: glaskin
+ap_rising: liber_o = Crowley's Liber O (1909) sets out "rising on the planes". | golden_dawn
+ap_tattva: tattva_vision | golden_dawn
+ap_phowa: six_yogas = Phowa, the transference of consciousness, is the sixth of the Six Yogas.
+ap_dreamyoga: six_yogas = Dream yoga is one of the Six Yogas. | bon_dzogchen
+ap_upper ap_middle: harner
+ap_ground: harner | monroe
+
+// ---------------------------------------------------------------- spiritual and mystical experiences
+my_centering: keating | cloud = The 14th-century book Centering Prayer was drawn from.
+my_tibetan: newberg_spect | kyerim
+my_vocal: newberg_spect | new_testament = Pentecost (Acts 2) and Paul on tongues (1 Corinthians 14).
+my_jhana: hagerty2013 | jhana_formula
+my_nondual: josipovic2012 | three_statements | mandukya
+my_inquiry: ramana
+my_mantra: tm | japa
+my_float: float_research
+my_arc: griffiths2006 | james_varieties
+my_dhikr: quran_dhikr | hadith_dhikr | ibn_ataillah
+my_jesus: philokalia | pilgrim | new_testament
+my_nada: nadabindu | hyp = Chapter 4 on following the inner sound (nādānusandhāna).
+my_vipassana: goenka | satipatthana | metta_sutta
+my_psychomanteum: moody | nekyia
+my_orbit: neijing = The Classic of Difficulties names the two vessels the orbit follows. | healing_tao | goldenflower
+my_hitbodedut: nachman | tanakh = "Isaac went out to meditate in the field" (Genesis 24:63).
+my_guide: jung_active
+
+// ---------------------------------------------------------------- Christian mysticism
+cm_lectio: guigo | benedict
+cm_maranatha: cassian | john_main | new_testament = "Maranatha", Aramaic for "Come, Lord" (1 Corinthians 16:22; Revelation 22:20).
+cm_ignatian: ignatius = The contemplation and the application of the senses.
+cm_castle: teresa
+cm_cloud: cloud = Chapters 3–7 give this session's method.
+cm_taize: taize | psalms
+cm_quaker: quaker
+cm_vigil: segmented_sleep | benedict = The night office (chapters 8–11 and 16). | psalms
+cm_bestill: psalms = Psalm 46, verse 10.
+cm_visio: damascene
+cm_rosary: rosary | new_testament = The Our Father and the angel's greeting. | bernardi2001
+cm_lawrence: lawrence
+cm_examen: ignatius = The general examen (Exercises §43).
+cm_compline: compline | benedict = Chapters 18 and 42 order Compline and the great silence. | psalms | new_testament = The Nunc dimittis.
+cm_kyrie: kyrie | new_testament
+cm_eckhart: eckhart
+
+// ---------------------------------------------------------------- Tibetan Buddhism and Bön
+tb_shamatha: shamatha_stages | shamatha_project
+tb_tonglen: lojong | shantideva
+tb_mani: karandavyuha | kyerim
+tb_tara: tara_praise | kyerim
+tb_medicine: medicine_sutra | kyerim
+tb_vajra: vajra_recitation
+tb_phat: three_statements
+tb_tilopa: tilopa
+tb_chod: chod
+tb_bardo: bardo | six_yogas
+tb_gyuto: gyuto
+tb_sleepyoga: six_yogas = Sleep yoga is the clear-light yoga of the Six Yogas. | bon_dzogchen
+tb_sky: bon_dzogchen | three_statements
+tb_vajrasattva: vajrasattva | kyerim
+tb_manjushri: manjushri
+tb_guruyoga: padmasambhava | kyerim
+tb_whitea: bon_dzogchen
+
+// ---------------------------------------------------------------- Buddhist meditation
+bu_metta: metta_sutta | visuddhimagga = Chapter 9 gives the order of persons this session follows. | metta_research
+bu_brahma: brahmavihara
+bu_anapana: anapanasati = The session's stages follow the sutta's four groups of four steps.
+bu_noting: mahasi | satipatthana
+bu_mu: mumonkan | hakuin
+bu_shikantaza: fukanzazengi
+bu_nembutsu: honen | pure_land_sutras = The setting-sun contemplation opens this session.
+bu_daimoku: nichiren
+bu_kasina: visuddhimagga = Chapters 4 and 5 explain how to make and use a kasina. | jhana_formula
+bu_ajikan: ajikan
+bu_buddho: thai_forest | itipiso
+bu_maranasati: maranasati | visuddhimagga = Chapter 8 lists eight ways to recollect death.
+bu_walking: walking_sutta | mahasi | satipatthana
+bu_buddhanussati: itipiso | visuddhimagga
+bu_susokukan: zhiyi | visuddhimagga = Chapter 8 gives the rule for counting breaths.
+bu_huatou: huatou
+bu_whatisthis: chinul
+bu_silentillum: hongzhi
+bu_heartsutra: heart_sutra
+bu_softbutter: hakuin = The soft-butter method is in *Idle Talk on a Night Boat* (1757).
+bu_amituofo: pure_land_sutras
+bu_guanyin: lotus25
+
+// ---------------------------------------------------------------- Hindu and yogic meditation
+hy_trataka: hyp = Verses 2.31–32 define trāṭaka. | trataka_research
+hy_soham: hamsa | vbt
+hy_vbt: vbt = The five doorways in this session are dhāraṇās from the text.
+hy_bija: serpent_power
+hy_shiva: rudram | japa
+hy_gayatri: gayatri
+hy_mahamantra: kalisantarana
+hy_antarmouna: satyananda | yoga_sutras
+hy_mandukya: mandukya
+hy_netineti: upanishads | nirvana_shatakam
+hy_japa: japa | yoga_sutras | gita
+hy_samyama: yoga_sutras = Book III opens with the three steps of saṃyama.
+hy_pratyahara: yoga_sutras | upanishads | gita | satyananda
+hy_sriyantra: saundarya
+
+// ---------------------------------------------------------------- Kundalini Yoga (gentle)
+kn_adi kn_ramadasa kn_gong: kundalini_yoga
+kn_satnam: kundalini_yoga | mulmantar = "Sat Nam" comes from Guru Nānak's root verse.
+kn_serpent: serpent_power | hyp = "As the lord of serpents holds up the earth…" (3.1). | kundalini_yoga
+
+// ---------------------------------------------------------------- Jain and Sikh
+jn_navkar: navkar
+jn_preksha: preksha | jain_canon
+jn_samayika jn_kayotsarga: avashyaka | jain_canon
+sk_waheguru: waheguru | mulmantar
+sk_mulmantar: mulmantar
+
+// ---------------------------------------------------------------- Sufi
+su_sema: masnavi | ghazali = Al-Ghazālī's defence of listening (samāʿ).
+su_muraqaba: naqshbandi | hadith_dhikr = The hadith of iḥsān: "worship God as though you see Him".
+su_lataif: naqshbandi
+su_breaths: inayat
+su_names: quran_dhikr | hadith_dhikr | ghazali
+su_jahri: hadith_dhikr | quran_dhikr | ibn_ataillah
+su_hu: quran_dhikr = Sūrat al-Ikhlāṣ: "Say: He is God, One." | ibn_ataillah
+su_tasbih: hadith_dhikr
+su_ney: masnavi = The Song of the Reed, the first eighteen verses of the Masnavī.
+
+// ---------------------------------------------------------------- Jewish mysticism and Kabbalah
+jk_shema: tanakh = Deuteronomy 6:4–9. | berakhot
+jk_abulafia: abulafia | sefer_yetzirah
+jk_tree: sefer_yetzirah | zohar
+jk_ayin jk_niggun: hasidic
+jk_merkavah: hekhalot | tanakh = Ezekiel's vision of the chariot (Ezekiel 1).
+jk_hitbonenut: tanya
+jk_cheshbon: cheshbon
+jk_omer: omer | tanakh = Leviticus 23:15–16.
+
+// ---------------------------------------------------------------- Taoist
+ta_zuowang: zhuangzi = Chapter 6: Yan Hui "sits and forgets". | zuowanglun
+ta_xinzhai: zhuangzi = Chapter 4: the fasting of the heart-mind.
+ta_standing: zhanzhuang | neijing
+ta_sixsounds: yangxing
+ta_goldenflower: goldenflower
+ta_innersmile: healing_tao | neijing
+ta_embryonic: taixijing | baopuzi | daodejing = Chapter 10: "Can you make your breath soft, like a newborn's?"
+ta_baduanjin: baduanjin
+ta_shouyi: qingjing | baopuzi | daodejing
+
+// ---------------------------------------------------------------- shamanic, Zoroastrian, Bahá'í, Shinto
+sr_lower: harner
+sr_posture: goodman
+sr_dance: trance_dance | drumming_research
+sr_ancestors: ancestors
+sr_fire: fire_rites
+zo_ashem: avesta
+ba_abha: bahai
+sh_harae: oharae | kojiki
+sh_chinkon: chinkon
+
+// ---------------------------------------------------------------- Western esoteric and classical
+we_incubation: asclepius | dream_incubation
+we_plotinus: plotinus = Ennead V.8.9 is this session's meditation on the sphere.
+we_above: emerald | corpus_hermeticum
+we_middlepillar: middle_pillar | golden_dawn
+we_pentagram: liber_o = The ritual's words as Crowley published them in 1909. | golden_dawn
+we_bards: martin1703
+we_galdr: havamal
+we_viewabove: marcus
+we_evening: seneca = *On Anger* 3.36. | golden_verses = Verses 40–44.
+we_premeditatio: seneca | epictetus
+we_gurdjieff: fourth_way
+we_resh: liber_resh
+we_awen: awen
+we_pathwork: pathworking | sefer_yetzirah | golden_dawn
+
+// ---------------------------------------------------------------- Rosicrucian and alchemical
+ro_rosecross: steiner_occult | fama
+ro_retrospection ro_concentration: heindel
+ro_retrospection: steiner_kohw = Steiner taught the same backward review of the day.
+ro_seed: steiner_kohw | new_testament = "Except a corn of wheat fall into the ground and die…" (John 12:24).
+ro_vitriol: vitriol | emerald
+ro_chymical: chymical | fama
+ro_stages: alchemy_stages | emerald
+ro_rosecrossritual: gd_rosecross | golden_dawn | fama
+
+// ---------------------------------------------------------------- Masonic
+ma_ashlar ma_point ma_gauge: webb
+ma_stairs: webb | tanakh = "They went up with winding stairs into the middle chamber" (1 Kings 6:8).
+
+// ---------------------------------------------------------------- trance and hypnosis
+tr_autogenic: autogenic
+tr_erickson: erickson | hypnosis_research
+tr_braid: braid
+tr_fractionation: vogt | hypnosis_research
+
+// ---------------------------------------------------------------- light journeys
+lj_dream: dreamachine
+lj_ganzflicker lj_ganzopen: ganzflicker
+lj_ave: ave
+lj_*: flicker_research | photosensitivity
+
+// ---------------------------------------------------------------- infrasound
+inf_*: infrasound
+inf_schumann: schumann
+
+// ---------------------------------------------------------------- breathwork and breathing
+br_power br_kox: kox2014
+br_connected: holotropic
+br_cyclic br_sigh br_box: balban2023
+br_tummo br_vase: six_yogas = Tummo, the inner fire, is the first of the Six Yogas. | tummo_research
+br_kapal: hyp = Verse 2.35 describes kapālabhāti. | kapalabhati_research
+br_bhastrika: hyp | gheranda
+br_fire: kundalini_yoga | kapalabhati_research
+br_sky: sudarshan
+br_rebirth: rebirthing | holotropic
+br_478: weil_478
+br_coherent: hrv_resonance
+br_bhramari: hyp = Verse 2.68 describes bhrāmarī. | humming_no
+br_nadi: hyp = Verses 2.7–10 describe alternate-nostril breathing.
+br_ratio: gheranda | hyp
+br_slowbh: pramanik2009 | hyp
+
+// ---------------------------------------------------------------- brainwave library
+lib50 lib250 lib630 lib10000 lib20000: spec_freqs
+lib783: schumann
+lib3300 lib3500 lib3800 lib4000 lib4500: gamma40
+lib1300 lib1400: sterman_smr
+lib1500 lib1600 lib1800 lib2000 lib2400 lib2500 lib3000: lane1998
+lib600: theta6
+lib5000 lib6300 lib8000 lib10000 lib20000: monaural_iso
+lib100 lib150 lib200 lib300 lib350: slow_wave_sound
+lib*: eeg_bands | bb_reviews
+
+// ---------------------------------------------------------------- frequency lore
+sch*: schumann
+sol*: solfeggio
+ch396 ch417 ch528 ch639 ch741 ch852 ch963 chjourney: serpent_power | chakra_modern | solfeggio
+pl*: cousto | kepler
+t432 t440 t256: tuning

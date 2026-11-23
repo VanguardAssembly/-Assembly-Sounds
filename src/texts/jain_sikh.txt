@@ -1,0 +1,205 @@
+// Jain and Sikh texts.
+
+@ navkar
+title: The Navkār Mantra
+orig: णमोकार मन्त्र, Ṇamokāra Mantra, also Navkār Mantra (Prakrit)
+by: Jain tradition; written at the head of the oldest Jain scriptures
+date: in writing from about the 2nd century CE; far older in oral tradition
+fam: jain
+kind: prayer
+full: yes
+credit: Assembly Sounds' own rendering from the Prakrit.
+more: Padmanabh S. Jaini, *The Jaina Path of Purification* (1979).
+more: Paul Dundas, *The Jains* (2nd ed., 2002).
+about:
+The Navkār ("nine-line") Mantra is the most important prayer of Jainism. Jains of every school say it on waking, before sleep, before journeys and at the hour of death. It is repeated 108 times on a mālā, often while visualising five colours of light. It stands at the opening of the oldest written Jain scriptures.
+
+It is remarkable for naming no god and no individual person, not even Mahāvīra. It bows to qualities: to all who have reached perfection, and to all who walk the path towards it. The *arihants* have conquered their inner enemies and reached omniscience while still living. The *siddhas* are fully liberated souls. The *ācāryas* lead the community, the *upādhyāyas* teach, and the *sādhus* are all monks and nuns. Digambara Jains usually recite the first five lines. Śvetāmbara Jains add the last four, the *cūlikā*. The Navkār session is japa of this mantra.
+
+## The mantra
+= Ṇamo arihaṃtāṇaṃ
+= Ṇamo siddhāṇaṃ
+= Ṇamo āyariyāṇaṃ
+= Ṇamo uvajjhāyāṇaṃ
+= Ṇamo loe savva-sāhūṇaṃ
+= Eso paṃca-ṇamokkāro, savva-pāva-ppaṇāsaṇo
+= Maṃgalāṇaṃ ca savvesiṃ, paḍhamaṃ havaï maṃgalaṃ
+> I bow to the arihants, the conquerors.
+> I bow to the siddhas, the liberated souls.
+> I bow to the ācāryas, the spiritual leaders.
+> I bow to the upādhyāyas, the teachers.
+> I bow to all the monks and nuns in the world.
+> This fivefold bow destroys all wrongdoing,
+> and of all auspicious things it is the first.
+
+## The five colours
+Many Jains picture the five as five colours of light while chanting: white for the arihants, red for the siddhas, yellow for the ācāryas, blue or green for the upādhyāyas, and black or dark blue for the sādhus.
+
+@ jain_canon
+title: The Jain scriptures: the Ācārāṅga, Daśavaikālika and Tattvārtha Sūtra
+orig: आयारंग सुत्त, Āyāraṃga Sutta; दसवेयालिय, Dasaveyāliya (Prakrit); तत्त्वार्थसूत्र, Tattvārtha Sūtra (Sanskrit)
+by: the disciples of Mahāvīra; Śayyambhava; Umāsvāti
+date: Ācārāṅga c. 5th–3rd century BCE; Tattvārtha Sūtra c. 2nd–5th century CE
+fam: jain
+kind: scripture
+credit: Ācārāṅga passages from Hermann Jacobi's translation (*Sacred Books of the East* 22, 1884, public domain); other passages in Assembly Sounds' own rendering.
+more: Hermann Jacobi, trans., *Jaina Sūtras* (*Sacred Books of the East* 22 and 45, 1884 and 1895, public domain).
+more: Nathmal Tatia, trans., *That Which Is: Tattvārtha Sūtra* (1994).
+about:
+Jainism was taught in its present form by Vardhamāna Mahāvīra, a contemporary of the Buddha, in the 6th–5th centuries BCE in northern India. Jains see him as the last of twenty-four *tīrthaṅkaras*, "ford-makers", who showed the way across the river of rebirth. Its heart is *ahiṃsā*, non-harm to every living being, together with non-possessiveness and *anekāntavāda*, the many-sidedness of truth.
+
+The *Ācārāṅga*, "the book of conduct", is the oldest part of the Śvetāmbara canon and describes Mahāvīra's own life of meditation and fasting. The *Daśavaikālika* is a short manual for young monks. Its appendix gives the evening self-examination at the centre of *pratikramaṇa* and of Prekṣā meditation. The *Tattvārtha Sūtra* of Umāsvāti, accepted by all Jains, defines meditation itself: one-pointed thought, held for at most one *muhūrta*, forty-eight minutes. That is the traditional length of the *sāmāyika* session.
+
+## To all, life is dear (Ācārāṅga 1.2.3)
+All beings are fond of life; they like pleasure and hate pain, shun destruction and like life, long to live. To all life is dear.
+
+## The eternal law (Ācārāṅga 1.4.1)
+The Arhats and Bhagavats of the past, present, and future, all say thus, speak thus, declare thus, explain thus: all breathing, existing, living, sentient creatures should not be slain, nor treated with violence, nor abused, nor tormented, nor driven away. This is the pure, unchangeable, eternal law.
+
+## Looking at oneself (Daśavaikālika, second appendix, verse 12)
+In the first and the last part of the night, let him look at himself by himself: What have I done? What is still left for me to do? What could I be doing, that I am not doing?
+
+## The path (Tattvārtha Sūtra 1.1)
+Right faith, right knowledge and right conduct together are the path to liberation.
+
+## What meditation is (Tattvārtha Sūtra 9.27)
+Meditation is holding the mind to a single object, by one of sound body, for up to one *muhūrta*, forty-eight minutes.
+
+## Souls help one another (Tattvārtha Sūtra 5.21)
+= parasparopagraho jīvānām
+The function of souls is to help one another.
+
+@ avashyaka
+title: The six essential duties: sāmāyika, pratikramaṇa and kāyotsarga
+orig: आवश्यक, Āvassaya, Āvaśyaka, "what must be done" (Prakrit)
+by: Jain monastic and lay tradition
+date: from the early centuries CE
+fam: jain
+kind: liturgy
+credit: Assembly Sounds' own rendering from the Prakrit.
+more: Padmanabh S. Jaini, *The Jaina Path of Purification* (1979), chapter 7.
+more: John E. Cort, *Jains in the World* (2001).
+about:
+The *Āvaśyaka Sūtra* lists the six daily duties of every Jain monk and nun, and of devout lay people. *Sāmāyika* is the practice of equanimity. *Caturviṃśati-stava* is praise of the twenty-four tīrthaṅkaras, and *vandana* is veneration of the teachers. *Pratikramaṇa* is "turning back" from faults by confessing them. *Kāyotsarga* is "abandoning the body", standing or sitting utterly still. *Pratyākhyāna* is a vow of renunciation for the coming period.
+
+In *sāmāyika* a lay Jain vows to sit for forty-eight minutes in perfect equanimity, harming no one by thought, word or deed. Then they read, meditate or pray. In *kāyotsarga* one stands with the arms hanging loose, or sits, unmoving, for a set number of breaths or recitations of the Navkār. One lets go of all concern for the body except breathing and what cannot be stopped. Pratikramaṇa ends with the great prayer of forgiveness, said above all at Saṃvatsarī, the last day of the festival of Paryuṣaṇa. The sāmāyika and kāyotsarga sessions follow these rites.
+
+## The vow of sāmāyika (Karemi Bhante)
+= Karemi bhante sāmāiyaṃ, sāvajjaṃ jogaṃ paccakkhāmi, jāva niyamaṃ pajjuvāsāmi,
+= duvihaṃ tiviheṇaṃ, maṇeṇaṃ vāyāe kāeṇaṃ, na karemi na kāravemi.
+= Tassa bhante paḍikkamāmi, nindāmi, garihāmi, appāṇaṃ vosirāmi.
+Venerable one, I undertake sāmāyika. I give up all harmful activity for as long as I keep this vow. In two ways and by three means, by mind, by speech and by body, I will neither do it nor cause it to be done. Venerable one, I turn back from it, I condemn it, I reproach it, and I let go of the self that did it.
+
+## Before kāyotsarga (Annattha, in summary)
+I stand still, abandoning the body, except for what cannot be helped: breathing in and out, coughing, sneezing, yawning, hiccups, small movements of the body, the eyes and the breath, and fainting. With these exceptions my kāyotsarga stays unbroken, until I complete it with a bow to the arihants.
+
+## The prayer of forgiveness (Khāmemi)
+= Khāmemi savve jīvā, savve jīvā khamantu me,
+= mittī me savva-bhūesu, veraṃ majjhaṃ na keṇaï.
+I forgive all living beings; may all living beings forgive me. I have friendship with all beings, and enmity with none.
+
+= Micchāmi dukkaḍaṃ
+May any wrong I have done be without effect: forgive me.
+
+@ preksha
+title: Prekṣā Dhyāna: the meditation of perception
+orig: प्रेक्षा ध्यान, Prekṣā Dhyāna, "careful seeing" (Sanskrit and Prakrit)
+by: Ācārya Mahāprajña, with Ācārya Tulsī, of the Śvetāmbara Terāpanthī order
+date: from 1975
+fam: jain
+kind: manual
+credit: Summarised in Assembly Sounds' own words; the motto rendered from the Prakrit.
+more: Ācārya Mahāprajña, *Preksha Dhyana: Theory and Practice* (Jain Vishva Bharati, 1980s).
+more: Ācārya Mahāprajña, *The Mirror of the Self* (1991).
+about:
+In the 1960s and 1970s Ācārya Tulsī (1914–1997) and his disciple Muni Nathmal, later Ācārya Mahāprajña (1920–2010), set out to recover the meditation of the early Jain scriptures. In the Ācārāṅga, Mahāvīra meditates by watching the body and the mind, and the old texts tell the monk to "see the self by the self". Mahāprajña joined these sources with modern physiology into a graded system and named it *Prekṣā*, "careful seeing". It has been taught at the Jain Vishva Bharati in Ladnun, Rajasthan, since 1975.
+
+Its motto comes from the Daśavaikālika's evening self-examination: *saṃpikkhae appagam appaeṇaṃ*, "see the self by the self". Each stage is a way of perceiving without reacting: the relaxed body, the breath, sensations, the psychic centres, inner colours. The Prekṣā session follows its first stages.
+
+## The motto
+= saṃpikkhae appagam appaeṇaṃ
+See the self by the self.
+
+## The stages, in brief
+1. **Kāyotsarga**, relaxation with awareness: let every part of the body go limp while staying fully awake.
+2. **Antaryātrā**, the inner journey: move the attention slowly up the spine, from its base to the top of the head, and back.
+3. **Śvāsa prekṣā**, perception of breathing: long, slow, deep breaths, watched without control; then alternate-nostril breathing, watched.
+4. **Śarīra prekṣā**, perception of the body: travel through the body part by part, perceiving every sensation as it is.
+5. **Caitanya-kendra prekṣā**, perception of the psychic centres: rest the attention on centres such as the navel, heart, throat and brow.
+6. **Leśyā dhyāna**, perception of colours: picture bright, pure colours in the centres to transform the emotions.
+7. **Anuprekṣā**, contemplation: dwell on a chosen theme, such as impermanence or friendliness, to reshape habits.
+
+@ mulmantar
+title: The Mūl Mantar and the opening of the Japjī Sāhib
+orig: ਮੂਲ ਮੰਤਰ, Mūl Mantar, "the root verse"; ਜਪੁਜੀ ਸਾਹਿਬ, Japjī Sāhib (Punjabi in Gurmukhi script)
+by: Guru Nānak
+date: early 16th century; compiled in the Guru Granth Sāhib, 1604
+fam: sikh
+kind: scripture
+credit: Assembly Sounds' own rendering of the meaning from the Gurmukhi.
+more: Nikky-Guninder Kaur Singh, trans., *The Name of My Beloved: Verses of the Sikh Gurus* (1995).
+more: Gopal Singh, trans., *Sri Guru Granth Sahib* (4 vols., 1960).
+about:
+Guru Nānak (1469–1539), born near Lahore in today's Pakistan, founded the Sikh faith after a mystical experience at the age of about thirty. He emerged from a river after three days and said, "There is no Hindu, there is no Muslim." He travelled widely and taught devotion to the one formless God through *nām simran*, the remembrance of the divine Name, honest work and sharing with others. His teachings, and those of the gurus who followed him, were gathered by Guru Arjan into the Ādi Granth in 1604. Guru Gobind Singh declared the book itself the eternal Guru, the *Guru Granth Sāhib*, before his death in 1708.
+
+It opens with the *Mūl Mantar*, the "root verse". In a few words it sums up the Sikh understanding of God, and it is the first thing a Sikh learns. It is followed by the *Japjī Sāhib*, Guru Nānak's great hymn, which devout Sikhs recite every morning in the *amrit velā*, the "ambrosial hours" before dawn. The Mūl Mantar session chants it; *Sat Nām*, the second phrase, is also the mantra of Kundalini Yoga.
+
+## The Mūl Mantar
+= ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥
+= Ik Oaṅkār, Sat Nām, Kartā Purakh, Nirbhau, Nirvair, Akāl Mūrat, Ajūnī, Saibhaṅ, Gur Prasād.
+- **Ik Oaṅkār**: there is One, the Creator who is all.
+- **Sat Nām**: whose Name is Truth,
+- **Kartā Purakh**: the Creator, present in all,
+- **Nirbhau**: without fear,
+- **Nirvair**: without hatred,
+- **Akāl Mūrat**: timeless in form,
+- **Ajūnī**: beyond birth and death,
+- **Saibhaṅ**: self-existent,
+- **Gur Prasād**: known by the Guru's grace.
+
+## Jap: the first verse of the hymn
+= ॥ ਜਪੁ ॥ ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥ ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥
+= Jap. Ād sach, jugād sach, hai bhī sach, Nānak hosī bhī sach.
+Meditate! True in the beginning, true through all the ages, true now, and, says Nānak, true for ever.
+
+## Not by thinking, not by silence (Japjī, first stanza)
+By thinking, He cannot be thought, though one thinks a hundred thousand times. By keeping silent, inner silence does not come, though one stays absorbed in long meditation. The hunger of the hungry is not satisfied, though they pile up the riches of all the worlds. A hundred thousand clevernesses, and not one goes with us. How then can one become true, and how can the wall of falsehood be broken? By walking in the way of His will, says Nānak, which is written within us.
+
+## The ambrosial hour (Japjī, fourth stanza)
+= ਅੰਮ੍ਰਿਤ ਵੇਲਾ ਸਚੁ ਨਾਉ ਵਡਿਆਈ ਵੀਚਾਰੁ ॥
+= Amrit velā sach nāu vaḍiāī vīchār.
+In the ambrosial hours before dawn, remember the True Name and reflect on His greatness.
+
+@ waheguru
+title: Vāhigurū: the Guru's mantra and nām simran
+orig: ਵਾਹਿਗੁਰੂ, Vāhigurū, "Wonderful Lord" (Punjabi)
+by: the Sikh Gurus; Bhai Gurdās; the bards (Bhatts) of the Guru Granth Sāhib
+date: 16th–17th centuries
+fam: sikh
+kind: teaching
+credit: Assembly Sounds' own rendering from the Gurmukhi.
+more: Bhai Gurdās, *Vārān* (ballads), early 17th century.
+more: Harbans Singh, ed., *The Encyclopaedia of Sikhism* (1992–1998), "Vāhigurū" and "Simran".
+about:
+*Vāhigurū* is the Sikh name for God, and the *gurmantar*, the mantra given at initiation into the Khalsa. *Vāh* is a cry of wonder and delight, "Wow!", and *gurū* is the teacher who leads from darkness to light. So the name is wonder at the divine teacher. The bards whose praises close the Guru Granth Sāhib repeat it in ecstasy. Sikhs greet each other with *Vāhigurū jī kā Khālsā, Vāhigurū jī kī fateh*, "The Khalsa belongs to the Wonderful Lord; victory belongs to the Wonderful Lord."
+
+Bhai Gurdās (1551–1636), the scribe of the Ādi Granth, gave a famous explanation of the word. It joins the first sounds of God's names in the four ages of the world: Vāsudev, Hari, Gobind and Rām. In *nām simran*, "remembering the Name", Sikhs repeat it aloud, softly or silently, often with the breath: *Vāhi* on the in-breath, *Gurū* on the out-breath, until the Name repeats itself in the heart. The Vāhigurū session follows this simran.
+
+## The Name of the four ages (Bhai Gurdās, Vār 1.49)
+In the first age, the Name was *Vāsudev*: the V. In the second, *Hari*: the H. In the third, *Gobind*: the G. In the fourth, *Rām*: the R. Joined together, they make *Vāhigurū*, the Name in which all four ages are one.
+
+## The bards' praise (Swayyas of the Bhatts, in the Guru Granth Sāhib)
+= ਵਾਹਿਗੁਰੂ ਵਾਹਿਗੁਰੂ ਵਾਹਿਗੁਰੂ ਵਾਹਿ ਜੀਉ ॥
+= Vāhigurū, Vāhigurū, Vāhigurū, vāh jīu.
+Wonderful Lord, wonderful Lord, wonderful Lord: how wonderful You are!
+
+## Remember, remember (Guru Arjan, Sukhmanī Sāhib)
+= ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥ ਕਲਿ ਕਲੇਸ ਤਨ ਮਾਹਿ ਮਿਟਾਵਉ ॥
+Remember Him, remember, remember, and find peace; the troubles and pains of the body are wiped away.
+
+## The practice
+1. Sit with the back upright, ideally in the early morning.
+2. Breathing in, hear *Vāhi*; breathing out, hear *Gurū*.
+3. Say it aloud at first, then softly, then silently.
+4. When the mind wanders, return to the Name, without strain.
+5. At the end, sit quietly and let the Name go on by itself.

@@ -1,0 +1,306 @@
+// Jewish mystical and devotional texts.
+
+@ berakhot
+title: Tractate Berakhot: on saying the Shema with full intention
+orig: מסכת ברכות, Massekhet Berakhot, "Blessings" (Hebrew and Aramaic)
+by: the rabbis of the Mishnah and the Babylonian Talmud
+date: Mishnah c. 200 CE; Talmud completed c. 500–600 CE
+fam: jewish
+kind: scripture
+credit: Assembly Sounds' own rendering from the Hebrew and Aramaic.
+more: *The William Davidson Talmud* (Koren–Steinsaltz), Berakhot, freely available in English.
+more: Adin Steinsaltz, *The Essential Talmud* (1976).
+about:
+Berakhot, "Blessings", is the first tractate of the Talmud. It deals with daily prayer: when and how the Shema is said, the standing prayer (the *Amidah*), and the blessings over food. It is also the Talmud's main teaching on *kavanah*, "directed intention". This means turning the heart fully towards God while the lips say the words.
+
+Several passages explain how to say the first line of the Shema. You draw out the last word, *echad* ("one"). You cover your eyes. While you hold the word you "crown" God above, below and in the four directions. The Shema session follows this ancient instruction: a long, held *echad*, with the eyes covered, the mind going up, down and to the four directions.
+
+## Drawing out "One" (Berakhot 13b)
+It was taught: Sumchus says, whoever draws out the word *echad*, "one", has his days and years drawn out. Rav Acha bar Yaakov said: draw out the last letter, the *dalet*. Rav Ashi added: but do not rush the *chet* before it.
+
+Rabbi Yirmeya was sitting before Rabbi Chiya bar Abba and saw that he drew it out at great length. He said to him: once you have made Him king above and below and to the four directions of the heavens, no more is needed.
+
+## Covering the eyes (Berakhot 13b)
+Rabbi Judah the Prince, when he came to the first verse of the Shema, passed his hands over his eyes, and took upon himself the yoke of the kingdom of heaven.
+
+## Preparing the heart (Mishnah Berakhot 5:1)
+One should stand to pray only in a serious and humble frame of mind. The pious men of old used to wait an hour before praying, so that they could direct their hearts towards their Father in heaven. Even if a king greets him, he should not answer; even if a snake is wound around his heel, he should not stop.
+
+## An hour before and an hour after (Berakhot 32b)
+The pious men of old would wait an hour, pray for an hour, and then wait another hour.
+
+@ sefer_yetzirah
+title: Sefer Yetzirah: the Book of Formation
+orig: ספר יצירה (Hebrew)
+by: anonymous; traditionally attributed to the patriarch Abraham
+date: between the 2nd and 9th centuries CE (much debated)
+fam: jewish
+kind: scripture
+credit: Assembly Sounds' own rendering from the Hebrew. Verse numbers differ between versions, so passages are given by chapter.
+more: Aryeh Kaplan, *Sefer Yetzirah: The Book of Creation in Theory and Practice* (1990).
+more: William Wynn Westcott, trans., *Sepher Yetzirah* (1887, public domain).
+more: A. Peter Hayman, *Sefer Yesira: Edition, Translation and Text-Critical Commentary* (2004).
+about:
+Sefer Yetzirah is a very short and very old text, only a few pages long. It describes how God formed the world through "thirty-two wondrous paths of wisdom". These are the ten *sefirot* (at first meaning "numbers" or "counts") and the twenty-two letters of the Hebrew alphabet. The letters fall into three groups: three "mothers" (aleph, mem, shin), seven "doubles" and twelve "simples". Each letter is linked to a part of the world, of the year and of the human body.
+
+The book became the foundation stone of Kabbalah. Later Kabbalists read its ten sefirot as the ten divine qualities of the Tree of Life. In the 19th century the Golden Dawn mapped its twenty-two letters onto the twenty-two paths between the sefirot, and onto the tarot trumps. Abraham Abulafia's letter meditation grows from its teaching that the letters are the building blocks of reality.
+
+Its own instruction for meditation is famous: "if your heart runs, return to the place". It is the same running and returning (*ratzo va-shov*) as the living creatures in Ezekiel's chariot vision.
+
+## The thirty-two paths (chapter 1)
+With thirty-two wondrous paths of wisdom, Yah, the Lord of hosts, the God of Israel, the living God, God Almighty, high and exalted, who dwells forever and whose name is holy, engraved and created his world, with three books: with writing, with number and with telling.
+
+Ten *sefirot* of nothingness, and twenty-two letters of foundation: three mothers, seven doubles and twelve simples.
+
+## Ten and not nine (chapter 1)
+Ten *sefirot* of nothingness: ten and not nine, ten and not eleven. Understand with wisdom, and be wise with understanding. Examine with them and search them out. Set each thing on its true ground, and return the Creator to his place.
+
+## The ten depths (chapter 1)
+Ten *sefirot* of nothingness, whose measure is ten without end: a depth of beginning and a depth of end, a depth of good and a depth of evil, a depth above and a depth below, a depth east and a depth west, a depth north and a depth south. One Master, God, faithful King, rules over them all from his holy dwelling, for ever and ever.
+
+## Like a flame in a coal (chapter 1)
+Ten *sefirot* of nothingness: their end is fixed in their beginning, and their beginning in their end, like a flame bound to a burning coal. For the Master is one, and there is no second; and before one, what can you count?
+
+## Running and returning (chapter 1)
+Ten *sefirot* of nothingness: restrain your mouth from speaking and your heart from thinking. And if your heart runs, return to the place; for this is why it is said, "and the living creatures ran and returned" (Ezekiel 1:14). On this a covenant was made.
+
+@ zohar
+title: The Zohar and the Tree of Life
+orig: ספר הזוהר, Sefer ha-Zohar, "The Book of Radiance" (Aramaic)
+by: presented as the teaching of Rabbi Shimon bar Yochai (2nd century); circulated by Moses de León in Castile
+date: late 13th century; the Tree of Life developed further in 16th-century Safed
+fam: jewish
+kind: scripture
+credit: Assembly Sounds' own summary and rendering from the Aramaic.
+more: Daniel C. Matt, trans., *The Zohar: Pritzker Edition* (12 vols., 2004–2017).
+more: Gershom Scholem, *Major Trends in Jewish Mysticism* (1941).
+more: Arthur Green, *A Guide to the Zohar* (2004).
+about:
+The Zohar is the central book of Kabbalah. It is a vast mystical commentary on the Torah, written in a literary Aramaic. In its stories the 2nd-century sage Rabbi Shimon bar Yochai and his companions walk the roads of Galilee and uncover the secrets of the divine life hidden in each verse. Most scholars believe it was composed in late 13th-century Castile, in large part by Moses de León (c. 1240–1305), who circulated it.
+
+Its great theme is the ten *sefirot*: the ten qualities, or lights, through which the hidden, infinite God (*Ein Sof*, "without end") shows itself and pours life into the world. In the 16th century the Kabbalists of Safed drew the sefirot as a tree or a human figure, with three columns and twenty-two connecting paths. Moses Cordovero (1522–1570) set the whole system out in order, and Isaac Luria (1534–1572) taught the drama of the divine contraction (*tzimtzum*), the breaking of the vessels and their repair (*tikkun*).
+
+The Tree of Life session draws light down through the ten sefirot in order, from crown to kingdom.
+
+## The ten sefirot
+1. **Keter**, crown: the first stirring of the divine will, above the head.
+2. **Chokhmah**, wisdom: the first flash of an idea, the point of beginning (right side of the head).
+3. **Binah**, understanding: the womb in which the flash unfolds (left side of the head).
+4. **Chesed**, loving-kindness: the flowing, giving love of God (right arm).
+5. **Gevurah**, strength or judgement: limit, discipline, awe (left arm).
+6. **Tiferet**, beauty: harmony and compassion, the balance of the two (heart and body).
+7. **Netzach**, endurance or victory: steady persistence (right leg).
+8. **Hod**, splendour: humility and gratitude (left leg).
+9. **Yesod**, foundation: the channel that joins and passes everything on.
+10. **Malkhut**, kingship: the receiving world, also called the *Shekhinah*, the indwelling presence of God (the mouth, or the feet on the ground).
+
+## The garments of the Torah (Zohar III:152a)
+Woe to anyone who says that the Torah comes only to tell us stories and ordinary matters. The stories of the Torah are its clothing. Whoever thinks the clothing is the Torah itself, and nothing more, let his spirit despair. Fools see only the clothes. Those who are a little wiser look at the body under the clothes, which is the commandments. But the truly wise, who stood at Mount Sinai, look only at the soul, which is the root of everything, the real Torah.
+
+@ abulafia
+title: The letter meditation of Abraham Abulafia
+orig: חכמת הצירוף, Chokhmat ha-Tseruf, "the science of combining" (Hebrew)
+by: Abraham Abulafia
+date: 1270s–1290s (*Chayei ha-Olam ha-Ba*, 1280; *Or ha-Sekhel*, 1285)
+fam: jewish
+kind: manual
+credit: Summarised and paraphrased in Assembly Sounds' own words.
+more: Moshe Idel, *The Mystical Experience in Abraham Abulafia* (1988).
+more: Gershom Scholem, *Major Trends in Jewish Mysticism* (1941), lecture 4.
+more: Aryeh Kaplan, *Meditation and Kabbalah* (1982).
+about:
+Abraham Abulafia (1240–after 1291) was born in Saragossa in Spain and travelled widely: to the land of Israel, Greece, Italy and Sicily. In 1280 he went to Rome intending to speak to the Pope, who died before they met. He called his path "prophetic Kabbalah". His aim was not to understand the sefirot but to reach a direct, prophetic union with the divine intellect.
+
+His method was *tseruf*, the combining of letters. You write, chant and turn over the Hebrew letters, above all those of the divine names. You join each letter to each vowel and breathe one sound on each out-breath, with resting breaths between. Each vowel is matched to a slow movement of the head (up and down, right and left, forward and back). The practice is done alone, at night, in clean white clothes, by candlelight. He promised that in time the heart grows warm, and that thought gives way to a flood of light and a sense of being spoken to.
+
+He also warned that the practice is powerful and can bring fear and trembling. It should be done slowly, with a calm mind and never forced. The Abulafia session takes the gentlest form of it: slow chanted syllables with resting breaths between.
+
+## Preparing (paraphrased from his manuals)
+Make yourself ready. Gather your heart into one, and make your body clean. Choose a room of your own where no one will hear you, and sit there alone. It is best at night. Put on clean clothes, white if you can, and light candles. Take up pen and ink and a tablet, and remember that you are about to serve God in joy.
+
+## Combining (paraphrased)
+Begin to combine letters, a few or many, turning them over and rolling them around until your heart grows warm. Pay attention to how they move and to what comes from them. Join each letter to each of the vowels, one breath for each sound, and between them rest and breathe. Let your head follow the vowel: up, down, to the right, to the left, forward and back.
+
+## What follows (paraphrased)
+When your heart grows warm from the combining, and you understand new things that no tradition and no reasoning taught you, then you are ready to receive. Thoughts fall silent, and it seems that a light is all around you. If fear comes, rest and return to the practice later.
+
+@ hekhalot
+title: The Hekhalot texts and the descent to the chariot
+orig: ספרות ההיכלות, Sifrut ha-Hekhalot, "literature of the palaces" (Hebrew and Aramaic)
+by: anonymous circles linked to Rabbi Akiva and Rabbi Ishmael
+date: c. 3rd–8th centuries CE
+fam: jewish
+kind: teaching
+credit: Assembly Sounds' own renderings from the Hebrew and Aramaic.
+more: Gershom Scholem, *Jewish Gnosticism, Merkabah Mysticism, and Talmudic Tradition* (1960).
+more: James R. Davila, *Hekhalot Literature in Translation* (2013).
+more: Peter Schäfer, *The Hidden and Manifest God* (1992).
+about:
+The oldest Jewish mystical texts grew out of Ezekiel's vision of the divine chariot-throne (*merkavah*). They are known as the *Hekhalot*, the "palaces", and include *Hekhalot Rabbati* ("the Greater Palaces"), *Hekhalot Zutarti* and *Ma'aseh Merkavah*. They describe how an adept passes through seven heavenly palaces, one inside the other. At each gate stand fierce angelic guards, who must be shown the right "seals" (secret divine names) and greeted with the right hymns. At the centre is the throne of glory, where the adept joins the angels singing "Holy, holy, holy".
+
+Oddly, the adepts are called *yordei merkavah*, "descenders to the chariot". Around the year 1000 Hai Gaon, head of the academy of Pumbedita in Babylonia, described their method. They fasted, sat with the head between the knees, the posture of Elijah praying on Mount Carmel, and whispered hymns until they "saw" the palaces.
+
+The rabbis treated this work with great caution. The Mishnah says it may only be taught to a person who is wise and understands on their own. The Merkavah session is a gentle, symbolic ascent through seven palaces, with no fasting.
+
+## The four who entered the orchard (Babylonian Talmud, Hagigah 14b)
+Four entered the *pardes*, the orchard: Ben Azzai, Ben Zoma, *Acher* ("the Other", Elisha ben Abuya) and Rabbi Akiva. Rabbi Akiva said to them: "When you reach the stones of pure marble, do not say, 'Water, water!', for it is written, 'He that speaks falsehood shall not stand before my eyes' (Psalm 101:7)."
+
+Ben Azzai looked and died. Ben Zoma looked and was harmed. Acher cut down the shoots. Rabbi Akiva entered in peace and came out in peace.
+
+## Hai Gaon describes the method (responsum, c. 1000)
+Whoever wishes to gaze on the chariot and the palaces of the angels must follow a certain way. He fasts for a number of days, places his head between his knees, and whispers to the earth many hymns and praises known from tradition. Then he looks into the inner rooms and chambers, as though he were seeing the seven palaces with his own eyes, going from palace to palace and seeing what is in each.
+
+## A caution (Mishnah Hagigah 2:1)
+The work of the chariot may not be taught even to one student, unless he is wise and understands from his own knowledge.
+
+@ hasidic
+title: The early Hasidic teachings: devekut, ayin and the niggun
+orig: חסידות, Chasidut (Hebrew and Yiddish)
+by: the Baal Shem Tov, the Maggid of Mezritch and their disciples
+date: c. 1740–1800; *Tzava'at ha-Rivash* printed 1793
+fam: jewish
+kind: teaching
+credit: Assembly Sounds' own renderings from the Hebrew; the stories retold in our own words.
+more: Arthur Green & Barry W. Holtz, eds., *Your Word Is Fire: The Hasidic Masters on Contemplative Prayer* (1977).
+more: Martin Buber, *Tales of the Hasidim* (1947–48).
+more: Rachel Elior, *The Mystical Origins of Hasidism* (2006).
+about:
+Hasidism, "piety", began in the 18th century in the villages of Podolia (today in Ukraine) with Rabbi Israel ben Eliezer (c. 1698–1760). He was a healer and teacher, called the *Baal Shem Tov*, "Master of the Good Name". He taught that God is present everywhere and in everything, and can be served in joy, in eating and work and song as much as in study. His successor, Rabbi Dov Ber, the Maggid ("preacher") of Mezritch (d. 1772), trained the disciples who spread the movement across Eastern Europe.
+
+Three of their teachings shape the sessions. *Devekut*, "cleaving", is keeping the mind joined to God at all times. *Bittul*, "self-nullification", means regarding yourself as *ayin*, "nothing", so that you become an empty vessel for the divine. In Hebrew *ani*, "I", and *ayin*, "nothing", are made of the same three letters. The *niggun* is the wordless melody. Hasidim say it reaches places in the soul, and in heaven, that words cannot reach.
+
+## Forget yourself in prayer (*Tzava'at ha-Rivash*, paraphrased)
+Think of yourself as nothing, and forget yourself completely when you pray. Think only of the Presence before whom you pray. Then you can enter the world of thought, which is beyond time, where everything is the same: life and death, sea and dry land. But to enter it you must let go of your self.
+
+## The seed must decay (the Maggid of Mezritch, paraphrased)
+When a person thinks of himself as something, as *yesh*, there is no room in him for God. Just as a seed must decay in the earth before it can sprout, the "something" must become "nothing" before anything new can grow.
+
+## The pen of the soul (a saying attributed to Rabbi Shneur Zalman of Liadi)
+Words are the pen of the heart; melody is the pen of the soul.
+
+## The boy with the whistle (a Hasidic story, retold)
+On Yom Kippur a village boy who could not read the prayers stood in the Baal Shem Tov's synagogue. He longed to pray like the others. At the height of the day he took out his shepherd's whistle and blew one loud note. The congregation was horrified. But the Baal Shem Tov said that the gates of heaven, shut against their many words, had opened for that one note from the heart, and all their prayers had gone up with it.
+
+@ nachman
+title: Likutei Moharan: on hitbodedut
+orig: ליקוטי מוהר״ן, Likutei Moharan, "Collected teachings of our teacher Rabbi Nachman" (Hebrew)
+by: Rebbe Nachman of Breslov, recorded by Rabbi Nathan of Nemirov
+date: 1808–1811
+fam: jewish
+kind: teaching
+credit: Assembly Sounds' own rendering and paraphrase from the Hebrew.
+more: *Likutey Moharan*, trans. Moshe Mykoff (Breslov Research Institute, 1986 onward).
+more: Aryeh Kaplan, trans., *Outpouring of the Soul* (1980), Rebbe Nachman's teachings on hitbodedut.
+more: Arthur Green, *Tormented Master: A Life of Rabbi Nahman of Bratslav* (1979).
+about:
+Rabbi Nachman of Breslov (1772–1810) was a great-grandson of the Baal Shem Tov and one of the most original Hasidic masters. He was known for his stories, his intense inner struggles and his teaching that "it is a great commandment to always be happy". He died of tuberculosis at thirty-eight in Uman, where tens of thousands of his followers still gather every Jewish New Year.
+
+His central practice is *hitbodedut*, "making oneself alone". Every day, set aside a time, ideally an hour, to be alone with God. Do it in a room of your own, or better outside, in a field or forest, at night when the world is quiet. Speak in your own everyday language, as you would to a close friend. Pour out everything: your worries, hopes, failures and longings. If no words come, say just one word, or "Master of the world", over and over, and that too is very great.
+
+The hitbodedut session gives you this time alone, outdoors in sound, with space to speak.
+
+## The highest of all (Likutei Moharan II:25, paraphrased)
+To be alone with God is the highest level of all, greater than every other. Set aside an hour or more each day to be alone in a room or in the fields, and speak with your Maker. Use words of longing and pleading, of reconciling and asking, begging Him to bring you close to true service.
+
+Do this in the language you speak every day, for in the holy tongue it is hard to say all that is in your heart. Your heart is drawn after the language you know best, and you can speak freely, and pour out all your words before God: regret for the past, prayers for what is to come, everything.
+
+## When no words come (paraphrased)
+Even if you can say only one word, keep repeating it, again and again, many times, and even that is very good. Even if all you can say is "Master of the world", that too is very good. Do not give up. In the end the gates will open and the words will come.
+
+## The song of the grasses (Rebbe Nachman's teaching, paraphrased)
+How good it is to pray in the fields among the grass. Every blade of grass has its own song, and when you pray there, all the grasses and plants join in your prayer and give it strength.
+
+@ tanya
+title: The Tanya: the Gate of Unity and Faith
+orig: ספר התניא, Likutei Amarim; Sha'ar ha-Yichud veha-Emunah (Hebrew)
+by: Rabbi Shneur Zalman of Liadi
+date: 1796–1797
+fam: jewish
+kind: book
+credit: Assembly Sounds' own rendering and paraphrase from the Hebrew.
+more: *Likutei Amarim–Tanya*, bilingual edition (Kehot, 1962 onward).
+more: Adin Steinsaltz, *Opening the Tanya* (2003).
+more: Louis Jacobs, trans., *Tract on Ecstasy* by Dobh Baer of Lubavitch (1963).
+about:
+Rabbi Shneur Zalman of Liadi (1745–1812), a disciple of the Maggid of Mezritch, founded Chabad Hasidism. Its name comes from the first letters of *Chokhmah, Binah, Da'at*: wisdom, understanding and knowledge. Chabad holds that the way to love and awe of God passes through the mind. You think a teaching through, deeply and in detail, until it moves the heart. This is *hitbonenut*, contemplation.
+
+The *Tanya* is Chabad's basic book. Its second part, the Gate of Unity and Faith, gives the classic theme for contemplation. God's creative word did not make the world once and then withdraw. It goes on speaking the world into being at every moment. Without it, all things would at once return to nothing. So in truth there is nothing besides God, *ein od milvado*. The rebbe's son, Rabbi Dovber, later wrote a whole *Tract on Ecstasy* about the stages of this contemplation. The hitbonenut session follows the theme step by step.
+
+## There is none else (chapter 1, paraphrased)
+"Know this day, and take it to your heart, that the Lord is God in the heavens above and on the earth below; there is none else" (Deuteronomy 4:39). Would anyone imagine there is a god living in the waters under the earth, that we must be warned so strongly to take this to heart? The verse means more: there is nothing else at all. Nothing exists apart from Him.
+
+## The word stands in the heavens (chapter 1, paraphrased)
+It is written: "Forever, O Lord, your word stands firm in the heavens" (Psalm 119:89). The Baal Shem Tov explained it this way. The words God spoke, "Let there be a firmament in the midst of the waters", stand forever within the heavens, clothed in them and giving them life. If those letters withdrew for a single instant, the heavens would return to nothing and emptiness, as though they had never been. So it is with every creature: its very existence is the divine word that is being spoken in it at this moment.
+
+## If the eye could see (chapter 3, paraphrased)
+If the eye were allowed to see the life and the divine speech within every creature, which flows into it from the mouth of God at every moment, we would not see the physical thing as something solid and separate at all. It would be wholly nullified in its source, like the light of the sun within the sun itself, where it is not counted as anything of its own.
+
+@ cheshbon
+title: Cheshbon ha-Nefesh: the Accounting of the Soul
+orig: חשבון הנפש (Hebrew)
+by: Rabbi Menachem Mendel Lefin of Satanov
+date: first printed in Lemberg in the early 19th century
+fam: jewish
+kind: manual
+credit: Summarised in Assembly Sounds' own words.
+more: *Cheshbon ha-Nefesh*, trans. Shraga Silverstein (Feldheim, 1995).
+more: Alan Morinis, *Everyday Holiness: The Jewish Spiritual Path of Mussar* (2007).
+more: Benjamin Franklin, *Autobiography* (written 1771–1790), part two, on his "project of arriving at moral perfection".
+about:
+Menachem Mendel Lefin (1749–1826) was a rabbi from Podolia and an early figure of the Jewish Enlightenment. In Berlin he met the circle of Moses Mendelssohn and read Benjamin Franklin's account of how he had tried to perfect his character. Franklin chose thirteen virtues, worked on one each week, and kept a little chart to mark his failings each evening. Lefin adapted the method to Jewish ethics in a short handbook, *Cheshbon ha-Nefesh*.
+
+Later in the century Rabbi Yisrael Salanter (1810–1883), founder of the Mussar ("moral discipline") movement, had the book reprinted and urged his students to use it. The evening "accounting of the soul" became a central Mussar practice: an honest, gentle review of the day, trait by trait. The Cheshbon session follows it.
+
+## The thirteen traits (middot)
+1. **Menuchat ha-nefesh**, equanimity: rise above things that do not matter.
+2. **Savlanut**, patience: bear what cannot be changed without anger.
+3. **Seder**, order: let everything have its place and its time.
+4. **Charitzut**, decisiveness: act without hesitating once you know what is right.
+5. **Nekiyut**, cleanliness: keep body, clothes and home clean.
+6. **Anavah**, humility: always seek to learn from others.
+7. **Tzedek**, justice: give way to others where you can.
+8. **Kimmutz**, frugality: take care with money and possessions.
+9. **Zerizut**, diligence: do not waste time.
+10. **Shtikah**, silence: think before you speak, and speak what helps.
+11. **Nichutah**, gentleness: let your words be calm and kind.
+12. **Emet**, truth: let nothing false leave your lips.
+13. **Prishut**, moderation: do not let desires rule you.
+
+## The method
+Work on one trait each week, so that all thirteen are covered four times a year. Write the trait at the top of a small chart. Each evening, look back over the day and mark the times you failed in it, without harshness. Over the weeks the marks grow fewer, and the trait becomes your own.
+
+@ omer
+title: Sefirat ha-Omer: counting the forty-nine days
+orig: ספירת העומר (Hebrew)
+by: the Torah (Leviticus 23); the Kabbalists of 16th-century Safed
+date: biblical commandment; sefirot pairing from the 16th century
+fam: jewish
+kind: liturgy
+credit: The blessing and count in Assembly Sounds' own rendering from the Hebrew.
+more: Simon Jacobson, *A Spiritual Guide to the Counting of the Omer* (1996).
+more: Min Kantrowitz, *Counting the Omer: A Kabbalistic Meditation Guide* (2009).
+about:
+The Torah commands Israel to count seven full weeks from the second day of Passover, when a sheaf (*omer*) of new barley was offered in the Temple, until Shavuot, the feast of the first wheat and of the giving of the Torah. Every evening the count is said aloud with a blessing. The days lead from freedom from slavery at Passover to the receiving of the Torah at Sinai.
+
+The Kabbalists of Safed turned the count into a ladder of inner work. Each of the seven weeks belongs to one of the seven lower sefirot, and so does each day within the week. That gives forty-nine combinations, from "loving-kindness within loving-kindness" on the first day to "kingship within kingship" on the forty-ninth. On each day you look at one quality of the heart and refine it. The Omer session follows the seven qualities.
+
+## The blessing
+= Baruch atah Adonai, Eloheinu melech ha-olam, asher kiddeshanu be-mitzvotav ve-tzivanu al sefirat ha-omer.
+Blessed are you, Lord our God, King of the universe, who has made us holy with his commandments and commanded us to count the Omer.
+
+## The count
+On the first evening: "Today is one day of the Omer." On the eighth: "Today is eight days, which are one week and one day of the Omer." And so on to the forty-ninth: "Today is forty-nine days, which are seven weeks of the Omer."
+
+## The seven qualities
+1. **Chesed**, loving-kindness: giving freely.
+2. **Gevurah**, strength and restraint: discipline, limits, respect.
+3. **Tiferet**, harmony and compassion: truth held in balance.
+4. **Netzach**, endurance: persistence and confidence.
+5. **Hod**, humility and splendour: gratitude, yielding, acknowledging.
+6. **Yesod**, foundation: bonding, connection, faithfulness.
+7. **Malkhut**, kingship: dignity, presence, receiving.
+
+Week one is Chesed, and its days run from Chesed within Chesed to Malkhut within Chesed. Week two is Gevurah, and so on.
+
+## Psalm 67
+Many say Psalm 67 during the counting. Not counting its heading, it has seven verses and forty-nine Hebrew words, one for each day.

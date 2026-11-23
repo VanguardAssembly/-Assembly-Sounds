@@ -1,0 +1,308 @@
+// Frontier and speculative sources: Monroe and Gateway, out-of-body methods, remote viewing, breathwork movements and more.
+
+@ monroe
+title: Robert Monroe's journeys and the Focus levels
+orig: English
+by: Robert A. Monroe (1915–1995)
+date: 1971, 1985 and 1994
+fam: frontier
+kind: book
+cite: Robert A. Monroe, *Journeys Out of the Body* (1971); *Far Journeys* (1985); *Ultimate Journey* (1994).
+credit: Summarised in Assembly Sounds' own words.
+more: Ronald Russell, *The Journey of Robert Monroe: From Out-of-Body Explorer to Consciousness Pioneer* (2007).
+more: Ronald Russell, ed., *Focusing the Whole Brain: Transforming Your Life with Hemispheric Synchronization* (2004).
+about:
+Robert Monroe was an American radio executive and producer. In 1958, by his own account, he began to have spontaneous experiences of leaving his body. They started with strong "vibrations" as he lay down to sleep, and then he found himself floating free. Frightened, he had medical and psychiatric check-ups, which found nothing wrong, and then set out to explore the experiences systematically. His book *Journeys Out of the Body* (1971) made the term "out-of-body experience" widely known.
+
+To help others reach such states, he experimented with sound. Following earlier research on binaural beats, he found that layered tones could guide listeners into the borderland between waking and sleep, and he patented the method in 1975. It became Hemi-Sync. At his institute in Virginia, the Monroe Institute, he developed the *Gateway Experience* course. In it, listeners move through numbered "Focus levels", each a different state of mind. *Focus 10* is "mind awake, body asleep". *Focus 12* is expanded awareness. *Focus 15* is a state of "no time". *Focus 21* is the edge of other "energy systems". In his later *Lifeline* program and in *Ultimate Journey* (1994), he described still higher levels, Focus 22 to 27. Focus 22 is the state of people who are only partly conscious, as in dreams or delirium. The levels beyond it he believed to be realms that people pass through after death, ending in Focus 27, "the Park", a place of rest and renewal. These are Monroe's own spiritual ideas. They have never been tested scientifically, and the Focus sessions in this app are original interpretations of them.
+
+## The Gateway preparation, in brief
+Before each exercise, Gateway listeners go through a short routine. The Focus sessions follow it in their own words.
+1. **The energy conversion box**: picture a strong box, put into it every worry and distraction, close the lid, and leave it aside for later.
+2. **Resonant tuning**: breathe deeply and hum or chant long vowel sounds, feeling the vibration fill the body.
+3. **The energy balloon**: picture energy flowing up from the feet and out through the crown like a fountain, surrounding the body in a protective bubble of light.
+4. **The affirmation**: state an intention, that you are more than your physical body and that you seek to explore with the help of those wiser than you.
+
+## Monroe's method for leaving the body, in brief (*Journeys Out of the Body*)
+- Relax deeply, and let the body fall asleep while the mind stays awake, in the borderland of sleep.
+- Deepen this until you notice the "vibrations": a buzzing, tingling or rushing that seems to pass through the whole body. Monroe found that it can be calmed and steadied with attention.
+- Then imagine rolling out of the body, as if turning over in bed, or rising out of it. (The vibrations, buzzing and paralysis Monroe described are well-known features of the edge of sleep and of sleep paralysis.)
+
+@ gateway_report
+title: The U.S. Army's 1983 assessment of the Gateway process
+orig: English
+by: Lieutenant Colonel Wayne M. McDonnell, U.S. Army
+date: 9 June 1983; released by the CIA in 2003
+fam: frontier
+kind: report
+cite: Wayne M. McDonnell, "Analysis and Assessment of Gateway Process", U.S. Army Operational Group (9 June 1983), released 2003 (CIA-RDP96-00788R001700210016-5).
+credit: Summarised in Assembly Sounds' own words.
+more: The report is a U.S. government work, freely readable in the CIA's online reading room.
+about:
+In 1983 the U.S. Army asked one of its officers, Lieutenant Colonel Wayne McDonnell, to assess the Monroe Institute's Gateway Experience. The Army had been sending personnel to the course to see whether it could help with intelligence work, alongside its remote-viewing research. McDonnell's report tries to explain, in the scientific language of the day, how Gateway might work. He draws on brainwave entrainment, the idea of the brain as a hologram, Itzhak Bentov's models of consciousness as vibration, and quantum physics. The report was classified. It was released by the CIA in 2003, and in recent years it has become widely read online.
+
+The report is a speculative personal synthesis, not a scientific study. Its physics would not be accepted by physicists, and it did not test Gateway's effects. But it explains the purpose of each preparation step and each Focus level in more detail than Monroe's own published work. The Focus sessions in this app use it as a guide to that structure.
+
+## What the report describes, in brief
+- **Hemispheric synchronisation**: the Hemi-Sync tones are said to bring the two halves of the brain into step, steadying the mind.
+- **The preparation**: the energy conversion box, resonant tuning, the energy balloon and the affirmation are explained as ways of clearing distraction, raising energy and focusing intention.
+- **Focus 10**: the body asleep while the mind stays awake and alert.
+- **Focus 12**: awareness expanding beyond the body, described as useful for problem-solving and intuition.
+- **Focus 15**: a state "without time", in which the mind is said to reach beyond the present.
+- **Focus 21**: the edge of what Monroe called other energy systems.
+- **The conclusion**: the author judged the process plausible enough to deserve further study, while noting that it rested on theory, not proof.
+
+@ hemisync
+title: Hemi-Sync: Monroe's layered binaural tones
+orig: English
+by: Robert A. Monroe; studies by F. Holmes Atwater and others
+date: patent 1975; studies 1997–1999
+fam: frontier
+kind: study
+cite: R. A. Monroe, U.S. Patent 3,884,218, "Method of inducing and maintaining various stages of sleep in the human being" (1975); F. H. Atwater, "Accessing anomalous states of consciousness with a binaural beat technology", *Journal of Scientific Exploration* 11 (1997): 263–274; W. Kliempt et al., "Hemispheric-synchronisation during anaesthesia: a double-blind randomised trial using audiotapes for intra-operative nociception control", *Anaesthesia* 54 (1999): 769–773.
+credit: Summarised in Assembly Sounds' own words.
+more: G. Oster, "Auditory beats in the brain", *Scientific American* 229 (1973): 94–102.
+about:
+Hemi-Sync, short for "hemispheric synchronisation", is the Monroe Institute's name for its sound technology. It is built on binaural beats. When each ear hears a slightly different tone, the brain perceives a third, beating rhythm at the difference between them. Monroe's 1975 patent describes using such beats to lead a listener into sleep. Hemi-Sync recordings layer several beats at once, each on its own carrier tone, often under pink noise, music or spoken guidance, so that the listener hears a "chord" of rhythms rather than one.
+
+The Monroe Institute's research director, F. Holmes Atwater, argued that the tones work by entraining brain rhythms and synchronising the two hemispheres. Independent research has found that binaural beats can affect mood, attention and anxiety a little, but the results are mixed, and the brain does not simply follow the beat (see the binaural-beat reviews). One of the best-designed studies of Hemi-Sync itself, a 1999 double-blind trial by Kliempt and colleagues, found that patients who heard Hemi-Sync during surgery under general anaesthesia needed less painkilling medication than those who heard a blank tape. The Layered Beats session and the Focus sessions are inspired by Hemi-Sync but use their own original sound.
+
+## What the studies found, in brief
+- **Kliempt et al. (1999)**: 76 surgical patients under general anaesthesia heard either Hemi-Sync or a blank tape through headphones. Those hearing Hemi-Sync needed significantly less of the painkiller fentanyl during the operation.
+- **Atwater (1997)**: in a small study, listeners to Hemi-Sync showed brainwave changes and reported altered states. The study was not blind or controlled.
+- **Since then**: reviews of binaural beats in general find small and inconsistent effects on the brain's electrical activity.
+
+@ holosync
+title: Holosync and commercial descending-tone programs
+orig: English
+by: Bill Harris (1950–2018) and Centerpointe Research Institute
+date: from 1989
+fam: frontier
+kind: book
+cite: Bill Harris, *Thresholds of the Mind: Your Personal Roadmap to Success, Happiness, and Contentment* (2002).
+credit: Summarised in Assembly Sounds' own words.
+more: H. Ingendoh et al., "Binaural beats to entrain the brain? A systematic review of the effects of binaural beat stimulation on brain oscillatory activity, and the implications for psychological research and intervention", *PLOS ONE* 18 (2023): e0286023.
+about:
+In 1989 the American musician and businessman Bill Harris launched Holosync, a series of recordings sold through his company, Centerpointe. They layer binaural beats under the sound of rain or bells, beginning in alpha and descending in stages toward delta. They are sold as "levels", each meant to be listened to for months before the next. Harris claimed that the recordings push the brain beyond its comfort zone, so that it "reorganises at a higher level", and that this brings the benefits of years of meditation in a short time. Several similar programs followed.
+
+These claims come from the company and its founder. No independent, peer-reviewed research has tested Holosync or programs like it. Independent studies of binaural beats in general find only small and inconsistent effects (see the binaural-beat reviews). The Descending Carriers session is an original interpretation of the descending idea, not their audio, and it makes no such claims.
+
+@ muldoon
+title: Muldoon and Carrington's The Projection of the Astral Body
+orig: English
+by: Sylvan J. Muldoon (1903–1969) and Hereward Carrington (1880–1958)
+date: 1929
+fam: frontier
+kind: book
+cite: Sylvan J. Muldoon & Hereward Carrington, *The Projection of the Astral Body* (1929).
+credit: Summarised in Assembly Sounds' own words.
+more: Sylvan J. Muldoon & Hereward Carrington, *The Phenomena of Astral Projection* (1951).
+more: Celia Green, *Out-of-the-Body Experiences* (1968).
+about:
+Sylvan Muldoon was a young man from Wisconsin, often bedridden by illness. He said that his first out-of-body experience happened at the age of twelve, at a Spiritualist camp in Iowa. He woke to find himself, fully aware, standing beside his own sleeping body, joined to it by an elastic "cord". He went on to have hundreds more. He wrote to the well-known psychical researcher Hereward Carrington, and together they produced *The Projection of the Astral Body* (1929). It became the classic early handbook of astral projection.
+
+Muldoon's methods use the edge of sleep and the power of desire. He noticed that projections often followed dreams of flying, floating or rising in a lift. He also noticed that strong bodily urges, such as thirst, could pull the "astral body" out to satisfy them. So he advised going to bed slightly thirsty, and picturing getting up to fetch water. He also advised building a vivid mental image of a familiar place, then rehearsing being there with all the senses as you fall asleep. Muldoon believed in a real astral body. Modern researchers explain such experiences as vivid states of the borderland of sleep. The Target Technique session uses his methods.
+
+## Muldoon's methods, in brief
+- **The target**: choose a familiar room or object, study it in detail by day, and as you fall asleep rehearse being there in imagination, with sight, sound, touch and smell.
+- **Desire and thirst**: go to bed slightly thirsty, and as you fall asleep picture rising to get a drink.
+- **Dream control**: practise dreams of rising and flying, such as going up in a lift or floating upward, as a bridge to projection.
+- **Calm**: Muldoon stressed that fear pulls you back; stay relaxed and curious.
+
+@ bruce
+title: Robert Bruce's Astral Dynamics and the rope technique
+orig: English
+by: Robert Bruce
+date: 1999
+fam: frontier
+kind: book
+cite: Robert Bruce, *Astral Dynamics: A New Approach to Out-of-Body Experience* (1999).
+credit: Summarised in Assembly Sounds' own words.
+more: Robert Bruce & Brian Mercer, *Mastering Astral Projection* (2004).
+about:
+Robert Bruce is an Australian writer on out-of-body experience and energy work, who says he has explored the subject since childhood. In *Astral Dynamics* (1999) he set out a practical system. Deep physical relaxation is followed by a "mind split", in which part of awareness stays in the body while part projects. He also gives a set of "new energy ways", in which the attention is moved through the body like a brush to stimulate sensation. His best-known contribution is the *rope technique*.
+
+The idea is simple. Relaxed and on the edge of sleep, you imagine an invisible rope hanging above you. You reach up with imagined hands and climb it, hand over hand, pulling yourself upward. Bruce says the effort of climbing, felt rather than seen, often brings dizziness, vibrations and finally a sense of being pulled free. As with all out-of-body methods, the experiences are real, but what they are is debated: researchers link them to the borderland of sleep and to the brain's sense of where the body is. The Rope Technique session follows the method.
+
+## The rope technique, in brief
+1. Lie down and relax deeply, the body heavy, the mind alert.
+2. Imagine a strong rope hanging in the air above your chest, just out of reach.
+3. Reach up with imagined arms, not the physical ones, and grip it.
+4. Climb, hand over hand, feeling the effort, the pull and the strain in your imagined arms.
+5. Keep climbing as dizziness or vibrations come. Bruce says this is the sign that you are close.
+6. If nothing happens, rest and simply enjoy the relaxation.
+
+@ raduga
+title: Michael Raduga's phase method
+orig: Russian and English
+by: Michael Raduga and the Phase Research Center
+date: from 2007; studies 2020
+fam: frontier
+kind: study
+cite: M. Raduga, O. Kuyava & N. Sevcenko, "Is there a relation between REM sleep dissociated phenomena, such as lucid dreaming, sleep paralysis, out-of-body experiences, and false awakening?", *Medical Hypotheses* 144 (2020): 110169.
+credit: Summarised in Assembly Sounds' own words.
+about:
+Michael Raduga is a Russian researcher who in 2007 founded a school in Moscow for teaching out-of-body travel. He later renamed it the Phase Research Center. He uses one word, "the phase", for lucid dreams, out-of-body experiences and similar states. His argument is that they are all the same thing seen from different angles: a state of full awareness arising from REM sleep, the stage of sleep in which most vivid dreaming happens. He describes them without any claim of a soul leaving the body.
+
+His method is the *indirect technique*. Instead of trying to leave the body while falling asleep, you wake up after about six hours of sleep, or at any natural awakening. Without moving or opening your eyes, you immediately try to "separate": roll out, float up, or stand up in your imagination. If that does not work within a few seconds, you cycle quickly through other techniques, such as imagining movement or watching images. Raduga's group report that many beginners succeed within a few tries. In 2020 they argued, from their surveys and experiments, that lucid dreaming, sleep paralysis, out-of-body experiences and false awakenings are all versions of the same REM-sleep state. The Phase, Cycling and Swing sessions follow this method.
+
+## The indirect technique, in brief
+1. Go to sleep as usual. Set an alarm, or rely on a natural awakening, after about six hours.
+2. When you wake, do not move a muscle and do not open your eyes.
+3. Straight away, try to separate: roll out of your body, float up, or sit up, without moving physically.
+4. If you do not separate within a few seconds, cycle through other techniques, for a few seconds each: imagine your hands rubbing together, imagine spinning around the axis of your body, watch the darkness behind your eyes for pictures, or listen for inner sounds.
+5. As soon as one technique works, try to separate again.
+6. If nothing happens, go back to sleep. You can try again at the next awakening.
+
+@ glaskin
+title: G. M. Glaskin's Christos technique
+orig: English
+by: G. M. Glaskin (1923–2000)
+date: 1974
+fam: frontier
+kind: book
+cite: G. M. Glaskin, *Windows of the Mind: The Christos Experience* (1974).
+credit: Summarised in Assembly Sounds' own words.
+more: G. M. Glaskin, *Worlds Within* (1976) and *A Door to Eternity* (1979).
+about:
+Gerald Glaskin was an Australian novelist. In the early 1970s he came across a guided-imagery method and tried it with friends. He was amazed by the vivid journeys it produced, and wrote three books about it, beginning with *Windows of the Mind* (1974). He called it the *Christos technique*. The name is usually explained as the Greek for "anointed", for the way the forehead is rubbed.
+
+It is done in a group. The traveller lies on the floor. One helper firmly massages the feet, and another rubs the centre of the forehead with the side of a hand. Meanwhile the traveller imagines stretching beyond the body: first through the feet, then through the head, then expanding all over like a balloon. Then they picture their own front door, rise up above the house, fly, and come down in a landscape, and simply describe what they see. Glaskin and later writers presented it as a way into out-of-body and even past-life experiences. Those claims have not been tested. As a guided-imagery journey, it is strong and vivid. The Christos session follows the stages, with a partner's rubbing optional.
+
+## The stages, in brief
+1. **Relaxing**: lie down comfortably, eyes closed. A partner may gently rub your feet and the centre of your forehead.
+2. **Stretching**: imagine your legs stretching a little longer through your feet, then coming back; then your head stretching up beyond the top of your head, then back. Repeat, stretching further each time.
+3. **Expanding**: imagine your whole body expanding like a balloon, filling the room.
+4. **The front door**: picture your own front door in detail, then rise up above your house and look down on it.
+5. **Flying**: fly over the landscape, wherever it takes you, then come down and look around, describing what you see.
+6. **Return**: come back the way you came, to the house, the room and your body.
+
+@ theosophy
+title: Theosophy: the astral plane and the third eye
+orig: English
+by: Helena Petrovna Blavatsky (1831–1891); Charles Webster Leadbeater (1854–1934)
+date: 1888 and 1895
+fam: frontier
+kind: book
+cite: H. P. Blavatsky, *The Secret Doctrine* (1888); C. W. Leadbeater, *The Astral Plane* (1895).
+credit: Summarised in Assembly Sounds' own words.
+more: C. W. Leadbeater, *The Chakras* (1927).
+more: Gary Lachman, *Madame Blavatsky: The Mother of Modern Spirituality* (2012).
+more: Joscelyn Godwin, *The Theosophical Enlightenment* (1994).
+about:
+The Theosophical Society was founded in New York in 1875 by the Russian-born mystic Helena Blavatsky, the lawyer Henry Steel Olcott and William Quan Judge. In 1882 it moved its headquarters to Adyar, in India. It set out to find the "ancient wisdom" it believed lay behind all religions, and it blended Hindu and Buddhist ideas with Western occultism. It was enormously influential. Through it, words such as *karma*, *reincarnation*, *chakra* and *astral body* entered Western culture. Rudolf Steiner, the Golden Dawn, Alice Bailey and much of the New Age movement grew in its shadow.
+
+In *The Secret Doctrine* (1888) Blavatsky taught that the earliest humans had a third eye, a real organ of spiritual sight. As people sank deeper into matter, it shrank into the pineal gland. Her follower C. W. Leadbeater described the "astral plane", the realm the soul visits in sleep and after death, in *The Astral Plane* (1895). In *The Chakras* (1927) he gave the modern Western picture of the chakras as wheels of coloured light. None of this has scientific support. But these ideas lie behind the Third Eye session and much modern writing on astral projection, so they are part of that session's history.
+
+@ remote_viewing
+title: Remote viewing and the Stargate program
+orig: English
+by: Russell Targ, Harold Puthoff, Ingo Swann and others; evaluations by Jessica Utts, Ray Hyman and the American Institutes for Research
+date: 1972–1995
+fam: frontier
+kind: study
+cite: R. Targ & H. Puthoff, "Information transmission under conditions of sensory shielding", *Nature* 251 (1974): 602–607; H. E. Puthoff & R. Targ, "A perceptual channel for information transfer over kilometer distances: historical perspective and recent research", *Proceedings of the IEEE* 64 (1976): 329–354; J. Utts, "An assessment of the evidence for psychic functioning", and R. Hyman, "Evaluation of a program on anomalous mental phenomena", *Journal of Scientific Exploration* 10 (1996): 3–30 and 31–58; M. D. Mumford, A. M. Rose & D. A. Goslin, *An Evaluation of Remote Viewing: Research and Applications* (American Institutes for Research, 1995).
+credit: Summarised in Assembly Sounds' own words.
+more: D. Marks & R. Kammann, "Information transmission in remote viewing experiments", *Nature* 274 (1978): 680–681.
+more: Annie Jacobsen, *Phenomena: The Secret History of the U.S. Government's Investigations into Extrasensory Perception and Psychokinesis* (2017).
+about:
+In the early 1970s two laser physicists at the Stanford Research Institute, Russell Targ and Harold Puthoff, began testing whether people could describe distant places they could not see. In a typical trial, an experimenter went to a randomly chosen location while a "viewer", back in the lab, described and drew impressions of it. The artist Ingo Swann named the practice *remote viewing*. Their results, published in *Nature* in 1974, drew wide attention, and also sharp criticism. Psychologists David Marks and Richard Kammann showed that the transcripts given to judges contained clues that could have helped them match descriptions to places.
+
+From 1978 to 1995 the U.S. Army, and later the Defense Intelligence Agency, funded a secret remote-viewing program for intelligence gathering. It ran under a series of code names, the last of which was Stargate. In 1995 the CIA commissioned an evaluation. The statistician Jessica Utts concluded that the laboratory results showed an effect that needed explaining. The psychologist Ray Hyman disagreed, pointing to flaws and the lack of independent replication. The evaluation as a whole concluded that remote viewing had never produced information useful for intelligence, and the program was closed. The Remote Viewing session is offered as a game of imagination, not a test of a skill.
+
+## The basic protocol, in brief
+1. A target, a photograph or a place, is chosen at random by someone else and kept hidden from the viewer.
+2. The viewer relaxes, and notes the first impressions that come: shapes, colours, textures, sounds, feelings.
+3. The viewer sketches and describes these impressions, avoiding naming or guessing what the target is.
+4. Afterwards the target is revealed and compared with the description, ideally by an independent judge choosing among several possible targets.
+
+@ rebirthing
+title: Leonard Orr's Rebirthing
+orig: English
+by: Leonard Orr (1937–2019) and Sondra Ray
+date: 1970s; *Rebirthing in the New Age* 1977
+fam: frontier
+kind: book
+cite: Leonard Orr & Sondra Ray, *Rebirthing in the New Age* (1977).
+credit: Summarised in Assembly Sounds' own words.
+about:
+Leonard Orr was an American spiritual teacher. In the 1970s, by his own account, he found that long, relaxed sessions of connected breathing, at first while lying in a warm bath, brought up powerful memories and feelings that he linked with his own birth. He called the practice *Rebirthing*, and with Sondra Ray he taught it widely. The breath is continuous and connected, with no pause between in and out. The in-breath is drawn actively, and the out-breath is simply let go. A session usually lasts about an hour, with a trained "rebirther" beside the breather.
+
+Practitioners report a release of old emotions and tension, and a deep sense of peace. Orr's ideas about birth trauma have not been tested scientifically. Faster connected breathing lowers the carbon dioxide in the blood, which can cause tingling, lightheadedness and cramping of the hands. So Rebirthing's relaxed style matters: the breath is fuller than normal, not forced. Orr's method has nothing to do with the coercive "rebirthing" of so-called attachment therapy, a different practice that was banned in Colorado after a child died in 2000. The Rebirthing session follows Orr's relaxed, connected breathing, in a gentle form.
+
+## Practising safely
+- Breathe fuller than usual but relaxed, never forcing the in-breath or pushing the out-breath.
+- If your hands or face tingle or cramp, or you feel dizzy, slow down and breathe normally until it passes.
+- Practise lying down or sitting, never in water, driving or standing.
+- Do not practise if you are pregnant, or have epilepsy, heart disease, high blood pressure, glaucoma or a history of psychosis.
+
+@ holotropic
+title: Stanislav and Christina Grof's Holotropic Breathwork
+orig: English
+by: Stanislav Grof (born 1931) and Christina Grof (1941–2014)
+date: developed from 1975; book 2010
+fam: frontier
+kind: book
+cite: Stanislav Grof & Christina Grof, *Holotropic Breathwork: A New Approach to Self-Exploration and Therapy* (2010).
+credit: Summarised in Assembly Sounds' own words.
+more: Stanislav Grof, *The Holotropic Mind* (1992).
+more: J. P. Rhinewine & O. J. Williams, "Holotropic Breathwork: the potential role of a prolonged, voluntary hyperventilation procedure as an adjunct to psychotherapy", *Journal of Alternative and Complementary Medicine* 13 (2007): 771–776.
+about:
+Stanislav Grof is a Czech-born psychiatrist who in the 1950s and 1960s led some of the first clinical research with LSD, in Prague and then in Maryland. When that research was stopped, he and his wife Christina looked for a way to reach similar non-ordinary states without drugs. At the Esalen Institute in California in the mid-1970s they developed *Holotropic Breathwork*, from the Greek for "moving toward wholeness".
+
+In a session, participants work in pairs, one breathing and one sitting with them, for two to three hours. The breather lies down and breathes faster and deeper than usual, continuously, to loud, evocative music, while a trained facilitator watches over the group. Afterwards participants draw mandalas and share their experiences. People report intense emotions, memories, visions and body sensations. Grof interpreted some of them as reliving birth, and some as transpersonal experiences. These theories are unproven, and research on the method is limited. Because it involves prolonged fast breathing, it has many medical contraindications and is meant only for supervised groups. The Conscious Connected Breathing session is an original, much shorter and gentler practice inspired by it, not a Grof session.
+
+## Practising safely
+- The real method is done only in groups with trained facilitators; never attempt long, fast breathing alone.
+- Do not practise if you have heart disease, high blood pressure, glaucoma, epilepsy, a recent injury or surgery, or a history of serious mental illness, or if you are pregnant.
+- If you feel faint, or your hands cramp, slow down and breathe normally.
+
+@ earthing
+title: Earthing: contact with the ground
+orig: English
+by: Clinton Ober, Stephen T. Sinatra and Martin Zucker; Gaétan Chevalier and colleagues
+date: 2010; review 2012
+fam: frontier
+kind: review
+cite: Clinton Ober, Stephen T. Sinatra & Martin Zucker, *Earthing: The Most Important Health Discovery Ever?* (2010); G. Chevalier, S. T. Sinatra, J. L. Oschman, K. Sokal & P. Sokal, "Earthing: health implications of reconnecting the human body to the Earth's surface electrons", *Journal of Environmental and Public Health* 2012: 291541.
+credit: Summarised in Assembly Sounds' own words.
+about:
+"Earthing", or "grounding", is the idea that direct contact between the skin and the earth is good for health. You might walk barefoot on grass or sand, or sleep on a conductive sheet wired to the ground. Clinton Ober, a retired cable-television executive, popularised it from the late 1990s. He argued that the earth's surface carries a supply of free electrons, and that modern life, with rubber-soled shoes and raised beds, has cut us off from it. In 2010 he published the book *Earthing* with a cardiologist and a health writer.
+
+A 2012 review by Chevalier and colleagues gathered small studies reporting effects on sleep, pain, inflammation, blood viscosity and stress. However, most of the studies were small, many were not properly blinded, and several authors had financial ties to companies selling earthing products. The claims have not been confirmed by independent research. Walking barefoot outdoors is pleasant and calming for its own reasons. The Grounding session uses the idea as a calm, embodied meditation, and makes no medical claim.
+
+@ digital_drugs
+title: "Digital drugs": the I-Doser craze and who uses binaural beats to get high
+orig: English
+by: Monica J. Barratt and colleagues
+date: 2007 onward; survey 2021, published 2022
+fam: frontier
+kind: study
+cite: M. J. Barratt et al., "Who uses digital drugs? An international survey of 'binaural beat' consumers", *Drug and Alcohol Review* 41 (2022): 1126–1130.
+credit: Summarised in Assembly Sounds' own words.
+more: H. Ingendoh et al., "Binaural beats to entrain the brain? A systematic review of the effects of binaural beat stimulation on brain oscillatory activity", *PLOS ONE* 18 (2023): e0286023.
+about:
+In the mid-2000s a company called I-Doser began selling binaural-beat tracks named after drugs, promising to produce the same effects as the real substances, digitally and legally. In 2010 news reports in the United States fuelled a brief panic about teenagers "i-dosing". The claims were never supported. There is no evidence that any sound recording can mimic a drug, or release endorphins on demand.
+
+In 2021 the Global Drug Survey asked about it. Of more than 30,000 respondents, about one in twenty said they had used binaural beats in the past year to try to change their state of mind. Most used them to relax or fall asleep, and some to try to get high or to mimic a drug. The researchers, led by Monica Barratt, noted that the experiences people report are probably shaped strongly by expectation. The Euphoria session is honest about this: it offers an uplifting gratitude meditation, not a digital drug.
+
+@ moody
+title: Raymond Moody's psychomanteum
+orig: English
+by: Raymond A. Moody (born 1944), with Paul Perry; studies by Arthur Hastings and Giovanni Caputo
+date: 1993; studies 2002 and 2010
+fam: frontier
+kind: book
+cite: Raymond Moody with Paul Perry, *Reunions: Visionary Encounters with Departed Loved Ones* (1993); A. Hastings et al., "Psychomanteum research: experiences and effects on bereavement", *Omega* 45 (2002): 211–228; G. B. Caputo, "Strange-face-in-the-mirror illusion", *Perception* 39 (2010): 1007–1008.
+credit: Summarised in Assembly Sounds' own words.
+more: Raymond A. Moody, *Life After Life* (1975).
+about:
+Raymond Moody is an American psychiatrist and philosopher. His book *Life After Life* (1975) coined the term "near-death experience". Later he became fascinated by the oracles of the dead of ancient Greece, and by the old custom of gazing into mirrors, water and crystal balls to see visions. In 1990 he built a modern version at his home, which he called a *psychomanteum*. It is a small, dimly lit room with a comfortable chair and a large mirror, angled so that the sitter sees no reflection of themselves, only clear, dark depth.
+
+Visitors spend some hours first remembering someone they had lost, with photographs and mementos, and then sit gazing quietly into the mirror. In *Reunions* (1993) Moody reported that many felt a strong sense of the person's presence, or even saw or heard them. In a 2002 study with bereaved volunteers, Arthur Hastings and colleagues found that grief was lower afterwards. Mirror-gazing in dim light produces strange visual effects on its own: in a 2010 study by Giovanni Caputo, faces in the mirror seemed to change and distort within minutes. Whatever their nature, the experiences can be deeply moving. The Psychomanteum session follows Moody's method. Have someone you trust nearby, and stop whenever you need to.
+
+## The method, in brief
+1. **Preparation**: spend some time remembering the person: look at photographs, hold a keepsake, recall their voice and your times together.
+2. **The room**: sit in a dim, quiet room, with a soft light behind you, facing a mirror tilted so you see no reflection, only darkness and depth.
+3. **Gazing**: relax and gaze softly into the mirror's depth, without expecting anything, for as long as feels right.
+4. **Afterwards**: sit quietly, and talk over or write down what you experienced. If strong feelings come, let them, and seek support if you need it.
